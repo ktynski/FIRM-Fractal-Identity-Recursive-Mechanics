@@ -1,0 +1,104 @@
+{
+  "replacement_rules": {
+    "core_terminology": {
+      "soul": {
+        "replacements": ["identity structure", "recursive identity", "coherent structure"],
+        "context_dependent": {
+          "soul vector": "identity vector",
+          "soul space": "identity space", 
+          "soul field": "identity field"
+        }
+      },
+      "grace": {
+        "replacements": ["genesis operator", "initiation operator", "emergence operator"],
+        "context_dependent": {
+          "grace operator": "genesis operator",
+          "grace field": "initiation field",
+          "grace dynamics": "genesis dynamics"
+        }
+      },
+      "devourer": {
+        "replacements": ["collapse operator", "dissipation operator", "decoherence operator"],
+        "context_dependent": {
+          "devourer algebra": "collapse algebra",
+          "devourer field": "dissipation field"
+        }
+      }
+    },
+    "grandiose_claims": {
+      "complete derivation": "proposed derivation",
+      "revolutionary breakthrough": "novel theoretical approach",
+      "paradigm shift": "theoretical development",
+      "fundamental breakthrough": "significant theoretical advance",
+      "first complete": "proposed complete",
+      "ultimate solution": "comprehensive approach",
+      "perfect": "optimized",
+      "absolute": "complete"
+    },
+    "false_precision": {
+      "patterns": [
+        {
+          "regex": "\\b(\\d+\\.\\d{4,})\\b(?!\\s*(?:×|e[+-]?\\d+))",
+          "replacement": "approximately {rounded_value}",
+          "note": "Replace excessive decimal precision"
+        },
+        {
+          "regex": "\\b(99\\.\\d+|100\\.0+)%\\b",
+          "replacement": "~99%",
+          "note": "Replace false percentage precision"
+        }
+      ]
+    },
+    "anthropomorphic": {
+      "patterns": [
+        {
+          "regex": "(\\w+)\\s+(enables|chooses|decides|wants|intends)",
+          "replacement": "\\1 produces/results in",
+          "note": "Remove anthropomorphic agency"
+        },
+        {
+          "regex": "(\\w+)\\s+(consumes|attacks|hunts)",
+          "replacement": "\\1 acts on/affects",
+          "note": "Remove predatory anthropomorphism"
+        }
+      ]
+    }
+  },
+  "scientific_hedging": {
+    "confidence_modifiers": {
+      "high_confidence": ["indicates", "suggests", "appears to", "evidence shows"],
+      "medium_confidence": ["may", "could", "potentially", "preliminary evidence suggests"],
+      "low_confidence": ["speculatively", "hypothetically", "if confirmed", "requires validation"]
+    },
+    "claim_qualifiers": {
+      "theoretical": "[THEORETICAL]",
+      "empirical": "[EMPIRICAL]", 
+      "speculative": "[SPECULATIVE]",
+      "mathematical": "[MATHEMATICAL]",
+      "metaphysical": "[METAPHYSICAL]"
+    }
+  },
+  "domain_separation": {
+    "physics": {
+      "allowed_terms": ["operator", "field", "dynamics", "equations", "predictions"],
+      "required_evidence": "empirical",
+      "math_rigor": "high"
+    },
+    "mathematics": {
+      "allowed_terms": ["theorem", "proof", "axiom", "derivation", "formulation"],
+      "required_evidence": "logical",
+      "math_rigor": "strict"
+    },
+    "philosophy": {
+      "allowed_terms": ["framework", "interpretation", "implications", "perspective"],
+      "required_evidence": "conceptual",
+      "math_rigor": "medium"
+    }
+  },
+  "quality_metrics": {
+    "acceptable_spiritual_terms_per_1000_words": 2,
+    "max_grandiose_claims_per_section": 1,
+    "required_hedge_ratio": 0.8,
+    "scientific_terminology_ratio": 0.9
+  }
+}
