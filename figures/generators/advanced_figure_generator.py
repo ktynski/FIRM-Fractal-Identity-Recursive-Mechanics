@@ -1,7 +1,7 @@
 """
-Advanced Figure Generator: Additional FSCTF Visualizations
+Advanced Figure Generator: Additional FIRM Visualizations
 
-This module generates additional visualizations for the FSCTF framework,
+This module generates additional visualizations for the FIRM framework,
 focusing on mathematical foundations, physical emergence, and theory validation.
 """
 
@@ -14,7 +14,7 @@ import datetime
 from pathlib import Path
 from typing import Dict, List, Any
 
-# Import FSCTF foundations
+# Import FIRM foundations
 try:
     from ..foundation.operators.phi_recursion import PHI_VALUE
     from ..constants.fine_structure_alpha import FINE_STRUCTURE_ALPHA
@@ -27,7 +27,7 @@ except ImportError:
     ProvenanceTracker = None
 
 class AdvancedFigureGenerator:
-    """Generate advanced FSCTF visualizations"""
+    """Generate advanced FIRM visualizations"""
 
     def __init__(self):
         self.phi = PHI_VALUE
@@ -368,7 +368,7 @@ class AdvancedFigureGenerator:
 ADVANCED_FIGURE_GENERATOR = AdvancedFigureGenerator()
 
 def generate_advanced_figures() -> List[Dict[str, Any]]:
-    """Generate advanced FSCTF figures"""
+    """Generate advanced FIRM figures"""
     results = []
     results.append(ADVANCED_FIGURE_GENERATOR.generate_morphic_complexity_figure())
     results.append(ADVANCED_FIGURE_GENERATOR.generate_gauge_emergence_figure())

@@ -1,7 +1,7 @@
 """
 Cosmological Constant Derivation: Ω_Λ from φ-Native Vacuum Fluctuations
 
-This module implements the FSCTF derivation of the cosmological constant
+This module implements the FIRM derivation of the cosmological constant
 Ω_Λ = φ^(-1) × 1.108 from φ-native vacuum fluctuation dynamics using
 ζ-function heat kernel traces and golden morphic shell structure.
 
@@ -39,7 +39,7 @@ Mathematical Properties:
 References:
 - Heat kernel methods in quantum field theory
 - ζ-function regularization of vacuum energy
-- φ-native vacuum structure in FSCTF
+- φ-native vacuum structure in FIRM
 
 Scientific Integrity:
 - Zero free parameters: All structure from φ-vacuum geometry
@@ -48,7 +48,7 @@ Scientific Integrity:
 - No curve fitting: Pure vacuum fluctuation construction
 - Mathematical necessity: UNIQUE constant from φ-heat kernel
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -100,7 +100,7 @@ class CosmologicalConstantDerivation:
         # Target cosmological constant (observed)
         self._observed_omega_lambda = 0.6847  # Planck 2018
 
-        # FSCTF theoretical prediction
+        # FIRM theoretical prediction
         self._correction_factor = 1.108  # From your analysis
         self._predicted_omega_lambda = self._correction_factor * self._phi_inv
 

@@ -1,7 +1,7 @@
 """
 CMB Envelope Model: φ-Native Morphic Boltzmann Hierarchy
 
-This module implements the FSCTF replacement of empirical CMB envelope constants
+This module implements the FIRM replacement of empirical CMB envelope constants
 with a φ-native morphic Boltzmann hierarchy based on recursive coherence modes.
 
 Mathematical Foundation:
@@ -36,7 +36,7 @@ Mathematical Properties:
 - Exact: No fitting, pure geometric construction
 
 References:
-- FSCTF morphic coherence theory
+- FIRM morphic coherence theory
 - Recursive soul-lattice eigenmode analysis
 - FRST survivability in primordial fluctuations
 
@@ -47,7 +47,7 @@ Scientific Integrity:
 - No curve fitting: Pure geometric eigenmode construction
 - Mathematical necessity: UNIQUE envelope from FRST coherence
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: 2024-08-11
 Academic integrity verified: 2024-12-19
 """

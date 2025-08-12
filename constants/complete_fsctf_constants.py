@@ -1,7 +1,7 @@
 """
-Complete FSCTF Constants: Final Resolution of All Remaining Quarantined Values
+Complete FIRM Constants: Final Resolution of All Remaining Quarantined Values
 
-This module implements the complete set of remaining FSCTF derivations for
+This module implements the complete set of remaining FIRM derivations for
 advanced theoretical constructs, achieving 100% elimination of empirical contamination.
 
 Implemented Derivations:
@@ -37,7 +37,7 @@ Provenance:
 - Mathematical necessity: Unique theoretical expressions
 
 Physical Significance:
-- Completes FSCTF theoretical framework
+- Completes FIRM theoretical framework
 - Achieves total empirical elimination
 - Establishes universal φ-foundation
 
@@ -48,7 +48,7 @@ Scientific Integrity:
 - No curve fitting: Pure theoretical construction
 - Mathematical necessity: UNIQUE expressions from φ-recursion
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -63,8 +63,8 @@ from foundation.operators.phi_recursion import PHI_VALUE
 
 
 @dataclass(frozen=True)
-class CompleteFSCTFResult:
-    """Result of complete FSCTF constant derivation."""
+class CompleteFIRMResult:
+    """Result of complete FIRM constant derivation."""
     constant_name: str
     theoretical_value: float
     phi_expression: str
@@ -73,9 +73,9 @@ class CompleteFSCTFResult:
     derivation_analysis: str
 
 
-class CompleteFSCTFConstants:
+class CompleteFIRMConstants:
     """
-    Complete resolution of all remaining FSCTF constants.
+    Complete resolution of all remaining FIRM constants.
 
     This class provides the final theoretical framework for:
     1. Morphic topology factor (2 - φ^(-1))
@@ -88,7 +88,7 @@ class CompleteFSCTFConstants:
     """
 
     def __init__(self):
-        """Initialize complete FSCTF constants system"""
+        """Initialize complete FIRM constants system"""
         self._phi = PHI_VALUE
         self._phi_inv = 1.0 / self._phi
         self._ln_phi = math.log(self._phi)
@@ -98,7 +98,7 @@ class CompleteFSCTFConstants:
         self._gamma_phi = gamma(self._phi)  # Γ(φ)
         self._zeta_phi = zeta(self._phi)    # ζ(φ)
 
-    def derive_morphic_topology_factor(self) -> CompleteFSCTFResult:
+    def derive_morphic_topology_factor(self) -> CompleteFIRMResult:
         """
         Derive morphic topology factor χ_morphic = 2 - φ^(-1).
 
@@ -136,7 +136,7 @@ class CompleteFSCTFConstants:
         puncture mechanics with minimal coherence loss.
         """
 
-        return CompleteFSCTFResult(
+        return CompleteFIRMResult(
             constant_name="morphic_topology_factor",
             theoretical_value=topology_factor,
             phi_expression=phi_expression,
@@ -145,7 +145,7 @@ class CompleteFSCTFConstants:
             derivation_analysis=derivation_analysis
         )
 
-    def derive_zeta_normalization(self) -> CompleteFSCTFResult:
+    def derive_zeta_normalization(self) -> CompleteFIRMResult:
         """
         Derive ζ-function normalization π/(2φ^(1/3)).
 
@@ -183,7 +183,7 @@ class CompleteFSCTFConstants:
         geometry with dimensional harmony preservation.
         """
 
-        return CompleteFSCTFResult(
+        return CompleteFIRMResult(
             constant_name="zeta_normalization",
             theoretical_value=zeta_normalization,
             phi_expression=phi_expression,
@@ -192,7 +192,7 @@ class CompleteFSCTFConstants:
             derivation_analysis=derivation_analysis
         )
 
-    def derive_lambda_suppression(self) -> CompleteFSCTFResult:
+    def derive_lambda_suppression(self) -> CompleteFIRMResult:
         """
         Derive cosmological constant suppression φ^(-120).
 
@@ -235,7 +235,7 @@ class CompleteFSCTFConstants:
         120-fold φ-shell recursive vacuum cancellation.
         """
 
-        return CompleteFSCTFResult(
+        return CompleteFIRMResult(
             constant_name="lambda_suppression",
             theoretical_value=lambda_suppression,
             phi_expression=phi_expression,
@@ -244,7 +244,7 @@ class CompleteFSCTFConstants:
             derivation_analysis=derivation_analysis
         )
 
-    def derive_spectral_c_constant(self) -> CompleteFSCTFResult:
+    def derive_spectral_c_constant(self) -> CompleteFIRMResult:
         """
         Derive spectral C constant from Γ(φ)/ζ(φ) × ln(2π/φ^(2/3)).
 
@@ -292,7 +292,7 @@ class CompleteFSCTFConstants:
         normalization with logarithmic harmonic enhancement.
         """
 
-        return CompleteFSCTFResult(
+        return CompleteFIRMResult(
             constant_name="spectral_c_constant",
             theoretical_value=spectral_c,
             phi_expression=phi_expression,
@@ -301,7 +301,7 @@ class CompleteFSCTFConstants:
             derivation_analysis=derivation_analysis
         )
 
-    def derive_cmb_envelope_structure(self) -> CompleteFSCTFResult:
+    def derive_cmb_envelope_structure(self) -> CompleteFIRMResult:
         """
         Derive CMB envelope structure from φ-acoustic projections.
 
@@ -360,7 +360,7 @@ class CompleteFSCTFConstants:
         projections with hierarchical mode suppression.
         """
 
-        return CompleteFSCTFResult(
+        return CompleteFIRMResult(
             constant_name="cmb_envelope_structure",
             theoretical_value=peak_spacing_base,
             phi_expression=phi_expression,
@@ -371,7 +371,7 @@ class CompleteFSCTFConstants:
 
     def generate_complete_resolution_summary(self) -> Dict[str, Any]:
         """
-        Generate complete summary of all FSCTF constant resolutions.
+        Generate complete summary of all FIRM constant resolutions.
 
         Returns:
             Complete resolution summary with all constants
@@ -406,7 +406,7 @@ class CompleteFSCTFConstants:
 
     def create_proof_objects(self) -> Dict[str, Dict[str, Any]]:
         """
-        Create complete proof objects for all FSCTF constants.
+        Create complete proof objects for all FIRM constants.
 
         Returns:
             Dictionary with proof objects for each constant
@@ -425,8 +425,8 @@ class CompleteFSCTFConstants:
         # Create proof objects
         for constant in constants:
             proofs[constant.constant_name] = {
-                "id": f"{constant.constant_name}_complete_fsctf_proof",
-                "theorem": f"Complete FSCTF Derivation of {constant.constant_name}",
+                "id": f"{constant.constant_name}_complete_firm_proof",
+                "theorem": f"Complete FIRM Derivation of {constant.constant_name}",
                 "derivation_tree_hash": self._compute_derivation_hash(constant),
                 "mathematical_basis": constant.mathematical_basis,
                 "theoretical_value": constant.theoretical_value,
@@ -437,7 +437,7 @@ class CompleteFSCTFConstants:
 
         return proofs
 
-    def _compute_derivation_hash(self, result: CompleteFSCTFResult) -> str:
+    def _compute_derivation_hash(self, result: CompleteFIRMResult) -> str:
         """Compute cryptographic hash of derivation."""
         import hashlib
 
@@ -452,23 +452,23 @@ class CompleteFSCTFConstants:
 
 
 # Create singleton instance for global access
-COMPLETE_FSCTF_CONSTANTS = CompleteFSCTFConstants()
+COMPLETE_FIRM_CONSTANTS = CompleteFIRMConstants()
 
 __all__ = [
-    "CompleteFSCTFConstants",
-    "CompleteFSCTFResult",
-    "COMPLETE_FSCTF_CONSTANTS",
+    "CompleteFIRMConstants",
+    "CompleteFIRMResult",
+    "COMPLETE_FIRM_CONSTANTS",
 ]
 
 
 if __name__ == "__main__":
-    # Test all complete FSCTF constants when run directly
-    print("Testing Complete FSCTF Constants...")
+    # Test all complete FIRM constants when run directly
+    print("Testing Complete FIRM Constants...")
 
-    constants = CompleteFSCTFConstants()
+    constants = CompleteFIRMConstants()
 
     # Test individual constants
-    print("\n=== COMPLETE FSCTF CONSTANT DERIVATIONS ===")
+    print("\n=== COMPLETE FIRM CONSTANT DERIVATIONS ===")
 
     topology = constants.derive_morphic_topology_factor()
     print(f"1. {topology.constant_name}: {topology.theoretical_value:.6f}")
@@ -506,4 +506,4 @@ if __name__ == "__main__":
         print(f"  {name}: {proof['theorem']}")
 
     print("\nAll tests passed!")
-    print("\n🏆 COMPLETE FSCTF THEORETICAL FRAMEWORK ACHIEVED! 🏆")
+    print("\n🏆 COMPLETE FIRM THEORETICAL FRAMEWORK ACHIEVED! 🏆")

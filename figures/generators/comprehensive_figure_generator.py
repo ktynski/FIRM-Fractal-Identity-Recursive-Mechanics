@@ -1,8 +1,8 @@
 """
-Comprehensive Figure Generator: Complete FSCTF Visualization Suite
+Comprehensive Figure Generator: Complete FIRM Visualization Suite
 
 This module generates a comprehensive set of visualizations covering all major
-components of the FSCTF framework with complete mathematical provenance.
+components of the FIRM framework with complete mathematical provenance.
 
 Figure Categories:
 1. Mathematical Foundations (φ-recursion, Grace Operator, fixed points)
@@ -29,7 +29,7 @@ import json
 import datetime
 from pathlib import Path
 
-# Import FSCTF mathematical foundations
+# Import FIRM mathematical foundations
 try:
     from ..foundation.operators.phi_recursion import PHI_VALUE
     from ..foundation.operators.grace_operator import GRACE_OPERATOR
@@ -77,7 +77,7 @@ class ComprehensiveFigureResult:
 
 class ComprehensiveFigureGenerator:
     """
-    Comprehensive figure generation system for complete FSCTF visualization
+    Comprehensive figure generation system for complete FIRM visualization
 
     Generates publication-quality figures covering all major theoretical components
     with complete mathematical provenance and academic transparency.
@@ -230,7 +230,7 @@ class ComprehensiveFigureGenerator:
         return results
 
     def generate_all_figures(self) -> List[ComprehensiveFigureResult]:
-        """Generate complete set of figures for FSCTF framework"""
+        """Generate complete set of figures for FIRM framework"""
         all_results = []
 
         # Generate all figure categories
@@ -599,8 +599,8 @@ class ComprehensiveFigureGenerator:
 # Global instance
 COMPREHENSIVE_FIGURE_GENERATOR = ComprehensiveFigureGenerator()
 
-def generate_all_fsctf_figures() -> List[ComprehensiveFigureResult]:
-    """Generate complete set of FSCTF figures"""
+def generate_all_firm_figures() -> List[ComprehensiveFigureResult]:
+    """Generate complete set of FIRM figures"""
     return COMPREHENSIVE_FIGURE_GENERATOR.generate_all_figures()
 
 def generate_mathematical_foundations() -> List[ComprehensiveFigureResult]:
@@ -633,7 +633,7 @@ __all__ = [
     "ComprehensiveFigureResult",
     "ComprehensiveFigureGenerator",
     "COMPREHENSIVE_FIGURE_GENERATOR",
-    "generate_all_fsctf_figures",
+    "generate_all_firm_figures",
     "generate_mathematical_foundations",
     "generate_physical_emergence",
     "generate_cosmological_predictions",

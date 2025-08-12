@@ -790,7 +790,7 @@ verification_passed = True  # Stage completed successfully
                     "euler_characteristic": manifold.invariants.euler_characteristic if manifold else None,
                     "orientable": manifold.invariants.orientable if manifold else None,
                     "dimension": manifold.dimension if manifold else None,
-                    "fsctf_role": manifold.fsctf_role if manifold else None,
+                    "firm_role": manifold.firm_role if manifold else None,
                     "mathematical_justification": manifold.mathematical_justification if manifold else None
                 }
             except Exception:

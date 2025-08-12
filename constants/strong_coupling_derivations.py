@@ -1,7 +1,7 @@
 """
 Strong Coupling Derivations: φ-Native QCD Coupling Constants
 
-This module implements FSCTF derivations for strong coupling constants,
+This module implements FIRM derivations for strong coupling constants,
 replacing empirical factors with exact φ-mathematics and ζ-function expressions.
 
 Implemented Derivations:
@@ -39,7 +39,7 @@ Scientific Integrity:
 - No curve fitting: Pure gauge theory construction
 - Mathematical necessity: UNIQUE couplings from φ-RG flow
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """

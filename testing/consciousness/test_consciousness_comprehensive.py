@@ -1,8 +1,8 @@
 """
-Comprehensive Tests for Consciousness Module: FSCTF Mathematical Integrity
+Comprehensive Tests for Consciousness Module: FIRM Mathematical Integrity
 
 This module implements exhaustive testing of the consciousness module to ensure:
-1. All mathematical derivations are correct and traceable to FSCTF axioms
+1. All mathematical derivations are correct and traceable to FIRM axioms
 2. No empirical values contaminate the mathematical purity
 3. All φ-relationships are mathematically sound
 4. Consciousness emergence follows pure mathematical necessity
@@ -52,7 +52,7 @@ class TestConsciousnessModule(unittest.TestCase):
         self.critical_depth = 7
         self.tolerance = 1e-10  # Numerical precision tolerance
 
-        # Expected mathematical relationships (derived from FSCTF)
+        # Expected mathematical relationships (derived from FIRM)
         self.expected_phi_7 = self.phi ** 7  # ≈ 29.034
         self.expected_xi_threshold = self.expected_phi_7 + 1  # ≈ 30.034
         self.expected_base_freq = 2.0 * (self.phi ** 3)  # 2φ^3 ≈ 8.472
@@ -438,7 +438,7 @@ def run_consciousness_tests():
 
     print("="*80)
     print("CONSCIOUSNESS MODULE COMPREHENSIVE TESTING")
-    print("FSCTF Mathematical Integrity Verification")
+    print("FIRM Mathematical Integrity Verification")
     print("="*80)
 
     result = runner.run(suite)

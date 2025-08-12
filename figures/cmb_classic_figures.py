@@ -1,5 +1,5 @@
 """
-CMB Classic Figures (Theory-Only): FSCTF φ-harmonic constructions
+CMB Classic Figures (Theory-Only): FIRM φ-harmonic constructions
 
 Generates famous CMB-style figures without empirical inputs:
 - TT/TE/EE φ-harmonic spectra (dimensionless acoustic-scaled multipole m = ℓ/ℓ_A)

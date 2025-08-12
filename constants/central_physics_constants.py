@@ -166,7 +166,7 @@ class CentralPhysicsConstants:
         """
         # Use fundamental constants derivation for Planck temperature  
         try:
-            from constants.fundamental_constants_fsctf import FUNDAMENTAL_CONSTANTS_DERIVATION
+            from constants.fundamental_constants_firm import FUNDAMENTAL_CONSTANTS_DERIVATION
             planck_result = FUNDAMENTAL_CONSTANTS_DERIVATION.derive_planck_constant()
             # Get ALL derived fundamental constants (no hardcoding!)
             c_result = FUNDAMENTAL_CONSTANTS_DERIVATION.derive_speed_of_light()
@@ -196,7 +196,7 @@ class CentralPhysicsConstants:
         Derivation: ℏ = M_φ × L_φ² / T_φ × φ⁶ (with morphic action correction)
         """
         if self._planck_constant_result is None:
-            from constants.fundamental_constants_fsctf import FUNDAMENTAL_CONSTANTS_DERIVATION
+            from constants.fundamental_constants_firm import FUNDAMENTAL_CONSTANTS_DERIVATION
             self._planck_constant_result = FUNDAMENTAL_CONSTANTS_DERIVATION.derive_planck_constant()
         return self._planck_constant_result.theoretical_value
 
@@ -206,7 +206,7 @@ class CentralPhysicsConstants:
         Gravitational constant G from φ-derived morphic contraction rate
         
         Derivation: G = ℏc/(m_{P,φ} × φ^5)² where m_{P,φ} = m_P/φ^5
-        From docs/derivations/derivation_24_fundamental_constants_fsctf.tex
+        From docs/derivations/derivation_24_fundamental_constants_firm.tex
         """
         # Get φ-derived Planck constant and speed of light
         hbar = self.planck_constant_j_s

@@ -1,7 +1,7 @@
 """
 φ-Shells Cooling: 90 φ-Shell Cosmological Temperature Evolution
 
-This module implements the FSCTF derivation of the 90 φ-shell cooling process
+This module implements the FIRM derivation of the 90 φ-shell cooling process
 from cosmic recombination (~3000 K) to present CMB temperature (φ-derived).
 
 Mathematical Foundation:
@@ -26,7 +26,7 @@ Scientific Integrity:
 - Falsifiable prediction: Exact shell count or theory is wrong
 - Mathematical necessity: Unique expression from φ-cooling
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: 2024-08-11
 Academic integrity verified: 2024-12-19
 """
@@ -51,9 +51,9 @@ class PhiShellsCoolingResult:
 
 class PhiShellsCoolingDerivation:
     """
-    Derive the 90 φ-shell cooling process from FSCTF thermal dynamics.
+    Derive the 90 φ-shell cooling process from FIRM thermal dynamics.
 
-    This class provides the complete FSCTF derivation of the cosmic cooling
+    This class provides the complete FIRM derivation of the cosmic cooling
     process as discrete φ-shell transitions from recombination to present.
 
     The shell count emerges from φ-recursive temperature suppression.
@@ -91,7 +91,7 @@ class PhiShellsCoolingDerivation:
         # Classical estimate (simple φ-cooling)
         simple_shells = math.log(temp_ratio) / self._ln_phi
 
-        # FSCTF correction: sixth-root φ-suppression per shell
+        # FIRM correction: sixth-root φ-suppression per shell
         # T_n = T_recomb × φ^(-n/6)
         # Solving: T_now = T_recomb × φ^(-n/6)
         # Therefore: n = 6 × log_φ(T_recomb/T_now)
@@ -113,7 +113,7 @@ class PhiShellsCoolingDerivation:
            - Shell count: n = log_φ({temp_ratio:.0f}) ≈ {simple_shells:.1f}
            - Problem: Only ~15 shells (too few!)
 
-        3. FSCTF Multi-Level Cooling:
+        3. FIRM Multi-Level Cooling:
            - Each φ-shell: Complex recursive transition
            - Energy → entropy: φ per layer
            - Spacetime expansion: φ² or φ³ dilution
@@ -130,7 +130,7 @@ class PhiShellsCoolingDerivation:
            - Total cooling: φ^(-90/6) = φ^(-15) ≈ {self._phi**(-15):.0e}
            - Matches: {temp_ratio:.0f} (excellent agreement)
 
-        6. FSCTF Thermal Mechanism:
+        6. FIRM Thermal Mechanism:
            - Not continuous: Discrete φ-shell jumps
            - Morphic cooling: Coherence suppression per shell
            - Natural quantization: φ-recursive thermal dynamics

@@ -1,7 +1,7 @@
 """
 Weinberg Angle Exact Derivation: sin²θ_W from φ-Native Electroweak Mixing
 
-This module implements the exact FSCTF derivation of the Weinberg angle
+This module implements the exact FIRM derivation of the Weinberg angle
 sin²θ_W ≈ 0.231 from φ-native electroweak gauge mixing without empirical
 gauge coupling assumptions.
 
@@ -38,7 +38,7 @@ Mathematical Properties:
 
 References:
 - Electroweak theory and gauge mixing
-- φ-graded gauge hierarchy in FSCTF
+- φ-graded gauge hierarchy in FIRM
 - Morphic symmetry breaking mechanisms
 
 Scientific Integrity:
@@ -48,7 +48,7 @@ Scientific Integrity:
 - No curve fitting: Pure symmetry breaking construction
 - Mathematical necessity: UNIQUE angle from φ-morphic mixing
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -257,7 +257,7 @@ class WeinbergAngleExactDerivation:
            - Observed: sin²θ_W = {self._observed_sin2_theta_w:.4f} (PDG 2020)
            - Agreement: {abs(sin2_theta_w - self._observed_sin2_theta_w)/self._observed_sin2_theta_w * 100:.2f}% error (excellent)
 
-        6. FSCTF Significance:
+        6. FIRM Significance:
            - Pure theory: No empirical gauge coupling inputs
            - φ-recursive: Emerges from morphic field structure
            - Universal: Same mechanism for all gauge theories

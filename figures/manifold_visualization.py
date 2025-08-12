@@ -35,7 +35,7 @@ UI_SETTINGS = {
     "button_text": "Math Theory",
     "keyboard_shortcut": "M",
     "display_title": "Mathematical Manifold Progression",
-    "description": "Topological foundations of FSCTF cosmogenesis"
+    "description": "Topological foundations of FIRM cosmogenesis"
 }
 
 
@@ -122,7 +122,7 @@ def visualize_manifold(manifold_type: ManifoldType) -> Dict[str, Any]:
     return {
         "name": manifold.name,
         "description": manifold.description,
-        "fsctf_role": manifold.fsctf_role,
+        "firm_role": manifold.firm_role,
         "mathematical_justification": manifold.mathematical_justification,
         "color": COLORS.get(manifold_type.value, "#2ecc71"),
         "invariants": {

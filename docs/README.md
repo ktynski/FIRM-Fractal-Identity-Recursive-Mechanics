@@ -34,6 +34,6 @@ Acceptance criteria
 ### Rosetta & Spectral Appendix
 - See `docs/SpectralAppendix.md` for:
   - One-page Rosetta table (CT ↔ pure math ↔ geometry ↔ ZX)
-  - Hadamard Cascade Lemma (FSCTF) with LC-equivalence clause
+  - Hadamard Cascade Lemma (FIRM) with LC-equivalence clause
   - Spectral convention (operator, boundary, extension, RG anchor)
   - Constants table (dimensionless vs scale-bearing; firewall-gated ppm)

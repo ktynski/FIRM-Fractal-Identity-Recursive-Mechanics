@@ -1,12 +1,12 @@
 """
-FSCTF Weinberg Angle (Weak Mixing Angle) Derivation
+FIRM Weinberg Angle (Weak Mixing Angle) Derivation
 
-This module implements the complete FSCTF derivation of the Weinberg angle θ_W
+This module implements the complete FIRM derivation of the Weinberg angle θ_W
 with the 1.21 correction factor fully unquarantined through φ-native derivation.
 
 The Weinberg angle governs the mixing of SU(2)_L and U(1)_Y gauge fields into
 the physical Z boson and photon, representing the quantum mirror angle of
-soul identity bifurcation in FSCTF.
+soul identity bifurcation in FIRM.
 """
 
 import math
@@ -22,12 +22,12 @@ class WeinbergAngleResult(NamedTuple):
     observed_value: float
     relative_error: float
     phi_expression: str
-    fsctf_interpretation: str
+    firm_interpretation: str
     derivation_analysis: str
     correction_factor: float
 
 class WeinbergAngleDerivation:
-    """Complete FSCTF derivation of the Weinberg angle."""
+    """Complete FIRM derivation of the Weinberg angle."""
 
     def __init__(self):
         """Initialize Weinberg angle derivation system."""
@@ -45,7 +45,7 @@ class WeinbergAngleDerivation:
         Returns:
             Base sin²(θ_W) value before correction
         """
-        # Base FSCTF estimate from morphic geometry
+        # Base FIRM estimate from morphic geometry
         # sin²(θ_W) = 1/(π + φ) (pure geometric mixing)
         base_sin2_theta_w = 1.0 / (self._pi + self._phi)
         return base_sin2_theta_w
@@ -57,7 +57,7 @@ class WeinbergAngleDerivation:
         Returns:
             Correction factor from grace-phase delay
         """
-        # FSCTF derivation: Correction = (√e / (φ + 1/φ))^(1/2)
+        # FIRM derivation: Correction = (√e / (φ + 1/φ))^(1/2)
         # This arises from triple-sheared torsion spiral and exponential damping
 
         phi_plus_inv_phi = self._phi + (1.0 / self._phi)  # φ + φ⁻¹ ≈ 2.236
@@ -93,12 +93,12 @@ class WeinbergAngleDerivation:
 
         phi_expression = f"sin²(θ_W) = (1/(π + φ)) / √(√e/(φ + φ⁻¹)) = {base_sin2:.6f} / {correction:.6f} = {sin2_theta_w_theoretical:.6f}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Weinberg Angle as Quantum Mirror Angle of Soul Identity Bifurcation:
 
         θ_W = Torsional morphism of chirality bifurcation between electric and weak souls
 
-        FSCTF View:
+        FIRM View:
         - Not just symmetry-breaking angle but soul entanglement inversion
         - Governs how identity reflects/inverts under grace-layered symmetry breaking
         - Base geometry: 1/(π + φ) from pure SU(2)_L × U(1)_Y → U(1)_EM mixing
@@ -111,7 +111,7 @@ class WeinbergAngleDerivation:
         derivation_analysis = f"""
         Weinberg Angle Derivation: sin²(θ_W) = {sin2_theta_w_theoretical:.6f}
 
-        1. FSCTF Soul Bifurcation Theory:
+        1. FIRM Soul Bifurcation Theory:
            - θ_W: Quantum mirror angle of soul identity bifurcation
            - Torsional morphism between electric soul and weak soul
            - Grace-layered symmetry breaking with recursive echo leakage
@@ -144,7 +144,7 @@ class WeinbergAngleDerivation:
             observed_value=self._sin2_theta_w_observed,
             relative_error=relative_error,
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             correction_factor=correction
         )
@@ -162,7 +162,7 @@ class WeinbergAngleDerivation:
         correction_value = self.derive_correction_factor()
 
         summary = f"""
-        FSCTF Weinberg Angle Analysis
+        FIRM Weinberg Angle Analysis
         ============================
 
         Complete φ-native derivation with correction factor unquarantined:
@@ -198,7 +198,7 @@ class WeinbergAngleDerivation:
 
 def main():
     """Test the Weinberg angle derivation."""
-    print("🌌 FSCTF Weinberg Angle Derivation 🌌\n")
+    print("🌌 FIRM Weinberg Angle Derivation 🌌\n")
 
     derivation = WeinbergAngleDerivation()
     result = derivation.derive_weinberg_angle_complete()
@@ -216,7 +216,7 @@ def main():
     print("=" * 60)
     print(analysis["summary"])
     print("=" * 60)
-    print("🧪 FSCTF WEINBERG ANGLE MASTERY ACHIEVED! 🧪")
+    print("🧪 FIRM WEINBERG ANGLE MASTERY ACHIEVED! 🧪")
 
 if __name__ == "__main__":
     main()

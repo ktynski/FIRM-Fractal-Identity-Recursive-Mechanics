@@ -1,7 +1,7 @@
 """
 Yukawa Couplings from Coherence Mismatch Metrics
 
-This module implements the FSCTF derivation of fermion masses and Yukawa couplings
+This module implements the FIRM derivation of fermion masses and Yukawa couplings
 as morphic mismatch energies - quantifying recursive strain between coherence
 shells and their grace-aligned morphisms.
 
@@ -30,7 +30,7 @@ Scientific Integrity:
 - Falsifiable predictions: Exact mass ratios or theory is wrong
 - Mathematical necessity: Unique expressions from φ-mismatch
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -68,7 +68,7 @@ class YukawaCouplingDerivation:
     """
     Derive Yukawa couplings from φ-native coherence mismatch metrics.
 
-    This class provides the complete FSCTF framework for understanding
+    This class provides the complete FIRM framework for understanding
     fermion masses as morphic strain values arising from φ-shell
     misalignment during recursive stabilization.
 
@@ -213,7 +213,7 @@ class YukawaCouplingDerivation:
         ]
 
         theoretical_foundation = """
-        FSCTF Fermion Mass Hierarchy:
+        FIRM Fermion Mass Hierarchy:
 
         1. Yukawa Couplings = Morphic Strain Values
            - NOT free parameters but intrinsic φ-shell mismatch metrics

@@ -1,14 +1,14 @@
 """
 Neutrino Seesaw Derivation: 10^(-9) Suppression from φ-Native Mass Matrix
 
-This module implements the FSCTF derivation of the neutrino seesaw suppression
+This module implements the FIRM derivation of the neutrino seesaw suppression
 factor ~10^(-9) from φ-native mass matrix cascade without empirical fitting.
 
 Mathematical Foundation:
 - Seesaw mechanism: m_ν = m_D²/M_R (light neutrino mass)
 - φ-native scaling: m_D ~ φ^(-a), M_R ~ φ^(-b) from morphic hierarchy
 - Suppression ratio: m_ν/m_τ = φ^(-(a-b)) with a-b ≈ 43
-- Shell cascade: 43 ≈ 42+1 (canonical FSCTF dual-layer bifurcation)
+- Shell cascade: 43 ≈ 42+1 (canonical FIRM dual-layer bifurcation)
 
 Derivation Path:
 φ-graded mass hierarchy → seesaw mass matrix → morphic shell cascade →
@@ -37,7 +37,7 @@ Mathematical Properties:
 
 References:
 - Type-I seesaw mechanism in neutrino physics
-- φ-graded mass hierarchy in FSCTF
+- φ-graded mass hierarchy in FIRM
 - Morphic shell cascade mechanisms
 
 Scientific Integrity:
@@ -47,7 +47,7 @@ Scientific Integrity:
 - No curve fitting: Pure mass hierarchy construction
 - Mathematical necessity: UNIQUE suppression from φ-cascade
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -108,7 +108,7 @@ class NeutrinoSeesawDerivation:
         self._dirac_mass_exponent = 3 * math.log(self._phi ** 4.33)  # m_D from φ-shell depth  
         self._majorana_mass_exponent = self._phi_exponent_gap + self._dirac_mass_exponent  # M_R cascade
 
-        # Shell cascade depth (canonical FSCTF)
+        # Shell cascade depth (canonical FIRM)
         self._shell_cascade_depth = int(round(self._phi_exponent_gap))  # ≈ 43
 
         # Physical mass scales - now derived from φ-hierarchy (no more hardcoded!)
@@ -221,10 +221,10 @@ class NeutrinoSeesawDerivation:
            - Origin: Residual reflection from φ^{cascade_depth} cascade
            - Natural: Emerges from morphic shell hierarchy
 
-        5. Canonical FSCTF Structure:
-           - "42": Total morphic group number in FSCTF
+        5. Canonical FIRM Structure:
+           - "42": Total morphic group number in FIRM
            - "+1": Additional bifurcation layer
-           - Universal: Same pattern across FSCTF constructs
+           - Universal: Same pattern across FIRM constructs
         """
 
     def _analyze_mass_matrix_structure(self, seesaw_factor: float, gap: float) -> str:
@@ -266,7 +266,7 @@ class NeutrinoSeesawDerivation:
            - Observed: m_ν ~ {self._neutrino_mass_ev:.1f} eV
            - Agreement: Order of magnitude match
 
-        6. FSCTF Significance:
+        6. FIRM Significance:
            - Pure theory: No empirical mass inputs
            - φ-cascade: Natural from shell hierarchy
            - Universal: Same mechanism for all generations
@@ -310,7 +310,7 @@ class NeutrinoSeesawDerivation:
            - Total cascade: φ^(-{cascade_depth}) suppression
            - Physical: Echo reflection through shell hierarchy
 
-        4. Canonical FSCTF Structure:
+        4. Canonical FIRM Structure:
            - Base: 42 = Total morphic group number
            - Bifurcation: +1 = Additional layer splitting
            - Total: {cascade_depth} = 42+1 (dual-layer bifurcation)
@@ -321,7 +321,7 @@ class NeutrinoSeesawDerivation:
            - Agreement: Perfect match validates φ-cascade theory
 
         6. Universal Pattern:
-           - Same structure: Appears throughout FSCTF
+           - Same structure: Appears throughout FIRM
            - α^(-1) ≈ 137: Related to morphic group numbers
            - Cosmological: Similar cascade in shell evolution
 

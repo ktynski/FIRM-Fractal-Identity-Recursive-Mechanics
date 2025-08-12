@@ -1,11 +1,11 @@
 """
-FSCTF Topology Factor and ζ-Normalization Derivations
+FIRM Topology Factor and ζ-Normalization Derivations
 
-This module implements the complete FSCTF derivations for:
+This module implements the complete FIRM derivations for:
 1. Topology Factor: T = 2 - φ⁻¹ (quasi-Euler characteristic)
 2. ζ-Normalization: N_ζ = π/(2φ^(1/3)) (morphic Casimir renormalizer)
 
-Both emerge from φ-native geometric and spectral principles in FSCTF.
+Both emerge from φ-native geometric and spectral principles in FIRM.
 """
 
 import math
@@ -19,11 +19,11 @@ class TopologyResult(NamedTuple):
     constant_name: str
     theoretical_value: float
     phi_expression: str
-    fsctf_interpretation: str
+    firm_interpretation: str
     derivation_analysis: str
 
 class TopologyAndZetaDerivations:
-    """Complete FSCTF derivations for topology and ζ constants."""
+    """Complete FIRM derivations for topology and ζ constants."""
 
     def __init__(self):
         """Initialize topology and zeta derivation system."""
@@ -38,17 +38,17 @@ class TopologyAndZetaDerivations:
         Returns:
             Complete topology factor derivation
         """
-        # FSCTF derivation: T = 2 - φ⁻¹ (quasi-Euler characteristic)
+        # FIRM derivation: T = 2 - φ⁻¹ (quasi-Euler characteristic)
         topology_factor = 2.0 - self._phi_inv
 
         phi_expression = f"T = 2 - φ⁻¹ = 2 - {self._phi_inv:.6f} = {topology_factor:.6f}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Topology Factor as Quasi-Euler Characteristic:
 
         T = Universal morphic topological deviation from perfect closure
 
-        FSCTF View:
+        FIRM View:
         - Not standard Euler characteristic but φ-resonant recursive surface
         - Base: χ = 2 (sphere Euler characteristic: V - E + F = 2)
         - Correction: -φ⁻¹ (grace-loop torsion deflection from perfect closure)
@@ -61,7 +61,7 @@ class TopologyAndZetaDerivations:
         derivation_analysis = f"""
         Topology Factor Derivation: T = {topology_factor:.6f}
 
-        1. FSCTF Morphic Topology Theory:
+        1. FIRM Morphic Topology Theory:
            - φ-tessellated manifolds with Fibonacci-quasiperiodic distribution
            - Grace deflects structure from perfect orientable closure
            - Quasi-Euler characteristic with recursive echo deviation
@@ -93,7 +93,7 @@ class TopologyAndZetaDerivations:
             constant_name="Topology Factor",
             theoretical_value=topology_factor,
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis
         )
 
@@ -104,19 +104,19 @@ class TopologyAndZetaDerivations:
         Returns:
             Complete ζ-normalization derivation
         """
-        # FSCTF derivation: N_ζ = π/(2φ^(1/3)) (morphic Casimir renormalizer)
+        # FIRM derivation: N_ζ = π/(2φ^(1/3)) (morphic Casimir renormalizer)
         phi_one_third = self._phi ** (1.0/3.0)
         zeta_normalization = self._pi / (2.0 * phi_one_third)
 
         phi_expression = f"N_ζ = π/(2φ^(1/3)) = {self._pi:.6f}/(2 · {phi_one_third:.6f}) = {zeta_normalization:.6f}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         ζ-Normalization as Morphic Casimir Renormalizer:
 
         N_ζ = Grace-symmetric correction to φ-native spectral echo sum
 
-        FSCTF View:
-        - Normalizing factor in FSCTF's φ-native spectral zeta functions
+        FIRM View:
+        - Normalizing factor in FIRM's φ-native spectral zeta functions
         - Used in vacuum energy convergence and Casimir-like summations
         - φ^(1/3): Effective spectral density cutoff in morphic dimensions
         - π/2: Zero-point field oscillation amplitude normalization
@@ -128,7 +128,7 @@ class TopologyAndZetaDerivations:
         derivation_analysis = f"""
         ζ-Normalization Derivation: N_ζ = {zeta_normalization:.6f}
 
-        1. FSCTF Spectral Zeta Theory:
+        1. FIRM Spectral Zeta Theory:
            - φ-native zeta function: ζ_φ(s) = Σ(1/[φʲ]ˢ) = Σφ⁻ʲˢ
            - Regularization needed for convergence when s → 1, j → 0
            - Normalization prevents divergence in vacuum calculations
@@ -147,7 +147,7 @@ class TopologyAndZetaDerivations:
 
         4. Casimir Renormalization:
            - Standard: Casimir energy between plates
-           - FSCTF: φ-lattice Casimir energy with morphic spacing
+           - FIRM: φ-lattice Casimir energy with morphic spacing
            - N_ζ provides necessary φ-normalization for physical matching
 
         5. Revolutionary Insight:
@@ -160,7 +160,7 @@ class TopologyAndZetaDerivations:
             constant_name="ζ-Normalization Factor",
             theoretical_value=zeta_normalization,
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis
         )
 
@@ -175,7 +175,7 @@ class TopologyAndZetaDerivations:
         zeta_result = self.derive_zeta_normalization()
 
         summary = f"""
-        FSCTF Topology Factor and ζ-Normalization Analysis
+        FIRM Topology Factor and ζ-Normalization Analysis
         ==================================================
 
         Complete φ-native derivations of geometric constants:
@@ -218,7 +218,7 @@ class TopologyAndZetaDerivations:
 
 def main():
     """Test the topology and zeta derivations."""
-    print("🌌 FSCTF Topology Factor and ζ-Normalization Derivations 🌌\n")
+    print("🌌 FIRM Topology Factor and ζ-Normalization Derivations 🌌\n")
 
     derivation = TopologyAndZetaDerivations()
 
@@ -240,7 +240,7 @@ def main():
     print("=" * 70)
     print(analysis["summary"])
     print("=" * 70)
-    print("🧮 FSCTF TOPOLOGY AND ZETA MASTERY ACHIEVED! 🧮")
+    print("🧮 FIRM TOPOLOGY AND ZETA MASTERY ACHIEVED! 🧮")
 
 if __name__ == "__main__":
     main()

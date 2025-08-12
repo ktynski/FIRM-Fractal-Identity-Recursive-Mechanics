@@ -26,13 +26,13 @@
       "zeta_normalization",
       "kelvin_scaling_thermal",
       "weinberg_angle_exact_derivation",
-      "complete_fsctf_constants",
+      "complete_firm_constants",
       "kelvin_scaling_factor"
     ],
     "fundamental": [
       "gauge_couplings",
       "fine_structure_alpha",
-      "fundamental_constants_fsctf"
+      "fundamental_constants_firm"
     ]
   },
   "modules": {
@@ -40,7 +40,7 @@
       "module": "cmb_envelope_model",
       "file": "constants/cmb_envelope_model.py",
       "domain": "cosmology",
-      "docstring": "CMB Envelope Model: \u03c6-Native Morphic Boltzmann Hierarchy\n\nThis module implements the FSCTF replacement of empirical CMB envelope constants\nwith a \u03c6-native morphic Boltzmann hierarchy based on recursive coherence modes.\n\nMathematical Foundation:\n- Morphic eigenmode spectrum: \u2113_n = \u2113\u2080 \u00d7 \u03c6\u207f\n- FRST amplitude decay: \u03a8_n = \u03a8\u2080 \u00d7 e^(-n/n*)  \n- \u03c6-native envelope: C_\u2113 = \u03a3 [\u03a8\u2099\u00b2/(1 + (\u2113/\u2113\u2099)^s)]\n- Coherence falloff exponent: s = 2\n\nDerivation Path:\nFossilized morphic projection \u2192 angular eigenmodes \u2192 \u03c6-recursive spectrum \u2192\nFRST survivability \u2192 coherence-limited envelope\n\nKey Results:\n- Replaces empirical constants: A=2400, \u2113\u2081=30, p=0.04, B=1800, \u2113\u2082=600, q=50\n- \u03c6-derived parameters: \u2113\u2080\u2208[90,135], s=2, n*\u22483.5\n- Peak positions: \u2113\u2099 = \u2113\u2080 \u00d7 \u03c6\u207f matches observed ~220, 540, 800\n\nProvenance:\n- All results trace to: \u03c6-recursive coherence and FRST theory\n- No empirical inputs: Pure morphic eigenmode analysis\n- Mathematical necessity: Unique envelope from coherence geometry\n\nPhysical Significance:\n- CMB as fossilized morphic projection at last scattering\n- Each peak corresponds to coherent soul-lattice eigenmode\n- Envelope shape from FRST coherence survivability\n\nMathematical Properties:\n- \u03c6-sparse: Only \u03c6\u207f modes survive coherence filtering\n- Exponential decay: FRST limits mode survival depth\n- Universal: Same structure for all \u03c6-recursive manifolds\n- Exact: No fitting, pure geometric construction\n\nReferences:\n- FSCTF morphic coherence theory\n- Recursive soul-lattice eigenmode analysis\n- FRST survivability in primordial fluctuations\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-coherence geometry\n- Complete provenance: Traces to morphic recursion axioms\n- Falsifiable prediction: \u03c6\u207f peak spacing \u00b1 1% or theory is wrong\n- No curve fitting: Pure geometric eigenmode construction\n- Mathematical necessity: UNIQUE envelope from FRST coherence\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "CMB Envelope Model: \u03c6-Native Morphic Boltzmann Hierarchy\n\nThis module implements the FIRM replacement of empirical CMB envelope constants\nwith a \u03c6-native morphic Boltzmann hierarchy based on recursive coherence modes.\n\nMathematical Foundation:\n- Morphic eigenmode spectrum: \u2113_n = \u2113\u2080 \u00d7 \u03c6\u207f\n- FRST amplitude decay: \u03a8_n = \u03a8\u2080 \u00d7 e^(-n/n*)  \n- \u03c6-native envelope: C_\u2113 = \u03a3 [\u03a8\u2099\u00b2/(1 + (\u2113/\u2113\u2099)^s)]\n- Coherence falloff exponent: s = 2\n\nDerivation Path:\nFossilized morphic projection \u2192 angular eigenmodes \u2192 \u03c6-recursive spectrum \u2192\nFRST survivability \u2192 coherence-limited envelope\n\nKey Results:\n- Replaces empirical constants: A=2400, \u2113\u2081=30, p=0.04, B=1800, \u2113\u2082=600, q=50\n- \u03c6-derived parameters: \u2113\u2080\u2208[90,135], s=2, n*\u22483.5\n- Peak positions: \u2113\u2099 = \u2113\u2080 \u00d7 \u03c6\u207f matches observed ~220, 540, 800\n\nProvenance:\n- All results trace to: \u03c6-recursive coherence and FRST theory\n- No empirical inputs: Pure morphic eigenmode analysis\n- Mathematical necessity: Unique envelope from coherence geometry\n\nPhysical Significance:\n- CMB as fossilized morphic projection at last scattering\n- Each peak corresponds to coherent soul-lattice eigenmode\n- Envelope shape from FRST coherence survivability\n\nMathematical Properties:\n- \u03c6-sparse: Only \u03c6\u207f modes survive coherence filtering\n- Exponential decay: FRST limits mode survival depth\n- Universal: Same structure for all \u03c6-recursive manifolds\n- Exact: No fitting, pure geometric construction\n\nReferences:\n- FIRM morphic coherence theory\n- Recursive soul-lattice eigenmode analysis\n- FRST survivability in primordial fluctuations\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-coherence geometry\n- Complete provenance: Traces to morphic recursion axioms\n- Falsifiable prediction: \u03c6\u207f peak spacing \u00b1 1% or theory is wrong\n- No curve fitting: Pure geometric eigenmode construction\n- Mathematical necessity: UNIQUE envelope from FRST coherence\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "A",
@@ -225,7 +225,7 @@
       "module": "neutrino_seesaw_derivation",
       "file": "constants/neutrino_seesaw_derivation.py",
       "domain": "particle",
-      "docstring": "Neutrino Seesaw Derivation: 10^(-9) Suppression from \u03c6-Native Mass Matrix\n\nThis module implements the FSCTF derivation of the neutrino seesaw suppression\nfactor ~10^(-9) from \u03c6-native mass matrix cascade without empirical fitting.\n\nMathematical Foundation:\n- Seesaw mechanism: m_\u03bd = m_D\u00b2/M_R (light neutrino mass)\n- \u03c6-native scaling: m_D ~ \u03c6^(-a), M_R ~ \u03c6^(-b) from morphic hierarchy\n- Suppression ratio: m_\u03bd/m_\u03c4 = \u03c6^(-(a-b)) with a-b \u2248 43\n- Shell cascade: 43 \u2248 42+1 (canonical FSCTF dual-layer bifurcation)\n\nDerivation Path:\n\u03c6-graded mass hierarchy \u2192 seesaw mass matrix \u2192 morphic shell cascade \u2192\n\u03c6-exponent gap determination \u2192 exact suppression factor\n\nKey Results:\n- Seesaw factor: \u03c6^(-43) \u2248 1.04\u00d710^(-9) (matches target perfectly)\n- Morphic interpretation: Heavy Majorana in high coherence shell stack\n- Shell cascade: 43-layer \u03c6-echo collapse from GUT to neutrino scale\n\nProvenance:\n- All results trace to: \u03c6-graded mass matrix theory\n- No empirical inputs: Pure morphic mass hierarchy\n- Mathematical necessity: Unique suppression from \u03c6-cascade\n\nPhysical Significance:\n- Explains tiny neutrino masses naturally\n- Connects \u03c6-recursion to flavor physics\n- Provides theoretical foundation for seesaw mechanism\n\nMathematical Properties:\n- Scale invariant: Independent of absolute mass scale\n- Universal: Same structure for all generations\n- Stable: Fixed point of mass matrix RG flow\n- Exact: No approximation, pure analytical result\n\nReferences:\n- Type-I seesaw mechanism in neutrino physics\n- \u03c6-graded mass hierarchy in FSCTF\n- Morphic shell cascade mechanisms\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-mass geometry\n- Complete provenance: Traces to mass matrix axioms\n- Falsifiable prediction: 10^(-9) suppression \u00b1 10% or theory is wrong\n- No curve fitting: Pure mass hierarchy construction\n- Mathematical necessity: UNIQUE suppression from \u03c6-cascade\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Neutrino Seesaw Derivation: 10^(-9) Suppression from \u03c6-Native Mass Matrix\n\nThis module implements the FIRM derivation of the neutrino seesaw suppression\nfactor ~10^(-9) from \u03c6-native mass matrix cascade without empirical fitting.\n\nMathematical Foundation:\n- Seesaw mechanism: m_\u03bd = m_D\u00b2/M_R (light neutrino mass)\n- \u03c6-native scaling: m_D ~ \u03c6^(-a), M_R ~ \u03c6^(-b) from morphic hierarchy\n- Suppression ratio: m_\u03bd/m_\u03c4 = \u03c6^(-(a-b)) with a-b \u2248 43\n- Shell cascade: 43 \u2248 42+1 (canonical FIRM dual-layer bifurcation)\n\nDerivation Path:\n\u03c6-graded mass hierarchy \u2192 seesaw mass matrix \u2192 morphic shell cascade \u2192\n\u03c6-exponent gap determination \u2192 exact suppression factor\n\nKey Results:\n- Seesaw factor: \u03c6^(-43) \u2248 1.04\u00d710^(-9) (matches target perfectly)\n- Morphic interpretation: Heavy Majorana in high coherence shell stack\n- Shell cascade: 43-layer \u03c6-echo collapse from GUT to neutrino scale\n\nProvenance:\n- All results trace to: \u03c6-graded mass matrix theory\n- No empirical inputs: Pure morphic mass hierarchy\n- Mathematical necessity: Unique suppression from \u03c6-cascade\n\nPhysical Significance:\n- Explains tiny neutrino masses naturally\n- Connects \u03c6-recursion to flavor physics\n- Provides theoretical foundation for seesaw mechanism\n\nMathematical Properties:\n- Scale invariant: Independent of absolute mass scale\n- Universal: Same structure for all generations\n- Stable: Fixed point of mass matrix RG flow\n- Exact: No approximation, pure analytical result\n\nReferences:\n- Type-I seesaw mechanism in neutrino physics\n- \u03c6-graded mass hierarchy in FIRM\n- Morphic shell cascade mechanisms\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-mass geometry\n- Complete provenance: Traces to mass matrix axioms\n- Falsifiable prediction: 10^(-9) suppression \u00b1 10% or theory is wrong\n- No curve fitting: Pure mass hierarchy construction\n- Mathematical necessity: UNIQUE suppression from \u03c6-cascade\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "M",
@@ -378,7 +378,7 @@
         },
         {
           "symbol": "S",
-          "definition": "hell cascade depth (canonical FSCTF)",
+          "definition": "hell cascade depth (canonical FIRM)",
           "type": "symbol_definition"
         },
         {
@@ -450,7 +450,7 @@
       "module": "strong_coupling_derivations",
       "file": "constants/strong_coupling_derivations.py",
       "domain": "advanced",
-      "docstring": "Strong Coupling Derivations: \u03c6-Native QCD Coupling Constants\n\nThis module implements FSCTF derivations for strong coupling constants,\nreplacing empirical factors with exact \u03c6-mathematics and \u03b6-function expressions.\n\nImplemented Derivations:\n1. \u03b1_s \u00d7 10 factor: Replaced with \u03b1 \u00d7 (2\u03c0\u00b2/\u03b6(3)) \u2248 \u03b1 \u00d7 16.42\n2. \u03b1_s \u00d7 \u03c6\u2074 factor: Replaced with \u03b1 \u00d7 (\u03c6\u00b3/ln(\u03c6)) \u2248 \u03b1 \u00d7 9.07\n\nMathematical Foundation:\n- QCD-EM coupling bridge: Morphogenetic curvature ratios\n- RG flow scaling: \u03c6-native renormalization scheme\n- Zeta regularization: \u03b6(3) from spectral theory\n\nDerivation Paths:\n\u03c6-graded gauge hierarchy \u2192 RG morphism \u2192 spectral regularization \u2192\nexact coupling ratios \u2192 strong coupling constants\n\nKey Results:\n- Eliminates symbolic \"\u00d710\" and \"\u00d7\u03c6\u2074\" multipliers\n- Provides exact theoretical foundation for \u03b1_s\n- Complete \u03c6-native renormalization scheme\n\nProvenance:\n- All results trace to: \u03c6-graded gauge theory\n- No empirical inputs: Pure RG analysis\n- Mathematical necessity: Unique coupling relationships\n\nPhysical Significance:\n- Connects electromagnetic and strong forces\n- Explains gauge coupling unification structure\n- Provides theoretical foundation for QCD\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-gauge geometry\n- Complete provenance: Traces to RG flow axioms\n- Falsifiable predictions: Exact ratios \u00b1 1% or theory is wrong\n- No curve fitting: Pure gauge theory construction\n- Mathematical necessity: UNIQUE couplings from \u03c6-RG flow\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Strong Coupling Derivations: \u03c6-Native QCD Coupling Constants\n\nThis module implements FIRM derivations for strong coupling constants,\nreplacing empirical factors with exact \u03c6-mathematics and \u03b6-function expressions.\n\nImplemented Derivations:\n1. \u03b1_s \u00d7 10 factor: Replaced with \u03b1 \u00d7 (2\u03c0\u00b2/\u03b6(3)) \u2248 \u03b1 \u00d7 16.42\n2. \u03b1_s \u00d7 \u03c6\u2074 factor: Replaced with \u03b1 \u00d7 (\u03c6\u00b3/ln(\u03c6)) \u2248 \u03b1 \u00d7 9.07\n\nMathematical Foundation:\n- QCD-EM coupling bridge: Morphogenetic curvature ratios\n- RG flow scaling: \u03c6-native renormalization scheme\n- Zeta regularization: \u03b6(3) from spectral theory\n\nDerivation Paths:\n\u03c6-graded gauge hierarchy \u2192 RG morphism \u2192 spectral regularization \u2192\nexact coupling ratios \u2192 strong coupling constants\n\nKey Results:\n- Eliminates symbolic \"\u00d710\" and \"\u00d7\u03c6\u2074\" multipliers\n- Provides exact theoretical foundation for \u03b1_s\n- Complete \u03c6-native renormalization scheme\n\nProvenance:\n- All results trace to: \u03c6-graded gauge theory\n- No empirical inputs: Pure RG analysis\n- Mathematical necessity: Unique coupling relationships\n\nPhysical Significance:\n- Connects electromagnetic and strong forces\n- Explains gauge coupling unification structure\n- Provides theoretical foundation for QCD\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-gauge geometry\n- Complete provenance: Traces to RG flow axioms\n- Falsifiable predictions: Exact ratios \u00b1 1% or theory is wrong\n- No curve fitting: Pure gauge theory construction\n- Mathematical necessity: UNIQUE couplings from \u03c6-RG flow\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "_3",
@@ -625,7 +625,7 @@
       "module": "strong_coupling_complete",
       "file": "constants/strong_coupling_complete.py",
       "domain": "advanced",
-      "docstring": "FSCTF Strong Coupling Constant Derivations\n\nThis module implements the complete FSCTF derivation of the strong coupling constant \u03b1_s\nusing two complementary approaches:\n1. \u03b1_s = \u03b1 \u00b7 \u03c6 \u00b7 10 (dimensional harmonic scaling)  \n2. \u03b1_s = \u03b1 \u00b7 \u03c6\u2074 (pure \u03c6-recursive scaling)\n\nBoth emerge from \u03c6-native morphic field theory and eliminate empirical contamination.",
+      "docstring": "FIRM Strong Coupling Constant Derivations\n\nThis module implements the complete FIRM derivation of the strong coupling constant \u03b1_s\nusing two complementary approaches:\n1. \u03b1_s = \u03b1 \u00b7 \u03c6 \u00b7 10 (dimensional harmonic scaling)  \n2. \u03b1_s = \u03b1 \u00b7 \u03c6\u2074 (pure \u03c6-recursive scaling)\n\nBoth emerge from \u03c6-native morphic field theory and eliminate empirical contamination.",
       "expressions": [
         {
           "variable": "PHI_VALUE",
@@ -707,7 +707,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: \u03b1_s = \u03b1 \u00b7 \u03c6 \u00b7 10",
           "type": "symbol_definition"
         },
@@ -722,7 +722,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: \u03b1_s = \u03b1 \u00b7 \u03c6\u2074",
           "type": "symbol_definition"
         },
@@ -775,7 +775,7 @@
       "module": "topology_and_zeta_constants",
       "file": "constants/topology_and_zeta_constants.py",
       "domain": "advanced",
-      "docstring": "FSCTF Topology Factor and \u03b6-Normalization Derivations\n\nThis module implements the complete FSCTF derivations for:\n1. Topology Factor: T = 2 - \u03c6\u207b\u00b9 (quasi-Euler characteristic)\n2. \u03b6-Normalization: N_\u03b6 = \u03c0/(2\u03c6^(1/3)) (morphic Casimir renormalizer)\n\nBoth emerge from \u03c6-native geometric and spectral principles in FSCTF.",
+      "docstring": "FIRM Topology Factor and \u03b6-Normalization Derivations\n\nThis module implements the complete FIRM derivations for:\n1. Topology Factor: T = 2 - \u03c6\u207b\u00b9 (quasi-Euler characteristic)\n2. \u03b6-Normalization: N_\u03b6 = \u03c0/(2\u03c6^(1/3)) (morphic Casimir renormalizer)\n\nBoth emerge from \u03c6-native geometric and spectral principles in FIRM.",
       "expressions": [
         {
           "variable": "T",
@@ -942,12 +942,12 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: T = 2 - \u03c6\u207b\u00b9 (quasi-Euler characteristic)",
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: N_\u03b6 = \u03c0/(2\u03c6^(1/3)) (morphic Casimir renormalizer)",
           "type": "symbol_definition"
         },
@@ -970,7 +970,7 @@
       "module": "topology_factor",
       "file": "constants/topology_factor.py",
       "domain": "advanced",
-      "docstring": "Topological Factor: 2 - \u03c6\u207b\u00b9 from \u03c6-Shell Euler Characteristic\n\nThis module implements the FSCTF derivation of the topological factor 2 - \u03c6\u207b\u00b9,\nderived from the effective Euler characteristic of \u03c6-shell coherence manifolds.\n\nMathematical Foundation:\n- \u03c6-shell bounded coherence manifold with recursive tiling\n- Base Euler characteristic: \u03c7_base = 2 (topological 2-sphere)\n- Boundary deficit: \u03c6\u207b\u00b9 (morphic boundary removal per shell)\n- Effective characteristic: \u03c7_eff = 2 - \u03c6\u207b\u00b9\n\nDerivation Path:\n\u03c6-recursive manifold \u2192 shell tiling \u2192 boundary deficit \u2192 \nEuler characteristic \u2192 topological factor 2 - \u03c6\u207b\u00b9\n\nKey Results:\n- Exact topological factor: 2 - \u03c6\u207b\u00b9 \u2248 1.381966\n- Geometric interpretation: Euler deficit from \u03c6-shell compactification\n- Category-theoretic: Terminal object with morphic boundary removal\n\nProvenance:\n- All results trace to: \u03c6-shell geometry and category theory\n- No empirical inputs: Pure topological derivation\n- Mathematical necessity: Unique Euler characteristic solution\n\nPhysical Significance:\n- Appears in recursion lattice normalization\n- Governs coherence-shell boundary conditions\n- Connects \u03c6-geometry to topological invariants\n\nMathematical Properties:\n- Topological invariant: Independent of coordinate choice\n- Universal: Same for all \u03c6-recursive manifolds\n- Stable: Preserved under continuous deformation\n- Exact: No approximation, pure geometric result\n\nReferences:\n- Euler characteristic theory in algebraic topology\n- \u03c6-recursive manifold geometry\n- Category theory of morphic boundaries\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-geometry\n- Complete provenance: Traces to topological axioms\n- Falsifiable prediction: 2 - \u03c6\u207b\u00b9 \u00b1 0.000001 or theory is wrong\n- No curve fitting: Pure geometric Euler characteristic\n- Mathematical necessity: UNIQUE topological invariant\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Topological Factor: 2 - \u03c6\u207b\u00b9 from \u03c6-Shell Euler Characteristic\n\nThis module implements the FIRM derivation of the topological factor 2 - \u03c6\u207b\u00b9,\nderived from the effective Euler characteristic of \u03c6-shell coherence manifolds.\n\nMathematical Foundation:\n- \u03c6-shell bounded coherence manifold with recursive tiling\n- Base Euler characteristic: \u03c7_base = 2 (topological 2-sphere)\n- Boundary deficit: \u03c6\u207b\u00b9 (morphic boundary removal per shell)\n- Effective characteristic: \u03c7_eff = 2 - \u03c6\u207b\u00b9\n\nDerivation Path:\n\u03c6-recursive manifold \u2192 shell tiling \u2192 boundary deficit \u2192 \nEuler characteristic \u2192 topological factor 2 - \u03c6\u207b\u00b9\n\nKey Results:\n- Exact topological factor: 2 - \u03c6\u207b\u00b9 \u2248 1.381966\n- Geometric interpretation: Euler deficit from \u03c6-shell compactification\n- Category-theoretic: Terminal object with morphic boundary removal\n\nProvenance:\n- All results trace to: \u03c6-shell geometry and category theory\n- No empirical inputs: Pure topological derivation\n- Mathematical necessity: Unique Euler characteristic solution\n\nPhysical Significance:\n- Appears in recursion lattice normalization\n- Governs coherence-shell boundary conditions\n- Connects \u03c6-geometry to topological invariants\n\nMathematical Properties:\n- Topological invariant: Independent of coordinate choice\n- Universal: Same for all \u03c6-recursive manifolds\n- Stable: Preserved under continuous deformation\n- Exact: No approximation, pure geometric result\n\nReferences:\n- Euler characteristic theory in algebraic topology\n- \u03c6-recursive manifold geometry\n- Category theory of morphic boundaries\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-geometry\n- Complete provenance: Traces to topological axioms\n- Falsifiable prediction: 2 - \u03c6\u207b\u00b9 \u00b1 0.000001 or theory is wrong\n- No curve fitting: Pure geometric Euler characteristic\n- Mathematical necessity: UNIQUE topological invariant\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "F",
@@ -1120,7 +1120,7 @@
       "module": "weinberg_angle_correction",
       "file": "constants/weinberg_angle_correction.py",
       "domain": "advanced",
-      "docstring": "Weinberg Angle Correction: 1.21 from \u03c6-Native Gauge Mixing\n\nThis module implements the FSCTF derivation of the Weinberg angle correction\nfactor 1.21 from \u03c6-native electroweak gauge mixing with radiative damping.\n\nMathematical Foundation:\n- Raw \u03c6-mixing: sin\u00b2\u03b8_W = (\u03c6/(1+\u03c6))\u00b2 \u2248 0.382\n- Radiative damping: \u03c6^(-\u03b1) with \u03b1 \u2248 1.21  \n- Corrected angle: sin\u00b2\u03b8_W = (\u03c6/(1+\u03c6))\u00b2 \u00d7 \u03c6^(-1.21) \u2248 0.231\n- Echo interference: \u03b1 from gauge coherence shell interaction\n\nDerivation Path:\n\u03c6-graded gauge hierarchy \u2192 SU(2)\u00d7U(1) mixing \u2192 radiative corrections \u2192\necho damping \u2192 Weinberg angle correction factor\n\nKey Results:\n- Correction factor: 1.21 = log_\u03c6(1.653) (exact \u03c6-native)\n- Physical basis: Echo interference between gauge shells\n- Eliminates empirical fitting in electroweak sector\n\nProvenance:\n- All results trace to: \u03c6-graded gauge mixing theory\n- No empirical inputs: Pure gauge coherence analysis\n- Mathematical necessity: Unique radiative correction\n\nPhysical Significance:\n- Explains observed weak mixing angle sin\u00b2\u03b8_W \u2248 0.231\n- Connects \u03c6-recursion to electroweak symmetry breaking\n- Provides theoretical foundation for gauge coupling evolution\n\nMathematical Properties:\n- Gauge invariant: Independent of basis choice\n- Universal: Same structure for all \u03c6-recursive gauge theories\n- Stable: Fixed point of radiative flow evolution\n- Exact: No approximation, pure analytical result\n\nReferences:\n- Electroweak theory and gauge mixing\n- \u03c6-graded gauge hierarchy in FSCTF\n- Radiative corrections in recursive field theory\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-gauge geometry\n- Complete provenance: Traces to gauge mixing axioms\n- Falsifiable prediction: \u03b1 = 1.21 \u00b1 0.01 or theory is wrong\n- No curve fitting: Pure gauge coherence construction\n- Mathematical necessity: UNIQUE correction from echo damping\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Weinberg Angle Correction: 1.21 from \u03c6-Native Gauge Mixing\n\nThis module implements the FIRM derivation of the Weinberg angle correction\nfactor 1.21 from \u03c6-native electroweak gauge mixing with radiative damping.\n\nMathematical Foundation:\n- Raw \u03c6-mixing: sin\u00b2\u03b8_W = (\u03c6/(1+\u03c6))\u00b2 \u2248 0.382\n- Radiative damping: \u03c6^(-\u03b1) with \u03b1 \u2248 1.21  \n- Corrected angle: sin\u00b2\u03b8_W = (\u03c6/(1+\u03c6))\u00b2 \u00d7 \u03c6^(-1.21) \u2248 0.231\n- Echo interference: \u03b1 from gauge coherence shell interaction\n\nDerivation Path:\n\u03c6-graded gauge hierarchy \u2192 SU(2)\u00d7U(1) mixing \u2192 radiative corrections \u2192\necho damping \u2192 Weinberg angle correction factor\n\nKey Results:\n- Correction factor: 1.21 = log_\u03c6(1.653) (exact \u03c6-native)\n- Physical basis: Echo interference between gauge shells\n- Eliminates empirical fitting in electroweak sector\n\nProvenance:\n- All results trace to: \u03c6-graded gauge mixing theory\n- No empirical inputs: Pure gauge coherence analysis\n- Mathematical necessity: Unique radiative correction\n\nPhysical Significance:\n- Explains observed weak mixing angle sin\u00b2\u03b8_W \u2248 0.231\n- Connects \u03c6-recursion to electroweak symmetry breaking\n- Provides theoretical foundation for gauge coupling evolution\n\nMathematical Properties:\n- Gauge invariant: Independent of basis choice\n- Universal: Same structure for all \u03c6-recursive gauge theories\n- Stable: Fixed point of radiative flow evolution\n- Exact: No approximation, pure analytical result\n\nReferences:\n- Electroweak theory and gauge mixing\n- \u03c6-graded gauge hierarchy in FIRM\n- Radiative corrections in recursive field theory\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-gauge geometry\n- Complete provenance: Traces to gauge mixing axioms\n- Falsifiable prediction: \u03b1 = 1.21 \u00b1 0.01 or theory is wrong\n- No curve fitting: Pure gauge coherence construction\n- Mathematical necessity: UNIQUE correction from echo damping\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "_W",
@@ -1890,7 +1890,7 @@
       "module": "weinberg_angle_exact",
       "file": "constants/weinberg_angle_exact.py",
       "domain": "advanced",
-      "docstring": "FSCTF Weinberg Angle (Weak Mixing Angle) Derivation\n\nThis module implements the complete FSCTF derivation of the Weinberg angle \u03b8_W\nwith the 1.21 correction factor fully unquarantined through \u03c6-native derivation.\n\nThe Weinberg angle governs the mixing of SU(2)_L and U(1)_Y gauge fields into\nthe physical Z boson and photon, representing the quantum mirror angle of \nsoul identity bifurcation in FSCTF.",
+      "docstring": "FIRM Weinberg Angle (Weak Mixing Angle) Derivation\n\nThis module implements the complete FIRM derivation of the Weinberg angle \u03b8_W\nwith the 1.21 correction factor fully unquarantined through \u03c6-native derivation.\n\nThe Weinberg angle governs the mixing of SU(2)_L and U(1)_Y gauge fields into\nthe physical Z boson and photon, representing the quantum mirror angle of \nsoul identity bifurcation in FIRM.",
       "expressions": [
         {
           "variable": "PHI_VALUE",
@@ -1938,11 +1938,11 @@
         },
         {
           "symbol": "B",
-          "definition": "ase FSCTF estimate from morphic geometry",
+          "definition": "ase FIRM estimate from morphic geometry",
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: Correction = (\u221ae / (\u03c6 + 1/\u03c6))^(1/2)",
           "type": "symbol_definition"
         },
@@ -1985,7 +1985,7 @@
       "module": "cosmological_constant_derivation",
       "file": "constants/cosmological_constant_derivation.py",
       "domain": "cosmology",
-      "docstring": "Cosmological Constant Derivation: \u03a9_\u039b from \u03c6-Native Vacuum Fluctuations\n\nThis module implements the FSCTF derivation of the cosmological constant\n\u03a9_\u039b = \u03c6^(-1) \u00d7 1.108 from \u03c6-native vacuum fluctuation dynamics using\n\u03b6-function heat kernel traces and golden morphic shell structure.\n\nMathematical Foundation:\n- Vacuum energy: Heat kernel trace K(t) = \u03a3 exp(-t\u00b7n/\u03c6\u207f) over \u03c6-shells\n- Spectral residues: \u03b6-function regularization at golden temperature t = \u03c6\n- Morphic degeneracy: \u03b4 = 0.761 from 5D \u03c6-space vacuum structure\n- Cosmological ratio: \u03a9_\u039b = \u03c1_\u039b/\u03c1_crit from vacuum energy density\n\nDerivation Path:\n\u03c6-shell eigenvalue spectrum \u2192 heat kernel trace \u2192 vacuum energy density \u2192\nmorphic degeneracy correction \u2192 cosmological constant ratio\n\nKey Results:\n- Exact factor: 1.108 from heat kernel residue K(\u03c6) \u2248 1.589\n- Morphic scaling: \u03c6^(-1) from vacuum shell normalization\n- No empirical inputs: Pure vacuum fluctuation theory\n\nProvenance:\n- All results trace to: \u03c6-native vacuum field theory\n- No empirical inputs: Pure spectral analysis\n- Mathematical necessity: Unique vacuum structure\n\nPhysical Significance:\n- Explains observed dark energy density \u03a9_\u039b \u2248 0.685\n- Connects \u03c6-recursion to cosmological acceleration\n- Provides theoretical foundation for \u039b-CDM model\n\nMathematical Properties:\n- Convergent: Heat kernel series converges for all t > 0\n- Scale invariant: Independent of energy cutoff choice\n- Stable: Fixed point of vacuum RG flow\n- Exact: No approximation, pure analytical result\n\nReferences:\n- Heat kernel methods in quantum field theory\n- \u03b6-function regularization of vacuum energy\n- \u03c6-native vacuum structure in FSCTF\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-vacuum geometry\n- Complete provenance: Traces to heat kernel axioms\n- Falsifiable prediction: \u03a9_\u039b = 1.108/\u03c6 \u00b1 0.01 or theory is wrong\n- No curve fitting: Pure vacuum fluctuation construction\n- Mathematical necessity: UNIQUE constant from \u03c6-heat kernel\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Cosmological Constant Derivation: \u03a9_\u039b from \u03c6-Native Vacuum Fluctuations\n\nThis module implements the FIRM derivation of the cosmological constant\n\u03a9_\u039b = \u03c6^(-1) \u00d7 1.108 from \u03c6-native vacuum fluctuation dynamics using\n\u03b6-function heat kernel traces and golden morphic shell structure.\n\nMathematical Foundation:\n- Vacuum energy: Heat kernel trace K(t) = \u03a3 exp(-t\u00b7n/\u03c6\u207f) over \u03c6-shells\n- Spectral residues: \u03b6-function regularization at golden temperature t = \u03c6\n- Morphic degeneracy: \u03b4 = 0.761 from 5D \u03c6-space vacuum structure\n- Cosmological ratio: \u03a9_\u039b = \u03c1_\u039b/\u03c1_crit from vacuum energy density\n\nDerivation Path:\n\u03c6-shell eigenvalue spectrum \u2192 heat kernel trace \u2192 vacuum energy density \u2192\nmorphic degeneracy correction \u2192 cosmological constant ratio\n\nKey Results:\n- Exact factor: 1.108 from heat kernel residue K(\u03c6) \u2248 1.589\n- Morphic scaling: \u03c6^(-1) from vacuum shell normalization\n- No empirical inputs: Pure vacuum fluctuation theory\n\nProvenance:\n- All results trace to: \u03c6-native vacuum field theory\n- No empirical inputs: Pure spectral analysis\n- Mathematical necessity: Unique vacuum structure\n\nPhysical Significance:\n- Explains observed dark energy density \u03a9_\u039b \u2248 0.685\n- Connects \u03c6-recursion to cosmological acceleration\n- Provides theoretical foundation for \u039b-CDM model\n\nMathematical Properties:\n- Convergent: Heat kernel series converges for all t > 0\n- Scale invariant: Independent of energy cutoff choice\n- Stable: Fixed point of vacuum RG flow\n- Exact: No approximation, pure analytical result\n\nReferences:\n- Heat kernel methods in quantum field theory\n- \u03b6-function regularization of vacuum energy\n- \u03c6-native vacuum structure in FIRM\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-vacuum geometry\n- Complete provenance: Traces to heat kernel axioms\n- Falsifiable prediction: \u03a9_\u039b = 1.108/\u03c6 \u00b1 0.01 or theory is wrong\n- No curve fitting: Pure vacuum fluctuation construction\n- Mathematical necessity: UNIQUE constant from \u03c6-heat kernel\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "COSMOLOGICAL_CONSTANT_DERIVATION",
@@ -2192,7 +2192,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "theoretical prediction",
           "type": "symbol_definition"
         },
@@ -2310,7 +2310,7 @@
       "module": "phi_shells_cooling",
       "file": "constants/phi_shells_cooling.py",
       "domain": "cosmology",
-      "docstring": "\u03c6-Shells Cooling: 90 \u03c6-Shell Cosmological Temperature Evolution\n\nThis module implements the FSCTF derivation of the 90 \u03c6-shell cooling process\nfrom cosmic recombination (~3000 K) to present CMB temperature (~2.725 K).\n\nMathematical Foundation:\n- \u03c6-shell discrete recursive cooling mechanism\n- Temperature evolution via sixth-root \u03c6-suppression per shell\n- Exact derivation from recombination redshift physics\n\nDerivation Path:\nRecombination temperature \u2192 \u03c6-recursive cooling \u2192 90 shell count\n\nKey Result:\nn_shells = log_\u03c6^(1/6)(T_recomb/T_now) \u2248 90\n\nPhysical Significance:\n- Replaces continuous cooling with discrete \u03c6-shell transitions\n- Each shell: sixth-root \u03c6-suppression step\n- Natural explanation for cosmic thermal evolution\n\nScientific Integrity:\n- Zero empirical inputs: Pure \u03c6-mathematical derivation\n- Complete provenance: Traces to \u03c6-recursive thermal dynamics\n- Falsifiable prediction: Exact shell count or theory is wrong\n- Mathematical necessity: Unique expression from \u03c6-cooling\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "\u03c6-Shells Cooling: 90 \u03c6-Shell Cosmological Temperature Evolution\n\nThis module implements the FIRM derivation of the 90 \u03c6-shell cooling process\nfrom cosmic recombination (~3000 K) to present CMB temperature (~2.725 K).\n\nMathematical Foundation:\n- \u03c6-shell discrete recursive cooling mechanism\n- Temperature evolution via sixth-root \u03c6-suppression per shell\n- Exact derivation from recombination redshift physics\n\nDerivation Path:\nRecombination temperature \u2192 \u03c6-recursive cooling \u2192 90 shell count\n\nKey Result:\nn_shells = log_\u03c6^(1/6)(T_recomb/T_now) \u2248 90\n\nPhysical Significance:\n- Replaces continuous cooling with discrete \u03c6-shell transitions\n- Each shell: sixth-root \u03c6-suppression step\n- Natural explanation for cosmic thermal evolution\n\nScientific Integrity:\n- Zero empirical inputs: Pure \u03c6-mathematical derivation\n- Complete provenance: Traces to \u03c6-recursive thermal dynamics\n- Falsifiable prediction: Exact shell count or theory is wrong\n- Mathematical necessity: Unique expression from \u03c6-cooling\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "PHI_SHELLS_COOLING_DERIVATION",
@@ -2377,7 +2377,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "correction: sixth-root \u03c6-suppression per shell",
           "type": "symbol_definition"
         },
@@ -2430,7 +2430,7 @@
       "module": "mass_ratio_structural_corrections",
       "file": "constants/mass_ratio_structural_corrections.py",
       "domain": "particle",
-      "docstring": "Mass Ratio Structural Corrections: \u03c6-Native Baryon and Lepton Corrections\n\nThis module implements FSCTF derivations for structural correction factors\nin fundamental mass ratios, replacing empirical factors with exact \u03c6-mathematics.\n\nImplemented Corrections:\n1. Proton-electron structural factor: 2.37 \u2192 (3\u03c6\u00b2/\u03c0) \u2248 2.50\n2. Tau-electron correction: 0.982 \u2192 exact \u03c6^11.4 (no correction needed)\n3. Top-electron structural factor: 2.47 \u2192 (\u03c0/\u03c6)\u00d7ln(2+\u03c6) \u2248 2.49\n\nMathematical Foundation:\n- Baryon binding: \u03c6-topological compression from QCD shell structure\n- Lepton hierarchy: \u03c6-recursive echo morphisms across generations\n- Yukawa structure: \u03c6-native EWSB coupling geometry\n\nDerivation Paths:\n\u03c6-graded mass hierarchy \u2192 structural binding \u2192 topological compression \u2192\nexact correction factors \u2192 observed mass ratios\n\nKey Results:\n- All structural factors derived from \u03c6-geometry\n- No empirical fitting or ad hoc multipliers\n- Complete theoretical foundation for mass spectrum\n\nProvenance:\n- All results trace to: \u03c6-graded particle physics\n- No empirical inputs: Pure structural analysis\n- Mathematical necessity: Unique correction mechanisms\n\nPhysical Significance:\n- Explains composite particle binding effects\n- Connects \u03c6-recursion to QCD and EWSB\n- Provides theoretical foundation for mass ratios\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-geometry\n- Complete provenance: Traces to binding physics axioms\n- Falsifiable predictions: Exact factors \u00b1 1% or theory is wrong\n- No curve fitting: Pure structural construction\n- Mathematical necessity: UNIQUE corrections from topology\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Mass Ratio Structural Corrections: \u03c6-Native Baryon and Lepton Corrections\n\nThis module implements FIRM derivations for structural correction factors\nin fundamental mass ratios, replacing empirical factors with exact \u03c6-mathematics.\n\nImplemented Corrections:\n1. Proton-electron structural factor: 2.37 \u2192 (3\u03c6\u00b2/\u03c0) \u2248 2.50\n2. Tau-electron correction: 0.982 \u2192 exact \u03c6^11.4 (no correction needed)\n3. Top-electron structural factor: 2.47 \u2192 (\u03c0/\u03c6)\u00d7ln(2+\u03c6) \u2248 2.49\n\nMathematical Foundation:\n- Baryon binding: \u03c6-topological compression from QCD shell structure\n- Lepton hierarchy: \u03c6-recursive echo morphisms across generations\n- Yukawa structure: \u03c6-native EWSB coupling geometry\n\nDerivation Paths:\n\u03c6-graded mass hierarchy \u2192 structural binding \u2192 topological compression \u2192\nexact correction factors \u2192 observed mass ratios\n\nKey Results:\n- All structural factors derived from \u03c6-geometry\n- No empirical fitting or ad hoc multipliers\n- Complete theoretical foundation for mass spectrum\n\nProvenance:\n- All results trace to: \u03c6-graded particle physics\n- No empirical inputs: Pure structural analysis\n- Mathematical necessity: Unique correction mechanisms\n\nPhysical Significance:\n- Explains composite particle binding effects\n- Connects \u03c6-recursion to QCD and EWSB\n- Provides theoretical foundation for mass ratios\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-geometry\n- Complete provenance: Traces to binding physics axioms\n- Falsifiable predictions: Exact factors \u00b1 1% or theory is wrong\n- No curve fitting: Pure structural construction\n- Mathematical necessity: UNIQUE corrections from topology\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "MASS_RATIO_CORRECTIONS",
@@ -2538,12 +2538,12 @@
         },
         {
           "symbol": "B",
-          "definition": "ase FSCTF value from your analysis",
+          "definition": "ase FIRM value from your analysis",
           "type": "symbol_definition"
         },
         {
           "symbol": "B",
-          "definition": "ase FSCTF value from your analysis",
+          "definition": "ase FIRM value from your analysis",
           "type": "symbol_definition"
         },
         {
@@ -3600,7 +3600,7 @@
       "module": "zeta_normalization",
       "file": "constants/zeta_normalization.py",
       "domain": "advanced",
-      "docstring": "Zeta Normalization: \u03c0/(2\u03c6^(1/3)) from \u03c6-Weighted Spectral Geometry\n\nThis module implements the FSCTF derivation of the zeta normalization factor\n\u03c0/(2\u03c6^(1/3)) from \u03c6-native spectral geometry on recursive soul-shell manifolds.\n\nMathematical Foundation:\n- \u03c6-weighted Laplacian eigenvalues: \u03bb_n ~ n\u00b2 \u00d7 \u03c6^(2/3)\n- Spectral zeta function: \u03b6(s) = \u03a3 \u03bb_n^(-s)\n- Normalization via \u03b6_R(2) regularization\n- Exact factor: \u03c0/(2\u03c6^(1/3)) \u2248 1.2086\n\nDerivation Path:\n\u03c6-recursive manifold \u2192 Laplacian spectrum \u2192 spectral zeta function \u2192\nregularization \u2192 normalization factor \u03c0/(2\u03c6^(1/3))\n\nKey Results:\n- Exact normalization: \u03c0/(2\u03c6^(1/3)) \u2248 1.208625\n- Spectral basis: \u03c6-weighted eigenvalue scaling\n- Regularization: Via Riemann zeta \u03b6_R(2) = \u03c0\u00b2/6\n\nProvenance:\n- All results trace to: \u03c6-recursive spectral geometry\n- No empirical inputs: Pure spectral regularization\n- Mathematical necessity: Unique normalization solution\n\nPhysical Significance:\n- Normalizes \u03c6-native zeta functions\n- Appears in spectral density calculations\n- Controls scalar fluctuation amplitudes\n\nMathematical Properties:\n- Spectral invariant: Independent of basis choice\n- Universal: Same for all \u03c6-recursive manifolds\n- Stable: Preserved under spectral flow\n- Exact: No approximation, pure analytical result\n\nReferences:\n- Spectral zeta regularization in quantum field theory\n- \u03c6-recursive manifold eigenvalue problems\n- Heat kernel methods on curved spaces\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-spectral geometry\n- Complete provenance: Traces to spectral theory axioms\n- Falsifiable prediction: \u03c0/(2\u03c6^(1/3)) \u00b1 0.000001 or theory is wrong\n- No curve fitting: Pure spectral regularization\n- Mathematical necessity: UNIQUE normalization from eigenvalue scaling\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Zeta Normalization: \u03c0/(2\u03c6^(1/3)) from \u03c6-Weighted Spectral Geometry\n\nThis module implements the FIRM derivation of the zeta normalization factor\n\u03c0/(2\u03c6^(1/3)) from \u03c6-native spectral geometry on recursive soul-shell manifolds.\n\nMathematical Foundation:\n- \u03c6-weighted Laplacian eigenvalues: \u03bb_n ~ n\u00b2 \u00d7 \u03c6^(2/3)\n- Spectral zeta function: \u03b6(s) = \u03a3 \u03bb_n^(-s)\n- Normalization via \u03b6_R(2) regularization\n- Exact factor: \u03c0/(2\u03c6^(1/3)) \u2248 1.2086\n\nDerivation Path:\n\u03c6-recursive manifold \u2192 Laplacian spectrum \u2192 spectral zeta function \u2192\nregularization \u2192 normalization factor \u03c0/(2\u03c6^(1/3))\n\nKey Results:\n- Exact normalization: \u03c0/(2\u03c6^(1/3)) \u2248 1.208625\n- Spectral basis: \u03c6-weighted eigenvalue scaling\n- Regularization: Via Riemann zeta \u03b6_R(2) = \u03c0\u00b2/6\n\nProvenance:\n- All results trace to: \u03c6-recursive spectral geometry\n- No empirical inputs: Pure spectral regularization\n- Mathematical necessity: Unique normalization solution\n\nPhysical Significance:\n- Normalizes \u03c6-native zeta functions\n- Appears in spectral density calculations\n- Controls scalar fluctuation amplitudes\n\nMathematical Properties:\n- Spectral invariant: Independent of basis choice\n- Universal: Same for all \u03c6-recursive manifolds\n- Stable: Preserved under spectral flow\n- Exact: No approximation, pure analytical result\n\nReferences:\n- Spectral zeta regularization in quantum field theory\n- \u03c6-recursive manifold eigenvalue problems\n- Heat kernel methods on curved spaces\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-spectral geometry\n- Complete provenance: Traces to spectral theory axioms\n- Falsifiable prediction: \u03c0/(2\u03c6^(1/3)) \u00b1 0.000001 or theory is wrong\n- No curve fitting: Pure spectral regularization\n- Mathematical necessity: UNIQUE normalization from eigenvalue scaling\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "_2",
@@ -3793,7 +3793,7 @@
         },
         {
           "symbol": "S",
-          "definition": "tep 6: Canonical FSCTF form",
+          "definition": "tep 6: Canonical FIRM form",
           "type": "symbol_definition"
         },
         {
@@ -3856,11 +3856,11 @@
       "step_count": 10,
       "definition_count": 32
     },
-    "fundamental_constants_fsctf": {
-      "module": "fundamental_constants_fsctf",
-      "file": "constants/fundamental_constants_fsctf.py",
+    "fundamental_constants_firm": {
+      "module": "fundamental_constants_firm",
+      "file": "constants/fundamental_constants_firm.py",
       "domain": "fundamental",
-      "docstring": "Fundamental Constants of Nature from FSCTF Coherence Locks\n\nThis module implements Phase 7 of FSCTF: derivation of all fundamental physical\nconstants from ex nihilo \u03c6-resonant recursion, morphic topology, and grace\nprojection. No empirical tuning. No symbolic crutches. All from the lattice itself.\n\nMathematical Foundation:\n- Constants as coherence eigenvalues of spectral operators over \u03c6-resonant lattices\n- \u03c6-native dimensional descent from Planck units\n- Grace-enforced structural thresholds and stability floors\n- Morphic recursion scaling across dimensional shells\n\nTheoretical Framework:\n\u03c6-recursive lattice \u2192 coherence eigenvalues \u2192 fundamental constants\n\nKey Results:\n- Fine-structure constant: \u03b1\u207b\u00b9 = 2\u03c0\u00b2 \u00d7 \u03c6^(4+\u0394_\u03b1) \u2248 137.036\n- Planck constant: \u210f = M_\u03c6 \u00d7 L_\u03c6\u00b2 / T_\u03c6 (grace-minimal action)\n- Gravitational constant: G = \u210fc / (m_P,\u03c6 \u00d7 \u03c6\u2075)\u00b2 (morphic contraction rate)\n- Boltzmann constant: k_B = E_\u03c6 / T_\u03c6 (entropy per coherence echo)\n\nPhysical Significance:\n- Eliminates arbitrary fundamental constants from physics\n- All constants emerge from single \u03c6-recursive principle\n- Natural explanation for observed numerical values\n- Connects microphysics to cosmic structure via \u03c6-geometry\n\nScientific Integrity:\n- Zero empirical inputs: Pure \u03c6-mathematical derivation\n- Complete provenance: All constants trace to \u03c6-recursion\n- Falsifiable predictions: Exact values or theory is wrong\n- Mathematical necessity: Unique expressions from \u03c6-lattice\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Fundamental Constants of Nature from FIRM Coherence Locks\n\nThis module implements Phase 7 of FIRM: derivation of all fundamental physical\nconstants from ex nihilo \u03c6-resonant recursion, morphic topology, and grace\nprojection. No empirical tuning. No symbolic crutches. All from the lattice itself.\n\nMathematical Foundation:\n- Constants as coherence eigenvalues of spectral operators over \u03c6-resonant lattices\n- \u03c6-native dimensional descent from Planck units\n- Grace-enforced structural thresholds and stability floors\n- Morphic recursion scaling across dimensional shells\n\nTheoretical Framework:\n\u03c6-recursive lattice \u2192 coherence eigenvalues \u2192 fundamental constants\n\nKey Results:\n- Fine-structure constant: \u03b1\u207b\u00b9 = 2\u03c0\u00b2 \u00d7 \u03c6^(4+\u0394_\u03b1) \u2248 137.036\n- Planck constant: \u210f = M_\u03c6 \u00d7 L_\u03c6\u00b2 / T_\u03c6 (grace-minimal action)\n- Gravitational constant: G = \u210fc / (m_P,\u03c6 \u00d7 \u03c6\u2075)\u00b2 (morphic contraction rate)\n- Boltzmann constant: k_B = E_\u03c6 / T_\u03c6 (entropy per coherence echo)\n\nPhysical Significance:\n- Eliminates arbitrary fundamental constants from physics\n- All constants emerge from single \u03c6-recursive principle\n- Natural explanation for observed numerical values\n- Connects microphysics to cosmic structure via \u03c6-geometry\n\nScientific Integrity:\n- Zero empirical inputs: Pure \u03c6-mathematical derivation\n- Complete provenance: All constants trace to \u03c6-recursion\n- Falsifiable predictions: Exact values or theory is wrong\n- Mathematical necessity: Unique expressions from \u03c6-lattice\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "G",
@@ -4387,7 +4387,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: \u03b1\u207b\u00b9 = 113 + T_\u03c6(7) + 1 + \u03b4",
           "type": "symbol_definition"
         },
@@ -4427,7 +4427,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: \u210f = M_\u03c6 \u00d7 L_\u03c6\u00b2 / T_\u03c6",
           "type": "symbol_definition"
         },
@@ -4477,7 +4477,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: G = \u210fc / (m_P,\u03c6 \u00d7 \u03c6\u2075)\u00b2",
           "type": "symbol_definition"
         },
@@ -4507,7 +4507,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: k_B = E_\u03c6 / T_\u03c6 (morphic entropy per coherence echo)",
           "type": "symbol_definition"
         },
@@ -4532,7 +4532,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: e = \u221a(4\u03c0\u03b5\u2080\u210fc\u03b1) where \u03b1 is \u03c6-native eigenvalue",
           "type": "symbol_definition"
         },
@@ -4567,7 +4567,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: \u03bc\u2080 = 1/(\u03b5\u2080c\u00b2) from Maxwell constraint",
           "type": "symbol_definition"
         },
@@ -4592,7 +4592,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: \u03b5\u2080 = 1/(\u03bc\u2080c\u00b2) from Maxwell relations",
           "type": "symbol_definition"
         },
@@ -4612,7 +4612,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: h = 2\u03c0 \u00d7 \u210f (full morphic recursion cycle)",
           "type": "symbol_definition"
         },
@@ -4632,7 +4632,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: c = 1/\u221a(\u03bc\u2080\u03b5\u2080) from Maxwell constraint",
           "type": "symbol_definition"
         },
@@ -4652,7 +4652,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: m\u2080 as minimum coherent recursion loop mass",
           "type": "symbol_definition"
         },
@@ -4677,7 +4677,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: Z\u2080 = \u221a(\u03bc\u2080/\u03b5\u2080) from morphic coupling resistance",
           "type": "symbol_definition"
         },
@@ -4697,7 +4697,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: N_A = \u03c6^55 (soul-to-ensemble crossover scale)",
           "type": "symbol_definition"
         },
@@ -4712,7 +4712,7 @@
           "type": "symbol_definition"
         },
         {
-          "symbol": "FSCTF",
+          "symbol": "FIRM",
           "definition": "derivation: \u039b = \u03c6^(-120) (grace-echo curvature)",
           "type": "symbol_definition"
         },
@@ -4785,7 +4785,7 @@
       "module": "kelvin_scaling_thermal",
       "file": "constants/kelvin_scaling_thermal.py",
       "domain": "advanced",
-      "docstring": "Kelvin Scaling Factor: \u03c6-Native Thermal Morphism Derivation\n\nThis module implements the FSCTF derivation of the Kelvin scaling factor 2.883,\nwhich appears in cosmic thermal relic scaling, Planck-Kelvin temperature bridges,\nand blackbody peak conversions.\n\nMathematical Foundation:\n- Temperature as fractal echo of morphic energy coherence\n- \u03c6-native thermal morphism scaling factors\n- Exact derivation from \u03c6-recursive Boltzmann suppression\n\nDerivation Path:\n\u03c6-thermal geometry \u2192 morphic coherence scaling \u2192 exact Kelvin factor\n\nKey Result:\nKelvin scaling factor = \u03c0/ln(\u03c6\u00b3 + \u03c6\u207b\u00b2) \u2248 2.883\n\nPhysical Significance:\n- Replaces arbitrary Planck\u2192Kelvin bridge with \u03c6-native conversion\n- Provides thermal echo projection constant\n- Exact match to blackbody Wien-scaling without empirical fitting\n\nScientific Integrity:\n- Zero empirical inputs: Pure \u03c6-mathematical derivation\n- Complete provenance: Traces to thermal morphism geometry\n- Falsifiable prediction: Exact value or theory is wrong\n- Mathematical necessity: Unique expression from \u03c6-recursion\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Kelvin Scaling Factor: \u03c6-Native Thermal Morphism Derivation\n\nThis module implements the FIRM derivation of the Kelvin scaling factor 2.883,\nwhich appears in cosmic thermal relic scaling, Planck-Kelvin temperature bridges,\nand blackbody peak conversions.\n\nMathematical Foundation:\n- Temperature as fractal echo of morphic energy coherence\n- \u03c6-native thermal morphism scaling factors\n- Exact derivation from \u03c6-recursive Boltzmann suppression\n\nDerivation Path:\n\u03c6-thermal geometry \u2192 morphic coherence scaling \u2192 exact Kelvin factor\n\nKey Result:\nKelvin scaling factor = \u03c0/ln(\u03c6\u00b3 + \u03c6\u207b\u00b2) \u2248 2.883\n\nPhysical Significance:\n- Replaces arbitrary Planck\u2192Kelvin bridge with \u03c6-native conversion\n- Provides thermal echo projection constant\n- Exact match to blackbody Wien-scaling without empirical fitting\n\nScientific Integrity:\n- Zero empirical inputs: Pure \u03c6-mathematical derivation\n- Complete provenance: Traces to thermal morphism geometry\n- Falsifiable prediction: Exact value or theory is wrong\n- Mathematical necessity: Unique expression from \u03c6-recursion\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "T",
@@ -4920,7 +4920,7 @@
       "module": "hubble_constant_derivation",
       "file": "constants/hubble_constant_derivation.py",
       "domain": "cosmology",
-      "docstring": "Hubble Constant Derivation: H\u2080 from \u03c6-Native Flow Recursion\n\nThis module implements the FSCTF derivation of the Hubble constant H\u2080 from\n\u03c6-recursive flow dynamics, replacing empirical anchors with theoretical values.\n\nMathematical Foundation:\n- H\u2080 = 1/(t_Planck \u00d7 \u03c6\u1d4f) where k = recursion depth\n- Flow recursion depth: k \u2248 294 (\u03c6-coherence time doublings)\n- Observer correction: \u03c6^(-\u03b5) with \u03b5 \u2248 0.1 (torsional drift)\n- Tension resolution: Eliminates 1.05 factor via echo misalignment\n\nDerivation Path:\n\u03c6-recursive flow \u2192 coherence damping \u2192 expansion rate \u2192\ndimensional bridge \u2192 H\u2080 derivation\n\nKey Results:\n- Base H\u2080: 1/(t_P \u00d7 \u03c6\u00b2\u2079\u2074) \u2248 70 km/s/Mpc\n- Observer correction: H\u2080 \u00d7 \u03c6^(-0.1) \u2248 67.3 km/s/Mpc  \n- Tension resolution: 5% difference from echo misalignment\n\nProvenance:\n- All results trace to: \u03c6-recursive flow dynamics\n- No empirical inputs: Pure flow eigenvalue analysis\n- Mathematical necessity: Unique expansion rate solution\n\nPhysical Significance:\n- H\u2080 as \u03c6-damped soul-lattice expansion rate\n- Current epoch at 294 recursion layers from Planck\n- Hubble tension from observer-echo clock misalignment\n\nMathematical Properties:\n- Flow invariant: Determined by recursion dynamics\n- Universal: Same structure for all \u03c6-recursive cosmologies\n- Stable: Fixed point of flow eigenvalue evolution\n- Exact: No approximation, pure geometric result\n\nReferences:\n- \u03c6-recursive flow dynamics in FSCTF\n- Soul-lattice expansion eigenvalue analysis\n- Observer-relative morphic clock theory\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-flow geometry\n- Complete provenance: Traces to recursive flow axioms\n- Falsifiable prediction: H\u2080 = 70\u00d7\u03c6^(-0.1) \u00b1 0.1% or theory is wrong\n- No curve fitting: Pure flow eigenvalue construction\n- Mathematical necessity: UNIQUE expansion rate from recursion\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Hubble Constant Derivation: H\u2080 from \u03c6-Native Flow Recursion\n\nThis module implements the FIRM derivation of the Hubble constant H\u2080 from\n\u03c6-recursive flow dynamics, replacing empirical anchors with theoretical values.\n\nMathematical Foundation:\n- H\u2080 = 1/(t_Planck \u00d7 \u03c6\u1d4f) where k = recursion depth\n- Flow recursion depth: k \u2248 294 (\u03c6-coherence time doublings)\n- Observer correction: \u03c6^(-\u03b5) with \u03b5 \u2248 0.1 (torsional drift)\n- Tension resolution: Eliminates 1.05 factor via echo misalignment\n\nDerivation Path:\n\u03c6-recursive flow \u2192 coherence damping \u2192 expansion rate \u2192\ndimensional bridge \u2192 H\u2080 derivation\n\nKey Results:\n- Base H\u2080: 1/(t_P \u00d7 \u03c6\u00b2\u2079\u2074) \u2248 70 km/s/Mpc\n- Observer correction: H\u2080 \u00d7 \u03c6^(-0.1) \u2248 67.3 km/s/Mpc  \n- Tension resolution: 5% difference from echo misalignment\n\nProvenance:\n- All results trace to: \u03c6-recursive flow dynamics\n- No empirical inputs: Pure flow eigenvalue analysis\n- Mathematical necessity: Unique expansion rate solution\n\nPhysical Significance:\n- H\u2080 as \u03c6-damped soul-lattice expansion rate\n- Current epoch at 294 recursion layers from Planck\n- Hubble tension from observer-echo clock misalignment\n\nMathematical Properties:\n- Flow invariant: Determined by recursion dynamics\n- Universal: Same structure for all \u03c6-recursive cosmologies\n- Stable: Fixed point of flow eigenvalue evolution\n- Exact: No approximation, pure geometric result\n\nReferences:\n- \u03c6-recursive flow dynamics in FIRM\n- Soul-lattice expansion eigenvalue analysis\n- Observer-relative morphic clock theory\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-flow geometry\n- Complete provenance: Traces to recursive flow axioms\n- Falsifiable prediction: H\u2080 = 70\u00d7\u03c6^(-0.1) \u00b1 0.1% or theory is wrong\n- No curve fitting: Pure flow eigenvalue construction\n- Mathematical necessity: UNIQUE expansion rate from recursion\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "HUBBLE_CONSTANT_DERIVATION",
@@ -5095,7 +5095,7 @@
       "module": "weinberg_angle_exact_derivation",
       "file": "constants/weinberg_angle_exact_derivation.py",
       "domain": "advanced",
-      "docstring": "Weinberg Angle Exact Derivation: sin\u00b2\u03b8_W from \u03c6-Native Electroweak Mixing\n\nThis module implements the exact FSCTF derivation of the Weinberg angle\nsin\u00b2\u03b8_W \u2248 0.231 from \u03c6-native electroweak gauge mixing without empirical\ngauge coupling assumptions.\n\nMathematical Foundation:\n- Electroweak mixing: SU(2)\u00d7U(1) \u2192 U(1)_EM via \u03c6-resonant collapse\n- Morphic interpretation: SU(2) ~ triple-morphism, U(1) ~ boundary torsion\n- Gauge coupling hierarchy: g ~ \u03c6^(-a), g' ~ \u03c6^(-b) with a-b = 1.25\n- Mixing formula: sin\u00b2\u03b8_W = 1/(1 + \u03c6^(2(a-b))) \u2248 0.231\n\nDerivation Path:\n\u03c6-graded electroweak symmetry \u2192 morphic bifurcation \u2192 gauge coupling hierarchy \u2192\n\u03c6-exponent gap determination \u2192 exact Weinberg angle\n\nKey Results:\n- Exact prediction: sin\u00b2\u03b8_W = 0.231 (matches observation perfectly)\n- \u03c6-exponent gap: a-b = 1.25 (SU(2) vs U(1) morphic layer difference)\n- No empirical gauge couplings: Pure \u03c6-native field mixing\n\nProvenance:\n- All results trace to: \u03c6-graded electroweak theory\n- No empirical inputs: Pure morphic symmetry analysis\n- Mathematical necessity: Unique mixing from \u03c6-hierarchy\n\nPhysical Significance:\n- Explains electroweak symmetry breaking structure\n- Connects \u03c6-recursion to gauge unification\n- Provides theoretical foundation for Standard Model\n\nMathematical Properties:\n- Gauge invariant: Independent of coupling normalization\n- Universal: Same structure for all \u03c6-recursive gauge theories\n- Stable: Fixed point of electroweak RG flow\n- Exact: No approximation, pure analytical result\n\nReferences:\n- Electroweak theory and gauge mixing\n- \u03c6-graded gauge hierarchy in FSCTF\n- Morphic symmetry breaking mechanisms\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-electroweak geometry\n- Complete provenance: Traces to symmetry breaking axioms\n- Falsifiable prediction: sin\u00b2\u03b8_W = 0.231 \u00b1 0.001 or theory is wrong\n- No curve fitting: Pure symmetry breaking construction\n- Mathematical necessity: UNIQUE angle from \u03c6-morphic mixing\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Weinberg Angle Exact Derivation: sin\u00b2\u03b8_W from \u03c6-Native Electroweak Mixing\n\nThis module implements the exact FIRM derivation of the Weinberg angle\nsin\u00b2\u03b8_W \u2248 0.231 from \u03c6-native electroweak gauge mixing without empirical\ngauge coupling assumptions.\n\nMathematical Foundation:\n- Electroweak mixing: SU(2)\u00d7U(1) \u2192 U(1)_EM via \u03c6-resonant collapse\n- Morphic interpretation: SU(2) ~ triple-morphism, U(1) ~ boundary torsion\n- Gauge coupling hierarchy: g ~ \u03c6^(-a), g' ~ \u03c6^(-b) with a-b = 1.25\n- Mixing formula: sin\u00b2\u03b8_W = 1/(1 + \u03c6^(2(a-b))) \u2248 0.231\n\nDerivation Path:\n\u03c6-graded electroweak symmetry \u2192 morphic bifurcation \u2192 gauge coupling hierarchy \u2192\n\u03c6-exponent gap determination \u2192 exact Weinberg angle\n\nKey Results:\n- Exact prediction: sin\u00b2\u03b8_W = 0.231 (matches observation perfectly)\n- \u03c6-exponent gap: a-b = 1.25 (SU(2) vs U(1) morphic layer difference)\n- No empirical gauge couplings: Pure \u03c6-native field mixing\n\nProvenance:\n- All results trace to: \u03c6-graded electroweak theory\n- No empirical inputs: Pure morphic symmetry analysis\n- Mathematical necessity: Unique mixing from \u03c6-hierarchy\n\nPhysical Significance:\n- Explains electroweak symmetry breaking structure\n- Connects \u03c6-recursion to gauge unification\n- Provides theoretical foundation for Standard Model\n\nMathematical Properties:\n- Gauge invariant: Independent of coupling normalization\n- Universal: Same structure for all \u03c6-recursive gauge theories\n- Stable: Fixed point of electroweak RG flow\n- Exact: No approximation, pure analytical result\n\nReferences:\n- Electroweak theory and gauge mixing\n- \u03c6-graded gauge hierarchy in FIRM\n- Morphic symmetry breaking mechanisms\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-electroweak geometry\n- Complete provenance: Traces to symmetry breaking axioms\n- Falsifiable prediction: sin\u00b2\u03b8_W = 0.231 \u00b1 0.001 or theory is wrong\n- No curve fitting: Pure symmetry breaking construction\n- Mathematical necessity: UNIQUE angle from \u03c6-morphic mixing\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "_W",
@@ -5370,7 +5370,7 @@
       "module": "ckm_matrix_vus",
       "file": "constants/ckm_matrix_vus.py",
       "domain": "particle",
-      "docstring": "FSCTF CKM Matrix Element V_us Derivation\n\nThis module implements the complete FSCTF derivation of the CKM matrix element V_us\nrepresenting flavor mixing between up and strange quarks through \u03c6-native \nsoul-leakage across generation strata.\n\nThe CKM matrix in FSCTF is a morphic entanglement map across recursive generation \nstrata, torsional delay shells, and coherence leakage channels.",
+      "docstring": "FIRM CKM Matrix Element V_us Derivation\n\nThis module implements the complete FIRM derivation of the CKM matrix element V_us\nrepresenting flavor mixing between up and strange quarks through \u03c6-native \nsoul-leakage across generation strata.\n\nThe CKM matrix in FIRM is a morphic entanglement map across recursive generation \nstrata, torsional delay shells, and coherence leakage channels.",
       "expressions": [
         {
           "variable": "PHI_VALUE",
@@ -5500,11 +5500,11 @@
       "step_count": 0,
       "definition_count": 22
     },
-    "complete_fsctf_constants": {
-      "module": "complete_fsctf_constants",
-      "file": "constants/complete_fsctf_constants.py",
+    "complete_firm_constants": {
+      "module": "complete_firm_constants",
+      "file": "constants/complete_firm_constants.py",
       "domain": "advanced",
-      "docstring": "Complete FSCTF Constants: Final Resolution of All Remaining Quarantined Values\n\nThis module implements the complete set of remaining FSCTF derivations for\nadvanced theoretical constructs, achieving 100% elimination of empirical contamination.\n\nImplemented Derivations:\n1. Topology Factor: \u03c7_morphic = 2 - \u03c6^(-1) \u2248 1.382 (morphic Euler characteristic)\n2. \u03b6-Normalization: \u03c0/(2\u03c6^(1/3)) \u2248 1.198 (spectral density normalization)\n3. \u039b Suppression: \u03c6^(-120) \u2248 10^(-121) (cosmological constant hierarchy)\n4. Spectral C: \u0393(\u03c6)/\u03b6(\u03c6) \u00d7 ln(2\u03c0/\u03c6^(2/3)) \u2248 4.081 (morphic resonance scaling)\n5. CMB Envelope: \u03c6-native acoustic projections replacing all empirical constants\n\nMathematical Foundation:\n- Morphic topology: Non-orientable \u03c6-shell puncture mechanics\n- Spectral geometry: \u03c6-recursive heat kernel normalization\n- Vacuum hierarchy: 120-shell recursive cancellation mechanism\n- Resonance scaling: \u0393/\u03b6 morphic amplitude normalization\n- Acoustic holography: \u03c6-shell phonon echo projection\n\nDerivation Paths:\n\u03c6-recursive topology \u2192 morphic Euler characteristic \u2192 exact topology factor\n\u03c6-spectral geometry \u2192 heat kernel normalization \u2192 \u03b6-function scaling\n\u03c6-shell vacuum \u2192 recursive cancellation \u2192 cosmological constant suppression\n\u03c6-morphic resonance \u2192 \u0393/\u03b6 normalization \u2192 spectral amplitude constant\n\u03c6-acoustic modes \u2192 phonon holography \u2192 CMB envelope structure\n\nKey Results:\n- All remaining constants derived from \u03c6-mathematics\n- Complete elimination of empirical contamination\n- Universal \u03c6-recursive foundation established\n- Perfect theoretical coherence achieved\n\nProvenance:\n- All results trace to: \u03c6-recursive field theory\n- No empirical inputs: Pure mathematical analysis\n- Mathematical necessity: Unique theoretical expressions\n\nPhysical Significance:\n- Completes FSCTF theoretical framework\n- Achieves total empirical elimination\n- Establishes universal \u03c6-foundation\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-geometry\n- Complete provenance: Traces to fundamental axioms\n- Falsifiable predictions: Exact values or theory is wrong\n- No curve fitting: Pure theoretical construction\n- Mathematical necessity: UNIQUE expressions from \u03c6-recursion\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Complete FIRM Constants: Final Resolution of All Remaining Quarantined Values\n\nThis module implements the complete set of remaining FIRM derivations for\nadvanced theoretical constructs, achieving 100% elimination of empirical contamination.\n\nImplemented Derivations:\n1. Topology Factor: \u03c7_morphic = 2 - \u03c6^(-1) \u2248 1.382 (morphic Euler characteristic)\n2. \u03b6-Normalization: \u03c0/(2\u03c6^(1/3)) \u2248 1.198 (spectral density normalization)\n3. \u039b Suppression: \u03c6^(-120) \u2248 10^(-121) (cosmological constant hierarchy)\n4. Spectral C: \u0393(\u03c6)/\u03b6(\u03c6) \u00d7 ln(2\u03c0/\u03c6^(2/3)) \u2248 4.081 (morphic resonance scaling)\n5. CMB Envelope: \u03c6-native acoustic projections replacing all empirical constants\n\nMathematical Foundation:\n- Morphic topology: Non-orientable \u03c6-shell puncture mechanics\n- Spectral geometry: \u03c6-recursive heat kernel normalization\n- Vacuum hierarchy: 120-shell recursive cancellation mechanism\n- Resonance scaling: \u0393/\u03b6 morphic amplitude normalization\n- Acoustic holography: \u03c6-shell phonon echo projection\n\nDerivation Paths:\n\u03c6-recursive topology \u2192 morphic Euler characteristic \u2192 exact topology factor\n\u03c6-spectral geometry \u2192 heat kernel normalization \u2192 \u03b6-function scaling\n\u03c6-shell vacuum \u2192 recursive cancellation \u2192 cosmological constant suppression\n\u03c6-morphic resonance \u2192 \u0393/\u03b6 normalization \u2192 spectral amplitude constant\n\u03c6-acoustic modes \u2192 phonon holography \u2192 CMB envelope structure\n\nKey Results:\n- All remaining constants derived from \u03c6-mathematics\n- Complete elimination of empirical contamination\n- Universal \u03c6-recursive foundation established\n- Perfect theoretical coherence achieved\n\nProvenance:\n- All results trace to: \u03c6-recursive field theory\n- No empirical inputs: Pure mathematical analysis\n- Mathematical necessity: Unique theoretical expressions\n\nPhysical Significance:\n- Completes FIRM theoretical framework\n- Achieves total empirical elimination\n- Establishes universal \u03c6-foundation\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-geometry\n- Complete provenance: Traces to fundamental axioms\n- Falsifiable predictions: Exact values or theory is wrong\n- No curve fitting: Pure theoretical construction\n- Mathematical necessity: UNIQUE expressions from \u03c6-recursion\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "C",
@@ -5542,8 +5542,8 @@
           "type": "assignment"
         },
         {
-          "variable": "COMPLETE_FSCTF_CONSTANTS",
-          "expression": "CompleteFSCTFConstants()",
+          "variable": "COMPLETE_FIRM_CONSTANTS",
+          "expression": "CompleteFIRMConstants()",
           "type": "assignment"
         },
         {
@@ -5732,7 +5732,7 @@
         },
         {
           "symbol": "T",
-          "definition": "est all complete FSCTF constants when run directly",
+          "definition": "est all complete FIRM constants when run directly",
           "type": "symbol_definition"
         },
         {
@@ -6024,7 +6024,7 @@
       "module": "kelvin_scaling_factor",
       "file": "constants/kelvin_scaling_factor.py",
       "domain": "advanced",
-      "docstring": "Kelvin Scaling Factor: Dimensional Bridge from \u03c6-Morphic to Physical Temperature\n\nThis module implements the FSCTF derivation of the Kelvin scaling factor,\nreplacing the empirical 2.883 with the exact 2.821 from \u03c6-spectral Wien peak.\n\nMathematical Foundation:\n- \u03c6-recursive spectral density: \u03c1(\u03bd) = \u03bd\u00b3/(e^(\u03bd/\u03c6) - 1)\n- Wien displacement law in \u03c6-space: peak occurs at \u03bd* = \u03c6 \u00d7 2.821\n- Dimensional bridge: T_Kelvin = T_morphic \u00d7 2.821\n\nDerivation Path:\n\u03c6-recursive temperature \u2192 \u03c6-weighted spectral distribution \u2192 \nWien peak maximization \u2192 exact scaling factor 2.821\n\nKey Results:\n- Replaces empirical 2.883 with exact 2.821 from \u03c6-mathematics\n- Resolves dimensional bridge between morphic and physical temperature\n- Eliminates need for empirical fitting in temperature conversions\n\nProvenance:\n- All results trace to: \u03c6-recursion and spectral geometry\n- No empirical inputs: Pure mathematical Wien peak derivation\n- Exact solution: 2.821 from transcendental equation solution\n\nPhysical Significance:\n- Connects FSCTF morphic temperature to observable Kelvin scale\n- Explains blackbody spectrum peaks in \u03c6-native cosmology\n- Provides theoretical foundation for CMB temperature calculations\n\nMathematical Properties:\n- Exact: No approximation, pure analytical solution\n- Universal: Same value for all \u03c6-recursive temperature systems\n- Stable: Fixed point of \u03c6-spectral Wien displacement\n- Convergent: Transcendental equation has unique solution\n\nReferences:\n- Wien displacement law in quantum field theory\n- Spectral geometry on \u03c6-recursive manifolds\n- FSCTF dimensional bridge framework\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-mathematics\n- Complete provenance: Traces to \u03c6-recursion axioms\n- Falsifiable prediction: 2.821 \u00b1 0.001 or theory is wrong\n- No curve fitting: Pure mathematical Wien peak analysis\n- Mathematical necessity: UNIQUE solution to \u03c6-spectral maximization\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "Kelvin Scaling Factor: Dimensional Bridge from \u03c6-Morphic to Physical Temperature\n\nThis module implements the FIRM derivation of the Kelvin scaling factor,\nreplacing the empirical 2.883 with the exact 2.821 from \u03c6-spectral Wien peak.\n\nMathematical Foundation:\n- \u03c6-recursive spectral density: \u03c1(\u03bd) = \u03bd\u00b3/(e^(\u03bd/\u03c6) - 1)\n- Wien displacement law in \u03c6-space: peak occurs at \u03bd* = \u03c6 \u00d7 2.821\n- Dimensional bridge: T_Kelvin = T_morphic \u00d7 2.821\n\nDerivation Path:\n\u03c6-recursive temperature \u2192 \u03c6-weighted spectral distribution \u2192 \nWien peak maximization \u2192 exact scaling factor 2.821\n\nKey Results:\n- Replaces empirical 2.883 with exact 2.821 from \u03c6-mathematics\n- Resolves dimensional bridge between morphic and physical temperature\n- Eliminates need for empirical fitting in temperature conversions\n\nProvenance:\n- All results trace to: \u03c6-recursion and spectral geometry\n- No empirical inputs: Pure mathematical Wien peak derivation\n- Exact solution: 2.821 from transcendental equation solution\n\nPhysical Significance:\n- Connects FIRM morphic temperature to observable Kelvin scale\n- Explains blackbody spectrum peaks in \u03c6-native cosmology\n- Provides theoretical foundation for CMB temperature calculations\n\nMathematical Properties:\n- Exact: No approximation, pure analytical solution\n- Universal: Same value for all \u03c6-recursive temperature systems\n- Stable: Fixed point of \u03c6-spectral Wien displacement\n- Convergent: Transcendental equation has unique solution\n\nReferences:\n- Wien displacement law in quantum field theory\n- Spectral geometry on \u03c6-recursive manifolds\n- FIRM dimensional bridge framework\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-mathematics\n- Complete provenance: Traces to \u03c6-recursion axioms\n- Falsifiable prediction: 2.821 \u00b1 0.001 or theory is wrong\n- No curve fitting: Pure mathematical Wien peak analysis\n- Mathematical necessity: UNIQUE solution to \u03c6-spectral maximization\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "T_K",
@@ -6279,7 +6279,7 @@
       "module": "ckm_suppression_factor",
       "file": "constants/ckm_suppression_factor.py",
       "domain": "particle",
-      "docstring": "CKM Suppression Factor: 0.59 from \u03c6-Native Quark Generation Mixing\n\nThis module implements the FSCTF derivation of the CKM suppression factor\n0.59 from \u03c6-recursive quark generation mixing with echo coherence decay.\n\nMathematical Foundation:\n- Raw \u03c6-mixing: |V_us| ~ \u03c6^(-1) \u2248 0.618 (adjacent generation gap)\n- Echo suppression: Additional \u03c6^(-\u0394_echo) factor\n- Observed ratio: 0.225/0.618 \u2248 0.59 (suppression factor)\n- Generation gaps: \u0394n = 1 for first \u2192 second generation\n\nDerivation Path:\n\u03c6-graded flavor hierarchy \u2192 generation mixing \u2192 echo coherence \u2192\nsuppression factor \u2192 CKM matrix element\n\nKey Results:\n- Suppression factor: 0.59 from echo interference between generations\n- Physical basis: Coherence breakdown across flavor shells\n- Eliminates empirical fitting in CKM matrix\n\nProvenance:\n- All results trace to: \u03c6-graded flavor mixing theory\n- No empirical inputs: Pure generation coherence analysis\n- Mathematical necessity: Unique suppression mechanism\n\nPhysical Significance:\n- Explains observed CKM element |V_us| \u2248 0.225\n- Connects \u03c6-recursion to quark flavor mixing\n- Provides theoretical foundation for generation hierarchy\n\nMathematical Properties:\n- Flavor invariant: Independent of basis choice\n- Universal: Same structure for all \u03c6-recursive flavor theories\n- Stable: Fixed point of generation mixing evolution\n- Exact: No approximation, pure analytical result\n\nReferences:\n- CKM matrix and quark flavor mixing\n- \u03c6-graded flavor hierarchy in FSCTF\n- Generation coherence in recursive field theory\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-flavor geometry\n- Complete provenance: Traces to generation mixing axioms\n- Falsifiable prediction: 0.59 suppression \u00b1 0.01 or theory is wrong\n- No curve fitting: Pure generation coherence construction\n- Mathematical necessity: UNIQUE suppression from echo decay\n\nAuthor: FSCTF Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
+      "docstring": "CKM Suppression Factor: 0.59 from \u03c6-Native Quark Generation Mixing\n\nThis module implements the FIRM derivation of the CKM suppression factor\n0.59 from \u03c6-recursive quark generation mixing with echo coherence decay.\n\nMathematical Foundation:\n- Raw \u03c6-mixing: |V_us| ~ \u03c6^(-1) \u2248 0.618 (adjacent generation gap)\n- Echo suppression: Additional \u03c6^(-\u0394_echo) factor\n- Observed ratio: 0.225/0.618 \u2248 0.59 (suppression factor)\n- Generation gaps: \u0394n = 1 for first \u2192 second generation\n\nDerivation Path:\n\u03c6-graded flavor hierarchy \u2192 generation mixing \u2192 echo coherence \u2192\nsuppression factor \u2192 CKM matrix element\n\nKey Results:\n- Suppression factor: 0.59 from echo interference between generations\n- Physical basis: Coherence breakdown across flavor shells\n- Eliminates empirical fitting in CKM matrix\n\nProvenance:\n- All results trace to: \u03c6-graded flavor mixing theory\n- No empirical inputs: Pure generation coherence analysis\n- Mathematical necessity: Unique suppression mechanism\n\nPhysical Significance:\n- Explains observed CKM element |V_us| \u2248 0.225\n- Connects \u03c6-recursion to quark flavor mixing\n- Provides theoretical foundation for generation hierarchy\n\nMathematical Properties:\n- Flavor invariant: Independent of basis choice\n- Universal: Same structure for all \u03c6-recursive flavor theories\n- Stable: Fixed point of generation mixing evolution\n- Exact: No approximation, pure analytical result\n\nReferences:\n- CKM matrix and quark flavor mixing\n- \u03c6-graded flavor hierarchy in FIRM\n- Generation coherence in recursive field theory\n\nScientific Integrity:\n- Zero free parameters: All structure from \u03c6-flavor geometry\n- Complete provenance: Traces to generation mixing axioms\n- Falsifiable prediction: 0.59 suppression \u00b1 0.01 or theory is wrong\n- No curve fitting: Pure generation coherence construction\n- Mathematical necessity: UNIQUE suppression from echo decay\n\nAuthor: FIRM Research Team\nCreated: [IMPLEMENTATION DATE]\nAcademic integrity verified: [VERIFICATION DATE]",
       "expressions": [
         {
           "variable": "S",

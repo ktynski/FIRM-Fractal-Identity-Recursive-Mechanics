@@ -1,7 +1,7 @@
 """
 Topological Factor: 2 - φ⁻¹ from φ-Shell Euler Characteristic
 
-This module implements the FSCTF derivation of the topological factor 2 - φ⁻¹,
+This module implements the FIRM derivation of the topological factor 2 - φ⁻¹,
 derived from the effective Euler characteristic of φ-shell coherence manifolds.
 
 Mathematical Foundation:
@@ -47,7 +47,7 @@ Scientific Integrity:
 - No curve fitting: Pure geometric Euler characteristic
 - Mathematical necessity: UNIQUE topological invariant
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """

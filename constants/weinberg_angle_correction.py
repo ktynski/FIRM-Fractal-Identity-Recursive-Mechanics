@@ -1,7 +1,7 @@
 """
 Weinberg Angle Correction: 1.21 from φ-Native Gauge Mixing
 
-This module implements the FSCTF derivation of the Weinberg angle correction
+This module implements the FIRM derivation of the Weinberg angle correction
 factor 1.21 from φ-native electroweak gauge mixing with radiative damping.
 
 Mathematical Foundation:
@@ -37,7 +37,7 @@ Mathematical Properties:
 
 References:
 - Electroweak theory and gauge mixing
-- φ-graded gauge hierarchy in FSCTF
+- φ-graded gauge hierarchy in FIRM
 - Radiative corrections in recursive field theory
 
 Scientific Integrity:
@@ -47,7 +47,7 @@ Scientific Integrity:
 - No curve fitting: Pure gauge coherence construction
 - Mathematical necessity: UNIQUE correction from echo damping
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -253,7 +253,7 @@ class WeinbergAngleCorrectionDerivation:
         4. Physical Interpretation:
            - α = {alpha:.3f} represents effective shell interference depth
            - Gauge coherence breaks down over ~{alpha:.1f} φ-shells
-           - Natural scale: Comparable to other FSCTF corrections
+           - Natural scale: Comparable to other FIRM corrections
 
         5. Corrected Weinberg Angle:
            - sin²θ_W = (φ/(1+φ))² × φ^(-{alpha:.3f})
@@ -310,7 +310,7 @@ class WeinbergAngleCorrectionDerivation:
         Step 5: Physical Interpretation
         - α = {alpha:.3f}: Effective echo interference depth
         - Meaning: Gauge mixing coherence extends ~{alpha:.1f} φ-shells
-        - Consistency: Similar to other FSCTF shell interactions
+        - Consistency: Similar to other FIRM shell interactions
 
         Step 6: Shell Structure Validation
         - α ≈ 1.2: Natural scale for gauge shell coupling

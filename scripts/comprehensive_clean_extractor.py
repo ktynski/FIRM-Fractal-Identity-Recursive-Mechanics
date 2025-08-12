@@ -17,7 +17,7 @@ class ComprehensiveCleanExtractor:
         self.domains = {
             'fundamental': {
                 'title': 'Fundamental Constants',
-                'modules': ['fine_structure_alpha', 'fundamental_constants_fsctf', 'gauge_couplings'],
+                'modules': ['fine_structure_alpha', 'fundamental_constants_firm', 'gauge_couplings'],
                 'description': 'Core constants defining electromagnetic, weak, and strong forces'
             },
             'particle': {
@@ -37,7 +37,7 @@ class ComprehensiveCleanExtractor:
                 'modules': ['topology_factor', 'topology_and_zeta_constants', 'zeta_normalization',
                            'weinberg_angle_exact', 'weinberg_angle_correction', 'weinberg_angle_exact_derivation',
                            'strong_coupling_complete', 'strong_coupling_derivations', 'kelvin_scaling_factor',
-                           'kelvin_scaling_thermal', 'complete_fsctf_constants'],
+                           'kelvin_scaling_thermal', 'complete_firm_constants'],
                 'description': 'Topological corrections, spectral functions, and high-order terms'
             }
         }
@@ -118,7 +118,7 @@ class ComprehensiveCleanExtractor:
 
             # Create clean module title
             module_title = module_data['module'].replace('_', ' ').title()
-            module_title = module_title.replace('Fsctf', 'FSCTF')
+            module_title = module_title.replace('Firm', 'FIRM')
             module_title = module_title.replace('Ckm', 'CKM')
             module_title = module_title.replace('Cmb', 'CMB')
 

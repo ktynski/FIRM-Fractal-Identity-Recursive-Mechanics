@@ -24,7 +24,7 @@ Key Results:
 
 Mathematical Rigor:
     - Zero empirical inputs: All values derived from φ-mathematics
-    - Complete provenance: Every constant traceable to FSCTF axioms
+    - Complete provenance: Every constant traceable to FIRM axioms
     - Falsification criteria: Specific φ-harmonic pattern requirements
     - No curve fitting: Pure mathematical pattern recognition only
 
@@ -83,7 +83,7 @@ from .phi_harmonic_analysis import (
 __version__ = "1.0.0"
 __author__ = "FIRM Research Team"
 
-# Global consciousness configuration (all values mathematically derived from FSCTF axioms)
+# Global consciousness configuration (all values mathematically derived from FIRM axioms)
 CONSCIOUSNESS_CONFIG = {
     # Critical depth: Derived from neural criticality at "edge of chaos" φ^7 threshold
     # Mathematical basis: φ^7 = 29.034... represents critical consciousness emergence

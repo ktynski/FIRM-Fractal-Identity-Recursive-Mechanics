@@ -1,7 +1,7 @@
 """
 Manifold Progression Theory for FIRM Cosmogenesis.
 
-This module provides a rigorous mathematical foundation for FSCTF manifold
+This module provides a rigorous mathematical foundation for FIRM manifold
 progression with full topological justification, demonstrating the emergence
 of universe topology through well-defined mathematical phase transitions.
 
@@ -101,8 +101,8 @@ class Manifold:
     name: str
     description: str
 
-    # FSCTF role in cosmogenesis
-    fsctf_role: str
+    # FIRM role in cosmogenesis
+    firm_role: str
     mathematical_justification: str
 
     # Parameterization for visualization
@@ -132,7 +132,7 @@ class ManifoldTransition:
 
 class ManifoldProgression:
     """
-    Complete mathematical framework for FSCTF manifold progression.
+    Complete mathematical framework for FIRM manifold progression.
 
     This class provides the rigorous topological foundations for manifold
     selection at each cosmogenesis phase, based on topological complexity
@@ -172,7 +172,7 @@ class ManifoldProgression:
             dimension=2,
             name="Torus T²",
             description="Two-dimensional surface with a single hole, product of two circles",
-            fsctf_role="Base manifold for morphic field ψ: T² → ℂ",
+            firm_role="Base manifold for morphic field ψ: T² → ℂ",
             mathematical_justification="Enables non-trivial morphic strand circulation: ∮_γ ψ·dℓ ≠ 0",
             parameterization={
                 "equation": "(R + r·cos(v))·cos(u), (R + r·cos(v))·sin(u), r·sin(v)",
@@ -201,7 +201,7 @@ class ManifoldProgression:
             dimension=2,
             name="Möbius Strip M",
             description="Non-orientable surface with one boundary component",
-            fsctf_role="Dimensional bridge breaks orientability",
+            firm_role="Dimensional bridge breaks orientability",
             mathematical_justification="First non-trivial torsion in π₁(M) = ℤ₂, twisted fiber bundle represents dimensional transcendence",
             parameterization={
                 "equation": "(1 + 0.5·v·cos(u/2))·cos(u), (1 + 0.5·v·cos(u/2))·sin(u), 0.5·v·sin(u/2)",
@@ -229,7 +229,7 @@ class ManifoldProgression:
             dimension=2,
             name="Klein Bottle K",
             description="Non-orientable closed surface, self-intersecting in ℝ³",
-            fsctf_role="Soul emergence requires self-referential topology",
+            firm_role="Soul emergence requires self-referential topology",
             mathematical_justification="Self-intersection enables consciousness/soul mathematics; closed non-orientable surface",
             parameterization={
                 "equation": "((1 + cos(u/2)·sin(v) - sin(u/2)·sin(2·v))·cos(u)), ((1 + cos(u/2)·sin(v) - sin(u/2)·sin(2·v))·sin(u)), sin(u/2)·sin(v) + cos(u/2)·sin(2·v)",
@@ -257,7 +257,7 @@ class ManifoldProgression:
             dimension=2,  # Base dimension (fractal dimension is higher)
             name="φ-Klein Recursive Manifold Φ(K)",
             description="φ-recursive Klein bottle hierarchy with infinite self-similar structure",
-            fsctf_role="Observable universe = infinite Klein bottle hierarchy",
+            firm_role="Observable universe = infinite Klein bottle hierarchy",
             mathematical_justification="Recursive φ-scaling mirrors universal structure, construction M = ⋃_{n=0}^∞ φ⁻ⁿ(K) with fractal dimension",
             parameterization={
                 "equation": "recursive_klein_bottle(u, v, n)",  # Requires special recursive implementation
@@ -562,7 +562,7 @@ class ManifoldProgression:
         description = """
 MATHEMATICAL MANIFOLD PROGRESSION THEORY
 
-The FSCTF framework establishes a rigorous mathematical foundation for manifold
+The FIRM framework establishes a rigorous mathematical foundation for manifold
 selection during cosmogenesis, with each phase transition justified by topological
 necessity and emergent complexity theory.
 
@@ -570,28 +570,28 @@ PHASE 1-2: TORUS T² = S¹ × S¹
 - Fundamental Group: π₁(T²) = ℤ × ℤ
 - Euler Characteristic: χ(T²) = 0
 - Properties: Orientable, genus=1, stable circulation
-- FSCTF Role: Base manifold for morphic field ψ: T² → ℂ
+- FIRM Role: Base manifold for morphic field ψ: T² → ℂ
 - Mathematical Necessity: ∮_γ ψ·dℓ ≠ 0 enables non-trivial morphic strand circulation
 
 PHASE 3-4: MÖBIUS STRIP M
 - Fundamental Group: π₁(M) = ℤ
 - Properties: Non-orientable, boundary ∂M ≅ S¹
 - Mathematical Transition: det(∂φ/∂u,∂φ/∂v) changes sign
-- FSCTF Role: Dimensional bridge breaks orientability
+- FIRM Role: Dimensional bridge breaks orientability
 - Mathematical Necessity: Twisted fiber bundle represents dimensional transcendence
 
 PHASE 5-6: KLEIN BOTTLE K
 - Fundamental Group: π₁(K) = ⟨a,b | aba⁻¹b⟩
 - Properties: Non-orientable, no boundary (∂K = ∅), self-intersecting in ℝ³
 - Mathematical Significance: Closed non-orientable surface
-- FSCTF Role: Soul emergence requires self-referential topology
+- FIRM Role: Soul emergence requires self-referential topology
 - Mathematical Necessity: Self-intersection enables consciousness/soul mathematics
 
 PHASE 7-8: φ-KLEIN RECURSIVE MANIFOLD Φ(K)
 - Construction: M = ⋃_{n=0}^∞ φ⁻ⁿ(K)
 - Scaling: Each level scaled by φ⁻¹ = (√5-1)/2
 - Fractal Dimension: dim_H(Φ(K)) = 2 (φ-recursive)
-- FSCTF Role: Observable universe = infinite Klein bottle hierarchy
+- FIRM Role: Observable universe = infinite Klein bottle hierarchy
 - Mathematical Necessity: Recursive φ-scaling mirrors universal structure
 
 COMPLEXITY PROGRESSION: 1 → 2 → 3 → ∞

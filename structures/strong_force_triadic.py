@@ -1,7 +1,7 @@
 """
 Strong Force as φ-Locked Triadic Morphism Binding
 
-This module implements the FSCTF derivation of the strong nuclear force (QCD)
+This module implements the FIRM derivation of the strong nuclear force (QCD)
 as a triadic morphic binding where three φ-shell morphisms co-resonate in a
 locked braid, forming irreducible hadronic coherence.
 
@@ -31,7 +31,7 @@ Scientific Integrity:
 - Falsifiable predictions: Exact confinement mechanism or theory is wrong
 - Mathematical necessity: Unique expressions from φ-triads
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -70,7 +70,7 @@ class StrongForceTriadicDerivation:
     """
     Derive the strong force from φ-locked triadic morphism binding.
 
-    This class provides the complete FSCTF framework for understanding
+    This class provides the complete FIRM framework for understanding
     QCD as emerging from triadic φ-shell morphisms that form irreducible
     coherence loops, naturally explaining confinement and asymptotic freedom.
 
@@ -350,7 +350,7 @@ class StrongForceTriadicDerivation:
         hadron_masses = self.derive_hadron_masses()
 
         theoretical_analysis = f"""
-        FSCTF Strong Force: Complete Triadic Morphism Theory
+        FIRM Strong Force: Complete Triadic Morphism Theory
 
         Revolutionary Insights:
         1. Strong force is NOT fundamental - it emerges from φ-topology

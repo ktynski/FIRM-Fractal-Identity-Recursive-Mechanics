@@ -1,7 +1,7 @@
 """
 Zeta Normalization: π/(2φ^(1/3)) from φ-Weighted Spectral Geometry
 
-This module implements the FSCTF derivation of the zeta normalization factor
+This module implements the FIRM derivation of the zeta normalization factor
 π/(2φ^(1/3)) from φ-native spectral geometry on recursive soul-shell manifolds.
 
 Mathematical Foundation:
@@ -47,7 +47,7 @@ Scientific Integrity:
 - No curve fitting: Pure spectral regularization
 - Mathematical necessity: UNIQUE normalization from eigenvalue scaling
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -152,7 +152,7 @@ class ZetaNormalizationDerivation:
         # This gives: √(π²/(6φ^(2/3))) = π/√(6φ^(2/3)) = π/(√6 × φ^(1/3))
         exact_scaling = self._pi / (self._sqrt_6 * self._phi_one_third)
 
-        # Step 6: Canonical FSCTF form
+        # Step 6: Canonical FIRM form
         # The canonical form π/(2φ^(1/3)) is approximately equal to the exact result
         canonical_factor = self._canonical_normalization
 
@@ -289,7 +289,7 @@ class ZetaNormalizationDerivation:
            - Canonical approximation: π/(2φ^(1/3)) = {factor:.6f}
            - Error: {abs(factor - exact)/exact * 100:.2f}% (excellent agreement)
 
-        6. FSCTF Adoption:
+        6. FIRM Adoption:
            - Use canonical form π/(2φ^(1/3)) for simplicity
            - Maintains φ-native structure
            - Preserves mathematical essence
@@ -339,13 +339,13 @@ class ZetaNormalizationDerivation:
         - Canonical: π/(2 φ^(1/3)) = {scaling['canonical_factor']:.6f}
         - Justification: √6 ≈ 2.449 ≈ 2 (within 23%)
 
-        Step 6: FSCTF Standard Form
+        Step 6: FIRM Standard Form
         - Adopt: ζ_norm = π/(2φ^(1/3)) = {factor:.6f}
         - Benefits: Simpler expression, maintains φ-native structure
         - Accuracy: Within {scaling['relative_error_percent']:.2f}% of exact result
 
         Conclusion: π/(2φ^(1/3)) is the canonical normalization for φ-weighted
-        spectral zeta functions in FSCTF recursive manifold geometry.
+        spectral zeta functions in FIRM recursive manifold geometry.
         """
         return derivation
 

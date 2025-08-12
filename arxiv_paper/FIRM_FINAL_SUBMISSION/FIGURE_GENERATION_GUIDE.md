@@ -100,7 +100,7 @@ PYTHONPATH=$PWD python figures/particle_masses.py
 ### 9. physical_constants_derivation_table.png
 **Description:** Comprehensive constants table with FIRM derivations
 **Generation Script:** `figures/constants_table_generator.py` (needs implementation)
-**Theoretical Framework:** `constants/fundamental_constants_fsctf.py`
+**Theoretical Framework:** `constants/fundamental_constants_firm.py`
 **Data Sources:** Theoretical derivations
 **Command:**
 ```bash

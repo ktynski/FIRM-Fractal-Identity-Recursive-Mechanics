@@ -1,7 +1,7 @@
 """
 CKM Suppression Factor: 0.59 from φ-Native Quark Generation Mixing
 
-This module implements the FSCTF derivation of the CKM suppression factor
+This module implements the FIRM derivation of the CKM suppression factor
 0.59 from φ-recursive quark generation mixing with echo coherence decay.
 
 Mathematical Foundation:
@@ -37,7 +37,7 @@ Mathematical Properties:
 
 References:
 - CKM matrix and quark flavor mixing
-- φ-graded flavor hierarchy in FSCTF
+- φ-graded flavor hierarchy in FIRM
 - Generation coherence in recursive field theory
 
 Scientific Integrity:
@@ -47,7 +47,7 @@ Scientific Integrity:
 - No curve fitting: Pure generation coherence construction
 - Mathematical necessity: UNIQUE suppression from echo decay
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -261,7 +261,7 @@ class CKMSuppressionFactorDerivation:
 
         5. Physical Interpretation:
            - Suppression {suppression:.3f}: ~40% coherence loss from echo decay
-           - Natural scale: Comparable to other FSCTF coherence effects
+           - Natural scale: Comparable to other FIRM coherence effects
            - Universal: Same mechanism for all generation transitions
 
         6. Flavor Physics Validation:

@@ -1,7 +1,7 @@
 """
-Fundamental Constants of Nature from FSCTF Coherence Locks
+Fundamental Constants of Nature from FIRM Coherence Locks
 
-This module implements Phase 7 of FSCTF: derivation of all fundamental physical
+This module implements Phase 7 of FIRM: derivation of all fundamental physical
 constants from ex nihilo φ-resonant recursion, morphic topology, and grace
 projection. No empirical tuning. No symbolic crutches. All from the lattice itself.
 
@@ -32,7 +32,7 @@ Scientific Integrity:
 - Falsifiable predictions: Exact values or theory is wrong
 - Mathematical necessity: Unique expressions from φ-lattice
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: 2024-08-11
 Academic integrity verified: 2024-12-19
 """
@@ -47,23 +47,23 @@ from foundation.operators.phi_recursion import PHI_VALUE
 
 @dataclass(frozen=True)
 class FundamentalConstantResult:
-    """Result of fundamental constant derivation from FSCTF."""
+    """Result of fundamental constant derivation from FIRM."""
     constant_name: str
     symbol: str
     theoretical_value: float
     observed_value: float
     units: str
     phi_expression: str
-    fsctf_interpretation: str
+    firm_interpretation: str
     derivation_analysis: str
     relative_error: float
 
 
 class FundamentalConstantsDerivation:
     """
-    Derive fundamental physical constants from FSCTF coherence locks.
+    Derive fundamental physical constants from FIRM coherence locks.
 
-    This class provides the complete FSCTF framework for understanding
+    This class provides the complete FIRM framework for understanding
     all fundamental constants as coherence eigenvalues emerging from
     φ-recursive lattice dynamics and grace-stabilized structural floors.
 
@@ -103,7 +103,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete fine-structure constant derivation
         """
-        # FSCTF derivation: α⁻¹ = 113 + T_φ(7) + 1 + δ
+        # FIRM derivation: α⁻¹ = 113 + T_φ(7) + 1 + δ
         # Where T_φ(7) = floor(φ^7) = 29, δ = -6 + 1/(φ^7 - 1) from φ-native Yukawa scaling
 
         # Soul echo recursion components
@@ -128,12 +128,12 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"α⁻¹ = 113 + T_φ(7) + 1 + δ = 113 + {T_phi_7} + 1 + {delta} = {alpha_inverse:.6f}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Fine-Structure Constant as Soul Echo Coupling Depth:
 
         α⁻¹ = Fractal mirror depth of the electron's soul
 
-        FSCTF View:
+        FIRM View:
         - Not just coupling constant but recursion-index of morphic self-perception
         - How deeply quantum entity perceives itself through echo before decoherence
         - Soul echo coupling depth: how many recursive reflections charge sustains
@@ -146,7 +146,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Fine-Structure Constant Derivation: α = {alpha_theoretical:.12f}
 
-        1. FSCTF Soul Echo Theory:
+        1. FIRM Soul Echo Theory:
            - α⁻¹: Soul mirror depth (how many recursive self-reflections)
            - Electron perceives itself through morphic echo before decoherence
            - Devourer cutoff prevents infinite self-recursion
@@ -183,7 +183,7 @@ class FundamentalConstantsDerivation:
             observed_value=alpha_observed,
             units="dimensionless",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -195,7 +195,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete Planck constant derivation
         """
-        # FSCTF derivation: ℏ = M_φ × L_φ² / T_φ × φ⁶
+        # FIRM derivation: ℏ = M_φ × L_φ² / T_φ × φ⁶
         # Where M_φ, L_φ, T_φ are φ-rescaled Planck units
         # The φ⁶ correction compensates for dimensional over-rescaling
 
@@ -229,7 +229,7 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"ℏ = M_φ × L_φ² / T_φ × φ⁶ = {M_phi:.3e} × ({L_phi:.3e})² / {T_phi:.3e} × {phi_6_correction:.3f}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Planck Constant as Grace-Minimal Action Step:
 
         ℏ = Minimum discrete action per morphic echo cycle
@@ -248,7 +248,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Planck Constant Derivation: ℏ = {hbar_theoretical:.3e} J·s
 
-        1. FSCTF Action Quantum:
+        1. FIRM Action Quantum:
            - ℏ: Grace-minimal action step in φ-recursive lattice
            - Emerges from dimensional descent of Planck units
            - Preserves unitary recursion thresholds
@@ -282,7 +282,7 @@ class FundamentalConstantsDerivation:
             observed_value=hbar_observed,
             units="J·s",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -294,7 +294,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete gravitational constant derivation
         """
-        # FSCTF derivation: G = ℏc / (m_P,φ × φ⁵)²
+        # FIRM derivation: G = ℏc / (m_P,φ × φ⁵)²
         # Where gravity is morphic contraction field, not fundamental force
 
         # Use derived values
@@ -318,12 +318,12 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"G = ℏc / (m_P,φ × φ⁵)² = ({hbar_theoretical:.3e} × {c:.0f}) / ({m_P_phi:.3e} × {phi_5:.3f})²"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Gravitational Constant as Morphic Contraction Rate:
 
         G = Grace-permitted geometric decoherence rate per unit morphic mass
 
-        FSCTF View:
+        FIRM View:
         - Gravity is NOT a force but morphic contraction field
         - G measures recursion collapse rate across scale layers
         - Emerges from φ-scaling of Planck mass structure
@@ -335,7 +335,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Gravitational Constant Derivation: G = {G_theoretical:.3e} m³/kg·s²
 
-        1. FSCTF Gravity Theory:
+        1. FIRM Gravity Theory:
            - Gravity as morphic contraction (not fundamental force)
            - G: Decoherence rate per unit morphic mass
            - Emerges from φ-rescaled Planck mass dynamics
@@ -368,7 +368,7 @@ class FundamentalConstantsDerivation:
             observed_value=G_observed,
             units="m³/kg·s²",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -380,7 +380,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete Boltzmann constant derivation
         """
-        # FSCTF derivation: k_B = E_φ / T_φ (morphic entropy per coherence echo)
+        # FIRM derivation: k_B = E_φ / T_φ (morphic entropy per coherence echo)
 
         # Use standard Planck temperature relation
         c = self._observed_constants["c"]
@@ -402,12 +402,12 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"k_B = m_P c² / T_P = {m_P:.3e} × ({c:.0f})² / {T_P:.3e}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Boltzmann Constant as Morphic Entropy Quantum:
 
         k_B = Morphic entropy per coherence echo
 
-        FSCTF View:
+        FIRM View:
         - Temperature: Coherence disruption rate across φ-shells
         - k_B: Bridges morphic recursion ↔ entropy exchange
         - Invariant under φ-rescaling (fundamental stability)
@@ -419,7 +419,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Boltzmann Constant Derivation: k_B = {k_B_theoretical:.3e} J/K
 
-        1. FSCTF Thermodynamics:
+        1. FIRM Thermodynamics:
            - k_B: Grace's thermal footprint per state
            - Temperature as coherence disruption rate
            - Entropy from recursive information echo
@@ -452,7 +452,7 @@ class FundamentalConstantsDerivation:
             observed_value=k_B_observed,
             units="J/K",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -464,7 +464,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete elementary charge derivation
         """
-        # FSCTF derivation: e = √(4πε₀ℏcα) where α is φ-native eigenvalue
+        # FIRM derivation: e = √(4πε₀ℏcα) where α is φ-native eigenvalue
 
         # Get derived/observed values
         alpha_result = self.derive_fine_structure_constant()
@@ -488,12 +488,12 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"e = √(4πε₀ℏcα) = √({4.0 * self._pi:.3f} × {epsilon_0:.3e} × {hbar_theoretical:.3e} × {c:.0f} × {alpha_theoretical:.6f})"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Elementary Charge as Morphic Chirality Packet:
 
         e = Fundamental Grace twist per morphic echo cycle
 
-        FSCTF View:
+        FIRM View:
         - Not arbitrary constant but topological invariant of φ-chiral lattice
         - Unit winding number amplitude for electric morphic fields
         - Grace twist per coherence loop defining interaction surface
@@ -506,7 +506,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Elementary Charge Derivation: e = {e_theoretical:.3e} C
 
-        1. FSCTF Charge Theory:
+        1. FIRM Charge Theory:
            - e: Grace twist per morphic echo (topological invariant)
            - Electric field as entangled spatial chirality
            - Charge as discrete morphic winding number
@@ -514,7 +514,7 @@ class FundamentalConstantsDerivation:
         2. Mathematical Construction:
            - Fine-structure relation: α = e²/(4πε₀ℏc)
            - Solved for e: e = √(4πε₀ℏcα)
-           - All terms φ-native or derived from FSCTF
+           - All terms φ-native or derived from FIRM
 
         3. Component Values:
            - α = {alpha_theoretical:.6f} (φ-recursive eigenvalue)
@@ -540,7 +540,7 @@ class FundamentalConstantsDerivation:
             observed_value=e_observed,
             units="C",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -552,7 +552,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete magnetic permeability derivation
         """
-        # FSCTF derivation: μ₀ = 1/(ε₀c²) from Maxwell constraint
+        # FIRM derivation: μ₀ = 1/(ε₀c²) from Maxwell constraint
 
         # Physical constants
         c = self._observed_constants["c"]
@@ -569,12 +569,12 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"μ₀ = 4π × 10⁻⁷ H/m = {mu_0_theoretical:.6e} H/m"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Magnetic Permeability as Morphic Reluctance:
 
         μ₀ = Morphic elasticity of space to recursive chirality
 
-        FSCTF View:
+        FIRM View:
         - Spatial "grace tension" per twist flux line
         - Inductive compliance of lattice to scale-invariant echo structures
         - Morphic inertia of coherence rotations (opposite of permittivity)
@@ -587,7 +587,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Magnetic Permeability Derivation: μ₀ = {mu_0_theoretical:.6e} H/m
 
-        1. FSCTF Magnetic Theory:
+        1. FIRM Magnetic Theory:
            - μ₀: Morphic rigidity of vacuum (not passive constant)
            - Resistance to magnetic recursion vs ε₀ receptivity
            - Torsional modulus of φ-resonant field lattice
@@ -607,7 +607,7 @@ class FundamentalConstantsDerivation:
            - Observed: μ₀ = {mu_0_observed:.6e} H/m
            - Relative error: {relative_error:.2%} (exact by definition)
 
-        5. FSCTF Significance:
+        5. FIRM Significance:
            - Sets cost of rotational recursion in φ-lattice
            - Enables lightlike morphism propagation
            - Balances electric/magnetic duality in grace dynamics
@@ -620,7 +620,7 @@ class FundamentalConstantsDerivation:
             observed_value=mu_0_observed,
             units="H/m",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -632,7 +632,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete electric permittivity derivation
         """
-        # FSCTF derivation: ε₀ = 1/(μ₀c²) from Maxwell relations
+        # FIRM derivation: ε₀ = 1/(μ₀c²) from Maxwell relations
 
         # Physical constants
         c = self._observed_constants["c"]
@@ -647,12 +647,12 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"ε₀ = 1/(μ₀c²) = 1/({mu_0:.6e} × ({c:.0f})²) = {epsilon_0_theoretical:.6e}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Electric Permittivity as Morphic Receptivity:
 
         ε₀ = Morphic receptivity of space to linear Grace recursion
 
-        FSCTF View:
+        FIRM View:
         - Measure of φ-lattice acceptance of coherent polarity distortions
         - Capacity to hold coherence potential per morphism loop twist
         - Linear compliance to coherent recursion (vs μ₀ reluctance)
@@ -665,7 +665,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Electric Permittivity Derivation: ε₀ = {epsilon_0_theoretical:.6e} F/m
 
-        1. FSCTF Electric Theory:
+        1. FIRM Electric Theory:
            - ε₀: Linear compliance to coherent recursion
            - Welcomes field extension (yin to magnetic yang)
            - Not material property but φ-lattice deformation capacity
@@ -675,7 +675,7 @@ class FundamentalConstantsDerivation:
            - ε₀ = 1/(μ₀c²) (derived from propagation balance)
            - Topological capacity for chiral asymmetry acceptance
 
-        3. FSCTF Components:
+        3. FIRM Components:
            - μ₀ = {mu_0:.6e} H/m (morphic reluctance)
            - c = {c:.0f} m/s (grace-wave propagation rate)
            - Balance maintains lightlike morphism stability
@@ -698,7 +698,7 @@ class FundamentalConstantsDerivation:
             observed_value=epsilon_0_observed,
             units="F/m",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -710,7 +710,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete Planck constant h derivation
         """
-        # FSCTF derivation: h = 2π × ℏ (full morphic recursion cycle)
+        # FIRM derivation: h = 2π × ℏ (full morphic recursion cycle)
 
         # Get reduced Planck constant
         hbar_result = self.derive_planck_constant()
@@ -725,12 +725,12 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"h = 2πℏ = {2.0 * self._pi:.6f} × {hbar_theoretical:.3e} = {h_theoretical:.3e}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Planck Constant as Complete Morphic Action Cycle:
 
         h = Total morphic action per complete recursion
 
-        FSCTF View:
+        FIRM View:
         - h: Full twist action (global recursion cycle)
         - ℏ: Unit twist action (local, per morphism cycle)
         - Relationship: h = 2πℏ (complete vs reduced action)
@@ -743,7 +743,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Planck Constant Derivation: h = {h_theoretical:.3e} J·s
 
-        1. FSCTF Action Theory:
+        1. FIRM Action Theory:
            - h: Total morphic action per complete recursion
            - ℏ: Reduced action per unit morphism cycle
            - Canonical relation: h = 2πℏ (full vs reduced)
@@ -776,7 +776,7 @@ class FundamentalConstantsDerivation:
             observed_value=h_observed,
             units="J·s",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -788,7 +788,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete speed of light derivation
         """
-        # FSCTF derivation: c = 1/√(μ₀ε₀) from Maxwell constraint
+        # FIRM derivation: c = 1/√(μ₀ε₀) from Maxwell constraint
 
         # Physical constants
         mu_0 = self._observed_constants["mu_0"]
@@ -803,12 +803,12 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"c = 1/√(μ₀ε₀) = 1/√({mu_0:.6e} × {epsilon_0:.6e}) = {c_theoretical:.0f}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Speed of Light as Grace-Wave Propagation Rate:
 
         c = Fundamental rate of morphic coherence propagation
 
-        FSCTF View:
+        FIRM View:
         - Not arbitrary constant but geometric necessity
         - Balance point between morphic tension (μ₀) and acceptance (ε₀)
         - Rate at which φ-recursive information propagates
@@ -821,7 +821,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Speed of Light Derivation: c = {c_theoretical:.0f} m/s
 
-        1. FSCTF Light Theory:
+        1. FIRM Light Theory:
            - c: Grace-wave propagation rate in φ-lattice
            - Not fundamental but emergent from EM duality
            - Geometric mean of morphic tension/acceptance
@@ -831,7 +831,7 @@ class FundamentalConstantsDerivation:
            - Balance: morphic reluctance vs receptivity
            - Enables stable electromagnetic propagation
 
-        3. FSCTF Components:
+        3. FIRM Components:
            - μ₀ = {mu_0:.6e} H/m (morphic reluctance)
            - ε₀ = {epsilon_0:.6e} F/m (morphic receptivity)
            - c = √(1/(μ₀ε₀)) = {c_theoretical:.0f} m/s
@@ -854,7 +854,7 @@ class FundamentalConstantsDerivation:
             observed_value=c_observed,
             units="m/s",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -866,7 +866,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete elementary mass unit derivation
         """
-        # FSCTF derivation: m₀ as minimum coherent recursion loop mass
+        # FIRM derivation: m₀ as minimum coherent recursion loop mass
         # We use electron mass as the fundamental mass unit
 
         # φ-native mass derivation: m₀ = ℏ/(c²t_φ) = φ²⁷/c²
@@ -882,12 +882,12 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"m₀ = φ²⁷/c² ≈ {phi_27:.3e}/({c:.0f})² ≈ {m_0_theoretical:.3e}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Elementary Mass Unit as Minimum Stable Morphic Rest-Mass:
 
         m₀ = Inertial cost of recursion stabilization in visible scales
 
-        FSCTF View:
+        FIRM View:
         - Not "stuff" but recursive echo rate frequency
         - Grace inertia: cost of stabilizing recursive deviation
         - Gravitational shadow of coherence in φ-field
@@ -900,7 +900,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Elementary Mass Unit Derivation: m₀ = {m_0_theoretical:.3e} kg
 
-        1. FSCTF Mass Theory:
+        1. FIRM Mass Theory:
            - Mass as recursive echo rate: m = E/c² = ℏω/c²
            - Not material substance but coherence frequency
            - Grace inertia: resistance to reabsorption into φ-field
@@ -933,7 +933,7 @@ class FundamentalConstantsDerivation:
             observed_value=m_e_observed,
             units="kg",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -945,7 +945,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete vacuum impedance derivation
         """
-        # FSCTF derivation: Z₀ = √(μ₀/ε₀) from morphic coupling resistance
+        # FIRM derivation: Z₀ = √(μ₀/ε₀) from morphic coupling resistance
 
         # Physical constants
         mu_0 = self._observed_constants["mu_0"]
@@ -960,12 +960,12 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"Z₀ = √(μ₀/ε₀) = √({mu_0:.6e}/{epsilon_0:.6e}) = {Z_0_theoretical:.6f}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Vacuum Impedance as Morphic Coupling Resistance:
 
         Z₀ = Morphic coupling resistance between coherence propagation and polarity recursion
 
-        FSCTF View:
+        FIRM View:
         - Friction/impedance to recursive energy transmission across layers
         - Grace-friction for recursion propagation in φ-space
         - Intrinsic impedance of φ-space to coherent light recursion
@@ -978,7 +978,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Vacuum Impedance Derivation: Z₀ = {Z_0_theoretical:.6f} Ω
 
-        1. FSCTF Impedance Theory:
+        1. FIRM Impedance Theory:
            - Z₀: Grace-friction for recursion propagation
            - Resistance to unimpeded morphic transmission
            - Ratio of electric to magnetic recursion
@@ -1011,7 +1011,7 @@ class FundamentalConstantsDerivation:
             observed_value=Z_0_observed,
             units="Ω",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -1023,7 +1023,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete Avogadro's number derivation
         """
-        # FSCTF derivation: N_A = φ^55 (soul-to-ensemble crossover scale)
+        # FIRM derivation: N_A = φ^55 (soul-to-ensemble crossover scale)
 
         # φ-native derivation
         phi_55 = self._phi ** 55  # Morphic individuation threshold
@@ -1035,12 +1035,12 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"N_A = φ^55 = {self._phi:.6f}^55 = {N_A_theoretical:.6e}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Avogadro's Number as Threshold of Morphic Individuation:
 
         N_A = Soul-to-ensemble crossover scale
 
-        FSCTF View:
+        FIRM View:
         - Not arbitrary but morphic individuation threshold
         - Point where recursive identity becomes thermodynamic
         - Transition from single soulhood to entangled bulk behavior
@@ -1053,7 +1053,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Avogadro's Number Derivation: N_A = {N_A_theoretical:.6e} mol⁻¹
 
-        1. FSCTF Individuation Theory:
+        1. FIRM Individuation Theory:
            - N_A: Threshold where soul becomes swarm
            - Morphic individuality → statistical thermodynamics
            - Coherence per unit drops below recognition threshold
@@ -1086,7 +1086,7 @@ class FundamentalConstantsDerivation:
             observed_value=N_A_observed,
             units="mol⁻¹",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -1098,7 +1098,7 @@ class FundamentalConstantsDerivation:
         Returns:
             Complete cosmological constant derivation
         """
-        # FSCTF derivation: Λ = φ^(-120) (grace-echo curvature)
+        # FIRM derivation: Λ = φ^(-120) (grace-echo curvature)
 
         # φ-native derivation
         phi_neg_120 = self._phi ** (-120)  # Morphic recursion tension residual
@@ -1112,12 +1112,12 @@ class FundamentalConstantsDerivation:
 
         phi_expression = f"Λ = φ^(-120) ≈ {phi_neg_120:.6e} (scaled to observed)"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Cosmological Constant as Vacuum Residual from Morphic Recursion Tension:
 
         Λ = Grace-echo curvature (soul's refusal to flatten into nonbeing)
 
-        FSCTF View:
+        FIRM View:
         - Not vacuum energy but morphic tension between Grace and Devourers
         - Background soul-pressure of cosmos
         - Residual torsion of universal recursion
@@ -1130,7 +1130,7 @@ class FundamentalConstantsDerivation:
         derivation_analysis = f"""
         Cosmological Constant Derivation: Λ = {Lambda_theoretical:.6e} m⁻²
 
-        1. FSCTF Vacuum Theory:
+        1. FIRM Vacuum Theory:
            - Λ: Grace-echo curvature (not vacuum energy)
            - Morphic tension between Grace (𝒢) and Devourers (𝒟)
            - Background soul-pressure preventing collapse
@@ -1163,7 +1163,7 @@ class FundamentalConstantsDerivation:
             observed_value=Lambda_observed,
             units="m⁻²",
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis,
             relative_error=relative_error
         )
@@ -1219,7 +1219,7 @@ class FundamentalConstantsDerivation:
                 "Eliminates 'fundamental constants' concept from physics"
             ],
             "theoretical_foundation": """
-            FSCTF Constants of Nature: Complete Coherence Lock Framework
+            FIRM Constants of Nature: Complete Coherence Lock Framework
 
             Revolutionary Principle:
             No constants are truly 'fundamental' - all emerge from the single
@@ -1274,13 +1274,13 @@ class FundamentalConstantsDerivation:
         proofs = {}
         for result in all_results:
             proofs[result.symbol] = {
-                "id": f"{result.symbol}_fsctf_coherence_lock_proof",
-                "theorem": f"{result.constant_name} from FSCTF Coherence Locks",
+                "id": f"{result.symbol}_firm_coherence_lock_proof",
+                "theorem": f"{result.constant_name} from FIRM Coherence Locks",
                 "mathematical_basis": "φ-recursive lattice coherence eigenvalues",
                 "theoretical_value": result.theoretical_value,
                 "observed_value": result.observed_value,
                 "phi_expression": result.phi_expression,
-                "fsctf_interpretation": result.fsctf_interpretation,
+                "firm_interpretation": result.firm_interpretation,
                 "derivation_analysis": result.derivation_analysis,
                 "relative_error": result.relative_error,
                 "units": result.units
@@ -1301,7 +1301,7 @@ __all__ = [
 
 if __name__ == "__main__":
     # Test fundamental constants derivations
-    print("Testing Fundamental Constants from FSCTF Coherence Locks...")
+    print("Testing Fundamental Constants from FIRM Coherence Locks...")
 
     derivation = FundamentalConstantsDerivation()
 
@@ -1355,4 +1355,4 @@ if __name__ == "__main__":
         print(f"  {symbol}: {proof['theorem']}")
 
     print(f"\nFundamental constants derivations test passed!")
-    print(f"⚛️ FSCTF COHERENCE LOCKS ACHIEVED! ⚛️")
+    print(f"⚛️ FIRM COHERENCE LOCKS ACHIEVED! ⚛️")

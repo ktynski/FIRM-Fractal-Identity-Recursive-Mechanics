@@ -3,7 +3,7 @@ Critical Review Figures: Peer Reviewer and Critic Response
 
 This module generates figures specifically designed to address the concerns
 of peer reviewers and critics, focusing on falsification, sensitivity analysis,
-and rigorous validation of the FSCTF framework.
+and rigorous validation of the FIRM framework.
 
 Key Areas Addressed:
 1. Falsification Test Results
@@ -29,7 +29,7 @@ import datetime
 from pathlib import Path
 from typing import Dict, List, Any
 
-# Import FSCTF foundations
+# Import FIRM foundations
 try:
     from ..foundation.operators.phi_recursion import PHI_VALUE
     from ..provenance.provenance_tracker import ProvenanceTracker
@@ -65,7 +65,7 @@ class CriticalReviewFigureGenerator:
             self.provenance.start_operation(
                 "falsification_test_results",
                 inputs={"phi": self.phi},
-                mathematical_basis="Falsification test framework for FSCTF"
+                mathematical_basis="Falsification test framework for FIRM"
             )
 
         # Generate falsification test data
@@ -107,7 +107,7 @@ class CriticalReviewFigureGenerator:
         ax1.set_yticks(y_pos)
         ax1.set_yticklabels(test_categories, fontsize=8)
         ax1.set_xlabel('Confidence Level')
-        ax1.set_title('FSCTF Falsification Test Categories')
+        ax1.set_title('FIRM Falsification Test Categories')
         ax1.grid(True, alpha=0.3)
 
         # Plot 2: Experimental feasibility
@@ -132,7 +132,7 @@ class CriticalReviewFigureGenerator:
                color=self.colors["phi_gold"], alpha=0.7)
         ax4.set_xlabel('Test Index')
         ax4.set_ylabel('Time to Falsification (years)')
-        ax4.set_title('Timeline for FSCTF Falsification Tests')
+        ax4.set_title('Timeline for FIRM Falsification Tests')
         ax4.grid(True, alpha=0.3)
 
         plt.tight_layout()
@@ -143,7 +143,7 @@ class CriticalReviewFigureGenerator:
             "test_categories": len(test_categories),
             "confidence_levels": "Statistical confidence for each test",
             "feasibility_scores": "Experimental feasibility assessment",
-            "falsification_criteria": "Specific criteria that would falsify FSCTF"
+            "falsification_criteria": "Specific criteria that would falsify FIRM"
         }
 
         provenance_hash = self._generate_provenance_hash(provenance_data)
@@ -153,9 +153,9 @@ class CriticalReviewFigureGenerator:
         return {
             "category": "critical_review",
             "figure_type": "falsification_test_results",
-            "title": "FSCTF Falsification Test Results",
+            "title": "FIRM Falsification Test Results",
             "file_path": output_path,
-            "mathematical_basis": "Comprehensive falsification framework for FSCTF",
+            "mathematical_basis": "Comprehensive falsification framework for FIRM",
             "provenance_hash": provenance_hash,
             "figure_object": fig
         }
@@ -166,7 +166,7 @@ class CriticalReviewFigureGenerator:
             self.provenance.start_operation(
                 "parameter_sensitivity_analysis",
                 inputs={"phi": self.phi},
-                mathematical_basis="Parameter sensitivity analysis for FSCTF predictions"
+                mathematical_basis="Parameter sensitivity analysis for FIRM predictions"
             )
 
         # Generate sensitivity data
@@ -195,7 +195,7 @@ class CriticalReviewFigureGenerator:
         ax1.axvline(x=base_phi, color='red', linestyle='--', alpha=0.7, label=f'φ = {base_phi:.6f}')
         ax1.set_xlabel('φ Value')
         ax1.set_ylabel('Prediction Sensitivity')
-        ax1.set_title('FSCTF Prediction Sensitivity to φ')
+        ax1.set_title('FIRM Prediction Sensitivity to φ')
         ax1.legend()
         ax1.grid(True, alpha=0.3)
 
@@ -251,9 +251,9 @@ class CriticalReviewFigureGenerator:
         return {
             "category": "critical_review",
             "figure_type": "parameter_sensitivity_analysis",
-            "title": "FSCTF Parameter Sensitivity Analysis",
+            "title": "FIRM Parameter Sensitivity Analysis",
             "file_path": output_path,
-            "mathematical_basis": "Comprehensive sensitivity analysis of FSCTF predictions",
+            "mathematical_basis": "Comprehensive sensitivity analysis of FIRM predictions",
             "provenance_hash": provenance_hash,
             "figure_object": fig
         }
@@ -264,11 +264,11 @@ class CriticalReviewFigureGenerator:
             self.provenance.start_operation(
                 "alternative_theory_comparison",
                 inputs={"phi": self.phi},
-                mathematical_basis="Comparison of FSCTF with alternative theories"
+                mathematical_basis="Comparison of FIRM with alternative theories"
             )
 
         # Generate comparison data
-        theories = ["FSCTF", "String Theory", "Loop Quantum Gravity", "Standard Model+", "Supersymmetry"]
+        theories = ["FIRM", "String Theory", "Loop Quantum Gravity", "Standard Model+", "Supersymmetry"]
 
         # Comparison criteria
         criteria = [
@@ -281,7 +281,7 @@ class CriticalReviewFigureGenerator:
         ]
 
         # Scores for each theory (0-10 scale)
-        fsctf_scores = [9, 9, 8, 10, 10, 7]
+        firm_scores = [9, 9, 8, 10, 10, 7]
         string_theory_scores = [8, 6, 4, 2, 0, 3]
         lqg_scores = [7, 5, 6, 8, 0, 6]
         sm_plus_scores = [6, 7, 8, 4, 0, 9]
@@ -294,13 +294,13 @@ class CriticalReviewFigureGenerator:
         angles = np.linspace(0, 2*np.pi, len(criteria), endpoint=False).tolist()
         angles += angles[:1]  # Complete the circle
 
-        fsctf_scores += fsctf_scores[:1]
+        firm_scores += firm_scores[:1]
         string_theory_scores += string_theory_scores[:1]
         lqg_scores += lqg_scores[:1]
         sm_plus_scores += sm_plus_scores[:1]
         susy_scores += susy_scores[:1]
 
-        ax1.plot(angles, fsctf_scores, 'o-', linewidth=2, label='FSCTF', color=self.colors["primary"])
+        ax1.plot(angles, firm_scores, 'o-', linewidth=2, label='FIRM', color=self.colors["primary"])
         ax1.plot(angles, string_theory_scores, 'o-', linewidth=2, label='String Theory', color=self.colors["secondary"])
         ax1.plot(angles, lqg_scores, 'o-', linewidth=2, label='Loop Quantum Gravity', color=self.colors["accent"])
         ax1.plot(angles, sm_plus_scores, 'o-', linewidth=2, label='Standard Model+', color=self.colors["warning"])
@@ -309,7 +309,7 @@ class CriticalReviewFigureGenerator:
         ax1.set_xticks(angles[:-1])
         ax1.set_xticklabels(criteria)
         ax1.set_ylim(0, 10)
-        ax1.set_title('Theory Comparison: FSCTF vs Alternatives')
+        ax1.set_title('Theory Comparison: FIRM vs Alternatives')
         ax1.legend()
         ax1.grid(True)
 
@@ -345,7 +345,7 @@ class CriticalReviewFigureGenerator:
             "theories_compared": len(theories),
             "comparison_criteria": len(criteria),
             "objective_scoring": "Quantitative comparison using objective criteria",
-            "fsctf_advantages": "Clear advantages in consciousness integration and parameter freedom"
+            "firm_advantages": "Clear advantages in consciousness integration and parameter freedom"
         }
 
         provenance_hash = self._generate_provenance_hash(provenance_data)
@@ -355,9 +355,9 @@ class CriticalReviewFigureGenerator:
         return {
             "category": "critical_review",
             "figure_type": "alternative_theory_comparison",
-            "title": "FSCTF vs Alternative Theories",
+            "title": "FIRM vs Alternative Theories",
             "file_path": output_path,
-            "mathematical_basis": "Objective comparison of FSCTF with competing theories",
+            "mathematical_basis": "Objective comparison of FIRM with competing theories",
             "provenance_hash": provenance_hash,
             "figure_object": fig
         }

@@ -1,7 +1,7 @@
 """
 Cosmological Constant from Recursive Cancellation and Grace Echo Floor
 
-This module implements the FSCTF derivation of the cosmological constant Λ
+This module implements the FIRM derivation of the cosmological constant Λ
 as a residual morphic echo stabilized by grace to prevent exact cancellation.
 This resolves the cosmological constant problem through φ-recursive dynamics.
 
@@ -31,7 +31,7 @@ Scientific Integrity:
 - Falsifiable predictions: Exact Λ value or theory is wrong
 - Mathematical necessity: Unique expressions from φ-recursion
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -59,7 +59,7 @@ class CosmologicalConstantDerivation:
     """
     Derive the cosmological constant from φ-recursive cancellation + grace floor.
 
-    This class provides the complete FSCTF solution to the cosmological constant
+    This class provides the complete FIRM solution to the cosmological constant
     problem, showing that Λ emerges as a grace-stabilized echo floor that prevents
     exact cancellation of recursive vacuum fluctuations.
 
@@ -185,7 +185,7 @@ class CosmologicalConstantDerivation:
            - Observed Λ: ~10^(-120) (cosmic acceleration)
            - Discrepancy: 120 orders of magnitude
 
-        2. FSCTF Solution:
+        2. FIRM Solution:
            - NOT a fine-tuning problem
            - Natural count of recursion layers: 120 φ-shells
            - Each layer: φ^(-1) suppression of incoherent modes
@@ -204,7 +204,7 @@ class CosmologicalConstantDerivation:
 
         # Complete theoretical analysis
         theoretical_analysis = f"""
-        FSCTF Cosmological Constant: Revolutionary Solution
+        FIRM Cosmological Constant: Revolutionary Solution
 
         Core Insights:
         1. Λ is NOT vacuum energy - it's residual recursive echo

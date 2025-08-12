@@ -1,7 +1,7 @@
 """
-Specialized Figure Generators: Advanced FSCTF Visualizations
+Specialized Figure Generators: Advanced FIRM Visualizations
 
-This module contains specialized figure generators for advanced FSCTF visualizations
+This module contains specialized figure generators for advanced FIRM visualizations
 including consciousness integration, cosmological predictions, and theory validation.
 
 Each generator maintains complete mathematical provenance and academic integrity.
@@ -21,7 +21,7 @@ import json
 import datetime
 from pathlib import Path
 
-# Import FSCTF mathematical foundations
+# Import FIRM mathematical foundations
 try:
     from ..foundation.operators.phi_recursion import PHI_VALUE
     from ..consciousness.phi_harmonic_analysis import PHI_HARMONIC_ANALYZER
@@ -378,7 +378,7 @@ class CosmologicalFigureGenerator:
             self.provenance.start_operation(
                 "dark_energy_figure",
                 inputs={"phi": self.phi},
-                mathematical_basis="Dark energy φ-scaling from FSCTF theory"
+                mathematical_basis="Dark energy φ-scaling from FIRM theory"
             )
 
         # Generate dark energy data
@@ -460,7 +460,7 @@ class CosmologicalFigureGenerator:
             "figure_type": "dark_energy_phi_scaling",
             "title": "Dark Energy φ-Scaling Evolution",
             "file_path": output_path,
-            "mathematical_basis": "Dark energy φ-scaling from FSCTF theory",
+            "mathematical_basis": "Dark energy φ-scaling from FIRM theory",
             "provenance_hash": provenance_hash,
             "figure_object": fig
         }

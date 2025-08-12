@@ -8,7 +8,7 @@ Clearly mark demo status; route any validation through the firewall.
 
 ## Applications
 
-Purpose: Entry points and example executables that stitch together core FSCTF systems for demonstrations.
+Purpose: Entry points and example executables that stitch together core FIRM systems for demonstrations.
 
 - Integrity: No empirical inputs; all pipelines call theory-only modules. Any validation is firewall-mediated.
 - Typical usage:

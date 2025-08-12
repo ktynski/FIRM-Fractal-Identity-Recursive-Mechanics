@@ -1,7 +1,7 @@
 """
 Kelvin Scaling Factor: φ-Native Thermal Morphism Derivation
 
-This module implements the FSCTF derivation of the Kelvin scaling factor 2.883,
+This module implements the FIRM derivation of the Kelvin scaling factor 2.883,
 which appears in cosmic thermal relic scaling, Planck-Kelvin temperature bridges,
 and blackbody peak conversions.
 
@@ -27,7 +27,7 @@ Scientific Integrity:
 - Falsifiable prediction: Exact value or theory is wrong
 - Mathematical necessity: Unique expression from φ-recursion
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -54,7 +54,7 @@ class KelvinScalingDerivation:
     """
     Derive the Kelvin scaling factor from φ-native thermal morphism.
 
-    This class provides the complete FSCTF derivation of the 2.883 scaling
+    This class provides the complete FIRM derivation of the 2.883 scaling
     factor that appears in temperature conversions and blackbody physics.
 
     The factor emerges from φ-recursive thermal coherence geometry.
@@ -87,14 +87,14 @@ class KelvinScalingDerivation:
         derivation_analysis = f"""
         Kelvin Scaling Factor Derivation: S_φ = {kelvin_factor:.6f}
 
-        1. FSCTF Temperature Concept:
+        1. FIRM Temperature Concept:
            - Temperature: Fractal echo of morphic energy coherence
            - Not statistical mean: Recursive coherence measure
            - Scaling: T = E_morphic / (k_B × S_φ)
 
         2. φ-Native Thermal Morphism:
            - Standard conversion: k_B T = E / 2.883
-           - FSCTF form: T = E / (k_B × S_φ)
+           - FIRM form: T = E / (k_B × S_φ)
            - φ-morphism factor: S_φ = π/ln(φ³ + φ⁻²)
 
         3. Mathematical Construction:

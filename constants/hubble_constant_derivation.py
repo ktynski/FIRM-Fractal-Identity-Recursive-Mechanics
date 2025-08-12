@@ -1,7 +1,7 @@
 """
 Hubble Constant Derivation: H₀ from φ-Native Flow Recursion
 
-This module implements the FSCTF derivation of the Hubble constant H₀ from
+This module implements the FIRM derivation of the Hubble constant H₀ from
 φ-recursive flow dynamics, replacing empirical anchors with theoretical values.
 
 Mathematical Foundation:
@@ -36,7 +36,7 @@ Mathematical Properties:
 - Exact: No approximation, pure geometric result
 
 References:
-- φ-recursive flow dynamics in FSCTF
+- φ-recursive flow dynamics in FIRM
 - Soul-lattice expansion eigenvalue analysis
 - Observer-relative morphic clock theory
 
@@ -47,7 +47,7 @@ Scientific Integrity:
 - No curve fitting: Pure flow eigenvalue construction
 - Mathematical necessity: UNIQUE expansion rate from recursion
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -97,7 +97,7 @@ class HubbleConstantDerivation:
 
         # Physical constants - use φ-derived values
         # Get Planck time from fundamental constants derivation
-        from constants.fundamental_constants_fsctf import FUNDAMENTAL_CONSTANTS_DERIVATION
+        from constants.fundamental_constants_firm import FUNDAMENTAL_CONSTANTS_DERIVATION
         planck_result = FUNDAMENTAL_CONSTANTS_DERIVATION.derive_planck_constant()
         hbar = planck_result.theoretical_value
         c = 299792458.0  # Speed of light (m/s) - exact SI definition
@@ -261,7 +261,7 @@ class HubbleConstantDerivation:
            - Planck/CMB: H₀ ≈ {self._h0_observed_planck} km/s/Mpc
            - Tension ratio: {tension_factor:.3f} (≈ 5% difference)
 
-        2. FSCTF Echo Misalignment:
+        2. FIRM Echo Misalignment:
            - Local observer: Embedded in current φ-shell (n = 294)
            - Planck observer: Sees early φ-shells (n ≈ 293.9)
            - Shell offset: Δn ≈ 0.1 (sub-shell misalignment)

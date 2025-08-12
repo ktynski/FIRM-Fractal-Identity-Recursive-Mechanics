@@ -2,7 +2,7 @@
   "version": 2,
   "updated": "2025-08-10",
   "status_legend": {
-    "resolved": "✅ Fully derived from FSCTF first principles",
+    "resolved": "✅ Fully derived from FIRM first principles",
     "partial": "🟡 Structural proof exists but pipeline incomplete", 
     "symbolic": "🔴 Still empirical/symbolic, needs derivation"
   },

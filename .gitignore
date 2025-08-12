@@ -1,0 +1,52 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.mypy_cache/
+.pytest_cache/
+.coverage
+.cache/
+.venv/
+venv/
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Build and dist
+build/
+dist/
+*.egg-info/
+
+# LaTeX builds
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# arXiv temp and bundles
+arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/
+arxiv_paper/*.tar
+
+# Generated figures outputs
+figures/outputs/
+
+# Misc
+*.tmp
+*.bak
+*.swp
+*.swo

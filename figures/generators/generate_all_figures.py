@@ -1,7 +1,7 @@
 """
-Generate All FSCTF Figures: Comprehensive Visualization Suite
+Generate All FIRM Figures: Comprehensive Visualization Suite
 
-This script generates a complete set of visualizations for the FSCTF framework,
+This script generates a complete set of visualizations for the FIRM framework,
 covering all major theoretical components with complete mathematical provenance.
 
 Figure Categories Generated:
@@ -281,11 +281,11 @@ def generate_peer_review_set() -> List[Dict[str, Any]]:
         return []
 
 def generate_all_figures() -> List[Dict[str, Any]]:
-    """Generate complete set of FSCTF figures"""
+    """Generate complete set of FIRM figures"""
     all_results = []
 
     print("=" * 60)
-    print("FSCTF COMPREHENSIVE FIGURE GENERATION")
+    print("FIRM COMPREHENSIVE FIGURE GENERATION")
     print("=" * 60)
     print(f"Started at: {datetime.datetime.now()}")
     print()
@@ -311,7 +311,7 @@ def generate_all_figures() -> List[Dict[str, Any]]:
 def generate_figure_summary(results: List[Dict[str, Any]]) -> str:
     """Generate summary of all generated figures"""
     summary = []
-    summary.append("# FSCTF Figure Generation Summary")
+    summary.append("# FIRM Figure Generation Summary")
     summary.append(f"Generated: {datetime.datetime.now()}")
     summary.append(f"Total Figures: {len(results)}")
     summary.append("")

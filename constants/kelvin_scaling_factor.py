@@ -1,7 +1,7 @@
 """
 Kelvin Scaling Factor: Dimensional Bridge from φ-Morphic to Physical Temperature
 
-This module implements the FSCTF derivation of the Kelvin scaling factor,
+This module implements the FIRM derivation of the Kelvin scaling factor,
 replacing the empirical 2.883 with the exact 2.821 from φ-spectral Wien peak.
 
 Mathematical Foundation:
@@ -24,7 +24,7 @@ Provenance:
 - Exact solution: 2.821 from transcendental equation solution
 
 Physical Significance:
-- Connects FSCTF morphic temperature to observable Kelvin scale
+- Connects FIRM morphic temperature to observable Kelvin scale
 - Explains blackbody spectrum peaks in φ-native cosmology
 - Provides theoretical foundation for CMB temperature calculations
 
@@ -37,7 +37,7 @@ Mathematical Properties:
 References:
 - Wien displacement law in quantum field theory
 - Spectral geometry on φ-recursive manifolds
-- FSCTF dimensional bridge framework
+- FIRM dimensional bridge framework
 
 Scientific Integrity:
 - Zero free parameters: All structure from φ-mathematics
@@ -46,7 +46,7 @@ Scientific Integrity:
 - No curve fitting: Pure mathematical Wien peak analysis
 - Mathematical necessity: UNIQUE solution to φ-spectral maximization
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -306,14 +306,14 @@ class KelvinScalingFactorDerivation:
         - Source: Numerical fitting to match observed CMB/blackbody spectra
         - Problem: No theoretical justification, purely empirical
 
-        FSCTF Mathematical Derivation:
+        FIRM Mathematical Derivation:
         - Exact factor: {scaling_factor:.6f} from φ-spectral Wien peak
         - Source: Analytical solution to transcendental equation
         - Basis: φ-recursive spectral geometry, no fitting
 
         Comparison:
         - Empirical: 2.883 (±unknown systematic error)
-        - FSCTF exact: {scaling_factor:.6f} (±{1e-6:.0e} numerical precision)
+        - FIRM exact: {scaling_factor:.6f} (±{1e-6:.0e} numerical precision)
         - Relative difference: {abs(2.883 - scaling_factor)/scaling_factor * 100:.2f}%
 
         Physical Interpretation:

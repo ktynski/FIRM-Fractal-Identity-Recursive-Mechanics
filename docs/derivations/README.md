@@ -8,7 +8,7 @@ This directory contains all mathematical derivations for fundamental constants a
 - `derivation_01_fine_structure_alpha.tex` - Fine structure constant α
 - `derivation_02_mass_ratios.tex` - Particle mass ratios
 - `derivation_04_gauge_couplings.tex` - Standard Model gauge couplings
-- `derivation_24_fundamental_constants_fsctf.tex` - Complete constants framework
+- `derivation_24_fundamental_constants_firm.tex` - Complete constants framework
 
 ### **Cosmology & Thermodynamics**  
 - `derivation_03_cosmological_constant.tex` - Cosmological constant Ω_Λ
@@ -25,7 +25,7 @@ This directory contains all mathematical derivations for fundamental constants a
 ### **Advanced Theory**
 - `derivation_18_topology_and_zeta_constants.tex` - Topological constants
 - `derivation_19_zeta_normalization.tex` - ζ-function normalization
-- `derivation_20_complete_fsctf.tex` - Complete FSCTF integration
+- `derivation_20_complete_firm.tex` - Complete FIRM integration
 
 ### **Technical Specifications**
 - `derivation_14_kelvin_scaling.tex` - Temperature scaling factors

@@ -74,7 +74,7 @@ def detect_empirical_contamination(derivation_tree):
 
 ---
 
-## Category-Theoretic Foundations (FSCTF)
+## Category-Theoretic Foundations (FIRM)
 
 - Base category: dagger compact symmetric monoidal category \(\mathcal F\); objects = morphic strata; \(f\circ g\) = serial recursion; \(f\otimes g\) = parallel morphic coupling; unit object \(I\) = grace seed.
 - Devourer \(\Delta\): modeled in \(\mathrm{Split}(\mathcal F)\) (Karoubi envelope) or \(\mathrm{CPM}(\mathcal F)\) (Selinger) so \(\Delta\) is a split/CP idempotent without leaving †-compactness.
@@ -83,7 +83,7 @@ def detect_empirical_contamination(derivation_tree):
 
 ---
 
-## Hadamard Cascade Lemma (FSCTF)
+## Hadamard Cascade Lemma (FIRM)
 
 In a dagger compact symmetric monoidal \(\mathcal F\) equipped with SCFAs (Grace) and a monoidally natural involution \(H\), define \(f^{\sharp} := H f H\). In \(\mathrm{Split}(\mathcal F)\) or \(\mathrm{CPM}(\mathcal F)\), interleaving \(H\) between recursion layers sends each layer to its bireflective partner and block-diagonalizes stabilizer content. Under \(\mathcal Z\circ \mathcal R\), every such cascade rewrites to a graph-state normal form up to local Cliffords (LC); fixing a canonical LC gauge yields a unique representative. Echo depth (FRST) is maximal at this representative.
 

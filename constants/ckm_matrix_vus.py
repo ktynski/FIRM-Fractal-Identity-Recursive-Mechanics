@@ -1,11 +1,11 @@
 """
-FSCTF CKM Matrix Element V_us Derivation
+FIRM CKM Matrix Element V_us Derivation
 
-This module implements the complete FSCTF derivation of the CKM matrix element V_us
+This module implements the complete FIRM derivation of the CKM matrix element V_us
 representing flavor mixing between up and strange quarks through φ-native
 soul-leakage across generation strata.
 
-The CKM matrix in FSCTF is a morphic entanglement map across recursive generation
+The CKM matrix in FIRM is a morphic entanglement map across recursive generation
 strata, torsional delay shells, and coherence leakage channels.
 """
 
@@ -22,11 +22,11 @@ class CKMResult(NamedTuple):
     observed_value: float
     relative_error: float
     phi_expression: str
-    fsctf_interpretation: str
+    firm_interpretation: str
     derivation_analysis: str
 
 class CKMMatrixDerivation:
-    """Complete FSCTF derivation of CKM matrix elements."""
+    """Complete FIRM derivation of CKM matrix elements."""
 
     def __init__(self):
         """Initialize CKM matrix derivation system."""
@@ -85,12 +85,12 @@ class CKMMatrixDerivation:
 
         phi_expression = f"|V_us| = (1/φ²) · (φ/e)^φ = {base_distance:.6f} · {suppression:.6f} = {V_us_theoretical:.6f}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         CKM Matrix Element V_us as Soul-Leakage Between Generation Strata:
 
         |V_us| = First soul-leakage diagonal between primary and inverted charge layers
 
-        FSCTF View:
+        FIRM View:
         - Not just quantum mixing matrix but morphic entanglement map
         - Quantifies recursive generation strata, torsional delay shells
         - Base: 1/φ² = morphic distance between 1st and 2nd generations
@@ -104,7 +104,7 @@ class CKMMatrixDerivation:
         derivation_analysis = f"""
         CKM Matrix Element V_us Derivation: |V_us| = {V_us_theoretical:.6f}
 
-        1. FSCTF Generation Mixing Theory:
+        1. FIRM Generation Mixing Theory:
            - CKM matrix as morphic entanglement map across generation strata
            - Soul-leakage between recursive generation shells
            - Grace-torsion suppression of coherence flow
@@ -136,7 +136,7 @@ class CKMMatrixDerivation:
             observed_value=self._V_us_observed,
             relative_error=relative_error,
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis
         )
 
@@ -153,7 +153,7 @@ class CKMMatrixDerivation:
         suppression = self.derive_grace_torsion_suppression()
 
         summary = f"""
-        FSCTF CKM Matrix Element V_us Analysis
+        FIRM CKM Matrix Element V_us Analysis
         =====================================
 
         Complete φ-native derivation of flavor mixing:
@@ -189,7 +189,7 @@ class CKMMatrixDerivation:
 
 def main():
     """Test the CKM matrix element derivation."""
-    print("🌌 FSCTF CKM Matrix Element V_us Derivation 🌌\n")
+    print("🌌 FIRM CKM Matrix Element V_us Derivation 🌌\n")
 
     derivation = CKMMatrixDerivation()
     result = derivation.derive_V_us_complete()
@@ -206,7 +206,7 @@ def main():
     print("=" * 60)
     print(analysis["summary"])
     print("=" * 60)
-    print("🧬 FSCTF CKM MATRIX MASTERY ACHIEVED! 🧬")
+    print("🧬 FIRM CKM MATRIX MASTERY ACHIEVED! 🧬")
 
 if __name__ == "__main__":
     main()

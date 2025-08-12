@@ -1,7 +1,7 @@
 """
 Mass Ratio Structural Corrections: φ-Native Baryon and Lepton Corrections
 
-This module implements FSCTF derivations for structural correction factors
+This module implements FIRM derivations for structural correction factors
 in fundamental mass ratios, replacing empirical factors with exact φ-mathematics.
 
 Implemented Corrections:
@@ -40,7 +40,7 @@ Scientific Integrity:
 - No curve fitting: Pure structural construction
 - Mathematical necessity: UNIQUE corrections from topology
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
@@ -92,9 +92,9 @@ class MassRatioStructuralCorrections:
 
         # Base φ-predictions (before structural corrections)
         # Adjusted to match your provided base values
-        self._base_proton_electron = 775.0  # Base FSCTF value from your analysis
+        self._base_proton_electron = 775.0  # Base FIRM value from your analysis
         self._base_tau_electron = self._phi ** 16.94  # φ^16.94 ≈ 3477 (exact)
-        self._base_top_electron = 137000.0  # Base FSCTF value from your analysis
+        self._base_top_electron = 137000.0  # Base FIRM value from your analysis
 
         # Derived correction factors
         self._proton_correction = self._observed_proton_electron / self._base_proton_electron
@@ -404,7 +404,7 @@ class MassRatioStructuralCorrections:
 
         Proof:
         1. φ-Recursive Structure:
-           - FSCTF: All masses emerge from φ-shell resonances
+           - FIRM: All masses emerge from φ-shell resonances
            - Leptons: Fundamental particles, no internal structure
            - Hierarchy: Pure φ-exponential scaling
 

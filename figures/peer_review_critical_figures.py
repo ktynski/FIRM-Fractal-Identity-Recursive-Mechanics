@@ -29,7 +29,7 @@ import datetime
 from pathlib import Path
 from typing import Dict, List, Any
 
-# Import FSCTF foundations
+# Import FIRM foundations
 try:
     from ..foundation.operators.phi_recursion import PHI_VALUE
     from ..provenance.provenance_tracker import ProvenanceTracker
@@ -67,7 +67,7 @@ class PeerReviewCriticalFigureGenerator:
             self.provenance.start_operation(
                 "experimental_prediction_timeline",
                 inputs={"phi": self.phi},
-                mathematical_basis="Experimental prediction timeline for FSCTF"
+                mathematical_basis="Experimental prediction timeline for FIRM"
             )
 
         # Generate timeline data
@@ -101,7 +101,7 @@ class PeerReviewCriticalFigureGenerator:
         ax1.bar(timeline_data.keys(), timeline_data.values(),
                color=[self.colors["accent"], self.colors["secondary"], self.colors["warning"]], alpha=0.7)
         ax1.set_ylabel('Number of Predictions')
-        ax1.set_title('FSCTF Predictions by Timeline')
+        ax1.set_title('FIRM Predictions by Timeline')
         ax1.grid(True, alpha=0.3)
 
         # Plot 2: Confidence levels over time
@@ -155,7 +155,7 @@ class PeerReviewCriticalFigureGenerator:
         return {
             "category": "peer_review",
             "figure_type": "experimental_prediction_timeline",
-            "title": "FSCTF Experimental Prediction Timeline",
+            "title": "FIRM Experimental Prediction Timeline",
             "file_path": output_path,
             "mathematical_basis": "Comprehensive experimental prediction timeline with confidence levels",
             "provenance_hash": provenance_hash,
@@ -168,7 +168,7 @@ class PeerReviewCriticalFigureGenerator:
             self.provenance.start_operation(
                 "statistical_significance_tests",
                 inputs={"phi": self.phi},
-                mathematical_basis="Statistical significance analysis for FSCTF predictions"
+                mathematical_basis="Statistical significance analysis for FIRM predictions"
             )
 
         # Generate statistical test data
@@ -195,7 +195,7 @@ class PeerReviewCriticalFigureGenerator:
         ax1.axvline(x=0.05, color='red', linestyle='--', alpha=0.7, label='α = 0.05')
         ax1.set_xlabel('P-value')
         ax1.set_ylabel('Frequency')
-        ax1.set_title('P-value Distribution for FSCTF Predictions')
+        ax1.set_title('P-value Distribution for FIRM Predictions')
         ax1.legend()
         ax1.grid(True, alpha=0.3)
 
@@ -219,7 +219,7 @@ class PeerReviewCriticalFigureGenerator:
                color=self.colors["mathematical"], alpha=0.7)
         ax3.set_xlabel('Test Index')
         ax3.set_ylabel('Effect Size (Cohen\'s d)')
-        ax3.set_title('Effect Sizes for FSCTF Predictions')
+        ax3.set_title('Effect Sizes for FIRM Predictions')
         ax3.grid(True, alpha=0.3)
 
         # Plot 4: Power analysis
@@ -227,7 +227,7 @@ class PeerReviewCriticalFigureGenerator:
                    c=self.colors["experimental"], s=100, alpha=0.7)
         ax4.set_xlabel('Sample Size')
         ax4.set_ylabel('Statistical Power')
-        ax4.set_title('Power Analysis for FSCTF Tests')
+        ax4.set_title('Power Analysis for FIRM Tests')
         ax4.grid(True, alpha=0.3)
 
         plt.tight_layout()
@@ -248,7 +248,7 @@ class PeerReviewCriticalFigureGenerator:
         return {
             "category": "peer_review",
             "figure_type": "statistical_significance_tests",
-            "title": "FSCTF Statistical Significance Tests",
+            "title": "FIRM Statistical Significance Tests",
             "file_path": output_path,
             "mathematical_basis": "Comprehensive statistical significance analysis with multiple testing corrections",
             "provenance_hash": provenance_hash,
@@ -261,7 +261,7 @@ class PeerReviewCriticalFigureGenerator:
             self.provenance.start_operation(
                 "computational_complexity_analysis",
                 inputs={"phi": self.phi},
-                mathematical_basis="Asymptotic complexity of core FSCTF algorithms from first principles"
+                mathematical_basis="Asymptotic complexity of core FIRM algorithms from first principles"
             )
 
         n = np.linspace(1, 100, 200)
@@ -505,7 +505,7 @@ class PeerReviewCriticalFigureGenerator:
             self.provenance.start_operation(
                 "mathematical_consistency_proofs",
                 inputs={"phi": self.phi},
-                mathematical_basis="Mathematical consistency verification for FSCTF"
+                mathematical_basis="Mathematical consistency verification for FIRM"
             )
 
         # Generate consistency data
@@ -581,7 +581,7 @@ class PeerReviewCriticalFigureGenerator:
         return {
             "category": "peer_review",
             "figure_type": "mathematical_consistency_proofs",
-            "title": "FSCTF Mathematical Consistency Proofs",
+            "title": "FIRM Mathematical Consistency Proofs",
             "file_path": output_path,
             "mathematical_basis": "Complete mathematical consistency verification with proof validation",
             "provenance_hash": provenance_hash,

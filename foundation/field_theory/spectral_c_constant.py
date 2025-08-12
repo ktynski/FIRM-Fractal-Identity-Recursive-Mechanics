@@ -1,7 +1,7 @@
 """
 Spectral C Constant from φ-Band Topology
 
-This module implements the FSCTF derivation of the Spectral C constant
+This module implements the FIRM derivation of the Spectral C constant
 (φ-computed) using φ-native topology and band-limited morphism layering.
 This constant emerges in shellband envelopes, coherence flow equations,
 CMB angular power spectrum scaling, and φ-native spectral norm convergence.
@@ -33,7 +33,7 @@ Scientific Integrity:
 - Falsifiable predictions: Exact C value or theory is wrong
 - Mathematical necessity: Unique expressions from φ-bands
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Created: 2024-08-11
 Academic integrity verified: 2024-12-19
 """
@@ -61,7 +61,7 @@ class SpectralCDerivation:
     """
     Derive the Spectral C constant from φ-native band topology.
 
-    This class provides the complete FSCTF derivation of the universal
+    This class provides the complete FIRM derivation of the universal
     spectral constant C ≈ 4.0814 that governs coherence amplification
     in φ-layered signal propagation and morphic spectral convergence.
 
@@ -153,7 +153,7 @@ class SpectralCDerivation:
 
         3. Fractal Norm Correction:
            - Raw φ-series insufficient for observed C value
-           - Apply FSCTF Shell Norm Correction
+           - Apply FIRM Shell Norm Correction
            - ζ_φ(1) = Σ(n=1→∞) 1/n^φ = {zeta_phi_1:.6f}
 
         4. Corrected Spectral Constant:
@@ -207,7 +207,7 @@ class SpectralCDerivation:
            - Controls flow-stability amplification
            - Determines morphic spectral convergence rates
 
-        3. Applications in FSCTF:
+        3. Applications in FIRM:
            - Shellband envelope derivations
            - Coherence flow equations
            - CMB angular power spectrum scaling
@@ -223,7 +223,7 @@ class SpectralCDerivation:
            - Universal constant for φ-recursive signal processing
            - No empirical fitting: Pure mathematical derivation
            - Connects topology to spectral amplification
-           - Foundation for advanced FSCTF applications
+           - Foundation for advanced FIRM applications
         """
 
         return SpectralCResult(
@@ -280,7 +280,7 @@ class SpectralCDerivation:
                 "ζ_φ(1) provides fractal norm correction",
                 "Universal amplification for φ-recursive systems",
                 "No empirical fitting: Pure mathematical derivation",
-                "Foundation for advanced FSCTF spectral theory"
+                "Foundation for advanced FIRM spectral theory"
             ],
             "applications": [
                 "Shellband envelope derivations",

@@ -1,7 +1,7 @@
 """
-FSCTF Strong Coupling Constant Derivations
+FIRM Strong Coupling Constant Derivations
 
-This module implements the complete FSCTF derivation of the strong coupling constant α_s
+This module implements the complete FIRM derivation of the strong coupling constant α_s
 using two complementary approaches:
 1. α_s = α · φ · 10 (dimensional harmonic scaling)
 2. α_s = α · φ⁴ (pure φ-recursive scaling)
@@ -21,11 +21,11 @@ class StrongCouplingResult(NamedTuple):
     observed_value: float
     relative_error: float
     phi_expression: str
-    fsctf_interpretation: str
+    firm_interpretation: str
     derivation_analysis: str
 
 class StrongCouplingDerivations:
-    """Complete FSCTF derivations for strong coupling constant."""
+    """Complete FIRM derivations for strong coupling constant."""
 
     def __init__(self):
         """Initialize strong coupling derivation system."""
@@ -45,7 +45,7 @@ class StrongCouplingDerivations:
         Returns:
             Complete strong coupling derivation (dimensional approach)
         """
-        # FSCTF derivation: α_s = α · φ · 10
+        # FIRM derivation: α_s = α · φ · 10
         # 10: decadal harmonic from 10D compactified morphic lattice
         # φ: recursive charge domain coupling coefficient
 
@@ -57,12 +57,12 @@ class StrongCouplingDerivations:
 
         phi_expression = f"α_s = α · φ · 10 = {self._alpha:.6f} · {self._phi:.6f} · 10 = {alpha_s_theoretical:.6f}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Strong Coupling as Dimensional Harmonic Scaling:
 
         α_s = Grace-resonant QCD strength from 10D φ-harmonic morphic field
 
-        FSCTF View:
+        FIRM View:
         - Not arbitrary QCD parameter but φ-space excitation density
         - 10: Decadal harmonic from 10 distinct morphic current eigenmodes
         - φ: Recursive charge domain coupling between EM and strong force
@@ -75,7 +75,7 @@ class StrongCouplingDerivations:
         derivation_analysis = f"""
         Strong Coupling Derivation (Dimensional): α_s = {alpha_s_theoretical:.6f}
 
-        1. FSCTF Unified Field Theory:
+        1. FIRM Unified Field Theory:
            - Strong and EM forces as harmonic projections of φ-native lattice
            - Recursive charge domain coupling via φ-space geometry
            - Dimensional bridge through 10D compactified morphic field
@@ -108,7 +108,7 @@ class StrongCouplingDerivations:
             observed_value=self._alpha_s_observed,
             relative_error=relative_error,
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis
         )
 
@@ -119,7 +119,7 @@ class StrongCouplingDerivations:
         Returns:
             Complete strong coupling derivation (φ⁴ approach)
         """
-        # FSCTF derivation: α_s = α · φ⁴
+        # FIRM derivation: α_s = α · φ⁴
         # φ⁴: First stable resonance ring in morphic interaction space
         # Describes asymptotic scaling behavior (confinement scale)
 
@@ -133,25 +133,25 @@ class StrongCouplingDerivations:
 
         phi_expression = f"α_s = α · φ⁴ = {self._alpha:.6f} · {phi_fourth_power:.6f} = {alpha_s_theoretical:.6f}"
 
-        fsctf_interpretation = f"""
+        firm_interpretation = f"""
         Strong Coupling as Pure φ-Recursive Scaling:
 
         α_s = Resonant QCD attractor from φ⁴ morphic confinement scale
 
-        FSCTF View:
+        FIRM View:
         - Not low-energy α_s but morphic confinement scale anchor
         - φ⁴: Volume form scaling in 4D φ-lattices
         - First compact morphism attractor above φ³ (color triplet locking)
         - Maximum coherent QCD binding regime before collapse
 
         Physical meaning: α_s represents the φ⁴ scaling zone of stable
-        color fields in FSCTF's lattice field theory framework.
+        color fields in FIRM's lattice field theory framework.
         """
 
         derivation_analysis = f"""
         Strong Coupling Derivation (φ⁴ Scaling): α_s = {alpha_s_theoretical:.6f}
 
-        1. FSCTF Morphic Confinement Theory:
+        1. FIRM Morphic Confinement Theory:
            - φ⁴: First stable resonance ring in morphic interaction space
            - Volume form scaling in 4D φ-lattice color field dynamics
            - Maximum coherent binding before devourer collapse
@@ -183,7 +183,7 @@ class StrongCouplingDerivations:
             observed_value=alpha_s_confinement,
             relative_error=relative_error,
             phi_expression=phi_expression,
-            fsctf_interpretation=fsctf_interpretation,
+            firm_interpretation=firm_interpretation,
             derivation_analysis=derivation_analysis
         )
 
@@ -200,10 +200,10 @@ class StrongCouplingDerivations:
 
         # Summary analysis
         summary = f"""
-        FSCTF Strong Coupling Constant Analysis
+        FIRM Strong Coupling Constant Analysis
         =====================================
 
-        Two complementary FSCTF approaches to α_s derivation:
+        Two complementary FIRM approaches to α_s derivation:
 
         1. Dimensional Harmonic Scaling: α_s = α · φ · 10
            - Theoretical: {dimensional_result.theoretical_value:.6f}
@@ -245,7 +245,7 @@ class StrongCouplingDerivations:
 
 def main():
     """Test the strong coupling derivations."""
-    print("🌌 FSCTF Strong Coupling Constant Derivations 🌌\n")
+    print("🌌 FIRM Strong Coupling Constant Derivations 🌌\n")
 
     derivation = StrongCouplingDerivations()
 
@@ -269,7 +269,7 @@ def main():
     print("=" * 60)
     print(analysis["summary"])
     print("=" * 60)
-    print("⚛️ FSCTF STRONG COUPLING MASTERY ACHIEVED! ⚛️")
+    print("⚛️ FIRM STRONG COUPLING MASTERY ACHIEVED! ⚛️")
 
 if __name__ == "__main__":
     main()

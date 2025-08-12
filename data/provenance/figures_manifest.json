@@ -155,7 +155,7 @@
         "THEORETICAL: Complete FIRM fundamental constants derivations"
       ],
       "input_hashes": {
-        "constants_framework": "constants/fundamental_constants_fsctf.py"
+        "constants_framework": "constants/fundamental_constants_firm.py"
       },
       "script": "constants_table_generator.py",
       "script_hash": "TBD",
