@@ -174,7 +174,7 @@ class CompleteSpectrum:
         charged_lepton_name, charged_symbol, neutrino_name, neutrino_symbol = lepton_names[gen_num]
 
         # Left-handed lepton doublet: (νₗ, ℓ⁻)_L
-        # SU(2) doublet with I = 1/2, Y = -1/2
+        # SU(2) doublet with I = 1/2, Y = -1
 
         # Charged lepton (lower component of doublet)
         charged_lepton_mass = self._get_lepton_mass(charged_lepton_name)
@@ -188,7 +188,7 @@ class CompleteSpectrum:
             quantum_numbers=QuantumNumbers(
                 electric_charge=-1.0,
                 weak_isospin=-0.5,
-                weak_hypercharge=-0.5,
+                weak_hypercharge=-1.0,
                 color_charge=None,
                 spin=0.5,
                 chirality="left"
@@ -211,7 +211,7 @@ class CompleteSpectrum:
             quantum_numbers=QuantumNumbers(
                 electric_charge=0.0,
                 weak_isospin=+0.5,
-                weak_hypercharge=-0.5,
+                weak_hypercharge=-1.0,
                 color_charge=None,
                 spin=0.5,
                 chirality="left"
@@ -236,7 +236,7 @@ class CompleteSpectrum:
             quantum_numbers=QuantumNumbers(
                 electric_charge=-1.0,
                 weak_isospin=0.0,
-                weak_hypercharge=-1.0,
+                weak_hypercharge=-2.0,
                 color_charge=None,
                 spin=0.5,
                 chirality="right"
@@ -264,7 +264,7 @@ class CompleteSpectrum:
         up_type_name, up_symbol, down_type_name, down_symbol = quark_names[gen_num]
 
         # Left-handed quark doublet: (u, d')_L where d' is CKM-rotated
-        # SU(2) doublet with I = 1/2, Y = 1/6, carries color
+        # SU(2) doublet with I = 1/2, Y = 1/3, carries color
 
         # Up-type quark (upper component of doublet)
         up_quark_mass = self._get_quark_mass(up_type_name)
@@ -278,7 +278,7 @@ class CompleteSpectrum:
             quantum_numbers=QuantumNumbers(
                 electric_charge=+2.0/3.0,
                 weak_isospin=+0.5,
-                weak_hypercharge=+1.0/6.0,
+                weak_hypercharge=+1.0/3.0,
                 color_charge="triplet",  # Carries SU(3) color
                 spin=0.5,
                 chirality="left"
@@ -301,7 +301,7 @@ class CompleteSpectrum:
             quantum_numbers=QuantumNumbers(
                 electric_charge=-1.0/3.0,
                 weak_isospin=-0.5,
-                weak_hypercharge=+1.0/6.0,
+                weak_hypercharge=+1.0/3.0,
                 color_charge="triplet",
                 spin=0.5,
                 chirality="left"

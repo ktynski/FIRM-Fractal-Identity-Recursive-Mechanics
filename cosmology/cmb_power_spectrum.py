@@ -125,6 +125,18 @@ class AcousticPeakStructure:
 
         # Cosmological parameters from FIRM theory
         self._cosmo_params = derive_cosmological_parameters()
+        # Recompute Ω_γ and Ω_b from φ-native background using T0 and H0
+        try:
+            from cosmology.phi_background import build_phi_background
+            h0 = float(self._cosmo_params.get("hubble_parameter_s_inverse"))
+            om = float(self._cosmo_params.get("omega_matter"))
+            bg = build_phi_background(h0, om)
+            # Update background-consistent values
+            self._cosmo_params["omega_gamma"] = bg.omega_gamma
+            self._cosmo_params["omega_baryon"] = bg.omega_baryon
+            self._cosmo_params["cmb_temperature_K"] = bg.T0_K
+        except Exception:
+            pass
 
         # Physical constants and scales (centralized, exact SI)
         from structures.physical_units import PHYSICAL_UNITS
@@ -155,13 +167,13 @@ class AcousticPeakStructure:
         Returns:
             Sound speed cs in units of c
         """
-        # Sound speed: cs² = c²/(3(1 + R)) where R = 3ρb/(4ργ)
-        # R = (3/4) × (Ωb/Ωγ) × (1+z) where Ωγ = Ωb × (T₀/T_recomb)⁴
+        # Sound speed: c_s^2 = c^2 / (3(1 + R)), where R(z) = 3ρ_b/(4ρ_γ)
+        # With ρ_b ∝ Ω_b (1+z)^3 and ρ_γ ∝ Ω_γ (1+z)^4 ⇒ R(z) = (3/4)(Ω_b/Ω_γ) × (1/(1+z))
 
         omega_b = self._cosmo_params.get("omega_baryon")
         omega_gamma = self._cosmo_params.get("omega_gamma")
 
-        R_ratio = (3.0/4.0) * (omega_b / omega_gamma) * (1 + redshift)
+        R_ratio = (3.0 / 4.0) * (omega_b / max(omega_gamma, 1e-30)) * (1.0 / max(1.0 + redshift, 1e-12))
         sound_speed_squared = 1.0 / (3.0 * (1 + R_ratio))
 
         return math.sqrt(sound_speed_squared)
@@ -178,35 +190,48 @@ class AcousticPeakStructure:
         # Angular acoustic scale: θ_A = rs(z_*)/DA(z_*)
         # where rs = sound horizon, DA = angular diameter distance
 
-        # Sound horizon at recombination: rs ~ c⋅cs⋅t_rec
-        sound_speed = self._compute_sound_speed(self._z_recombination)
+        # Build φ-native H(z)/H0 and R(z);
+        # get φ-native recombination redshift from recombination module
+        def E_of_z(z: float) -> float:
+            om = float(self._cosmo_params.get("omega_matter"))
+            ol = float(self._cosmo_params.get("omega_lambda"))
+            og = float(self._cosmo_params.get("omega_gamma", 0.0))
+            return math.sqrt(max(og, 0.0) * (1.0 + z) ** 4 + max(om, 0.0) * (1.0 + z) ** 3 + max(ol, 0.0))
 
-        # Hubble parameter from FIRM theory (s^-1 via dimensional bridge)
-        h_0_firm = self._cosmo_params.get("hubble_parameter_s_inverse")
-        if h_0_firm is None:
-            raise RuntimeError("Missing 'hubble_parameter_s_inverse' in cosmological parameters; must be derived via dimensional bridge.")
+        def R_of_z(z: float) -> float:
+            ob = float(self._cosmo_params.get("omega_baryon"))
+            og = float(self._cosmo_params.get("omega_gamma", 1e-30))
+            return (3.0 / 4.0) * (ob / max(og, 1e-30)) * (1.0 / max(1.0 + z, 1e-12))
 
-        # Sound horizon: rs ≈ cs⋅c / (a⋅H) integrated to recombination
-        # Approximation: rs ≈ cs⋅c⋅2 / (3H₀√Ωₘ⋅√(1+z_rec)³)
-        omega_m = self._cosmo_params.get("omega_matter")
-        if omega_m is None:
-            raise RuntimeError("Missing 'omega_matter' in cosmological parameters; ensure theory derivation populates it.")
+        # Integrals in units of c/H0 so ratio is unitless and c cancels
+        try:
+            from cosmology.recombination_saha_phi import compute_zrec_saha_phi
+            h0 = float(self._cosmo_params.get("hubble_parameter_s_inverse"))
+            om = float(self._cosmo_params.get("omega_matter"))
+            ob = float(self._cosmo_params.get("omega_baryon"))
+            og = float(self._cosmo_params.get("omega_gamma", 1e-30))
+            T0 = float(self._cosmo_params.get("cmb_temperature_K", 1.0))
+            zrec_res = compute_zrec_saha_phi(h0, om, ob, og, T0)
+            z_rec = float(zrec_res.z_rec)
+        except Exception:
+            z_rec = float(self._z_recombination)
+        # Upper bound for sound horizon integral in early universe
+        z_max = max(5.0e4, z_rec * 10.0)
+        # Grids
+        nz_rs = 5000
+        z_grid_rs = np.linspace(z_rec, z_max, nz_rs, dtype=float)
+        cs_over_c = 1.0 / np.sqrt(3.0 * (1.0 + np.array([R_of_z(z) for z in z_grid_rs])))
+        integrand_rs = cs_over_c / np.array([E_of_z(z) for z in z_grid_rs])
+        rs_over_cH0 = float(np.trapz(integrand_rs, z_grid_rs))
 
-        sound_horizon = (sound_speed * self._c_light * 2.0 /
-                         (3.0 * h_0_firm * math.sqrt(omega_m) *
-                          (1 + self._z_recombination)**(3.0/2.0)))
+        # Angular diameter distance integral from 0 to z_rec
+        nz_da = 5000
+        z_grid_da = np.linspace(0.0, z_rec, nz_da, dtype=float)
+        integrand_da = 1.0 / np.array([E_of_z(z) for z in z_grid_da])
+        Da_over_cH0 = float(np.trapz(integrand_da, z_grid_da)) / max(1.0 + z_rec, 1e-12)
 
-        # Angular diameter distance: DA(z) = c∫dz'/H(z') / (1+z)
-        # Approximation for matter-dominated: DA ≈ 2c/(3H₀√Ωₘ√(1+z))
-        angular_distance = (2.0 * self._c_light /
-                            (3.0 * h_0_firm * math.sqrt(omega_m) *
-                             math.sqrt(1 + self._z_recombination)))
-
-        # Angular acoustic scale
-        theta_acoustic = sound_horizon / angular_distance
-
-        # φ-correction from FIRM theory: θ_A × (1 + φ⁻³)
-        theta_acoustic_corrected = theta_acoustic * (1 + phi**(-3))
+        # θ_A = rs/DA (c/H0 cancels)
+        theta_acoustic_corrected = max(rs_over_cH0, 1e-30) / max(Da_over_cH0, 1e-30)
 
         return theta_acoustic_corrected
 
