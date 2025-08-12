@@ -4,14 +4,43 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FIRM: Fractal Identity & Recursive Mechanics</title>
+  <meta name="description" content="FIRM derives quantitative physics ex nihilo from axioms via fixed-point mathematics; no fitting, full provenance, explicit falsifiability."/>
+  <link rel="canonical" href="https://ktynski.github.io/FIRM-Fractal-Identity-Recursive-Mechanics/" />
+  <meta property="og:title" content="FIRM: Fractal Identity & Recursive Mechanics"/>
+  <meta property="og:description" content="Ex nihilo derivation of physical constants and cosmology from pure mathematics; zero fitting, full provenance."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://ktynski.github.io/FIRM-Fractal-Identity-Recursive-Mechanics/"/>
+  <meta property="og:image" content="https://ktynski.github.io/FIRM-Fractal-Identity-Recursive-Mechanics/assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="FIRM: Fractal Identity & Recursive Mechanics"/>
+  <meta name="twitter:description" content="Ex nihilo physics from axioms; no fitting; full provenance; explicit falsifiability."/>
+  <meta name="twitter:image" content="https://ktynski.github.io/FIRM-Fractal-Identity-Recursive-Mechanics/assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "FIRM: Fractal Identity & Recursive Mechanics",
+    "author": [{"@type":"Person","name":"Kristin Tynsk"}, {"@type":"Person","name":"Sage"}],
+    "datePublished": "2025-08-11",
+    "url": "https://ktynski.github.io/FIRM-Fractal-Identity-Recursive-Mechanics/",
+    "sameAs": ["https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics"],
+    "encoding": [{"@type":"MediaObject","contentUrl":"paper/FIRM_Main.pdf","encodingFormat":"application/pdf"}]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png"/>
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml"/>
+  <meta name="robots" content="index,follow"/>
+  <script defer data-domain="ktynski.github.io" src="https://plausible.io/js/script.js"></script>
   <style>
-    :root { --bg:#0b0d12; --fg:#eaf0ff; --muted:#a8b3c7; --accent:#9dd6ff; --card:#131722; }
+    :root { --bg:#0b0d12; --fg:#eaf0ff; --muted:#a8b3c7; --accent:#9dd6ff; --card:#131722; --bar:#0e1320; }
     *{box-sizing:border-box}
     body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);}
-    header{padding:48px 24px;text-align:center;background:linear-gradient(180deg,#0f1320,rgba(15,19,32,0));}
+    header{padding:90px 24px 36px;text-align:center;background:linear-gradient(180deg,#0f1320,rgba(15,19,32,0));position:relative}
+    .topbar{position:fixed;top:0;left:0;right:0;background:rgba(14,19,32,.75);backdrop-filter:blur(8px);border-bottom:1px solid #1f2533;z-index:9}
+    .topbar .wrap{display:flex;gap:10px;align-items:center;justify-content:center;padding:10px}
     h1{margin:0;font-size:42px;letter-spacing:0.2px}
     h2{margin:12px 0 0;font-weight:400;color:var(--muted)}
     h3{margin:0 0 10px}
@@ -38,9 +67,18 @@
     .caps{font-size:13px;color:var(--muted)}
     nav.top{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:8px}
     nav.top a{color:var(--muted);text-decoration:none}
+    .cols3{display:grid;gap:16px;grid-template-columns:1fr}
+    @media(min-width:980px){.cols3{grid-template-columns:repeat(3,1fr)}}
   </style>
 </head>
 <body>
+  <div class="topbar"><div class="wrap">
+    <a class="btn primary" href="paper/FIRM_Main.pdf" target="_blank">Open Paper</a>
+    <a class="btn ghost" href="#gallery">Figures</a>
+    <a class="btn ghost" href="#reproduce">Reproduce</a>
+    <a class="btn ghost" href="#faq">FAQ</a>
+    <a class="btn ghost" href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank">GitHub</a>
+  </div></div>
   <header>
     <h1>FIRM: Fractal Identity & Recursive Mechanics</h1>
     <h2>Ex nihilo derivation of physical constants and cosmology from pure mathematics</h2>
@@ -55,6 +93,9 @@
       <a href="#paper">Paper</a>
       <a href="#gallery">Figures</a>
       <a href="#video">Video</a>
+      <a href="#reproduce">Reproduce</a>
+      <a href="#faq">FAQ</a>
+      <a href="#cite">Cite</a>
     </nav>
   </header>
 
@@ -71,56 +112,96 @@
       </section>
       <section class="card" id="paper">
         <h3>Paper (Embedded)</h3>
-        <iframe class="embed" src="paper/FIRM_Main.pdf#view=FitH" title="FIRM Paper PDF"></iframe>
+        <iframe class="embed" src="paper/FIRM_Main.pdf#view=FitH" title="FIRM Paper PDF" loading="lazy"></iframe>
         <p class="caps">Open the full PDF for figure captions and derivation details.</p>
       </section>
     </div>
 
     <section class="card" id="video">
       <h3>Overview Video</h3>
-      <iframe class="video" src="https://www.youtube.com/embed/GuelCnzDaUU" title="Overview Video" allowfullscreen></iframe>
+      <iframe class="video" src="https://www.youtube.com/embed/GuelCnzDaUU" title="Overview Video" allowfullscreen loading="lazy"></iframe>
     </section>
 
     <section class="card" id="gallery">
       <h3>Selected Figures</h3>
       <div class="gallery">
         <a class="thumb" href="assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png" target="_blank">
-          <img src="assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png" alt="CMB Crown Jewel" />
+          <img src="assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png" alt="CMB Crown Jewel" loading="lazy" />
           <div class="cap">CMB crown jewel — ex nihilo sky map from φ-mathematics</div>
         </a>
         <a class="thumb" href="assets/planck_tt_binned.png" target="_blank">
-          <img src="assets/planck_tt_binned.png" alt="CMB TT Comparison" />
+          <img src="assets/planck_tt_binned.png" alt="CMB TT Comparison" loading="lazy" />
           <div class="cap">CMB TT: FIRM prediction (solid) vs Planck data (points)</div>
         </a>
         <a class="thumb" href="assets/alpha_inverse_comparison.png" target="_blank">
-          <img src="assets/alpha_inverse_comparison.png" alt="Alpha Inverse" />
+          <img src="assets/alpha_inverse_comparison.png" alt="Alpha Inverse" loading="lazy" />
           <div class="cap">Fine structure constant — theory vs measurements</div>
         </a>
         <a class="thumb" href="assets/bao_comparison.png" target="_blank">
-          <img src="assets/bao_comparison.png" alt="BAO Comparison" />
+          <img src="assets/bao_comparison.png" alt="BAO Comparison" loading="lazy" />
           <div class="cap">BAO scale — φ-enhanced sound horizon vs observations</div>
         </a>
         <a class="thumb" href="assets/grace_operator_fixed_point_convergence.png" target="_blank">
-          <img src="assets/grace_operator_fixed_point_convergence.png" alt="Grace Operator Convergence" />
+          <img src="assets/grace_operator_fixed_point_convergence.png" alt="Grace Operator Convergence" loading="lazy" />
           <div class="cap">Grace operator — fixed point convergence</div>
         </a>
         <a class="thumb" href="assets/dimensional_bridge_mapping.png" target="_blank">
-          <img src="assets/dimensional_bridge_mapping.png" alt="Dimensional Bridge" />
+          <img src="assets/dimensional_bridge_mapping.png" alt="Dimensional Bridge" loading="lazy" />
           <div class="cap">Dimensional bridge — math→physics mapping</div>
         </a>
         <a class="thumb" href="assets/phi_recursion_rate_verification.png" target="_blank">
-          <img src="assets/phi_recursion_rate_verification.png" alt="Phi Recursion" />
+          <img src="assets/phi_recursion_rate_verification.png" alt="Phi Recursion" loading="lazy" />
           <div class="cap">φ-recursion — rate verification</div>
         </a>
         <a class="thumb" href="assets/spacetime_metric_emergence.png" target="_blank">
-          <img src="assets/spacetime_metric_emergence.png" alt="Spacetime Metric" />
+          <img src="assets/spacetime_metric_emergence.png" alt="Spacetime Metric" loading="lazy" />
           <div class="cap">Spacetime metric — emergence from fixed points</div>
         </a>
         <a class="thumb" href="assets/inflation_evolution.png" target="_blank">
-          <img src="assets/inflation_evolution.png" alt="Inflation Evolution" />
+          <img src="assets/inflation_evolution.png" alt="Inflation Evolution" loading="lazy" />
           <div class="cap">Inflation evolution — φ-field dynamics</div>
         </a>
       </div>
+    </section>
+
+    <section class="card" id="reproduce">
+      <h3>Reproduce in One Command</h3>
+      <p>Clone, install, and build the paper and figures:</p>
+      <pre><code>git clone https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics.git
+cd ExNahiloReality
+pip install -e .
+PYTHONPATH=$PWD python regenerate_figures.py
+cd arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp && pdflatex -interaction=nonstopmode main.tex</code></pre>
+      <p class="caps">Provenance bundle: <a href="assets/provenance.json" download>download JSON</a> (figure provenance + commit hash).</p>
+    </section>
+
+    <section class="card" id="faq">
+      <h3>FAQ</h3>
+      <div class="cols3">
+        <div>
+          <strong>Do you fit anything?</strong>
+          <p>No. The pipeline forbids parameter fitting/tuning. Disagreement falsifies the framework.</p>
+        </div>
+        <div>
+          <strong>Where do numbers come from?</strong>
+          <p>From $\Fix(\mathcal{G})$ and $\phi$-recursion. See paper Methods and `constants/`.</p>
+        </div>
+        <div>
+          <strong>How do I verify?</strong>
+          <p>Run the one-command steps, compare outputs, check sealed provenance JSON.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="cite">
+      <h3>Cite</h3>
+      <pre><code>@article{FIRM2025,
+  title={FIRM: Fractal Identity \& Recursive Mechanics},
+  author={Tynsk, Kristin and Sage},
+  journal={arXiv preprint},
+  year={2025},
+  url={https://ktynski.github.io/FIRM-Fractal-Identity-Recursive-Mechanics/},
+}</code></pre>
     </section>
 
   </div>
