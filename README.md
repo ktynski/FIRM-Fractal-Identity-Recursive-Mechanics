@@ -2,8 +2,22 @@
 **A Complete Mathematical Framework for Deriving Physical Reality from Pure Mathematics**
 
 [![Build Status](https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/workflows/CI/badge.svg)](https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/actions)
-[![Coverage](https://codecov.io/gh/firm-research/ExNahiloReality/branch/main/graph/badge.svg)](https://codecov.io/gh/firm-research/ExNahiloReality)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+## TL;DR (Start Here)
+- **Paper (PDF)**: [`FIRM_Main.pdf`](arxiv_paper/FIRM_FINAL_SUBMISSION/FIRM_Main.pdf) • [Web view](https://ktynski.github.io/FIRM-Fractal-Identity-Recursive-Mechanics/)
+- **Zero fitting or tuning**: Derivations proceed from axioms → Grace operator → fixed points. No empirical inputs anywhere in the math pipeline.
+- **Full provenance**: Every result has a sealed, machine-verifiable trail (code + math). If we’re wrong, it’s visible and fixable.
+- **Falsifiable**: Concrete numeric targets and CMB peak-ratio structure (ℓ≈ℓ₁φⁿ). Miss them → FIRM is falsified.
+
+### inb4 (preemptive answers)
+- **“Where are the numbers coming from?”** From mathematical fixed points only. No parameter estimation, no curve fitting. See paper §Methods and repo `constants/`.
+- **“Hidden priors?”** The only inputs are the five axioms. Everything downstream is determined by fixed-point structure and φ-recursion.
+- **“Cherry-picked comparisons?”** Predictions are registered a priori. Tests are downstream only. If a test fails, it counts against us.
+- **“Hand-wavy figures?”** `figures/` includes generation scripts; `docs/paper/FIRM_Main.pdf` embeds all results. Figures are reproducible from code.
+- **“Not reproducible?”** One-command rebuilds; CI and docs show exact steps. Cryptographic seals and deterministic runs.
 
 ---
 
@@ -26,7 +40,7 @@ Core Physical Constants (All Derived):
 │ Complete particle spectrum    │ All Standard Model masses   │
 │ Galaxy rotation curves        │ Without dark matter         │
 │ CMB temperature map           │ Ex nihilo generation        │
-└─────────────────────────────────────────────┘
+└─────────────────────────────────────────────────────────────┘
 ```
 
 **Mathematical Foundation:**
