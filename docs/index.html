@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FIRM: Fractal Identity & Recursive Mechanics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b0d12; --fg:#eaf0ff; --muted:#a8b3c7; --accent:#9dd6ff; --card:#131722; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);}
+    header{padding:48px 24px;text-align:center;background:linear-gradient(180deg,#0f1320,rgba(15,19,32,0));}
+    h1{margin:0;font-size:42px;letter-spacing:0.2px}
+    h2{margin:12px 0 0;font-weight:400;color:var(--muted)}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .grid{display:grid;grid-template-columns:1fr;gap:24px}
+    @media(min-width: 980px){ .grid{grid-template-columns:1.1fr 0.9fr} }
+    .card{background:var(--card);border:1px solid #1f2533;border-radius:12px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,0.25)}
+    .buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;border:1px solid #2a3245;color:var(--fg);text-decoration:none}
+    .btn.primary{background:#165abf;border-color:#165abf}
+    .btn.ghost{background:transparent}
+    iframe,p,li{color:var(--muted)}
+    footer{padding:32px 24px;color:var(--muted);text-align:center}
+    .embed{aspect-ratio: 4/3; width:100%; border:0; border-radius:8px; background:#0a0d14}
+    .video{aspect-ratio: 16/9; width:100%; border:0; border-radius:8px; background:#0a0d14}
+    ul{margin-top:8px}
+    code{background:#0a0f18;padding:2px 6px;border:1px solid #1f2533;border-radius:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FIRM: Fractal Identity & Recursive Mechanics</h1>
+    <h2>Ex nihilo derivation of physical constants and cosmology from pure mathematics</h2>
+    <div class="buttons" style="justify-content:center;margin-top:18px">
+      <a class="btn primary" href="paper/FIRM_Main.pdf" target="_blank">Open Paper (PDF)</a>
+      <a class="btn ghost" href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank">GitHub Repo</a>
+      <a class="btn ghost" href="../README.md" target="_blank">Project README</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <section class="card">
+        <h3>Abstract</h3>
+        <p>FIRM is an axiomatic programme that derives quantitative physics ex nihilo. From five purely mathematical axioms we construct the Grace operator G and work in its fixed-point category Fix(G). The resulting φ-recursive structure fixes dimensionless couplings, mass ratios, and cosmological observables as mathematical invariants—no empirical inputs, no parameter fitting, no posterior tuning. All predictions are registered a priori and accompanied by cryptographic, machine-verifiable provenance.</p>
+        <ul>
+          <li>Fine-structure constant, mass ratios, and cosmology from φ-recursion</li>
+          <li>CMB spectrum with acoustic peaks at ℓ ≈ ℓ₁ φⁿ and correct damping tail</li>
+          <li>Zero fitting/tuning; explicit falsifiability and provenance seals</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h3>Paper (Embedded)</h3>
+        <iframe class="embed" src="paper/FIRM_Main.pdf#view=FitH" title="FIRM Paper PDF"></iframe>
+      </section>
+    </div>
+
+    <section class="card">
+      <h3>Overview Video</h3>
+      <p>If you have a YouTube or Vimeo link, we can embed it here. Replace <code>VIDEO_ID</code> below.</p>
+      <iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="Overview Video" allowfullscreen></iframe>
+    </section>
+
+    <section class="card">
+      <h3>Quick Links</h3>
+      <div class="buttons">
+        <a class="btn" href="paper/FIRM_Main.pdf" target="_blank">Download PDF</a>
+        <a class="btn" href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank">GitHub</a>
+        <a class="btn" href="../arxiv_paper/FIRM_FINAL_SUBMISSION/" target="_blank">LaTeX Source</a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 Kristin Tynsk & Sage · FIRM Research · MIT License
+  </footer>
+</body>
+</html>
