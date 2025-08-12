@@ -1,0 +1,9 @@
+{
+  "manifold_progression_diagram.png": {
+    "file": "manifold_progression_diagram.png",
+    "category": "Mathematical Foundations",
+    "title": "FIRM Manifold Progression: Topological Foundation of Cosmogenesis",
+    "mathematical_basis": "Visualization of manifold progression theory showing topological transition from torus to \u03c6-Klein recursive structure.",
+    "provenance_hash": "manifold_progression_generator.py"
+  }
+}

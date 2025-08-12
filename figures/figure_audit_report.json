@@ -1,0 +1,488 @@
+{
+  "main_FIRM_CMB_Crown_Jewel_Ex_Nihilo.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/figures/FIRM_CMB_Crown_Jewel_Ex_Nihilo.png",
+    "context": "main",
+    "file_size_mb": 2.1803112030029297,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Resolution below 150 DPI - may affect print quality"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      1359,
+      2406,
+      4
+    ],
+    "resolution_dpi": 72
+  },
+  "main_FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/figures/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png",
+    "context": "main",
+    "file_size_mb": 6.467620849609375,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Resolution below 150 DPI - may affect print quality"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      2722,
+      4812,
+      4
+    ],
+    "resolution_dpi": 72
+  },
+  "main_planck_tt_binned.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/figures/planck_tt_binned.png",
+    "context": "main",
+    "file_size_mb": 0.2472829818725586,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Low contrast detected - may affect readability",
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [
+      "CMB Planck TT figure - verify theoretical prediction line is present"
+    ],
+    "dimensions": [
+      2365,
+      3569,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png",
+    "context": "arxiv",
+    "file_size_mb": 6.467620849609375,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Resolution below 150 DPI - may affect print quality"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      2722,
+      4812,
+      4
+    ],
+    "resolution_dpi": 72
+  },
+  "arxiv_alpha_inverse_comparison.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/alpha_inverse_comparison.png",
+    "context": "arxiv",
+    "file_size_mb": 0.07020187377929688,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [
+      "Comparison figure - verify both theory and observation are shown"
+    ],
+    "dimensions": [
+      1167,
+      1512,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_bao_comparison.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/bao_comparison.png",
+    "context": "arxiv",
+    "file_size_mb": 0.20642566680908203,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [
+      "Comparison figure - verify both theory and observation are shown"
+    ],
+    "dimensions": [
+      1468,
+      2067,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_consciousness_pnp_correlation.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/consciousness_pnp_correlation.png",
+    "context": "arxiv",
+    "file_size_mb": 0.4394378662109375,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      2965,
+      3566,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_dark_energy_phi_scaling.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/dark_energy_phi_scaling.png",
+    "context": "arxiv",
+    "file_size_mb": 0.9670991897583008,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [],
+    "recommendations": [
+      "\u03c6-harmonic figure - verify golden ratio mathematics is properly implemented"
+    ],
+    "dimensions": [
+      4100,
+      5455,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_dimensional_bridge_mapping.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/dimensional_bridge_mapping.png",
+    "context": "arxiv",
+    "file_size_mb": 0.5348396301269531,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      3436,
+      3937,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_eeg_phi_harmonics.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/eeg_phi_harmonics.png",
+    "context": "arxiv",
+    "file_size_mb": 0.5313358306884766,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [],
+    "recommendations": [
+      "\u03c6-harmonic figure - verify golden ratio mathematics is properly implemented"
+    ],
+    "dimensions": [
+      2971,
+      3552,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_einstein_equations_comparison.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/einstein_equations_comparison.png",
+    "context": "arxiv",
+    "file_size_mb": 0.681462287902832,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [
+      "Comparison figure - verify both theory and observation are shown"
+    ],
+    "dimensions": [
+      2954,
+      4169,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_einstein_equations_derivation_chain.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/einstein_equations_derivation_chain.png",
+    "context": "arxiv",
+    "file_size_mb": 0.42813777923583984,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Low contrast detected - may affect readability",
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      2968,
+      3011,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_falsification_test_results.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/falsification_test_results.png",
+    "context": "arxiv",
+    "file_size_mb": 0.3601417541503906,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      2965,
+      3567,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_gauge_couplings_theory.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/gauge_couplings_theory.png",
+    "context": "arxiv",
+    "file_size_mb": 0.12031269073486328,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      1170,
+      2071,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_grace_operator_fixed_point_convergence.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/grace_operator_fixed_point_convergence.png",
+    "context": "arxiv",
+    "file_size_mb": 0.31885623931884766,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      1775,
+      4168,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_hz_comparison.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/hz_comparison.png",
+    "context": "arxiv",
+    "file_size_mb": 0.13172054290771484,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [
+      "Comparison figure - verify both theory and observation are shown"
+    ],
+    "dimensions": [
+      1468,
+      2067,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_inflation_evolution.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/inflation_evolution.png",
+    "context": "arxiv",
+    "file_size_mb": 0.673823356628418,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      4100,
+      5366,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_manifold_progression_diagram.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/manifold_progression_diagram.png",
+    "context": "arxiv",
+    "file_size_mb": 1.2538223266601562,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      2447,
+      3780,
+      4
+    ],
+    "resolution_dpi": 150
+  },
+  "arxiv_particle_mass_spectrum_theory.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/particle_mass_spectrum_theory.png",
+    "context": "arxiv",
+    "file_size_mb": 0.08782672882080078,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      1468,
+      2364,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_phi_recursion_rate_verification.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/phi_recursion_rate_verification.png",
+    "context": "arxiv",
+    "file_size_mb": 0.3015890121459961,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [],
+    "recommendations": [
+      "\u03c6-harmonic figure - verify golden ratio mathematics is properly implemented"
+    ],
+    "dimensions": [
+      1775,
+      4167,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_physical_constants_derivation_table.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/physical_constants_derivation_table.png",
+    "context": "arxiv",
+    "file_size_mb": 0.07008075714111328,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      1162,
+      2067,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_planck_tt_binned.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/planck_tt_binned.png",
+    "context": "arxiv",
+    "file_size_mb": 0.0716085433959961,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [
+      "CMB Planck TT figure - verify theoretical prediction line is present"
+    ],
+    "dimensions": [
+      1168,
+      1767,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_sn_mu_comparison.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/sn_mu_comparison.png",
+    "context": "arxiv",
+    "file_size_mb": 0.11986923217773438,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [
+      "Comparison figure - verify both theory and observation are shown"
+    ],
+    "dimensions": [
+      1468,
+      2067,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_spacetime_metric_emergence.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/spacetime_metric_emergence.png",
+    "context": "arxiv",
+    "file_size_mb": 0.4437732696533203,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      2953,
+      3570,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_sparc_rotation_curves.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/sparc_rotation_curves.png",
+    "context": "arxiv",
+    "file_size_mb": 0.8515720367431641,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [],
+    "dimensions": [
+      2988,
+      3567,
+      4
+    ],
+    "resolution_dpi": 300
+  },
+  "arxiv_theory_comparison.png": {
+    "file_path": "/Users/fractlphoneroom1/Desktop/ExNahiloReality/arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/theory_comparison.png",
+    "context": "arxiv",
+    "file_size_mb": 0.3035612106323242,
+    "issues": [
+      "No corresponding generation script found - provenance unclear"
+    ],
+    "warnings": [
+      "Filename doesn't clearly indicate FIRM/ex nihilo origin"
+    ],
+    "recommendations": [
+      "Comparison figure - verify both theory and observation are shown"
+    ],
+    "dimensions": [
+      2965,
+      3568,
+      4
+    ],
+    "resolution_dpi": 300
+  }
+}
