@@ -1,0 +1,390 @@
+{
+  "total_modules": 25,
+  "successful": 24,
+  "failed": 1,
+  "detailed_results": {
+    "cmb_envelope_model": {
+      "module": "cmb_envelope_model",
+      "file": "constants/cmb_envelope_model.py",
+      "status": "FAILED",
+      "error": "cannot import name 'ValidationTest' from partially initialized module 'provenance.integrity_validator' (most likely due to a circular import) (/Users/fractlphoneroom1/Desktop/ExNahiloReality/provenance/integrity_validator.py)",
+      "execution_time": 0.8816897869110107,
+      "computed_values": [],
+      "critical_check": "N/A",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/fractlphoneroom1/Desktop/ExNahiloReality/scripts/verify_all_derivations.py\", line 56, in test_single_module\n    module = importlib.import_module(module_path)\n  File \"/opt/homebrew/Caskroom/miniconda/base/lib/python3.13/importlib/__init__.py\", line 88, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap>\", line 1387, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1360, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1310, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"<frozen importlib._bootstrap>\", line 1387, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1360, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1331, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 935, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 1026, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/Users/fractlphoneroom1/Desktop/ExNahiloReality/constants/__init__.py\", line 57, in <module>\n    from .fine_structure_alpha import (\n    ...<6 lines>...\n    )\n  File \"/Users/fractlphoneroom1/Desktop/ExNahiloReality/constants/fine_structure_alpha.py\", line 67, in <module>\n    from provenance.derivation_tree import DerivationNode, ProvenanceTree\n  File \"/Users/fractlphoneroom1/Desktop/ExNahiloReality/provenance/__init__.py\", line 37, in <module>\n    from .integrity_validator import MathematicalIntegrityValidator\n  File \"/Users/fractlphoneroom1/Desktop/ExNahiloReality/provenance/integrity_validator.py\", line 105, in <module>\n    from validation.provenance_guard import ProvenanceGuard, ProofObject, ProvenanceGuardError\n  File \"/Users/fractlphoneroom1/Desktop/ExNahiloReality/validation/__init__.py\", line 37, in <module>\n    from .falsification_tester import FalsificationTester, FALSIFICATION_TESTER\n  File \"/Users/fractlphoneroom1/Desktop/ExNahiloReality/validation/falsification_tester.py\", line 76, in <module>\n    from validation.statistical_comparator import STATISTICAL_COMPARATOR\n  File \"/Users/fractlphoneroom1/Desktop/ExNahiloReality/validation/statistical_comparator.py\", line 69, in <module>\n    from provenance.integrity_validator import ValidationTest, ValidationStatus\nImportError: cannot import name 'ValidationTest' from partially initialized module 'provenance.integrity_validator' (most likely due to a circular import) (/Users/fractlphoneroom1/Desktop/ExNahiloReality/provenance/integrity_validator.py)\n"
+    },
+    "neutrino_seesaw_derivation": {
+      "module": "neutrino_seesaw_derivation",
+      "file": "constants/neutrino_seesaw_derivation.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.019671916961669922,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "strong_coupling_derivations": {
+      "module": "strong_coupling_derivations",
+      "file": "constants/strong_coupling_derivations.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0006649494171142578,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "strong_coupling_complete": {
+      "module": "strong_coupling_complete",
+      "file": "constants/strong_coupling_complete.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0004899501800537109,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "topology_and_zeta_constants": {
+      "module": "topology_and_zeta_constants",
+      "file": "constants/topology_and_zeta_constants.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0003502368927001953,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "topology_factor": {
+      "module": "topology_factor",
+      "file": "constants/topology_factor.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0007290840148925781,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "weinberg_angle_correction": {
+      "module": "weinberg_angle_correction",
+      "file": "constants/weinberg_angle_correction.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0009429454803466797,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "gauge_couplings": {
+      "module": "gauge_couplings",
+      "file": "constants/gauge_couplings.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 7.224082946777344e-05,
+      "computed_values": [
+        {
+          "variable": "ALPHA_1_INVERSE",
+          "value": 118.75580140374446
+        },
+        {
+          "variable": "ALPHA_2_INVERSE",
+          "value": 87.62586475469053
+        },
+        {
+          "variable": "ALPHA_3_INVERSE",
+          "value": 14.746649935028586
+        },
+        {
+          "variable": "ALPHA_EM_INVERSE",
+          "value": 112.81051253759067
+        },
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "weinberg_angle_exact": {
+      "module": "weinberg_angle_exact",
+      "file": "constants/weinberg_angle_exact.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0012021064758300781,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "cosmological_constant_derivation": {
+      "module": "cosmological_constant_derivation",
+      "file": "constants/cosmological_constant_derivation.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0021750926971435547,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "FAIL",
+      "critical_details": "Expected 0.684\u00b10.1, found: ['PHI_VALUE=1.618033988749895']"
+    },
+    "phi_shells_cooling": {
+      "module": "phi_shells_cooling",
+      "file": "constants/phi_shells_cooling.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0009379386901855469,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "mass_ratio_structural_corrections": {
+      "module": "mass_ratio_structural_corrections",
+      "file": "constants/mass_ratio_structural_corrections.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0007748603820800781,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "fine_structure_alpha": {
+      "module": "fine_structure_alpha",
+      "file": "constants/fine_structure_alpha.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 2.09808349609375e-05,
+      "computed_values": [
+        {
+          "variable": "ALPHA_INVERSE_THEORETICAL",
+          "value": 136.62343269848967
+        },
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "PASS",
+      "critical_details": "Found ALPHA_INVERSE_THEORETICAL = 136.62343269848967"
+    },
+    "mass_ratios": {
+      "module": "mass_ratios",
+      "file": "constants/mass_ratios.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 1.7881393432617188e-05,
+      "computed_values": [
+        {
+          "variable": "MUON_ELECTRON_RATIO",
+          "value": 206.62517963887018
+        },
+        {
+          "variable": "NEUTRON_PROTON_RATIO",
+          "value": 1.0002307603622829
+        },
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        },
+        {
+          "variable": "PROTON_ELECTRON_RATIO",
+          "value": 1875.5781736904908
+        },
+        {
+          "variable": "TAU_ELECTRON_RATIO",
+          "value": 3478.2104530925976
+        }
+      ],
+      "critical_check": "PASS",
+      "critical_details": "Found MUON_ELECTRON_RATIO = 206.62517963887018"
+    },
+    "zeta_normalization": {
+      "module": "zeta_normalization",
+      "file": "constants/zeta_normalization.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0007059574127197266,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "fundamental_constants_fsctf": {
+      "module": "fundamental_constants_fsctf",
+      "file": "constants/fundamental_constants_fsctf.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0007421970367431641,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "kelvin_scaling_thermal": {
+      "module": "kelvin_scaling_thermal",
+      "file": "constants/kelvin_scaling_thermal.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0007901191711425781,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "hubble_constant_derivation": {
+      "module": "hubble_constant_derivation",
+      "file": "constants/hubble_constant_derivation.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0007662773132324219,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "FAIL",
+      "critical_details": "Expected 67.4\u00b15.0, found: ['PHI_VALUE=1.618033988749895']"
+    },
+    "weinberg_angle_exact_derivation": {
+      "module": "weinberg_angle_exact_derivation",
+      "file": "constants/weinberg_angle_exact_derivation.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0007741451263427734,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "ckm_matrix_vus": {
+      "module": "ckm_matrix_vus",
+      "file": "constants/ckm_matrix_vus.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.000331878662109375,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "complete_fsctf_constants": {
+      "module": "complete_fsctf_constants",
+      "file": "constants/complete_fsctf_constants.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0006852149963378906,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "mixing_angles": {
+      "module": "mixing_angles",
+      "file": "constants/mixing_angles.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 8.821487426757812e-06,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "kelvin_scaling_factor": {
+      "module": "kelvin_scaling_factor",
+      "file": "constants/kelvin_scaling_factor.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0006940364837646484,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "ckm_suppression_factor": {
+      "module": "ckm_suppression_factor",
+      "file": "constants/ckm_suppression_factor.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 0.0007870197296142578,
+      "computed_values": [
+        {
+          "variable": "PHI_VALUE",
+          "value": 1.618033988749895
+        }
+      ],
+      "critical_check": "N/A"
+    },
+    "neutrino": {
+      "module": "neutrino",
+      "file": "constants/neutrino.py",
+      "status": "SUCCESS",
+      "error": null,
+      "execution_time": 1.0967254638671875e-05,
+      "computed_values": [],
+      "critical_check": "N/A"
+    }
+  },
+  "critical_constants": {},
+  "execution_time": 0.9167332649230957
+}

@@ -1,0 +1,2208 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  11 AUG 2025 21:03
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen142
+))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen143
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count270
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count271
+\leftroot@=\count272
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count273
+\DOTSCASE@=\count274
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count275
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count276
+\dotsspace@=\muskip17
+\c@parentequation=\count277
+\dspbrk@lvl=\count278
+\tag@help=\toks20
+\row@=\count279
+\column@=\count280
+\maxfields@=\count281
+\andhelp@=\toks21
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks22
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks29
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.d
+ef
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count282
+\l__pdf_internal_box=\box54
+))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks30
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count283
+\float@exts=\toks31
+\float@box=\box55
+\@float@everytoks=\toks32
+\@floatcapt=\box56
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen153
+\captionmargin=\dimen154
+\caption@leftmargin=\dimen155
+\caption@rightmargin=\dimen156
+\caption@width=\dimen157
+\caption@indent=\dimen158
+\caption@parindent=\dimen159
+\caption@hangindent=\dimen160
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count284
+\c@continuedfloat=\count285
+Package caption Info: float package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count286
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count287
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count288
+\Gm@cntv=\count289
+\c@Gm@tempcnt=\count290
+\Gm@bindingoffset=\dimen161
+\Gm@wd@mp=\dimen162
+\Gm@odd@mp=\dimen163
+\Gm@even@mp=\dimen164
+\Gm@layoutwidth=\dimen165
+\Gm@layoutheight=\dimen166
+\Gm@layouthoffset=\dimen167
+\Gm@layoutvoffset=\dimen168
+\Gm@dimlist=\toks33
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.
+sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/gettitlestring/gettitlestr
+ing.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count291
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count292
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen169
+\Hy@linkcounter=\count293
+\Hy@pagecounter=\count294
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count295
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count296
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen170
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count297
+\Field@Width=\dimen171
+\Fld@charsize=\dimen172
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count298
+\c@Item=\count299
+\c@Hfootnote=\count300
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count301
+\c@bookmark@seq@number=\count302
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/rerunfilecheck/rerunfilechec
+k.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/uniquecounter/uniquecounte
+r.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip57
+) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip58
+\bibsep=\skip59
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count303
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+\c@theorem=\count304
+\c@lemma=\count305
+\c@definition=\count306
+\c@corollary=\count307
+\c@proposition=\count308
+
+(./main.aux
+
+LaTeX Warning: Label `eq:phi_lambda_qcd' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+ (/usr/local/texlive/2025basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count309
+\scratchdimen=\dimen173
+\scratchbox=\box57
+\nofMPsegments=\count310
+\nofMParguments=\count311
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count312
+\MPscratchDim=\dimen174
+\MPnumerator=\count313
+\makeMPintoPDFobject=\count314
+\everyMPtoPDFconversion=\toks35
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.s
+ty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 71.
+(./main.out) (./main.out)
+\@outlinefile=\write3
+\openout3 = `main.out'.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
+
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
+
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+Package natbib Warning: Citation `Barrow2002' on page 1 undefined on input line
+ 81.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 85.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 85.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 85.
+
+
+
+[1
+
+{/usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `FIRM2024' on page 2 undefined on input line 1
+07.
+
+
+
+[2]
+
+Package natbib Warning: Citation `Planck2018' on page 3 undefined on input line
+ 129.
+
+
+Package natbib Warning: Citation `DESI2024' on page 3 undefined on input line 1
+29.
+
+
+Package natbib Warning: Citation `PantheonPlus2022' on page 3 undefined on inpu
+t line 129.
+
+
+
+[3]
+Overfull \hbox (16.49707pt too wide) in paragraph at lines 173--174
+\T1/cmr/m/n/12 "out-side." FIRM re-quires math-e-mat-ics that can de-scribe re-
+al-ity from the "in-side"^^Vmathematics
+ []
+
+
+
+[4]
+
+Package natbib Warning: Citation `Shannon1948' on page 5 undefined on input lin
+e 205.
+
+
+Package natbib Warning: Citation `Conway1996' on page 5 undefined on input line
+ 205.
+
+<figures/grace_operator_fixed_point_convergence.png, id=1540, 1004.0712pt x 427
+.5975pt>
+File: figures/grace_operator_fixed_point_convergence.png Graphic file (type png
+)
+<use figures/grace_operator_fixed_point_convergence.png>
+Package pdftex.def Info: figures/grace_operator_fixed_point_convergence.png  us
+ed on input line 211.
+(pdftex.def)             Requested size: 375.80544pt x 160.042pt.
+
+Underfull \hbox (badness 1286) in paragraph at lines 212--212
+[]\T1/cmr/m/n/12 Figure 1: |Grace Op-er-a-tor fixed point con-ver-gence anal-y-
+sis. Left: It-er-a-tion tra-
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 212--212
+\T1/cmr/m/n/12 jec-to-ries from dif-fer-ent ini-tial con-di-tions con-verg-ing 
+to $\OML/cmm/m/it/12 ^^^ \OMS/cmsy/m/n/12 ^^Y \OT1/cmr/m/n/12 1\OML/cmm/m/it/12
+ :\OT1/cmr/m/n/12 618$\T1/cmr/m/n/12 . Right: Ex-
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 212--212
+\T1/cmr/m/n/12 po-nen-tial er-ror de-cay demon-strat-ing con-trac-tion ra-tio $
+\OML/cmm/m/it/12 ^^^[] \OMS/cmsy/m/n/12 ^^Y \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :
+\OT1/cmr/m/n/12 618$\T1/cmr/m/n/12 . The con-
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 212--212
+\T1/cmr/m/n/12 ver-gence val-i-dates The-o-rem []1[] and pro-vides the math-e-m
+at-i-cal foun-da-tion for all
+ []
+
+
+
+[5]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 216.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 216.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 216.
+
+
+
+[6 <./figures/grace_operator_fixed_point_convergence.png>]
+<figures/phi_recursion_rate_verification.png, id=1567, 1003.8303pt x 427.5975pt
+>
+File: figures/phi_recursion_rate_verification.png Graphic file (type png)
+<use figures/phi_recursion_rate_verification.png>
+Package pdftex.def Info: figures/phi_recursion_rate_verification.png  used on i
+nput line 245.
+(pdftex.def)             Requested size: 375.80544pt x 160.08115pt.
+
+
+[7 <./figures/phi_recursion_rate_verification.png>]
+<figures/dimensional_bridge_mapping.png, id=1579, 948.4233pt x 827.7324pt>
+File: figures/dimensional_bridge_mapping.png Graphic file (type png)
+<use figures/dimensional_bridge_mapping.png>
+Package pdftex.def Info: figures/dimensional_bridge_mapping.png  used on input 
+line 277.
+(pdftex.def)             Requested size: 375.80544pt x 327.98007pt.
+
+
+[8 <./figures/dimensional_bridge_mapping.png>]
+
+[9]
+
+[10]
+Overfull \hbox (4.7333pt too wide) in paragraph at lines 387--388
+[]\T1/cmr/m/n/12 Figure []4[] shows the the-o-ret-i-cal pre-dic-tion com-pared 
+to ex-per-i-men-tal mea-sure-ments, demon-
+ []
+
+<figures/alpha_inverse_comparison.png, id=1619, 364.2408pt x 281.1303pt>
+File: figures/alpha_inverse_comparison.png Graphic file (type png)
+<use figures/alpha_inverse_comparison.png>
+Package pdftex.def Info: figures/alpha_inverse_comparison.png  used on input li
+ne 391.
+(pdftex.def)             Requested size: 375.80544pt x 290.06934pt.
+
+
+[11]
+
+[12 <./figures/alpha_inverse_comparison.png>]
+
+Package natbib Warning: Citation `Planck2018' on page 13 undefined on input lin
+e 424.
+
+
+Overfull \hbox (123.94951pt too wide) in paragraph at lines 423--425
+\T1/cmr/m/n/12 matching Planck 2018 mea-sure-ments (\T1/cmr/bx/n/12 ?\T1/cmr/m/
+n/12 ) (im-ple-men-ta-tion in \T1/cmtt/m/n/12 constants/cosmological_constant_d
+erivation.py\T1/cmr/m/n/12 ).
+ []
+
+<figures/dark_energy_phi_scaling.png, id=1644, 1314.1095pt x 987.69pt>
+File: figures/dark_energy_phi_scaling.png Graphic file (type png)
+<use figures/dark_energy_phi_scaling.png>
+Package pdftex.def Info: figures/dark_energy_phi_scaling.png  used on input lin
+e 431.
+(pdftex.def)             Requested size: 399.29463pt x 300.10716pt.
+
+
+[13 <./figures/dark_energy_phi_scaling.png>]
+
+Package natbib Warning: Citation `Planck2018' on page 14 undefined on input lin
+e 457.
+
+
+Package natbib Warning: Citation `SH0ES2022' on page 14 undefined on input line
+ 457.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 462.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 462.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 462.
+
+<figures/inflation_evolution.png, id=1656, 1292.6694pt x 987.69pt>
+File: figures/inflation_evolution.png Graphic file (type png)
+<use figures/inflation_evolution.png>
+Package pdftex.def Info: figures/inflation_evolution.png  used on input line 47
+9.
+(pdftex.def)             Requested size: 399.29463pt x 305.08055pt.
+
+
+[14]
+
+[15 <./figures/inflation_evolution.png>]
+<figures/planck_tt_binned.png, id=1674, 425.6703pt x 281.3712pt>
+File: figures/planck_tt_binned.png Graphic file (type png)
+<use figures/planck_tt_binned.png>
+Package pdftex.def Info: figures/planck_tt_binned.png  used on input line 512.
+(pdftex.def)             Requested size: 375.80544pt x 248.41457pt.
+<figures/bao_comparison.png, id=1675, 497.9403pt x 353.6412pt>
+File: figures/bao_comparison.png Graphic file (type png)
+<use figures/bao_comparison.png>
+Package pdftex.def Info: figures/bao_comparison.png  used on input line 523.
+(pdftex.def)             Requested size: 375.80544pt x 266.89763pt.
+
+
+[16 <./figures/planck_tt_binned.png>]
+<figures/particle_mass_spectrum_theory.png, id=1683, 569.4876pt x 353.6412pt>
+File: figures/particle_mass_spectrum_theory.png Graphic file (type png)
+<use figures/particle_mass_spectrum_theory.png>
+Package pdftex.def Info: figures/particle_mass_spectrum_theory.png  used on inp
+ut line 554.
+(pdftex.def)             Requested size: 375.80544pt x 233.37152pt.
+
+
+[17 <./figures/bao_comparison.png>]
+
+[18 <./figures/particle_mass_spectrum_theory.png>]
+<figures/sparc_rotation_curves.png, id=1702, 859.2903pt x 719.8092pt>
+File: figures/sparc_rotation_curves.png Graphic file (type png)
+<use figures/sparc_rotation_curves.png>
+Package pdftex.def Info: figures/sparc_rotation_curves.png  used on input line 
+587.
+(pdftex.def)             Requested size: 375.80544pt x 314.80591pt.
+<figures/sn_mu_comparison.png, id=1703, 497.9403pt x 353.6412pt>
+File: figures/sn_mu_comparison.png Graphic file (type png)
+<use figures/sn_mu_comparison.png>
+Package pdftex.def Info: figures/sn_mu_comparison.png  used on input line 598.
+(pdftex.def)             Requested size: 375.80544pt x 266.89763pt.
+
+
+[19 <./figures/sparc_rotation_curves.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 605.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 605.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 605.
+
+<figures/eeg_phi_harmonics.png, id=1713, 855.6768pt x 715.7139pt>
+File: figures/eeg_phi_harmonics.png Graphic file (type png)
+<use figures/eeg_phi_harmonics.png>
+Package pdftex.def Info: figures/eeg_phi_harmonics.png  used on input line 611.
+
+(pdftex.def)             Requested size: 375.80544pt x 314.33629pt.
+
+
+[20 <./figures/sn_mu_comparison.png>]
+<figures/consciousness_pnp_correlation.png, id=1720, 859.0494pt x 714.2685pt>
+File: figures/consciousness_pnp_correlation.png Graphic file (type png)
+<use figures/consciousness_pnp_correlation.png>
+Package pdftex.def Info: figures/consciousness_pnp_correlation.png  used on inp
+ut line 628.
+(pdftex.def)             Requested size: 375.80544pt x 312.4699pt.
+
+Underfull \hbox (badness 1087) in paragraph at lines 629--629
+[]\T1/cmr/m/n/12 Figure 13: |P=NP con-scious-ness cor-re-la-tion anal-y-sis fro
+m FIRM in-te-gra-tion frame-
+ []
+
+
+
+[21 <./figures/eeg_phi_harmonics.png>]
+
+[22 <./figures/consciousness_pnp_correlation.png>]
+<figures/falsification_test_results.png, id=1734, 859.2903pt x 714.2685pt>
+File: figures/falsification_test_results.png Graphic file (type png)
+<use figures/falsification_test_results.png>
+Package pdftex.def Info: figures/falsification_test_results.png  used on input 
+line 680.
+(pdftex.def)             Requested size: 375.80544pt x 312.3827pt.
+
+
+[23]
+<figures/theory_comparison.png, id=1747, 859.5312pt x 714.2685pt>
+File: figures/theory_comparison.png Graphic file (type png)
+<use figures/theory_comparison.png>
+Package pdftex.def Info: figures/theory_comparison.png  used on input line 693.
+
+(pdftex.def)             Requested size: 375.80544pt x 312.29552pt.
+
+
+[24 <./figures/falsification_test_results.png>]
+<figures/einstein_equations_comparison.png, id=1754, 1004.3121pt x 711.6186pt>
+File: figures/einstein_equations_comparison.png Graphic file (type png)
+<use figures/einstein_equations_comparison.png>
+Package pdftex.def Info: figures/einstein_equations_comparison.png  used on inp
+ut line 709.
+(pdftex.def)             Requested size: 399.29463pt x 282.92677pt.
+
+
+LaTeX Warning: Reference `app:einstein-derivation' on page 25 undefined on inpu
+t line 714.
+
+
+LaTeX Warning: Reference `app:einstein-derivation' on page 25 undefined on inpu
+t line 714.
+
+<figures/spacetime_metric_emergence.png, id=1755, 860.013pt x 711.3777pt>
+File: figures/spacetime_metric_emergence.png Graphic file (type png)
+<use figures/spacetime_metric_emergence.png>
+Package pdftex.def Info: figures/spacetime_metric_emergence.png  used on input 
+line 720.
+(pdftex.def)             Requested size: 399.29463pt x 330.28789pt.
+
+LaTeX Warning: Reference `app:spacetime-metric' on page 25 undefined on input l
+ine 725.
+
+
+LaTeX Warning: Reference `app:spacetime-metric' on page 25 undefined on input l
+ine 725.
+
+<figures/einstein_equations_derivation_chain.png, id=1756, 725.3499pt x 714.991
+2pt>
+File: figures/einstein_equations_derivation_chain.png Graphic file (type png)
+<use figures/einstein_equations_derivation_chain.png>
+Package pdftex.def Info: figures/einstein_equations_derivation_chain.png  used 
+on input line 731.
+(pdftex.def)             Requested size: 399.29463pt x 393.58458pt.
+
+LaTeX Warning: Reference `app:einstein-derivation-chain' on page 25 undefined o
+n input line 736.
+
+
+LaTeX Warning: Reference `app:einstein-derivation-chain' on page 25 undefined o
+n input line 736.
+
+
+Overfull \hbox (1.77252pt too wide) in paragraph at lines 741--742
+\OMS/cmsy/m/n/12 ^^X$\T1/cmr/m/n/12 10$[]$ pos-si-ble vac-uum states (the "land
+-scape prob-lem"). FIRM achieves uni-fi-ca-tion through
+ []
+
+
+
+[25 <./figures/theory_comparison.png>]
+
+[26 <./figures/einstein_equations_comparison.png>]
+
+[27 <./figures/spacetime_metric_emergence.png>]
+(./sections/alpha_derivation_detailed.tex
+Overfull \hbox (34.67879pt too wide) in paragraph at lines 1--1
+[]\T1/cmr/bx/n/17.28 Fine Struc-ture Con-stant: Com-plete Math-e-mat-i-cal Deri
+va-
+ []
+
+
+
+[28]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 27.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 27.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 27.
+
+
+
+[29]
+
+! LaTeX Error: \mathcal allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 ... Direct enumeration of \text{Fix}(\mathcal
+                                                  {G}) morphisms
+? echo "✅ ARXIV PAPER UPDATES COMPLETED:"
+ 
+Here is how much of TeX's memory you used:
+ 14543 strings out of 474662
+ 229645 string characters out of 5751110
+ 627293 words of memory out of 5000000
+ 36908 multiletter control sequences out of 15000+600000
+ 580241 words of font info for 91 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 79i,18n,93p,1267b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{subsection.23.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.23.4.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.23.4.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.23.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.23.3.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.23.3.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.23.3.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.23.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.23.2.4} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.23.2.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.23.2.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.23.2.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.23.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.23.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.23} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.22.10} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.22.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.8.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.22.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.7.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.7.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.22.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.6.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.6.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.22.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.5.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.5.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.5.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.22.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.4.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.4.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.22.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.3.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.3.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.22.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.2.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.22.2.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.22.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.22.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.22} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.23} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.22.3} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.22.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.22.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.22} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.21.3} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.21.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.21.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.21} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.20} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.19.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.19.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.19} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.18.3} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.18.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.18.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.18} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.17.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.17.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.17} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.16.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.16.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.16} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.15.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.15.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.15} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.14} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.13.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.13.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.13} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.12} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.11} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.10.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.10.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.10} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.9.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.9.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.9.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.7.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.7.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.7.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.6.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.21.6.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.21.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.21} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.19} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.18.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.18.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.18} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.17} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.16.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.16.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.16} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.15.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.15.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.15} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.14.3} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.14.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.14.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.14} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.13.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.13.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.13} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.12.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.12.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.12} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.11.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.11.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.11} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.10.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.10.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.10} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.8.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.8.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.7.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.7.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.6.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.6.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.4.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.20.4.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.20.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.20} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.17} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.16} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.15.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.15.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.15} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.14.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.14.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.14} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.13.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.13.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.13} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.12.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.12.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.12} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.11.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.11.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.11} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.10.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.10.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.10} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.9.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.9.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.8.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.8.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.7.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.7.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.7.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.5.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.19.5.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.19.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.19} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.18.10} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.18.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.18.8.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.18.8.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.18.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.18.7.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.18.7.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.18.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.18.6.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.18.6.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.18.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.18.5.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.18.5.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.18.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.18.4.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.18.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.18.3.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.18.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.18.2.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.18.2.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.18.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.18.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.18} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.17.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.8.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.8.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.17.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.7.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.7.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.17.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.6.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.6.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.17.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.5.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.5.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.17.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.4.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.4.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.17.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.3.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.3.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.17.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.2.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.17.2.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.17.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.17.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.17} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.16.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.16.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.16.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.16.6.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.16.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.16.5.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.16.5.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.16.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.16.4.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.16.4.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.16.4.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.16.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.16.3.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.16.3.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.16.3.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.16.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.16.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.16.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.16} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.21} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.20.3} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.20.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.20.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.20} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.19} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.18.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.18.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.18} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.17} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.16.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.16.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.16} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.15} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.14.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.14.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.14} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.13.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.13.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.13} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.12} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.11.3} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.11.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.11.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.11} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.10} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.9.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.9.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.8.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.15.8.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.15.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.15} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.17} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.16} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.15} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.14} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.13} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.12} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.11} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.10} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.14.6.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.14.6.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.14.6.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.14.3.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.14.3.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.14.3.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.14.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.14} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.13.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.13.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.13.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.13.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.13.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.13.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.13.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.13} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.12.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.12.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.12.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.12.2.5} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.12.2.4} has been referenced but does 
+not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.12.2.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+ </Users/fractlphoneroom1/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecti0800.600pk> </Users/fractlphoneroom1/Library/texlive/2025basic/t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </Users/fractlphoneroom1/L
+ibrary/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> 
+</Users/fractlphoneroom1/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jk
+nappen/ec/tcrm1200.600pk> </Users/fractlphoneroom1/Library/texlive/2025basic/te
+xmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </Users/fractlphoneroom1/Li
+brary/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> <
+/Users/fractlphoneroom1/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jkn
+appen/ec/ecbx1200.600pk> </Users/fractlphoneroom1/Library/texlive/2025basic/tex
+mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </Users/fractlphoneroom1/Lib
+rary/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </
+Users/fractlphoneroom1/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecrm1095.600pk> </Users/fractlphoneroom1/Library/texlive/2025basic/texm
+f-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </Users/fractlphoneroom1/Libr
+ary/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </U
+sers/fractlphoneroom1/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknap
+pen/ec/ecbx2074.600pk></usr/local/texlive/2025basic/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025basic/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025basic/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025basic/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025basic/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025basic/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025basic/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025basic
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025b
+asic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
+25basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
+/2025basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (29 pages, 6752991 bytes).
+PDF statistics:
+ 2455 PDF objects out of 2487 (max. 8388607)
+ 1888 compressed objects within 19 object streams
+ 503 named destinations out of 1000 (max. 500000)
+ 3059 words of extra memory for PDF output out of 10000 (max. 10000000)
+

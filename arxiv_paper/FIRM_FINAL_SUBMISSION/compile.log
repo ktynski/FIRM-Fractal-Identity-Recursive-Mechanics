@@ -1,0 +1,1959 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/size12.clo))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/physics/physics.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.d
+ef)))) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/float/float.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.
+sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/gettitlestring/gettitlestr
+ing.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)
+) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/rerunfilecheck/rerunfilechec
+k.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/uniquecounter/uniquecounte
+r.sty))) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(./main.aux)
+(/usr/local/texlive/2025basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.s
+ty
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(./main.out) (./main.out)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsb.fd)
+
+Package natbib Warning: Citation `Barrow2002' on page 1 undefined on input line
+ 58.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 62.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 62.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 62.
+
+
+[1{/usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `FIRM2024' on page 2 undefined on input line 8
+4.
+
+
+[2]
+
+Package natbib Warning: Citation `Planck2018' on page 3 undefined on input line
+ 106.
+
+
+Package natbib Warning: Citation `DESI2024' on page 3 undefined on input line 1
+06.
+
+
+Package natbib Warning: Citation `PantheonPlus2022' on page 3 undefined on inpu
+t line 106.
+
+
+[3]
+Overfull \hbox (16.49707pt too wide) in paragraph at lines 150--151
+\T1/cmr/m/n/12 "out-side." FIRM re-quires math-e-mat-ics that can de-scribe re-
+al-ity from the "in-side"^^Vmathematics
+
+[4]
+
+Package natbib Warning: Citation `Banach1922' on page 5 undefined on input line
+ 174.
+
+
+Package natbib Warning: Citation `Shannon1948' on page 5 undefined on input lin
+e 182.
+
+
+Package natbib Warning: Citation `Conway1996' on page 5 undefined on input line
+ 182.
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 189--189
+[]\T1/cmr/m/n/12 Figure 1: |Grace Op-er-a-tor fixed point con-ver-gence anal-y-
+sis. Left: It-er-a-tion tra-
+
+Underfull \hbox (badness 1436) in paragraph at lines 189--189
+\T1/cmr/m/n/12 jec-to-ries from dif-fer-ent ini-tial con-di-tions con-verg-ing 
+to $\OML/cmm/m/it/12 ^^^ \OMS/cmsy/m/n/12 ^^Y \OT1/cmr/m/n/12 1\OML/cmm/m/it/12
+ :\OT1/cmr/m/n/12 618$\T1/cmr/m/n/12 . Right: Ex-
+
+Underfull \hbox (badness 2253) in paragraph at lines 189--189
+\T1/cmr/m/n/12 po-nen-tial er-ror de-cay demon-strat-ing con-trac-tion ra-tio $
+\OML/cmm/m/it/12 ^^^[] \OMS/cmsy/m/n/12 ^^Y \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :
+\OT1/cmr/m/n/12 618$\T1/cmr/m/n/12 . The con-
+
+Underfull \hbox (badness 3078) in paragraph at lines 189--189
+\T1/cmr/m/n/12 ver-gence val-i-dates The-o-rem []1[] and pro-vides the math-e-m
+at-i-cal foun-da-tion for all
+
+[5]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 193.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 193.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 193.
+
+
+[6 <./figures/grace_operator_fixed_point_convergence.png>]
+[7 <./figures/phi_recursion_rate_verification.png>]
+[8 <./figures/dimensional_bridge_mapping.png>]
+[9]
+[10]
+Overfull \hbox (4.7333pt too wide) in paragraph at lines 361--362
+[]\T1/cmr/m/n/12 Figure []4[] shows the the-o-ret-i-cal pre-dic-tion com-pared 
+to ex-per-i-men-tal mea-sure-ments, demon-
+
+[11]
+[12 <./figures/alpha_inverse_comparison.png>]
+
+Package natbib Warning: Citation `Planck2018' on page 13 undefined on input lin
+e 398.
+
+
+Overfull \hbox (123.94951pt too wide) in paragraph at lines 397--399
+\T1/cmr/m/n/12 matching Planck 2018 mea-sure-ments (\T1/cmr/bx/n/12 ?\T1/cmr/m/
+n/12 ) (im-ple-men-ta-tion in \T1/cmtt/m/n/12 constants/cosmological_constant_d
+erivation.py\T1/cmr/m/n/12 ).
+
+[13 <./figures/dark_energy_phi_scaling.png>]
+
+Package natbib Warning: Citation `Planck2018' on page 14 undefined on input lin
+e 431.
+
+
+Package natbib Warning: Citation `SH0ES2022' on page 14 undefined on input line
+ 431.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 436.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 436.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 436.
+
+
+[14]
+[15 <./figures/inflation_evolution.png>]
+[16 <./figures/planck_tt_binned.png>]
+[17 <./figures/bao_comparison.png>]
+[18 <./figures/particle_mass_spectrum_theory.png>]
+[19 <./figures/sparc_rotation_curves.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 579.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 579.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 579.
+
+
+[20 <./figures/sn_mu_comparison.png>]
+Underfull \hbox (badness 1087) in paragraph at lines 603--603
+[]\T1/cmr/m/n/12 Figure 13: |P=NP con-scious-ness cor-re-la-tion anal-y-sis fro
+m FIRM in-te-gra-tion frame-
+
+[21 <./figures/eeg_phi_harmonics.png>]
+[22 <./figures/consciousness_pnp_correlation.png>]
+[23]
+[24 <./figures/falsification_test_results.png>]
+
+LaTeX Warning: Reference `app:einstein-derivation' on page 25 undefined on inpu
+t line 688.
+
+
+LaTeX Warning: Reference `app:einstein-derivation' on page 25 undefined on inpu
+t line 688.
+
+
+LaTeX Warning: Reference `app:spacetime-metric' on page 25 undefined on input l
+ine 699.
+
+
+LaTeX Warning: Reference `app:spacetime-metric' on page 25 undefined on input l
+ine 699.
+
+
+LaTeX Warning: Reference `app:einstein-derivation-chain' on page 25 undefined o
+n input line 710.
+
+
+LaTeX Warning: Reference `app:einstein-derivation-chain' on page 25 undefined o
+n input line 710.
+
+
+Overfull \hbox (1.77252pt too wide) in paragraph at lines 715--716
+\OMS/cmsy/m/n/12 ^^X$\T1/cmr/m/n/12 10$[]$ pos-si-ble vac-uum states (the "land
+-scape prob-lem"). FIRM achieves uni-fi-ca-tion through
+
+[25 <./figures/theory_comparison.png>]
+[26 <./figures/einstein_equations_comparison.png>]
+[27 <./figures/spacetime_metric_emergence.png>]
+(./sections/alpha_derivation_detailed.tex
+Overfull \hbox (34.67879pt too wide) in paragraph at lines 1--1
+[]\T1/cmr/bx/n/17.28 Fine Struc-ture Con-stant: Com-plete Math-e-mat-i-cal Deri
+va-
+
+[28]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 27.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 27.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 27.
+
+
+[29]
+[30]) (./sections/grace_operator_complete.tex
+[31]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 95.
+
+
+[32]
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 \begin{algorithm}
+                       [H]
+
+! Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \caption
+              {Grace Operator Computation}
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \begin{algorithmic}
+                         [1]
+! Undefined control sequence.
+l.118 \Procedure
+                {ComputeGraceOperator}{$X_0, \epsilon$}
+! Undefined control sequence.
+l.119     \State
+                 $X \gets X_0$
+! Undefined control sequence.
+l.120     \State
+                 $n \gets 0$
+! Undefined control sequence.
+l.121     \Repeat
+                 
+! Undefined control sequence.
+l.122         \State
+                     $X_{\text{new}} \gets \arg\min_{Y} [H(Y) + \phi^{-1} \c...
+
+! Undefined control sequence.
+l.123         \State
+                     $\text{error} \gets d(X, X_{\text{new}})$
+! Undefined control sequence.
+l.124         \State
+                     $X \gets X_{\text{new}}$
+! Undefined control sequence.
+l.125         \State
+                     $n \gets n + 1$
+! Undefined control sequence.
+l.126     \Until
+                {$\text{error} < \epsilon$ or $n > N_{\max}$}
+! Undefined control sequence.
+l.127     \State
+                 \textbf{return} $X$
+! Undefined control sequence.
+l.128 \EndProcedure
+                   
+
+! LaTeX Error: \begin{document} ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \end{algorithmic}
+                       
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 \end{algorithm}
+                     
+) (./sections/dimensional_bridge_spacetime_emergence.tex
+[33]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 18.
+
+
+[34]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.44 ...ree of freedom, following the same $\phi$^
+                                                  2 scaling as length throug...
+
+
+! LaTeX Error: Command \end{proof} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \end{proof}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.45 \end{proof}
+                
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 \begin{algorithm}
+                      [H]
+
+! Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 \caption
+             {Mathematical to Physical Conversion}
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 \begin{algorithmic}
+                        [1]
+! Undefined control sequence.
+l.82 \STATE
+            \textbf{Input:} Mathematical quantity $Q_{\text{math}}$ with dim...
+
+! Undefined control sequence.
+l.83 \STATE
+            Compute conversion factor: $CF = \prod_{d \in D} \phi^{\alpha_d ...
+
+! Undefined control sequence.
+l.84 \STATE
+            Apply conversion: $Q_{\text{phys}} = Q_{\text{math}} \cdot CF$
+! Undefined control sequence.
+l.85 \STATE
+            Verify dimensional consistency: $\text{dim}[Q_{\text{phys}}] = \...
+
+! Undefined control sequence.
+l.86 \STATE
+            \textbf{Output:} Physical quantity $Q_{\text{phys}}$
+
+! LaTeX Error: \begin{document} ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 \end{algorithmic}
+                      
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \end{algorithm}
+                    
+
+[35]
+[36]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.169 \item \textbf{Length dimensions:} $\phi$^
+                                               2-scaled geometric extensions
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 \item
+            \textbf{Mass dimensions:} $\phi$^3-scaled volumetric densities
+! Missing $ inserted.
+<inserted text> 
+                $
+l.170 \item \textbf
+                   {Mass dimensions:} $\phi$^3-scaled volumetric densities
+! Missing $ inserted.
+<inserted text> 
+                $
+l.170 \item \textbf{Mass dimensions:} $\phi$^
+                                             3-scaled volumetric densities
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 \item
+            \textbf{Time dimensions:} $\phi$^1-scaled evolutionary parameters
+! Missing $ inserted.
+<inserted text> 
+                $
+l.171 \item \textbf
+                   {Time dimensions:} $\phi$^1-scaled evolutionary parameters
+! Missing $ inserted.
+<inserted text> 
+                $
+l.171 \item \textbf{Time dimensions:} $\phi$^
+                                             1-scaled evolutionary parameters
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 \item
+            \textbf{Charge dimensions:} $\phi$^{1/2}-scaled harmonic amplitudes
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.172 \item \textbf
+                   {Charge dimensions:} $\phi$^{1/2}-scaled harmonic amplitudes
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.172 \item \textbf{Charge dimensions:} $\phi$^
+                                               {1/2}-scaled harmonic amplitudes
+
+
+! LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.173 \end{itemize}
+                   
+! Missing $ inserted.
+<inserted text> 
+                $
+l.173 \end{itemize}
+                   
+
+[37]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.205 ...m \textbf{Accelerated expansion:} $\phi$^
+                                                  2-scaling dominance in lat...
+
+
+! LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 \end{itemize}
+                   
+! Missing $ inserted.
+<inserted text> 
+                $
+l.206 \end{itemize}
+                   
+
+[38]
+[39]) (./sections/spacetime_dimensions_quantum_gravity.tex
+[40]
+[41]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 106.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.113 ..._\phi g_{\mu\nu} = \frac{8\pi G}{$phi^2$}
+                                                   T_{\mu\nu}
+! Display math should end with $$.
+<to be read again> 
+                   p
+l.113 ..._\phi g_{\mu\nu} = \frac{8\pi G}{$phi^2$}
+                                                   T_{\mu\nu}
+! Missing $ inserted.
+<inserted text> 
+                $
+l.113 ..._\phi g_{\mu\nu} = \frac{8\pi G}{$phi^2$}
+                                                   T_{\mu\nu}
+! Extra }, or forgotten \endgroup.
+\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
+                                                 
+l.113 ..._\phi g_{\mu\nu} = \frac{8\pi G}{$phi^2$}
+                                                   T_{\mu\nu}
+! Missing $ inserted.
+<inserted text> 
+                $
+l.113 ...hi g_{\mu\nu} = \frac{8\pi G}{$phi^2$} T_
+                                                  {\mu\nu}
+! You can't use `\eqno' in math mode.
+\veqno ->\@kernel@eqno 
+                       \aftergroup \ignorespaces 
+l.115 \end{equation}
+                    
+! Missing $ inserted.
+<inserted text> 
+                $
+l.115 \end{equation}
+                    
+! Display math should end with $$.
+<to be read again> 
+                   p
+l.128 ... \partial_\mu \Gamma_{\nu\rho\sigma} + $p
+                                                  hi^2$ (\text{$\phi$-harmon...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.128 ...artial_\mu \Gamma_{\nu\rho\sigma} + $phi^
+                                                  2$ (\text{$\phi$-harmonic ...
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \end{equation}
+                    
+! You can't use `\eqno' in horizontal mode.
+\veqno ->\@kernel@eqno 
+                       \aftergroup \ignorespaces 
+l.129 \end{equation}
+                    
+! Missing $ inserted.
+<inserted text> 
+                $
+l.129 \end{equation}
+                    
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.129 \end{equation}
+                    
+
+[42]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.189 The universe bounces at \phi
+                                  ^5-Planck scale, avoiding infinite curvature.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.190 
+      
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.195 \rho_{\text{dark}} = \frac{$phi^4$}{8\pi G}
+                                                  \left(\frac{1}{\ell_{\text...
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.195 \rho_{\text{dark}} = \frac{$phi^4$}{8\pi G}
+                                                  \left(\frac{1}{\ell_{\text...
+
+! Display math should end with $$.
+<to be read again> 
+                   p
+l.195 \rho_{\text{dark}} = \frac{$phi^4$}{8\pi G}
+                                                  \left(\frac{1}{\ell_{\text...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.195 \rho_{\text{dark}} = \frac{$phi^4$}{8\pi G}
+                                                  \left(\frac{1}{\ell_{\text...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.195 \rho_{\text{dark}} = \frac{$phi^4$}{8\pi G}
+                                                  \left(\frac{1}{\ell_{\text...
+
+! Extra }, or forgotten $.
+\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
+                                                 
+l.195 \rho_{\text{dark}} = \frac{$phi^4$}{8\pi G}
+                                                  \left(\frac{1}{\ell_{\text...
+
+! You can't use `\eqno' in math mode.
+\veqno ->\@kernel@eqno 
+                       \aftergroup \ignorespaces 
+l.196 \end{equation}
+                    
+
+! LaTeX Error: \begin{document} ended by \end{equation}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 \end{equation}
+                    
+! Missing $ inserted.
+<inserted text> 
+                $
+l.196 \end{equation}
+                    
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.196 \end{equation}
+                    
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 204.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 204.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 204.
+
+
+Overfull \hbox (2.28246pt too wide) in paragraph at lines 207--208
+[][]\T1/cmr/bx/n/12 Theorem 23 \T1/cmr/m/n/12 ($\OML/cmm/m/it/12 ^^^$\T1/cmr/m/
+n/12 -Modified Hawk-ing Tem-per-a-ture)\T1/cmr/bx/n/12 . []\T1/cmr/m/it/12 Blac
+k holes emit ra-di-a-tion with $\OML/cmm/m/it/12 ^^^$\T1/cmr/m/it/12 -modified
+! Missing } inserted.
+<inserted text> 
+                }
+l.209 ... = \frac{\hbar c^3}{8\pi G M k_B $phi^2$}
+                                                  
+! Display math should end with $$.
+<to be read again> 
+                   p
+l.209 ... = \frac{\hbar c^3}{8\pi G M k_B $phi^2$}
+                                                  
+
+[43]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.209 ... = \frac{\hbar c^3}{8\pi G M k_B $phi^2$}
+                                                  
+! Extra }, or forgotten \endgroup.
+\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
+                                                 
+l.209 ... = \frac{\hbar c^3}{8\pi G M k_B $phi^2$}
+                                                  
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 \end{equation}
+                    
+! You can't use `\eqno' in horizontal mode.
+\veqno ->\@kernel@eqno 
+                       \aftergroup \ignorespaces 
+l.211 \end{equation}
+                    
+! Missing $ inserted.
+<inserted text> 
+                $
+l.211 \end{equation}
+                    
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.211 \end{equation}
+                    
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 216.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 216.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 216.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 223.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 223.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 223.
+
+
+[44]
+! Missing } inserted.
+<inserted text> 
+                }
+l.268 ...\frac{A}{4$phi^2$ \ell_{\text{Planck}}^2}
+                                                  
+! Display math should end with $$.
+<to be read again> 
+                   p
+l.268 ...\frac{A}{4$phi^2$ \ell_{\text{Planck}}^2}
+                                                  
+! Missing $ inserted.
+<inserted text> 
+                $
+l.268 ...\frac{A}{4$phi^2$ \ell_{\text{Planck}}^2}
+                                                  
+! Missing $ inserted.
+<inserted text> 
+                $
+l.268 ...\frac{A}{4$phi^2$ \ell_{\text{Planck}}^2}
+                                                  
+! Extra }, or forgotten $.
+\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
+                                                 
+l.268 ...\frac{A}{4$phi^2$ \ell_{\text{Planck}}^2}
+                                                  
+! You can't use `\eqno' in math mode.
+\veqno ->\@kernel@eqno 
+                       \aftergroup \ignorespaces 
+l.270 \end{equation}
+                    
+! Missing $ inserted.
+<inserted text> 
+                $
+l.270 \end{equation}
+                    
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 279.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 279.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 279.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 298.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 298.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 298.
+
+
+[45]
+! Display math should end with $$.
+<to be read again> 
+                   p
+l.319 \alpha' = $p
+                  hi^2$ \ell_{\text{Planck}}^2
+! Missing $ inserted.
+<inserted text> 
+                $
+l.319 \alpha' = $phi^
+                     2$ \ell_{\text{Planck}}^2
+! Missing $ inserted.
+<inserted text> 
+                $
+l.319 \alpha' = $phi^2$ \ell
+                            _{\text{Planck}}^2
+! You can't use `\eqno' in math mode.
+\veqno ->\@kernel@eqno 
+                       \aftergroup \ignorespaces 
+l.321 \end{equation}
+                    
+! Missing $ inserted.
+<inserted text> 
+                $
+l.321 \end{equation}
+                    
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 330.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 330.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 330.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 337.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 337.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 337.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 362.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 362.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 362.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.366 ...ntanglement}} = \frac{$phi^2$ A}{4G\hbar}
+                                                  
+! Missing } inserted.
+<inserted text> 
+                }
+l.366 ...ntanglement}} = \frac{$phi^2$ A}{4G\hbar}
+                                                  
+! Display math should end with $$.
+<to be read again> 
+                   p
+l.366 ...ntanglement}} = \frac{$phi^2$ A}{4G\hbar}
+                                                  
+
+[46]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.366 ...ntanglement}} = \frac{$phi^2$ A}{4G\hbar}
+                                                  
+! Missing $ inserted.
+<inserted text> 
+                $
+l.366 ...ntanglement}} = \frac{$phi^2$ A}{4G\hbar}
+                                                  
+! Extra }, or forgotten $.
+\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
+                                                 
+l.366 ...ntanglement}} = \frac{$phi^2$ A}{4G\hbar}
+                                                  
+! You can't use `\eqno' in math mode.
+\veqno ->\@kernel@eqno 
+                       \aftergroup \ignorespaces 
+l.367 \end{equation}
+                    
+
+! LaTeX Error: \begin{document} ended by \end{equation}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.367 \end{equation}
+                    
+! Missing $ inserted.
+<inserted text> 
+                $
+l.367 \end{equation}
+                    
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.367 \end{equation}
+                    
+
+Overfull \hbox (3.08615pt too wide) in paragraph at lines 382--383
+[][]\T1/cmr/bx/n/12 Theorem 28 \T1/cmr/m/n/12 ($\OML/cmm/m/it/12 ^^^$\T1/cmr/m/
+n/12 -Spacetime Con-scious-ness In-ter-face)\T1/cmr/bx/n/12 . []\T1/cmr/m/it/12
+ Con-scious ob-ser-va-tion cou-ples to space-
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 405.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 405.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 405.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 415.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 415.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 415.
+
+
+[47]) (./sections/mass_ratios_complete.tex
+[48]
+[49]
+! Missing } inserted.
+<inserted text> 
+                }
+l.80 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 \end{align}
+                
+! Missing { inserted.
+<inserted text> 
+                {
+l.80 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.80 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 \end{align}
+                
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.80 \end{align}
+                
+! Misplaced \omit.
+\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
+                                                  \kern -\alignsep@ \iftag@ ...
+l.80 \end{align}
+                
+! Missing { inserted.
+<inserted text> 
+                {
+l.80 \end{align}
+                
+
+[50]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 114.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 114.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 114.
+
+
+[51]) (./sections/quantum_computing_firm.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 24.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 24.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 24.
+
+
+Overfull \hbox (10.71648pt too wide) in paragraph at lines 34--35
+[]\T1/cmr/bx/n/12 Color sym-me-try break-ing\T1/cmr/m/n/12 : SU(3) from $\OML/c
+mm/m/it/12 ^^^[]$\T1/cmr/m/n/12 -ternary en-tan-gle-ment cre-ates 8-dimensional
+
+
+[52]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 39.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 39.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 39.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 41.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 41.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 41.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 66.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 66.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 66.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.71 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.71 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.71 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.71 \end{align}
+                
+! Missing { inserted.
+<inserted text> 
+                {
+l.71 \end{align}
+                
+! Missing { inserted.
+<inserted text> 
+                {
+l.71 \end{align}
+                
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.71 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.71 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 \end{align}
+                
+! Misplaced alignment tab character &.
+\math@cr@@@ ->&
+               \omit \global \advance \row@ \@ne \ifst@rred \nonumber \fi \i...
+l.71 \end{align}
+                
+! Misplaced \omit.
+\math@cr@@@ ->&\omit 
+                     \global \advance \row@ \@ne \ifst@rred \nonumber \fi \i...
+l.71 \end{align}
+                
+! Misplaced \cr.
+\math@cr@@@ ... \else \global \@eqnswtrue \fi \cr 
+                                                  
+l.71 \end{align}
+                
+! Misplaced \cr.
+\measure@ ...olumn@ \z@ \add@amps \maxfields@ \cr 
+                                                  }}\restorecounters@ \ifodd...
+l.71 \end{align}
+                
+! Extra }, or forgotten $.
+\measure@ ...lumn@ \z@ \add@amps \maxfields@ \cr }
+                                                  }\restorecounters@ \ifodd ...
+l.71 \end{align}
+                
+! Extra }, or forgotten $.
+\measure@ ...umn@ \z@ \add@amps \maxfields@ \cr }}
+                                                  \restorecounters@ \ifodd \...
+l.71 \end{align}
+                
+! Incompatible list can't be unboxed.
+\measure@ ...i \fi \setbox \z@ \vbox {\unvbox \z@ 
+                                                  \unpenalty \global \setbox...
+l.71 \end{align}
+                
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.71 \end{align}
+                
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.71 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.71 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.71 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.71 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.71 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.71 \end{align}
+                
+! Missing { inserted.
+<inserted text> 
+                {
+l.71 \end{align}
+                
+! Missing { inserted.
+<inserted text> 
+                {
+l.71 \end{align}
+                
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.71 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.71 \end{align}
+                
+! Missing $$ inserted.
+<to be read again> 
+                   \left 
+l.71 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 \end{align}
+                
+! Misplaced \cr.
+\math@cr@@@ ->\cr 
+                  
+l.71 \end{align}
+                
+! Misplaced \noalign.
+\math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
+                                                  {\vskip #1\relax }
+l.71 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.71 \end{align}
+                
+! Extra }, or forgotten \endgroup.
+\math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
+                                                  
+l.71 \end{align}
+                
+! Misplaced \noalign.
+\black@ #1->\noalign 
+                     {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
+l.71 \end{align}
+                
+! Extra }, or forgotten \endgroup.
+\endalign ->\math@cr \black@ \totwidth@ \egroup 
+                                                \ifingather@ \restorealignst...
+l.71 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 \end{align}
+                
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.71 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.76 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.76 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{align}
+                
+! Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{align}
+                
+! Missing { inserted.
+<inserted text> 
+                {
+l.76 \end{align}
+                
+! Missing { inserted.
+<inserted text> 
+                {
+l.76 \end{align}
+                
+! Missing } inserted.
+<inserted text> 
+                }
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.76 \end{align}
+                
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.76 \end{align}
+                
+(That makes 100 errors; please try again.)
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on main.log.

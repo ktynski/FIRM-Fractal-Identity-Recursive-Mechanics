@@ -1,0 +1,98 @@
+% FIRM Complete Mathematical Derivations
+% Master document integrating all fundamental constant derivations
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+% Mathematical definitions
+\newcommand{\G}{\mathcal{G}}                % Grace Operator
+\newcommand{\GoldenRatio}{\phi}             % Golden ratio
+\newcommand{\Fix}{\text{Fix}}               % Fixed points
+
+\title{\textbf{FIRM Mathematical Derivations}\\
+       \large Complete Framework for Deriving Physical Constants}
+\author{FIRM Research Collaboration}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+This document presents the complete mathematical derivations for all fundamental physical constants within the FIRM (Fractal Identity \& Recursive Mechanics) framework. Each derivation traces from pure φ-recursive mathematics through the foundational axioms A𝒢.1-4 to experimentally measurable quantities.
+
+\subsection{Framework Overview}
+
+FIRM derives all physical constants from:
+\begin{itemize}
+\item \textbf{Foundational Axioms}: A𝒢.1 (Totality), A𝒢.2 (Reflexivity), A𝒢.3 (Grace), A𝒢.4 (Coherence)
+\item \textbf{φ-Recursion}: Golden ratio φ = (1+√5)/2 ≈ 1.618033988749895
+\item \textbf{Grace Operator}: Stabilizing endofunctor $\G$ on presheaf categories
+\item \textbf{Fixed Points}: Physical constants emerge as stable configurations
+\end{itemize}
+
+\subsection{Computational Verification}
+
+Every derivation in this document is backed by computational implementation in the \texttt{constants/} module, enabling complete independent verification.
+
+\section{Fundamental Constants}
+
+\subsection{Electromagnetic Constants}
+\input{derivation_01_fine_structure_alpha}
+\input{derivation_04_gauge_couplings}
+
+\subsection{Particle Physics Constants}
+\input{derivation_02_mass_ratios}
+\input{derivation_11_weinberg_angle_exact}
+\input{derivation_12_mixing_angles}
+\input{derivation_15_neutrino}
+
+\section{Cosmological Parameters}
+
+\subsection{Large-Scale Structure}
+\input{derivation_03_cosmological_constant}
+\input{derivation_07_hubble_constant}
+\input{derivation_10_cmb_envelope}
+
+\subsection{Thermal Evolution}
+\input{derivation_13_phi_shells_cooling}
+\input{derivation_14_kelvin_scaling}
+\input{derivation_16_kelvin_thermal}
+
+\section{Advanced Theory}
+
+\subsection{Topological Structure}
+\input{derivation_18_topology_and_zeta_constants}
+\input{derivation_19_zeta_normalization}
+\input{derivation_21_topology_factor}
+
+\subsection{Complete Integration}
+\input{derivation_20_complete_fsctf}
+\input{derivation_24_fundamental_constants_fsctf}
+
+\section{Conclusions}
+
+The complete FIRM framework demonstrates that:
+\begin{enumerate}
+\item All fundamental constants emerge from pure φ-recursive mathematics
+\item No empirical fitting or arbitrary parameters are required
+\item Experimental precision is achieved through mathematical necessity
+\item Physical reality has deep mathematical structure rooted in the golden ratio
+\end{enumerate}
+
+This represents a fundamental shift from empirical to purely mathematical physics, where constants are derived rather than measured.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

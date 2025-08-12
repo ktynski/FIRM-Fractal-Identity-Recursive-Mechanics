@@ -1,0 +1,201 @@
+{
+  "total_numerical_claims": 26,
+  "mapped_claims": 26,
+  "unmapped_claims": [],
+  "detailed_mapping": {
+    "\\alpha^{-1}_137.036_abstract": {
+      "symbol": "\\alpha^{-1}",
+      "value": "137.036",
+      "section": "abstract",
+      "context": " dynamics, we derive the fine structure constant $\\alpha^{-1} = 137.036$ to experimental precision, ...",
+      "derivation_module": "fine_structure_alpha",
+      "status": "MAPPED"
+    },
+    "\\Omega_\\Lambda_0.684_abstract": {
+      "symbol": "\\Omega_\\Lambda",
+      "value": "0.684",
+      "section": "abstract",
+      "context": "tal precision, cosmological parameters including $\\Omega_\\Lambda = 0.684$, particle mass ratios, and...",
+      "derivation_module": "cosmological_constant_derivation",
+      "status": "MAPPED"
+    },
+    "\\alpha^{-1}_137.036_introduction": {
+      "symbol": "\\alpha^{-1}",
+      "value": "137.036",
+      "section": "introduction",
+      "context": "results: \\begin{itemize}     \\item Derivation of $\\alpha^{-1} = 137.036$ from pure $\\phi$-recursion ...",
+      "derivation_module": "fine_structure_alpha",
+      "status": "MAPPED"
+    },
+    "x_1_math_foundation": {
+      "symbol": "x",
+      "value": "1",
+      "section": "math_foundation",
+      "context": "} Let $f(x) = 1 + 1/x$. The fixed points satisfy $x = 1 + 1/x$, yielding $x^2 = x + 1$ with positive...",
+      "derivation_module": "cmb_envelope_model",
+      "status": "MAPPED"
+    },
+    "1}_1_math_foundation": {
+      "symbol": "1}",
+      "value": "1",
+      "section": "math_foundation",
+      "context": "ce] \\label{thm:phi_emergence} The recursion $x_{n+1} = 1 + 1/x_n$ converges to $\\phi$ from any posit...",
+      "derivation_module": "cmb_envelope_model",
+      "status": "MAPPED"
+    },
+    "\\alpha^{-1}_4_math_foundation": {
+      "symbol": "\\alpha^{-1}",
+      "value": "4",
+      "section": "math_foundation",
+      "context": "c{1+\\sqrt{5}}{2} \\approx 1.618034$: \\begin{align} \\alpha^{-1} = 4\\pi \\phi^2 = 4\\pi \\left(\\frac{1+\\sq...",
+      "derivation_module": "cmb_envelope_model",
+      "status": "MAPPED"
+    },
+    "\\alpha^{-1}_137.036_math_foundation": {
+      "symbol": "\\alpha^{-1}",
+      "value": "137.036",
+      "section": "math_foundation",
+      "context": " scaling) uniquely determines the observed value $\\alpha^{-1} = 137.036...$, with no empirical input...",
+      "derivation_module": "fine_structure_alpha",
+      "status": "MAPPED"
+    },
+    "\\alpha^{-1}_2_constants": {
+      "symbol": "\\alpha^{-1}",
+      "value": "2",
+      "section": "constants",
+      "context": "ine structure constant is given by: \\begin{align} \\alpha^{-1} = 2\\pi \\phi^3 \\left(1 + \\frac{1}{\\phi^...",
+      "derivation_module": "cmb_envelope_model",
+      "status": "MAPPED"
+    },
+    "n_0_constants": {
+      "symbol": "n",
+      "value": "0",
+      "section": "constants",
+      "context": "psi_\\gamma(x)|^2 \\, d\\mu_\\phi(x) \\\\ &= 2\\pi \\sum_{n=0}^\\infty \\phi^{-3n} \\prod_{k=1}^n (1 + \\phi^{-k...",
+      "derivation_module": "cmb_envelope_model",
+      "status": "MAPPED"
+    },
+    "k_1_constants": {
+      "symbol": "k",
+      "value": "1",
+      "section": "constants",
+      "context": "x) \\\\ &= 2\\pi \\sum_{n=0}^\\infty \\phi^{-3n} \\prod_{k=1}^n (1 + \\phi^{-k}) \\\\ &= 2\\pi \\phi^3 \\left(1 +...",
+      "derivation_module": "cmb_envelope_model",
+      "status": "MAPPED"
+    },
+    "\\alpha^{-1}_137.0359991_constants": {
+      "symbol": "\\alpha^{-1}",
+      "value": "137.0359991",
+      "section": "constants",
+      "context": " due to $\\phi^{-1} < 1$. Evaluating numerically: $\\alpha^{-1} = 137.0359991...$, matching experiment...",
+      "derivation_module": "fine_structure_alpha",
+      "status": "MAPPED"
+    },
+    "\\alpha^{-1}_137.036_constants": {
+      "symbol": "\\alpha^{-1}",
+      "value": "137.036",
+      "section": "constants",
+      "context": "experimental measurements. The theoretical value $\\alpha^{-1} = 137.036$ (red line) agrees with all ...",
+      "derivation_module": "fine_structure_alpha",
+      "status": "MAPPED"
+    },
+    "n_1_constants": {
+      "symbol": "n",
+      "value": "1",
+      "section": "constants",
+      "context": "ation yields: \\begin{align} \\zeta_\\phi(s) = \\sum_{n=1}^\\infty \\phi^{-ns} = \\frac{\\phi^{-s}}{1-\\phi^{...",
+      "derivation_module": "cmb_envelope_model",
+      "status": "MAPPED"
+    },
+    "}_0.684_constants": {
+      "symbol": "}",
+      "value": "0.684",
+      "section": "constants",
+      "context": "it}}} = \\phi^{-1} \\times \\phi^{0.38} = \\phi^{-0.62} = 0.684 \\end{align} matching Planck 2018 measure...",
+      "derivation_module": "cosmological_constant_derivation",
+      "status": "MAPPED"
+    },
+    "z_0_constants": {
+      "symbol": "z",
+      "value": "0",
+      "section": "constants",
+      "context": "itivity analysis. Key distinguishing features: $w(z=0) = -0.618$ versus $w = -1$ constant, providing...",
+      "derivation_module": "cmb_envelope_model",
+      "status": "MAPPED"
+    },
+    "\\delta_0.05_constants": {
+      "symbol": "\\delta",
+      "value": "0.05",
+      "section": "constants",
+      "context": "lta) \\end{align} with $\\epsilon \\approx 0.1$ and $\\delta = 0.05$ from geometric flow corrections. Th...",
+      "derivation_module": "cmb_envelope_model",
+      "status": "MAPPED"
+    },
+    "}_2.725_cosmology": {
+      "symbol": "}",
+      "value": "2.725",
+      "section": "cosmology",
+      "context": "ox 1.92 \\times 10^{-32}$, we obtain $T_{\\text{CMB}} = 2.725$ K. \\qed \\end{proof}  The CMB power spec...",
+      "derivation_module": "phi_shells_cooling",
+      "status": "MAPPED"
+    },
+    "N_\\phi_90_cosmology": {
+      "symbol": "N_\\phi",
+      "value": "90",
+      "section": "cosmology",
+      "context": "ing follows $T_n = T_0 \\cdot \\phi^{-n/2}$. After $N_\\phi = 90$ recursive expansions from Planck temp...",
+      "derivation_module": "cmb_envelope_model",
+      "status": "MAPPED"
+    },
+    "T_P_1.416_cosmology": {
+      "symbol": "T_P",
+      "value": "1.416",
+      "section": "cosmology",
+      "context": "hi^{-90} = T_P \\cdot \\phi^{-88} \\end{align} With $T_P = 1.416 \\times 10^{32}$ K and $\\phi^{-88} \\app...",
+      "derivation_module": "neutrino",
+      "status": "MAPPED"
+    },
+    "\\alpha^{-1}_137.036_conclusion": {
+      "symbol": "\\alpha^{-1}",
+      "value": "137.036",
+      "section": "conclusion",
+      "context": "egin{itemize}     \\item Fine structure constant: $\\alpha^{-1} = 137.036$     \\item Cosmological para...",
+      "derivation_module": "fine_structure_alpha",
+      "status": "MAPPED"
+    },
+    "\\Omega_\\Lambda_0.684_conclusion": {
+      "symbol": "\\Omega_\\Lambda",
+      "value": "0.684",
+      "section": "conclusion",
+      "context": "1} = 137.036$     \\item Cosmological parameters: $\\Omega_\\Lambda = 0.684$, $H_0 = 67.4$ km/s/Mpc    ...",
+      "derivation_module": "cosmological_constant_derivation",
+      "status": "MAPPED"
+    },
+    "}_2.725_conclusion": {
+      "symbol": "}",
+      "value": "2.725",
+      "section": "conclusion",
+      "context": "km/s/Mpc     \\item CMB temperature: $T_{\\text{CMB}} = 2.725$ K     \\item Particle mass ratios: $m_\\m...",
+      "derivation_module": "phi_shells_cooling",
+      "status": "MAPPED"
+    },
+    "m_e_206.77_conclusion": {
+      "symbol": "m_e",
+      "value": "206.77",
+      "section": "conclusion",
+      "context": "= 2.725$ K     \\item Particle mass ratios: $m_\\mu/m_e = 206.77$     \\item Galaxy rotation curves wit...",
+      "derivation_module": "mass_ratios",
+      "status": "MAPPED"
+    }
+  },
+  "derivation_modules": 25,
+  "sections_analyzed": [
+    "abstract",
+    "introduction",
+    "math_foundation",
+    "constants",
+    "cosmology",
+    "discussion",
+    "conclusion"
+  ]
+}

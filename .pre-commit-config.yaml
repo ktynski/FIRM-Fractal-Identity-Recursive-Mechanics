@@ -1,0 +1,68 @@
+repos:
+  - repo: local
+    hooks:
+      - id: contamination-scan
+        name: Contamination Detection Scan
+        entry: python -m validation.anti_contamination --pre-commit
+        language: python
+        types: [python]
+        stages: [commit]
+        description: "Scan for hardcoded empirical constants"
+        
+      - id: quarantine-validation
+        name: Quarantine Validation
+        entry: python -m pytest testing/validation/test_provenance_guard.py -v
+        language: python
+        types: [python]
+        stages: [commit]
+        description: "Validate quarantine enforcement"
+        
+      - id: provenance-check
+        name: Provenance Integrity Check
+        entry: python -m pytest testing/provenance/ -v
+        language: python
+        types: [python]
+        stages: [commit]
+        description: "Verify provenance tracking"
+        
+      - id: mathematical-foundation
+        name: Mathematical Foundation Test
+        entry: python -m pytest testing/foundation/ -v
+        language: python
+        types: [python]
+        stages: [commit]
+        description: "Test mathematical axioms and operators"
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+        language_version: python3
+        
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        additional_dependencies: [flake8-docstrings]
+        
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        args: ["--profile", "black"]
+        
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.3.0
+    hooks:
+      - id: mypy
+        additional_dependencies: [types-all]
+        exclude: ^testing/ 

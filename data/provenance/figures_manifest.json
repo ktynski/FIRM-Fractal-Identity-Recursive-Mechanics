@@ -1,0 +1,342 @@
+{
+  "records": [
+    {
+      "figure": "alpha_inverse_comparison.png",
+      "inputs": [
+        "THEORETICAL: FIRM \u03c6-recursive fine structure derivation",
+        "EXPERIMENTAL: CODATA 2018 fine structure measurements"
+      ],
+      "input_hashes": {
+        "theoretical_model": "constants/fine_structure_alpha.py",
+        "experimental_data": "data/constants/codata_alpha_inverse.csv"
+      },
+      "script": "comparison_plots.py",
+      "script_hash": "TBD",
+      "generated_at_unix": 1723376878.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6",
+        "python": "3.13"
+      },
+      "notes": "Fine structure constant \u03b1\u207b\u00b9 = 137.036 from pure \u03c6-recursion vs experimental measurements"
+    },
+    {
+      "figure": "bao_comparison.png",
+      "inputs": [
+        "THEORETICAL: FIRM \u03c6-acoustic oscillation predictions",
+        "OBSERVATIONAL: DESI 2024 BAO measurements"
+      ],
+      "input_hashes": {
+        "theoretical_model": "cosmology/cmb_power_spectrum.py",
+        "observational_data": "data/cosmology/bao/observations/"
+      },
+      "script": "bao_comparison_generator.py",
+      "script_hash": "TBD",
+      "generated_at_unix": 1723376878.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6"
+      },
+      "notes": "Baryon Acoustic Oscillation scale predictions from \u03c6-harmonic theory vs DESI observations"
+    },
+    {
+      "figure": "eeg_phi_harmonics.png",
+      "inputs": [
+        "THEORETICAL PREDICTION: \u03c6-harmonic frequency patterns (not real EEG data)"
+      ],
+      "input_hashes": {
+        "theoretical_model": "consciousness/phi_harmonic_analysis.py"
+      },
+      "script": "eeg_phi_harmonics.py",
+      "script_hash": "6073d92486718ed72572f765638d9c111914e13c5f4aff553cb965d326c60e5c",
+      "generated_at_unix": 1703001600.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6"
+      },
+      "notes": "THEORETICAL: \u03c6-harmonic frequency predictions for consciousness-physics coupling"
+    },
+    {
+      "figure": "einstein_equations_comparison.png",
+      "inputs": [
+        "THEORETICAL: Standard Einstein equations G_\u03bc\u03bd = 8\u03c0G T_\u03bc\u03bd",
+        "THEORETICAL: FIRM \u03c6-enhanced equations G_\u03bc\u03bd = \u03c6\u00b2 T_\u03bc\u03bd"
+      ],
+      "input_hashes": {
+        "standard_equations": "foundation/operators/einstein_equations_derivation.py",
+        "phi_equations": "foundation/field_theory/cosmological_constant_recursive.py"
+      },
+      "script": "einstein_equations_derivation_figures.py",
+      "script_hash": "TBD",
+      "generated_at_unix": 1723376878.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6"
+      },
+      "notes": "Comparison of standard vs \u03c6-enhanced Einstein field equations"
+    },
+    {
+      "figure": "einstein_equations_derivation_chain.png",
+      "inputs": [
+        "THEORETICAL: Complete FIRM derivation chain \u2205 \u2192 G_\u03bc\u03bd = \u03c6\u00b2 T_\u03bc\u03bd"
+      ],
+      "input_hashes": {
+        "derivation_chain": "foundation/operators/einstein_equations_derivation.py"
+      },
+      "script": "einstein_equations_derivation_figures.py",
+      "script_hash": "TBD",
+      "generated_at_unix": 1723376878.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6"
+      },
+      "notes": "Complete theoretical pathway from void to Einstein equations via \u03c6-recursion"
+    },
+    {
+      "figure": "gauge_couplings_theory.png",
+      "inputs": [
+        "THEORETICAL: FIRM \u03c6-recursive gauge coupling derivations",
+        "EXPERIMENTAL: PDG gauge coupling measurements at M_Z"
+      ],
+      "input_hashes": {
+        "theoretical_model": "constants/gauge_couplings.py",
+        "experimental_data": "data/constants/pdg_gauge_couplings_mz.csv"
+      },
+      "script": "gauge_couplings_plot.py",
+      "script_hash": "TBD",
+      "generated_at_unix": 1723376878.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6"
+      },
+      "notes": "Gauge coupling evolution \u03b1\u2081, \u03b1\u2082, \u03b1\u2083 from \u03c6-recursive unification theory"
+    },
+    {
+      "figure": "hz_comparison.png",
+      "inputs": [
+        "THEORETICAL: FIRM \u03c6-recursive Hubble parameter derivation",
+        "OBSERVATIONAL: Cosmic chronometer H(z) measurements"
+      ],
+      "input_hashes": {
+        "theoretical_model": "constants/hubble_constant_derivation.py",
+        "observational_data": "data/cosmology/hz/observations/"
+      },
+      "script": "hz_comparison_generator.py",
+      "script_hash": "TBD",
+      "generated_at_unix": 1723376878.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6"
+      },
+      "notes": "Hubble parameter H(z) evolution from \u03c6-recursive cosmology vs observations"
+    },
+    {
+      "figure": "particle_mass_spectrum_theory.png",
+      "inputs": [
+        "THEORETICAL: FIRM \u03c6-harmonic mass hierarchy derivation",
+        "EXPERIMENTAL: PDG particle mass measurements"
+      ],
+      "input_hashes": {
+        "theoretical_model": "constants/particle_mass_ratios.py",
+        "experimental_data": "data/constants/pdg_leptons.csv"
+      },
+      "script": "particle_masses.py",
+      "script_hash": "TBD",
+      "generated_at_unix": 1723376878.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6"
+      },
+      "notes": "Complete particle mass spectrum from \u03c6-morphic harmonic resonance theory"
+    },
+    {
+      "figure": "physical_constants_derivation_table.png",
+      "inputs": [
+        "THEORETICAL: Complete FIRM fundamental constants derivations"
+      ],
+      "input_hashes": {
+        "constants_framework": "constants/fundamental_constants_fsctf.py"
+      },
+      "script": "constants_table_generator.py",
+      "script_hash": "TBD",
+      "generated_at_unix": 1723376878.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6"
+      },
+      "notes": "Comprehensive table of fundamental constants derived from \u03c6-recursion"
+    },
+    {
+      "figure": "planck_tt_binned.png",
+      "inputs": [
+        "THEORETICAL: FIRM \u03c6-acoustic CMB power spectrum predictions",
+        "OBSERVATIONAL: Planck 2018 TT power spectrum data"
+      ],
+      "input_hashes": {
+        "theoretical_model": "cosmology/cmb_power_spectrum.py",
+        "observational_data": "data/cmb/COM_PowerSpect_CMB-TT-binned_R3.01.txt"
+      },
+      "script": "cmb_classic_figures.py",
+      "script_hash": "TBD",
+      "generated_at_unix": 1723376878.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6"
+      },
+      "notes": "CMB temperature power spectrum from \u03c6-acoustic theory vs Planck observations"
+    },
+    {
+      "figure": "sn_mu_comparison.png",
+      "inputs": [
+        "THEORETICAL: FIRM \u03c6-recursive distance modulus predictions",
+        "OBSERVATIONAL: Pantheon+ supernova distance measurements"
+      ],
+      "input_hashes": {
+        "theoretical_model": "cosmology/dark_energy_phi.py",
+        "observational_data": "data/cosmology/sn/observations/"
+      },
+      "script": "sn_distance_modulus_generator.py",
+      "script_hash": "TBD",
+      "generated_at_unix": 1723376878.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6"
+      },
+      "notes": "Supernova distance modulus from \u03c6-dark energy theory vs Pantheon+ data"
+    },
+    {
+      "figure": "spacetime_metric_emergence.png",
+      "inputs": [
+        "THEORETICAL: Grace Operator eigenvalue \u2192 metric tensor derivation"
+      ],
+      "input_hashes": {
+        "theoretical_model": "foundation/operators/spacetime_emergence.py"
+      },
+      "script": "einstein_equations_derivation_figures.py",
+      "script_hash": "TBD",
+      "generated_at_unix": 1723376878.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6"
+      },
+      "notes": "(3+1)D Lorentzian spacetime emergence from Grace Operator dynamics"
+    },
+    {
+      "figure": "sparc_rotation_curves.png",
+      "inputs": [
+        "Real SPARC data from data/rotation_curves/SPARC_table2.dat"
+      ],
+      "input_hashes": {
+        "sparc_data": "7d027e515441c6b4ebbf6aadee0327e6ad81156c4e8b151af2f6d62cb44c3962"
+      },
+      "script": "sparc_summary.py",
+      "script_hash": "7c26a6504db4bacb1f544a31e7de1159e4bc00081d6c153751fc324f1b632eb3",
+      "generated_at_unix": 1703001600.0,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6"
+      },
+      "notes": "Real SPARC rotation curves with FIRM \u03c6-gravity theory (no dark matter) - NO SYNTHETIC DATA"
+    },
+    {
+      "figure": "grace_operator_fixed_point_convergence.png",
+      "inputs": [
+        "THEORETICAL: FIRM Grace Operator mathematical definition",
+        "MATHEMATICAL: Fixed point convergence analysis from Banach theorem"
+      ],
+      "input_hashes": {
+        "theoretical_model": "foundation/operators/grace_operator.py",
+        "mathematical_basis": "axioms/a_grace_3_stabilization.py"
+      },
+      "script": "figures/grace_operator_convergence_generator.py",
+      "script_hash": "dedicated_generator_9449",
+      "generated_at_unix": 1754925298.975688,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6",
+        "python": "3.13"
+      },
+      "notes": "Grace Operator fixed point convergence trajectories showing \u03c6-contraction with rate \u03c6\u207b\u00b9 \u2248 0.618"
+    },
+    {
+      "figure": "phi_recursion_rate_verification.png",
+      "inputs": [
+        "THEORETICAL: \u03c6-recursion mathematical formulation x_{n+1} = 1 + 1/x_n",
+        "MATHEMATICAL: Exponential convergence rate -2 ln \u03c6 verification"
+      ],
+      "input_hashes": {
+        "theoretical_model": "foundation/operators/phi_recursion.py",
+        "convergence_theory": "constants/fine_structure_alpha.py"
+      },
+      "script": "figures/phi_recursion_rate_generator.py",
+      "script_hash": "dedicated_generator_6771",
+      "generated_at_unix": 1754925298.975713,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6",
+        "python": "3.13"
+      },
+      "notes": "\u03c6-recursion convergence validation: measured slope -0.961 vs theoretical -0.962 (\u2248 -2 ln \u03c6)"
+    },
+    {
+      "figure": "dimensional_bridge_mapping.png",
+      "inputs": [
+        "THEORETICAL: FIRM dimensional bridge \u03c6-scaling transformations",
+        "MATHEMATICAL: Mathematical \u2192 physical unit conversion factors"
+      ],
+      "input_hashes": {
+        "theoretical_model": "structures/dimensional_bridge.py",
+        "scaling_theory": "foundation/field_theory/spectral_c_constant.py"
+      },
+      "script": "figures/dimensional_bridge_generator.py",
+      "script_hash": "dedicated_generator_4258",
+      "generated_at_unix": 1754925298.975716,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6",
+        "python": "3.13"
+      },
+      "notes": "\u03c6-scaling dimensional conversions: Length (\u03c6\u00b9), Mass (\u03c6\u00b2), Time (\u03c6\u207b\u00b9), Charge (\u03c6^\u00bd), Temp (\u03c6\u00b3)"
+    },
+    {
+      "figure": "inflation_evolution.png",
+      "inputs": [
+        "THEORETICAL: FIRM \u03c6-field inflation dynamics V(\u03c6) = \u00bd\u03c6\u00b2(1-\u03c6/\u03c6\u2080)",
+        "COSMOLOGICAL: Complete inflation timeline with slow-roll parameters"
+      ],
+      "input_hashes": {
+        "theoretical_model": "cosmology/inflation_theory.py",
+        "field_dynamics": "cosmology/ex_nihilo_pipeline.py"
+      },
+      "script": "figures/inflation_evolution_generator.py",
+      "script_hash": "dedicated_generator_6253",
+      "generated_at_unix": 1754925298.975719,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6",
+        "python": "3.13"
+      },
+      "notes": "Complete \u03c6-inflation evolution: 60 e-folds, scale factor expansion 7.21\u00d710\u2078, slow-roll verification"
+    },
+    {
+      "figure": "dark_energy_phi_scaling.png",
+      "inputs": [
+        "THEORETICAL: FIRM \u03c6-scaling dark energy model w(z) = -1 + (\u03c6-1)/\u03c6 \u00d7 a\u00b2",
+        "OBSERVATIONAL: Comparison with \u039bCDM standard model predictions"
+      ],
+      "input_hashes": {
+        "theoretical_model": "cosmology/dark_energy_phi.py",
+        "lambda_cdm_comparison": "constants/cosmological_constant_derivation.py"
+      },
+      "script": "figures/dark_energy_phi_generator.py",
+      "script_hash": "dedicated_generator_5097",
+      "generated_at_unix": 1754925298.975721,
+      "environment": {
+        "matplotlib": "3.10.3",
+        "numpy": "2.2.6",
+        "python": "3.13"
+      },
+      "notes": "\u03c6-scaling dark energy vs \u039bCDM: w(z=0) = -0.618, variable equation of state, testable predictions"
+    }
+  ]
+}

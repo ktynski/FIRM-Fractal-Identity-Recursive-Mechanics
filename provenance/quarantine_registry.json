@@ -1,0 +1,149 @@
+{
+  "version": 2,
+  "updated": "2025-08-10",
+  "status_legend": {
+    "resolved": "✅ Fully derived from FSCTF first principles",
+    "partial": "🟡 Structural proof exists but pipeline incomplete", 
+    "symbolic": "🔴 Still empirical/symbolic, needs derivation"
+  },
+  "quarantined_items": {
+    "omega_lambda_correction_1.108": {
+      "where": "Ω_Λ = φ^(-1) × 1.108",
+      "reason": "Previously required φ-native vacuum fluctuation derivation",
+      "status": "resolved",
+      "derivation": "φ⁻¹ × ζ₀ from heat-kernel trace on coherent vacuum boundary (ζ_B manifold derivation)"
+    },
+    "h0_base_70": {
+      "where": "H0 base = 70",
+      "reason": "Flow eigenvalue of universal ψ-lattice using φ⁻² scaling",
+      "status": "partial",
+      "derivation": "H₀ via flow eigenvalue derivation exists, lacks dimensional bridge to km/s/Mpc"
+    },
+    "h0_phi_exp_minus_0.1": {
+      "where": "H0 × φ^(-0.1)",
+      "reason": "Flow eigenvalue stability exponent derivation",
+      "status": "partial", 
+      "derivation": "Part of flow eigenvalue system, needs completion"
+    },
+    "h0_tension_1.05": {
+      "where": "H0 tension factor 1.05",
+      "reason": "Should be eliminated via stability theorem",
+      "status": "partial",
+      "derivation": "Eliminable through completed stability proof"
+    },
+    "weinberg_angle_correction_1.21": {
+      "where": "sin^2 θ_W × 1.21",
+      "reason": "φ-native Yukawa triangulation of electroweak unification cone",
+      "status": "partial",
+      "derivation": "Shape of solution known, needs full running coupling RG trace"
+    },
+    "vus_suppression_0.59": {
+      "where": "|V_us| × 0.59",
+      "reason": "3-generation φ-torus embedding CKM structure",
+      "status": "partial",
+      "derivation": "φ-torus embedding gives constraints, needs CKM diagonalization"
+    },
+    "mt_mb_qcd_factor_1.43": {
+      "where": "m_t/m_b × 1.43",
+      "reason": "3-generation φ-torus embedding QCD beta function",
+      "status": "partial",
+      "derivation": "φ-torus embedding exists, needs full QCD beta function"
+    },
+    "proton_electron_structural_2.37": {
+      "where": "m_p/m_e correction × 2.37",
+      "reason": "Lacks composite particle binding derivation",
+      "status": "symbolic",
+      "derivation": "Needs φ-torus pressure curve simulation for binding"
+    },
+    "tau_correction_0.982": {
+      "where": "m_τ/m_e × 0.982",
+      "reason": "Requires φ-native EWSB contribution derivation",
+      "status": "partial",
+      "derivation": "Part of 3-generation φ-torus embedding, needs EWSB completion"
+    },
+    "top_electron_structural_2.47": {
+      "where": "m_t/m_e × 2.47",
+      "reason": "Requires φ-native electroweak/Yukawa mapping",
+      "status": "partial",
+      "derivation": "Part of 3-generation φ-torus embedding, needs Yukawa completion"
+    },
+    "lambda_n_loops_120": {
+      "where": "Λ suppression φ^(-n), n = 120",
+      "reason": "Previously required φ-native diagram enumeration",
+      "status": "resolved",
+      "derivation": "n = depth of minimal non-repeating recursion in grace-induced morphic collapse ladder (120 layers from Φ⁻ⁿ decay into coherence plane)"
+    },
+    "neutrino_seesaw_1e-9": {
+      "where": "Seesaw factor 1e-9",
+      "reason": "Requires φ-native mass-matrix construction",
+      "status": "partial",
+      "derivation": "Part of 3-generation φ-torus embedding, needs mass matrix completion"
+    },
+    "spectral_C_target": {
+      "where": "C_spectral target 4.08143866369063",
+      "reason": "Previously used target fitting",
+      "status": "resolved", 
+      "derivation": "C ≈ 4.0814… emerges naturally from converged spectral zeta integral over FRST-bounded flow manifold"
+    },
+    "topology_factor_2_minus_phi_inv": {
+      "where": "Topology factor = 2 − φ^(-1)",
+      "reason": "Requires proof from φ-space geometry/topology",
+      "status": "partial",
+      "derivation": "φ-space geometric structure partially established, needs topology completion"
+    },
+    "zeta_normalization_pi_over_2_phi_1_3": {
+      "where": "ζ normalization = π/(2 φ^(1/3))",
+      "reason": "Requires proof from φ-space spectral analysis",
+      "status": "partial", 
+      "derivation": "Related to spectral zeta framework, needs normalization proof"
+    },
+    "alpha_s_times_10": {
+      "where": "α_s = α × φ × 10",
+      "reason": "Requires consistent φ-native RG scheme",
+      "status": "symbolic",
+      "derivation": "Empirical fit, needs φ-native renormalization scheme from layered morphic RG flow"
+    },
+    "alpha_s_phi4": {
+      "where": "α_s = α × φ^4",
+      "reason": "Requires consistent φ-native RG scheme", 
+      "status": "symbolic",
+      "derivation": "Empirical fit, needs φ-native renormalization scheme from layered morphic RG flow"
+    },
+    "beta_functions_phi_exponents": {
+      "where": "β exponents with φ powers",
+      "reason": "Requires β-functions from φ-native field content",
+      "status": "symbolic",
+      "derivation": "Needs complete φ-native field theory and RG analysis"
+    },
+    "gut_unification_1_over_42": {
+      "where": "α_GUT ≈ 1/42",
+      "reason": "Still symbolic, no full morphic gauge unification",
+      "status": "symbolic",
+      "derivation": "Charge lattice mapped but morphic group folding cascade incomplete"
+    },
+    "mapping_113_equals_Tphi7_plus_42": {
+      "where": "113 = T_φ(7) + 42",
+      "reason": "Symbolic mapping, no uniqueness theorem",
+      "status": "symbolic",
+      "derivation": "No uniqueness theorem or morphic necessity, still speculative"
+    },
+    "cmb_envelope_constants": {
+      "where": "CMB spectrum envelope constants (2400, 30, 0.04, 1800, 600, 50; peaks 220×n)",
+      "reason": "Replace with φ-native Boltzmann hierarchy",
+      "status": "partial",
+      "derivation": "φ-native Boltzmann hierarchy framework exists, needs envelope completion"
+    },
+    "kelvin_factor_2.883": {
+      "where": "Temperature scaling × 2.883",
+      "reason": "Previously empirical fitting factor",
+      "status": "resolved",
+      "derivation": "φ-native spectral density Wien peak yields exact factor 2.821, replacing empirical 2.883"
+    },
+    "n_shells_90": {
+      "where": "Cooling through ~90 φ-shells",
+      "reason": "Prove exact number from ex nihilo pipeline",
+      "status": "partial",
+      "derivation": "Ex nihilo pipeline framework exists, needs shell count derivation"
+    }
+  }
+}

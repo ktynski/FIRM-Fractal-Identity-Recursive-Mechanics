@@ -1,0 +1,23 @@
+# FIRM Project Integrity Ownership
+
+## Integrity Responsibility
+- **Primary Owner**: Development Team
+- **Integrity Gate**: All PRs must pass contamination detection
+- **Theory Branch**: `theory-only` branch frozen for pure mathematical work
+- **Empirical Code**: Lives behind validation firewall only
+
+## PR Gate Rules
+1. **Contamination Scan**: Block on any quarantined key without proof
+2. **Provenance Check**: All constants must have derivation provenance
+3. **Test Coverage**: 100% test coverage for new mathematical derivations
+4. **Documentation**: All changes must update relevant documentation
+
+## Quarantine Enforcement
+- CI blocks on quarantined usage without proof objects
+- Automated scanning for forbidden numeric patterns
+- Fail-closed provenance guard system
+
+## Contact
+- **Integrity Issues**: Create issue with `[INTEGRITY]` label
+- **Contamination Reports**: Use `[CONTAMINATION]` label
+- **Proof Object Validation**: Use `[PROOF]` label 
