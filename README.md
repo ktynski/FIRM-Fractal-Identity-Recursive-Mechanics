@@ -8,6 +8,7 @@
 
 ## TL;DR (Start Here)
 - **Paper (PDF)**: [`FIRM_Main.pdf`](arxiv_paper/FIRM_FINAL_SUBMISSION/FIRM_Main.pdf) • [Web view](https://ktynski.github.io/FIRM-Fractal-Identity-Recursive-Mechanics/)
+- **Overview Video**: [YouTube](https://youtu.be/GuelCnzDaUU)
 - **Zero fitting or tuning**: Derivations proceed from axioms → Grace operator → fixed points. No empirical inputs anywhere in the math pipeline.
 - **Full provenance**: Every result has a sealed, machine-verifiable trail (code + math). If we’re wrong, it’s visible and fixable.
 - **Falsifiable**: Concrete numeric targets and CMB peak-ratio structure (ℓ≈ℓ₁φⁿ). Miss them → FIRM is falsified.
