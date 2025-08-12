@@ -14,9 +14,10 @@
     header{padding:48px 24px;text-align:center;background:linear-gradient(180deg,#0f1320,rgba(15,19,32,0));}
     h1{margin:0;font-size:42px;letter-spacing:0.2px}
     h2{margin:12px 0 0;font-weight:400;color:var(--muted)}
-    .container{max-width:1100px;margin:0 auto;padding:24px}
+    h3{margin:0 0 10px}
+    .container{max-width:1200px;margin:0 auto;padding:24px}
     .grid{display:grid;grid-template-columns:1fr;gap:24px}
-    @media(min-width: 980px){ .grid{grid-template-columns:1.1fr 0.9fr} }
+    @media(min-width: 1040px){ .grid{grid-template-columns:1.1fr 0.9fr} }
     .card{background:var(--card);border:1px solid #1f2533;border-radius:12px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,0.25)}
     .buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
     .btn{display:inline-block;padding:10px 14px;border-radius:8px;border:1px solid #2a3245;color:var(--fg);text-decoration:none}
@@ -28,6 +29,15 @@
     .video{aspect-ratio: 16/9; width:100%; border:0; border-radius:8px; background:#0a0d14}
     ul{margin-top:8px}
     code{background:#0a0f18;padding:2px 6px;border:1px solid #1f2533;border-radius:6px}
+    .gallery{display:grid;grid-template-columns:repeat(1,1fr);gap:16px}
+    @media(min-width:720px){.gallery{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1080px){.gallery{grid-template-columns:repeat(3,1fr)}}
+    .thumb{background:#0a0f18;border:1px solid #1e2432;border-radius:10px;overflow:hidden}
+    .thumb img{display:block;width:100%;height:220px;object-fit:cover}
+    .thumb .cap{padding:10px 12px;color:var(--muted);font-size:14px;border-top:1px solid #1e2432}
+    .caps{font-size:13px;color:var(--muted)}
+    nav.top{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+    nav.top a{color:var(--muted);text-decoration:none}
   </style>
 </head>
 <body>
@@ -40,10 +50,16 @@
       <a class="btn ghost" href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank">GitHub Repo</a>
       <a class="btn ghost" href="../README.md" target="_blank">Project README</a>
     </div>
+    <nav class="top">
+      <a href="#abstract">Abstract</a>
+      <a href="#paper">Paper</a>
+      <a href="#gallery">Figures</a>
+      <a href="#video">Video</a>
+    </nav>
   </header>
 
   <div class="container">
-    <div class="grid">
+    <div class="grid" id="abstract">
       <section class="card">
         <h3>Abstract</h3>
         <p>FIRM is an axiomatic programme that derives quantitative physics ex nihilo. From five purely mathematical axioms we construct the Grace operator G and work in its fixed-point category Fix(G). The resulting φ-recursive structure fixes dimensionless couplings, mass ratios, and cosmological observables as mathematical invariants—no empirical inputs, no parameter fitting, no posterior tuning. All predictions are registered a priori and accompanied by cryptographic, machine-verifiable provenance.</p>
@@ -53,24 +69,57 @@
           <li>Zero fitting/tuning; explicit falsifiability and provenance seals</li>
         </ul>
       </section>
-      <section class="card">
+      <section class="card" id="paper">
         <h3>Paper (Embedded)</h3>
         <iframe class="embed" src="paper/FIRM_Main.pdf#view=FitH" title="FIRM Paper PDF"></iframe>
+        <p class="caps">Open the full PDF for figure captions and derivation details.</p>
       </section>
     </div>
 
-    <section class="card">
+    <section class="card" id="video">
       <h3>Overview Video</h3>
       <iframe class="video" src="https://www.youtube.com/embed/GuelCnzDaUU" title="Overview Video" allowfullscreen></iframe>
     </section>
 
-    <section class="card">
-      <h3>Quick Links</h3>
-      <div class="buttons">
-        <a class="btn" href="paper/FIRM_Main.pdf" target="_blank">Download PDF</a>
-        <a class="btn" href="https://youtu.be/GuelCnzDaUU" target="_blank">Watch Video</a>
-        <a class="btn" href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank">GitHub</a>
-        <a class="btn" href="../arxiv_paper/FIRM_FINAL_SUBMISSION/" target="_blank">LaTeX Source</a>
+    <section class="card" id="gallery">
+      <h3>Selected Figures</h3>
+      <div class="gallery">
+        <a class="thumb" href="assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png" target="_blank">
+          <img src="assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png" alt="CMB Crown Jewel" />
+          <div class="cap">CMB crown jewel — ex nihilo sky map from φ-mathematics</div>
+        </a>
+        <a class="thumb" href="assets/planck_tt_binned.png" target="_blank">
+          <img src="assets/planck_tt_binned.png" alt="CMB TT Comparison" />
+          <div class="cap">CMB TT: FIRM prediction (solid) vs Planck data (points)</div>
+        </a>
+        <a class="thumb" href="assets/alpha_inverse_comparison.png" target="_blank">
+          <img src="assets/alpha_inverse_comparison.png" alt="Alpha Inverse" />
+          <div class="cap">Fine structure constant — theory vs measurements</div>
+        </a>
+        <a class="thumb" href="assets/bao_comparison.png" target="_blank">
+          <img src="assets/bao_comparison.png" alt="BAO Comparison" />
+          <div class="cap">BAO scale — φ-enhanced sound horizon vs observations</div>
+        </a>
+        <a class="thumb" href="assets/grace_operator_fixed_point_convergence.png" target="_blank">
+          <img src="assets/grace_operator_fixed_point_convergence.png" alt="Grace Operator Convergence" />
+          <div class="cap">Grace operator — fixed point convergence</div>
+        </a>
+        <a class="thumb" href="assets/dimensional_bridge_mapping.png" target="_blank">
+          <img src="assets/dimensional_bridge_mapping.png" alt="Dimensional Bridge" />
+          <div class="cap">Dimensional bridge — math→physics mapping</div>
+        </a>
+        <a class="thumb" href="assets/phi_recursion_rate_verification.png" target="_blank">
+          <img src="assets/phi_recursion_rate_verification.png" alt="Phi Recursion" />
+          <div class="cap">φ-recursion — rate verification</div>
+        </a>
+        <a class="thumb" href="assets/spacetime_metric_emergence.png" target="_blank">
+          <img src="assets/spacetime_metric_emergence.png" alt="Spacetime Metric" />
+          <div class="cap">Spacetime metric — emergence from fixed points</div>
+        </a>
+        <a class="thumb" href="assets/inflation_evolution.png" target="_blank">
+          <img src="assets/inflation_evolution.png" alt="Inflation Evolution" />
+          <div class="cap">Inflation evolution — φ-field dynamics</div>
+        </a>
       </div>
     </section>
 
