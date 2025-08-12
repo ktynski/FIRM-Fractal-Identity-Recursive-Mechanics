@@ -173,7 +173,7 @@ If correct, FIRM would represent:
 
 ## 📞 Contact and Collaboration
 
-- **GitHub**: https://github.com/firm-research/ExNahiloReality
+- **GitHub**: https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics
 - **Issues**: Technical questions and mathematical review
 - **Discussions**: Theoretical framework discussions
 - **Academic**: Research collaboration opportunities

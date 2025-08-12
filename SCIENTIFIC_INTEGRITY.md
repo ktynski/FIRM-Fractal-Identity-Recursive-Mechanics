@@ -242,7 +242,7 @@ Observable CMB Power Spectrum
 
 ```bash
 # Complete replication from scratch
-git clone https://github.com/firm-research/ExNahiloReality.git
+git clone https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics.git
 cd ExNahiloReality
 
 # Mathematical verification

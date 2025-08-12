@@ -1,7 +1,7 @@
 # FIRM: Fractal Identity & Recursive Mechanics
 **A Complete Mathematical Framework for Deriving Physical Reality from Pure Mathematics**
 
-[![Build Status](https://github.com/firm-research/ExNahiloReality/workflows/CI/badge.svg)](https://github.com/firm-research/ExNahiloReality/actions)
+[![Build Status](https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/workflows/CI/badge.svg)](https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/actions)
 [![Coverage](https://codecov.io/gh/firm-research/ExNahiloReality/branch/main/graph/badge.svg)](https://codecov.io/gh/firm-research/ExNahiloReality)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -41,7 +41,7 @@ Core Physical Constants (All Derived):
 
 ### Installation
 ```bash
-git clone https://github.com/firm-research/ExNahiloReality.git
+git clone https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics.git
 cd ExNahiloReality
 pip install -e .
 ```
@@ -313,7 +313,7 @@ FIRM development follows rigorous mathematical standards:
 
 ```bash
 # Development setup
-git clone https://github.com/firm-research/ExNahiloReality.git
+git clone https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics.git
 cd ExNahiloReality
 pip install -e ".[dev]"
 pytest  # Verify tests pass

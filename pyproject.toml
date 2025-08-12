@@ -65,11 +65,11 @@ validation = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/firm-research/ExNahiloReality"
+Homepage = "https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics"
 Documentation = "https://firm-theory.readthedocs.io"
-Repository = "https://github.com/firm-research/ExNahiloReality"
-Issues = "https://github.com/firm-research/ExNahiloReality/issues"
-Changelog = "https://github.com/firm-research/ExNahiloReality/blob/main/CHANGELOG.md"
+Repository = "https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics"
+Issues = "https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/issues"
+Changelog = "https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/blob/main/CHANGELOG.md"
 
 [project.scripts]
 firm-validate = "validation:main"
