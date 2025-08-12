@@ -208,6 +208,10 @@ xi_score = measure_consciousness(system)
 - Consciousness integration (P=NP framework)
 - Falsification criteria and validation
 
+## Paper (PDF)
+
+- Latest compiled PDF: [FIRM_Main.pdf](arxiv_paper/FIRM_FINAL_SUBMISSION/FIRM_Main.pdf)
+
 ---
 
 ## 🧪 Testing & Validation
