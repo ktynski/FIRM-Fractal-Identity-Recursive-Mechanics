@@ -11,8 +11,7 @@ Both emerge from φ-native geometric and spectral principles in FIRM.
 import math
 from typing import Dict, Any, NamedTuple, List
 
-# Use local φ constant
-PHI_VALUE = 1.6180339887498948482045868343656
+from foundation.operators.phi_recursion import PHI_VALUE
 
 class TopologyResult(NamedTuple):
     """Result of topology-related derivation."""

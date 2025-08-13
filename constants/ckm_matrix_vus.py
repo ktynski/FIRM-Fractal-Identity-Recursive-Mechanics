@@ -12,8 +12,7 @@ strata, torsional delay shells, and coherence leakage channels.
 import math
 from typing import Dict, Any, NamedTuple
 
-# Use local φ constant
-PHI_VALUE = 1.6180339887498948482045868343656
+from foundation.operators.phi_recursion import PHI_VALUE
 
 class CKMResult(NamedTuple):
     """Result of CKM matrix element derivation."""

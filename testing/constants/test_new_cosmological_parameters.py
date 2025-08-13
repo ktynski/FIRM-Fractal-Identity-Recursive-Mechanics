@@ -184,6 +184,54 @@ class TestScalarSpectralIndex:
         # Should match direct calculation (allow small numerical difference)
         direct_ns = power_result["direct_calculation"]
         assert abs(spectral_index - direct_ns) < 0.1  # Relaxed tolerance for numerical differences
+    
+    def test_advanced_theoretical_components(self):
+        """Test all advanced theoretical components implemented today"""
+        
+        # Test multi-shell cascade interference
+        cascade_result = SCALAR_SPECTRAL_INDEX.derive_multi_shell_cascade_interference()
+        assert cascade_result["effective_beta"] > 0
+        assert cascade_result["total_degradation"] > 0
+        assert len(cascade_result["cascade_factors"]) == 8
+        assert len(cascade_result["derivation_steps"]) > 10
+        
+        # Test category-theoretic mappings
+        categorical_result = SCALAR_SPECTRAL_INDEX.derive_category_theoretic_mappings()
+        assert categorical_result["functorial_curvature"] == 8.2
+        assert categorical_result["natural_transformation_components"] == 8
+        assert categorical_result["categorical_spectral_index"] > 0
+        assert "shell_morphisms" in categorical_result
+        
+        # Test cohomological invariants
+        cohomology_result = SCALAR_SPECTRAL_INDEX.derive_cohomological_invariants()
+        assert cohomology_result["second_cohomology_dimension"] == 1
+        assert cohomology_result["spectral_obstruction"] > 0
+        assert len(cohomology_result["betti_numbers"]) == 3
+        assert cohomology_result["topologically_protected"] is True
+        
+        # Test torsion entropy analysis
+        torsion_result = SCALAR_SPECTRAL_INDEX.derive_torsion_entropy_analysis()
+        assert torsion_result["total_torsion_entropy"] > 0
+        assert len(torsion_result["torsion_angles"]) == 8
+        assert len(torsion_result["torsion_entropies"]) == 8
+        assert "entropy_gradient" in torsion_result
+        
+        # Test advanced morphic survival probability
+        survival_result = SCALAR_SPECTRAL_INDEX.derive_morphic_survival_probability()
+        assert survival_result["coherence_width"] == 8.2
+        assert len(survival_result["gaussian_survivals"]) > 10
+        assert len(survival_result["simple_survivals"]) > 10
+        assert "ns_gaussian" in survival_result
+        assert "ns_simple" in survival_result
+        
+        # Test comparative inflation analysis
+        comparison_result = SCALAR_SPECTRAL_INDEX.derive_comparative_inflation_analysis()
+        assert "inflation_models" in comparison_result
+        assert "model_comparison" in comparison_result
+        assert comparison_result["fsctf_error_percent"] < 1.0  # Should be very small
+        assert comparison_result["fsctf_chi_squared"] > 0
+        assert len(comparison_result["fsctf_advantages"]) >= 4
+        assert len(comparison_result["inflation_advantages"]) >= 3
 
 
 class TestIntegration:

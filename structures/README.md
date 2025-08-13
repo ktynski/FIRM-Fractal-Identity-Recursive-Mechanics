@@ -1,25 +1,22 @@
-# Structures Module: Dimensional Bridge Framework  
+# Structures Module: Mathematical-Physical Bridge Framework  
 
 ## Purpose
-Maps φ-native mathematical quantities to physical observables with dimensional units. Provides structural modules for gauge group emergence, particle spectrum derivation, and spacetime dimensional analysis.
+Maps φ-native mathematical quantities to physical observables with dimensional units and provides mathematical structure analysis tools for physical reality interpretation.
 
 ### Scientific Integrity
 - **Bridge-only units**: units are assigned via morphisms; theory remains dimensionless upstream.
 - **No hardcoding**: conversions are formulaic and centrally defined.
+- **Mathematical structures only**: No fundamental physics derivations (moved to theory/physics/)
 
 ### Key Modules
-- `dimensional_bridge.py`, `gauge_group_emergence.py`, `particle_spectrum.py`, `spacetime_dimensions.py`
+- `dimensional_bridge.py`: Converts φ-native mathematical quantities to physical units without empirical tuning
+- `particle_spectrum.py`: Complete Standard Model particle spectrum from representation theory
+- `morphic_algebra.py`: Mathematical algebraic structures for morphic analysis
+- `morphic_knot_projection.py`: Mathematical knot projections in morphic space  
+- `physical_units.py`: Physical unit definitions and conversions
 
 ### Status
-Unit-space morphisms and consistency checks are being formalized; proofs and invariants are expanding.
-
-## Structures
-
-Purpose: Domain structures used by the theory: dimensional bridge, gauge-group emergence, particle spectrum, units.
-
-- `dimensional_bridge.py`: Converts φ-native mathematical quantities to physical units without empirical tuning.
-- `gauge_group_emergence.py`, `particle_spectrum.py`, `physical_units.py`.
-- Constraint: Only exact SI definitions are allowed for unit constants.
+Unit-space morphisms and consistency checks are formalized. Fundamental physics moved to theory/physics/.
 
 ---
 

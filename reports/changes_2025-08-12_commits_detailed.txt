@@ -1,0 +1,44 @@
+06dbc46d48ab0b7445d79890c9d70c0c7e25d5af 2025-08-12 02:29:15 -0400 Kristin CMB TT: regenerate using full pipeline (no fallback), correct Dl normalization; update arXiv and Pages
+A	arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/planck_tt_binned.png
+M	docs/assets/planck_tt_binned.png
+M	figures/planck_tt_binned.png
+
+c42b955a2f1082d888f50f946f76d5b7a2de35c1 2025-08-12 01:09:40 -0400 Kristin Publish updates to GitHub and GitHub Pages (docs/)
+M	.DS_Store
+M	arxiv_paper/FIRM_FINAL_SUBMISSION/.DS_Store
+A	arxiv_paper/screenvideo.mp4
+
+b741d76eb3609ead82b9341b5304282cc3025163 2025-08-12 00:47:10 -0400 Kristin Pages: meta (OG/Twitter/JSON-LD), sticky header, lazy-load, FAQ, reproduce, BibTeX, analytics)
+M	docs/index.html
+
+81d1d535c56c35bc0543e45ab2fad544844f2e7b 2025-08-12 00:25:53 -0400 Kristin Pages: add responsive figure gallery with captions and anchors; copy key figures to docs/assets
+A	docs/assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png
+A	docs/assets/alpha_inverse_comparison.png
+A	docs/assets/bao_comparison.png
+A	docs/assets/dimensional_bridge_mapping.png
+A	docs/assets/einstein_equations_derivation_chain.png
+A	docs/assets/grace_operator_fixed_point_convergence.png
+A	docs/assets/inflation_evolution.png
+A	docs/assets/phi_recursion_rate_verification.png
+A	docs/assets/planck_tt_binned.png
+A	docs/assets/spacetime_metric_emergence.png
+M	docs/index.html
+
+f1458f038b2f19ecf8187ed1a10fd0d5df429178 2025-08-12 00:19:07 -0400 Kristin Embed overview video (YouTube) on Pages and add link in README
+M	README.md
+M	docs/index.html
+
+df5550cb089baf7263fd03649361c13d0d473380 2025-08-12 00:06:01 -0400 Kristin README: HN-optimized landing (links to PDF and Pages, inb4 FAQ, zero-fitting/provenance/falsifiability)
+M	README.md
+
+d81695ff2e00e0bb0f7ad8e5a2e259e267dae478 2025-08-12 00:03:38 -0400 Kristin Add GitHub Pages landing (docs/) with embedded paper and video placeholder; copy PDF to docs/paper
+A	docs/index.html
+A	docs/paper/FIRM_Main.pdf
+
+20742fd1aa4569fe4fa32f598456db75ba078214 2025-08-12 00:01:46 -0400 Kristin Update repository URLs to https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics across docs and paper
+M	README.md
+M	SCIENTIFIC_INTEGRITY.md
+M	arxiv_paper/FIRM_FINAL_SUBMISSION/main.tex
+M	arxiv_paper/FIRM_FINAL_SUBMISSION/references/references.bib
+M	arxiv_paper/README.md
+M	pyproject.toml

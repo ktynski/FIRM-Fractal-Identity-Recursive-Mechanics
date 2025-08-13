@@ -50,15 +50,8 @@ def get_physical_structure(name: str) -> Any:
     """Retrieve a registered physical structure by name."""
     return _STRUCTURE_REGISTRY.get(name)
 
-# Re-export primary classes and singleton instances
+# Re-export primary classes and singleton instances  
 from .dimensional_bridge import DIMENSIONAL_BRIDGE, DimensionalBridge
-from .gauge_group_emergence import (
-    GAUGE_GROUP_EMERGENCE,
-    StandardModelGroups,
-    GaugeGroup,
-    SymmetryBreakingScale,
-    GaugeGroupStructure,
-)
 from .particle_spectrum import (
     PARTICLE_SPECTRUM,
     CompleteSpectrum,
@@ -68,14 +61,9 @@ from .particle_spectrum import (
     QuantumNumbers,
     ParticleSpecification,
 )
-from .spacetime_dimensions import (
-    SPACETIME_STRUCTURE,
-    SpacetimeDimensionality,
-    SpacetimeSignature,
-    DimensionalStability,
-    SpacetimeDimension,
-    SpacetimeStructure,
-)
+from .morphic_algebra import *
+from .morphic_knot_projection import *
+from .physical_units import *
 
 __all__ = [
     # Registry utilities
@@ -86,13 +74,6 @@ __all__ = [
     'DIMENSIONAL_BRIDGE',
     'DimensionalBridge',
 
-    # Gauge group emergence
-    'GAUGE_GROUP_EMERGENCE',
-    'StandardModelGroups',
-    'GaugeGroup',
-    'SymmetryBreakingScale',
-    'GaugeGroupStructure',
-
     # Particle spectrum
     'PARTICLE_SPECTRUM',
     'CompleteSpectrum',
@@ -102,11 +83,6 @@ __all__ = [
     'QuantumNumbers',
     'ParticleSpecification',
 
-    # Spacetime dimensionality
-    'SPACETIME_STRUCTURE',
-    'SpacetimeDimensionality',
-    'SpacetimeSignature',
-    'DimensionalStability',
-    'SpacetimeDimension',
-    'SpacetimeStructure',
+    # Mathematical structures
+    # (Specific exports from morphic_algebra, morphic_knot_projection, physical_units)
 ]

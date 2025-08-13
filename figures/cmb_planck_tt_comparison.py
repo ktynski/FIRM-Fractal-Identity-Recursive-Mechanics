@@ -26,6 +26,7 @@ import warnings
 try:
     from cosmology.cmb_power_spectrum import CMB_POWER_SPECTRUM
     from foundation.operators.phi_recursion import PHI_VALUE
+    from cosmology.peaks.geometric_layer import get_peak_overlay_for_figure, PHI_GEOMETRIC_LAYER
     FIRM_AVAILABLE = True
 except ImportError as e:
     print(f"⚠️  FIRM modules not available: {e}")
@@ -60,9 +61,12 @@ class CMBPlanckTTComparison:
         # Use actual FIRM CMB power spectrum computation
         cmb_result = CMB_POWER_SPECTRUM.compute_cmb_power_spectrum(ell_max=ell_max)
         
-        # Extract theoretical predictions
+        # Extract theoretical predictions (C_ell) and convert to D_ell for plotting
         multipoles = np.array(cmb_result.multipoles)
-        theoretical_power = np.array(cmb_result.temperature_power)
+        c_ell = np.array(cmb_result.temperature_power)
+        # Use D_ell = ell(ell+1) C_ell / (2π) [μK^2]
+        with np.errstate(invalid="ignore"):
+            theoretical_power = (multipoles * (multipoles + 1) * c_ell) / (2 * np.pi)
         
         print(f"✅ FIRM theoretical spectrum generated: {len(multipoles)} multipoles")
         print(f"   Peak locations: ℓ = {[int(multipoles[i]) for i in range(0, len(multipoles), len(multipoles)//5)]}")
@@ -96,91 +100,87 @@ class CMBPlanckTTComparison:
         """Create the complete CMB Planck TT comparison figure."""
         
         # Generate FIRM theoretical spectrum
-        try:
-            multipoles, theoretical_power = self.generate_firm_theoretical_spectrum()
-            has_firm_theory = True
-        except Exception as e:
-            print(f"⚠️  FIRM theory generation failed: {e}")
-            print("   Using φ-harmonic peak structure as fallback")
-            multipoles, peak_positions, peak_amplitudes = self.generate_phi_harmonic_peaks()
-            has_firm_theory = False
+        # Strict: NO FALLBACKS. If theory generation fails, raise.
+        multipoles, theoretical_power = self.generate_firm_theoretical_spectrum()
+        has_firm_theory = True
         
         # Create figure
         fig, ax = plt.subplots(figsize=(12, 8))
         
-        if has_firm_theory:
-            # Plot FIRM theoretical prediction (solid line)
-            ax.plot(multipoles, theoretical_power, 
-                   color='red', linewidth=2.5, 
-                   label='FIRM Theoretical Prediction (φ-mathematics)',
-                   zorder=10)
-            
-            # Add φ-harmonic peak markers
-            peak_positions = [220 * (self.phi ** n) for n in range(6)]
-            peak_positions = [p for p in peak_positions if p <= multipoles[-1]]
-            
-            for i, peak_ell in enumerate(peak_positions):
-                # Find nearest multipole index
-                idx = np.argmin(np.abs(multipoles - peak_ell))
-                peak_amplitude = theoretical_power[idx]
-                
-                ax.axvline(x=peak_ell, color='orange', alpha=0.3, linestyle='--',
-                          label=f'φ-harmonic peak {i+1}' if i == 0 else "")
-                ax.plot(peak_ell, peak_amplitude, 'o', color='orange', 
-                       markersize=8, zorder=15)
-                
-                # Add peak labels
-                ax.annotate(f'ℓ = {int(peak_ell)}', 
-                           xy=(peak_ell, peak_amplitude),
-                           xytext=(10, 10), textcoords='offset points',
-                           fontsize=10, ha='left', va='bottom',
-                           bbox=dict(boxstyle='round,pad=0.3', facecolor='white', alpha=0.8))
-        else:
-            # Fallback: φ-harmonic peak structure
-            for i, (peak_ell, amplitude) in enumerate(zip(peak_positions, peak_amplitudes)):
-                # Create Gaussian peak profile
-                width = 30 + 10 * i
-                peak_profile = amplitude * np.exp(-0.5 * ((multipoles - peak_ell) / width) ** 2)
-                
-                if i == 0:
-                    ax.plot(multipoles, peak_profile, color='red', linewidth=2.5,
-                           label='FIRM φ-Harmonic Peaks (φ-mathematics)')
-                else:
-                    ax.plot(multipoles, peak_profile, color='red', linewidth=1.5, alpha=0.7)
-                
-                # Mark peak positions
-                ax.axvline(x=peak_ell, color='orange', alpha=0.3, linestyle='--')
-                ax.plot(peak_ell, amplitude, 'o', color='orange', markersize=8)
-                
-                # Add peak labels
-                ax.annotate(f'ℓ = {int(peak_ell)}', 
-                           xy=(peak_ell, amplitude),
-                           xytext=(10, 10), textcoords='offset points',
-                           fontsize=10, ha='left', va='bottom',
-                           bbox=dict(boxstyle='round,pad=0.3', facecolor='white', alpha=0.8))
+        # Plot FIRM theoretical prediction (solid line)
+        ax.plot(multipoles, theoretical_power, 
+               color='red', linewidth=2.5, 
+               label='FIRM Theoretical Prediction (φ-mathematics)',
+               zorder=10)
         
-        # Add Planck 2018 observational data points (simulated for demonstration)
-        # In real implementation, this would load actual Planck data
-        planck_ell = np.array([2, 10, 50, 100, 200, 300, 500, 700, 1000, 1500, 2000, 2500])
-        planck_power = np.array([1000, 800, 600, 400, 200, 150, 100, 80, 60, 40, 30, 25])
-        planck_errors = planck_power * 0.1  # 10% errors for demonstration
+        # Add φ-geometric peak overlay using the new geometric layer
+        if FIRM_AVAILABLE:
+            try:
+                # Get φ-geometric peak overlay data
+                l_range = (int(multipoles[0]), int(multipoles[-1]))
+                overlay_data = get_peak_overlay_for_figure(l_range)
+                
+                peak_positions = overlay_data['peaks']
+                k_decomp = overlay_data['k_decomposition']
+                series_name = overlay_data['series_name']
+                provenance_hash = overlay_data['provenance_hash']
+                
+                # Plot peak markers
+                for i, peak_ell in enumerate(peak_positions):
+                    if peak_ell <= multipoles[-1]:
+                        idx = np.argmin(np.abs(multipoles - peak_ell))
+                        peak_amplitude = theoretical_power[idx]
+                        
+                        # Vertical line
+                        ax.axvline(x=peak_ell, color='gold', alpha=0.4, linestyle='--',
+                                  label=f'φ-geometric peaks ({series_name})' if i == 0 else "")
+                        
+                        # Peak marker
+                        ax.plot(peak_ell, peak_amplitude, 'o', color='gold', 
+                               markersize=8, zorder=15, markeredgecolor='darkorange')
+                        
+                        # Annotation
+                        ax.annotate(f'ℓ{i} = {int(peak_ell)}', 
+                                   xy=(peak_ell, peak_amplitude),
+                                   xytext=(10, 10), textcoords='offset points',
+                                   fontsize=9, alpha=0.8, color='darkorange',
+                                   bbox=dict(boxstyle='round,pad=0.2', facecolor='wheat', alpha=0.7))
+                
+                # Add k-decomposition annotation
+                k_annotation = PHI_GEOMETRIC_LAYER.format_k_annotation(k_decomp)
+                ax.text(0.02, 0.98, f"k-Decomposition:\n{k_annotation}\nProvenance: {provenance_hash[:8]}...", 
+                       transform=ax.transAxes, fontsize=8, verticalalignment='top',
+                       bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.8))
+                
+            except Exception as e:
+                print(f"⚠️  φ-geometric overlay failed: {e}")
+                # Fallback to simple peak estimation
+                try:
+                    window = (multipoles >= 80) & (multipoles <= 500)
+                    l1 = float(multipoles[window][np.argmax(theoretical_power[window])])
+                    peak_positions = [l1 * (self.phi ** n) for n in range(3)]
+                    for i, peak_ell in enumerate(peak_positions):
+                        if peak_ell <= multipoles[-1]:
+                            idx = np.argmin(np.abs(multipoles - peak_ell))
+                            peak_amplitude = theoretical_power[idx]
+                            ax.axvline(x=peak_ell, color='orange', alpha=0.3, linestyle='--')
+                            ax.plot(peak_ell, peak_amplitude, 'o', color='orange', markersize=6)
+                except Exception as fallback_error:
+                    print(f"⚠️  Fallback peak estimation also failed: {fallback_error}")
+                    # Skip peak overlay entirely
         
-        ax.errorbar(planck_ell, planck_power, yerr=planck_errors,
-                   fmt='o', color='blue', markersize=6, capsize=3,
-                   label='Planck 2018 Observations', zorder=5)
+        # No simulated observational points inside theory generator.
+        # Observational overlays must be added only in validation context.
         
         # Formatting
         ax.set_xscale('log')
         ax.set_yscale('log')
         ax.set_xlabel('Multipole ℓ', fontsize=14)
-        ax.set_ylabel('D_ℓ = ℓ(ℓ+1)C_ℓ/(2π) [μK²]', fontsize=14)
-        ax.set_title('CMB Temperature Power Spectrum: FIRM vs Planck 2018', fontsize=16, pad=20)
+        ax.set_ylabel('D_ℓ = ℓ(ℓ+1)C_ℓ/(2π) [theory units]', fontsize=14)
+        ax.set_title('CMB Temperature Power Spectrum: FIRM φ-Theory', fontsize=16, pad=20)
         
-        # Add φ-harmonic peak series annotation
-        peak_series_text = f"φ-Harmonic Peak Series: ℓ = 220 × φⁿ\nφ = {self.phi:.6f}"
-        ax.text(0.02, 0.98, peak_series_text, transform=ax.transAxes,
-               fontsize=12, verticalalignment='top',
-               bbox=dict(boxstyle='round,pad=0.5', facecolor='lightblue', alpha=0.8))
+        # φ-harmonic peak series annotation is now handled within the overlay section above
+        # This avoids duplication and ensures consistency with the geometric layer
         
         # Add ex nihilo provenance annotation
         provenance_text = "FIRM Ex Nihilo Generation:\n• Zero empirical inputs\n• Pure φ-mathematics\n• Grace Operator fixed points\n• Complete provenance chain"
@@ -192,7 +192,15 @@ class CMBPlanckTTComparison:
         ax.legend(loc='upper right', fontsize=12)
         ax.grid(True, alpha=0.3)
         ax.set_xlim(2, 3000)
-        ax.set_ylim(1, 2000)
+        # Dynamic y-limits from the theory spectrum to keep the line visible across datasets
+        pos = theoretical_power[theoretical_power > 0]
+        if pos.size > 0:
+            y_min = max(float(np.min(pos)) * 0.5, 1e-6)
+            y_max = float(np.max(pos)) * 1.5
+            if y_max / y_min < 10:
+                y_min = max(y_min * 0.1, 1e-6)
+                y_max = y_max * 10
+            ax.set_ylim(y_min, y_max)
         
         # Tight layout and save
         plt.tight_layout()

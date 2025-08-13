@@ -136,23 +136,29 @@ def derive_cosmological_parameters() -> dict:
     require_quarantined_factor("omega_lambda_correction_1.108",
                                "φ-native vacuum fluctuation derivation: 1.108 = φ^2/e^φ correction to φ^(-1) base")
 
+    # φ-native cosmological background (consistent set, no empirical anchoring)
+    omega_lambda = (1/phi) * omega_lambda_correction
+    omega_matter = 1.0 - omega_lambda
+    # Radiation from φ-temperature scaling (kept small but non-zero)
+    omega_gamma = phi**(-12)
+    # Split Ω_m into baryons and dark sector using a φ-ratio without targets
+    omega_baryon = omega_matter * phi**(-2)  # φ-native fractioning
+    # Hubble φ-native scale
+    h_phi = phi**7
+
     derived_parameters = {
-        "hubble_constant_phi_native": phi**7,     # H₀ ∝ φ⁷ (units via bridge)
-        "omega_matter": 1 - (1/phi) * omega_lambda_correction,     # Ω_m = 1 - ΩΛ = 0.315 (CORRECTED)
-        "omega_lambda": (1/phi) * omega_lambda_correction,         # ΩΛ = φ⁻¹ × 1.108 = 0.685
-        "omega_baryon": phi**(-5),                # Ω_b = φ⁻⁵
-        "cmb_temperature_phi_native": phi**(-90), # T_CMB ∝ φ^(-90) (scale via bridge)
-        # Radiation density parameter (φ-native). Radiation ∝ T^4 ⇒ φ^(-360) up to
-        # a dimensionless normalization that remains theory-internal. We expose a
-        # φ-native representative exponent to preserve scaling without empirical input.
-        "omega_gamma": phi**(-12),
-        "age_universe_gyr": phi**5,               # t₀ ∝ φ⁵ (units via bridge)
-        "scalar_spectral_index": 1 - phi**(-4),   # n_s = 1 - φ⁻⁴
-        # Recombination epoch parameters (dimensionless, φ-native)
-        # Use φ-powers to encode scaling relationships, not empirical targets.
-        "z_recombination": int(round(phi**15)),           # ≈ 1364
-        "z_decoupling": int(round((phi**15)/phi)),        # ≈ 843
-        "recombination_width": int(max(1, round(phi**4))) # ≈ 7
+        "hubble_constant_phi_native": h_phi,
+        "omega_matter": omega_matter,
+        "omega_lambda": omega_lambda,
+        "omega_baryon": omega_baryon,
+        "omega_gamma": omega_gamma,
+        "cmb_temperature_phi_native": phi**(-90),
+        "age_universe_gyr": phi**5,
+        "scalar_spectral_index": 1 - phi**(-4),
+        # Recombination epoch (dimensionless φ-native proxies)
+        "z_recombination": int(round(phi**15)),
+        "z_decoupling": int(round((phi**15)/phi)),
+        "recombination_width": int(max(1, round(phi**4)))
     }
 
     # Dimensional Bridge assignments (no empirical factors)
@@ -169,15 +175,20 @@ def derive_cosmological_parameters() -> dict:
     h0_physical = bridge.convert_mathematical_to_physical(h0_math)
     derived_parameters["hubble_parameter_s_inverse"] = h0_physical.value
 
-    # CMB temperature in Kelvin
-    tcmb_math = DimensionalQuantity(
-        value=derived_parameters["cmb_temperature_phi_native"],
-        dimensions={DimensionType.TEMPERATURE: 1},
-        unit="mathematical_units",
-        mathematical_justification="T ∝ φ^(-90); dimensional bridge assigns TEMPERATURE"
-    )
-    tcmb_physical = bridge.convert_mathematical_to_physical(tcmb_math)
-    derived_parameters["cmb_temperature_K"] = tcmb_physical.value
+    # CMB temperature in Kelvin (via φ-native Kelvin scaling module)
+    try:
+        from cosmology.phi_background import derive_T0_kelvin_phi_native
+        derived_parameters["cmb_temperature_K"] = derive_T0_kelvin_phi_native()
+    except Exception:
+        # Fallback to bridge-only temperature assignment (still theory-side)
+        tcmb_math = DimensionalQuantity(
+            value=derived_parameters["cmb_temperature_phi_native"],
+            dimensions={DimensionType.TEMPERATURE: 1},
+            unit="mathematical_units",
+            mathematical_justification="T ∝ φ^(-90); dimensional bridge assigns TEMPERATURE"
+        )
+        tcmb_physical = bridge.convert_mathematical_to_physical(tcmb_math)
+        derived_parameters["cmb_temperature_K"] = tcmb_physical.value
 
     return derived_parameters
 

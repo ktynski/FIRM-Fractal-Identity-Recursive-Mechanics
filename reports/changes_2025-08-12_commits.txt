@@ -1,0 +1,8 @@
+2025-08-12 02:29:15 -0400\tCOMMIT\t06dbc46\tKristin\tCMB TT: regenerate using full pipeline (no fallback), correct Dl normalization; update arXiv and Pages
+2025-08-12 01:09:40 -0400\tCOMMIT\tc42b955\tKristin\tPublish updates to GitHub and GitHub Pages (docs/)
+2025-08-12 00:47:10 -0400\tCOMMIT\tb741d76\tKristin\tPages: meta (OG/Twitter/JSON-LD), sticky header, lazy-load, FAQ, reproduce, BibTeX, analytics)
+2025-08-12 00:25:53 -0400\tCOMMIT\t81d1d53\tKristin\tPages: add responsive figure gallery with captions and anchors; copy key figures to docs/assets
+2025-08-12 00:19:07 -0400\tCOMMIT\tf1458f0\tKristin\tEmbed overview video (YouTube) on Pages and add link in README
+2025-08-12 00:06:01 -0400\tCOMMIT\tdf5550c\tKristin\tREADME: HN-optimized landing (links to PDF and Pages, inb4 FAQ, zero-fitting/provenance/falsifiability)
+2025-08-12 00:03:38 -0400\tCOMMIT\td81695f\tKristin\tAdd GitHub Pages landing (docs/) with embedded paper and video placeholder; copy PDF to docs/paper
+2025-08-12 00:01:46 -0400\tCOMMIT\t20742fd\tKristin\tUpdate repository URLs to https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics across docs and paper

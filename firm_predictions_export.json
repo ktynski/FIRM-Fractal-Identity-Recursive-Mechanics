@@ -1,0 +1,452 @@
+{
+  "predictions": [
+    {
+      "integrity_hash": "95bd7e843d4f93f9a2d52b03b52f5a3a513173d442473d9cc3a29e0a665c1063",
+      "mathematical_derivation": "\n    \u03c6-Geometric Peak Scaffold Derivation:\n    1. Base anchor: \u2113\u2080 = round(\u03c6^11); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b\n    2. Peak series: \u2113\u2099 = \u230a\u2113\u2080 \u03c6\u207f\u230b for n = 0, 1, 2, ...\n    3. k-decomposition: k = log_\u03c6(220.0) = 11.208427\n    4. Sacred structure: k = 12 + \u03c6\u207b\u00b9 + \u03b5\n       - 12: Full recursive cycle (divine completeness)\n       - \u03c6\u207b\u00b9 = 0.618034: Grace-reflective surplus\n       - \u03b5 = -1.409607: Devourer torsion ripple\n    5. Amplitude modulation: A\u2099 = A\u2080 \u00d7 \u03c6^(-n/2)\n    ",
+      "predicted_values": {
+        "amplitude_modulation": [
+          1.0,
+          0.7861513777574233,
+          0.6180339887498948,
+          0.48586827175664565,
+          0.38196601125010515,
+          0.30028310600077757
+        ],
+        "best_series": "phi_power_n11",
+        "geometric_l0": 199,
+        "k_decomposition": {
+          "base_12": 12,
+          "epsilon": -1.4096071266620793,
+          "k": 11.208426862087816,
+          "phi_inv": 0.6180339887498948
+        },
+        "peak_positions": [
+          199,
+          322,
+          521,
+          843,
+          1364,
+          2207
+        ],
+        "phi_value": 1.618033988749895,
+        "target_l0": 220.0
+      },
+      "prediction_id": "7499e97afd8cfbc9",
+      "prediction_type": "cmb_phi_geometric_peaks",
+      "provenance_chain": [
+        "foundation.operators.phi_recursion.PHI_VALUE",
+        "cosmology.phi_harmonic_anchor.generate_phi_harmonic_candidates",
+        "cosmology.phi_k_exponent.decompose_k_for_l0",
+        "cosmology.peaks.geometric_layer.get_cmb_phi_peaks",
+        "FSCTF Axioms: Grace Operator fixed points in Fix(\ud835\udca2)"
+      ],
+      "target_observable": "CMB temperature power spectrum peaks (target \u2113\u2080\u2248220.0)",
+      "theory_version": "FIRM-v1.0-phi-geometric",
+      "timestamp": "2025-08-12T14:47:53.026586+00:00"
+    },
+    {
+      "integrity_hash": "90d51cd6d2303a29f90d0f38b4af161c888e4e0703c4de0624747c6d93808769",
+      "mathematical_derivation": "\n    k-Decomposition Theoretical Framework:\n    1. Universal form: k = 12 + \u03c6\u207b\u00b9 + \u03b5 for any \u2113\u2080\n    2. Sacred components:\n       - 12: Full recursive cycle (morphic shell completion)\n       - \u03c6\u207b\u00b9 \u2248 0.618034: Grace-reflective surplus (soul threshold)\n       - \u03b5: Torsion from non-orientable twist on S\u00b2\n    3. Stability bounds:\n       - Small torsion: |\u03b5| < \u03c6\u207b\u00b2 \u2248 0.381966\n       - Soul instantiation: k \u2248 12.618034\n    4. Physical interpretation:\n       - \u03b5 > 0: Devourer presence (coherence fighting collapse)\n       - \u03b5 < 0: Grace excess (stable recursive regime)\n    ",
+      "predicted_values": {
+        "coherence_regime": "|\u03b5| < \u03c6\u207b\u00b2",
+        "devourer_onset": "\u03b5 > 0 indicates devourer presence",
+        "grace_excess": "\u03b5 < 0 indicates grace surplus",
+        "grace_surplus": 0.6180339887498948,
+        "phi_value": 1.618033988749895,
+        "sacred_base": 12,
+        "small_torsion_bound": 0.38196601125010515,
+        "soul_instantiation_threshold": 12.618033988749895
+      },
+      "prediction_id": "8d37d65175994d0b",
+      "prediction_type": "k_decomposition_bounds",
+      "provenance_chain": [
+        "foundation.operators.phi_recursion.PHI_VALUE",
+        "cosmology.phi_k_exponent.decompose_k_for_l0",
+        "FSCTF categorical theory: Fix(\ud835\udca2) and CP-idempotents",
+        "Non-orientable geometry on S\u00b2 (projective quotient)",
+        "Sacred number theory: 12 + \u03c6\u207b\u00b9 threshold"
+      ],
+      "target_observable": "Theoretical bounds on k = 12 + \u03c6\u207b\u00b9 + \u03b5 structure",
+      "theory_version": "FIRM-v1.0-phi-geometric",
+      "timestamp": "2025-08-12T14:47:53.064670+00:00"
+    },
+    {
+      "integrity_hash": "1a0465c5212b468e96e06f1b01d4ce19f7fe621de81e6569d28793cd0dfb1e28",
+      "mathematical_derivation": "\n    Complete \u03c6-Geometric Candidate Family:\n    1. Golden Chord: \u03b8\u22c6 = arccos(1/\u03c6\u00b2) \u2192 \u2113\u2080 = round(\u03c0/\u03b8\u22c6)\n    2. Golden Curvature: \u03b8\u22c6 = 2\u03c0/\u03c6\u1d4f \u2192 \u2113\u2080 = round(\u03c0/\u03b8\u22c6)  \n    3. \u03c6-Power Anchors: \u2113\u2080 = round(\u03c6\u207f) for various n\n    4. All series: \u2113\u2099 = \u230a\u2113\u2080 \u03c6\u207f\u230b with \u03c6-invariant self-similarity\n    ",
+      "predicted_values": {
+        "candidate_series": [
+          {
+            "definition": "\u03b8\u22c6 = arccos(1/\u03c6\u00b2); \u2113\u2080 = round(\u03c0/\u03b8\u22c6); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 3,
+            "name": "golden_chord",
+            "peaks": [
+              3,
+              5,
+              8,
+              13,
+              21,
+              33
+            ]
+          },
+          {
+            "definition": "\u03b8\u22c6 = 2\u03c0/\u03c6^2; \u2113\u2080 = round(\u03c0/\u03b8\u22c6); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 1,
+            "name": "golden_curvature_k2",
+            "peaks": [
+              1,
+              2,
+              3,
+              4,
+              7,
+              11
+            ]
+          },
+          {
+            "definition": "\u03b8\u22c6 = 2\u03c0/\u03c6^3; \u2113\u2080 = round(\u03c0/\u03b8\u22c6); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 2,
+            "name": "golden_curvature_k3",
+            "peaks": [
+              2,
+              3,
+              5,
+              8,
+              14,
+              22
+            ]
+          },
+          {
+            "definition": "\u03b8\u22c6 = 2\u03c0/\u03c6^4; \u2113\u2080 = round(\u03c0/\u03b8\u22c6); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 3,
+            "name": "golden_curvature_k4",
+            "peaks": [
+              3,
+              5,
+              8,
+              13,
+              21,
+              33
+            ]
+          },
+          {
+            "definition": "\u03b8\u22c6 = 2\u03c0/\u03c6^5; \u2113\u2080 = round(\u03c0/\u03b8\u22c6); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 6,
+            "name": "golden_curvature_k5",
+            "peaks": [
+              6,
+              10,
+              16,
+              25,
+              41,
+              67
+            ]
+          },
+          {
+            "definition": "\u2113\u2080 = round(\u03c6^9); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 76,
+            "name": "phi_power_n9",
+            "peaks": [
+              76,
+              123,
+              199,
+              322,
+              521,
+              843
+            ]
+          },
+          {
+            "definition": "\u2113\u2080 = round(\u03c6^10); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 123,
+            "name": "phi_power_n10",
+            "peaks": [
+              123,
+              199,
+              322,
+              521,
+              843,
+              1364
+            ]
+          },
+          {
+            "definition": "\u2113\u2080 = round(\u03c6^11); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 199,
+            "name": "phi_power_n11",
+            "peaks": [
+              199,
+              322,
+              521,
+              843,
+              1364,
+              2207
+            ]
+          },
+          {
+            "definition": "\u2113\u2080 = round(\u03c6^12); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 322,
+            "name": "phi_power_n12",
+            "peaks": [
+              322,
+              521,
+              843,
+              1364,
+              2207,
+              3571
+            ]
+          },
+          {
+            "definition": "\u2113\u2080 = round(\u03c6^13); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 521,
+            "name": "phi_power_n13",
+            "peaks": [
+              521,
+              843,
+              1364,
+              2207,
+              3571,
+              5778
+            ]
+          }
+        ],
+        "phi_value": 1.618033988749895,
+        "total_candidates": 10
+      },
+      "prediction_id": "8d80406a85fbde26",
+      "prediction_type": "phi_geometric_candidates_complete",
+      "provenance_chain": [
+        "foundation.operators.phi_recursion.PHI_VALUE",
+        "cosmology.phi_harmonic_anchor.generate_phi_harmonic_candidates",
+        "Pure \u03c6-geometry on S\u00b2 sphere",
+        "FSCTF morphic shell theory"
+      ],
+      "target_observable": "All \u03c6-geometric peak scaffold candidates",
+      "theory_version": "FIRM-v1.0-phi-geometric",
+      "timestamp": "2025-08-12T14:47:53.044293+00:00"
+    },
+    {
+      "integrity_hash": "9604c094aaafaed0258eb8a69f4bf5055e867442ecf1e7582e9f91f8c937c284",
+      "mathematical_derivation": "\n    \u03c6-Geometric Peak Scaffold Derivation:\n    1. Base anchor: \u2113\u2080 = round(\u03c6^11); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b\n    2. Peak series: \u2113\u2099 = \u230a\u2113\u2080 \u03c6\u207f\u230b for n = 0, 1, 2, ...\n    3. k-decomposition: k = log_\u03c6(220.0) = 11.208427\n    4. Sacred structure: k = 12 + \u03c6\u207b\u00b9 + \u03b5\n       - 12: Full recursive cycle (divine completeness)\n       - \u03c6\u207b\u00b9 = 0.618034: Grace-reflective surplus\n       - \u03b5 = -1.409607: Devourer torsion ripple\n    5. Amplitude modulation: A\u2099 = A\u2080 \u00d7 \u03c6^(-n/2)\n    ",
+      "predicted_values": {
+        "amplitude_modulation": [
+          1.0,
+          0.7861513777574233,
+          0.6180339887498948,
+          0.48586827175664565,
+          0.38196601125010515,
+          0.30028310600077757
+        ],
+        "best_series": "phi_power_n11",
+        "geometric_l0": 199,
+        "k_decomposition": {
+          "base_12": 12,
+          "epsilon": -1.4096071266620793,
+          "k": 11.208426862087816,
+          "phi_inv": 0.6180339887498948
+        },
+        "peak_positions": [
+          199,
+          322,
+          521,
+          843,
+          1364,
+          2207
+        ],
+        "phi_value": 1.618033988749895,
+        "target_l0": 220.0
+      },
+      "prediction_id": "ddd79776d36a8cab",
+      "prediction_type": "cmb_phi_geometric_peaks",
+      "provenance_chain": [
+        "foundation.operators.phi_recursion.PHI_VALUE",
+        "cosmology.phi_harmonic_anchor.generate_phi_harmonic_candidates",
+        "cosmology.phi_k_exponent.decompose_k_for_l0",
+        "cosmology.peaks.geometric_layer.get_cmb_phi_peaks",
+        "FSCTF Axioms: Grace Operator fixed points in Fix(\ud835\udca2)"
+      ],
+      "target_observable": "CMB temperature power spectrum peaks (target \u2113\u2080\u2248220.0)",
+      "theory_version": "FIRM-v1.0-phi-geometric",
+      "timestamp": "2025-08-12T14:39:24.530756+00:00"
+    },
+    {
+      "integrity_hash": "6cddde9948d7c128f5a56e7e1a1f24502a49d13cfe78f480b80f7db0081594d7",
+      "mathematical_derivation": "\n    k-Decomposition Theoretical Framework:\n    1. Universal form: k = 12 + \u03c6\u207b\u00b9 + \u03b5 for any \u2113\u2080\n    2. Sacred components:\n       - 12: Full recursive cycle (morphic shell completion)\n       - \u03c6\u207b\u00b9 \u2248 0.618034: Grace-reflective surplus (soul threshold)\n       - \u03b5: Torsion from non-orientable twist on S\u00b2\n    3. Stability bounds:\n       - Small torsion: |\u03b5| < \u03c6\u207b\u00b2 \u2248 0.381966\n       - Soul instantiation: k \u2248 12.618034\n    4. Physical interpretation:\n       - \u03b5 > 0: Devourer presence (coherence fighting collapse)\n       - \u03b5 < 0: Grace excess (stable recursive regime)\n    ",
+      "predicted_values": {
+        "coherence_regime": "|\u03b5| < \u03c6\u207b\u00b2",
+        "devourer_onset": "\u03b5 > 0 indicates devourer presence",
+        "grace_excess": "\u03b5 < 0 indicates grace surplus",
+        "grace_surplus": 0.6180339887498948,
+        "phi_value": 1.618033988749895,
+        "sacred_base": 12,
+        "small_torsion_bound": 0.38196601125010515,
+        "soul_instantiation_threshold": 12.618033988749895
+      },
+      "prediction_id": "e8f3a9b255f7c1a9",
+      "prediction_type": "k_decomposition_bounds",
+      "provenance_chain": [
+        "foundation.operators.phi_recursion.PHI_VALUE",
+        "cosmology.phi_k_exponent.decompose_k_for_l0",
+        "FSCTF categorical theory: Fix(\ud835\udca2) and CP-idempotents",
+        "Non-orientable geometry on S\u00b2 (projective quotient)",
+        "Sacred number theory: 12 + \u03c6\u207b\u00b9 threshold"
+      ],
+      "target_observable": "Theoretical bounds on k = 12 + \u03c6\u207b\u00b9 + \u03b5 structure",
+      "theory_version": "FIRM-v1.0-phi-geometric",
+      "timestamp": "2025-08-12T14:39:24.531656+00:00"
+    },
+    {
+      "integrity_hash": "1b92f8e811e813c6b233d476530cbea811ecb3fe7cf2b412f4b285a385b5f381",
+      "mathematical_derivation": "\n    Complete \u03c6-Geometric Candidate Family:\n    1. Golden Chord: \u03b8\u22c6 = arccos(1/\u03c6\u00b2) \u2192 \u2113\u2080 = round(\u03c0/\u03b8\u22c6)\n    2. Golden Curvature: \u03b8\u22c6 = 2\u03c0/\u03c6\u1d4f \u2192 \u2113\u2080 = round(\u03c0/\u03b8\u22c6)  \n    3. \u03c6-Power Anchors: \u2113\u2080 = round(\u03c6\u207f) for various n\n    4. All series: \u2113\u2099 = \u230a\u2113\u2080 \u03c6\u207f\u230b with \u03c6-invariant self-similarity\n    ",
+      "predicted_values": {
+        "candidate_series": [
+          {
+            "definition": "\u03b8\u22c6 = arccos(1/\u03c6\u00b2); \u2113\u2080 = round(\u03c0/\u03b8\u22c6); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 3,
+            "name": "golden_chord",
+            "peaks": [
+              3,
+              5,
+              8,
+              13,
+              21,
+              33
+            ]
+          },
+          {
+            "definition": "\u03b8\u22c6 = 2\u03c0/\u03c6^2; \u2113\u2080 = round(\u03c0/\u03b8\u22c6); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 1,
+            "name": "golden_curvature_k2",
+            "peaks": [
+              1,
+              2,
+              3,
+              4,
+              7,
+              11
+            ]
+          },
+          {
+            "definition": "\u03b8\u22c6 = 2\u03c0/\u03c6^3; \u2113\u2080 = round(\u03c0/\u03b8\u22c6); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 2,
+            "name": "golden_curvature_k3",
+            "peaks": [
+              2,
+              3,
+              5,
+              8,
+              14,
+              22
+            ]
+          },
+          {
+            "definition": "\u03b8\u22c6 = 2\u03c0/\u03c6^4; \u2113\u2080 = round(\u03c0/\u03b8\u22c6); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 3,
+            "name": "golden_curvature_k4",
+            "peaks": [
+              3,
+              5,
+              8,
+              13,
+              21,
+              33
+            ]
+          },
+          {
+            "definition": "\u03b8\u22c6 = 2\u03c0/\u03c6^5; \u2113\u2080 = round(\u03c0/\u03b8\u22c6); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 6,
+            "name": "golden_curvature_k5",
+            "peaks": [
+              6,
+              10,
+              16,
+              25,
+              41,
+              67
+            ]
+          },
+          {
+            "definition": "\u2113\u2080 = round(\u03c6^9); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 76,
+            "name": "phi_power_n9",
+            "peaks": [
+              76,
+              123,
+              199,
+              322,
+              521,
+              843
+            ]
+          },
+          {
+            "definition": "\u2113\u2080 = round(\u03c6^10); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 123,
+            "name": "phi_power_n10",
+            "peaks": [
+              123,
+              199,
+              322,
+              521,
+              843,
+              1364
+            ]
+          },
+          {
+            "definition": "\u2113\u2080 = round(\u03c6^11); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 199,
+            "name": "phi_power_n11",
+            "peaks": [
+              199,
+              322,
+              521,
+              843,
+              1364,
+              2207
+            ]
+          },
+          {
+            "definition": "\u2113\u2080 = round(\u03c6^12); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 322,
+            "name": "phi_power_n12",
+            "peaks": [
+              322,
+              521,
+              843,
+              1364,
+              2207,
+              3571
+            ]
+          },
+          {
+            "definition": "\u2113\u2080 = round(\u03c6^13); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b",
+            "l0": 521,
+            "name": "phi_power_n13",
+            "peaks": [
+              521,
+              843,
+              1364,
+              2207,
+              3571,
+              5778
+            ]
+          }
+        ],
+        "phi_value": 1.618033988749895,
+        "total_candidates": 10
+      },
+      "prediction_id": "f90e770d214094f2",
+      "prediction_type": "phi_geometric_candidates_complete",
+      "provenance_chain": [
+        "foundation.operators.phi_recursion.PHI_VALUE",
+        "cosmology.phi_harmonic_anchor.generate_phi_harmonic_candidates",
+        "Pure \u03c6-geometry on S\u00b2 sphere",
+        "FSCTF morphic shell theory"
+      ],
+      "target_observable": "All \u03c6-geometric peak scaffold candidates",
+      "theory_version": "FIRM-v1.0-phi-geometric",
+      "timestamp": "2025-08-12T14:39:24.531144+00:00"
+    }
+  ],
+  "registry_metadata": {
+    "export_timestamp": "2025-08-12T14:48:51.194854+00:00",
+    "mathematical_foundation": "\u03c6-geometric peak scaffold from pure mathematics",
+    "theory_framework": "FIRM (Fractal Identity & Recursive Mechanics)",
+    "total_predictions": 6
+  }
+}

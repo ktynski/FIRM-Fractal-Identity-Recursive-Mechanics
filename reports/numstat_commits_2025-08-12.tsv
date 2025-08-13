@@ -1,0 +1,56 @@
+COMMIT a046dcd08675538e2f139fce56417cdfeec1f8fc 2025-08-12 19:38:04 -0400
+487	0	constants/bao_scale_derivation.py
+454	0	constants/effective_neutrino_species.py
+16	21	constants/fine_structure_alpha.py
+84	182	constants/hubble_constant_derivation.py
+404	0	constants/optical_depth_derivation.py
+476	0	constants/scalar_spectral_index.py
+57	32	cosmology/cmb_power_spectrum.py
+4	11	cosmology/ex_nihilo_pipeline.py
+7	7	structures/particle_spectrum.py
+252	0	testing/constants/test_new_cosmological_parameters.py
+
+COMMIT 06dbc46d48ab0b7445d79890c9d70c0c7e25d5af 2025-08-12 02:29:15 -0400
+-	-	arxiv_paper/FIRM_FINAL_SUBMISSION_arxiv_tmp/figures/planck_tt_binned.png
+-	-	docs/assets/planck_tt_binned.png
+-	-	figures/planck_tt_binned.png
+
+COMMIT c42b955a2f1082d888f50f946f76d5b7a2de35c1 2025-08-12 01:09:40 -0400
+-	-	.DS_Store
+-	-	arxiv_paper/FIRM_FINAL_SUBMISSION/.DS_Store
+-	-	arxiv_paper/screenvideo.mp4
+
+COMMIT b741d76eb3609ead82b9341b5304282cc3025163 2025-08-12 00:47:10 -0400
+94	13	docs/index.html
+
+COMMIT 81d1d535c56c35bc0543e45ab2fad544844f2e7b 2025-08-12 00:25:53 -0400
+-	-	docs/assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png
+-	-	docs/assets/alpha_inverse_comparison.png
+-	-	docs/assets/bao_comparison.png
+-	-	docs/assets/dimensional_bridge_mapping.png
+-	-	docs/assets/einstein_equations_derivation_chain.png
+-	-	docs/assets/grace_operator_fixed_point_convergence.png
+-	-	docs/assets/inflation_evolution.png
+-	-	docs/assets/phi_recursion_rate_verification.png
+-	-	docs/assets/planck_tt_binned.png
+-	-	docs/assets/spacetime_metric_emergence.png
+61	12	docs/index.html
+
+COMMIT f1458f038b2f19ecf8187ed1a10fd0d5df429178 2025-08-12 00:19:07 -0400
+1	0	README.md
+3	2	docs/index.html
+
+COMMIT df5550cb089baf7263fd03649361c13d0d473380 2025-08-12 00:06:01 -0400
+16	2	README.md
+
+COMMIT d81695ff2e00e0bb0f7ad8e5a2e259e267dae478 2025-08-12 00:03:38 -0400
+82	0	docs/index.html
+-	-	docs/paper/FIRM_Main.pdf
+
+COMMIT 20742fd1aa4569fe4fa32f598456db75ba078214 2025-08-12 00:01:46 -0400
+3	3	README.md
+1	1	SCIENTIFIC_INTEGRITY.md
+3	3	arxiv_paper/FIRM_FINAL_SUBMISSION/main.tex
+2	2	arxiv_paper/FIRM_FINAL_SUBMISSION/references/references.bib
+1	1	arxiv_paper/README.md
+4	4	pyproject.toml
