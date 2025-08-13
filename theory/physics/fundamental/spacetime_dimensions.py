@@ -61,7 +61,7 @@ import cmath
 
 from foundation.operators.grace_operator import GRACE_OPERATOR
 from foundation.operators.phi_recursion import PHI_VALUE
-from structures import register_physical_structure
+from foundation.registry import register_physical_structure
 
 class SpacetimeSignature(Enum):
     """Possible spacetime metric signatures"""

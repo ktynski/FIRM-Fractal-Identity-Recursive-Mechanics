@@ -61,7 +61,7 @@ import cmath
 
 from foundation.operators.phi_recursion import PHI_VALUE, PHI_RECURSION
 from foundation.categories.fixed_point_category import PHYSICAL_REALITY
-from structures import register_physical_structure
+from foundation.registry import register_physical_structure
 
 class GaugeGroup(Enum):
     """Standard Model and unification gauge groups"""

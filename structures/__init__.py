@@ -34,21 +34,8 @@ Academic integrity: Complete provenance documented
 
 from typing import Any, Dict
 
-# Local registry for discovered/constructed physical structures
-_STRUCTURE_REGISTRY: Dict[str, Any] = {}
-
-def register_physical_structure(name: str, obj: Any) -> None:
-    """Register a named physical structure instance for discovery and provenance.
-
-    Args:
-        name: Canonical structure name (e.g., "spacetime", "gauge_groups").
-        obj: The structure instance to register.
-    """
-    _STRUCTURE_REGISTRY[name] = obj
-
-def get_physical_structure(name: str) -> Any:
-    """Retrieve a registered physical structure by name."""
-    return _STRUCTURE_REGISTRY.get(name)
+# Re-export registry functions from foundation
+from foundation.registry import register_physical_structure, get_physical_structure
 
 # Re-export primary classes and singleton instances  
 from .dimensional_bridge import DIMENSIONAL_BRIDGE, DimensionalBridge

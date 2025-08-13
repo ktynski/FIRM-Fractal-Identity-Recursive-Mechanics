@@ -66,6 +66,7 @@ CRYPTOGRAPHIC_SEALING_ENABLED = True
 from .axioms import *
 from .operators import *
 from .categories import *
+from . import registry
 
 __all__ = [
     "__version__",
