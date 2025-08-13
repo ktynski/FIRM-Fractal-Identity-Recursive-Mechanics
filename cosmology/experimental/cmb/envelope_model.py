@@ -1,3 +1,5 @@
+from .. import experimental_notice as _exp
+_exp("cmb.envelope_model")
 """
 CMB Envelope Model: φ-Native Morphic Boltzmann Hierarchy
 

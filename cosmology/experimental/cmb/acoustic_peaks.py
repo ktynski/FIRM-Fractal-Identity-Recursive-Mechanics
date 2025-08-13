@@ -1,3 +1,5 @@
+from .. import experimental_notice as _exp
+_exp("cmb.acoustic_peaks")
 #!/usr/bin/env python3
 """
 Complete CMB Acoustic Peak Derivation from FSCTF φ-Shell Geometry

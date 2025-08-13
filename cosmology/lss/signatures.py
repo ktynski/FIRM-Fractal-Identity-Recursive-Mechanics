@@ -790,6 +790,9 @@ class FSCTFLSSSignaturesComplete:
 # Create singleton instance
 FSCTF_LSS_SIGNATURES = FSCTFLSSSignaturesComplete()
 
+# Back-compat alias
+LSS_SIGNATURES = FSCTF_LSS_SIGNATURES
+
 
 def main():
     """Demonstrate complete FSCTF LSS signatures derivation framework"""

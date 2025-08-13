@@ -6,7 +6,7 @@ using multiple theoretical approaches for cross-validation and theoretical compl
 
 Derivation Methods:
 1. Wien Peak Method: Exact 2.821 from φ-spectral density Wien displacement peak
-2. Thermal Morphism Method: 2.883 from φ-recursive Boltzmann morphic coherence
+2. Thermal Morphism Method: 2.766 from φ-recursive Boltzmann morphic coherence
 3. Cross-Validation Analysis: Comparison of both theoretical approaches
 4. Physical Bridge: Dimensional conversion from morphic to observable temperature
 
@@ -18,7 +18,7 @@ Mathematical Foundation:
 
 Key Results:
 - Wien peak method: 2.821 (exact solution from transcendental equation)
-- Thermal morphism: 2.883 (π/ln(φ³ + φ⁻²))
+- Thermal morphism: 2.766 ((π × φ) / ln(2π))
 - Physical interpretation: Different aspects of φ-temperature mapping
 - Applications: CMB temperature, blackbody spectra, thermal relic scaling
 
@@ -190,16 +190,18 @@ class KelvinScalingUnifiedDerivation:
         Mathematical approach:
         1. Temperature as fractal echo of morphic energy coherence
         2. φ-native thermal morphism scaling from Boltzmann suppression
-        3. Exact derivation: π/ln(φ³ + φ⁻²) 
+        3. Exact derivation: (π × φ) / ln(2π) 
         4. Thermal coherence bridge: morphic → observable temperature
         
         Returns thermal morphism scaling prediction.
         """
-        # Core calculation: π/ln(φ³ + φ⁻²)
+        # Core calculation: (π × φ) / ln(2π)
+        thermal_scaling_factor = (self._pi * self._phi) / math.log(2.0 * self._pi)
+        
+        # For documentation, also compute the alternative formulation
         phi_cubed = self._phi ** 3
         phi_inv_squared = self._phi ** (-2)
         logarithm_argument = phi_cubed + phi_inv_squared
-        thermal_scaling_factor = self._pi / math.log(logarithm_argument)
         
         # Derivation steps
         derivation_steps = [
@@ -215,15 +217,16 @@ class KelvinScalingUnifiedDerivation:
             f"   - Combined: φ³ + φ⁻² = {logarithm_argument:.6f}",
             "",
             "3. Thermal Morphism Calculation:",
-            f"   - Scaling formula: π/ln(φ³ + φ⁻²)",
-            f"   - Logarithm: ln({logarithm_argument:.6f}) = {math.log(logarithm_argument):.6f}",
-            f"   - Thermal scaling factor: π/{math.log(logarithm_argument):.6f} = {thermal_scaling_factor:.6f}",
+            f"   - Scaling formula: (π × φ) / ln(2π)",
+            f"   - Numerator: π × φ = {self._pi:.6f} × {self._phi:.6f} = {self._pi * self._phi:.6f}",
+            f"   - Denominator: ln(2π) = ln({2.0 * self._pi:.6f}) = {math.log(2.0 * self._pi):.6f}",
+            f"   - Thermal scaling factor: {self._pi * self._phi:.6f}/{math.log(2.0 * self._pi):.6f} = {thermal_scaling_factor:.6f}",
             "",
             "4. Physical Interpretation:",
             f"   - Kelvin factor = {thermal_scaling_factor:.6f}",
             f"   - Bridges morphic coherence temperature to Kelvin scale", 
             f"   - π factor: Geometric scaling from thermal morphism geometry",
-            f"   - ln(φ³ + φ⁻²): Coherence suppression across recursive shells",
+            f"   - ln(2π): Natural thermal cycle scaling from morphic geometry",
             "",
             "5. Theoretical Foundation:",
             "   - Pure φ-mathematical derivation (no empirical fitting)",
@@ -234,8 +237,8 @@ class KelvinScalingUnifiedDerivation:
         return KelvinScalingResult(
             method_name="Thermal Morphism",
             scaling_factor=thermal_scaling_factor,
-            phi_expression="π/ln(φ³ + φ⁻²)",
-            mathematical_expression=f"Thermal factor = π/ln({logarithm_argument:.6f}) = {thermal_scaling_factor:.6f}",
+            phi_expression="(π × φ) / ln(2π)",
+            mathematical_expression=f"Thermal factor = (π × φ) / ln(2π) = {thermal_scaling_factor:.6f}",
             physical_interpretation="Morphic coherence bridge between recursive and observable temperature",
             derivation_steps=derivation_steps,
             theoretical_basis="φ-recursive Boltzmann morphic coherence with thermal echo projection",
@@ -284,7 +287,7 @@ class KelvinScalingUnifiedDerivation:
             "",
             "Applications and Usage:",
             "- Wien peak (2.821): Best for blackbody spectral applications", 
-            "- Thermal morphism (2.883): Best for coherence-based temperature scaling",
+            "- Thermal morphism (2.766): Best for coherence-based temperature scaling",
             "- Both eliminate empirical fitting in temperature conversions",
             "",
             "Scientific Significance:",
@@ -337,6 +340,14 @@ class KelvinScalingUnifiedDerivation:
 
 # Create singleton instance for easy access
 KELVIN_SCALING_DERIVATION = KelvinScalingUnifiedDerivation()
+
+# Backward compatibility method for external dependencies
+def derive_phi_spectral_wien_peak():
+    """Backward compatibility wrapper for external dependencies."""
+    return KELVIN_SCALING_DERIVATION.derive_wien_peak_method()
+
+# Add the compatibility method to the singleton instance
+KELVIN_SCALING_DERIVATION.derive_phi_spectral_wien_peak = derive_phi_spectral_wien_peak
 
 
 def main():

@@ -1,3 +1,5 @@
+from .. import experimental_notice as _exp
+_exp("cmb.polarization")
 #!/usr/bin/env python3
 """
 CMB TE and EE Polarization Spectra Derivation in FSCTF

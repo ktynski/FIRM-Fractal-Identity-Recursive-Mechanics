@@ -1,3 +1,5 @@
+from .. import experimental_notice as _exp
+_exp("cmb.field_integration")
 """
 CMB-Field Theory Integration: Connecting FIRM Lagrangian to Cosmological Observables
 
