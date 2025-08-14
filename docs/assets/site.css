@@ -17,7 +17,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
 .nav a:hover { color: var(--accent); }
 .brand { font-weight: 700; color: var(--text); }
 
-.hero { max-width: 1200px; margin: 20px auto; display: grid; grid-template-columns: 1fr 1fr 0.8fr; gap: 20px; padding: 0 16px; align-items: start; }
+.hero { max-width: 1200px; margin: 20px auto; display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; padding: 0 16px; align-items: center; }
 @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } }
 .card { background: var(--panel); border: 1px solid #262c39; border-radius: 8px; padding: 16px; }
 .card.compact { padding: 12px; }

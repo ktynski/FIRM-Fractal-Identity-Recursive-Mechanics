@@ -32,25 +32,20 @@
 
   <main>
     <section class="hero">
-      <div class="card compact">
-        <h1 style="margin-top:0; font-size:1.8rem;">Mathematics that compiles</h1>
+      <div class="card">
+        <h1>Mathematics that compiles</h1>
         <p class="subtle">We don't debate—we demonstrate. Every figure generated deterministically from code with full provenance.</p>
-        <div style="display:flex; gap:8px; margin-top:8px; flex-wrap:wrap;">
+        <div style="display:flex; gap:10px; margin-top:12px; flex-wrap:wrap;">
           <a class="cta" href="article.html">Read Article</a>
           <a class="cta secondary" href="#gallery">Gallery</a>
         </div>
       </div>
-      <div class="card compact">
-        <h3 style="margin-top:0; font-size:1.2rem;">Evidence principles</h3>
-        <ul style="margin:8px 0; padding-left:16px; font-size:0.9rem;">
-          <li><b>Ex Nihilo</b>: Pure mathematics, zero empirical inputs</li>
-          <li><b>Provenance</b>: Full traceability for every result</li>
-          <li><b>Reproducible</b>: One command regenerates all</li>
-        </ul>
+      <div class="card">
+        <h3>Search & Browse</h3>
         <div class="controls">
           <div class="toolbar">
-            <input class="search" id="search" placeholder="Search figure names…" style="font-size:0.85rem;" />
-            <select class="select" id="sort" style="font-size:0.85rem;">
+            <input class="search" id="search" placeholder="Search figure names…" />
+            <select class="select" id="sort">
               <option value="name">Sort: Name</option>
               <option value="width">Sort: Width</option>
               <option value="height">Sort: Height</option>
@@ -58,14 +53,11 @@
             <span class="badge" id="countBadge">0</span>
           </div>
         </div>
-      </div>
-      <div class="card compact" style="text-align:center;">
-        <h3 style="margin-top:0; font-size:1rem; color:var(--accent);">Crown Jewel</h3>
-        <img src="figures/canonical_outputs/FIRM_CMB_Crown_Jewel_Ex_Nihilo.png" 
-             alt="FIRM CMB Crown Jewel - Ex Nihilo Reality" 
-             class="showcase-image"
-             style="max-height:140px; object-fit:contain;" />
-        <p style="font-size:0.8rem; color:var(--muted); margin:8px 0 0 0;">CMB Acoustic Peak Prediction</p>
+        <div style="margin-top:12px;">
+          <p class="subtle" style="font-size:0.9rem;">
+            <b>Ex Nihilo</b>: Pure mathematics • <b>Provenance</b>: Full traceability • <b>Reproducible</b>: One command regenerates all
+          </p>
+        </div>
       </div>
     </section>
 
