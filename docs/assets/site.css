@@ -260,6 +260,76 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
   padding: 0 1rem;
 }
 
+/* Nested axiom accordion styles */
+.axiom-foundations {
+  margin: 1rem 0;
+  border: 1px solid #3a4454;
+  border-radius: 8px;
+  background: rgba(26, 32, 44, 0.3);
+}
+
+.axiom-item {
+  border-bottom: 1px solid #3a4454;
+}
+
+.axiom-item:last-child {
+  border-bottom: none;
+}
+
+.axiom-header {
+  background: rgba(45, 55, 72, 0.5);
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.axiom-header:hover {
+  background: rgba(45, 55, 72, 0.7);
+}
+
+.axiom-header::after {
+  content: '▶';
+  color: var(--accent);
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  transition: transform 0.3s;
+}
+
+.axiom-item.active .axiom-header::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.axiom-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 1rem;
+  background: rgba(26, 32, 44, 0.2);
+}
+
+.axiom-content p {
+  margin: 0.75rem 0;
+  line-height: 1.6;
+}
+
+.axiom-content p:first-child {
+  margin-top: 0.75rem;
+}
+
+.axiom-content p:last-child {
+  margin-bottom: 0.75rem;
+}
+
 .back-to-top {
   display: none;
   position: fixed;
@@ -457,7 +527,7 @@ article p {
 .insight {
   background: linear-gradient(135deg, rgba(110, 168, 254, 0.1) 0%, rgba(126, 231, 135, 0.1) 100%);
   border-left: 5px solid var(--accent);
-  padding: 2.5rem 1.5rem 1.25rem 1.5rem;
+  padding: 3.5rem 1.5rem 1.25rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 0 8px 8px 0;
   font-weight: 500;
@@ -469,7 +539,7 @@ article p {
 .insight::before {
   content: "💡 INSIGHT";
   position: absolute;
-  top: 12px;
+  top: 18px;
   left: 15px;
   background: var(--accent);
   color: var(--bg);
@@ -486,7 +556,7 @@ article p {
 .key-equation {
   background: rgba(240, 168, 86, 0.1);
   border: 2px solid var(--warn);
-  padding: 3rem 1.5rem 1.25rem 1.5rem;
+  padding: 3.5rem 1.5rem 1.25rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 12px;
   text-align: center;
@@ -502,7 +572,7 @@ article p {
 .key-equation::before {
   content: "⚡ KEY EQUATION";
   position: absolute;
-  top: 12px;
+  top: 18px;
   left: 15px;
   background: var(--warn);
   color: var(--bg);
@@ -519,7 +589,7 @@ article p {
 .comparison {
   background: linear-gradient(135deg, rgba(110, 168, 254, 0.15) 0%, rgba(126, 231, 135, 0.15) 100%);
   border: 2px solid var(--accent);
-  padding: 2.5rem 1.5rem 1.25rem 1.5rem;
+  padding: 3.5rem 1.5rem 1.25rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 12px;
   position: relative;
@@ -530,7 +600,7 @@ article p {
 .comparison::before {
   content: "📊 COMPARISON";
   position: absolute;
-  top: 12px;
+  top: 18px;
   left: 15px;
   background: var(--accent);
   color: var(--bg);
@@ -547,7 +617,7 @@ article p {
 .breakthrough {
   background: linear-gradient(135deg, rgba(126, 231, 135, 0.2) 0%, rgba(110, 168, 254, 0.15) 100%);
   border: 2px solid var(--accent-2);
-  padding: 2.5rem 1.5rem 1.25rem 1.5rem;
+  padding: 3.5rem 1.5rem 1.25rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 12px;
   position: relative;
@@ -558,7 +628,7 @@ article p {
 .breakthrough::before {
   content: "🚀 BREAKTHROUGH";
   position: absolute;
-  top: 12px;
+  top: 18px;
   left: 15px;
   background: var(--accent-2);
   color: var(--bg);
@@ -575,7 +645,7 @@ article p {
 .warning {
   background: rgba(240, 168, 86, 0.1);
   border: 2px solid var(--warn);
-  padding: 3rem 1.25rem 1.25rem 1.25rem;
+  padding: 3.5rem 1.25rem 1.25rem 1.25rem;
   margin: 1.5rem 0;
   border-radius: 8px;
   border-left: 5px solid var(--warn);
@@ -586,7 +656,7 @@ article p {
 .warning::before {
   content: "⚠️ WARNING";
   position: absolute;
-  top: 12px;
+  top: 18px;
   left: 15px;
   background: var(--warn);
   color: var(--bg);
@@ -696,7 +766,7 @@ article p {
 .math-block {
   background: var(--panel);
   border: 2px solid var(--accent);
-  padding: 2.5rem 1.5rem 1.25rem 1.5rem;
+  padding: 3.5rem 1.5rem 1.25rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 12px;
   font-family: 'Times New Roman', serif;
@@ -712,7 +782,7 @@ article p {
 .math-block::before {
   content: "∑ FORMULA";
   position: absolute;
-  top: 12px;
+  top: 18px;
   left: 15px;
   background: var(--accent);
   color: var(--bg);
