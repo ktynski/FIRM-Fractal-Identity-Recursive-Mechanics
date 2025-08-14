@@ -323,11 +323,41 @@
       function inferTags(f) {
         const s = (f.filename || '').toLowerCase();
         const tags = [];
-        if (s.includes('category') || s.includes('topos')) tags.push('category');
-        if (s.includes('geometry') || s.includes('riemann') || s.includes('manifold') || s.includes('curvature')) tags.push('geometry');
-        if (s.includes('pde') || s.includes('elliptic') || s.includes('heat') || s.includes('schauder')) tags.push('pde');
-        if (s.includes('prob') || s.includes('stochastic') || s.includes('random') || s.includes('clt') || s.includes('lln')) tags.push('probability');
-        if (s.includes('topology') || s.includes('homology') || s.includes('cohomology') || s.includes('spectral_sequence')) tags.push('topology');
+        
+        // Physics & Cosmology
+        if (s.includes('physics') || s.includes('quark') || s.includes('lepton') || s.includes('boson') || s.includes('particle') || s.includes('standard_model')) tags.push('physics');
+        if (s.includes('cosmology') || s.includes('cmb') || s.includes('big_bang') || s.includes('nucleosynthesis') || s.includes('inflation') || s.includes('dark_energy')) tags.push('cosmology');
+        if (s.includes('gravity') || s.includes('relativity') || s.includes('spacetime') || s.includes('schwarzschild') || s.includes('einstein')) tags.push('gravity');
+        
+        // Consciousness & AI
+        if (s.includes('consciousness') || s.includes('pnp') || s.includes('neural') || s.includes('ai_acceleration') || s.includes('artificial')) tags.push('consciousness');
+        
+        // Mathematical Areas
+        if (s.includes('category') || s.includes('topos') || s.includes('morphism') || s.includes('functor')) tags.push('category-theory');
+        if (s.includes('geometry') || s.includes('riemann') || s.includes('manifold') || s.includes('curvature') || s.includes('differential')) tags.push('geometry');
+        if (s.includes('topology') || s.includes('homology') || s.includes('cohomology') || s.includes('spectral_sequence') || s.includes('homotopy')) tags.push('topology');
+        if (s.includes('algebra') || s.includes('group') || s.includes('ring') || s.includes('field') || s.includes('galois') || s.includes('automorphic')) tags.push('algebra');
+        if (s.includes('number_theory') || s.includes('prime') || s.includes('zeta') || s.includes('diophantine') || s.includes('arithmetic')) tags.push('number-theory');
+        if (s.includes('analysis') || s.includes('pde') || s.includes('elliptic') || s.includes('heat') || s.includes('harmonic') || s.includes('fourier')) tags.push('analysis');
+        if (s.includes('probability') || s.includes('stochastic') || s.includes('random') || s.includes('clt') || s.includes('lln') || s.includes('markov')) tags.push('probability');
+        if (s.includes('logic') || s.includes('proof') || s.includes('theorem') || s.includes('axiom') || s.includes('formal')) tags.push('logic');
+        
+        // FIRM Theory Specific
+        if (s.includes('phi') || s.includes('golden') || s.includes('grace') || s.includes('firm') || s.includes('recursive')) tags.push('firm-theory');
+        if (s.includes('alpha') || s.includes('fine_structure') || s.includes('constant') || s.includes('derivation') || s.includes('comparison')) tags.push('constants');
+        
+        // Applied Mathematics
+        if (s.includes('optimization') || s.includes('calculus_variations') || s.includes('control') || s.includes('game_theory')) tags.push('applied-math');
+        if (s.includes('computational') || s.includes('algorithm') || s.includes('complexity') || s.includes('machine_learning')) tags.push('computational');
+        
+        // If no tags matched, try to infer from common mathematical terms
+        if (tags.length === 0) {
+          if (s.includes('theorem') || s.includes('lemma') || s.includes('proof') || s.includes('conjecture')) tags.push('theorems');
+          else if (s.includes('function') || s.includes('operator') || s.includes('transform')) tags.push('functions');
+          else if (s.includes('space') || s.includes('metric') || s.includes('norm')) tags.push('spaces');
+          else tags.push('other');
+        }
+        
         return tags;
       }
 
