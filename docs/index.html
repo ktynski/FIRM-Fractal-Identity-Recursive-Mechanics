@@ -485,11 +485,6 @@
       </div>
     </section>
 
-    <section class="section" id="featured-gallery">
-      <h2>Featured Figures</h2>
-      <div id="featuredGrid" class="grid"></div>
-      </section>
-
     <section class="join-discovery">
       <div class="container">
         <h2>Join the Discovery</h2>
@@ -649,7 +644,7 @@
       
       // Gallery functionality
     const grid = document.getElementById('grid');
-    const featuredGrid = document.getElementById('featuredGrid');
+
     const search = document.getElementById('search');
     const sort = document.getElementById('sort');
     const countBadge = document.getElementById('countBadge');
@@ -915,12 +910,7 @@
         return tile;
       }
 
-        // Populate featured grid
-        if (featuredGrid) {
-          for (const f of FEATURED) {
-            featuredGrid.appendChild(tileFor({ filename: f }));
-          }
-      }
+
 
       // Load the gallery data
       loadManifest().then(data => {
