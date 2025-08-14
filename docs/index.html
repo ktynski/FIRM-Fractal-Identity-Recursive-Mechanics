@@ -245,7 +245,11 @@
 
     function filteredSorted() {
       let q = (search.value || '').toLowerCase().trim();
-      let arr = allFigures.filter(f => f.filename.toLowerCase().includes(q));
+      let arr = allFigures;
+      if (q) {
+        arr = allFigures.filter(f => f.filename.toLowerCase().includes(q));
+      }
+      
       if (activeTags.size) {
         arr = arr.filter(f => {
           const ts = inferTags(f);
