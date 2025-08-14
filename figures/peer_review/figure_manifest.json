@@ -1,107 +1,27 @@
 {
   "figures": [
     {
-      "filename": "operator_algebras.png",
-      "sha256": "5b12133b163f54e52e7edc1327a7a92423011e8b7fe65a51a86b59a92ea8c6bf",
-      "source_path": "figures/outputs/operator_algebras.png",
-      "canonical_path": "figures/canonical_outputs/operator_algebras.png",
-      "width": 4770,
-      "height": 3540
+      "filename": "FIRM_CMB_Crown_Jewel_Ex_Nihilo.png",
+      "sha256": "5cf539f340219228ec3117e942de3dfbb4fdcc502f5eb7c8250ea75bcffba6d1",
+      "source_path": "figures/outputs/FIRM_CMB_Crown_Jewel_Ex_Nihilo.png",
+      "canonical_path": "figures/canonical_outputs/FIRM_CMB_Crown_Jewel_Ex_Nihilo.png",
+      "width": 2406,
+      "height": 1359
     },
     {
-      "filename": "calderon_zygmund_operators.png",
-      "sha256": "5d087c2e69ed99cb615fa47a8dca305c8ef74cf287c9ea32a97ba8ec2523343c",
-      "source_path": "figures/outputs/calderon_zygmund_operators.png",
-      "canonical_path": "figures/canonical_outputs/calderon_zygmund_operators.png",
+      "filename": "FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png",
+      "sha256": "8bafa541554070a96a0dcab9a730947966129f392fbd7dc041f1ae8a3959b0af",
+      "source_path": "figures/outputs/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png",
+      "canonical_path": "figures/canonical_outputs/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png",
+      "width": 4812,
+      "height": 2722
+    },
+    {
+      "filename": "ai_acceleration_phi_neural_networks.png",
+      "sha256": "bba9327553e466d27d5c2e7e97bf194659ddc7dfcde553c09a8dca23122979b0",
+      "source_path": "figures/outputs/ai_acceleration_phi_neural_networks.png",
+      "canonical_path": "figures/canonical_outputs/ai_acceleration_phi_neural_networks.png",
       "width": 4768,
-      "height": 1775
-    },
-    {
-      "filename": "phi_elliptic_operators_harmonic_analysis.png",
-      "sha256": "54094aca60dd3b7aa104f7c38ea9460523287a88b94154f5e4742ed550d693a9",
-      "source_path": "figures/outputs/phi_elliptic_operators_harmonic_analysis.png",
-      "canonical_path": "figures/canonical_outputs/phi_elliptic_operators_harmonic_analysis.png",
-      "width": 4755,
-      "height": 3539
-    },
-    {
-      "filename": "manifold_progression_diagram.png",
-      "sha256": "147c815eb6916e51042b51d1f70fb76258633f065f53bcb13bec9526e089153b",
-      "source_path": "figures/outputs/manifold_progression_diagram.png",
-      "canonical_path": "figures/canonical_outputs/manifold_progression_diagram.png",
-      "width": 3780,
-      "height": 2447
-    },
-    {
-      "filename": "phi_motivic_geometry_a1_homotopy.png",
-      "sha256": "5116a6efb306c6bfef362c177a9d8164e87b6c94d14c2cea4787f01e9907e40d",
-      "source_path": "figures/outputs/phi_motivic_geometry_a1_homotopy.png",
-      "canonical_path": "figures/canonical_outputs/phi_motivic_geometry_a1_homotopy.png",
-      "width": 4771,
-      "height": 3539
-    },
-    {
-      "filename": "spectral_analysis_phi_operators.png",
-      "sha256": "6d875171df7d9b7628bc9bc36f2c26fe0bb8644f3190dce0b7d8d343e444158e",
-      "source_path": "figures/outputs/spectral_analysis_phi_operators.png",
-      "canonical_path": "figures/canonical_outputs/spectral_analysis_phi_operators.png",
-      "width": 4774,
-      "height": 3539
-    },
-    {
-      "filename": "eilenberg_moore_spectral_sequence.png",
-      "sha256": "c868cf6b49c98ad033f9d05d21980f9052f3543cac72e341d4b26b60bdca0516",
-      "source_path": "figures/outputs/eilenberg_moore_spectral_sequence.png",
-      "canonical_path": "figures/canonical_outputs/eilenberg_moore_spectral_sequence.png",
-      "width": 4768,
-      "height": 1775
-    },
-    {
-      "filename": "metric_geometry.png",
-      "sha256": "7af36c9eb849beeb8972cffb83da43ce05f0263736839a9647f67b16da7ba199",
-      "source_path": "figures/outputs/metric_geometry.png",
-      "canonical_path": "figures/canonical_outputs/metric_geometry.png",
-      "width": 4770,
-      "height": 3541
-    },
-    {
-      "filename": "category_theory_phi_morphisms.png",
-      "sha256": "9c7196582496dc54cd01ff0b13bffea9b2de77b1900da1064d0d096516d2d0a3",
-      "source_path": "figures/outputs/category_theory_phi_morphisms.png",
-      "canonical_path": "figures/canonical_outputs/category_theory_phi_morphisms.png",
-      "width": 4770,
-      "height": 3539
-    },
-    {
-      "filename": "hodge_theory_kahler_geometry.png",
-      "sha256": "bdf53a3a6a26c11c6e3a61517fcb809b0d263ad5bcca8207702d0b33ec12daab",
-      "source_path": "figures/outputs/hodge_theory_kahler_geometry.png",
-      "canonical_path": "figures/canonical_outputs/hodge_theory_kahler_geometry.png",
-      "width": 4770,
-      "height": 1775
-    },
-    {
-      "filename": "spectral_graph_theory.png",
-      "sha256": "52abb92e3bbb7e233d051df71c9d7a7e5a21b124b9630dfa1cc540594ecfdd6d",
-      "source_path": "figures/outputs/spectral_graph_theory.png",
-      "canonical_path": "figures/canonical_outputs/spectral_graph_theory.png",
-      "width": 4770,
-      "height": 3541
-    },
-    {
-      "filename": "operator_k_theory.png",
-      "sha256": "dccaf9b89916d0726434f44b589594e7a49bba6fa745a5d97dffedd033dedb0a",
-      "source_path": "figures/outputs/operator_k_theory.png",
-      "canonical_path": "figures/canonical_outputs/operator_k_theory.png",
-      "width": 4768,
-      "height": 1775
-    },
-    {
-      "filename": "phi_algebraic_k_theory.png",
-      "sha256": "c03057c040ef6b167148f0d1da8d916522d953b8e1cb004612b24fdaf9964e01",
-      "source_path": "figures/outputs/phi_algebraic_k_theory.png",
-      "canonical_path": "figures/canonical_outputs/phi_algebraic_k_theory.png",
-      "width": 4765,
       "height": 3539
     },
     {
@@ -121,20 +41,228 @@
       "height": 3539
     },
     {
-      "filename": "heat_kernel_manifolds.png",
-      "sha256": "b247cb74e7a415b7f3e2d44e02d67d236623384284b49b6401b976f91e290025",
-      "source_path": "figures/outputs/heat_kernel_manifolds.png",
-      "canonical_path": "figures/canonical_outputs/heat_kernel_manifolds.png",
-      "width": 2967,
+      "filename": "alpha_inverse_comparison.png",
+      "sha256": "c1a271bfc59d90f17c958d25005714b2c563815c7beee88b975b9b09600d1f86",
+      "source_path": "figures/outputs/alpha_inverse_comparison.png",
+      "canonical_path": "figures/canonical_outputs/alpha_inverse_comparison.png",
+      "width": 4168,
+      "height": 1764
+    },
+    {
+      "filename": "amenability_folner.png",
+      "sha256": "58ee34bb3ce78987e4384eff6a94253d9c8ef37ced0d0b3a8cbd793c9cdcb8a9",
+      "source_path": "figures/outputs/amenability_folner.png",
+      "canonical_path": "figures/canonical_outputs/amenability_folner.png",
+      "width": 4402,
       "height": 1775
     },
     {
-      "filename": "symplectic_geometry.png",
-      "sha256": "8169d969e9176a875d3e06c2b79a373af302dac68c080c3fc6330da057ecca6c",
-      "source_path": "figures/outputs/symplectic_geometry.png",
-      "canonical_path": "figures/canonical_outputs/symplectic_geometry.png",
-      "width": 4631,
+      "filename": "aperiodic_tilings.png",
+      "sha256": "99f5185f5c61f50ac23ae0bbed13e3e9d6f0c699a5465a4b86e1adc1eb9f05e7",
+      "source_path": "figures/outputs/aperiodic_tilings.png",
+      "canonical_path": "figures/canonical_outputs/aperiodic_tilings.png",
+      "width": 2790,
+      "height": 2955
+    },
+    {
+      "filename": "artificial_consciousness_architecture.png",
+      "sha256": "726de59d5fbe0b838cc73fac6f6096ce5ba4261249f41eb0aa9c5760dc2939b6",
+      "source_path": "figures/outputs/artificial_consciousness_architecture.png",
+      "canonical_path": "figures/canonical_outputs/artificial_consciousness_architecture.png",
+      "width": 4803,
+      "height": 3536
+    },
+    {
+      "filename": "automorphic_forms.png",
+      "sha256": "411e20ee694a99d8d8e6e0395e7982eb4a66c26915bab8b57ab1d692d836dcd9",
+      "source_path": "figures/outputs/automorphic_forms.png",
+      "canonical_path": "figures/canonical_outputs/automorphic_forms.png",
+      "width": 4768,
       "height": 3539
+    },
+    {
+      "filename": "bao_comparison.png",
+      "sha256": "b5e43d258498823b516639032d9f5666a93b21fff06c3c020183b218330ac5be",
+      "source_path": "figures/outputs/bao_comparison.png",
+      "canonical_path": "figures/canonical_outputs/bao_comparison.png",
+      "width": 3567,
+      "height": 2965
+    },
+    {
+      "filename": "big_bang_nucleosynthesis.png",
+      "sha256": "17cfb5c7987ec218dca398cd9aec8f013b76425dc48ac1ead2775948d68a4589",
+      "source_path": "figures/outputs/big_bang_nucleosynthesis.png",
+      "canonical_path": "figures/canonical_outputs/big_bang_nucleosynthesis.png",
+      "width": 3980,
+      "height": 5398
+    },
+    {
+      "filename": "bottom_quark_mass_derivation.png",
+      "sha256": "e19270334eb5b5a574f12ab2f12d913bf866c44669d0145212a8b0fd2a474b29",
+      "source_path": "figures/outputs/bottom_quark_mass_derivation.png",
+      "canonical_path": "figures/canonical_outputs/bottom_quark_mass_derivation.png",
+      "width": 4785,
+      "height": 3539
+    },
+    {
+      "filename": "bv_coarea_applications.png",
+      "sha256": "285599fb870d2fb7674897b5d0f4808263e619b2f906d5288ce282f60f43c338",
+      "source_path": "figures/outputs/bv_coarea_applications.png",
+      "canonical_path": "figures/canonical_outputs/bv_coarea_applications.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "bv_functions.png",
+      "sha256": "b49f4706abf4169b039ae13e6c7ae184d150f4a74920cddbaa1052444f3cb83a",
+      "source_path": "figures/outputs/bv_functions.png",
+      "canonical_path": "figures/canonical_outputs/bv_functions.png",
+      "width": 4768,
+      "height": 3540
+    },
+    {
+      "filename": "calculus_of_variations.png",
+      "sha256": "d3ee40593940aa571c73d4275fd305b68b5d584347f4bcc0568381994d744f6c",
+      "source_path": "figures/outputs/calculus_of_variations.png",
+      "canonical_path": "figures/canonical_outputs/calculus_of_variations.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "calderon_zygmund_operators.png",
+      "sha256": "5d087c2e69ed99cb615fa47a8dca305c8ef74cf287c9ea32a97ba8ec2523343c",
+      "source_path": "figures/outputs/calderon_zygmund_operators.png",
+      "canonical_path": "figures/canonical_outputs/calderon_zygmund_operators.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "carleson_measures.png",
+      "sha256": "9019980bb93ed6feb9abba136338ad1f1da64b487132f5d520546cdb4ae04eda",
+      "source_path": "figures/outputs/carleson_measures.png",
+      "canonical_path": "figures/canonical_outputs/carleson_measures.png",
+      "width": 4769,
+      "height": 1775
+    },
+    {
+      "filename": "cat0_geometry.png",
+      "sha256": "1999f7f3f8b7c4c8a3f28152651fdd0e81ab8198a31c72aa1c99969cf99982cd",
+      "source_path": "figures/outputs/cat0_geometry.png",
+      "canonical_path": "figures/canonical_outputs/cat0_geometry.png",
+      "width": 4673,
+      "height": 1775
+    },
+    {
+      "filename": "category_theory_phi_morphisms.png",
+      "sha256": "9c7196582496dc54cd01ff0b13bffea9b2de77b1900da1064d0d096516d2d0a3",
+      "source_path": "figures/outputs/category_theory_phi_morphisms.png",
+      "canonical_path": "figures/canonical_outputs/category_theory_phi_morphisms.png",
+      "width": 4770,
+      "height": 3539
+    },
+    {
+      "filename": "charm_quark_mass_derivation.png",
+      "sha256": "7107083d4054bbea3b3634cb259ec68df548cce41d757b40551443579d8d3afe",
+      "source_path": "figures/outputs/charm_quark_mass_derivation.png",
+      "canonical_path": "figures/canonical_outputs/charm_quark_mass_derivation.png",
+      "width": 4767,
+      "height": 3539
+    },
+    {
+      "filename": "complete_lagrangian_formulation.png",
+      "sha256": "e6319eaeebf03f93586b850533e660d78c5a233661f0523ef461b2a919e4566e",
+      "source_path": "figures/outputs/complete_lagrangian_formulation.png",
+      "canonical_path": "figures/canonical_outputs/complete_lagrangian_formulation.png",
+      "width": 5298,
+      "height": 3714
+    },
+    {
+      "filename": "complete_standard_model_derivation.png",
+      "sha256": "d8c4007c2d2fead0e2c0d73a678606457a6facbe59bbef51d80762e28b5da577",
+      "source_path": "figures/outputs/complete_standard_model_derivation.png",
+      "canonical_path": "figures/canonical_outputs/complete_standard_model_derivation.png",
+      "width": 4453,
+      "height": 3317
+    },
+    {
+      "filename": "complex_analysis_scv.png",
+      "sha256": "d182efe4c47b7f1ea823d6e9e10b545b5c3cf6d74c0cfde4b7812274589c0a15",
+      "source_path": "figures/outputs/complex_analysis_scv.png",
+      "canonical_path": "figures/canonical_outputs/complex_analysis_scv.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "conceptual_overview_diagram.png",
+      "sha256": "bfeaa7f6022ba4e01ff5e1e23b6ef8fd0ec5f0eed18dcc9981ee1a89161690a9",
+      "source_path": "figures/outputs/conceptual_overview_diagram.png",
+      "canonical_path": "figures/canonical_outputs/conceptual_overview_diagram.png",
+      "width": 4380,
+      "height": 3570
+    },
+    {
+      "filename": "consciousness_pnp_correlation.png",
+      "sha256": "f23cb8396203042b97ec9338f7f98e0c4f5e3d8d4ec2e02e4c6566e72461cf31",
+      "source_path": "figures/outputs/consciousness_pnp_correlation.png",
+      "canonical_path": "figures/canonical_outputs/consciousness_pnp_correlation.png",
+      "width": 4767,
+      "height": 3564
+    },
+    {
+      "filename": "convex_analysis.png",
+      "sha256": "3c50a0bdcb4e9925bb9ca3f4970a6a093c10c1cf7e46ef03da2ec19c87fd8c7a",
+      "source_path": "figures/outputs/convex_analysis.png",
+      "canonical_path": "figures/canonical_outputs/convex_analysis.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "cosmic_timeline_complete.png",
+      "sha256": "23a55592ffb0c8565f599e1788db1715b68ed0cc061f7a5f10d5e3e589c9f761",
+      "source_path": "figures/outputs/cosmic_timeline_complete.png",
+      "canonical_path": "figures/canonical_outputs/cosmic_timeline_complete.png",
+      "width": 5366,
+      "height": 4164
+    },
+    {
+      "filename": "dark_energy_phi_scaling.png",
+      "sha256": "0ed03065a0b3313f5db97199ebc450390405dd0103d8bf38bb19e3289e469d64",
+      "source_path": "figures/outputs/dark_energy_phi_scaling.png",
+      "canonical_path": "figures/canonical_outputs/dark_energy_phi_scaling.png",
+      "width": 8122,
+      "height": 4100
+    },
+    {
+      "filename": "dark_matter_structure_formation.png",
+      "sha256": "09ed4c6deb8ad41d4e8589143d33a10be72fdcd9d83badb41cfeac0e50ee7599",
+      "source_path": "figures/outputs/dark_matter_structure_formation.png",
+      "canonical_path": "figures/canonical_outputs/dark_matter_structure_formation.png",
+      "width": 4766,
+      "height": 3539
+    },
+    {
+      "filename": "de_giorgi_nash_moser.png",
+      "sha256": "169e2f33f4765f8f14dba937e36ca9f33ea8f3c09736324c6cb373137ac44336",
+      "source_path": "figures/outputs/de_giorgi_nash_moser.png",
+      "canonical_path": "figures/canonical_outputs/de_giorgi_nash_moser.png",
+      "width": 4766,
+      "height": 1775
+    },
+    {
+      "filename": "de_rham_cohomology.png",
+      "sha256": "ce0bcd7c59d6576a5c34ea8356a43ce64f09cbf02b5e9ef462269a6af98d9919",
+      "source_path": "figures/outputs/de_rham_cohomology.png",
+      "canonical_path": "figures/canonical_outputs/de_rham_cohomology.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "descriptive_set_theory.png",
+      "sha256": "e03dbb741c9d687f0803f2f0684c6eb1770e2c9122891d6e723f6da00208ab30",
+      "source_path": "figures/outputs/descriptive_set_theory.png",
+      "canonical_path": "figures/canonical_outputs/descriptive_set_theory.png",
+      "width": 4770,
+      "height": 1779
     },
     {
       "filename": "differential_geometry_phi_manifolds.png",
@@ -145,35 +273,379 @@
       "height": 3539
     },
     {
-      "filename": "spectral_zeta_analysis.png",
-      "sha256": "94c0eed878f0cc5983fc4d54ab1cf1d8ca32c690b44a379c3ba389c005fa23cb",
-      "source_path": "figures/outputs/spectral_zeta_analysis.png",
-      "canonical_path": "figures/canonical_outputs/spectral_zeta_analysis.png",
-      "width": 3552,
-      "height": 2953
+      "filename": "differential_topology_morse_theory.png",
+      "sha256": "8c122bbda7eed7a86e7ee162f1837242144952b8d085f411c6b472bd07f70dc3",
+      "source_path": "figures/outputs/differential_topology_morse_theory.png",
+      "canonical_path": "figures/canonical_outputs/differential_topology_morse_theory.png",
+      "width": 4768,
+      "height": 3540
     },
     {
-      "filename": "sheaf_cohomology_spectral_sequence.png",
-      "sha256": "13da968d603d6071e0da7d315d38753038f9f4bd257ce7b1af0fd3b0b347b24c",
-      "source_path": "figures/outputs/sheaf_cohomology_spectral_sequence.png",
-      "canonical_path": "figures/canonical_outputs/sheaf_cohomology_spectral_sequence.png",
+      "filename": "dimensional_bridge_mapping.png",
+      "sha256": "85216cfac7b2fd6b9e78442f49b07e80d4d08ec8dc8197e51884bff311372084",
+      "source_path": "figures/outputs/dimensional_bridge_mapping.png",
+      "canonical_path": "figures/canonical_outputs/dimensional_bridge_mapping.png",
+      "width": 3985,
+      "height": 3436
+    },
+    {
+      "filename": "distribution_theory.png",
+      "sha256": "3e140ec86a586e90ec3d94c2795349733bee707356b1c733bedf4acd8185780b",
+      "source_path": "figures/outputs/distribution_theory.png",
+      "canonical_path": "figures/canonical_outputs/distribution_theory.png",
       "width": 4768,
       "height": 3539
     },
     {
-      "filename": "spectral_zeta_functions.png",
-      "sha256": "fa59dc9b1fa090964bccb1487aa6b59aaabfd109fafdf73a77b4105caf302fe1",
-      "source_path": "figures/outputs/spectral_zeta_functions.png",
-      "canonical_path": "figures/canonical_outputs/spectral_zeta_functions.png",
+      "filename": "down_quark_mass_derivation.png",
+      "sha256": "1a3c078ba795264b0b18218416c7097b65c672d9ef060708d850673afe815d14",
+      "source_path": "figures/outputs/down_quark_mass_derivation.png",
+      "canonical_path": "figures/canonical_outputs/down_quark_mass_derivation.png",
       "width": 4767,
       "height": 3537
     },
     {
-      "filename": "cat0_geometry.png",
-      "sha256": "1999f7f3f8b7c4c8a3f28152651fdd0e81ab8198a31c72aa1c99969cf99982cd",
-      "source_path": "figures/outputs/cat0_geometry.png",
-      "canonical_path": "figures/canonical_outputs/cat0_geometry.png",
-      "width": 4673,
+      "filename": "eeg_phi_harmonics.png",
+      "sha256": "909ab275bd05630bb67fedce175fe48740d0ed4bb6f4a8bc4b2a75d64b5c70b9",
+      "source_path": "figures/outputs/eeg_phi_harmonics.png",
+      "canonical_path": "figures/canonical_outputs/eeg_phi_harmonics.png",
+      "width": 3550,
+      "height": 2967
+    },
+    {
+      "filename": "eilenberg_moore_examples.png",
+      "sha256": "24296322a50b450c68ba7ca020427a0602a3f8623c19987785cd0526e43a74d2",
+      "source_path": "figures/outputs/eilenberg_moore_examples.png",
+      "canonical_path": "figures/canonical_outputs/eilenberg_moore_examples.png",
+      "width": 2968,
+      "height": 1775
+    },
+    {
+      "filename": "eilenberg_moore_spectral_sequence.png",
+      "sha256": "c868cf6b49c98ad033f9d05d21980f9052f3543cac72e341d4b26b60bdca0516",
+      "source_path": "figures/outputs/eilenberg_moore_spectral_sequence.png",
+      "canonical_path": "figures/canonical_outputs/eilenberg_moore_spectral_sequence.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "einstein_equations_comparison.png",
+      "sha256": "e64672e76cef7c54c0a6ee9aa61c6317024ecb84ad5115edc2a98b68ecdfba0f",
+      "source_path": "figures/outputs/einstein_equations_comparison.png",
+      "canonical_path": "figures/canonical_outputs/einstein_equations_comparison.png",
+      "width": 4169,
+      "height": 2954
+    },
+    {
+      "filename": "einstein_equations_derivation_chain.png",
+      "sha256": "1c21f28a5ae565261ac5c6fcd302f7aff945cbdb97e87d566b8cc5fb044e509a",
+      "source_path": "figures/outputs/einstein_equations_derivation_chain.png",
+      "canonical_path": "figures/canonical_outputs/einstein_equations_derivation_chain.png",
+      "width": 3011,
+      "height": 2968
+    },
+    {
+      "filename": "electron_mass_derivation.png",
+      "sha256": "27c1c821802f1257429d12ca54440b73945f6c5959642ca32646a74088048f4f",
+      "source_path": "figures/outputs/electron_mass_derivation.png",
+      "canonical_path": "figures/canonical_outputs/electron_mass_derivation.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "energy_technology_applications.png",
+      "sha256": "1da206522889a3c610c0279ecc810e3cbc495365cff4d3908e57540436648b7b",
+      "source_path": "figures/outputs/energy_technology_applications.png",
+      "canonical_path": "figures/canonical_outputs/energy_technology_applications.png",
+      "width": 4760,
+      "height": 3536
+    },
+    {
+      "filename": "epsilon_components_scan.png",
+      "sha256": "8b3e3c55b8f47d165656f8590153ccf252a1535b5158a25f08e8abb6a57e0ac9",
+      "source_path": "figures/outputs/epsilon_components_scan.png",
+      "canonical_path": "figures/canonical_outputs/epsilon_components_scan.png",
+      "width": 2000,
+      "height": 1200
+    },
+    {
+      "filename": "epsilon_stability_scan.png",
+      "sha256": "b15940280a7afeefdf9938a37dbc3ab062eb8e653ffe5323d83312acfa131b26",
+      "source_path": "figures/outputs/epsilon_stability_scan.png",
+      "canonical_path": "figures/canonical_outputs/epsilon_stability_scan.png",
+      "width": 1600,
+      "height": 700
+    },
+    {
+      "filename": "ergodic_theorems_amenable_groups.png",
+      "sha256": "a4c0cdd4d1cbec481560f116dbe7b029979ba4343a0fa2be8b0b51973fd7853b",
+      "source_path": "figures/outputs/ergodic_theorems_amenable_groups.png",
+      "canonical_path": "figures/canonical_outputs/ergodic_theorems_amenable_groups.png",
+      "width": 2968,
+      "height": 1775
+    },
+    {
+      "filename": "ergodic_theory.png",
+      "sha256": "649a34fe409f34b58449061153b9826d25cfaa2632c4bb57bc48c93fa7cd5516",
+      "source_path": "figures/outputs/ergodic_theory.png",
+      "canonical_path": "figures/canonical_outputs/ergodic_theory.png",
+      "width": 4767,
+      "height": 3539
+    },
+    {
+      "filename": "experimental_predictions_timeline.png",
+      "sha256": "1958e7cde3e0a55554e863aebd96ca2eb30165074a6b4332bbbef0303db0bbbe",
+      "source_path": "figures/outputs/experimental_predictions_timeline.png",
+      "canonical_path": "figures/canonical_outputs/experimental_predictions_timeline.png",
+      "width": 5326,
+      "height": 4165
+    },
+    {
+      "filename": "extra_dimensions_phi_compactification.png",
+      "sha256": "873d94936da8e2fa4f1dce023e53e15e2c4449914db6211844af03dd5c94d089",
+      "source_path": "figures/outputs/extra_dimensions_phi_compactification.png",
+      "canonical_path": "figures/canonical_outputs/extra_dimensions_phi_compactification.png",
+      "width": 4766,
+      "height": 3536
+    },
+    {
+      "filename": "falsification_criteria_comprehensive.png",
+      "sha256": "9f337f4c6ca08434bc6617faba30aa385f70a851a81fe149ee2a7c80631ac3d4",
+      "source_path": "figures/outputs/falsification_criteria_comprehensive.png",
+      "canonical_path": "figures/canonical_outputs/falsification_criteria_comprehensive.png",
+      "width": 4750,
+      "height": 3536
+    },
+    {
+      "filename": "falsification_test_results.png",
+      "sha256": "d78ca8290dbb263585dcc115e5830774ea16451614f3631ab76e69f0e1532024",
+      "source_path": "figures/outputs/falsification_test_results.png",
+      "canonical_path": "figures/canonical_outputs/falsification_test_results.png",
+      "width": 3553,
+      "height": 2953
+    },
+    {
+      "filename": "fractional_sobolev_besov.png",
+      "sha256": "a28b5fbf094890eb60e8effc132303264b7e5cca11835cfea95a51217f5737f6",
+      "source_path": "figures/outputs/fractional_sobolev_besov.png",
+      "canonical_path": "figures/canonical_outputs/fractional_sobolev_besov.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "free_probability.png",
+      "sha256": "6177492ab0f280fc3d2b2858098f409c3f64299f88a4c9caa453dfe6396d31f3",
+      "source_path": "figures/outputs/free_probability.png",
+      "canonical_path": "figures/canonical_outputs/free_probability.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "functional_analysis.png",
+      "sha256": "24c3bca794c73c70e7be7cb06ce832498133cc67e2253474daf632df0140125a",
+      "source_path": "figures/outputs/functional_analysis.png",
+      "canonical_path": "figures/canonical_outputs/functional_analysis.png",
+      "width": 4635,
+      "height": 3541
+    },
+    {
+      "filename": "fusion_energy_phi_enhancement.png",
+      "sha256": "08ab15f8cb8efc1535f4df9eea52ecb490b0f106df804b144fa1ad53f05c8e73",
+      "source_path": "figures/outputs/fusion_energy_phi_enhancement.png",
+      "canonical_path": "figures/canonical_outputs/fusion_energy_phi_enhancement.png",
+      "width": 4766,
+      "height": 3537
+    },
+    {
+      "filename": "gauge_couplings_theory.png",
+      "sha256": "dad1fbee9590af0259837268493eee09d90ccb35c83eb532ca725c29fbae8848",
+      "source_path": "figures/outputs/gauge_couplings_theory.png",
+      "canonical_path": "figures/canonical_outputs/gauge_couplings_theory.png",
+      "width": 4767,
+      "height": 3565
+    },
+    {
+      "filename": "gauge_field_configurations.png",
+      "sha256": "f93b080672830dbefe22f7a39a7e629353cd56070538dcc50532726d760de63e",
+      "source_path": "figures/outputs/gauge_field_configurations.png",
+      "canonical_path": "figures/canonical_outputs/gauge_field_configurations.png",
+      "width": 4766,
+      "height": 3539
+    },
+    {
+      "filename": "geometric_group_growth.png",
+      "sha256": "9d1976bd0a16e4a40a150af68f9f77ed632b3a2d2e57ad81dba914d2d71955d8",
+      "source_path": "figures/outputs/geometric_group_growth.png",
+      "canonical_path": "figures/canonical_outputs/geometric_group_growth.png",
+      "width": 2967,
+      "height": 1775
+    },
+    {
+      "filename": "geometric_group_theory.png",
+      "sha256": "ec30a01de46918e1ac80a88f12fdaae5e4303d36837e15caceca26efd64ce9ff",
+      "source_path": "figures/outputs/geometric_group_theory.png",
+      "canonical_path": "figures/canonical_outputs/geometric_group_theory.png",
+      "width": 4767,
+      "height": 3539
+    },
+    {
+      "filename": "geometric_langlands.png",
+      "sha256": "a895794581e5fe57e5875b879b8f79211810ee47aa7a5eee3035e28c28ffb2a9",
+      "source_path": "figures/outputs/geometric_langlands.png",
+      "canonical_path": "figures/canonical_outputs/geometric_langlands.png",
+      "width": 4770,
+      "height": 3541
+    },
+    {
+      "filename": "geometric_measure_theory.png",
+      "sha256": "a1af213ee3739c090ec4bba2ec4e52ff0e0f2ee0d594c55424ecf546a1dd2500",
+      "source_path": "figures/outputs/geometric_measure_theory.png",
+      "canonical_path": "figures/canonical_outputs/geometric_measure_theory.png",
+      "width": 4502,
+      "height": 3541
+    },
+    {
+      "filename": "geometric_representation_theory.png",
+      "sha256": "574d69baeaaad5b852879a04cfa6718e6d62f299812627bfcfebab6718593d6e",
+      "source_path": "figures/outputs/geometric_representation_theory.png",
+      "canonical_path": "figures/canonical_outputs/geometric_representation_theory.png",
+      "width": 4767,
+      "height": 3539
+    },
+    {
+      "filename": "grace_operator_fixed_point_convergence.png",
+      "sha256": "0141ca5e3cb37bf3c50e395d5d8f455592c8faeaa20d91cabeb7f74dd8c6c809",
+      "source_path": "figures/outputs/grace_operator_fixed_point_convergence.png",
+      "canonical_path": "figures/canonical_outputs/grace_operator_fixed_point_convergence.png",
+      "width": 4168,
+      "height": 1775
+    },
+    {
+      "filename": "hardy_littlewood_maximal.png",
+      "sha256": "1453cf4ccf5899745f8662846f09704990c92a5c49117d4c02484b4dc146a028",
+      "source_path": "figures/outputs/hardy_littlewood_maximal.png",
+      "canonical_path": "figures/canonical_outputs/hardy_littlewood_maximal.png",
+      "width": 4768,
+      "height": 1773
+    },
+    {
+      "filename": "hardy_spaces.png",
+      "sha256": "d92cc7ac838dac871cff7b9609d1a2c825b5b6fecc6453ae81c50cc9e5a8983a",
+      "source_path": "figures/outputs/hardy_spaces.png",
+      "canonical_path": "figures/canonical_outputs/hardy_spaces.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "harmonic_analysis_groups.png",
+      "sha256": "e67fd8d456dccb9ff50dd47f436fb206100efd93fe0ad180ccbe5b8f0f16d815",
+      "source_path": "figures/outputs/harmonic_analysis_groups.png",
+      "canonical_path": "figures/canonical_outputs/harmonic_analysis_groups.png",
+      "width": 4745,
+      "height": 1775
+    },
+    {
+      "filename": "harmonic_measure.png",
+      "sha256": "3358853eb482a0bf77bc90cab0268f7574ae9ba581e627de0bb40dc101fb8e79",
+      "source_path": "figures/outputs/harmonic_measure.png",
+      "canonical_path": "figures/canonical_outputs/harmonic_measure.png",
+      "width": 4304,
+      "height": 1775
+    },
+    {
+      "filename": "heat_kernel_manifolds.png",
+      "sha256": "b247cb74e7a415b7f3e2d44e02d67d236623384284b49b6401b976f91e290025",
+      "source_path": "figures/outputs/heat_kernel_manifolds.png",
+      "canonical_path": "figures/canonical_outputs/heat_kernel_manifolds.png",
+      "width": 2967,
+      "height": 1775
+    },
+    {
+      "filename": "hodge_decomposition.png",
+      "sha256": "04f64fe60b895a8eedc1428a3f326fc7e33a4939546f9c4d8c5a3f553b21e9fe",
+      "source_path": "figures/outputs/hodge_decomposition.png",
+      "canonical_path": "figures/canonical_outputs/hodge_decomposition.png",
+      "width": 2508,
+      "height": 1779
+    },
+    {
+      "filename": "hodge_theory_kahler_geometry.png",
+      "sha256": "bdf53a3a6a26c11c6e3a61517fcb809b0d263ad5bcca8207702d0b33ec12daab",
+      "source_path": "figures/outputs/hodge_theory_kahler_geometry.png",
+      "canonical_path": "figures/canonical_outputs/hodge_theory_kahler_geometry.png",
+      "width": 4770,
+      "height": 1775
+    },
+    {
+      "filename": "hodge_theory_on_graphs.png",
+      "sha256": "eb25e3c4814e0f1e926278a837bba8f7c4d33e9a81952376c7ca8ebd5016d644",
+      "source_path": "figures/outputs/hodge_theory_on_graphs.png",
+      "canonical_path": "figures/canonical_outputs/hodge_theory_on_graphs.png",
+      "width": 4770,
+      "height": 3541
+    },
+    {
+      "filename": "hz_comparison.png",
+      "sha256": "f0d25c6350e3564deacd04a2eb6b317ed68326ecc1e596f1653c0b884a2406f9",
+      "source_path": "figures/outputs/hz_comparison.png",
+      "canonical_path": "figures/canonical_outputs/hz_comparison.png",
+      "width": 3568,
+      "height": 2965
+    },
+    {
+      "filename": "inflation_evolution.png",
+      "sha256": "cff99d5dd84b8a6a8991e399947aa5a85645c7b53688a7b55077c54d88c24878",
+      "source_path": "figures/outputs/inflation_evolution.png",
+      "canonical_path": "figures/canonical_outputs/inflation_evolution.png",
+      "width": 5366,
+      "height": 4100
+    },
+    {
+      "filename": "information_integration_theory.png",
+      "sha256": "45c71b7852b30365ef1332cc8c4e1c6abd08cbfd84e2cf8d07df0bbfd427795e",
+      "source_path": "figures/outputs/information_integration_theory.png",
+      "canonical_path": "figures/canonical_outputs/information_integration_theory.png",
+      "width": 4766,
+      "height": 3536
+    },
+    {
+      "filename": "isoperimetric_inequality.png",
+      "sha256": "b2fa17a4098387f2afacdf53f774d0877ed7535336ab17c262edea1381687d62",
+      "source_path": "figures/outputs/isoperimetric_inequality.png",
+      "canonical_path": "figures/canonical_outputs/isoperimetric_inequality.png",
+      "width": 4259,
+      "height": 1775
+    },
+    {
+      "filename": "kahler_identities.png",
+      "sha256": "592a57d16fbb75f3a7f0ad8c35424d8216add1bd3c5d7a22aa63947040aff9d8",
+      "source_path": "figures/outputs/kahler_identities.png",
+      "canonical_path": "figures/canonical_outputs/kahler_identities.png",
+      "width": 2970,
+      "height": 1779
+    },
+    {
+      "filename": "large_deviations.png",
+      "sha256": "2f82edddbb7d04d191f4243b37da44eaf7833319ab1b0b327cc0ed89ef0bdb47",
+      "source_path": "figures/outputs/large_deviations.png",
+      "canonical_path": "figures/canonical_outputs/large_deviations.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "littlewood_paley.png",
+      "sha256": "a11c7a2c0f6fecad1fdc381cb6cf7b0b178103cf082f0df8045a6cf1b7b843f3",
+      "source_path": "figures/outputs/littlewood_paley.png",
+      "canonical_path": "figures/canonical_outputs/littlewood_paley.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "lott_sturm_villani_curvature.png",
+      "sha256": "a79305e1ba525442cf9df8b81d0d0b0336fa4bd1aea8bfe56e8c24ed0215f89a",
+      "source_path": "figures/outputs/lott_sturm_villani_curvature.png",
+      "canonical_path": "figures/canonical_outputs/lott_sturm_villani_curvature.png",
+      "width": 2967,
       "height": 1775
     },
     {
@@ -185,12 +657,548 @@
       "height": 3539
     },
     {
-      "filename": "differential_topology_morse_theory.png",
-      "sha256": "8c122bbda7eed7a86e7ee162f1837242144952b8d085f411c6b472bd07f70dc3",
-      "source_path": "figures/outputs/differential_topology_morse_theory.png",
-      "canonical_path": "figures/canonical_outputs/differential_topology_morse_theory.png",
+      "filename": "manifold_progression_diagram.png",
+      "sha256": "147c815eb6916e51042b51d1f70fb76258633f065f53bcb13bec9526e089153b",
+      "source_path": "figures/outputs/manifold_progression_diagram.png",
+      "canonical_path": "figures/canonical_outputs/manifold_progression_diagram.png",
+      "width": 3780,
+      "height": 2447
+    },
+    {
+      "filename": "marcinkiewicz_interpolation.png",
+      "sha256": "838175db86faab6943a4debbcccb3da3e359c344c49f411ecebe5b8c67b1473a",
+      "source_path": "figures/outputs/marcinkiewicz_interpolation.png",
+      "canonical_path": "figures/canonical_outputs/marcinkiewicz_interpolation.png",
+      "width": 2968,
+      "height": 1775
+    },
+    {
+      "filename": "mass_depth_cn.png",
+      "sha256": "2e95caffedc59a93a996f65ef444cd28ed236ddac026e526ac934ef31ada99b1",
+      "source_path": "figures/outputs/mass_depth_cn.png",
+      "canonical_path": "figures/canonical_outputs/mass_depth_cn.png",
+      "width": 1800,
+      "height": 800
+    },
+    {
+      "filename": "metric_geometry.png",
+      "sha256": "7af36c9eb849beeb8972cffb83da43ce05f0263736839a9647f67b16da7ba199",
+      "source_path": "figures/outputs/metric_geometry.png",
+      "canonical_path": "figures/canonical_outputs/metric_geometry.png",
+      "width": 4770,
+      "height": 3541
+    },
+    {
+      "filename": "minimal_surfaces.png",
+      "sha256": "9ff981a0dad4f3095ba78a2686ec29f9019c6858a4220d8121a8755167f1c9a5",
+      "source_path": "figures/outputs/minimal_surfaces.png",
+      "canonical_path": "figures/canonical_outputs/minimal_surfaces.png",
+      "width": 4450,
+      "height": 1775
+    },
+    {
+      "filename": "model_theory_logic.png",
+      "sha256": "abbf56e25eaca39bc24d95b51db51d8c09f5a884b0820e6be51741a23d144863",
+      "source_path": "figures/outputs/model_theory_logic.png",
+      "canonical_path": "figures/canonical_outputs/model_theory_logic.png",
+      "width": 4671,
+      "height": 3539
+    },
+    {
+      "filename": "morphic_survival_curve.png",
+      "sha256": "5ba9dffff47cdd00fe2909df8639fe5eb4b559bfbe6d0e83e40e3642ca605ed5",
+      "source_path": "figures/outputs/morphic_survival_curve.png",
+      "canonical_path": "figures/canonical_outputs/morphic_survival_curve.png",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "filename": "morse_bott_theory.png",
+      "sha256": "dc41fd5b59b4ae987724add268a553c750eaecc927d5d9dd37d5d4d1348f87ff",
+      "source_path": "figures/outputs/morse_bott_theory.png",
+      "canonical_path": "figures/canonical_outputs/morse_bott_theory.png",
+      "width": 4457,
+      "height": 1777
+    },
+    {
+      "filename": "muon_mass_derivation.png",
+      "sha256": "6a549869d14e028693bc374279c2cdc67e72d18ea0b9004b0eb619c4da848cae",
+      "source_path": "figures/outputs/muon_mass_derivation.png",
+      "canonical_path": "figures/canonical_outputs/muon_mass_derivation.png",
+      "width": 4755,
+      "height": 3539
+    },
+    {
+      "filename": "neural_network_phi_analysis.png",
+      "sha256": "f314893149d6207e25388c4d6889585987765b8aa1751a5bb2170f8f095d979e",
+      "source_path": "figures/outputs/neural_network_phi_analysis.png",
+      "canonical_path": "figures/canonical_outputs/neural_network_phi_analysis.png",
+      "width": 4767,
+      "height": 3537
+    },
+    {
+      "filename": "o_minimality.png",
+      "sha256": "a7c97396beb6d16aaf2c0084693789e1f0cfc29ee225b45b77afdc687de19b87",
+      "source_path": "figures/outputs/o_minimality.png",
+      "canonical_path": "figures/canonical_outputs/o_minimality.png",
       "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "operator_algebras.png",
+      "sha256": "5b12133b163f54e52e7edc1327a7a92423011e8b7fe65a51a86b59a92ea8c6bf",
+      "source_path": "figures/outputs/operator_algebras.png",
+      "canonical_path": "figures/canonical_outputs/operator_algebras.png",
+      "width": 4770,
       "height": 3540
+    },
+    {
+      "filename": "operator_k_theory.png",
+      "sha256": "dccaf9b89916d0726434f44b589594e7a49bba6fa745a5d97dffedd033dedb0a",
+      "source_path": "figures/outputs/operator_k_theory.png",
+      "canonical_path": "figures/canonical_outputs/operator_k_theory.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "optimal_transport.png",
+      "sha256": "006bab822b41253f0a572a57842ce7c550ff83c7e3e00ea9671f588cf9cb6b18",
+      "source_path": "figures/outputs/optimal_transport.png",
+      "canonical_path": "figures/canonical_outputs/optimal_transport.png",
+      "width": 3568,
+      "height": 1481
+    },
+    {
+      "filename": "particle_mass_spectrum_theory.png",
+      "sha256": "ee17a63641921f06d211ae7014d3fdf6658e03de9dab7db8bc8580f654dba21d",
+      "source_path": "figures/outputs/particle_mass_spectrum_theory.png",
+      "canonical_path": "figures/canonical_outputs/particle_mass_spectrum_theory.png",
+      "width": 5377,
+      "height": 4165
+    },
+    {
+      "filename": "pde_regularity.png",
+      "sha256": "96de929d665c9ad6d4e1f4a5c4efdef9b9172a00b4e6bc85c9de684286ff6c77",
+      "source_path": "figures/outputs/pde_regularity.png",
+      "canonical_path": "figures/canonical_outputs/pde_regularity.png",
+      "width": 4303,
+      "height": 1775
+    },
+    {
+      "filename": "percolation_critical_probability.png",
+      "sha256": "545b6588da73b3bbb74bd23cb0b630404714c1c13a2a0bf83a58f6c4fb0a02cc",
+      "source_path": "figures/outputs/percolation_critical_probability.png",
+      "canonical_path": "figures/canonical_outputs/percolation_critical_probability.png",
+      "width": 4307,
+      "height": 1775
+    },
+    {
+      "filename": "phi_algebraic_k_theory.png",
+      "sha256": "c03057c040ef6b167148f0d1da8d916522d953b8e1cb004612b24fdaf9964e01",
+      "source_path": "figures/outputs/phi_algebraic_k_theory.png",
+      "canonical_path": "figures/canonical_outputs/phi_algebraic_k_theory.png",
+      "width": 4765,
+      "height": 3539
+    },
+    {
+      "filename": "phi_derived_categories_triangulated.png",
+      "sha256": "bdb34f917300b9c1ba78cfe3c95d2d28ddf12dc5954a6e9c9881630655c7fc09",
+      "source_path": "figures/outputs/phi_derived_categories_triangulated.png",
+      "canonical_path": "figures/canonical_outputs/phi_derived_categories_triangulated.png",
+      "width": 4890,
+      "height": 3565
+    },
+    {
+      "filename": "phi_elliptic_operators_harmonic_analysis.png",
+      "sha256": "54094aca60dd3b7aa104f7c38ea9460523287a88b94154f5e4742ed550d693a9",
+      "source_path": "figures/outputs/phi_elliptic_operators_harmonic_analysis.png",
+      "canonical_path": "figures/canonical_outputs/phi_elliptic_operators_harmonic_analysis.png",
+      "width": 4755,
+      "height": 3539
+    },
+    {
+      "filename": "phi_homology_cohomology.png",
+      "sha256": "ca24272a8ba4a0e73064dae2e1efd78c737560f912138b6be0c1688987febc92",
+      "source_path": "figures/outputs/phi_homology_cohomology.png",
+      "canonical_path": "figures/canonical_outputs/phi_homology_cohomology.png",
+      "width": 4770,
+      "height": 3539
+    },
+    {
+      "filename": "phi_infinity_categories_hott.png",
+      "sha256": "707bf36ff9b3f09686df4b99a2514c1ad1f604e367e17921bb90ee7e32a3a80f",
+      "source_path": "figures/outputs/phi_infinity_categories_hott.png",
+      "canonical_path": "figures/canonical_outputs/phi_infinity_categories_hott.png",
+      "width": 4719,
+      "height": 3539
+    },
+    {
+      "filename": "phi_l_functions_modular_forms.png",
+      "sha256": "11b76d4086439f2ee9446ada92cb536070d3de2a6c3adebe1307b84a0afb93be",
+      "source_path": "figures/outputs/phi_l_functions_modular_forms.png",
+      "canonical_path": "figures/canonical_outputs/phi_l_functions_modular_forms.png",
+      "width": 4765,
+      "height": 3539
+    },
+    {
+      "filename": "phi_lie_groups_root_systems.png",
+      "sha256": "918f122ffe9f934dab452ac413f685b35db4b20abfc7e8ab57fb9627e4897772",
+      "source_path": "figures/outputs/phi_lie_groups_root_systems.png",
+      "canonical_path": "figures/canonical_outputs/phi_lie_groups_root_systems.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "phi_motivic_geometry_a1_homotopy.png",
+      "sha256": "5116a6efb306c6bfef362c177a9d8164e87b6c94d14c2cea4787f01e9907e40d",
+      "source_path": "figures/outputs/phi_motivic_geometry_a1_homotopy.png",
+      "canonical_path": "figures/canonical_outputs/phi_motivic_geometry_a1_homotopy.png",
+      "width": 4771,
+      "height": 3539
+    },
+    {
+      "filename": "phi_p_adic_methods_diophantine.png",
+      "sha256": "0f913834b4b94d0fb04faef7b76737ef824067fd1de4b2847f7bb4f5d4eecb48",
+      "source_path": "figures/outputs/phi_p_adic_methods_diophantine.png",
+      "canonical_path": "figures/canonical_outputs/phi_p_adic_methods_diophantine.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "phi_recursion_rate_verification.png",
+      "sha256": "afb24e16c50f22299e6f67319590f3aacf26c800b7d90b1d908e84f7a60fca15",
+      "source_path": "figures/outputs/phi_recursion_rate_verification.png",
+      "canonical_path": "figures/canonical_outputs/phi_recursion_rate_verification.png",
+      "width": 4167,
+      "height": 1775
+    },
+    {
+      "filename": "phi_schemes_sheaves.png",
+      "sha256": "2321208229463b25b71218c41693e7e7d5d6d2ab5b1aa28d362dd781e8f57039",
+      "source_path": "figures/outputs/phi_schemes_sheaves.png",
+      "canonical_path": "figures/canonical_outputs/phi_schemes_sheaves.png",
+      "width": 4767,
+      "height": 3539
+    },
+    {
+      "filename": "physical_constants_derivation_table.png",
+      "sha256": "e459d6cf046d4a5dbc2902e821e82a17ccc7b43b947434021800fe85ca00171f",
+      "source_path": "figures/outputs/physical_constants_derivation_table.png",
+      "canonical_path": "figures/canonical_outputs/physical_constants_derivation_table.png",
+      "width": 3570,
+      "height": 2375
+    },
+    {
+      "filename": "physics_family_tree_from_firm.png",
+      "sha256": "207048a5d858e28f09fc3ff01ca30764b8afd6d341c5f8a085eeb07ddf7c4456",
+      "source_path": "figures/outputs/physics_family_tree_from_firm.png",
+      "canonical_path": "figures/canonical_outputs/physics_family_tree_from_firm.png",
+      "width": 5970,
+      "height": 4170
+    },
+    {
+      "filename": "physics_historical_timeline.png",
+      "sha256": "c7b95dbc485a699dc1ffadcedb308879e28040ffe4a8d89a24b0d496703a18a7",
+      "source_path": "figures/outputs/physics_historical_timeline.png",
+      "canonical_path": "figures/canonical_outputs/physics_historical_timeline.png",
+      "width": 4769,
+      "height": 2966
+    },
+    {
+      "filename": "planck_tt_binned.png",
+      "sha256": "70b1302f8b90151cfa4b6d3f548f986ef6db3b81fa3ebff2450da69dac697dc7",
+      "source_path": "figures/outputs/planck_tt_binned.png",
+      "canonical_path": "figures/canonical_outputs/planck_tt_binned.png",
+      "width": 3572,
+      "height": 2370
+    },
+    {
+      "filename": "pnp_quantum_consciousness_demonstration.png",
+      "sha256": "fcd78d8a1a25b2f37975db595af418b09ea5ba4209360dd125c3600fecb40ed6",
+      "source_path": "figures/outputs/pnp_quantum_consciousness_demonstration.png",
+      "canonical_path": "figures/canonical_outputs/pnp_quantum_consciousness_demonstration.png",
+      "width": 4744,
+      "height": 3539
+    },
+    {
+      "filename": "precision_measurements_comparison.png",
+      "sha256": "84c412422300f5db70dd4876901841e90dc681773a97c62c0a5c1899b150645f",
+      "source_path": "figures/outputs/precision_measurements_comparison.png",
+      "canonical_path": "figures/canonical_outputs/precision_measurements_comparison.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "probability_limit_theorems.png",
+      "sha256": "d0ff0eedf357974929a1df1e2d8b0517ddfa74ebb606f3af0e7b51c78d97dc4e",
+      "source_path": "figures/outputs/probability_limit_theorems.png",
+      "canonical_path": "figures/canonical_outputs/probability_limit_theorems.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "quantum_computing_applications.png",
+      "sha256": "87317c3d41af59b8a9d33f2b6a2ac403cf7ed44dac6c6e0cb71810a0f54db382",
+      "source_path": "figures/outputs/quantum_computing_applications.png",
+      "canonical_path": "figures/canonical_outputs/quantum_computing_applications.png",
+      "width": 4767,
+      "height": 3536
+    },
+    {
+      "filename": "quantum_computing_phi_acceleration.png",
+      "sha256": "172ccd4e060c864c1cefd45f5938fe4d345d174a0786551831e2372e85219e4c",
+      "source_path": "figures/outputs/quantum_computing_phi_acceleration.png",
+      "canonical_path": "figures/canonical_outputs/quantum_computing_phi_acceleration.png",
+      "width": 4766,
+      "height": 3537
+    },
+    {
+      "filename": "random_matrix_theory.png",
+      "sha256": "651084f064dedba4ab4ee327c567086849bcdaaad1c2b3a1dce21f0e05cf0aa1",
+      "source_path": "figures/outputs/random_matrix_theory.png",
+      "canonical_path": "figures/canonical_outputs/random_matrix_theory.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "random_walks_poisson_boundary.png",
+      "sha256": "68af188f0f291284a102e7977af1ca41546cf150d94a1573abd6deb4c0191883",
+      "source_path": "figures/outputs/random_walks_poisson_boundary.png",
+      "canonical_path": "figures/canonical_outputs/random_walks_poisson_boundary.png",
+      "width": 3876,
+      "height": 1777
+    },
+    {
+      "filename": "rectifiability_criteria.png",
+      "sha256": "d96984b177c784c5e266ca1364f609636f6af3f70bd750da483e3d3b94574b40",
+      "source_path": "figures/outputs/rectifiability_criteria.png",
+      "canonical_path": "figures/canonical_outputs/rectifiability_criteria.png",
+      "width": 4600,
+      "height": 1777
+    },
+    {
+      "filename": "recursive_potential_wells.png",
+      "sha256": "2fa6669f3e56f7cd3e0f85632b91488cec3d5a3f045a18710c30b1d072fe583e",
+      "source_path": "figures/outputs/recursive_potential_wells.png",
+      "canonical_path": "figures/canonical_outputs/recursive_potential_wells.png",
+      "width": 1500,
+      "height": 900
+    },
+    {
+      "filename": "ricci_flow.png",
+      "sha256": "86eb217d9cba90dc5df75da45c224cdcbd01c74495c0eb4f6e0a1b54817ef71d",
+      "source_path": "figures/outputs/ricci_flow.png",
+      "canonical_path": "figures/canonical_outputs/ricci_flow.png",
+      "width": 4242,
+      "height": 1775
+    },
+    {
+      "filename": "riemann_surfaces_teichmueller.png",
+      "sha256": "a9bc8ec7aae99f01e17fb1cd400310ca7dfabbf97ced6d1e19a6e46d90702a02",
+      "source_path": "figures/outputs/riemann_surfaces_teichmueller.png",
+      "canonical_path": "figures/canonical_outputs/riemann_surfaces_teichmueller.png",
+      "width": 4757,
+      "height": 3539
+    },
+    {
+      "filename": "riemannian_curvature_comparison.png",
+      "sha256": "c10a57633392e60b59b3dd09896b0c84f96b270c57939469426637f3caa1d212",
+      "source_path": "figures/outputs/riemannian_curvature_comparison.png",
+      "canonical_path": "figures/canonical_outputs/riemannian_curvature_comparison.png",
+      "width": 4745,
+      "height": 1775
+    },
+    {
+      "filename": "riesz_transforms.png",
+      "sha256": "d1f6ccb02495e161d78592ba7dd447245aefabc85340139de90712f518794dbe",
+      "source_path": "figures/outputs/riesz_transforms.png",
+      "canonical_path": "figures/canonical_outputs/riesz_transforms.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "schauder_estimates.png",
+      "sha256": "b964062ae08e08415dbf88116a77824ed0a42ac1121d3136c6b5524e2cb90d23",
+      "source_path": "figures/outputs/schauder_estimates.png",
+      "canonical_path": "figures/canonical_outputs/schauder_estimates.png",
+      "width": 4793,
+      "height": 1775
+    },
+    {
+      "filename": "sheaf_cohomology_spectral_sequence.png",
+      "sha256": "13da968d603d6071e0da7d315d38753038f9f4bd257ce7b1af0fd3b0b347b24c",
+      "source_path": "figures/outputs/sheaf_cohomology_spectral_sequence.png",
+      "canonical_path": "figures/canonical_outputs/sheaf_cohomology_spectral_sequence.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "sn_mu_comparison.png",
+      "sha256": "3ae8472c2bcad0ae2082b09c338b8c00e9c5b1faa6b8eb54b2157c7d32253155",
+      "source_path": "figures/outputs/sn_mu_comparison.png",
+      "canonical_path": "figures/canonical_outputs/sn_mu_comparison.png",
+      "width": 3568,
+      "height": 2365
+    },
+    {
+      "filename": "sobolev_sharp_embeddings.png",
+      "sha256": "214899dbbef7f45652a85eb26727b3d7ac05f1abf839806227395218c3e10160",
+      "source_path": "figures/outputs/sobolev_sharp_embeddings.png",
+      "canonical_path": "figures/canonical_outputs/sobolev_sharp_embeddings.png",
+      "width": 2968,
+      "height": 1775
+    },
+    {
+      "filename": "sobolev_spaces.png",
+      "sha256": "53d606f36c3d14f22c875fb6f5e06ca1d29d1a847bd911ed39a874793d827e4d",
+      "source_path": "figures/outputs/sobolev_spaces.png",
+      "canonical_path": "figures/canonical_outputs/sobolev_spaces.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "spacetime_metric_emergence.png",
+      "sha256": "29e916e9e11d25a8a3742ae79dc4d96c351abf92d0d974f4b60c9d0e7c49d579",
+      "source_path": "figures/outputs/spacetime_metric_emergence.png",
+      "canonical_path": "figures/canonical_outputs/spacetime_metric_emergence.png",
+      "width": 3972,
+      "height": 2795
+    },
+    {
+      "filename": "sparc_rotation_curves.png",
+      "sha256": "ae2c2e79fdaee5f540bee8342dbdd1b0cd65a884babd1bce7ae96ce0d2cc9158",
+      "source_path": "figures/outputs/sparc_rotation_curves.png",
+      "canonical_path": "figures/canonical_outputs/sparc_rotation_curves.png",
+      "width": 4768,
+      "height": 3563
+    },
+    {
+      "filename": "spectral_analysis_phi_operators.png",
+      "sha256": "6d875171df7d9b7628bc9bc36f2c26fe0bb8644f3190dce0b7d8d343e444158e",
+      "source_path": "figures/outputs/spectral_analysis_phi_operators.png",
+      "canonical_path": "figures/canonical_outputs/spectral_analysis_phi_operators.png",
+      "width": 4774,
+      "height": 3539
+    },
+    {
+      "filename": "spectral_graph_theory.png",
+      "sha256": "52abb92e3bbb7e233d051df71c9d7a7e5a21b124b9630dfa1cc540594ecfdd6d",
+      "source_path": "figures/outputs/spectral_graph_theory.png",
+      "canonical_path": "figures/canonical_outputs/spectral_graph_theory.png",
+      "width": 4770,
+      "height": 3541
+    },
+    {
+      "filename": "spectral_zeta_analysis.png",
+      "sha256": "94c0eed878f0cc5983fc4d54ab1cf1d8ca32c690b44a379c3ba389c005fa23cb",
+      "source_path": "figures/outputs/spectral_zeta_analysis.png",
+      "canonical_path": "figures/canonical_outputs/spectral_zeta_analysis.png",
+      "width": 3552,
+      "height": 2953
+    },
+    {
+      "filename": "spectral_zeta_functions.png",
+      "sha256": "fa59dc9b1fa090964bccb1487aa6b59aaabfd109fafdf73a77b4105caf302fe1",
+      "source_path": "figures/outputs/spectral_zeta_functions.png",
+      "canonical_path": "figures/canonical_outputs/spectral_zeta_functions.png",
+      "width": 4767,
+      "height": 3537
+    },
+    {
+      "filename": "statistical_significance_analysis.png",
+      "sha256": "1106b89a7fea66922a8f983db8f69d4b7225a1ee77b08ffdc7a4b8ced0508080",
+      "source_path": "figures/outputs/statistical_significance_analysis.png",
+      "canonical_path": "figures/canonical_outputs/statistical_significance_analysis.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "stein_interpolation.png",
+      "sha256": "7228089eb2fa6294e563ced583bf892fe253380b8f6fe6cb14a677dfa41f4f57",
+      "source_path": "figures/outputs/stein_interpolation.png",
+      "canonical_path": "figures/canonical_outputs/stein_interpolation.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "stochastic_calculus.png",
+      "sha256": "d38a40da4c11171e67dd52e2d97bd0973678dfa3ea51fdb7bd380c09c91de802",
+      "source_path": "figures/outputs/stochastic_calculus.png",
+      "canonical_path": "figures/canonical_outputs/stochastic_calculus.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "strange_quark_mass_derivation.png",
+      "sha256": "c7b897948ae805ee4be38956c74d9216605ffde42e03abfa3ffe9318562646a8",
+      "source_path": "figures/outputs/strange_quark_mass_derivation.png",
+      "canonical_path": "figures/canonical_outputs/strange_quark_mass_derivation.png",
+      "width": 4767,
+      "height": 3539
+    },
+    {
+      "filename": "supersymmetry_phi_breaking.png",
+      "sha256": "409005b142f0243282142638e6d78b8aa2e629f05fb1d5d0fdb1f4c640ac13a9",
+      "source_path": "figures/outputs/supersymmetry_phi_breaking.png",
+      "canonical_path": "figures/canonical_outputs/supersymmetry_phi_breaking.png",
+      "width": 4766,
+      "height": 3536
+    },
+    {
+      "filename": "symplectic_geometry.png",
+      "sha256": "8169d969e9176a875d3e06c2b79a373af302dac68c080c3fc6330da057ecca6c",
+      "source_path": "figures/outputs/symplectic_geometry.png",
+      "canonical_path": "figures/canonical_outputs/symplectic_geometry.png",
+      "width": 4631,
+      "height": 3539
+    },
+    {
+      "filename": "teichmueller_geodesics.png",
+      "sha256": "cd0efa47bd3d7df8f79d3bb7d59a776f0790b56d9543b6f6a3920e8692264b8c",
+      "source_path": "figures/outputs/teichmueller_geodesics.png",
+      "canonical_path": "figures/canonical_outputs/teichmueller_geodesics.png",
+      "width": 4330,
+      "height": 1779
+    },
+    {
+      "filename": "theory_comparison.png",
+      "sha256": "247623cc56435380640ed4c65df4b4f19d68a2f379abaafdf0bd4a05e99d6376",
+      "source_path": "figures/outputs/theory_comparison.png",
+      "canonical_path": "figures/canonical_outputs/theory_comparison.png",
+      "width": 3552,
+      "height": 2952
+    },
+    {
+      "filename": "top_quark_mass_derivation.png",
+      "sha256": "dd1ebe8b55e2dc92f16667c9bb8bf90e578b6f648acfd7824834f2306cdf8d33",
+      "source_path": "figures/outputs/top_quark_mass_derivation.png",
+      "canonical_path": "figures/canonical_outputs/top_quark_mass_derivation.png",
+      "width": 4910,
+      "height": 3539
+    },
+    {
+      "filename": "up_quark_mass_derivation.png",
+      "sha256": "e2dfb84eb12b5f7e091da704a667bd8a3b095792000b91715027d9f97357ae0d",
+      "source_path": "figures/outputs/up_quark_mass_derivation.png",
+      "canonical_path": "figures/canonical_outputs/up_quark_mass_derivation.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "variational_inequalities.png",
+      "sha256": "6c5ad3f31abd7bc8d7508f4d75bf840e38a9c6bbf9ae32dc9d2b5d017e6fc964",
+      "source_path": "figures/outputs/variational_inequalities.png",
+      "canonical_path": "figures/canonical_outputs/variational_inequalities.png",
+      "width": 4573,
+      "height": 1775
+    },
+    {
+      "filename": "xi_complexity_mapping.png",
+      "sha256": "14b867fff7b3925a333c0a180e46210bb5bfb4c68a1231da9f770576cf9bba32",
+      "source_path": "figures/outputs/xi_complexity_mapping.png",
+      "canonical_path": "figures/canonical_outputs/xi_complexity_mapping.png",
+      "width": 3543,
+      "height": 2953
     }
   ]
 }

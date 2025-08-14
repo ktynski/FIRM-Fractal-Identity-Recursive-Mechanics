@@ -1,4 +1,13 @@
 {
-  "total": 24,
-  "issues": []
+  "total": 150,
+  "issues": [
+    {
+      "file": "epsilon_stability_scan.png",
+      "issue": "too_small",
+      "width": 1600,
+      "height": 700,
+      "min_width": 1200,
+      "min_height": 800
+    }
+  ]
 }

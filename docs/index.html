@@ -10,6 +10,7 @@
   <header class="header">
     <nav class="nav">
       <div class="brand">Ex Nihilo Reality</div>
+      <a href="#intro">Intro</a>
       <a href="#featured">Featured</a>
       <a href="#cases">Case Studies</a>
       <a href="#gallery">Gallery</a>
@@ -45,6 +46,30 @@
               <option value="height">Sort: Height</option>
             </select>
             <span class="badge" id="countBadge">0</span>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section" id="intro">
+      <h2>The Ex Nihilo Program</h2>
+      <div class="card">
+        <h3>Mathematics that survives contact with code</h3>
+        <p>The Ex Nihilo program advances a simple standard: a claim is only as strong as the artifact that realizes it. We therefore present a library of executable arguments—figures generated deterministically from mathematics—across geometry, analysis, topology, and category theory. These artifacts are not illustrations; they are the argument.</p>
+        <p>Three pillars organize the approach. First, a categorical backbone ensures compositionality: constructions respect morphisms, naturality, and functorial structure. Second, spectral analysis adjudicates: operators and their spectra provide basis‑invariant witnesses that cut through heuristic ambiguity. Third, geometric and topological mechanisms—curvature comparison, heat kernels, and spectral sequences—control the flow of invariants across scales.</p>
+        <p>We explicitly invite falsification. Each artifact is reproducible from source, with peer‑review packets available. If a construction fails under independent regeneration, the claim fails with it. This is what we mean by mathematics that compiles.</p>
+        <div class="grid" style="margin-top:10px;">
+          <div class="tile">
+            <img id="intro1img" alt="Categorical backbone" />
+            <div class="meta"><div class="name">Categorical backbone</div><div class="dims">φ‑enhanced morphisms</div><div class="actions"><a id="intro1open" class="btn" target="_blank">open</a><a id="intro1peer" class="btn" target="_blank">peer‑review</a></div></div>
+          </div>
+          <div class="tile">
+            <img id="intro2img" alt="Spectral adjudication" />
+            <div class="meta"><div class="name">Spectral adjudication</div><div class="dims">operator‑level evidence</div><div class="actions"><a id="intro2open" class="btn" target="_blank">open</a><a id="intro2peer" class="btn" target="_blank">peer‑review</a></div></div>
+          </div>
+          <div class="tile">
+            <img id="intro3img" alt="Geometric control" />
+            <div class="meta"><div class="name">Geometric control</div><div class="dims">curvature and kernels</div><div class="actions"><a id="intro3open" class="btn" target="_blank">open</a><a id="intro3peer" class="btn" target="_blank">peer‑review</a></div></div>
           </div>
         </div>
       </div>
@@ -126,7 +151,7 @@
         <pre class="subtle" style="overflow:auto;">python figures/peer_review/sync_and_verify.py --generate-math
 python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
         <p class="subtle">Outputs: <code>figures/canonical_outputs/</code> (single source of truth) and <code>arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/</code> (submission‑ready).</p>
-      </div>
+  </div>
     </section>
 
     <section class="footer">
@@ -178,6 +203,13 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
       { imgId: 'case2img', ctaId: 'case2cta', peerId: 'case2peer', filename: 'spectral_analysis_phi_operators.png' },
       { imgId: 'case3img', ctaId: 'case3cta', peerId: 'case3peer', filename: 'riemannian_curvature_comparison.png' },
       { imgId: 'case4img', ctaId: 'case4cta', peerId: 'case4peer', filename: 'eilenberg_moore_spectral_sequence.png' }
+    ];
+
+    // Intro tiles mapping
+    const INTRO = [
+      { imgId: 'intro1img', openId: 'intro1open', peerId: 'intro1peer', filename: 'category_theory_phi_morphisms.png' },
+      { imgId: 'intro2img', openId: 'intro2open', peerId: 'intro2peer', filename: 'spectral_analysis_phi_operators.png' },
+      { imgId: 'intro3img', openId: 'intro3open', peerId: 'intro3peer', filename: 'riemannian_curvature_comparison.png' }
     ];
 
     const RAW_BASE = 'https://raw.githubusercontent.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/main/';
@@ -336,6 +368,16 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
       if (el) { el.href = url; el.target = '_blank'; }
     }
 
+    function linkIntro(imgId, openId, peerId, filename) {
+      const url = canonicalUrlByName(filename);
+      const img = document.getElementById(imgId);
+      const open = document.getElementById(openId);
+      const peer = document.getElementById(peerId);
+      if (img) img.src = url;
+      if (open) open.href = url;
+      if (peer) linkPeerCase(peerId, filename);
+    }
+
     function renderFeatured(figures) {
       const curated = FEATURED.map(fn => figures.find(f => (f.filename||'').toLowerCase() === fn.toLowerCase())).filter(Boolean);
       featuredGrid.innerHTML = '';
@@ -346,6 +388,7 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
         linkCase(c.imgId, c.ctaId, c.filename);
         linkPeerCase(c.peerId, c.filename);
       }
+      for (const i of INTRO) linkIntro(i.imgId, i.openId, i.peerId, i.filename);
     }
 
     (async () => {

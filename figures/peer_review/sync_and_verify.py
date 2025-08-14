@@ -99,6 +99,32 @@ def copy_to_canonical(files: List[Path]) -> List[Dict]:
     return entries
 
 
+def build_manifest_from_canonical() -> List[Dict]:
+    """Enumerate every PNG already in canonical outputs and construct manifest entries."""
+    entries: List[Dict] = []
+    if not CANONICAL_DIR.exists():
+        return entries
+    for dst in sorted(CANONICAL_DIR.glob("*.png")):
+        try:
+            import PIL.Image as Image  # optional
+            with Image.open(dst) as im:
+                width, height = im.size
+        except Exception:
+            width, height = -1, -1
+        # Attempt to discover a corresponding source under outputs (optional)
+        guess_src = OUTPUTS_DIR / dst.name
+        source_path = str(guess_src.relative_to(ROOT)) if guess_src.exists() else str(dst.relative_to(ROOT))
+        entries.append({
+            "filename": dst.name,
+            "sha256": sha256sum(dst) if dst.exists() else "",
+            "source_path": source_path,
+            "canonical_path": str(dst.relative_to(ROOT)),
+            "width": width,
+            "height": height,
+        })
+    return entries
+
+
 def verify_sizes(manifest: List[Dict]) -> List[Dict]:
     issues = []
     for m in manifest:
@@ -142,6 +168,7 @@ def main():
     parser = argparse.ArgumentParser(description="Sync math figures to canonical, verify, and prep submission")
     parser.add_argument("--generate-math", action="store_true", help="Discover and copy math-only figures to canonical, build manifest")
     parser.add_argument("--prepare-submission", action="store_true", help="Copy canonical figures to arXiv submission directory")
+    parser.add_argument("--rebuild-manifest", action="store_true", help="Rebuild manifest from all files in canonical_outputs (no filtering)")
     args = parser.parse_args()
 
     ensure_dirs()
@@ -153,6 +180,17 @@ def main():
         write_manifest(manifest)
         write_report(manifest, issues)
         print(f"Synced {len(manifest)} math figures to {CANONICAL_DIR}")
+        if issues:
+            print(f"Found {len(issues)} issues (see verification_report.json)")
+        else:
+            print("All figures meet size requirements")
+
+    if args.rebuild_manifest:
+        manifest = build_manifest_from_canonical()
+        issues = verify_sizes(manifest)
+        write_manifest(manifest)
+        write_report(manifest, issues)
+        print(f"Rebuilt manifest from {len(manifest)} canonical figures in {CANONICAL_DIR}")
         if issues:
             print(f"Found {len(issues)} issues (see verification_report.json)")
         else:
