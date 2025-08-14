@@ -68,11 +68,8 @@ p { line-height: 1.6; margin-bottom: 1rem; }
 }
 
 /* ELI25 Toggle Functionality */
-.eli25-active [data-technical] {
-  display: none;
-}
-
-.eli25-active [data-layperson] {
+/* Default state: show technical, hide layperson */
+[data-technical] {
   display: block;
 }
 
@@ -80,7 +77,12 @@ p { line-height: 1.6; margin-bottom: 1rem; }
   display: none;
 }
 
-[data-technical] {
+/* When ELI25 is active: hide technical, show layperson */
+.eli25-active [data-technical] {
+  display: none;
+}
+
+.eli25-active [data-layperson] {
   display: block;
 }
 
@@ -1773,7 +1775,7 @@ article li {
 
 .level-actions .cta {
   font-size: 0.9rem;
-  padding: 0.75rem 1rem;
+    padding: 0.75rem 1rem;
 }
 
 .discovery-conclusion {
