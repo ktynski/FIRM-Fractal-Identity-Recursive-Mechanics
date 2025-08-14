@@ -444,8 +444,8 @@
             <span data-layperson">Are we finding out that the universe is made of math, or that math creates universes? Maybe there's no difference—and that's the most mind-blowing thing we could possibly discover.</span>
           </p>
         </div>
-      </div>
-    </section>
+    </div>
+      </section>
 
     <section class="seeking-critics">
       <div class="container">
@@ -540,8 +540,8 @@
           <p class="conclusion-text">The biggest discoveries in science happen when brilliant minds disagree, then work together to find the truth.</p>
           <p class="conclusion-cta"><strong>What role will you play in this story?</strong></p>
         </div>
-      </div>
-    </section>
+    </div>
+      </section>
 
     <section class="article" id="article">
       <div class="articleLayout">
@@ -650,9 +650,8 @@
     document.addEventListener('DOMContentLoaded', function() {
       setFig('fAbs1','fAbs1Open','fAbs1Peer','conceptual_overview_diagram.png');
       
-      // Gallery functionality
+      // Gallery functionality (only load if gallery exists)
     const grid = document.getElementById('grid');
-
     const search = document.getElementById('search');
     const sort = document.getElementById('sort');
     const countBadge = document.getElementById('countBadge');
@@ -676,7 +675,6 @@
 
       // Check for saved ELI25 state
       const isELI25Active = localStorage.getItem('eli25Active') === 'true';
-      console.log('ELI25 Debug - Initial state:', isELI25Active, 'Buttons found:', !!eliBtn, !!heroEliBtn);
       if (isELI25Active) {
         document.body.classList.add('eli25-active');
       }
@@ -684,22 +682,18 @@
 
       // Function to toggle ELI25 mode
       function toggleELI25Mode() {
-        console.log('ELI25 Debug - Button clicked');
         const isCurrentlyActive = document.body.classList.contains('eli25-active');
-        console.log('ELI25 Debug - Current state:', isCurrentlyActive);
         
         if (isCurrentlyActive) {
           // Switch to technical mode
           document.body.classList.remove('eli25-active');
           localStorage.setItem('eli25Active', 'false');
           updateButtonStates(false);
-          console.log('ELI25 Debug - Switched to technical mode');
         } else {
           // Switch to layperson mode
           document.body.classList.add('eli25-active');
           localStorage.setItem('eli25Active', 'true');
           updateButtonStates(true);
-          console.log('ELI25 Debug - Switched to layperson mode');
         }
       }
 
@@ -918,15 +912,15 @@
         return tile;
       }
 
-
-
-      // Load the gallery data
-      loadManifest().then(data => {
-      allFigures = data.figures || [];
-      resetAndRender();
-        if (search) search.addEventListener('input', resetAndRender);
-        if (sort) sort.addEventListener('change', resetAndRender);
-      });
+      // Load the gallery data only if gallery exists
+      if (grid) {
+        loadManifest().then(data => {
+          allFigures = data.figures || [];
+          resetAndRender();
+          if (search) search.addEventListener('input', resetAndRender);
+          if (sort) sort.addEventListener('change', resetAndRender);
+        });
+      }
 
       const hamburgerMenu = document.querySelector('.hamburger-menu');
       const nav = document.querySelector('.nav');

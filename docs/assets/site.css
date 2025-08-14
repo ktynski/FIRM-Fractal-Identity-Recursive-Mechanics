@@ -1,18 +1,22 @@
 /* Minimal modern CSS for gallery+landing */
 :root {
-  --bg: #0f1116;
+  --bg-primary: #0f1116;
+  --bg-secondary: #161a22;
   --panel: #161a22;
+  --text-primary: #e6e6e6;
+  --text-secondary: #aeb4c2;
   --text: #e6e6e6;
   --muted: #aeb4c2;
   --accent: #6ea8fe;
   --accent-2: #7ee787;
   --warn: #f0a856;
+  --border: #222835;
 }
 * { box-sizing: border-box; }
 html, body { 
   margin: 0; 
   padding: 0; 
-  background: var(--bg); 
+  background: var(--bg-primary); 
   color: var(--text); 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; 
   line-height: 1.6;
@@ -25,6 +29,19 @@ h2 { font-size: 2rem; font-weight: 600; line-height: 1.3; margin-bottom: 1.25rem
 h3 { font-size: 1.5rem; font-weight: 600; line-height: 1.4; margin-bottom: 1rem; }
 h4 { font-size: 1.25rem; font-weight: 500; line-height: 1.4; margin-bottom: 0.75rem; }
 p { line-height: 1.6; margin-bottom: 1rem; }
+
+/* Global container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
 
 .header { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(15,17,22,0.75); border-bottom: 1px solid #222835; z-index: 50; }
 .nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 24px; padding: 14px 16px; }
