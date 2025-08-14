@@ -63,3 +63,280 @@ select.select { padding: 10px 12px; border-radius: 8px; background: #0c0f16; bor
 .case .copy .cta { margin-top: 8px; }
 
 .footer { max-width: 1200px; margin: 40px auto; padding: 0 16px 24px; color: var(--muted); }
+
+/* Enhanced article layout and readability */
+.articleLayout { display: flex; gap: 2rem; max-width: 1400px; margin: 0 auto; padding: 1rem; }
+.tocSidebar { flex: 0 0 250px; position: sticky; top: 2rem; height: fit-content; }
+.toc { background: var(--panel); border: 1px solid #262c39; border-radius: 8px; padding: 1rem; }
+.toc h3 { margin: 0 0 0.5rem 0; font-size: 1rem; color: var(--text); }
+.toc ol { margin: 0; padding-left: 1.2rem; font-size: 0.9rem; }
+.toc li { margin: 0.25rem 0; }
+.toc a { color: var(--accent); text-decoration: none; }
+.toc a:hover { text-decoration: underline; color: var(--accent-2); }
+
+/* Article styling */
+article { 
+  flex: 1; 
+  min-width: 0; 
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+article h1 { 
+  font-size: 3rem; 
+  color: var(--text); 
+  margin-bottom: 2rem; 
+  text-align: center;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 1rem;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+article h2 { 
+  font-size: 1.9rem; 
+  color: var(--text); 
+  margin: 3rem 0 1.5rem 0; 
+  padding: 1.2rem;
+  border-left: 4px solid var(--accent);
+  background: linear-gradient(90deg, var(--panel) 0%, transparent 100%);
+  border-radius: 0 8px 8px 0;
+  position: relative;
+}
+
+article h2::before {
+  content: counter(section);
+  counter-increment: section;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--accent);
+  color: var(--bg);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+article { counter-reset: section; }
+
+article h3 {
+  font-size: 1.4rem;
+  color: var(--accent-2);
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #262c39;
+}
+
+article p { 
+  margin: 1.5rem 0; 
+  text-align: justify;
+  max-width: none;
+}
+
+/* Callout boxes */
+.insight {
+  background: linear-gradient(135deg, rgba(110, 168, 254, 0.1) 0%, rgba(126, 231, 135, 0.1) 100%);
+  border-left: 5px solid var(--accent);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0 8px 8px 0;
+  font-weight: 500;
+  position: relative;
+}
+
+.insight::before {
+  content: "💡";
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  background: var(--panel);
+  padding: 0 8px;
+  font-size: 1.2rem;
+}
+
+.key-equation {
+  background: rgba(240, 168, 86, 0.1);
+  border: 2px solid var(--warn);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.key-equation::before {
+  content: "⚡ KEY EQUATION";
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: var(--warn);
+  color: var(--bg);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.breakthrough {
+  background: linear-gradient(135deg, rgba(126, 231, 135, 0.15) 0%, rgba(110, 168, 254, 0.15) 100%);
+  border: 2px solid var(--accent-2);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  position: relative;
+}
+
+.breakthrough::before {
+  content: "🚀 BREAKTHROUGH";
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: var(--accent-2);
+  color: var(--bg);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.warning {
+  background: rgba(240, 168, 86, 0.1);
+  border: 2px solid var(--warn);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  border-left: 5px solid var(--warn);
+  position: relative;
+}
+
+.warning::before {
+  content: "⚠️";
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  background: var(--panel);
+  padding: 0 8px;
+  font-size: 1.2rem;
+}
+
+/* Figure styling */
+.fig { 
+  margin: 3rem 0; 
+  text-align: center; 
+  background: var(--panel);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #262c39;
+}
+
+.fig img { 
+  max-width: 100%; 
+  height: auto; 
+  border: 2px solid #262c39; 
+  border-radius: 8px; 
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.fig img:hover {
+  transform: scale(1.02);
+}
+
+.fig .caption { 
+  margin-top: 1rem; 
+  font-style: italic; 
+  color: var(--muted); 
+  font-size: 1rem;
+  font-weight: 500;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Two-column figure layout */
+.fig-row {
+  display: flex;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.fig-col {
+  flex: 1;
+  background: var(--panel);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #262c39;
+  text-align: center;
+}
+
+/* Mathematical formulas */
+.math-block {
+  background: var(--panel);
+  border: 2px solid var(--accent);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  font-family: 'Times New Roman', serif;
+  font-size: 1.4rem;
+  text-align: center;
+  overflow-x: auto;
+  position: relative;
+}
+
+.math-block::before {
+  content: "∑";
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Lists */
+article ul, article ol {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+article li {
+  margin: 0.8rem 0;
+}
+
+/* Emphasis and highlights */
+.highlight {
+  background: linear-gradient(120deg, transparent 0%, rgba(126, 231, 135, 0.3) 50%, transparent 100%);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.phi {
+  color: var(--warn);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .articleLayout { flex-direction: column; }
+  .tocSidebar { flex: none; position: static; }
+  article h1 { font-size: 2.2rem; }
+  article h2 { font-size: 1.5rem; padding: 1rem; }
+  article h2::before { display: none; }
+  .fig-row { flex-direction: column; }
+  article { font-size: 1rem; }
+}
