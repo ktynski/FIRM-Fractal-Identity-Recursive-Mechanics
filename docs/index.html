@@ -326,36 +326,58 @@
         
         // Physics & Cosmology
         if (s.includes('physics') || s.includes('quark') || s.includes('lepton') || s.includes('boson') || s.includes('particle') || s.includes('standard_model')) tags.push('physics');
-        if (s.includes('cosmology') || s.includes('cmb') || s.includes('big_bang') || s.includes('nucleosynthesis') || s.includes('inflation') || s.includes('dark_energy')) tags.push('cosmology');
+        if (s.includes('cosmology') || s.includes('cmb') || s.includes('big_bang') || s.includes('nucleosynthesis') || s.includes('inflation') || s.includes('dark_energy') || s.includes('cosmic') || s.includes('universe')) tags.push('cosmology');
         if (s.includes('gravity') || s.includes('relativity') || s.includes('spacetime') || s.includes('schwarzschild') || s.includes('einstein')) tags.push('gravity');
+        if (s.includes('quantum') || s.includes('qft') || s.includes('field_theory') || s.includes('gauge') || s.includes('supersymmetry') || s.includes('string')) tags.push('quantum-field-theory');
         
         // Consciousness & AI
         if (s.includes('consciousness') || s.includes('pnp') || s.includes('neural') || s.includes('ai_acceleration') || s.includes('artificial')) tags.push('consciousness');
         
-        // Mathematical Areas
-        if (s.includes('category') || s.includes('topos') || s.includes('morphism') || s.includes('functor')) tags.push('category-theory');
+        // Advanced Mathematical Analysis
+        if (s.includes('analysis') || s.includes('pde') || s.includes('elliptic') || s.includes('heat') || s.includes('harmonic') || s.includes('fourier')) tags.push('analysis');
+        if (s.includes('functional') || s.includes('operator') || s.includes('spectral') || s.includes('banach') || s.includes('hilbert')) tags.push('functional-analysis');
+        if (s.includes('measure') || s.includes('integration') || s.includes('lebesgue') || s.includes('hausdorff') || s.includes('bv_') || s.includes('coarea')) tags.push('measure-theory');
+        if (s.includes('calculus') || s.includes('variations') || s.includes('euler') || s.includes('lagrange') || s.includes('hamilton')) tags.push('calculus-variations');
+        if (s.includes('distribution') || s.includes('sobolev') || s.includes('schwartz') || s.includes('tempered')) tags.push('distribution-theory');
+        
+        // Pure Mathematics
+        if (s.includes('category') || s.includes('topos') || s.includes('morphism') || s.includes('functor') || s.includes('eilenberg')) tags.push('category-theory');
         if (s.includes('geometry') || s.includes('riemann') || s.includes('manifold') || s.includes('curvature') || s.includes('differential')) tags.push('geometry');
         if (s.includes('topology') || s.includes('homology') || s.includes('cohomology') || s.includes('spectral_sequence') || s.includes('homotopy')) tags.push('topology');
         if (s.includes('algebra') || s.includes('group') || s.includes('ring') || s.includes('field') || s.includes('galois') || s.includes('automorphic')) tags.push('algebra');
+        if (s.includes('lie') || s.includes('root_systems') || s.includes('representation') || s.includes('symmetric')) tags.push('lie-theory');
         if (s.includes('number_theory') || s.includes('prime') || s.includes('zeta') || s.includes('diophantine') || s.includes('arithmetic')) tags.push('number-theory');
-        if (s.includes('analysis') || s.includes('pde') || s.includes('elliptic') || s.includes('heat') || s.includes('harmonic') || s.includes('fourier')) tags.push('analysis');
         if (s.includes('probability') || s.includes('stochastic') || s.includes('random') || s.includes('clt') || s.includes('lln') || s.includes('markov')) tags.push('probability');
-        if (s.includes('logic') || s.includes('proof') || s.includes('theorem') || s.includes('axiom') || s.includes('formal')) tags.push('logic');
+        if (s.includes('logic') || s.includes('proof') || s.includes('theorem') || s.includes('axiom') || s.includes('formal') || s.includes('set_theory') || s.includes('descriptive')) tags.push('logic');
+        if (s.includes('k_theory') || s.includes('homological') || s.includes('derived') || s.includes('cohomological')) tags.push('k-theory');
         
         // FIRM Theory Specific
         if (s.includes('phi') || s.includes('golden') || s.includes('grace') || s.includes('firm') || s.includes('recursive')) tags.push('firm-theory');
-        if (s.includes('alpha') || s.includes('fine_structure') || s.includes('constant') || s.includes('derivation') || s.includes('comparison')) tags.push('constants');
+        if (s.includes('alpha') || s.includes('fine_structure') || s.includes('constant') || s.includes('derivation') || s.includes('comparison') || s.includes('precision_measurements')) tags.push('constants');
         
-        // Applied Mathematics
-        if (s.includes('optimization') || s.includes('calculus_variations') || s.includes('control') || s.includes('game_theory')) tags.push('applied-math');
-        if (s.includes('computational') || s.includes('algorithm') || s.includes('complexity') || s.includes('machine_learning')) tags.push('computational');
+        // Applied & Computational
+        if (s.includes('optimization') || s.includes('control') || s.includes('game_theory') || s.includes('economics')) tags.push('applied-math');
+        if (s.includes('computational') || s.includes('algorithm') || s.includes('complexity') || s.includes('machine_learning') || s.includes('computing')) tags.push('computational');
+        if (s.includes('energy') || s.includes('technology') || s.includes('applications') || s.includes('engineering')) tags.push('applications');
         
-        // If no tags matched, try to infer from common mathematical terms
+        // Geometric & Topological Specialties
+        if (s.includes('tiling') || s.includes('aperiodic') || s.includes('penrose') || s.includes('crystal')) tags.push('tilings');
+        if (s.includes('bridge') || s.includes('dimensional') || s.includes('mapping') || s.includes('correspondence')) tags.push('mathematical-bridges');
+        if (s.includes('amenability') || s.includes('folner') || s.includes('group_theory') || s.includes('dynamics')) tags.push('group-dynamics');
+        
+        // Specific Mathematical Objects & Techniques
+        if (s.includes('epsilon') || s.includes('component') || s.includes('scan') || s.includes('parameter')) tags.push('parameter-studies');
+        if (s.includes('timeline') || s.includes('historical') || s.includes('evolution') || s.includes('development')) tags.push('mathematical-history');
+        if (s.includes('overview') || s.includes('conceptual') || s.includes('diagram') || s.includes('framework')) tags.push('conceptual');
+        if (s.includes('lagrangian') || s.includes('hamiltonian') || s.includes('mechanics') || s.includes('dynamics')) tags.push('mechanics');
+        
+        // Catch remaining mathematical terms
         if (tags.length === 0) {
-          if (s.includes('theorem') || s.includes('lemma') || s.includes('proof') || s.includes('conjecture')) tags.push('theorems');
-          else if (s.includes('function') || s.includes('operator') || s.includes('transform')) tags.push('functions');
-          else if (s.includes('space') || s.includes('metric') || s.includes('norm')) tags.push('spaces');
-          else tags.push('other');
+          if (s.includes('theorem') || s.includes('lemma') || s.includes('conjecture') || s.includes('nash') || s.includes('moser') || s.includes('giorgi')) tags.push('theorems');
+          else if (s.includes('function') || s.includes('transform') || s.includes('calderon') || s.includes('zygmund')) tags.push('functions');
+          else if (s.includes('space') || s.includes('metric') || s.includes('norm') || s.includes('carleson')) tags.push('spaces');
+          else if (s.includes('structure') || s.includes('formation') || s.includes('matter') || s.includes('dark')) tags.push('structures');
+          else tags.push('miscellaneous'); // Very few should reach here now
         }
         
         return tags;
