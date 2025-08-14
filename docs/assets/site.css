@@ -64,6 +64,14 @@ select.select { padding: 10px 12px; border-radius: 8px; background: #0c0f16; bor
 
 .footer { max-width: 1200px; margin: 40px auto; padding: 0 16px 24px; color: var(--muted); }
 
+/* Global image constraints */
+article img, .articleLayout img {
+  max-width: 100% !important;
+  max-height: 80vh !important;
+  object-fit: contain !important;
+  height: auto !important;
+}
+
 /* Enhanced article layout and readability */
 .articleLayout { display: flex; gap: 2rem; max-width: 1400px; margin: 0 auto; padding: 1rem; }
 .tocSidebar { flex: 0 0 250px; position: sticky; top: 2rem; height: fit-content; }
@@ -249,17 +257,21 @@ article p {
   border: 1px solid #262c39;
   overflow: hidden; /* Prevent content from breaking out */
   max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .fig img { 
   max-width: 100%; 
+  width: 100%;
   height: auto; 
-  max-height: 500px; /* Prevent excessively tall images */
+  max-height: 400px; /* More restrictive height limit */
   object-fit: contain; /* Maintain aspect ratio while fitting container */
   border: 2px solid #262c39; 
   border-radius: 8px; 
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   transition: transform 0.2s ease;
+  display: block; /* Ensure proper block display */
 }
 
 .fig img:hover {
@@ -302,16 +314,21 @@ article p {
   text-align: center;
   overflow: hidden;
   min-width: 0; /* Prevent flex items from overflowing */
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .fig-col img {
   max-width: 100%;
+  width: 100%;
   height: auto;
-  max-height: 400px; /* Smaller max-height for two-column layout */
+  max-height: 300px; /* Even smaller for two-column layout */
   object-fit: contain;
   border: 2px solid #262c39;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: block;
 }
 
 .fig-col .caption {
@@ -423,7 +440,7 @@ article li {
     padding: 1rem;
   }
   .fig img {
-    max-height: 400px;
+    max-height: 300px !important;
   }
   .key-equation {
     font-size: 1rem;
@@ -454,7 +471,7 @@ article li {
     padding: 0.75rem;
   }
   .fig img, .fig-col img {
-    max-height: 300px;
+    max-height: 250px !important;
   }
   .key-equation, .math-block {
     font-size: 0.9rem;
