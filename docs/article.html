@@ -5,28 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ex Nihilo Reality — The Article</title>
   <link rel="stylesheet" href="assets/site.css" />
-  <style>
-    .article { max-width: 1100px; margin: 40px auto; padding: 0 16px; }
-    .article h1, .article h2, .article h3 { margin: 16px 0; }
-    .article p { line-height: 1.7; margin: 12px 0; }
-    .toc { position: sticky; top: 10px; align-self: flex-start; min-width: 240px; }
-    .toc .card { position: sticky; top: 10px; }
-    .articleLayout { display: grid; grid-template-columns: 1fr 3fr; gap: 16px; }
-    .fig { margin: 18px 0; }
-    .fig img { width: 100%; height: auto; border-radius: 8px; }
-    .fig .caption { font-size: 14px; color: #667; margin-top: 6px; }
-    @media (max-width: 980px){ .articleLayout { grid-template-columns: 1fr; } .toc{ position: initial; } }
-  </style>
 </head>
 <body>
   <header class="header">
     <nav class="nav">
       <a href="index.html">Home</a>
+      <button id="eli25Toggle" class="nav-eli25">ELI25</button>
       <a href="article.html">Article</a>
       <a href="for_the_skeptics.html">For the Skeptics</a>
       <a href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
+
+  <div id="eli25Modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Explain It Like I'm 25</h2>
+      <p>Imagine you're building with LEGOs, but instead of a manual, you have a single, powerful rule. That rule is "φ" (phi, the golden ratio).</p>
+      <p><strong>The Core Idea:</strong> This project, FIRM, proposes that the fundamental "rules" of the universe (the physical constants, like the speed of light or the charge of an electron) aren't random. They are the most stable, most perfect structures that can emerge from this single "φ" rule. It's like finding the most stable LEGO castle you can build—it has a specific, mathematically determined shape.</p>
+      <p><strong>What We Do:</strong> We don't guess or try to fit the numbers. We start with pure mathematics (our "φ" rule) and build, step-by-step, to derive the values of these constants. The fact that our derived values are incredibly close to what scientists measure in the real world suggests our "φ" rule is on the right track.</p>
+      <p><strong>Why It Matters:</strong> If we're right, it means the universe has a deep, underlying mathematical elegance. We could potentially understand *why* the universe is the way it is, not just *what* it is. It's a shift from describing the universe to truly understanding its blueprint.</p>
+    </div>
+  </div>
 
   <main class="article">
     <div class="articleLayout">
@@ -91,7 +91,7 @@
         <div class="fig">
           <img id="fBreakthroughs" alt="Mathematical Framework" />
           <div class="caption">Spectral analysis of φ-operators showing eigenvalue structure and recursive mathematical patterns.</div>
-          <div style="margin-top:6px; display:flex; gap:8px;">
+          <div class="actions">
             <a id="fBreakthroughsOpen" class="btn" target="_blank">open</a>
             <a id="fBreakthroughsPeer" class="btn" target="_blank">peer‑review</a>
           </div>
@@ -132,7 +132,7 @@
         <div class="fig">
           <img id="fGrace" alt="Grace Operator" />
           <div class="caption">Category theory φ-morphisms demonstrating mathematical structure and functorial relationships within the FIRM framework.</div>
-          <div style="margin-top:6px; display:flex; gap:8px;">
+          <div class="actions">
             <a id="fGraceOpen" class="btn" target="_blank">open</a>
             <a id="fGracePeer" class="btn" target="_blank">peer‑review</a>
           </div>
@@ -227,7 +227,7 @@
         <div class="fig">
           <img id="fCMB" alt="CMB Analysis" />
           <div class="caption">Differential geometry on φ-manifolds showing mathematical structures relevant to cosmological applications.</div>
-          <div style="margin-top:6px; display:flex; gap:8px;">
+          <div class="actions">
             <a id="fCMBOpen" class="btn" target="_blank">open</a>
             <a id="fCMBPeer" class="btn" target="_blank">peer‑review</a>
           </div>
@@ -250,7 +250,7 @@
         <div class="fig">
           <img id="fGBN" alt="Applications" />
           <div class="caption">AI acceleration and φ-based neural network concepts showing potential computational applications.</div>
-          <div style="margin-top:6px; display:flex; gap:8px;">
+          <div class="actions">
             <a id="fGBNOpen" class="btn" target="_blank">open</a>
             <a id="fGBNPeer" class="btn" target="_blank">peer‑review</a>
           </div>
@@ -334,7 +334,7 @@
         <div class="fig">
           <img id="fFlow" alt="Mathematical Verification" />
           <div class="caption">Conceptual overview diagram showing systematic approaches to mathematical verification and validation within theoretical frameworks.</div>
-          <div style="margin-top:6px; display:flex; gap:8px;">
+          <div class="actions">
             <a id="fFlowOpen" class="btn" target="_blank">open</a>
             <a id="fFlowPeer" class="btn" target="_blank">peer‑review</a>
           </div>
@@ -1925,4 +1925,37 @@
           <div class="comparison">
             <strong>Current status assessment:</strong> FIRM presents an intriguing mathematical framework with some promising agreements with known physics. However, extraordinary claims require extraordinary evidence. The theory needs substantial additional development in mathematical rigor, experimental verification, and community validation before it can be considered established science.
           </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // ELI25 Modal functionality
+      const eliBtn = document.getElementById('eli25Toggle');
+      const eli25Modal = document.getElementById('eli25Modal');
+      const closeButton = document.querySelector('.close-button');
+
+      if (eliBtn) {
+        eliBtn.addEventListener('click', () => {
+          eli25Modal.style.display = 'block';
+        });
+      }
+
+      if (closeButton) {
+        closeButton.addEventListener('click', () => {
+          eli25Modal.style.display = 'none';
+        });
+      }
+
+      window.addEventListener('click', (event) => {
+        if (event.target == eli25Modal) {
+          eli25Modal.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
 

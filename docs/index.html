@@ -5,120 +5,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ex Nihilo Reality — Mathematics that compiles</title>
   <link rel="stylesheet" href="assets/site.css" />
-  <style>
-    .article { max-width: 1100px; margin: 40px auto; padding: 0 16px; }
-    .article h1, .article h2, .article h3 { margin: 16px 0; }
-    .article p { line-height: 1.7; margin: 12px 0; }
-    .toc { position: sticky; top: 10px; align-self: flex-start; min-width: 240px; }
-    .toc .card { position: sticky; top: 10px; }
-    .articleLayout { display: grid; grid-template-columns: 1fr 3fr; gap: 16px; }
-    .fig { margin: 18px 0; }
-    .fig img { width: 100%; height: auto; border-radius: 8px; }
-    .fig .caption { font-size: 14px; color: #667; margin-top: 6px; }
-    @media (max-width: 980px){ 
-      .articleLayout { grid-template-columns: 1fr; } 
-      .toc{ position: initial; } 
-      .nav { flex-direction: column; align-items: flex-start; }
-      .nav .brand { margin-bottom: 10px; }
-      .hero { grid-template-columns: 1fr; }
-    }
-  </style>
 </head>
 <body>
   <header class="header">
+    <div class="brand"><a href="index.html">Ex Nihilo Reality</a></div>
     <nav class="nav">
-      <div class="brand"><a href="index.html" style="text-decoration:none;color:inherit;">Ex Nihilo Reality</a></div>
       <a href="index.html">Home</a>
+      <button id="eli25Toggle" class="nav-eli25">ELI25</button>
       <a href="article.html">Article</a>
       <a href="for_the_skeptics.html">For the Skeptics</a>
       <a href="#gallery">Gallery</a>
-      <a href="FIGURE_GALLERY.md">Markdown Index</a>
+      <a href="FIGURE_GALLERY.md">All Figures</a>
       <a href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank" rel="noopener">GitHub</a>
     </nav>
+    <button class="hamburger-menu" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </header>
 
   <main>
+    <div id="eli25Modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Explain It Like I'm 25</h2>
+        <p>Imagine you're building with LEGOs, but instead of a manual, you have a single, powerful rule. That rule is "φ" (phi, the golden ratio).</p>
+        <p><strong>The Core Idea:</strong> This project, FIRM, proposes that the fundamental "rules" of the universe (the physical constants, like the speed of light or the charge of an electron) aren't random. They are the most stable, most perfect structures that can emerge from this single "φ" rule. It's like finding the most stable LEGO castle you can build—it has a specific, mathematically determined shape.</p>
+        <p><strong>What We Do:</strong> We don't guess or try to fit the numbers. We start with pure mathematics (our "φ" rule) and build, step-by-step, to derive the values of these constants. The fact that our derived values are incredibly close to what scientists measure in the real world suggests our "φ" rule is on the right track.</p>
+        <p><strong>Why It Matters:</strong> If we're right, it means the universe has a deep, underlying mathematical elegance. We could potentially understand *why* the universe is the way it is, not just *what* it is. It's a shift from describing the universe to truly understanding its blueprint.</p>
+      </div>
+    </div>
     <section class="hero">
       <div class="card">
-        <h1>Mathematics that compiles</h1>
-        <p class="subtle">We don't debate—we demonstrate. Every figure generated deterministically from code with full provenance.</p>
-        <div style="display:flex; gap:10px; margin-top:12px; flex-wrap:wrap;">
-          <a class="cta" href="article.html">Read Article</a>
-          <a class="cta secondary" href="#gallery">Gallery</a>
-          <button id="eli25Toggle" class="cta secondary">ELI25</button>
+        <h1>Where Math Becomes Reality</h1>
+        <p class="subtle">We're not just exploring mathematical theories; we're building a universe from the ground up, with code. Every constant, every particle, derived from pure mathematics. No guesswork, no fine-tuning—just computation.</p>
+        <div class="hero-buttons">
+          <a class="cta" href="article.html">Explore the Theory</a>
+          <a class="cta secondary" href="#gallery">View the Gallery</a>
         </div>
       </div>
       <div class="card">
-        <h3>Search & Browse</h3>
-        <div class="controls">
-          <div class="toolbar">
-            <input class="search" id="search" placeholder="Search figure names…" />
-            <select class="select" id="sort">
-              <option value="name">Sort: Name</option>
-              <option value="width">Sort: Width</option>
-              <option value="height">Sort: Height</option>
-            </select>
-            <span class="badge" id="countBadge">0</span>
-          </div>
-        </div>
-        <div style="margin-top:12px;">
-          <p class="subtle" style="font-size:0.9rem;">
-            <b>Ex Nihilo</b>: Pure mathematics • <b>Provenance</b>: Full traceability • <b>Reproducible</b>: One command regenerates all
-          </p>
-        </div>
-    </div>
-      </section>
+        <h3>Our Principles</h3>
+        <p class="subtle principles">
+          <b>Ex Nihilo:</b> Pure mathematics<br>
+          <b>Provenance:</b> Full traceability<br>
+          <b>Reproducible:</b> One command regenerates all
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="featured-gallery">
+      <h2>Featured Figures</h2>
+      <div id="featuredGrid" class="grid"></div>
+    </section>
 
     <section class="article" id="article">
       <div class="articleLayout">
         <aside class="toc">
           <div class="card">
             <h3>Article Contents</h3>
-            <ol style="line-height: 1.6;">
+            <ol class="toc-list">
               <li><a href="article.html#executive">Executive Summary</a>
-                <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
-                  <li><a href="article.html#executive" style="color: var(--muted);">FIRM Framework Overview</a></li>
-                  <li><a href="article.html#executive" style="color: var(--muted);">Key Achievements</a></li>
+                <ul class="toc-sub-list">
+                  <li><a href="article.html#executive">FIRM Framework Overview</a></li>
+                  <li><a href="article.html#executive">Key Achievements</a></li>
             </ul>
               </li>
               <li><a href="article.html#breakthroughs">Theoretical Foundation</a>
-                <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
-                  <li><a href="article.html#breakthroughs" style="color: var(--muted);">Five Foundational Axioms</a></li>
-                  <li><a href="article.html#breakthroughs" style="color: var(--muted);">Grace Operator Theory</a></li>
-                  <li><a href="article.html#breakthroughs" style="color: var(--muted);">φ-Recursive Patterns</a></li>
+                <ul class="toc-sub-list">
+                  <li><a href="article.html#breakthroughs">Five Foundational Axioms</a></li>
+                  <li><a href="article.html#breakthroughs">Grace Operator Theory</a></li>
+                  <li><a href="article.html#breakthroughs">φ-Recursive Patterns</a></li>
           </ul>
               </li>
               <li><a href="article.html#mathematical">Mathematical Development</a>
-                <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
-                  <li><a href="article.html#mathematical" style="color: var(--muted);">Differential Operators</a></li>
-                  <li><a href="article.html#mathematical" style="color: var(--muted);">Topological Framework</a></li>
-                  <li><a href="article.html#mathematical" style="color: var(--muted);">Category Theory</a></li>
+                <ul class="toc-sub-list">
+                  <li><a href="article.html#mathematical">Differential Operators</a></li>
+                  <li><a href="article.html#mathematical">Topological Framework</a></li>
+                  <li><a href="article.html#mathematical">Category Theory</a></li>
           </ul>
               </li>
               <li><a href="article.html#constants">Physical Constants Analysis</a>
-                <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
-                  <li><a href="article.html#constants" style="color: var(--muted);">Fine Structure Constant</a></li>
-                  <li><a href="article.html#constants" style="color: var(--muted);">Mass Ratios</a></li>
-                  <li><a href="article.html#constants" style="color: var(--muted);">Coupling Constants</a></li>
+                <ul class="toc-sub-list">
+                  <li><a href="article.html#constants">Fine Structure Constant</a></li>
+                  <li><a href="article.html#constants">Mass Ratios</a></li>
+                  <li><a href="article.html#constants">Coupling Constants</a></li>
             </ul>
               </li>
               <li><a href="article.html#applications">Applications & Extensions</a>
-                <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
-                  <li><a href="article.html#applications" style="color: var(--muted);">CMB Predictions</a></li>
-                  <li><a href="article.html#applications" style="color: var(--muted);">Neural Networks</a></li>
-                  <li><a href="article.html#applications" style="color: var(--muted);">Consciousness Models</a></li>
+                <ul class="toc-sub-list">
+                  <li><a href="article.html#applications">CMB Predictions</a></li>
+                  <li><a href="article.html#applications">Neural Networks</a></li>
+                  <li><a href="article.html#applications">Consciousness Models</a></li>
           </ul>
               </li>
               <li><a href="article.html#validation">Validation & Limitations</a>
-                <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
-                  <li><a href="article.html#validation" style="color: var(--muted);">Statistical Analysis</a></li>
-                  <li><a href="article.html#validation" style="color: var(--muted);">Error Assessment</a></li>
-                  <li><a href="article.html#validation" style="color: var(--muted);">Future Work</a></li>
+                <ul class="toc-sub-list">
+                  <li><a href="article.html#validation">Statistical Analysis</a></li>
+                  <li><a href="article.html#validation">Error Assessment</a></li>
+                  <li><a href="article.html#validation">Future Work</a></li>
           </ul>
               </li>
           </ol>
-            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #333;">
-              <a href="article.html" class="cta secondary" style="font-size:12px; padding:6px 12px; width: 100%; text-align: center; display: block;">Read Full Article →</a>
+            <div class="toc-footer">
+              <a href="article.html" class="cta secondary toc-button">Read Full Article →</a>
           </div>
           </div>
         </aside>
@@ -144,7 +135,7 @@
             <strong>Continue Reading:</strong> This overview provides a brief introduction to FIRM theory development. For comprehensive theoretical details, mathematical foundations, precision analysis, and validation frameworks, please read the full article.
           </div>
           
-          <div style="text-align:center; margin:2rem 0;">
+          <div class="article-cta">
             <a class="cta" href="article.html">Read the Complete FIRM Theory Article →</a>
           </div>
 
@@ -177,156 +168,220 @@
       setFig('fAbs1','fAbs1Open','fAbs1Peer','conceptual_overview_diagram.png');
       
       // Gallery functionality
-    const grid = document.getElementById('grid');
-    const featuredGrid = document.getElementById('featuredGrid');
-    const search = document.getElementById('search');
-    const sort = document.getElementById('sort');
-    const countBadge = document.getElementById('countBadge');
-    const chips = document.getElementById('chips');
-    const loadMoreBtn = document.getElementById('loadMore');
-    const eliBtn = document.getElementById('eli25Toggle');
+      const grid = document.getElementById('grid');
+      const featuredGrid = document.getElementById('featuredGrid');
+      const search = document.getElementById('search');
+      const sort = document.getElementById('sort');
+      const countBadge = document.getElementById('countBadge');
+      const chips = document.getElementById('chips');
+      const loadMoreBtn = document.getElementById('loadMore');
+      const eliBtn = document.getElementById('eli25Toggle');
+      const eli25Modal = document.getElementById('eli25Modal');
+      const closeButton = document.querySelector('.close-button');
 
-    let allFigures = [];
-    let visible = 0;
-    const PAGE = 40;
-
-    const FEATURED = [
-      'category_theory_phi_morphisms.png',
-      'complete_lagrangian_formulation.png',
-      'spectral_analysis_phi_operators.png',
-      'riemannian_curvature_comparison.png',
-      'probability_limit_theorems.png',
-      'eilenberg_moore_spectral_sequence.png',
-      'sobolev_spaces.png',
-      'geometric_measure_theory.png',
-      'hodge_decomposition.png',
-      'random_matrix_theory.png'
-    ];
-
-    async function loadManifest() {
-      try {
-        const res = await fetch(RAW_BASE + 'figures/peer_review/figure_manifest.json', { cache: 'no-store' });
-        if (res.ok) return res.json();
-      } catch (e) {}
-      return { figures: [] };
-    }
-
-    function inferTags(f) {
-      const s = (f.filename || '').toLowerCase();
-      const tags = [];
-      if (s.includes('category') || s.includes('topos')) tags.push('category');
-      if (s.includes('geometry') || s.includes('riemann') || s.includes('manifold') || s.includes('curvature')) tags.push('geometry');
-      if (s.includes('pde') || s.includes('elliptic') || s.includes('heat') || s.includes('schauder')) tags.push('pde');
-      if (s.includes('prob') || s.includes('stochastic') || s.includes('random') || s.includes('clt') || s.includes('lln')) tags.push('probability');
-      if (s.includes('topology') || s.includes('homology') || s.includes('cohomology') || s.includes('spectral_sequence')) tags.push('topology');
-      return tags;
-    }
-
-    const activeTags = new Set();
-    let tagCounts = {};
-
-    function computeTagCounts() {
-      tagCounts = {};
-      for (const f of allFigures) {
-        for (const t of inferTags(f)) {
-          tagCounts[t] = (tagCounts[t] || 0) + 1;
-        }
-      }
-    }
-
-    function renderChips() {
-      computeTagCounts();
-      chips.innerHTML = '';
-      const tagsSorted = Object.keys(tagCounts).sort((a,b)=> (tagCounts[b]-tagCounts[a]));
-      for (const t of tagsSorted) {
-        const count = tagCounts[t];
-        if (!count) continue;
-        const el = document.createElement('div');
-        el.className = 'chip' + (activeTags.has(t) ? ' active' : '');
-        el.textContent = `${t} (${count})`;
-        el.onclick = () => { if (activeTags.has(t)) activeTags.delete(t); else activeTags.add(t); resetAndRender(); };
-        chips.appendChild(el);
-      }
-    }
-
-    function filteredSorted() {
-      let q = (search.value || '').toLowerCase().trim();
-      let arr = allFigures;
-      if (q) {
-        arr = allFigures.filter(f => f.filename.toLowerCase().includes(q));
-      }
-      
-      if (activeTags.size) {
-        arr = arr.filter(f => {
-          const ts = inferTags(f);
-          return ts.some(tag => activeTags.has(tag));
+      if (eliBtn) {
+        eliBtn.addEventListener('click', () => {
+          eli25Modal.style.display = 'block';
         });
       }
-      const mode = sort.value;
-      if (mode === 'width') arr.sort((a,b)=> (b.width||0)-(a.width||0));
-      else if (mode === 'height') arr.sort((a,b)=> (b.height||0)-(a.height||0));
-      else arr.sort((a,b)=> (a.filename||'').localeCompare(b.filename||''));
-      return arr;
-    }
 
-    function resetAndRender() {
-      visible = 0;
-      grid.innerHTML = '';
-      renderChips();
-      const arr = filteredSorted();
-      countBadge.textContent = arr.length;
-      appendMore(arr);
-    }
-
-    function appendMore(arr) {
-      const next = arr.slice(visible, visible + PAGE);
-      visible += next.length;
-      for (const f of next) grid.appendChild(tileFor(f));
-      loadMoreBtn.style.display = (visible < arr.length) ? 'block' : 'none';
-      loadMoreBtn.onclick = () => appendMore(arr);
-    }
-
-    function tileFor(f) {
-      const tile = document.createElement('div');
-      tile.className = 'tile';
-        const img = document.createElement('img'); 
-        img.loading = 'lazy'; 
-        img.decoding = 'async'; 
-        img.src = canonical(f.filename); 
-        img.alt = f.filename;
-        
-        const meta = document.createElement('div'); 
-        meta.className = 'meta';
-        
-        const name = document.createElement('div'); 
-        name.className = 'name'; 
-        name.textContent = f.filename;
-        
-        const actions = document.createElement('div'); 
-        actions.className = 'actions';
-        
-        const openBtn = document.createElement('a'); 
-        openBtn.className = 'btn'; 
-        openBtn.href = canonical(f.filename); 
-        openBtn.target = '_blank'; 
-        openBtn.textContent = 'open';
-        
-        actions.appendChild(openBtn);
-        meta.appendChild(name);
-        meta.appendChild(actions);
-        tile.appendChild(img);
-        tile.appendChild(meta);
-        
-        return tile;
+      if (closeButton) {
+        closeButton.addEventListener('click', () => {
+          eli25Modal.style.display = 'none';
+        });
       }
 
-      // Load the gallery data
-      loadManifest().then(data => {
-      allFigures = data.figures || [];
-      resetAndRender();
-        if (search) search.addEventListener('input', resetAndRender);
-        if (sort) sort.addEventListener('change', resetAndRender);
+      window.addEventListener('click', (event) => {
+        if (event.target == eli25Modal) {
+          eli25Modal.style.display = 'none';
+        }
       });
+
+      let allFigures = [];
+      let visible = 0;
+      const PAGE = 40;
+
+      const FEATURED = [
+        'category_theory_phi_morphisms.png',
+        'complete_lagrangian_formulation.png',
+        'spectral_analysis_phi_operators.png',
+        'riemannian_curvature_comparison.png',
+        'probability_limit_theorems.png',
+        'eilenberg_moore_spectral_sequence.png',
+        'sobolev_spaces.png',
+        'geometric_measure_theory.png',
+        'hodge_decomposition.png',
+        'random_matrix_theory.png'
+      ];
+
+      async function loadManifest() {
+        try {
+          const res = await fetch(RAW_BASE + 'figures/peer_review/figure_manifest.json', { cache: 'no-store' });
+          if (res.ok) return res.json();
+        } catch (e) {}
+        return { figures: [] };
+      }
+
+      function inferTags(f) {
+        const s = (f.filename || '').toLowerCase();
+        const tags = [];
+        if (s.includes('category') || s.includes('topos')) tags.push('category');
+        if (s.includes('geometry') || s.includes('riemann') || s.includes('manifold') || s.includes('curvature')) tags.push('geometry');
+        if (s.includes('pde') || s.includes('elliptic') || s.includes('heat') || s.includes('schauder')) tags.push('pde');
+        if (s.includes('prob') || s.includes('stochastic') || s.includes('random') || s.includes('clt') || s.includes('lln')) tags.push('probability');
+        if (s.includes('topology') || s.includes('homology') || s.includes('cohomology') || s.includes('spectral_sequence')) tags.push('topology');
+        return tags;
+      }
+
+      const activeTags = new Set();
+      let tagCounts = {};
+
+      function computeTagCounts() {
+        tagCounts = {};
+        for (const f of allFigures) {
+          for (const t of inferTags(f)) {
+            tagCounts[t] = (tagCounts[t] || 0) + 1;
+          }
+        }
+      }
+
+      function renderChips() {
+        computeTagCounts();
+        if (!chips) return;
+        chips.innerHTML = '';
+        const tagsSorted = Object.keys(tagCounts).sort((a,b)=> (tagCounts[b]-tagCounts[a]));
+        for (const t of tagsSorted) {
+          const count = tagCounts[t];
+          if (!count) continue;
+          const el = document.createElement('div');
+          el.className = 'chip' + (activeTags.has(t) ? ' active' : '');
+          el.textContent = `${t} (${count})`;
+          el.onclick = () => { if (activeTags.has(t)) activeTags.delete(t); else activeTags.add(t); resetAndRender(); };
+          chips.appendChild(el);
+        }
+      }
+
+      function filteredSorted() {
+        let q = (search.value || '').toLowerCase().trim();
+        let arr = allFigures;
+        if (q) {
+          arr = allFigures.filter(f => f.filename.toLowerCase().includes(q));
+        }
+        
+        if (activeTags.size) {
+          arr = arr.filter(f => {
+            const ts = inferTags(f);
+            return ts.some(tag => activeTags.has(tag));
+          });
+        }
+        const mode = sort.value;
+        if (mode === 'width') arr.sort((a,b)=> (b.width||0)-(a.width||0));
+        else if (mode === 'height') arr.sort((a,b)=> (b.height||0)-(a.height||0));
+        else arr.sort((a,b)=> (a.filename||'').localeCompare(b.filename||''));
+        return arr;
+      }
+
+      function resetAndRender() {
+        visible = 0;
+        if(grid) grid.innerHTML = '';
+        renderChips();
+        const arr = filteredSorted();
+        if(countBadge) countBadge.textContent = arr.length;
+        appendMore(arr);
+      }
+
+      function appendMore(arr) {
+        const next = arr.slice(visible, visible + PAGE);
+        visible += next.length;
+        if(grid) {
+          for (const f of next) grid.appendChild(tileFor(f));
+        }
+        if(loadMoreBtn) {
+          loadMoreBtn.style.display = (visible < arr.length) ? 'block' : 'none';
+          loadMoreBtn.onclick = () => appendMore(arr);
+        }
+      }
+
+      function tileFor(f) {
+        const tile = document.createElement('div');
+        tile.className = 'tile';
+          const img = document.createElement('img'); 
+          img.loading = 'lazy'; 
+          img.decoding = 'async'; 
+          img.src = canonical(f.filename); 
+          img.alt = f.filename;
+          
+          const meta = document.createElement('div'); 
+          meta.className = 'meta';
+          
+          const name = document.createElement('div'); 
+          name.className = 'name'; 
+          name.textContent = f.filename;
+
+          const tagsContainer = document.createElement('div');
+          tagsContainer.className = 'tags';
+          const tags = inferTags(f);
+          for (const t of tags) {
+            const tagEl = document.createElement('span');
+            tagEl.className = 'tag';
+            tagEl.textContent = t;
+            tagsContainer.appendChild(tagEl);
+          }
+          
+          const actions = document.createElement('div'); 
+          actions.className = 'actions';
+          
+          const openBtn = document.createElement('a'); 
+          openBtn.className = 'btn'; 
+          openBtn.href = canonical(f.filename); 
+          openBtn.target = '_blank'; 
+          openBtn.textContent = 'open';
+          
+          actions.appendChild(openBtn);
+          meta.appendChild(name);
+          meta.appendChild(tagsContainer);
+          meta.appendChild(actions);
+          tile.appendChild(img);
+          tile.appendChild(meta);
+          
+          return tile;
+        }
+
+        // Populate featured grid
+        if (featuredGrid) {
+          for (const f of FEATURED) {
+            featuredGrid.appendChild(tileFor({ filename: f }));
+          }
+        }
+
+        // Load the gallery data
+        loadManifest().then(data => {
+        allFigures = data.figures || [];
+        resetAndRender();
+          if (search) search.addEventListener('input', resetAndRender);
+          if (sort) sort.addEventListener('change', resetAndRender);
+        });
+
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const nav = document.querySelector('.nav');
+        hamburgerMenu.addEventListener('click', () => {
+          nav.classList.toggle('active');
+        });
+
+        const backToTopButton = document.getElementById('backToTop');
+        window.onscroll = function() {
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            if (backToTopButton) backToTopButton.style.display = 'block';
+          } else {
+            if (backToTopButton) backToTopButton.style.display = 'none';
+          }
+        };
+        if (backToTopButton) {
+          backToTopButton.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          };
+        }
     });
   </script>
 
@@ -353,7 +408,7 @@
       <div class="card">
         <h3>Reproduce it yourself</h3>
         <p class="subtle">Everything here is generated from code. Clone the repo and run the peer‑review sync to rebuild the canonical set and arXiv copies:</p>
-        <pre class="subtle" style="overflow:auto;">python figures/peer_review/sync_and_verify.py --generate-math
+        <pre class="subtle code-block">python figures/peer_review/sync_and_verify.py --generate-math
 python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
         <p class="subtle">Outputs: <code>figures/canonical_outputs/</code> (single source of truth) and <code>arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/</code> (submission‑ready).</p>
       </div>
@@ -363,5 +418,6 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
       <div>© Ex Nihilo Reality — All figures generated from code; see repository for provenance.</div>
     </section>
   </main>
+  <button id="backToTop" class="back-to-top" title="Go to top">↑</button>
 </body>
 </html>
