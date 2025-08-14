@@ -15,7 +15,13 @@
     .fig { margin: 18px 0; }
     .fig img { width: 100%; height: auto; border-radius: 8px; }
     .fig .caption { font-size: 14px; color: #667; margin-top: 6px; }
-    @media (max-width: 980px){ .articleLayout { grid-template-columns: 1fr; } .toc{ position: initial; } }
+    @media (max-width: 980px){ 
+      .articleLayout { grid-template-columns: 1fr; } 
+      .toc{ position: initial; } 
+      .nav { flex-direction: column; align-items: flex-start; }
+      .nav .brand { margin-bottom: 10px; }
+      .hero { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -28,7 +34,6 @@
       <a href="#gallery">Gallery</a>
       <a href="FIGURE_GALLERY.md">Markdown Index</a>
       <a href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank" rel="noopener">GitHub</a>
-      <button id="eli25Toggle" class="cta secondary" style="margin-left:auto;">ELI25</button>
     </nav>
   </header>
 
@@ -40,6 +45,7 @@
         <div style="display:flex; gap:10px; margin-top:12px; flex-wrap:wrap;">
           <a class="cta" href="article.html">Read Article</a>
           <a class="cta secondary" href="#gallery">Gallery</a>
+          <button id="eli25Toggle" class="cta secondary">ELI25</button>
         </div>
       </div>
       <div class="card">
