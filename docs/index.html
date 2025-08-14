@@ -35,14 +35,16 @@
           <li><b>Irreducible provenance</b>: Hashes, dimensions, and generator mapping for every figure.</li>
           <li><b>Reproducibility</b>: One command to regenerate the entire library.</li>
         </ul>
-        <div class="toolbar" style="margin-top:8px;">
-          <input class="search" id="search" placeholder="Search figure names…" />
-          <select class="select" id="sort">
-            <option value="name">Sort: Name</option>
-            <option value="width">Sort: Width</option>
-            <option value="height">Sort: Height</option>
-          </select>
-          <span class="badge" id="countBadge">0</span>
+        <div class="controls">
+          <div class="toolbar">
+            <input class="search" id="search" placeholder="Search figure names…" />
+            <select class="select" id="sort">
+              <option value="name">Sort: Name</option>
+              <option value="width">Sort: Width</option>
+              <option value="height">Sort: Height</option>
+            </select>
+            <span class="badge" id="countBadge">0</span>
+          </div>
         </div>
       </div>
     </section>
@@ -90,7 +92,6 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
     let visible = 0;
     const PAGE = 40;
 
-    // Curated highlights: demonstrate breadth and rigor
     const FEATURED = [
       'category_theory_phi_morphisms.png',
       'complete_lagrangian_formulation.png',
@@ -104,28 +105,25 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
       'random_matrix_theory.png'
     ];
 
-    const TAGS = [
-      'category','geometry','mathematics','pde','probability','topology','algebra','analysis','spectral','number','k_theory','lie','arithmetic','measure','operator','graphs'
-    ];
+    // GitHub raw base so we can fetch outside /docs
+    const RAW_BASE = 'https://raw.githubusercontent.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/main/';
 
     async function loadManifest() {
-      const paths = [
-        '../figures/peer_review/figure_manifest.json',
-        'figures/peer_review/figure_manifest.json',
-      ];
-      for (const p of paths) {
-        try {
-          const res = await fetch(p);
-          if (res.ok) return res.json();
-        } catch (e) {}
-      }
+      try {
+        const res = await fetch(RAW_BASE + 'figures/peer_review/figure_manifest.json', { cache: 'no-store' });
+        if (res.ok) return res.json();
+      } catch (e) {}
       return { figures: [] };
     }
 
     function canonicalUrl(entry) {
       const rel = entry.canonical_path || ('figures/canonical_outputs/' + entry.filename);
-      return rel.startsWith('http') ? rel : ('../' + rel);
+      return RAW_BASE + rel.replace(/^\/*/, '');
     }
+
+    const TAGS = [
+      'category','geometry','mathematics','pde','probability','topology','algebra','analysis','spectral','number','k_theory','lie','arithmetic','measure','operator','graphs'
+    ];
 
     function inferTags(f) {
       const s = (f.filename || '').toLowerCase();
