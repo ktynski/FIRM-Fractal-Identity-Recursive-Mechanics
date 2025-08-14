@@ -23,15 +23,15 @@ def generate_conceptual_overview_diagram() -> Dict[str, Any]:
     ax.text(8, 6, "φ-RECURSION\nMATHEMATICS\n\nGrace Operator\nFixed Points", 
            ha='center', va='center', fontsize=12, weight='bold', color='white')
     
-    # Major physics domains emerging from core
+    # Major physics domains emerging from core - better aligned grid
     domains = [
         # (x, y, width, height, title, color, details)
-        (2, 9.5, 3, 1.5, "PARTICLE PHYSICS", "#2ca02c", "Quarks, Leptons, Bosons\nSM Parameters\nMasses & Couplings"),
-        (11, 9.5, 3, 1.5, "COSMOLOGY", "#1f77b4", "CMB, BAO, SNe\nDark Matter/Energy\nInflation, BBN"),
-        (2, 2.5, 3, 1.5, "CONSCIOUSNESS", "#9467bd", "P=NP Correlation\nNeural φ-Harmonics\nInformation Integration"),
-        (11, 2.5, 3, 1.5, "FIELD THEORY", "#ff7f0e", "Gauge Fields\nSymmetry Breaking\nLagrangian Dynamics"),
-        (2, 6, 3, 1.5, "MATHEMATICS", "#8c564b", "Category Theory\nTopos Structure\nAxiomatic Foundation"),
-        (11, 6, 3, 1.5, "SPACETIME", "#e377c2", "Einstein Equations\nMetric Emergence\nGravitational Waves"),
+        (3.5, 9.5, 2.8, 1.4, "PARTICLE PHYSICS", "#2ca02c", "Quarks, Leptons, Bosons\nSM Parameters\nMasses & Couplings"),
+        (12.5, 9.5, 2.8, 1.4, "COSMOLOGY", "#1f77b4", "CMB, BAO, SNe\nDark Matter/Energy\nInflation, BBN"),
+        (3.5, 7.5, 2.8, 1.4, "MATHEMATICS", "#8c564b", "Category Theory\nTopos Structure\nAxiomatic Foundation"),
+        (12.5, 7.5, 2.8, 1.4, "SPACETIME", "#e377c2", "Einstein Equations\nMetric Emergence\nGravitational Waves"),
+        (3.5, 4.5, 2.8, 1.4, "CONSCIOUSNESS", "#9467bd", "P=NP Correlation\nNeural φ-Harmonics\nInformation Integration"),
+        (12.5, 4.5, 2.8, 1.4, "FIELD THEORY", "#ff7f0e", "Gauge Fields\nSymmetry Breaking\nLagrangian Dynamics"),
     ]
     
     # Draw domain boxes and connections
@@ -53,26 +53,26 @@ def generate_conceptual_overview_diagram() -> Dict[str, Any]:
                                    mutation_scale=20, fc=color, alpha=0.6, linewidth=2)
         ax.add_artist(connection)
     
-    # Add mathematical foundation layers
+    # Add mathematical foundation layers - better spaced and aligned
     foundation_layers = [
-        (8, 0.5, "AXIOM LAYER: A_Grace, A_Ψ, A_Psi", "#34495e"),
-        (8, 1, "TOPOS LAYER: Grothendieck Universes", "#2c3e50"),
-        (8, 1.5, "CATEGORY LAYER: Fixed Point Categories", "#1a252f"),
+        (8, 0.6, "AXIOM LAYER: A_Grace, A_Ψ, A_Psi", "#34495e"),
+        (8, 1.2, "TOPOS LAYER: Grothendieck Universes", "#2c3e50"),
+        (8, 1.8, "CATEGORY LAYER: Fixed Point Categories", "#1a252f"),
     ]
     
     for x, y, text, color in foundation_layers:
-        box = FancyBboxPatch((x-4, y-0.2), 8, 0.4, boxstyle="round,pad=0.05",
-                            facecolor=color, alpha=0.8, edgecolor='black')
+        box = FancyBboxPatch((x-4.5, y-0.25), 9, 0.5, boxstyle="round,pad=0.05",
+                            facecolor=color, alpha=0.9, edgecolor='black', linewidth=1.5)
         ax.add_patch(box)
         ax.text(x, y, text, ha='center', va='center', fontsize=10, 
                color='white', weight='bold')
     
-    # Add emergence arrows
+    # Add emergence arrows - centered and evenly spaced
     emergence_levels = [
-        (8, 3.5, "MATHEMATICAL EMERGENCE", 12),
-        (8, 4.5, "PHYSICAL EMERGENCE", 11),
-        (8, 7.5, "PHENOMENOLOGICAL EMERGENCE", 11),
-        (8, 8.5, "OBSERVATIONAL PREDICTIONS", 12),
+        (8, 3, "MATHEMATICAL EMERGENCE", 11),
+        (8, 5.5, "PHYSICAL EMERGENCE", 11),
+        (8, 8.5, "PHENOMENOLOGICAL EMERGENCE", 11),
+        (8, 10.5, "OBSERVATIONAL PREDICTIONS", 11),
     ]
     
     for x, y, text, fontsize in emergence_levels:
@@ -80,26 +80,27 @@ def generate_conceptual_overview_diagram() -> Dict[str, Any]:
                weight='bold', alpha=0.8, 
                bbox=dict(boxstyle="round,pad=0.3", facecolor='yellow', alpha=0.3))
     
-    # Add validation cycle
+    # Add validation cycle - better aligned corners
     validation_points = [
-        (14.5, 8, "EXPERIMENTAL\nVERIFICATION"),
-        (14.5, 4, "THEORETICAL\nVALIDATION"),
-        (1.5, 4, "MATHEMATICAL\nPROOFS"),
-        (1.5, 8, "OBSERVATIONAL\nTESTS"),
+        (14.5, 8.5, "EXPERIMENTAL\nVERIFICATION"),
+        (14.5, 3.5, "THEORETICAL\nVALIDATION"),
+        (1.5, 3.5, "MATHEMATICAL\nPROOFS"),
+        (1.5, 8.5, "OBSERVATIONAL\nTESTS"),
     ]
     
     for i, (x, y, text) in enumerate(validation_points):
-        circle = patches.Circle((x, y), 0.8, facecolor='lightblue', alpha=0.6, 
-                               edgecolor='blue', linewidth=2)
+        circle = patches.Circle((x, y), 0.9, facecolor='lightblue', alpha=0.7, 
+                               edgecolor='blue', linewidth=2.5)
         ax.add_patch(circle)
-        ax.text(x, y, text, ha='center', va='center', fontsize=9, weight='bold')
+        ax.text(x, y, text, ha='center', va='center', fontsize=9, weight='bold',
+                bbox=dict(boxstyle="round,pad=0.1", facecolor='white', alpha=0.8))
         
-        # Connect validation cycle
+        # Connect validation cycle with better arrows
         next_i = (i + 1) % len(validation_points)
         next_x, next_y, _ = validation_points[next_i]
         arrow = ConnectionPatch((x, y), (next_x, next_y), "data", "data",
-                               arrowstyle="->", shrinkA=40, shrinkB=40,
-                               mutation_scale=15, fc='blue', alpha=0.5, linewidth=1.5)
+                               arrowstyle="->", shrinkA=45, shrinkB=45,
+                               mutation_scale=18, fc='blue', alpha=0.7, linewidth=2)
         ax.add_artist(arrow)
     
     # Add predictions and implications
@@ -134,7 +135,7 @@ def generate_conceptual_overview_diagram() -> Dict[str, Any]:
     plt.tight_layout()
     
     # Save figure
-    output_path = Path("figures/outputs/conceptual_overview_diagram.png")
+    output_path = Path("../../canonical_outputs/conceptual_overview_diagram.png")
     fig.savefig(output_path, dpi=300, bbox_inches='tight')
     plt.close(fig)
     
