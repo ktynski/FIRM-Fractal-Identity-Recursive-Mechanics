@@ -44,6 +44,17 @@
           <span data-layperson">The Universe Might Be One Giant Self-Writing Computer Program</span>
         </h1>
         
+        <div class="hero-eli25-toggle">
+          <button id="heroEli25Btn" class="eli25-toggle-btn">
+            <span class="toggle-icon">🔄</span>
+            <span class="toggle-text">Switch to Simple Language</span>
+          </button>
+          <p class="toggle-hint">
+            <span data-technical>Toggle between technical and accessible explanations</span>
+            <span data-layperson>Switch between simple and technical language</span>
+          </p>
+        </div>
+        
         <p class="hero-subtitle">
           <span data-technical">We discovered that fundamental constants, particle masses, and cosmic structure emerge from φ-recursive mathematical operations—as if reality is executing a self-modifying algorithm. Starting from pure axioms with zero free parameters, we derive the exact values nature displays.</span>
           <span data-layperson">Imagine if the universe was like a computer program that writes itself as it runs. We think we found the code—and it's based on a simple mathematical pattern that creates everything from atoms to galaxies.</span>
@@ -102,30 +113,60 @@
       </div>
       
       <div class="integrity-pledge">
-        <h3>Scientific Integrity First</h3>
+        <h3>
+          <span data-technical>Scientific Integrity First</span>
+          <span data-layperson>How We Stay Honest</span>
+        </h3>
         <div class="integrity-grid">
           <div class="integrity-item">
             <span class="integrity-icon">🧮</span>
-            <h4>Pure Mathematics</h4>
-            <p>All derivations from axioms—no data fitting or parameter tuning</p>
+            <h4>
+              <span data-technical>Pure Mathematics</span>
+              <span data-layperson>No Cheating</span>
+            </h4>
+            <p>
+              <span data-technical>All derivations from axioms—no data fitting or parameter tuning</span>
+              <span data-layperson">We don't adjust our math to match experiments—we let the math speak for itself</span>
+            </p>
           </div>
           <div class="integrity-item">
             <span class="integrity-icon">📋</span>
-            <h4>Predictions First</h4>
-            <p>All predictions registered before testing against experiments</p>
+            <h4>
+              <span data-technical>Predictions First</span>
+              <span data-layperson">Predictions Before Peeking</span>
+            </h4>
+            <p>
+              <span data-technical">All predictions registered before testing against experiments</span>
+              <span data-layperson">We write down what we think will happen BEFORE looking at real-world data</span>
+            </p>
           </div>
           <div class="integrity-item">
             <span class="integrity-icon">🔍</span>
-            <h4>Open Everything</h4>
-            <p>Complete code, methodology, and audit trails are public</p>
+            <h4>
+              <span data-technical>Open Everything</span>
+              <span data-layperson">Show All Work</span>
+            </h4>
+            <p>
+              <span data-technical">Complete code, methodology, and audit trails are public</span>
+              <span data-layperson">Every calculation, every assumption, every line of code is available for anyone to check</span>
+            </p>
           </div>
           <div class="integrity-item">
             <span class="integrity-icon">❌</span>
-            <h4>Seeking Falsification</h4>
-            <p>We actively invite attempts to prove our framework wrong</p>
+            <h4>
+              <span data-technical>Seeking Falsification</span>
+              <span data-layperson>Please Prove Us Wrong</span>
+            </h4>
+            <p>
+              <span data-technical">We actively invite attempts to prove our framework wrong</span>
+              <span data-layperson">We want you to find our mistakes—that's how good science works</span>
+            </p>
           </div>
         </div>
-        <p class="integrity-motto">"We'd rather be wrong with integrity than right through manipulation."</p>
+        <p class="integrity-motto">
+          <span data-technical">"We'd rather be wrong with integrity than right through manipulation."</span>
+          <span data-layperson">"We'd rather be honestly wrong than fake being right."</span>
+        </p>
       </div>
       
       <div class="how-it-works">
@@ -615,38 +656,57 @@
     const chips = document.getElementById('chips');
     const loadMoreBtn = document.getElementById('loadMore');
     const eliBtn = document.getElementById('eli25Toggle');
+      const heroEliBtn = document.getElementById('heroEli25Btn');
       const eli25Modal = document.getElementById('eli25Modal');
       const closeButton = document.querySelector('.close-button');
 
-      // Check for saved ELI25 state
-      const isELI25Active = localStorage.getItem('eli25Active') === 'true';
-      console.log('ELI25 Debug - Initial state:', isELI25Active, 'Button found:', !!eliBtn);
-      if (isELI25Active) {
-        document.body.classList.add('eli25-active');
-        if (eliBtn) eliBtn.textContent = 'Technical';
+      // Function to update button states
+      function updateButtonStates(isActive) {
+        if (eliBtn) eliBtn.textContent = isActive ? 'Technical' : 'ELI25';
+        if (heroEliBtn) {
+          const toggleText = heroEliBtn.querySelector('.toggle-text');
+          if (toggleText) {
+            toggleText.textContent = isActive ? 'Switch to Technical Language' : 'Switch to Simple Language';
+          }
+        }
       }
 
+      // Check for saved ELI25 state
+      const isELI25Active = localStorage.getItem('eli25Active') === 'true';
+      console.log('ELI25 Debug - Initial state:', isELI25Active, 'Buttons found:', !!eliBtn, !!heroEliBtn);
+      if (isELI25Active) {
+        document.body.classList.add('eli25-active');
+      }
+      updateButtonStates(isELI25Active);
+
+      // Function to toggle ELI25 mode
+      function toggleELI25Mode() {
+        console.log('ELI25 Debug - Button clicked');
+        const isCurrentlyActive = document.body.classList.contains('eli25-active');
+        console.log('ELI25 Debug - Current state:', isCurrentlyActive);
+        
+        if (isCurrentlyActive) {
+          // Switch to technical mode
+          document.body.classList.remove('eli25-active');
+          localStorage.setItem('eli25Active', 'false');
+          updateButtonStates(false);
+          console.log('ELI25 Debug - Switched to technical mode');
+        } else {
+          // Switch to layperson mode
+          document.body.classList.add('eli25-active');
+          localStorage.setItem('eli25Active', 'true');
+          updateButtonStates(true);
+          console.log('ELI25 Debug - Switched to layperson mode');
+        }
+      }
+
+      // Attach event listeners to both buttons
       if (eliBtn) {
-        eliBtn.addEventListener('click', () => {
-          console.log('ELI25 Debug - Button clicked');
-          // Toggle between modes
-          const isCurrentlyActive = document.body.classList.contains('eli25-active');
-          console.log('ELI25 Debug - Current state:', isCurrentlyActive);
-          
-          if (isCurrentlyActive) {
-            // Switch to technical mode
-            document.body.classList.remove('eli25-active');
-            eliBtn.textContent = 'ELI25';
-            localStorage.setItem('eli25Active', 'false');
-            console.log('ELI25 Debug - Switched to technical mode');
-          } else {
-            // Switch to layperson mode
-            document.body.classList.add('eli25-active');
-            eliBtn.textContent = 'Technical';
-            localStorage.setItem('eli25Active', 'true');
-            console.log('ELI25 Debug - Switched to layperson mode');
-          }
-        });
+        eliBtn.addEventListener('click', toggleELI25Mode);
+      }
+      
+      if (heroEliBtn) {
+        heroEliBtn.addEventListener('click', toggleELI25Mode);
       }
 
       // Keep modal functionality for explanation
