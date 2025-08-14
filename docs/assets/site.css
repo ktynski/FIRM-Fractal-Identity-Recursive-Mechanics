@@ -143,11 +143,16 @@ p { line-height: 1.6; margin-bottom: 1rem; }
 }
 
 /* Method steps design */
+.how-it-works-section {
+  padding: 4rem 0;
+  background: var(--bg-primary);
+}
+
 .how-it-works {
   background: var(--panel);
   border-radius: 12px;
   padding: 3rem 2rem;
-  margin: 3rem 0;
+  margin: 0;
 }
 
 .how-it-works h2 {
@@ -204,12 +209,17 @@ p { line-height: 1.6; margin-bottom: 1rem; }
 }
 
 /* Scientific Integrity Section */
+.integrity-section {
+  padding: 3rem 0;
+  background: var(--bg-secondary);
+}
+
 .integrity-pledge {
   background: linear-gradient(135deg, rgba(110, 168, 254, 0.05), rgba(126, 231, 135, 0.05));
   border: 1px solid rgba(110, 168, 254, 0.2);
   border-radius: 12px;
   padding: 2rem;
-  margin: 2rem auto;
+  margin: 0 auto;
   text-align: center;
   max-width: 1200px;
 }
