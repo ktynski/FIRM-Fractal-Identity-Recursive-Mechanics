@@ -1894,3 +1894,222 @@ article li {
     gap: 1rem;
   }
 }
+
+/* Enhanced Hero Elements */
+.profound-realization {
+  background: linear-gradient(135deg, var(--accent-2) 0%, var(--accent) 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.realization-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.realization-icon {
+  font-size: 2rem;
+}
+
+.realization-header h3 {
+  color: white;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.realization-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.95;
+}
+
+.implication-cascade {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  border-left: 4px solid var(--accent-2);
+}
+
+.implication-cascade h4 {
+  color: var(--accent-2);
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.cascade-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cascade-point {
+  background: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Step Surprise Elements */
+.step-surprise {
+  background: rgba(255, 165, 0, 0.1);
+  border: 2px solid #ff6b35;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.step-surprise strong {
+  color: #ff6b35;
+}
+
+/* Philosophical Bombshell Section */
+.philosophical-bombshell {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: white;
+  padding: 5rem 0;
+  position: relative;
+}
+
+.philosophical-bombshell::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="stars" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="7" cy="7" r="0.3" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23stars)"/></svg>');
+  opacity: 0.3;
+}
+
+.philosophical-bombshell .container {
+  position: relative;
+  z-index: 1;
+}
+
+.philosophical-bombshell h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.bombshell-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.bombshell-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bombshell-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.bombshell-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.bombshell-item h3 {
+  color: #ffd700;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+.bombshell-item p {
+  line-height: 1.6;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+.bombshell-conclusion {
+  background: rgba(255, 215, 0, 0.1);
+  border: 2px solid #ffd700;
+  padding: 2.5rem;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bombshell-conclusion h3 {
+  color: #ffd700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.bombshell-conclusion p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Mobile Responsiveness for Enhanced Elements */
+@media (max-width: 768px) {
+  .cascade-points {
+    gap: 1rem;
+  }
+  
+  .cascade-point {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .implication-cascade {
+    padding: 1.5rem;
+  }
+  
+  .bombshell-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .bombshell-item {
+    padding: 1.5rem;
+  }
+  
+  .philosophical-bombshell h2 {
+    font-size: 2rem;
+  }
+  
+  .profound-realization {
+    padding: 1.5rem;
+  }
+  
+  .realization-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .step-surprise {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+}
