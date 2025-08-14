@@ -863,13 +863,6 @@ article li {
   .toc {
     position: initial;
   }
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .nav .brand {
-    margin-bottom: 10px;
-  }
   .hero {
     grid-template-columns: 1fr;
   }
@@ -877,19 +870,53 @@ article li {
     flex-direction: column;
     align-items: stretch;
   }
+  
+  /* Mobile Navigation */
   .nav {
     display: none;
-  }
-  .nav.active {
-    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 0;
     right: 0;
     background: var(--bg);
     padding: 1rem;
     border-bottom: 1px solid #222835;
+    z-index: 55;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   }
+  
+  .nav.active {
+    display: flex;
+  }
+  
+  .nav a, .nav-eli25 {
+    padding: 12px 0;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #222835;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .nav a:last-child, .nav .nav-eli25:last-child {
+    border-bottom: none;
+  }
+  
+  /* Mobile ELI25 button specific styling */
+  .nav .nav-eli25 {
+    background: linear-gradient(135deg, var(--accent), #ff6b35);
+    color: #0b0b0b;
+    font-weight: 600;
+    margin: 8px 0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
   .hamburger-menu {
     display: block;
   }

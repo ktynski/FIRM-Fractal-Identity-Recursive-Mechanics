@@ -223,6 +223,7 @@
 
       // Check for saved ELI25 state
       const isELI25Active = localStorage.getItem('eli25Active') === 'true';
+      console.log('ELI25 Debug - Initial state:', isELI25Active, 'Button found:', !!eliBtn);
       if (isELI25Active) {
         document.body.classList.add('eli25-active');
         if (eliBtn) eliBtn.textContent = 'Technical';
@@ -230,19 +231,23 @@
 
       if (eliBtn) {
         eliBtn.addEventListener('click', () => {
+          console.log('ELI25 Debug - Button clicked');
           // Toggle between modes
           const isCurrentlyActive = document.body.classList.contains('eli25-active');
+          console.log('ELI25 Debug - Current state:', isCurrentlyActive);
           
           if (isCurrentlyActive) {
             // Switch to technical mode
             document.body.classList.remove('eli25-active');
             eliBtn.textContent = 'ELI25';
             localStorage.setItem('eli25Active', 'false');
+            console.log('ELI25 Debug - Switched to technical mode');
           } else {
             // Switch to layperson mode
             document.body.classList.add('eli25-active');
             eliBtn.textContent = 'Technical';
             localStorage.setItem('eli25Active', 'true');
+            console.log('ELI25 Debug - Switched to layperson mode');
           }
         });
       }
@@ -418,9 +423,18 @@
 
         const hamburgerMenu = document.querySelector('.hamburger-menu');
         const nav = document.querySelector('.nav');
-        hamburgerMenu.addEventListener('click', () => {
-          nav.classList.toggle('active');
-        });
+        if (hamburgerMenu && nav) {
+          hamburgerMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+          });
+          
+          // Close menu when clicking outside
+          document.addEventListener('click', (event) => {
+            if (!hamburgerMenu.contains(event.target) && !nav.contains(event.target)) {
+              nav.classList.remove('active');
+            }
+          });
+        }
 
         const backToTopButton = document.getElementById('backToTop');
         window.onscroll = function() {

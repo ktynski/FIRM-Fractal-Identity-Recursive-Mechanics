@@ -15,6 +15,11 @@
       <a href="for_the_skeptics.html">For the Skeptics</a>
       <a href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank" rel="noopener">GitHub</a>
     </nav>
+    <button class="hamburger-menu" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </header>
 
   <div id="eli25Modal" class="modal" style="display: none;">
@@ -1979,6 +1984,22 @@
           eli25Modal.style.display = 'none';
         }
       });
+
+      // Mobile hamburger menu functionality
+      const hamburgerMenu = document.querySelector('.hamburger-menu');
+      const nav = document.querySelector('.nav');
+      if (hamburgerMenu && nav) {
+        hamburgerMenu.addEventListener('click', () => {
+          nav.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (event) => {
+          if (!hamburgerMenu.contains(event.target) && !nav.contains(event.target)) {
+            nav.classList.remove('active');
+          }
+        });
+      }
     });
   </script>
 </body>
