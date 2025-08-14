@@ -144,10 +144,371 @@
       </div>
     </section>
 
-    <!-- Gallery Section Begins Here -->
-
+    <!-- Gallery Section -->
     <section class="section" id="gallery">
       <h2>Figure Gallery</h2>
+      <h2>Complete Gallery</h2>
+      <div class="controls">
+        <div class="filterchips" id="chips"></div>
+      </div>
+      <div id="grid" class="grid"></div>
+      <button class="btn loadmore" id="loadMore">Load More</button>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h3>Reproduce it yourself</h3>
+        <p class="subtle">Everything here is generated from code. Clone the repo and run the peer‑review sync to rebuild the canonical set and arXiv copies:</p>
+        <pre class="subtle" style="overflow:auto;">python figures/peer_review/sync_and_verify.py --generate-math
+python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
+        <p class="subtle">Outputs: <code>figures/canonical_outputs/</code> (single source of truth) and <code>arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/</code> (submission‑ready).</p>
+  </div>
+    </section>
+
+    <section class="footer">
+      <div>© Ex Nihilo Reality — All figures generated from code; see repository for provenance.</div>
+    </section>
+  </main>
+
+  <script>
+    const grid = document.getElementById('grid');
+    const featuredGrid = document.getElementById('featuredGrid');
+    const search = document.getElementById('search');
+    const sort = document.getElementById('sort');
+    const countBadge = document.getElementById('countBadge');
+    const chips = document.getElementById('chips');
+    const loadMoreBtn = document.getElementById('loadMore');
+    const eliBtn = document.getElementById('eli25Toggle');
+
+    let allFigures = [];
+    let visible = 0;
+    const PAGE = 40;
+
+    const FEATURED = [
+      'category_theory_phi_morphisms.png',
+      'complete_lagrangian_formulation.png',
+      'spectral_analysis_phi_operators.png',
+      'riemannian_curvature_comparison.png',
+      'probability_limit_theorems.png',
+      'eilenberg_moore_spectral_sequence.png',
+      'sobolev_spaces.png',
+      'geometric_measure_theory.png',
+      'hodge_decomposition.png',
+      'random_matrix_theory.png'
+    ];
+
+    const FEATURED_CAPTIONS = {
+      'category_theory_phi_morphisms.png': 'Morphism composition, functoriality, and φ‑naturality rendered as executable diagrams.',
+      'complete_lagrangian_formulation.png': 'Unified field terms expressed as a single Lagrangian—no narrative gaps.',
+      'spectral_analysis_phi_operators.png': 'Eigenvalues, resolvent, and spectral measure computed from first principles.',
+      'riemannian_curvature_comparison.png': 'Toponogov and Bishop–Gromov comparisons made visual and verifiable.',
+      'probability_limit_theorems.png': 'LLN and CLT transitions illustrated as density/cumulative convergence.',
+      'eilenberg_moore_spectral_sequence.png': 'E₂ pages and convergence behavior as machine‑narrated homology.',
+      'sobolev_spaces.png': 'H¹/H² norms with embedding behavior—inequalities you can audit.',
+      'geometric_measure_theory.png': 'Coarea, coverings, and rectifiability as reproducible constructions.',
+      'hodge_decomposition.png': 'Ω^k = Im d ⊕ Im δ ⊕ Harm^k with explicit pieces and spectra.',
+      'random_matrix_theory.png': 'Wigner eigenvalues vs semicircle: the distribution speaks for itself.'
+    };
+
+    const CASES = [
+      { imgId: 'case1img', ctaId: 'case1cta', peerId: 'case1peer', filename: 'category_theory_phi_morphisms.png' },
+      { imgId: 'case2img', ctaId: 'case2cta', peerId: 'case2peer', filename: 'spectral_analysis_phi_operators.png' },
+      { imgId: 'case3img', ctaId: 'case3cta', peerId: 'case3peer', filename: 'riemannian_curvature_comparison.png' },
+      { imgId: 'case4img', ctaId: 'case4cta', peerId: 'case4peer', filename: 'eilenberg_moore_spectral_sequence.png' }
+    ];
+
+    const INTRO = [
+      { imgId: 'intro1img', openId: 'intro1open', peerId: 'intro1peer', filename: 'category_theory_phi_morphisms.png' },
+      { imgId: 'intro2img', openId: 'intro2open', peerId: 'intro2peer', filename: 'spectral_analysis_phi_operators.png' },
+      { imgId: 'intro3img', openId: 'intro3open', peerId: 'intro3peer', filename: 'riemannian_curvature_comparison.png' }
+    ];
+
+    const RAW_BASE = 'https://raw.githubusercontent.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/main/';
+
+    async function loadManifest() {
+      try {
+        const res = await fetch(RAW_BASE + 'figures/peer_review/figure_manifest.json', { cache: 'no-store' });
+        if (res.ok) return res.json();
+      } catch (e) {}
+      return { figures: [] };
+    }
+
+    function canonicalUrl(entry) {
+      const rel = entry.canonical_path || ('figures/canonical_outputs/' + entry.filename);
+      return RAW_BASE + rel.replace(/^\/*/, '');
+    }
+
+    function canonicalUrlByName(filename) {
+      const fig = allFigures.find(f => (f.filename||'').toLowerCase() === (filename||'').toLowerCase());
+      if (fig) return canonicalUrl(fig);
+      return RAW_BASE + 'figures/canonical_outputs/' + filename;
+    }
+
+    function arxivUrlByName(filename) {
+      return RAW_BASE + 'arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/' + filename;
+    }
+
+    function inferTags(f) {
+      const s = (f.filename || '').toLowerCase();
+      const tags = [];
+      if (s.includes('category') || s.includes('topos')) tags.push('category');
+      if (s.includes('geometry') || s.includes('riemann') || s.includes('manifold') || s.includes('curvature')) tags.push('geometry');
+      if (s.includes('pde') || s.includes('elliptic') || s.includes('heat') || s.includes('schauder')) tags.push('pde');
+      if (s.includes('prob') || s.includes('stochastic') || s.includes('random') || s.includes('clt') || s.includes('lln')) tags.push('probability');
+      if (s.includes('topology') || s.includes('homology') || s.includes('cohomology') || s.includes('spectral_sequence')) tags.push('topology');
+      if (s.includes('k_theory') || s.includes('algebraic') || s.includes('operator_k_theory')) tags.push('algebra');
+      if (s.includes('operator') || s.includes('functional') || s.includes('riesz') || s.includes('maximal')) tags.push('analysis');
+      if (s.includes('spectral') || s.includes('zeta')) tags.push('spectral');
+      if (s.includes('number') || s.includes('p_adic') || s.includes('modular') || s.includes('automorphic')) tags.push('number');
+      if (s.includes('lie')) tags.push('lie');
+      if (s.includes('measure') || s.includes('bv') || s.includes('carleson')) tags.push('measure');
+      if (s.includes('graph')) tags.push('graphs');
+      return tags;
+    }
+
+    const activeTags = new Set();
+    let tagCounts = {};
+
+    function computeTagCounts() {
+      tagCounts = {};
+      for (const f of allFigures) {
+        for (const t of inferTags(f)) {
+          tagCounts[t] = (tagCounts[t] || 0) + 1;
+        }
+      }
+    }
+
+    function renderChips() {
+      computeTagCounts();
+      chips.innerHTML = '';
+      const tagsSorted = Object.keys(tagCounts).sort((a,b)=> (tagCounts[b]-tagCounts[a]));
+      for (const t of tagsSorted) {
+        const count = tagCounts[t];
+        if (!count) continue;
+        const el = document.createElement('div');
+        el.className = 'chip' + (activeTags.has(t) ? ' active' : '');
+        el.textContent = `${t} (${count})`;
+        el.onclick = () => { if (activeTags.has(t)) activeTags.delete(t); else activeTags.add(t); resetAndRender(); };
+        chips.appendChild(el);
+      }
+    }
+
+    function filteredSorted() {
+      let q = (search.value || '').toLowerCase().trim();
+      let arr = allFigures.filter(f => f.filename.toLowerCase().includes(q));
+      if (activeTags.size) {
+        arr = arr.filter(f => {
+          const ts = inferTags(f);
+          return ts.some(tag => activeTags.has(tag));
+        });
+      }
+      const mode = sort.value;
+      if (mode === 'width') arr.sort((a,b)=> (b.width||0)-(a.width||0));
+      else if (mode === 'height') arr.sort((a,b)=> (b.height||0)-(a.height||0));
+      else arr.sort((a,b)=> (a.filename||'').localeCompare(b.filename||''));
+      return arr;
+    }
+
+    function resetAndRender() {
+      visible = 0;
+      grid.innerHTML = '';
+      renderChips();
+      const arr = filteredSorted();
+      countBadge.textContent = arr.length;
+      appendMore(arr);
+    }
+
+    function appendMore(arr) {
+      const next = arr.slice(visible, visible + PAGE);
+      visible += next.length;
+      for (const f of next) grid.appendChild(tileFor(f));
+      loadMoreBtn.style.display = (visible < arr.length) ? 'block' : 'none';
+      loadMoreBtn.onclick = () => appendMore(arr);
+    }
+
+    function tileFor(f) {
+      const tile = document.createElement('div');
+      tile.className = 'tile';
+      const img = document.createElement('img'); img.loading = 'lazy'; img.decoding = 'async'; img.src = canonicalUrl(f); img.alt = f.filename;
+      img.onerror = () => { if (!img.dataset.fallback) { img.dataset.fallback = '1'; img.src = canonicalUrlByName('conceptual_overview_diagram.png'); } };
+      const meta = document.createElement('div'); meta.className = 'meta';
+      const name = document.createElement('div'); name.className = 'name'; name.textContent = f.filename;
+      const dims = document.createElement('div'); dims.className = 'dims'; dims.textContent = `${f.width||'?'}×${f.height||'?'}`;
+      const actions = document.createElement('div'); actions.className = 'actions';
+      const openBtn = document.createElement('a'); openBtn.className = 'btn'; openBtn.href = canonicalUrl(f); openBtn.target = '_blank'; openBtn.textContent = 'open';
+      const rawBtn = document.createElement('a'); rawBtn.className = 'btn'; rawBtn.href = canonicalUrl(f); rawBtn.download = f.filename; rawBtn.textContent = 'download';
+      actions.appendChild(openBtn); actions.appendChild(rawBtn);
+      meta.appendChild(name); meta.appendChild(dims); meta.appendChild(actions);
+      tile.appendChild(img); tile.appendChild(meta);
+      return tile;
+    }
+
+    function tileForFeatured(f) {
+      const tile = tileFor(f);
+      const caption = FEATURED_CAPTIONS[f.filename];
+      if (caption) {
+        const cap = document.createElement('div');
+        cap.className = 'subtle';
+        cap.style.padding = '0 12px 10px 12px';
+        cap.textContent = caption;
+        tile.appendChild(cap);
+      }
+      return tile;
+    }
+
+    function linkCase(idImg, idCta, filename) {
+      const fig = allFigures.find(f => (f.filename||'').toLowerCase() === filename.toLowerCase());
+      if (!fig) return;
+      const url = canonicalUrl(fig);
+      const img = document.getElementById(idImg);
+      const cta = document.getElementById(idCta);
+      if (img) { img.src = url; img.onerror = () => { if (!img.dataset.fallback) { img.dataset.fallback='1'; img.src = canonicalUrlByName('conceptual_overview_diagram.png'); }} }
+      if (cta) { cta.href = url; }
+    }
+
+    async function linkPeerCase(peerId, filename) {
+      const peer = arxivUrlByName(filename);
+      let url = peer;
+      try {
+        const r = await fetch(peer, { method: 'HEAD', cache: 'no-store' });
+        if (!r.ok) url = canonicalUrlByName(filename);
+      } catch (e) {
+        url = canonicalUrlByName(filename);
+      }
+      const el = document.getElementById(peerId);
+      if (el) { el.href = url; el.target = '_blank'; }
+    }
+
+    function linkIntro(imgId, openId, peerId, filename) {
+      const url = canonicalUrlByName(filename);
+      const img = document.getElementById(imgId);
+      const open = document.getElementById(openId);
+      const peer = document.getElementById(peerId);
+      if (img) { img.src = url; img.onerror = () => { if (!img.dataset.fallback) { img.dataset.fallback='1'; img.src = canonicalUrlByName('conceptual_overview_diagram.png'); }} }
+      if (open) open.href = url;
+      if (peer) linkPeerCase(peerId, filename);
+    }
+
+    function setFigByName(imgId, openId, peerId, filename) {
+      const url = canonicalUrlByName(filename);
+      const img = document.getElementById(imgId);
+      const open = document.getElementById(openId);
+      if (img) { img.src = url; img.onerror = () => { if (!img.dataset.fallback) { img.dataset.fallback='1'; img.src = canonicalUrlByName('conceptual_overview_diagram.png'); }} }
+      if (open) open.href = url;
+      linkPeerCase(peerId, filename);
+    }
+
+    // ELI25 toggle: replace select paragraphs with layperson text
+    const ELI_TEXT = {
+      pAbs1: 'FIRM is a theory claiming that all physics comes from pure math, with no experimental inputs. It starts with 5 math rules, builds a "Grace operator" that converges using the golden ratio φ ≈ 1.618, then uses φ-powers to predict exact values for fundamental constants like the fine structure constant (137.036) and particle masses. Think of it as discovering that the entire universe follows a simple mathematical pattern based on the golden ratio.',
+      pAxioms: 'FIRM starts with 5 mathematical rules: (1) organize things in levels to avoid logical paradoxes, (2) each level can "see itself" in the next level, (3) chaotic things settle into stable patterns, (4) this settling process has a unique outcome, (5) consciousness emerges at φ⁷ thresholds. These are pure math rules—no physics assumptions whatsoever.',
+      pGrace: 'The Grace operator is like a mathematical "stabilizer" that takes messy structures and cleans them up. When you apply it over and over (Grace, Grace², Grace³...), it settles down to stable points. The settling rate naturally gives the golden ratio φ = 1.618, which becomes nature\'s universal "heartbeat"—everything physical follows φⁿ rhythms.',
+      pPhi: 'Once φ emerges, every physical constant follows φⁿ patterns like a musical scale. Fine structure constant: 137.036 from φ² level. Proton/electron mass ratio: 1836.15 from φ¹⁰ level. Dark energy: 68.5% from φ⁻¹ level. The powers (2, 10, -1) aren\'t guessed—they come from the deep mathematical structure of each phenomenon.',
+      pLag: 'FIRM writes all of physics as one master equation with four parts: φ-field + forces + matter + gravity. The φ-field is incredibly versatile—it drove the Big Bang inflation, creates dark energy today, and generates all particle masses. Quarks get heavier in φⁿ jumps: light quarks (φ⁰) → strange (φ³) → charm (φ⁴) → bottom (φ⁷) → top (φ¹¹).',
+      pProv: 'FIRM\'s bold claim: everything derives from pure math with zero cheating—no fitted parameters, no experimental inputs, no curve-fitting. If any φⁿ prediction fails (like if the fine structure constant ≠ 137.035999084), the entire theory crashes. Current experiments match within measurement errors, but FIRM makes risky predictions that could kill it.',
+      pMot: 'FIRM is a candidate "theory of everything" built from pure math. It addresses dark matter (through φ-field effects), inflation (φ-field drives it), the cosmological constant problem (dark energy = φ⁻¹ × 1.108), and particle mass hierarchies (φⁿ scaling). It makes testable predictions that could prove or disprove it.',
+      pArch: 'FIRM enforces extreme rigor: every figure and prediction comes from computer code with cryptographic fingerprints. You can download the code, run it yourself, and verify every claim independently. It\'s "mathematics that compiles"—like turning theoretical physics into software that either works or crashes, with no middle ground.'
+    };
+
+    let eliOn = false;
+    function applyEli(on) {
+      for (const id of Object.keys(ELI_TEXT)) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        if (on) {
+          if (!el.dataset.orig) el.dataset.orig = el.innerText;
+          el.innerText = ELI_TEXT[id];
+        } else if (el.dataset.orig) {
+          el.innerText = el.dataset.orig;
+        }
+      }
+      eliBtn.textContent = on ? 'Academic' : 'ELI25';
+    }
+
+    function renderFeatured(figures) {
+      if (featuredGrid) {
+        const curated = FEATURED.map(fn => figures.find(f => (f.filename||'').toLowerCase() === fn.toLowerCase())).filter(Boolean);
+        featuredGrid.innerHTML = '';
+        for (const f of curated) featuredGrid.appendChild(tileForFeatured(f));
+      }
+      for (const c of CASES) {
+        linkCase(c.imgId, c.ctaId, c.filename);
+        linkPeerCase(c.peerId, c.filename);
+      }
+      for (const i of INTRO) linkIntro(i.imgId, i.openId, i.peerId, i.filename);
+
+      // Article figures mapping (use canonical filenames)
+      setFigByName('fAbs1','fAbs1Open','fAbs1Peer','conceptual_overview_diagram.png');
+      setFigByName('fGrace1','fGrace1Open','fGrace1Peer','grace_operator_fixed_point_convergence.png');
+      setFigByName('fPhi1','fPhi1Open','fPhi1Peer','phi_recursion_rate_verification.png');
+      setFigByName('fRecPot','fRecPotOpen','fRecPotPeer','recursive_potential_wells.png');
+      setFigByName('fLag1','fLag1Open','fLag1Peer','complete_lagrangian_formulation.png');
+      setFigByName('fBridge1','fBridge1Open','fBridge1Peer','dimensional_bridge_mapping.png');
+      setFigByName('fGeom1','fGeom1Open','fGeom1Peer','riemannian_curvature_comparison.png');
+      setFigByName('fGeom2','fGeom2Open','fGeom2Peer','symplectic_geometry.png');
+      setFigByName('fPDE1','fPDE1Open','fPDE1Peer','sobolev_sharp_embeddings.png');
+      setFigByName('fPDE2','fPDE2Open','fPDE2Peer','pde_regularity.png');
+      setFigByName('fPDE3','fPDE3Open','fPDE3Peer','heat_kernel_manifolds.png');
+      setFigByName('fSpec1','fSpec1Open','fSpec1Peer','spectral_analysis_phi_operators.png');
+      setFigByName('fSpec2','fSpec2Open','fSpec2Peer','spectral_zeta_functions.png');
+      setFigByName('fSpec3','fSpec3Open','fSpec3Peer','random_matrix_theory.png');
+      setFigByName('fCat1','fCat1Open','fCat1Peer','category_theory_phi_morphisms.png');
+      setFigByName('fCat2','fCat2Open','fCat2Peer','phi_infinity_categories_hott.png');
+      setFigByName('fTop1','fTop1Open','fTop1Peer','eilenberg_moore_spectral_sequence.png');
+      setFigByName('fTop2','fTop2Open','fTop2Peer','sheaf_cohomology_spectral_sequence.png');
+      setFigByName('fTop3','fTop3Open','fTop3Peer','de_rham_cohomology.png');
+      setFigByName('fHodge1','fHodge1Open','fHodge1Peer','hodge_decomposition.png');
+      setFigByName('fHodge2','fHodge2Open','fHodge2Peer','kahler_identities.png');
+      setFigByName('fHodge3','fHodge3Open','fHodge3Peer','ricci_flow.png');
+      setFigByName('fOp1','fOp1Open','fOp1Peer','hardy_littlewood_maximal.png');
+      setFigByName('fOp2','fOp2Open','fOp2Peer','calderon_zygmund_operators.png');
+      setFigByName('fOp3','fOp3Open','fOp3Peer','riesz_transforms.png');
+      setFigByName('fOp4','fOp4Open','fOp4Peer','littlewood_paley.png');
+      setFigByName('fCarleson1','fCarleson1Open','fCarleson1Peer','carleson_measures.png');
+      setFigByName('fGraph1','fGraph1Open','fGraph1Peer','spectral_graph_theory.png');
+      setFigByName('fGraph2','fGraph2Open','fGraph2Peer','hodge_theory_on_graphs.png');
+      setFigByName('fProb1','fProb1Open','fProb1Peer','probability_limit_theorems.png');
+      setFigByName('fErgodic1','fErgodic1Open','fErgodic1Peer','ergodic_theorems_amenable_groups.png');
+      setFigByName('fBV1','fBV1Open','fBV1Peer','bv_functions.png');
+      setFigByName('fBV2','fBV2Open','fBV2Peer','rectifiability_criteria.png');
+      setFigByName('fOT1','fOT1Open','fOT1Peer','optimal_transport.png');
+      setFigByName('fOT2','fOT2Open','fOT2Peer','lott_sturm_villani_curvature.png');
+      setFigByName('fGrp1','fGrp1Open','fGrp1Peer','geometric_group_theory.png');
+      setFigByName('fGrp2','fGrp2Open','fGrp2Peer','random_walks_poisson_boundary.png');
+      setFigByName('fK1','fK1Open','fK1Peer','algebraic_k_theory_examples.png');
+      setFigByName('fK2','fK2Open','fK2Peer','operator_k_theory.png');
+      setFigByName('fK3','fK3Open','fK3Peer','phi_infinity_categories_hott.png');
+      setFigByName('fRep1','fRep1Open','fRep1Peer','geometric_langlands.png');
+      setFigByName('fNum1','fNum1Open','fNum1Peer','automorphic_forms.png');
+      setFigByName('fNum2','fNum2Open','fNum2Peer','phi_l_functions_modular_forms.png');
+      setFigByName('fLie1','fLie1Open','fLie1Peer','phi_lie_groups_root_systems.png');
+      setFigByName('fLie2','fLie2Open','fLie2Peer','harmonic_analysis_groups.png');
+      setFigByName('fRiem1','fRiem1Open','fRiem1Peer','teichmueller_geodesics.png');
+      setFigByName('fArith1','fArith1Open','fArith1Peer','phi_p_adic_methods_diophantine.png');
+      setFigByName('fMot1','fMot1Open','fMot1Peer','phi_motivic_geometry_a1_homotopy.png');
+      setFigByName('fErgodic2','fErgodic2Open','fErgodic2Peer','ergodic_theorems_amenable_groups.png');
+      setFigByName('fFree1','fFree1Open','fFree1Peer','free_probability.png');
+      setFigByName('fVar1','fVar1Open','fVar1Peer','calculus_of_variations.png');
+      setFigByName('fIso1','fIso1Open','fIso1Peer','isoperimetric_inequality.png');
+      setFigByName('fDist1','fDist1Open','fDist1Peer','distribution_theory.png');
+      setFigByName('fMin1','fMin1Open','fMin1Peer','minimal_surfaces.png');
+      setFigByName('fFrac1','fFrac1Open','fFrac1Peer','fractional_sobolev_besov.png');
+      setFigByName('fCarl1','fCarl1Open','fCarl1Peer','carleson_measures.png');
+      setFigByName('fRW1','fRW1Open','fRW1Peer','random_walks_poisson_boundary.png');
+    }
+
+    (async () => {
+      const data = await loadManifest();
+      allFigures = data.figures || [];
+      renderFeatured(allFigures);
+      resetAndRender();
+      search.addEventListener('input', resetAndRender);
+      sort.addEventListener('change', resetAndRender);
+      if (eliBtn) eliBtn.addEventListener('click', () => { eliOn = !eliOn; applyEli(eliOn); });
+    })();
+  </script>
+</body>
+</html>
       <p class="subtle">Explore our comprehensive collection of mathematical figures generated deterministically from FIRM theory. Each figure includes full provenance and peer-review capabilities.</p>
       
       <div class="controls">
@@ -1846,365 +2207,3 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
     </section>
 
     <section class="section" id="gallery">
-      <h2>Complete Gallery</h2>
-      <div class="controls">
-        <div class="filterchips" id="chips"></div>
-      </div>
-      <div id="grid" class="grid"></div>
-      <button class="btn loadmore" id="loadMore">Load More</button>
-    </section>
-
-    <section class="section">
-      <div class="card">
-        <h3>Reproduce it yourself</h3>
-        <p class="subtle">Everything here is generated from code. Clone the repo and run the peer‑review sync to rebuild the canonical set and arXiv copies:</p>
-        <pre class="subtle" style="overflow:auto;">python figures/peer_review/sync_and_verify.py --generate-math
-python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
-        <p class="subtle">Outputs: <code>figures/canonical_outputs/</code> (single source of truth) and <code>arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/</code> (submission‑ready).</p>
-  </div>
-    </section>
-
-    <section class="footer">
-      <div>© Ex Nihilo Reality — All figures generated from code; see repository for provenance.</div>
-    </section>
-  </main>
-
-  <script>
-    const grid = document.getElementById('grid');
-    const featuredGrid = document.getElementById('featuredGrid');
-    const search = document.getElementById('search');
-    const sort = document.getElementById('sort');
-    const countBadge = document.getElementById('countBadge');
-    const chips = document.getElementById('chips');
-    const loadMoreBtn = document.getElementById('loadMore');
-    const eliBtn = document.getElementById('eli25Toggle');
-
-    let allFigures = [];
-    let visible = 0;
-    const PAGE = 40;
-
-    const FEATURED = [
-      'category_theory_phi_morphisms.png',
-      'complete_lagrangian_formulation.png',
-      'spectral_analysis_phi_operators.png',
-      'riemannian_curvature_comparison.png',
-      'probability_limit_theorems.png',
-      'eilenberg_moore_spectral_sequence.png',
-      'sobolev_spaces.png',
-      'geometric_measure_theory.png',
-      'hodge_decomposition.png',
-      'random_matrix_theory.png'
-    ];
-
-    const FEATURED_CAPTIONS = {
-      'category_theory_phi_morphisms.png': 'Morphism composition, functoriality, and φ‑naturality rendered as executable diagrams.',
-      'complete_lagrangian_formulation.png': 'Unified field terms expressed as a single Lagrangian—no narrative gaps.',
-      'spectral_analysis_phi_operators.png': 'Eigenvalues, resolvent, and spectral measure computed from first principles.',
-      'riemannian_curvature_comparison.png': 'Toponogov and Bishop–Gromov comparisons made visual and verifiable.',
-      'probability_limit_theorems.png': 'LLN and CLT transitions illustrated as density/cumulative convergence.',
-      'eilenberg_moore_spectral_sequence.png': 'E₂ pages and convergence behavior as machine‑narrated homology.',
-      'sobolev_spaces.png': 'H¹/H² norms with embedding behavior—inequalities you can audit.',
-      'geometric_measure_theory.png': 'Coarea, coverings, and rectifiability as reproducible constructions.',
-      'hodge_decomposition.png': 'Ω^k = Im d ⊕ Im δ ⊕ Harm^k with explicit pieces and spectra.',
-      'random_matrix_theory.png': 'Wigner eigenvalues vs semicircle: the distribution speaks for itself.'
-    };
-
-    const CASES = [
-      { imgId: 'case1img', ctaId: 'case1cta', peerId: 'case1peer', filename: 'category_theory_phi_morphisms.png' },
-      { imgId: 'case2img', ctaId: 'case2cta', peerId: 'case2peer', filename: 'spectral_analysis_phi_operators.png' },
-      { imgId: 'case3img', ctaId: 'case3cta', peerId: 'case3peer', filename: 'riemannian_curvature_comparison.png' },
-      { imgId: 'case4img', ctaId: 'case4cta', peerId: 'case4peer', filename: 'eilenberg_moore_spectral_sequence.png' }
-    ];
-
-    const INTRO = [
-      { imgId: 'intro1img', openId: 'intro1open', peerId: 'intro1peer', filename: 'category_theory_phi_morphisms.png' },
-      { imgId: 'intro2img', openId: 'intro2open', peerId: 'intro2peer', filename: 'spectral_analysis_phi_operators.png' },
-      { imgId: 'intro3img', openId: 'intro3open', peerId: 'intro3peer', filename: 'riemannian_curvature_comparison.png' }
-    ];
-
-    const RAW_BASE = 'https://raw.githubusercontent.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/main/';
-
-    async function loadManifest() {
-      try {
-        const res = await fetch(RAW_BASE + 'figures/peer_review/figure_manifest.json', { cache: 'no-store' });
-        if (res.ok) return res.json();
-      } catch (e) {}
-      return { figures: [] };
-    }
-
-    function canonicalUrl(entry) {
-      const rel = entry.canonical_path || ('figures/canonical_outputs/' + entry.filename);
-      return RAW_BASE + rel.replace(/^\/*/, '');
-    }
-
-    function canonicalUrlByName(filename) {
-      const fig = allFigures.find(f => (f.filename||'').toLowerCase() === (filename||'').toLowerCase());
-      if (fig) return canonicalUrl(fig);
-      return RAW_BASE + 'figures/canonical_outputs/' + filename;
-    }
-
-    function arxivUrlByName(filename) {
-      return RAW_BASE + 'arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/' + filename;
-    }
-
-    function inferTags(f) {
-      const s = (f.filename || '').toLowerCase();
-      const tags = [];
-      if (s.includes('category') || s.includes('topos')) tags.push('category');
-      if (s.includes('geometry') || s.includes('riemann') || s.includes('manifold') || s.includes('curvature')) tags.push('geometry');
-      if (s.includes('pde') || s.includes('elliptic') || s.includes('heat') || s.includes('schauder')) tags.push('pde');
-      if (s.includes('prob') || s.includes('stochastic') || s.includes('random') || s.includes('clt') || s.includes('lln')) tags.push('probability');
-      if (s.includes('topology') || s.includes('homology') || s.includes('cohomology') || s.includes('spectral_sequence')) tags.push('topology');
-      if (s.includes('k_theory') || s.includes('algebraic') || s.includes('operator_k_theory')) tags.push('algebra');
-      if (s.includes('operator') || s.includes('functional') || s.includes('riesz') || s.includes('maximal')) tags.push('analysis');
-      if (s.includes('spectral') || s.includes('zeta')) tags.push('spectral');
-      if (s.includes('number') || s.includes('p_adic') || s.includes('modular') || s.includes('automorphic')) tags.push('number');
-      if (s.includes('lie')) tags.push('lie');
-      if (s.includes('measure') || s.includes('bv') || s.includes('carleson')) tags.push('measure');
-      if (s.includes('graph')) tags.push('graphs');
-      return tags;
-    }
-
-    const activeTags = new Set();
-    let tagCounts = {};
-
-    function computeTagCounts() {
-      tagCounts = {};
-      for (const f of allFigures) {
-        for (const t of inferTags(f)) {
-          tagCounts[t] = (tagCounts[t] || 0) + 1;
-        }
-      }
-    }
-
-    function renderChips() {
-      computeTagCounts();
-      chips.innerHTML = '';
-      const tagsSorted = Object.keys(tagCounts).sort((a,b)=> (tagCounts[b]-tagCounts[a]));
-      for (const t of tagsSorted) {
-        const count = tagCounts[t];
-        if (!count) continue;
-        const el = document.createElement('div');
-        el.className = 'chip' + (activeTags.has(t) ? ' active' : '');
-        el.textContent = `${t} (${count})`;
-        el.onclick = () => { if (activeTags.has(t)) activeTags.delete(t); else activeTags.add(t); resetAndRender(); };
-        chips.appendChild(el);
-      }
-    }
-
-    function filteredSorted() {
-      let q = (search.value || '').toLowerCase().trim();
-      let arr = allFigures.filter(f => f.filename.toLowerCase().includes(q));
-      if (activeTags.size) {
-        arr = arr.filter(f => {
-          const ts = inferTags(f);
-          return ts.some(tag => activeTags.has(tag));
-        });
-      }
-      const mode = sort.value;
-      if (mode === 'width') arr.sort((a,b)=> (b.width||0)-(a.width||0));
-      else if (mode === 'height') arr.sort((a,b)=> (b.height||0)-(a.height||0));
-      else arr.sort((a,b)=> (a.filename||'').localeCompare(b.filename||''));
-      return arr;
-    }
-
-    function resetAndRender() {
-      visible = 0;
-      grid.innerHTML = '';
-      renderChips();
-      const arr = filteredSorted();
-      countBadge.textContent = arr.length;
-      appendMore(arr);
-    }
-
-    function appendMore(arr) {
-      const next = arr.slice(visible, visible + PAGE);
-      visible += next.length;
-      for (const f of next) grid.appendChild(tileFor(f));
-      loadMoreBtn.style.display = (visible < arr.length) ? 'block' : 'none';
-      loadMoreBtn.onclick = () => appendMore(arr);
-    }
-
-    function tileFor(f) {
-      const tile = document.createElement('div');
-      tile.className = 'tile';
-      const img = document.createElement('img'); img.loading = 'lazy'; img.decoding = 'async'; img.src = canonicalUrl(f); img.alt = f.filename;
-      img.onerror = () => { if (!img.dataset.fallback) { img.dataset.fallback = '1'; img.src = canonicalUrlByName('conceptual_overview_diagram.png'); } };
-      const meta = document.createElement('div'); meta.className = 'meta';
-      const name = document.createElement('div'); name.className = 'name'; name.textContent = f.filename;
-      const dims = document.createElement('div'); dims.className = 'dims'; dims.textContent = `${f.width||'?'}×${f.height||'?'}`;
-      const actions = document.createElement('div'); actions.className = 'actions';
-      const openBtn = document.createElement('a'); openBtn.className = 'btn'; openBtn.href = canonicalUrl(f); openBtn.target = '_blank'; openBtn.textContent = 'open';
-      const rawBtn = document.createElement('a'); rawBtn.className = 'btn'; rawBtn.href = canonicalUrl(f); rawBtn.download = f.filename; rawBtn.textContent = 'download';
-      actions.appendChild(openBtn); actions.appendChild(rawBtn);
-      meta.appendChild(name); meta.appendChild(dims); meta.appendChild(actions);
-      tile.appendChild(img); tile.appendChild(meta);
-      return tile;
-    }
-
-    function tileForFeatured(f) {
-      const tile = tileFor(f);
-      const caption = FEATURED_CAPTIONS[f.filename];
-      if (caption) {
-        const cap = document.createElement('div');
-        cap.className = 'subtle';
-        cap.style.padding = '0 12px 10px 12px';
-        cap.textContent = caption;
-        tile.appendChild(cap);
-      }
-      return tile;
-    }
-
-    function linkCase(idImg, idCta, filename) {
-      const fig = allFigures.find(f => (f.filename||'').toLowerCase() === filename.toLowerCase());
-      if (!fig) return;
-      const url = canonicalUrl(fig);
-      const img = document.getElementById(idImg);
-      const cta = document.getElementById(idCta);
-      if (img) { img.src = url; img.onerror = () => { if (!img.dataset.fallback) { img.dataset.fallback='1'; img.src = canonicalUrlByName('conceptual_overview_diagram.png'); }} }
-      if (cta) { cta.href = url; }
-    }
-
-    async function linkPeerCase(peerId, filename) {
-      const peer = arxivUrlByName(filename);
-      let url = peer;
-      try {
-        const r = await fetch(peer, { method: 'HEAD', cache: 'no-store' });
-        if (!r.ok) url = canonicalUrlByName(filename);
-      } catch (e) {
-        url = canonicalUrlByName(filename);
-      }
-      const el = document.getElementById(peerId);
-      if (el) { el.href = url; el.target = '_blank'; }
-    }
-
-    function linkIntro(imgId, openId, peerId, filename) {
-      const url = canonicalUrlByName(filename);
-      const img = document.getElementById(imgId);
-      const open = document.getElementById(openId);
-      const peer = document.getElementById(peerId);
-      if (img) { img.src = url; img.onerror = () => { if (!img.dataset.fallback) { img.dataset.fallback='1'; img.src = canonicalUrlByName('conceptual_overview_diagram.png'); }} }
-      if (open) open.href = url;
-      if (peer) linkPeerCase(peerId, filename);
-    }
-
-    function setFigByName(imgId, openId, peerId, filename) {
-      const url = canonicalUrlByName(filename);
-      const img = document.getElementById(imgId);
-      const open = document.getElementById(openId);
-      if (img) { img.src = url; img.onerror = () => { if (!img.dataset.fallback) { img.dataset.fallback='1'; img.src = canonicalUrlByName('conceptual_overview_diagram.png'); }} }
-      if (open) open.href = url;
-      linkPeerCase(peerId, filename);
-    }
-
-    // ELI25 toggle: replace select paragraphs with layperson text
-    const ELI_TEXT = {
-      pAbs1: 'FIRM is a theory claiming that all physics comes from pure math, with no experimental inputs. It starts with 5 math rules, builds a "Grace operator" that converges using the golden ratio φ ≈ 1.618, then uses φ-powers to predict exact values for fundamental constants like the fine structure constant (137.036) and particle masses. Think of it as discovering that the entire universe follows a simple mathematical pattern based on the golden ratio.',
-      pAxioms: 'FIRM starts with 5 mathematical rules: (1) organize things in levels to avoid logical paradoxes, (2) each level can "see itself" in the next level, (3) chaotic things settle into stable patterns, (4) this settling process has a unique outcome, (5) consciousness emerges at φ⁷ thresholds. These are pure math rules—no physics assumptions whatsoever.',
-      pGrace: 'The Grace operator is like a mathematical "stabilizer" that takes messy structures and cleans them up. When you apply it over and over (Grace, Grace², Grace³...), it settles down to stable points. The settling rate naturally gives the golden ratio φ = 1.618, which becomes nature\'s universal "heartbeat"—everything physical follows φⁿ rhythms.',
-      pPhi: 'Once φ emerges, every physical constant follows φⁿ patterns like a musical scale. Fine structure constant: 137.036 from φ² level. Proton/electron mass ratio: 1836.15 from φ¹⁰ level. Dark energy: 68.5% from φ⁻¹ level. The powers (2, 10, -1) aren\'t guessed—they come from the deep mathematical structure of each phenomenon.',
-      pLag: 'FIRM writes all of physics as one master equation with four parts: φ-field + forces + matter + gravity. The φ-field is incredibly versatile—it drove the Big Bang inflation, creates dark energy today, and generates all particle masses. Quarks get heavier in φⁿ jumps: light quarks (φ⁰) → strange (φ³) → charm (φ⁴) → bottom (φ⁷) → top (φ¹¹).',
-      pProv: 'FIRM\'s bold claim: everything derives from pure math with zero cheating—no fitted parameters, no experimental inputs, no curve-fitting. If any φⁿ prediction fails (like if the fine structure constant ≠ 137.035999084), the entire theory crashes. Current experiments match within measurement errors, but FIRM makes risky predictions that could kill it.',
-      pMot: 'FIRM is a candidate "theory of everything" built from pure math. It addresses dark matter (through φ-field effects), inflation (φ-field drives it), the cosmological constant problem (dark energy = φ⁻¹ × 1.108), and particle mass hierarchies (φⁿ scaling). It makes testable predictions that could prove or disprove it.',
-      pArch: 'FIRM enforces extreme rigor: every figure and prediction comes from computer code with cryptographic fingerprints. You can download the code, run it yourself, and verify every claim independently. It\'s "mathematics that compiles"—like turning theoretical physics into software that either works or crashes, with no middle ground.'
-    };
-
-    let eliOn = false;
-    function applyEli(on) {
-      for (const id of Object.keys(ELI_TEXT)) {
-        const el = document.getElementById(id);
-        if (!el) continue;
-        if (on) {
-          if (!el.dataset.orig) el.dataset.orig = el.innerText;
-          el.innerText = ELI_TEXT[id];
-        } else if (el.dataset.orig) {
-          el.innerText = el.dataset.orig;
-        }
-      }
-      eliBtn.textContent = on ? 'Academic' : 'ELI25';
-    }
-
-    function renderFeatured(figures) {
-      if (featuredGrid) {
-        const curated = FEATURED.map(fn => figures.find(f => (f.filename||'').toLowerCase() === fn.toLowerCase())).filter(Boolean);
-        featuredGrid.innerHTML = '';
-        for (const f of curated) featuredGrid.appendChild(tileForFeatured(f));
-      }
-      for (const c of CASES) {
-        linkCase(c.imgId, c.ctaId, c.filename);
-        linkPeerCase(c.peerId, c.filename);
-      }
-      for (const i of INTRO) linkIntro(i.imgId, i.openId, i.peerId, i.filename);
-
-      // Article figures mapping (use canonical filenames)
-      setFigByName('fAbs1','fAbs1Open','fAbs1Peer','conceptual_overview_diagram.png');
-      setFigByName('fGrace1','fGrace1Open','fGrace1Peer','grace_operator_fixed_point_convergence.png');
-      setFigByName('fPhi1','fPhi1Open','fPhi1Peer','phi_recursion_rate_verification.png');
-      setFigByName('fRecPot','fRecPotOpen','fRecPotPeer','recursive_potential_wells.png');
-      setFigByName('fLag1','fLag1Open','fLag1Peer','complete_lagrangian_formulation.png');
-      setFigByName('fBridge1','fBridge1Open','fBridge1Peer','dimensional_bridge_mapping.png');
-      setFigByName('fGeom1','fGeom1Open','fGeom1Peer','riemannian_curvature_comparison.png');
-      setFigByName('fGeom2','fGeom2Open','fGeom2Peer','symplectic_geometry.png');
-      setFigByName('fPDE1','fPDE1Open','fPDE1Peer','sobolev_sharp_embeddings.png');
-      setFigByName('fPDE2','fPDE2Open','fPDE2Peer','pde_regularity.png');
-      setFigByName('fPDE3','fPDE3Open','fPDE3Peer','heat_kernel_manifolds.png');
-      setFigByName('fSpec1','fSpec1Open','fSpec1Peer','spectral_analysis_phi_operators.png');
-      setFigByName('fSpec2','fSpec2Open','fSpec2Peer','spectral_zeta_functions.png');
-      setFigByName('fSpec3','fSpec3Open','fSpec3Peer','random_matrix_theory.png');
-      setFigByName('fCat1','fCat1Open','fCat1Peer','category_theory_phi_morphisms.png');
-      setFigByName('fCat2','fCat2Open','fCat2Peer','phi_infinity_categories_hott.png');
-      setFigByName('fTop1','fTop1Open','fTop1Peer','eilenberg_moore_spectral_sequence.png');
-      setFigByName('fTop2','fTop2Open','fTop2Peer','sheaf_cohomology_spectral_sequence.png');
-      setFigByName('fTop3','fTop3Open','fTop3Peer','de_rham_cohomology.png');
-      setFigByName('fHodge1','fHodge1Open','fHodge1Peer','hodge_decomposition.png');
-      setFigByName('fHodge2','fHodge2Open','fHodge2Peer','kahler_identities.png');
-      setFigByName('fHodge3','fHodge3Open','fHodge3Peer','ricci_flow.png');
-      setFigByName('fOp1','fOp1Open','fOp1Peer','hardy_littlewood_maximal.png');
-      setFigByName('fOp2','fOp2Open','fOp2Peer','calderon_zygmund_operators.png');
-      setFigByName('fOp3','fOp3Open','fOp3Peer','riesz_transforms.png');
-      setFigByName('fOp4','fOp4Open','fOp4Peer','littlewood_paley.png');
-      setFigByName('fCarleson1','fCarleson1Open','fCarleson1Peer','carleson_measures.png');
-      setFigByName('fGraph1','fGraph1Open','fGraph1Peer','spectral_graph_theory.png');
-      setFigByName('fGraph2','fGraph2Open','fGraph2Peer','hodge_theory_on_graphs.png');
-      setFigByName('fProb1','fProb1Open','fProb1Peer','probability_limit_theorems.png');
-      setFigByName('fErgodic1','fErgodic1Open','fErgodic1Peer','ergodic_theorems_amenable_groups.png');
-      setFigByName('fBV1','fBV1Open','fBV1Peer','bv_functions.png');
-      setFigByName('fBV2','fBV2Open','fBV2Peer','rectifiability_criteria.png');
-      setFigByName('fOT1','fOT1Open','fOT1Peer','optimal_transport.png');
-      setFigByName('fOT2','fOT2Open','fOT2Peer','lott_sturm_villani_curvature.png');
-      setFigByName('fGrp1','fGrp1Open','fGrp1Peer','geometric_group_theory.png');
-      setFigByName('fGrp2','fGrp2Open','fGrp2Peer','random_walks_poisson_boundary.png');
-      setFigByName('fK1','fK1Open','fK1Peer','algebraic_k_theory_examples.png');
-      setFigByName('fK2','fK2Open','fK2Peer','operator_k_theory.png');
-      setFigByName('fK3','fK3Open','fK3Peer','phi_infinity_categories_hott.png');
-      setFigByName('fRep1','fRep1Open','fRep1Peer','geometric_langlands.png');
-      setFigByName('fNum1','fNum1Open','fNum1Peer','automorphic_forms.png');
-      setFigByName('fNum2','fNum2Open','fNum2Peer','phi_l_functions_modular_forms.png');
-      setFigByName('fLie1','fLie1Open','fLie1Peer','phi_lie_groups_root_systems.png');
-      setFigByName('fLie2','fLie2Open','fLie2Peer','harmonic_analysis_groups.png');
-      setFigByName('fRiem1','fRiem1Open','fRiem1Peer','teichmueller_geodesics.png');
-      setFigByName('fArith1','fArith1Open','fArith1Peer','phi_p_adic_methods_diophantine.png');
-      setFigByName('fMot1','fMot1Open','fMot1Peer','phi_motivic_geometry_a1_homotopy.png');
-      setFigByName('fErgodic2','fErgodic2Open','fErgodic2Peer','ergodic_theorems_amenable_groups.png');
-      setFigByName('fFree1','fFree1Open','fFree1Peer','free_probability.png');
-      setFigByName('fVar1','fVar1Open','fVar1Peer','calculus_of_variations.png');
-      setFigByName('fIso1','fIso1Open','fIso1Peer','isoperimetric_inequality.png');
-      setFigByName('fDist1','fDist1Open','fDist1Peer','distribution_theory.png');
-      setFigByName('fMin1','fMin1Open','fMin1Peer','minimal_surfaces.png');
-      setFigByName('fFrac1','fFrac1Open','fFrac1Peer','fractional_sobolev_besov.png');
-      setFigByName('fCarl1','fCarl1Open','fCarl1Peer','carleson_measures.png');
-      setFigByName('fRW1','fRW1Open','fRW1Peer','random_walks_poisson_boundary.png');
-    }
-
-    (async () => {
-      const data = await loadManifest();
-      allFigures = data.figures || [];
-      renderFeatured(allFigures);
-      resetAndRender();
-      search.addEventListener('input', resetAndRender);
-      sort.addEventListener('change', resetAndRender);
-      if (eliBtn) eliBtn.addEventListener('click', () => { eliOn = !eliOn; applyEli(eliOn); });
-    })();
-  </script>
-</body>
-</html>
