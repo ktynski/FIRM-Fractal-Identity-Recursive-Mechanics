@@ -5,15 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ex Nihilo Reality — Mathematics that compiles</title>
   <link rel="stylesheet" href="assets/site.css" />
+  <style>
+    .article { max-width: 1100px; margin: 40px auto; padding: 0 16px; }
+    .article h1, .article h2, .article h3 { margin: 16px 0; }
+    .article p { line-height: 1.7; margin: 12px 0; }
+    .toc { position: sticky; top: 10px; align-self: flex-start; min-width: 240px; }
+    .toc .card { position: sticky; top: 10px; }
+    .articleLayout { display: grid; grid-template-columns: 1fr 3fr; gap: 16px; }
+    .fig { margin: 18px 0; }
+    .fig img { width: 100%; height: auto; border-radius: 8px; }
+    .fig .caption { font-size: 14px; color: #667; margin-top: 6px; }
+    @media (max-width: 980px){ .articleLayout { grid-template-columns: 1fr; } .toc{ position: initial; } }
+  </style>
 </head>
 <body>
   <header class="header">
     <nav class="nav">
       <div class="brand">Ex Nihilo Reality</div>
-      <a href="article.html">Article</a>
-      <a href="#intro">Intro</a>
-      <a href="#featured">Featured</a>
-      <a href="#cases">Case Studies</a>
+      <a href="#article">Article</a>
       <a href="#gallery">Gallery</a>
       <a href="FIGURE_GALLERY.md">Markdown Index</a>
       <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
@@ -26,9 +35,8 @@
         <h1>Mathematics that compiles</h1>
         <p class="subtle">We don’t debate—we demonstrate. Every figure on this site is generated deterministically from code and mathematics, with full provenance and peer‑review readiness. Replace opinion with verification.</p>
         <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
-          <a class="cta" href="#featured">See Featured Proof‑by‑Demonstration</a>
+          <a class="cta" href="#article">Read the Article</a>
           <a class="cta secondary" href="#gallery">Browse All Figures</a>
-          <a class="cta" href="article.html">Read the Article</a>
         </div>
       </div>
       <div class="card">
@@ -50,90 +58,139 @@
             <span class="badge" id="countBadge">0</span>
           </div>
         </div>
-    </div>
-    </section>
-
-    <section class="section" id="intro">
-      <h2>The Ex Nihilo Program</h2>
-      <div class="card">
-        <h3>Mathematics that survives contact with code</h3>
-        <p>The Ex Nihilo program advances a simple standard: a claim is only as strong as the artifact that realizes it. We therefore present a library of executable arguments—figures generated deterministically from mathematics—across geometry, analysis, topology, and category theory. These artifacts are not illustrations; they are the argument.</p>
-        <p>Three pillars organize the approach. First, a categorical backbone ensures compositionality: constructions respect morphisms, naturality, and functorial structure. Second, spectral analysis adjudicates: operators and their spectra provide basis‑invariant witnesses that cut through heuristic ambiguity. Third, geometric and topological mechanisms—curvature comparison, heat kernels, and spectral sequences—control the flow of invariants across scales.</p>
-        <p>We explicitly invite falsification. Each artifact is reproducible from source, with peer‑review packets available. If a construction fails under independent regeneration, the claim fails with it. This is what we mean by mathematics that compiles.</p>
-        <div class="grid" style="margin-top:10px;">
-          <div class="tile">
-            <img id="intro1img" alt="Categorical backbone" />
-            <div class="meta"><div class="name">Categorical backbone</div><div class="dims">φ‑enhanced morphisms</div><div class="actions"><a id="intro1open" class="btn" target="_blank">open</a><a id="intro1peer" class="btn" target="_blank">peer‑review</a></div></div>
-          </div>
-          <div class="tile">
-            <img id="intro2img" alt="Spectral adjudication" />
-            <div class="meta"><div class="name">Spectral adjudication</div><div class="dims">operator‑level evidence</div><div class="actions"><a id="intro2open" class="btn" target="_blank">open</a><a id="intro2peer" class="btn" target="_blank">peer‑review</a></div></div>
-          </div>
-          <div class="tile">
-            <img id="intro3img" alt="Geometric control" />
-            <div class="meta"><div class="name">Geometric control</div><div class="dims">curvature and kernels</div><div class="actions"><a id="intro3open" class="btn" target="_blank">open</a><a id="intro3peer" class="btn" target="_blank">peer‑review</a></div></div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <section class="section" id="featured">
-      <h2>Featured Demonstrations</h2>
-      <p class="subtle">A fast tour of proof‑by‑construction across categories—geometry, analysis, topology, and spectral theory. Open any artifact and verify.</p>
-      <div id="featuredGrid" class="grid"></div>
-    </section>
+    <section class="article" id="article">
+      <div class="articleLayout">
+        <aside class="toc">
+          <div class="card">
+            <h3>Contents</h3>
+            <ol>
+              <li><a href="#motivation">A new standard of evidence</a></li>
+              <li><a href="#architecture">Architecture of proof‑by‑construction</a></li>
+              <li><a href="#geometry">Geometry that answers back</a></li>
+              <li><a href="#pde">Sobolev, regularity, and kernels</a></li>
+              <li><a href="#spectral">When spectra speak</a></li>
+              <li><a href="#category">Categories that compute</a></li>
+              <li><a href="#topology">Topology as a narrative</a></li>
+              <li><a href="#hodge">Hodge, Kähler, and flow</a></li>
+              <li><a href="#operators">Operators and estimates</a></li>
+              <li><a href="#graphs">Graphs and discrete spectra</a></li>
+              <li><a href="#probability">Probability and limits</a></li>
+              <li><a href="#gmt">BV and geometric measure</a></li>
+              <li><a href="#transport">Optimal transport</a></li>
+              <li><a href="#groups">Geometry of groups</a></li>
+              <li><a href="#ktheory">K‑theory and higher structures</a></li>
+              <li><a href="#reproduce">Reproduce and falsify</a></li>
+            </ol>
+          </div>
+        </aside>
 
-    <section class="section" id="cases">
-      <h2>Case Studies: Proof‑by‑Demonstration</h2>
-      <div class="casegrid">
-        <div class="case">
-          <img id="case1img" alt="Category Theory"/>
-          <div class="copy">
-            <h3>1. Category theory, operationalized</h3>
-            <p>We formalize φ‑enhanced morphisms, functors, and naturality into diagrams that compile—no prose hand‑waving. The result: a categorical backbone you can compute with.</p>
-            <p class="subtle"><b>Why this matters:</b> Compositional structure and naturality constraints become machine‑checkable invariants. Commutativity is not asserted; it is verified.</p>
-            <div style="display:flex; gap:10px; flex-wrap:wrap;">
-              <a class="cta" id="case1cta" target="_blank">Open artifact</a>
-              <a class="cta secondary" id="case1peer" target="_blank">Peer‑review packet</a>
+        <article>
+          <h1>Mathematics that compiles: a guided tour</h1>
+          <p>Every generation of mathematics has asked for a different kind of evidence. Ours asks for code. Here we present a library of artifacts—figures generated deterministically from mathematics—that constitute <i>executable arguments</i>. They are not illustrations of claims; they are the claims themselves, rendered in a form that can be audited, reproduced, and, if necessary, falsified.</p>
+
+          <h2 id="motivation">1. A new standard of evidence</h2>
+          <p>We replace “trust the author” with “trust the artifact.” Each figure is the output of a generator tied to formal structure: theorems and constructions in geometry, analysis, topology, and category theory. If an argument survives regeneration from source, it earns the right to be believed; if it does not, it yields. This is not contrarian posturing—it is a practical upgrade to mathematical hygiene.</p>
+          <div class="fig">
+            <img id="fIntro" alt="Overview" />
+            <div class="caption">Overview of the program: categorical backbone, spectral adjudication, and geometric/topological control.</div>
+            <div style="margin-top:6px; display:flex; gap:8px;">
+              <a id="fIntroOpen" class="btn" target="_blank">open</a>
+              <a id="fIntroPeer" class="btn" target="_blank">peer‑review</a>
             </div>
           </div>
-        </div>
-        <div class="case">
-          <img id="case2img" alt="Spectral Analysis"/>
-          <div class="copy">
-            <h3>2. Spectral truth over intuition</h3>
-            <p>Eigenvalues, resolvents, spectral measures—derived, visualized, and auditable. Replace appeals to authority with the operator’s spectrum.</p>
-            <p class="subtle"><b>Why this matters:</b> Spectral data are basis‑invariant witnesses. Heuristics fail when the spectrum disagrees; the operator adjudicates.</p>
-            <div style="display:flex; gap:10px; flex-wrap:wrap;">
-              <a class="cta" id="case2cta" target="_blank">Open artifact</a>
-              <a class="cta secondary" id="case2peer" target="_blank">Peer‑review packet</a>
+
+          <h2 id="architecture">2. Architecture of proof‑by‑construction</h2>
+          <p>The architecture has three primary beams. (i) <b>Composition</b>: categorical structure prevents local cleverness from breaking global coherence. (ii) <b>Spectrum</b>: operators adjudicate by revealing invariants that arguments must respect. (iii) <b>Flow</b>: geometric PDEs, curvature bounds, and spectral sequences propagate constraints until a claim either survives or collapses.</p>
+
+          <h2 id="geometry">3. Geometry that answers back</h2>
+          <p>Comparison theorems do not merely inspire pictures—they produce certifiable bounds. Heat kernels do not merely suggest intuition—they chart the actual diffusion of structure. The figures here are quantitative witnesses, not persuasive sketches.</p>
+          <div class="fig">
+            <img id="fGeom1" alt="Curvature comparison" />
+            <div class="caption">Curvature comparison and Bishop–Gromov behavior rendered as reproducible constructions.</div>
+            <div style="margin-top:6px; display:flex; gap:8px;">
+              <a id="fGeom1Open" class="btn" target="_blank">open</a>
+              <a id="fGeom1Peer" class="btn" target="_blank">peer‑review</a>
             </div>
           </div>
-        </div>
-        <div class="case">
-          <img id="case3img" alt="Geometry"/>
-          <div class="copy">
-            <h3>3. Geometry that survives contact with code</h3>
-            <p>Curvature comparisons, heat kernels, and symplectic flows. The figures are not illustrations—they are executable arguments.</p>
-            <p class="subtle"><b>Why this matters:</b> Comparison theorems yield quantitative, falsifiable bounds. Numerical constructions certify inequalities without appeal to diagrammatic intuition.</p>
-            <div style="display:flex; gap:10px; flex-wrap:wrap;">
-              <a class="cta" id="case3cta" target="_blank">Open artifact</a>
-              <a class="cta secondary" id="case3peer" target="_blank">Peer‑review packet</a>
+          <div class="fig">
+            <img id="fGeom2" alt="Symplectic/flow" />
+            <div class="caption">Symplectic structures and flows portrayed without hand‑waving: the construction is executable.</div>
+            <div style="margin-top:6px; display:flex; gap:8px;">
+              <a id="fGeom2Open" class="btn" target="_blank">open</a>
+              <a id="fGeom2Peer" class="btn" target="_blank">peer‑review</a>
             </div>
           </div>
-        </div>
-        <div class="case">
-          <img id="case4img" alt="Topology"/>
-          <div class="copy">
-            <h3>4. Topology, computed</h3>
-            <p>From de Rham to Eilenberg–Moore: pages, differentials, convergence. The homological story is machine‑narrated, not asserted.</p>
-            <p class="subtle"><b>Why this matters:</b> Spectral sequence pages encode obstructions and convergence to target cohomology. The limiting objects are not rhetorical—they are computed.</p>
-            <div style="display:flex; gap:10px; flex-wrap:wrap;">
-              <a class="cta" id="case4cta" target="_blank">Open artifact</a>
-              <a class="cta secondary" id="case4peer" target="_blank">Peer‑review packet</a>
-            </div>
-          </div>
-        </div>
+
+          <h2 id="pde">4. Sobolev, regularity, and kernels</h2>
+          <p>Sobolev embeddings, Schauder estimates, and De Giorgi–Nash–Moser regularity convert qualitative narratives into quantitative constraints. Heat kernels make the geometry of diffusion explicit.</p>
+          <div class="fig"><img id="fPDE1" alt="Sobolev embeddings" /><div class="caption">Sharp embeddings and norm behavior made auditable.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fPDE1Open" class="btn" target="_blank">open</a><a id="fPDE1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fPDE2" alt="Regularity" /><div class="caption">Regularity via De Giorgi–Nash–Moser and Schauder.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fPDE2Open" class="btn" target="_blank">open</a><a id="fPDE2Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fPDE3" alt="Heat kernel" /><div class="caption">Heat kernel behavior on manifolds—geometry meets diffusion.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fPDE3Open" class="btn" target="_blank">open</a><a id="fPDE3Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="spectral">5. When spectra speak</h2>
+          <p>Operators are honest narrators: their spectra cannot be talked into compliance. Our spectral figures compute eigenvalues, resolvents, and zeta‑like invariants that arbitrate competing intuitions. Where rhetoric stalls, the spectrum finishes the argument.</p>
+          <div class="fig"><img id="fSpec1" alt="Spectral analysis" /><div class="caption">Eigenstructures and resolvents as basis‑invariant evidence.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fSpec1Open" class="btn" target="_blank">open</a><a id="fSpec1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fSpec2" alt="Spectral zeta" /><div class="caption">Spectral zeta behavior and nontrivial zeros (schematic).</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fSpec2Open" class="btn" target="_blank">open</a><a id="fSpec2Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fSpec3" alt="Random matrices" /><div class="caption">Random matrix eigenvalue statistics vs semicircle.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fSpec3Open" class="btn" target="_blank">open</a><a id="fSpec3Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="category">6. Categories that compute</h2>
+          <p>Diagrams compile. Functoriality, naturality, and enrichment are not slogans but invariants that survive code generation. The categorical backbone is the guarantor of compositional honesty.</p>
+          <div class="fig"><img id="fCat1" alt="Category/morphisms" /><div class="caption">φ‑enhanced morphisms and functors under executable naturality.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fCat1Open" class="btn" target="_blank">open</a><a id="fCat1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="topology">7. Topology as a narrative</h2>
+          <p>Spectral sequences turn “hand‑wavy” topological stories into page‑by‑page narratives with a destination. When the sequence converges, the claim is earned. When it does not, the obstruction is specific.</p>
+          <div class="fig"><img id="fTop1" alt="Eilenberg–Moore" /><div class="caption">Eilenberg–Moore pages and convergence to target homology.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fTop1Open" class="btn" target="_blank">open</a><a id="fTop1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fTop2" alt="Sheaf spectral sequence" /><div class="caption">Sheaf cohomology spectral sequence with executable pages.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fTop2Open" class="btn" target="_blank">open</a><a id="fTop2Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="hodge">8. Hodge, Kähler, and flow</h2>
+          <p>Hodge decomposition, Kähler identities, and Ricci flow integrate analysis with geometry at full strength. The figures are not romantic; they are operational.</p>
+          <div class="fig"><img id="fHodge1" alt="Hodge decomposition" /><div class="caption">Ω^k = Im d ⊕ Im δ ⊕ Harm^k with explicit pieces and spectra.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fHodge1Open" class="btn" target="_blank">open</a><a id="fHodge1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fHodge2" alt="Kähler identities" /><div class="caption">Kähler identities and Hodge diamond constraints illustrated.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fHodge2Open" class="btn" target="_blank">open</a><a id="fHodge2Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fHodge3" alt="Ricci flow" /><div class="caption">Ricci flow as a computational narrative of curvature evolution.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fHodge3Open" class="btn" target="_blank">open</a><a id="fHodge3Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="operators">9. Operators and estimates</h2>
+          <p>Maximal functions, singular integrals, Littlewood–Paley theory, and Riesz transforms: these are engines of regularity. They certify bounds that prose alone cannot protect.</p>
+          <div class="fig"><img id="fOp1" alt="Hardy–Littlewood" /><div class="caption">Hardy–Littlewood maximal inequality as a machine‑checked bound.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fOp1Open" class="btn" target="_blank">open</a><a id="fOp1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fOp2" alt="CZ operators" /><div class="caption">Calderón–Zygmund operators in action.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fOp2Open" class="btn" target="_blank">open</a><a id="fOp2Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fOp3" alt="Riesz transforms" /><div class="caption">Riesz transforms and harmonic analysis on manifolds/graphs.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fOp3Open" class="btn" target="_blank">open</a><a id="fOp3Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fOp4" alt="Littlewood–Paley" /><div class="caption">Littlewood–Paley decompositions as operational frequency analysis.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fOp4Open" class="btn" target="_blank">open</a><a id="fOp4Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="graphs">10. Graphs and discrete spectra</h2>
+          <p>Discrete Laplacians, Fiedler vectors, and spectral partitions provide clean, reproducible statements about structure on graphs.</p>
+          <div class="fig"><img id="fGraph1" alt="Spectral graph theory" /><div class="caption">Spectral graph theory: eigenvectors that reveal structure.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fGraph1Open" class="btn" target="_blank">open</a><a id="fGraph1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fGraph2" alt="Hodge on graphs" /><div class="caption">Hodge theory on graphs and discrete differential forms.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fGraph2Open" class="btn" target="_blank">open</a><a id="fGraph2Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="probability">11. Probability and limits</h2>
+          <p>Limit theorems—LLN, CLT, large deviations—become visual arguments. When distributions converge, persuasion is unnecessary.</p>
+          <div class="fig"><img id="fProb1" alt="Limit theorems" /><div class="caption">LLN/CLT as the story of convergence.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fProb1Open" class="btn" target="_blank">open</a><a id="fProb1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="gmt">12. BV and geometric measure</h2>
+          <p>Functions of bounded variation and coarea deliver geometric control with analytic tools. Rectifiability is earned, not assumed.</p>
+          <div class="fig"><img id="fBV1" alt="BV functions" /><div class="caption">BV landscape: variation as a computable quantity.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fBV1Open" class="btn" target="_blank">open</a><a id="fBV1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fBV2" alt="Coarea/rectifiability" /><div class="caption">Coarea and rectifiability criteria as constructive filters.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fBV2Open" class="btn" target="_blank">open</a><a id="fBV2Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="transport">13. Optimal transport</h2>
+          <p>Wasserstein geometry provides a metric on probability. Curvature‑dimension conditions and displacement convexity become operational.</p>
+          <div class="fig"><img id="fOT1" alt="Optimal transport" /><div class="caption">Geodesics in probability space as reproducible objects.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fOT1Open" class="btn" target="_blank">open</a><a id="fOT1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="groups">14. Geometry of groups</h2>
+          <p>Growth rates, amenability, and boundaries certify large‑scale behavior. Computations on Cayley graphs and Følner sets make claims concrete.</p>
+          <div class="fig"><img id="fGrp1" alt="Geometric group theory" /><div class="caption">Growth and quasi‑isometry classes with constructive witnesses.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fGrp1Open" class="btn" target="_blank">open</a><a id="fGrp1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="ktheory">15. K‑theory and higher structures</h2>
+          <p>Algebraic K‑theory, operator K‑theory, and ∞‑categories: higher structures become computable objects, not slogans. Examples and spectra are artifacts, not metaphors.</p>
+          <div class="fig"><img id="fK1" alt="Algebraic K‑theory" /><div class="caption">K‑groups and examples under explicit generators/relations.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fK1Open" class="btn" target="_blank">open</a><a id="fK1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fK2" alt="Operator K‑theory" /><div class="caption">K‑theory of C*‑algebras and index‑style invariants.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fK2Open" class="btn" target="_blank">open</a><a id="fK2Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fK3" alt="∞‑categories" /><div class="caption">Higher categories and HoTT rendered as executable diagrams.</div><div style="margin-top:6px; display:flex; gap:8px;"><a id="fK3Open" class="btn" target="_blank">open</a><a id="fK3Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="reproduce">16. Reproduce and falsify</h2>
+          <p>We encourage independent regeneration. If you can break an artifact by honest recomputation, the claim breaks with it—send a patch. If it survives, strengthen it and take credit. This is mathematics without ceremony: only the argument remains.</p>
+          <pre class="subtle">python figures/peer_review/sync_and_verify.py --rebuild-manifest
+python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
+        </article>
       </div>
     </section>
 
@@ -153,7 +210,7 @@
         <pre class="subtle" style="overflow:auto;">python figures/peer_review/sync_and_verify.py --generate-math
 python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
         <p class="subtle">Outputs: <code>figures/canonical_outputs/</code> (single source of truth) and <code>arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/</code> (submission‑ready).</p>
-  </div>
+      </div>
     </section>
 
     <section class="footer">
@@ -207,7 +264,7 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
       { imgId: 'case4img', ctaId: 'case4cta', peerId: 'case4peer', filename: 'eilenberg_moore_spectral_sequence.png' }
     ];
 
-    // Intro tiles mapping
+    // Intro tiles mapping (from earlier intro section)
     const INTRO = [
       { imgId: 'intro1img', openId: 'intro1open', peerId: 'intro1peer', filename: 'category_theory_phi_morphisms.png' },
       { imgId: 'intro2img', openId: 'intro2open', peerId: 'intro2peer', filename: 'spectral_analysis_phi_operators.png' },
@@ -380,17 +437,59 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
       if (peer) linkPeerCase(peerId, filename);
     }
 
+    function setFigByName(imgId, openId, peerId, filename) {
+      const url = canonicalUrlByName(filename);
+      const img = document.getElementById(imgId);
+      const open = document.getElementById(openId);
+      if (img) img.src = url;
+      if (open) open.href = url;
+      linkPeerCase(peerId, filename);
+    }
+
     function renderFeatured(figures) {
-      const curated = FEATURED.map(fn => figures.find(f => (f.filename||'').toLowerCase() === fn.toLowerCase())).filter(Boolean);
-      featuredGrid.innerHTML = '';
-      if (!curated.length) { featuredGrid.textContent = 'Loading…'; return; }
-      for (const f of curated) featuredGrid.appendChild(tileForFeatured(f));
+      // Optional featured grid left empty on article-first landing
+      if (featuredGrid) {
+        const curated = FEATURED.map(fn => figures.find(f => (f.filename||'').toLowerCase() === fn.toLowerCase())).filter(Boolean);
+        featuredGrid.innerHTML = '';
+        for (const f of curated) featuredGrid.appendChild(tileForFeatured(f));
+      }
       // Case thumbnails + links
       for (const c of CASES) {
         linkCase(c.imgId, c.ctaId, c.filename);
         linkPeerCase(c.peerId, c.filename);
       }
       for (const i of INTRO) linkIntro(i.imgId, i.openId, i.peerId, i.filename);
+
+      // Article figures mapping
+      setFigByName('fIntro','fIntroOpen','fIntroPeer','conceptual_overview_diagram.png');
+      setFigByName('fGeom1','fGeom1Open','fGeom1Peer','riemannian_curvature_comparison.png');
+      setFigByName('fGeom2','fGeom2Open','fGeom2Peer','symplectic_geometry.png');
+      setFigByName('fPDE1','fPDE1Open','fPDE1Peer','sobolev_sharp_embeddings.png');
+      setFigByName('fPDE2','fPDE2Open','fPDE2Peer','pde_regularity.png');
+      setFigByName('fPDE3','fPDE3Open','fPDE3Peer','heat_kernel_manifolds.png');
+      setFigByName('fSpec1','fSpec1Open','fSpec1Peer','spectral_analysis_phi_operators.png');
+      setFigByName('fSpec2','fSpec2Open','fSpec2Peer','spectral_zeta_functions.png');
+      setFigByName('fSpec3','fSpec3Open','fSpec3Peer','random_matrix_theory.png');
+      setFigByName('fCat1','fCat1Open','fCat1Peer','category_theory_phi_morphisms.png');
+      setFigByName('fTop1','fTop1Open','fTop1Peer','eilenberg_moore_spectral_sequence.png');
+      setFigByName('fTop2','fTop2Open','fTop2Peer','sheaf_cohomology_spectral_sequence.png');
+      setFigByName('fHodge1','fHodge1Open','fHodge1Peer','hodge_decomposition.png');
+      setFigByName('fHodge2','fHodge2Open','fHodge2Peer','kahler_identities.png');
+      setFigByName('fHodge3','fHodge3Open','fHodge3Peer','ricci_flow.png');
+      setFigByName('fOp1','fOp1Open','fOp1Peer','hardy_littlewood_maximal.png');
+      setFigByName('fOp2','fOp2Open','fOp2Peer','calderon_zygmund_operators.png');
+      setFigByName('fOp3','fOp3Open','fOp3Peer','riesz_transforms.png');
+      setFigByName('fOp4','fOp4Open','fOp4Peer','littlewood_paley.png');
+      setFigByName('fGraph1','fGraph1Open','fGraph1Peer','spectral_graph_theory.png');
+      setFigByName('fGraph2','fGraph2Open','fGraph2Peer','hodge_theory_on_graphs.png');
+      setFigByName('fProb1','fProb1Open','fProb1Peer','probability_limit_theorems.png');
+      setFigByName('fBV1','fBV1Open','fBV1Peer','bv_functions.png');
+      setFigByName('fBV2','fBV2Open','fBV2Peer','rectifiability_criteria.png');
+      setFigByName('fOT1','fOT1Open','fOT1Peer','optimal_transport.png');
+      setFigByName('fGrp1','fGrp1Open','fGrp1Peer','geometric_group_theory.png');
+      setFigByName('fK1','fK1Open','fK1Peer','algebraic_k_theory_examples.png');
+      setFigByName('fK2','fK2Open','fK2Peer','operator_k_theory.png');
+      setFigByName('fK3','fK3Open','fK3Peer','phi_infinity_categories_hott.png');
     }
 
     (async () => {
