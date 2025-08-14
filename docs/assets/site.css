@@ -164,14 +164,19 @@ article p {
 }
 
 .insight::before {
-  content: "💡";
+  content: "💡 INSIGHT";
   position: absolute;
-  top: -8px;
-  left: 12px;
-  background: var(--panel);
-  padding: 0 6px;
-  font-size: 1rem;
-  z-index: 1;
+  top: -12px;
+  left: 15px;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  z-index: 10;
+  border: 1px solid var(--accent);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .key-equation {
@@ -193,15 +198,17 @@ article p {
 .key-equation::before {
   content: "⚡ KEY EQUATION";
   position: absolute;
-  top: -10px;
+  top: -12px;
   left: 15px;
   background: var(--warn);
   color: var(--bg);
-  padding: 3px 8px;
-  border-radius: 3px;
-  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
   font-weight: bold;
-  z-index: 1;
+  z-index: 10;
+  border: 1px solid var(--warn);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .comparison {
@@ -218,15 +225,17 @@ article p {
 .comparison::before {
   content: "📊 COMPARISON";
   position: absolute;
-  top: -10px;
+  top: -12px;
   left: 15px;
   background: var(--accent);
   color: var(--bg);
-  padding: 3px 8px;
-  border-radius: 3px;
-  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
   font-weight: bold;
-  z-index: 1;
+  z-index: 10;
+  border: 1px solid var(--accent);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .breakthrough {
@@ -243,15 +252,17 @@ article p {
 .breakthrough::before {
   content: "🚀 BREAKTHROUGH";
   position: absolute;
-  top: -10px;
+  top: -12px;
   left: 15px;
   background: var(--accent-2);
   color: var(--bg);
-  padding: 3px 8px;
-  border-radius: 3px;
-  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
   font-weight: bold;
-  z-index: 1;
+  z-index: 10;
+  border: 1px solid var(--accent-2);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .warning {
@@ -266,14 +277,19 @@ article p {
 }
 
 .warning::before {
-  content: "⚠️";
+  content: "⚠️ WARNING";
   position: absolute;
-  top: -8px;
-  left: 12px;
-  background: var(--panel);
-  padding: 0 6px;
-  font-size: 1rem;
-  z-index: 1;
+  top: -12px;
+  left: 15px;
+  background: var(--warn);
+  color: var(--bg);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  z-index: 10;
+  border: 1px solid var(--warn);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 /* Figure styling */
@@ -386,17 +402,19 @@ article p {
 }
 
 .math-block::before {
-  content: "∑";
+  content: "∑ FORMULA";
   position: absolute;
   top: -12px;
   left: 15px;
   background: var(--accent);
   color: var(--bg);
-  padding: 3px 6px;
-  border-radius: 50%;
-  font-size: 0.9rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
   font-weight: bold;
-  z-index: 1;
+  z-index: 10;
+  border: 1px solid var(--accent);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 /* Lists */
