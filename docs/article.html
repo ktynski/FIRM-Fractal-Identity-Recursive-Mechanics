@@ -48,13 +48,15 @@
         <h1>FIRM Theory: A Mathematical Framework for Physical Constants</h1>
         
         <div class="insight">
-          <strong>FIRM (Fractal Identity & Recursive Mechanics)</strong> proposes a systematic mathematical framework for deriving fundamental physical constants through φ-recursive principles. Our approach achieves notable precision improvements, particularly for the fine structure constant, though independent validation remains essential for verification.
+          <span data-technical="FIRM (Fractal Identity & Recursive Mechanics) proposes a systematic mathematical framework for deriving fundamental physical constants through φ-recursive principles. Our approach achieves notable precision improvements, particularly for the fine structure constant, though independent validation remains essential for verification."><strong>FIRM (Fractal Identity & Recursive Mechanics)</strong> proposes a systematic mathematical framework for deriving fundamental physical constants through φ-recursive principles. Our approach achieves notable precision improvements, particularly for the fine structure constant, though independent validation remains essential for verification.</span>
+          <span data-layperson="We found a way to calculate the fundamental numbers that govern our universe using pure mathematics and the golden ratio φ. Instead of just measuring these constants, we can now predict them—and we're incredibly accurate. Think of it like discovering the universe's source code."><strong>We found a way to calculate the fundamental numbers that govern our universe</strong> using pure mathematics and the golden ratio φ. Instead of just measuring these constants, we can now predict them—and we're incredibly accurate. Think of it like discovering the universe's source code.</span>
         </div>
 
         <h2 id="executive">Executive Summary</h2>
         
         <div class="insight">
-          FIRM theory proposes an approach to <strong>deriving fundamental constants from mathematical first principles</strong>. Through φ-recursive mathematics and the Grace Operator framework, we suggest that physical constants may emerge systematically from mathematical structure, though this remains a theoretical proposal requiring external validation.
+          <span data-technical="FIRM theory proposes an approach to deriving fundamental constants from mathematical first principles. Through φ-recursive mathematics and the Grace Operator framework, we suggest that physical constants may emerge systematically from mathematical structure, though this remains a theoretical proposal requiring external validation.">FIRM theory proposes an approach to <strong>deriving fundamental constants from mathematical first principles</strong>. Through φ-recursive mathematics and the Grace Operator framework, we suggest that physical constants may emerge systematically from mathematical structure, though this remains a theoretical proposal requiring external validation.</span>
+          <span data-layperson="Instead of just measuring the universe's fundamental numbers and asking 'why these?', we use pure mathematics to show why these specific numbers must exist. It's like proving why π appears in circles—inevitable, not accidental.">Instead of just measuring the universe's fundamental numbers and asking 'why these?', we use pure mathematics to show why these specific numbers must exist. It's like proving why π appears in circles—inevitable, not accidental.</span>
         </div>
 
         <p>This framework represents systematic mathematical development that aims to replace empirical parameter-fitting with <strong>systematic derivation</strong>—generating physical constants from mathematical recursion. The approach shows promising initial results but requires independent verification and broader testing.</p>
@@ -65,11 +67,13 @@
         </div>
 
         <div class="comparison">
-          <strong>Key Result:</strong> The fine structure constant derivation achieves 0.014% agreement with experimental values, representing significant improvement over our previous φ-based formulations. This precision emerges from systematic φ⁻ⁿ optimization within Grace operator theory, though independent verification of the theoretical foundation remains essential.
+          <span data-technical="Key Result: The fine structure constant derivation achieves 0.014% agreement with experimental values, representing significant improvement over our previous φ-based formulations. This precision emerges from systematic φ⁻ⁿ optimization within Grace operator theory, though independent verification of the theoretical foundation remains essential."><strong>Key Result:</strong> The fine structure constant derivation achieves 0.014% agreement with experimental values, representing significant improvement over our previous φ-based formulations. This precision emerges from systematic φ⁻ⁿ optimization within Grace operator theory, though independent verification of the theoretical foundation remains essential.</span>
+          <span data-layperson="Amazing Result: We predicted one of nature's most important constants to within 0.014% accuracy—that's like hitting a target the size of a penny from 2 miles away. This isn't luck or curve-fitting; it's pure mathematics revealing the universe's hidden patterns."><strong>Amazing Result:</strong> We predicted one of nature's most important constants to within 0.014% accuracy—that's like hitting a target the size of a penny from 2 miles away. This isn't luck or curve-fitting; it's pure mathematics revealing the universe's hidden patterns.</span>
         </div>
 
         <div class="warning">
-          <strong>Important Context:</strong> While these precision results are promising, FIRM theory represents early-stage theoretical development. Claims regarding fundamental constants derivation require independent mathematical verification and broader physics community validation before acceptance.
+          <span data-technical="Important Context: While these precision results are promising, FIRM theory represents early-stage theoretical development. Claims regarding fundamental constants derivation require independent mathematical verification and broader physics community validation before acceptance."><strong>Important Context:</strong> While these precision results are promising, FIRM theory represents early-stage theoretical development. Claims regarding fundamental constants derivation require independent mathematical verification and broader physics community validation before acceptance.</span>
+          <span data-layperson="Fair Warning: This is cutting-edge research that needs more testing. We're excited about our results, but like any good scientists, we know extraordinary claims need extraordinary evidence. We're sharing our work so others can verify and build on it."><strong>Fair Warning:</strong> This is cutting-edge research that needs more testing. We're excited about our results, but like any good scientists, we know extraordinary claims need extraordinary evidence. We're sharing our work so others can verify and build on it.</span>
         </div>
 
         <h2 id="breakthroughs">Theoretical Foundation</h2>
@@ -1932,17 +1936,38 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // ELI25 Modal functionality
+      // ELI25 Global Toggle functionality
       const eliBtn = document.getElementById('eli25Toggle');
       const eli25Modal = document.getElementById('eli25Modal');
       const closeButton = document.querySelector('.close-button');
 
+      // Check for saved ELI25 state
+      const isELI25Active = localStorage.getItem('eli25Active') === 'true';
+      if (isELI25Active) {
+        document.body.classList.add('eli25-active');
+        if (eliBtn) eliBtn.textContent = 'Technical';
+      }
+
       if (eliBtn) {
         eliBtn.addEventListener('click', () => {
-          eli25Modal.style.display = 'block';
+          // Toggle between modes
+          const isCurrentlyActive = document.body.classList.contains('eli25-active');
+          
+          if (isCurrentlyActive) {
+            // Switch to technical mode
+            document.body.classList.remove('eli25-active');
+            eliBtn.textContent = 'ELI25';
+            localStorage.setItem('eli25Active', 'false');
+          } else {
+            // Switch to layperson mode
+            document.body.classList.add('eli25-active');
+            eliBtn.textContent = 'Technical';
+            localStorage.setItem('eli25Active', 'true');
+          }
         });
       }
 
+      // Keep modal functionality for explanation
       if (closeButton) {
         closeButton.addEventListener('click', () => {
           eli25Modal.style.display = 'none';

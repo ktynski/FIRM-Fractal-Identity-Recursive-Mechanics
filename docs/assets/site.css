@@ -51,6 +51,82 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
   box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
   background: linear-gradient(135deg, #ff6b35, var(--accent));
 }
+
+/* ELI25 Toggle Functionality */
+.eli25-active [data-technical] {
+  display: none;
+}
+
+.eli25-active [data-layperson] {
+  display: block;
+}
+
+[data-layperson] {
+  display: none;
+}
+
+[data-technical] {
+  display: block;
+}
+
+/* New homepage elements */
+.article-preview {
+  border-left: 4px solid var(--accent);
+}
+
+.key-result {
+  background: rgba(240, 168, 86, 0.05);
+  border: 1px solid var(--warn);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.breakthrough-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.breakthrough-item {
+  background: var(--panel);
+  border: 1px solid #262c39;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.article-cta-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.principle-list {
+  list-style: none;
+  padding: 0;
+}
+
+.principle-list li {
+  background: var(--panel);
+  border: 1px solid #262c39;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .article-cta-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .breakthrough-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .brand { font-weight: 700; color: var(--text); }
 .brand a {
   text-decoration: none;
@@ -410,7 +486,7 @@ article p {
 .key-equation {
   background: rgba(240, 168, 86, 0.1);
   border: 2px solid var(--warn);
-  padding: 2.5rem 1.5rem 1.25rem 1.5rem;
+  padding: 3rem 1.5rem 1.25rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 12px;
   text-align: center;
@@ -499,7 +575,7 @@ article p {
 .warning {
   background: rgba(240, 168, 86, 0.1);
   border: 2px solid var(--warn);
-  padding: 2.5rem 1.25rem 1.25rem 1.25rem;
+  padding: 3rem 1.25rem 1.25rem 1.25rem;
   margin: 1.5rem 0;
   border-radius: 8px;
   border-left: 5px solid var(--warn);

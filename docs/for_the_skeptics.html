@@ -136,17 +136,38 @@
         });
       });
 
-      // ELI25 Modal functionality
+      // ELI25 Global Toggle functionality
       const eliBtn = document.getElementById('eli25Toggle');
       const eli25Modal = document.getElementById('eli25Modal');
       const closeButton = document.querySelector('.close-button');
 
+      // Check for saved ELI25 state
+      const isELI25Active = localStorage.getItem('eli25Active') === 'true';
+      if (isELI25Active) {
+        document.body.classList.add('eli25-active');
+        if (eliBtn) eliBtn.textContent = 'Technical';
+      }
+
       if (eliBtn) {
         eliBtn.addEventListener('click', () => {
-          eli25Modal.style.display = 'block';
+          // Toggle between modes
+          const isCurrentlyActive = document.body.classList.contains('eli25-active');
+          
+          if (isCurrentlyActive) {
+            // Switch to technical mode
+            document.body.classList.remove('eli25-active');
+            eliBtn.textContent = 'ELI25';
+            localStorage.setItem('eli25Active', 'false');
+          } else {
+            // Switch to layperson mode
+            document.body.classList.add('eli25-active');
+            eliBtn.textContent = 'Technical';
+            localStorage.setItem('eli25Active', 'true');
+          }
         });
       }
 
+      // Keep modal functionality for explanation
       if (closeButton) {
         closeButton.addEventListener('click', () => {
           eli25Modal.style.display = 'none';
