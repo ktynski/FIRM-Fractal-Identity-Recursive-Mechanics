@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ex Nihilo Reality — Mathematical Figures</title>
+  <title>Ex Nihilo Reality — Mathematics that compiles</title>
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
   <header class="header">
     <nav class="nav">
       <div class="brand">Ex Nihilo Reality</div>
-      <a href="FIGURE_GALLERY.md">Gallery (Markdown)</a>
+      <a href="#featured">Featured</a>
       <a href="#gallery">Gallery</a>
-      <a href="assets/FIGURE_GALLERY.md">Assets Index</a>
+      <a href="FIGURE_GALLERY.md">Markdown Index</a>
       <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
@@ -20,39 +20,56 @@
   <main>
     <section class="hero">
       <div class="card">
-        <h1>Mathematical Figure Library</h1>
-        <p class="subtle">150 rigorously generated, provenance-tracked, publication-quality figures spanning category theory, geometry, spectral theory, topology, PDE, probability and more — all derivable from code.</p>
+        <h1>Mathematics that compiles</h1>
+        <p class="subtle">We don’t debate—we demonstrate. Every figure on this site is generated deterministically from code and mathematics, with full provenance and peer‑review readiness. Replace opinion with verification.</p>
         <div style="display:flex; gap:10px; margin-top:10px;">
-          <a class="cta" href="#gallery">Browse Gallery</a>
-          <a class="cta secondary" href="FIGURE_GALLERY.md">Markdown Index</a>
+          <a class="cta" href="#featured">See Featured Proof‑by‑Demonstration</a>
+          <a class="cta secondary" href="#gallery">Browse All Figures</a>
         </div>
       </div>
       <div class="card">
-        <h3>Reproducible & Submission-Ready</h3>
+        <h3>Principles of evidence</h3>
         <ul>
-          <li>Single canonical source: <code>figures/canonical_outputs/</code></li>
-          <li>Manifest with hash & dimensions</li>
-          <li>arXiv-ready copies prepared</li>
+          <li><b>Show, don’t tell</b>: Claims are artifacts—figures, derivations, code—not slogans.</li>
+          <li><b>Ex Nihilo</b>: Zero empirical inputs; derivations flow from pure mathematics.</li>
+          <li><b>Irreducible provenance</b>: Hashes, dimensions, and generator mapping for every figure.</li>
+          <li><b>Reproducibility</b>: One command to regenerate the entire library.</li>
         </ul>
-        <div class="controls">
-          <div class="toolbar">
-            <input class="search" id="search" placeholder="Search figure names…" />
-            <select class="select" id="sort">
-              <option value="name">Sort: Name</option>
-              <option value="width">Sort: Width</option>
-              <option value="height">Sort: Height</option>
-            </select>
-            <span class="badge" id="countBadge">0</span>
-          </div>
-          <div class="filterchips" id="chips"></div>
+        <div class="toolbar" style="margin-top:8px;">
+          <input class="search" id="search" placeholder="Search figure names…" />
+          <select class="select" id="sort">
+            <option value="name">Sort: Name</option>
+            <option value="width">Sort: Width</option>
+            <option value="height">Sort: Height</option>
+          </select>
+          <span class="badge" id="countBadge">0</span>
         </div>
       </div>
     </section>
 
+    <section class="section" id="featured">
+      <h2>Featured Demonstrations</h2>
+      <p class="subtle">A fast tour of proof‑by‑construction across categories—geometry, analysis, topology, and spectral theory. Open any artifact and verify.</p>
+      <div id="featuredGrid" class="grid"></div>
+    </section>
+
     <section class="section" id="gallery">
-      <h2>Gallery</h2>
+      <h2>Complete Gallery</h2>
+      <div class="controls">
+        <div class="filterchips" id="chips"></div>
+      </div>
       <div id="grid" class="grid"></div>
       <button class="btn loadmore" id="loadMore">Load More</button>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h3>Reproduce it yourself</h3>
+        <p class="subtle">Everything here is generated from code. Clone the repo and run the peer‑review sync to rebuild the canonical set and arXiv copies:</p>
+        <pre class="subtle" style="overflow:auto;">python figures/peer_review/sync_and_verify.py --generate-math
+python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
+        <p class="subtle">Outputs: <code>figures/canonical_outputs/</code> (single source of truth) and <code>arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/</code> (submission‑ready).</p>
+      </div>
     </section>
 
     <section class="footer">
@@ -62,6 +79,7 @@
 
   <script>
     const grid = document.getElementById('grid');
+    const featuredGrid = document.getElementById('featuredGrid');
     const search = document.getElementById('search');
     const sort = document.getElementById('sort');
     const countBadge = document.getElementById('countBadge');
@@ -71,6 +89,20 @@
     let allFigures = [];
     let visible = 0;
     const PAGE = 40;
+
+    // Curated highlights: demonstrate breadth and rigor
+    const FEATURED = [
+      'category_theory_phi_morphisms.png',
+      'complete_lagrangian_formulation.png',
+      'spectral_analysis_phi_operators.png',
+      'riemannian_curvature_comparison.png',
+      'probability_limit_theorems.png',
+      'eilenberg_moore_spectral_sequence.png',
+      'sobolev_spaces.png',
+      'geometric_measure_theory.png',
+      'hodge_decomposition.png',
+      'random_matrix_theory.png'
+    ];
 
     const TAGS = [
       'category','geometry','mathematics','pde','probability','topology','algebra','analysis','spectral','number','k_theory','lie','arithmetic','measure','operator','graphs'
@@ -153,33 +185,39 @@
     function appendMore(arr) {
       const next = arr.slice(visible, visible + PAGE);
       visible += next.length;
-      for (const f of next) {
-        const tile = document.createElement('div');
-        tile.className = 'tile';
-        const img = document.createElement('img');
-        img.loading = 'lazy'; img.decoding = 'async';
-        img.src = canonicalUrl(f);
-        img.alt = f.filename;
-        const meta = document.createElement('div');
-        meta.className = 'meta';
-        const name = document.createElement('div'); name.className = 'name'; name.textContent = f.filename;
-        const dims = document.createElement('div'); dims.className = 'dims'; dims.textContent = `${f.width||'?'}×${f.height||'?'}`;
-        const actions = document.createElement('div'); actions.className = 'actions';
-        const openBtn = document.createElement('a'); openBtn.className = 'btn'; openBtn.href = canonicalUrl(f); openBtn.target = '_blank'; openBtn.textContent = 'open';
-        const rawBtn = document.createElement('a'); rawBtn.className = 'btn'; rawBtn.href = canonicalUrl(f); rawBtn.download = f.filename; rawBtn.textContent = 'download';
-        actions.appendChild(openBtn); actions.appendChild(rawBtn);
-        meta.appendChild(name); meta.appendChild(dims); meta.appendChild(actions);
-        tile.appendChild(img); tile.appendChild(meta);
-        grid.appendChild(tile);
-      }
+      for (const f of next) grid.appendChild(tileFor(f));
       loadMoreBtn.style.display = (visible < arr.length) ? 'block' : 'none';
       loadMoreBtn.onclick = () => appendMore(arr);
+    }
+
+    function tileFor(f) {
+      const tile = document.createElement('div');
+      tile.className = 'tile';
+      const img = document.createElement('img'); img.loading = 'lazy'; img.decoding = 'async'; img.src = canonicalUrl(f); img.alt = f.filename;
+      const meta = document.createElement('div'); meta.className = 'meta';
+      const name = document.createElement('div'); name.className = 'name'; name.textContent = f.filename;
+      const dims = document.createElement('div'); dims.className = 'dims'; dims.textContent = `${f.width||'?'}×${f.height||'?'}`;
+      const actions = document.createElement('div'); actions.className = 'actions';
+      const openBtn = document.createElement('a'); openBtn.className = 'btn'; openBtn.href = canonicalUrl(f); openBtn.target = '_blank'; openBtn.textContent = 'open';
+      const rawBtn = document.createElement('a'); rawBtn.className = 'btn'; rawBtn.href = canonicalUrl(f); rawBtn.download = f.filename; rawBtn.textContent = 'download';
+      actions.appendChild(openBtn); actions.appendChild(rawBtn);
+      meta.appendChild(name); meta.appendChild(dims); meta.appendChild(actions);
+      tile.appendChild(img); tile.appendChild(meta);
+      return tile;
+    }
+
+    function renderFeatured(figures) {
+      const curated = FEATURED.map(fn => figures.find(f => (f.filename||'').toLowerCase() === fn.toLowerCase())).filter(Boolean);
+      featuredGrid.innerHTML = '';
+      if (!curated.length) { featuredGrid.textContent = 'Loading…'; return; }
+      for (const f of curated) featuredGrid.appendChild(tileFor(f));
     }
 
     (async () => {
       const data = await loadManifest();
       allFigures = data.figures || [];
       renderChips();
+      renderFeatured(allFigures);
       resetAndRender();
       search.addEventListener('input', resetAndRender);
       sort.addEventListener('change', resetAndRender);
