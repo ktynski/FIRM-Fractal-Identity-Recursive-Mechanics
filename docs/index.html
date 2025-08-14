@@ -22,7 +22,6 @@
   <header class="header">
     <nav class="nav">
       <div class="brand">Ex Nihilo Reality</div>
-      <a href="#article">Article</a>
       <a href="#gallery">Gallery</a>
       <a href="FIGURE_GALLERY.md">Markdown Index</a>
       <a href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank" rel="noopener">GitHub</a>
@@ -58,7 +57,7 @@
             <span class="badge" id="countBadge">0</span>
           </div>
         </div>
-      </div>
+    </div>
     </section>
 
     <section class="article" id="article">
@@ -67,6 +66,12 @@
           <div class="card">
             <h3>Contents</h3>
             <ol>
+              <li><a href="#abstract">Executive summary</a></li>
+              <li><a href="#axioms">Foundational axioms</a></li>
+              <li><a href="#grace">Grace operator</a></li>
+              <li><a href="#phi">φ‑recursion and fixed points</a></li>
+              <li><a href="#lagskel">Lagrangian skeleton</a></li>
+              <li><a href="#prov">Provenance & falsification</a></li>
               <li><a href="#motivation">A new standard of evidence</a></li>
               <li><a href="#architecture">Architecture of proof‑by‑construction</a></li>
               <li><a href="#geometry">Geometry that answers back</a></li>
@@ -103,20 +108,34 @@
 
         <article>
           <h1>Mathematics that compiles: a guided tour</h1>
-          <p>Every generation of mathematics has asked for a different kind of evidence. Ours asks for code. Here we present a library of artifacts—figures generated deterministically from mathematics—that constitute <i>executable arguments</i>. They are not illustrations of claims; they are the claims themselves, rendered in a form that can be audited, reproduced, and, if necessary, falsified.</p>
+          <h2 id="abstract">0. Executive summary</h2>
+          <p>FIRM is a mathematics‑first program that constructs a single compositional scaffold from which all artifacts are generated. At its core is a stabilizing endofunctor (the Grace operator) whose fixed points define the admissible universe of constructions. A canonical φ‑recursion emerges from contraction, providing a discrete scaling law. A minimal Lagrangian skeleton encodes interactions abstractly. Every figure here is a compiled consequence of that pipeline, with cryptographic provenance and peer‑review packaging.</p>
+          <div class="fig"><img id="fAbs1" alt="Conceptual overview" /><div class="caption">Conceptual overview of the scaffold and compile pipeline.</div><div style="margin-top:6px;display:flex;gap:8px;"><a id="fAbs1Open" class="btn" target="_blank">open</a><a id="fAbs1Peer" class="btn" target="_blank">peer‑review</a></div></div>
 
-          <h2 id="motivation">1. A new standard of evidence</h2>
-          <p>We replace “trust the author” with “trust the artifact.” Each figure is the output of a generator tied to formal structure: theorems and constructions in geometry, analysis, topology, and category theory. If an argument survives regeneration from source, it earns the right to be believed; if it does not, it yields. This is not contrarian posturing—it is a practical upgrade to mathematical hygiene.</p>
-          <div class="fig">
-            <img id="fIntro" alt="Overview" />
-            <div class="caption">Overview of the program: categorical backbone, spectral adjudication, and geometric/topological control.</div>
-            <div style="margin-top:6px; display:flex; gap:8px;">
-              <a id="fIntroOpen" class="btn" target="_blank">open</a>
-              <a id="fIntroPeer" class="btn" target="_blank">peer‑review</a>
-            </div>
-          </div>
+          <h2 id="axioms">1. Foundational axioms</h2>
+          <p>We posit a small axiom set: stratified totality (to block paradox), reflexive internalization (Yoneda‑style embedding), stabilizing morphism (existence of Grace), and fixed‑point coherence (closure under compiled constructions). These axioms are not tied to any physical interpretation; they exist to guarantee that the compile pipeline is both total and falsifiable.</p>
 
-          <h2 id="architecture">2. Architecture of proof‑by‑construction</h2>
+          <h2 id="grace">2. Grace operator</h2>
+          <p>The Grace operator 𝒢 is a stabilizing endofunctor on a base category of constructions. Its contractive property ensures a unique fixed‑point selection under iteration. Practically, this means that local constructions glue to global invariants without contradiction, and failures of stability are discoverable by direct recomputation.</p>
+          <div class="fig"><img id="fGrace1" alt="Grace fixed‑point convergence" /><div class="caption">Fixed‑point convergence under 𝒢: contraction yields invariants.</div><div style="margin-top:6px;display:flex;gap:8px;"><a id="fGrace1Open" class="btn" target="_blank">open</a><a id="fGrace1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="phi">3. φ‑recursion and fixed points</h2>
+          <p>Under mild conditions, contraction produces a canonical scaling—φ—governing how compiled quantities ladder across levels. The φ‑recursion provides a predictable staircase of compiled artifacts; deviations are a falsification signal.</p>
+          <div class="fig"><img id="fPhi1" alt="φ‑recursion" /><div class="caption">φ‑recursion rate and compiled staircase behavior.</div><div style="margin-top:6px;display:flex;gap:8px;"><a id="fPhi1Open" class="btn" target="_blank">open</a><a id="fPhi1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fRecPot" alt="Recursive potentials" /><div class="caption">Recursive potential landscape as a compiled attractor picture.</div><div style="margin-top:6px;display:flex;gap:8px;"><a id="fRecPotOpen" class="btn" target="_blank">open</a><a id="fRecPotPeer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="lagskel">4. Lagrangian skeleton</h2>
+          <p>We present a minimal, abstract Lagrangian with fields and couplings parameterized by compiled invariants. This is not a physical model per se; it is a bookkeeping device ensuring that variation, symmetry, and coupling are encoded compositionally. The point is not a specific equation of motion, but that the equations exist as compiled consequences.</p>
+          <div class="fig"><img id="fLag1" alt="Lagrangian skeleton" /><div class="caption">Abstract Lagrangian terms as a single compositional object.</div><div style="margin-top:6px;display:flex;gap:8px;"><a id="fLag1Open" class="btn" target="_blank">open</a><a id="fLag1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+          <div class="fig"><img id="fBridge1" alt="Dimensional bridge" /><div class="caption">Dimensional bridge mapping between compiled layers.</div><div style="margin-top:6px;display:flex;gap:8px;"><a id="fBridge1Open" class="btn" target="_blank">open</a><a id="fBridge1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <h2 id="prov">5. Provenance & falsification</h2>
+          <p>Every artifact has a cryptographic hash, generator mapping, and dimensions recorded in a manifest. Rebuild the canonical set, compare hashes, and you will know if an argument survived. Falsification is simple: regenerate an artifact and check whether the invariant holds; report counterexamples as pull requests.</p>
+
+          <h2 id="motivation">6. A new standard of evidence</h2>
+          <p>We replace “trust the author” with “trust the artifact.” Each figure is the output of a generator tied to formal structure: theorems and constructions in geometry, analysis, topology, and category theory. If an argument survives regeneration from source, it earns the right to be believed; if it does not, it yields.</p>
+
+          <h2 id="architecture">7. Architecture of proof‑by‑construction</h2>
           <p>The architecture has three primary beams. (i) <b>Composition</b>: categorical structure prevents local cleverness from breaking global coherence. (ii) <b>Spectrum</b>: operators adjudicate by revealing invariants that arguments must respect. (iii) <b>Flow</b>: geometric PDEs, curvature bounds, and spectral sequences propagate constraints until a claim either survives or collapses.</p>
 
           <h2 id="geometry">3. Geometry that answers back</h2>
@@ -537,7 +556,12 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
       for (const i of INTRO) linkIntro(i.imgId, i.openId, i.peerId, i.filename);
 
       // Article figures mapping
-      setFigByName('fIntro','fIntroOpen','fIntroPeer','conceptual_overview_diagram.png');
+      setFigByName('fAbs1','fAbs1Open','fAbs1Peer','conceptual_overview_diagram.png');
+      setFigByName('fGrace1','fGrace1Open','fGrace1Peer','grace_fixed_point_convergence.png');
+      setFigByName('fPhi1','fPhi1Open','fPhi1Peer','phi_recursion_rate.png');
+      setFigByName('fRecPot','fRecPotOpen','fRecPotPeer','recursive_potentials.png');
+      setFigByName('fLag1','fLag1Open','fLag1Peer','lagrangian_skeleton.png');
+      setFigByName('fBridge1','fBridge1Open','fBridge1Peer','dimensional_bridge.png');
       setFigByName('fGeom1','fGeom1Open','fGeom1Peer','riemannian_curvature_comparison.png');
       setFigByName('fGeom2','fGeom2Open','fGeom2Peer','symplectic_geometry.png');
       setFigByName('fPDE1','fPDE1Open','fPDE1Peer','sobolev_sharp_embeddings.png');
