@@ -11,6 +11,7 @@
     <nav class="nav">
       <div class="brand">Ex Nihilo Reality</div>
       <a href="#featured">Featured</a>
+      <a href="#cases">Case Studies</a>
       <a href="#gallery">Gallery</a>
       <a href="FIGURE_GALLERY.md">Markdown Index</a>
       <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
@@ -53,6 +54,60 @@
       <h2>Featured Demonstrations</h2>
       <p class="subtle">A fast tour of proof‑by‑construction across categories—geometry, analysis, topology, and spectral theory. Open any artifact and verify.</p>
       <div id="featuredGrid" class="grid"></div>
+    </section>
+
+    <section class="section" id="cases">
+      <h2>Case Studies: Proof‑by‑Demonstration</h2>
+      <div class="casegrid">
+        <div class="case">
+          <img id="case1img" alt="Category Theory"/>
+          <div class="copy">
+            <h3>1. Category theory, operationalized</h3>
+            <p>We formalize φ‑enhanced morphisms, functors, and naturality into diagrams that compile—no prose hand‑waving. The result: a categorical backbone you can compute with.</p>
+            <p class="subtle"><b>Why this matters:</b> Compositional structure and naturality constraints become machine‑checkable invariants. Commutativity is not asserted; it is verified.</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="cta" id="case1cta" target="_blank">Open artifact</a>
+              <a class="cta secondary" id="case1peer" target="_blank">Peer‑review packet</a>
+            </div>
+          </div>
+        </div>
+        <div class="case">
+          <img id="case2img" alt="Spectral Analysis"/>
+          <div class="copy">
+            <h3>2. Spectral truth over intuition</h3>
+            <p>Eigenvalues, resolvents, spectral measures—derived, visualized, and auditable. Replace appeals to authority with the operator’s spectrum.</p>
+            <p class="subtle"><b>Why this matters:</b> Spectral data are basis‑invariant witnesses. Heuristics fail when the spectrum disagrees; the operator adjudicates.</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="cta" id="case2cta" target="_blank">Open artifact</a>
+              <a class="cta secondary" id="case2peer" target="_blank">Peer‑review packet</a>
+            </div>
+          </div>
+        </div>
+        <div class="case">
+          <img id="case3img" alt="Geometry"/>
+          <div class="copy">
+            <h3>3. Geometry that survives contact with code</h3>
+            <p>Curvature comparisons, heat kernels, and symplectic flows. The figures are not illustrations—they are executable arguments.</p>
+            <p class="subtle"><b>Why this matters:</b> Comparison theorems yield quantitative, falsifiable bounds. Numerical constructions certify inequalities without appeal to diagrammatic intuition.</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="cta" id="case3cta" target="_blank">Open artifact</a>
+              <a class="cta secondary" id="case3peer" target="_blank">Peer‑review packet</a>
+            </div>
+          </div>
+        </div>
+        <div class="case">
+          <img id="case4img" alt="Topology"/>
+          <div class="copy">
+            <h3>4. Topology, computed</h3>
+            <p>From de Rham to Eilenberg–Moore: pages, differentials, convergence. The homological story is machine‑narrated, not asserted.</p>
+            <p class="subtle"><b>Why this matters:</b> Spectral sequence pages encode obstructions and convergence to target cohomology. The limiting objects are not rhetorical—they are computed.</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="cta" id="case4cta" target="_blank">Open artifact</a>
+              <a class="cta secondary" id="case4peer" target="_blank">Peer‑review packet</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="gallery">
@@ -105,7 +160,26 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
       'random_matrix_theory.png'
     ];
 
-    // GitHub raw base so we can fetch outside /docs
+    const FEATURED_CAPTIONS = {
+      'category_theory_phi_morphisms.png': 'Morphism composition, functoriality, and φ‑naturality rendered as executable diagrams.',
+      'complete_lagrangian_formulation.png': 'Unified field terms expressed as a single Lagrangian—no narrative gaps.',
+      'spectral_analysis_phi_operators.png': 'Eigenvalues, resolvent, and spectral measure computed from first principles.',
+      'riemannian_curvature_comparison.png': 'Toponogov and Bishop–Gromov comparisons made visual and verifiable.',
+      'probability_limit_theorems.png': 'LLN and CLT transitions illustrated as density/cumulative convergence.',
+      'eilenberg_moore_spectral_sequence.png': 'E₂ pages and convergence behavior as machine‑narrated homology.',
+      'sobolev_spaces.png': 'H¹/H² norms with embedding behavior—inequalities you can audit.',
+      'geometric_measure_theory.png': 'Coarea, coverings, and rectifiability as reproducible constructions.',
+      'hodge_decomposition.png': 'Ω^k = Im d ⊕ Im δ ⊕ Harm^k with explicit pieces and spectra.',
+      'random_matrix_theory.png': 'Wigner eigenvalues vs semicircle: the distribution speaks for itself.'
+    };
+
+    const CASES = [
+      { imgId: 'case1img', ctaId: 'case1cta', peerId: 'case1peer', filename: 'category_theory_phi_morphisms.png' },
+      { imgId: 'case2img', ctaId: 'case2cta', peerId: 'case2peer', filename: 'spectral_analysis_phi_operators.png' },
+      { imgId: 'case3img', ctaId: 'case3cta', peerId: 'case3peer', filename: 'riemannian_curvature_comparison.png' },
+      { imgId: 'case4img', ctaId: 'case4cta', peerId: 'case4peer', filename: 'eilenberg_moore_spectral_sequence.png' }
+    ];
+
     const RAW_BASE = 'https://raw.githubusercontent.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/main/';
 
     async function loadManifest() {
@@ -121,36 +195,56 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
       return RAW_BASE + rel.replace(/^\/*/, '');
     }
 
-    const TAGS = [
-      'category','geometry','mathematics','pde','probability','topology','algebra','analysis','spectral','number','k_theory','lie','arithmetic','measure','operator','graphs'
-    ];
+    function canonicalUrlByName(filename) {
+      const fig = allFigures.find(f => (f.filename||'').toLowerCase() === (filename||'').toLowerCase());
+      if (fig) return canonicalUrl(fig);
+      return RAW_BASE + 'figures/canonical_outputs/' + filename;
+    }
+
+    function arxivUrlByName(filename) {
+      return RAW_BASE + 'arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/' + filename;
+    }
 
     function inferTags(f) {
       const s = (f.filename || '').toLowerCase();
       const tags = [];
       if (s.includes('category') || s.includes('topos')) tags.push('category');
-      if (s.includes('geometry') || s.includes('riemann') || s.includes('manifold')) tags.push('geometry');
-      if (s.includes('pde') || s.includes('elliptic') || s.includes('heat')) tags.push('pde');
-      if (s.includes('prob') || s.includes('stochastic') || s.includes('random')) tags.push('probability');
-      if (s.includes('topology') || s.includes('homology') || s.includes('cohomology')) tags.push('topology');
-      if (s.includes('k_theory') || s.includes('algebraic')) tags.push('algebra');
-      if (s.includes('operator') || s.includes('functional')) tags.push('analysis');
+      if (s.includes('geometry') || s.includes('riemann') || s.includes('manifold') || s.includes('curvature')) tags.push('geometry');
+      if (s.includes('pde') || s.includes('elliptic') || s.includes('heat') || s.includes('schauder')) tags.push('pde');
+      if (s.includes('prob') || s.includes('stochastic') || s.includes('random') || s.includes('clt') || s.includes('lln')) tags.push('probability');
+      if (s.includes('topology') || s.includes('homology') || s.includes('cohomology') || s.includes('spectral_sequence')) tags.push('topology');
+      if (s.includes('k_theory') || s.includes('algebraic') || s.includes('operator_k_theory')) tags.push('algebra');
+      if (s.includes('operator') || s.includes('functional') || s.includes('riesz')) tags.push('analysis');
       if (s.includes('spectral') || s.includes('zeta')) tags.push('spectral');
       if (s.includes('number') || s.includes('p_adic') || s.includes('modular')) tags.push('number');
       if (s.includes('lie')) tags.push('lie');
-      if (s.includes('measure') || s.includes('bv')) tags.push('measure');
-      if (s.includes('graph') || s.includes('graphs')) tags.push('graphs');
+      if (s.includes('measure') || s.includes('bv') || s.includes('carleson')) tags.push('measure');
+      if (s.includes('graph')) tags.push('graphs');
       return tags;
     }
 
     const activeTags = new Set();
+    let tagCounts = {};
+
+    function computeTagCounts() {
+      tagCounts = {};
+      for (const f of allFigures) {
+        for (const t of inferTags(f)) {
+          tagCounts[t] = (tagCounts[t] || 0) + 1;
+        }
+      }
+    }
 
     function renderChips() {
+      computeTagCounts();
       chips.innerHTML = '';
-      for (const t of TAGS) {
+      const tagsSorted = Object.keys(tagCounts).sort((a,b)=> (tagCounts[b]-tagCounts[a]));
+      for (const t of tagsSorted) {
+        const count = tagCounts[t];
+        if (!count) continue;
         const el = document.createElement('div');
         el.className = 'chip' + (activeTags.has(t) ? ' active' : '');
-        el.textContent = t;
+        el.textContent = `${t} (${count})`;
         el.onclick = () => { if (activeTags.has(t)) activeTags.delete(t); else activeTags.add(t); resetAndRender(); };
         chips.appendChild(el);
       }
@@ -162,7 +256,8 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
       if (activeTags.size) {
         arr = arr.filter(f => {
           const ts = inferTags(f);
-          return [...activeTags].every(t => ts.includes(t));
+          // OR semantics: show if any selected tag is present
+          return ts.some(tag => activeTags.has(tag));
         });
       }
       const mode = sort.value;
@@ -175,6 +270,7 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
     function resetAndRender() {
       visible = 0;
       grid.innerHTML = '';
+      renderChips();
       const arr = filteredSorted();
       countBadge.textContent = arr.length;
       appendMore(arr);
@@ -204,17 +300,57 @@ python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
       return tile;
     }
 
+    function tileForFeatured(f) {
+      const tile = tileFor(f);
+      const caption = FEATURED_CAPTIONS[f.filename];
+      if (caption) {
+        const cap = document.createElement('div');
+        cap.className = 'subtle';
+        cap.style.padding = '0 12px 10px 12px';
+        cap.textContent = caption;
+        tile.appendChild(cap);
+      }
+      return tile;
+    }
+
+    function linkCase(idImg, idCta, filename) {
+      const fig = allFigures.find(f => (f.filename||'').toLowerCase() === filename.toLowerCase());
+      if (!fig) return;
+      const url = canonicalUrl(fig);
+      const img = document.getElementById(idImg);
+      const cta = document.getElementById(idCta);
+      if (img) img.src = url;
+      if (cta) { cta.href = url; }
+    }
+
+    async function linkPeerCase(peerId, filename) {
+      const peer = arxivUrlByName(filename);
+      let url = peer;
+      try {
+        const r = await fetch(peer, { method: 'HEAD', cache: 'no-store' });
+        if (!r.ok) url = canonicalUrlByName(filename);
+      } catch (e) {
+        url = canonicalUrlByName(filename);
+      }
+      const el = document.getElementById(peerId);
+      if (el) { el.href = url; el.target = '_blank'; }
+    }
+
     function renderFeatured(figures) {
       const curated = FEATURED.map(fn => figures.find(f => (f.filename||'').toLowerCase() === fn.toLowerCase())).filter(Boolean);
       featuredGrid.innerHTML = '';
       if (!curated.length) { featuredGrid.textContent = 'Loading…'; return; }
-      for (const f of curated) featuredGrid.appendChild(tileFor(f));
+      for (const f of curated) featuredGrid.appendChild(tileForFeatured(f));
+      // Case thumbnails + links
+      for (const c of CASES) {
+        linkCase(c.imgId, c.ctaId, c.filename);
+        linkPeerCase(c.peerId, c.filename);
+      }
     }
 
     (async () => {
       const data = await loadManifest();
       allFigures = data.figures || [];
-      renderChips();
       renderFeatured(allFigures);
       resetAndRender();
       search.addEventListener('input', resetAndRender);

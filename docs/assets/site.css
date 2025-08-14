@@ -26,6 +26,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
 
 .section { max-width: 1200px; margin: 28px auto; padding: 0 16px; }
 .section h2 { margin: 8px 0 16px; }
+.section h3 { margin: 6px 0 12px; }
 
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
 .toolbar { display: flex; gap: 8px; align-items: center; padding: 8px; background: var(--panel); border: 1px solid #262c39; border-radius: 12px; }
@@ -49,5 +50,16 @@ select.select { padding: 10px 12px; border-radius: 8px; background: #0c0f16; bor
 .btn { font-size: 12px; padding: 4px 8px; border: 1px solid #2a3448; border-radius: 6px; background: #0c0f16; color: var(--text); text-decoration: none; }
 .btn:hover { border-color: var(--accent); color: var(--accent); }
 .loadmore { display:block; margin: 16px auto; }
+
+/* Narrative case studies */
+.casegrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 900px) { .casegrid { grid-template-columns: 1fr; } }
+.case { display: grid; grid-template-columns: 1fr 1.2fr; gap: 16px; background: var(--panel); border: 1px solid #262c39; border-radius: 12px; overflow: hidden; }
+@media (max-width: 900px) { .case { grid-template-columns: 1fr; } }
+.case img { width: 100%; height: 240px; object-fit: cover; background: #0b0d12; }
+.case .copy { padding: 16px; }
+.case .copy h3 { margin: 0 0 8px; }
+.case .copy p { margin: 6px 0; color: var(--muted); }
+.case .copy .cta { margin-top: 8px; }
 
 .footer { max-width: 1200px; margin: 40px auto; padding: 0 16px 24px; color: var(--muted); }
