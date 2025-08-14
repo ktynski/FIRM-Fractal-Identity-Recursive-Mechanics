@@ -9,7 +9,22 @@
   --warn: #f0a856;
 }
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; }
+html, body { 
+  margin: 0; 
+  padding: 0; 
+  background: var(--bg); 
+  color: var(--text); 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; 
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Typography scale */
+h1 { font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 1.5rem; }
+h2 { font-size: 2rem; font-weight: 600; line-height: 1.3; margin-bottom: 1.25rem; }
+h3 { font-size: 1.5rem; font-weight: 600; line-height: 1.4; margin-bottom: 1rem; }
+h4 { font-size: 1.25rem; font-weight: 500; line-height: 1.4; margin-bottom: 0.75rem; }
+p { line-height: 1.6; margin-bottom: 1rem; }
 
 .header { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(15,17,22,0.75); border-bottom: 1px solid #222835; z-index: 50; }
 .nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 24px; padding: 14px 16px; }
@@ -69,11 +84,124 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
   display: block;
 }
 
-/* New homepage elements */
-.article-preview {
-  border-left: 4px solid var(--accent);
+/* Hero section redesign */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
 }
 
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.key-result-hero {
+  background: linear-gradient(135deg, rgba(240, 168, 86, 0.1), rgba(110, 168, 254, 0.05));
+  border: 2px solid var(--warn);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.result-explanation {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Method steps design */
+.how-it-works {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  margin: 3rem 0;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  color: var(--text);
+}
+
+.method-steps {
+  display: grid;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.step-number {
+  background: var(--accent);
+  color: var(--bg);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.step-content h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.step-content p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.framework-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Simplified key result for homepage */
 .key-result {
   background: rgba(240, 168, 86, 0.05);
   border: 1px solid var(--warn);
@@ -138,8 +266,71 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
 .card { background: var(--panel); border: 1px solid #262c39; border-radius: 8px; padding: 16px; position: relative; z-index: 2; }
 .card.compact { padding: 12px; }
 .showcase-image { width: 100%; border-radius: 8px; border: 2px solid var(--accent); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
-.cta { display: inline-block; background: var(--accent); color: #0b0b0b; border-radius: 8px; padding: 10px 14px; text-decoration: none; font-weight: 600; position: relative; z-index: 2; }
-.cta.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.cta { 
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; 
+  border-radius: 8px; 
+  font-weight: 600; 
+  transition: all 0.3s ease; 
+  min-height: 44px;
+  font-size: 1rem;
+  position: relative; 
+  z-index: 2;
+}
+
+.cta.primary { 
+  background: var(--accent); 
+  color: #0b0b0b; 
+  padding: 14px 28px; 
+  box-shadow: 0 4px 12px rgba(110, 168, 254, 0.3);
+}
+
+.cta.primary:hover { 
+  background: var(--accent-2); 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 20px rgba(110, 168, 254, 0.4); 
+}
+
+.cta.secondary { 
+  background: transparent; 
+  color: var(--accent); 
+  border: 2px solid var(--accent);
+  padding: 12px 24px; 
+}
+
+.cta.secondary:hover { 
+  background: var(--accent); 
+  color: #0b0b0b;
+  transform: translateY(-1px); 
+  box-shadow: 0 4px 12px rgba(110, 168, 254, 0.2); 
+}
+
+/* Legacy CTA support */
+.cta:not(.primary):not(.secondary) {
+  background: var(--accent); 
+  color: #0b0b0b; 
+  padding: 10px 14px;
+}
+
+/* Focus states for accessibility */
+.cta:focus,
+.nav a:focus,
+.nav-eli25:focus,
+button:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Improved focus visibility */
+.nav a:focus-visible,
+.nav-eli25:focus-visible,
+.cta:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(110, 168, 254, 0.2);
+}
 .subtle { color: var(--muted); }
 
 .hero-buttons {
@@ -527,7 +718,7 @@ article p {
 .insight {
   background: linear-gradient(135deg, rgba(110, 168, 254, 0.1) 0%, rgba(126, 231, 135, 0.1) 100%);
   border-left: 5px solid var(--accent);
-  padding: 3.5rem 1.5rem 1.25rem 1.5rem;
+  padding: 4.5rem 1.5rem 1.25rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 0 8px 8px 0;
   font-weight: 500;
@@ -539,7 +730,7 @@ article p {
 .insight::before {
   content: "💡 INSIGHT";
   position: absolute;
-  top: 18px;
+  top: 24px;
   left: 15px;
   background: var(--accent);
   color: var(--bg);
@@ -556,7 +747,7 @@ article p {
 .key-equation {
   background: rgba(240, 168, 86, 0.1);
   border: 2px solid var(--warn);
-  padding: 3.5rem 1.5rem 1.25rem 1.5rem;
+  padding: 5rem 1.5rem 1.25rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 12px;
   text-align: center;
@@ -572,7 +763,7 @@ article p {
 .key-equation::before {
   content: "⚡ KEY EQUATION";
   position: absolute;
-  top: 18px;
+  top: 28px;
   left: 15px;
   background: var(--warn);
   color: var(--bg);
@@ -589,7 +780,7 @@ article p {
 .comparison {
   background: linear-gradient(135deg, rgba(110, 168, 254, 0.15) 0%, rgba(126, 231, 135, 0.15) 100%);
   border: 2px solid var(--accent);
-  padding: 3.5rem 1.5rem 1.25rem 1.5rem;
+  padding: 4.5rem 1.5rem 1.25rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 12px;
   position: relative;
@@ -600,7 +791,7 @@ article p {
 .comparison::before {
   content: "📊 COMPARISON";
   position: absolute;
-  top: 18px;
+  top: 24px;
   left: 15px;
   background: var(--accent);
   color: var(--bg);
@@ -617,7 +808,7 @@ article p {
 .breakthrough {
   background: linear-gradient(135deg, rgba(126, 231, 135, 0.2) 0%, rgba(110, 168, 254, 0.15) 100%);
   border: 2px solid var(--accent-2);
-  padding: 3.5rem 1.5rem 1.25rem 1.5rem;
+  padding: 4.5rem 1.5rem 1.25rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 12px;
   position: relative;
@@ -628,7 +819,7 @@ article p {
 .breakthrough::before {
   content: "🚀 BREAKTHROUGH";
   position: absolute;
-  top: 18px;
+  top: 24px;
   left: 15px;
   background: var(--accent-2);
   color: var(--bg);
@@ -645,7 +836,7 @@ article p {
 .warning {
   background: rgba(240, 168, 86, 0.1);
   border: 2px solid var(--warn);
-  padding: 3.5rem 1.25rem 1.25rem 1.25rem;
+  padding: 5rem 1.25rem 1.25rem 1.25rem;
   margin: 1.5rem 0;
   border-radius: 8px;
   border-left: 5px solid var(--warn);
@@ -656,7 +847,7 @@ article p {
 .warning::before {
   content: "⚠️ WARNING";
   position: absolute;
-  top: 18px;
+  top: 28px;
   left: 15px;
   background: var(--warn);
   color: var(--bg);
@@ -766,7 +957,7 @@ article p {
 .math-block {
   background: var(--panel);
   border: 2px solid var(--accent);
-  padding: 3.5rem 1.5rem 1.25rem 1.5rem;
+  padding: 5rem 1.5rem 1.25rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 12px;
   font-family: 'Times New Roman', serif;
@@ -782,7 +973,7 @@ article p {
 .math-block::before {
   content: "∑ FORMULA";
   position: absolute;
-  top: 18px;
+  top: 28px;
   left: 15px;
   background: var(--accent);
   color: var(--bg);
@@ -871,14 +1062,14 @@ article li {
   }
   .key-equation {
     font-size: 1rem;
-    padding: 1rem;
+    padding: 3.5rem 1rem 1rem 1rem;
   }
   .math-block {
     font-size: 1rem;
-    padding: 1rem;
+    padding: 3.5rem 1rem 1rem 1rem;
   }
   .insight, .comparison, .breakthrough, .warning {
-    padding: 1rem 1.25rem;
+    padding: 3.5rem 1.25rem 1rem 1.25rem;
     margin: 1rem 0;
   }
 }
@@ -902,10 +1093,18 @@ article li {
   }
   .key-equation, .math-block {
     font-size: 0.9rem;
-    padding: 0.75rem;
+    padding: 3rem 0.75rem 0.75rem 0.75rem;
   }
   .insight, .comparison, .breakthrough, .warning {
-    padding: 0.75rem 1rem;
+    padding: 3rem 1rem 0.75rem 1rem;
+  }
+  
+  /* Adjust ::before positions for small screens */
+  .key-equation::before, .math-block::before, .warning::before {
+    top: 20px;
+  }
+  .insight::before, .comparison::before, .breakthrough::before {
+    top: 18px;
   }
 }
 
@@ -935,10 +1134,53 @@ article li {
   }
   .hero {
     grid-template-columns: 1fr;
+    padding: 2rem 1rem;
   }
   .toolbar {
     flex-direction: column;
     align-items: stretch;
+  }
+  
+  /* Mobile hero adjustments */
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .method-steps {
+    gap: 1.5rem;
+  }
+  
+  .step {
+    gap: 1rem;
+  }
+  
+  .step-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  
+  .step-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .how-it-works {
+    padding: 2rem 1rem;
   }
   
   /* Mobile Navigation */
@@ -968,6 +1210,9 @@ article li {
     border-bottom: 1px solid #222835;
     margin: 0;
     border-radius: 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
   
   .nav a:last-child, .nav .nav-eli25:last-child {
