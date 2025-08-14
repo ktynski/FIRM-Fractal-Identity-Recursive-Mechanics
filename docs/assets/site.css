@@ -75,8 +75,8 @@ article img, .articleLayout img {
 }
 
 /* Enhanced article layout and readability */
-.articleLayout { display: flex; gap: 2rem; max-width: 1400px; margin: 0 auto; padding: 1rem; }
-.tocSidebar { flex: 0 0 250px; position: sticky; top: 2rem; height: fit-content; max-height: calc(100vh - 4rem); }
+.articleLayout { display: flex; gap: 1.5rem; max-width: 1400px; margin: 0 auto; padding: 1rem; align-items: start; }
+.tocSidebar { flex: 0 0 280px; position: sticky; top: 2rem; height: fit-content; max-height: calc(100vh - 4rem); }
 .toc { background: var(--panel); border: 1px solid #262c39; border-radius: 8px; padding: 1rem; overflow-y: auto; max-height: calc(100vh - 6rem); }
 .toc h3 { margin: 0 0 0.5rem 0; font-size: 1rem; color: var(--text); }
 .toc ol { margin: 0; padding-left: 1.2rem; font-size: 0.9rem; }
