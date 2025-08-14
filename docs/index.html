@@ -144,5 +144,31 @@
       </div>
     </section>
 
+  <script>
+    const RAW_BASE = 'https://raw.githubusercontent.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/main/';
+
+    async function headOrFallback(peer, canon){
+      try { const r = await fetch(peer, { method: 'HEAD', cache: 'no-store' }); if (r.ok) return peer; } catch(e){}
+      return canon;
+    }
+    function canonical(filename){ return RAW_BASE + 'figures/canonical_outputs/' + filename; }
+    function arxiv(filename){ return RAW_BASE + 'arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/' + filename; }
+
+    function setFig(imgId, openId, peerId, filename){
+      const url = canonical(filename);
+      const img = document.getElementById(imgId);
+      const open = document.getElementById(openId);
+      const peer = document.getElementById(peerId);
+      if (img) img.src = url;
+      if (open) open.href = url;
+      if (peer) headOrFallback(arxiv(filename), url).then(href => peer.href = href);
+    }
+
+    // Set up the conceptual overview figure
+    document.addEventListener('DOMContentLoaded', function() {
+      setFig('fAbs1','fAbs1Open','fAbs1Peer','conceptual_overview_diagram.png');
+    });
+  </script>
+
     <!-- Gallery Section -->
     <!-- Gallery Section -->
