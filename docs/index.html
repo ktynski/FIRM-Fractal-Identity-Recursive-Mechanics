@@ -58,8 +58,8 @@
             <b>Ex Nihilo</b>: Pure mathematics • <b>Provenance</b>: Full traceability • <b>Reproducible</b>: One command regenerates all
           </p>
         </div>
-      </div>
-    </section>
+    </div>
+      </section>
 
     <section class="article" id="article">
       <div class="articleLayout">
@@ -71,48 +71,48 @@
                 <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
                   <li><a href="article.html#executive" style="color: var(--muted);">FIRM Framework Overview</a></li>
                   <li><a href="article.html#executive" style="color: var(--muted);">Key Achievements</a></li>
-                </ul>
+            </ul>
               </li>
               <li><a href="article.html#breakthroughs">Theoretical Foundation</a>
                 <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
                   <li><a href="article.html#breakthroughs" style="color: var(--muted);">Five Foundational Axioms</a></li>
                   <li><a href="article.html#breakthroughs" style="color: var(--muted);">Grace Operator Theory</a></li>
                   <li><a href="article.html#breakthroughs" style="color: var(--muted);">φ-Recursive Patterns</a></li>
-                </ul>
+          </ul>
               </li>
               <li><a href="article.html#mathematical">Mathematical Development</a>
                 <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
                   <li><a href="article.html#mathematical" style="color: var(--muted);">Differential Operators</a></li>
                   <li><a href="article.html#mathematical" style="color: var(--muted);">Topological Framework</a></li>
                   <li><a href="article.html#mathematical" style="color: var(--muted);">Category Theory</a></li>
-                </ul>
+          </ul>
               </li>
               <li><a href="article.html#constants">Physical Constants Analysis</a>
                 <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
                   <li><a href="article.html#constants" style="color: var(--muted);">Fine Structure Constant</a></li>
                   <li><a href="article.html#constants" style="color: var(--muted);">Mass Ratios</a></li>
                   <li><a href="article.html#constants" style="color: var(--muted);">Coupling Constants</a></li>
-                </ul>
+            </ul>
               </li>
               <li><a href="article.html#applications">Applications & Extensions</a>
                 <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
                   <li><a href="article.html#applications" style="color: var(--muted);">CMB Predictions</a></li>
                   <li><a href="article.html#applications" style="color: var(--muted);">Neural Networks</a></li>
                   <li><a href="article.html#applications" style="color: var(--muted);">Consciousness Models</a></li>
-                </ul>
+          </ul>
               </li>
               <li><a href="article.html#validation">Validation & Limitations</a>
                 <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
                   <li><a href="article.html#validation" style="color: var(--muted);">Statistical Analysis</a></li>
                   <li><a href="article.html#validation" style="color: var(--muted);">Error Assessment</a></li>
                   <li><a href="article.html#validation" style="color: var(--muted);">Future Work</a></li>
-                </ul>
+          </ul>
               </li>
-            </ol>
+          </ol>
             <div style="margin-top:16px; padding-top:12px; border-top:1px solid #333;">
               <a href="article.html" class="cta secondary" style="font-size:12px; padding:6px 12px; width: 100%; text-align: center; display: block;">Read Full Article →</a>
-            </div>
-    </div>
+          </div>
+          </div>
         </aside>
 
         <article>
@@ -124,14 +124,14 @@
           
           <div class="comparison">
             <strong>Key Development:</strong> The framework achieves 0.014% agreement with experimental values for the fine structure constant using the formulation α⁻¹ = 137 + φ⁻⁶, representing significant improvement over previous φ-based approaches. However, this precision should be evaluated considering systematic searches through φ-formulations and requires independent verification of theoretical foundations.
-      </div>
+          </div>
           
           <div class="warning">
             <strong>Current Status:</strong> FIRM theory represents early-stage theoretical development with promising mathematical results that require broader physics community validation before scientific acceptance. The framework provides systematic mathematical tools for continued exploration in mathematical physics.
-      </div>
+          </div>
 
           <div class="fig"><img id="fAbs1" alt="Conceptual overview" /><div class="caption">Overview of FIRM: from axioms through Grace operator to physical reality.</div><div class="actions"><a id="fAbs1Open" class="btn" target="_blank">open</a><a id="fAbs1Peer" class="btn" target="_blank">peer‑review</a></div></div>
-
+          
           <div class="insight">
             <strong>Continue Reading:</strong> This overview provides a brief introduction to FIRM theory development. For comprehensive theoretical details, mathematical foundations, precision analysis, and validation frameworks, please read the full article.
           </div>
@@ -167,8 +167,189 @@
     // Set up the conceptual overview figure
     document.addEventListener('DOMContentLoaded', function() {
       setFig('fAbs1','fAbs1Open','fAbs1Peer','conceptual_overview_diagram.png');
+      
+      // Gallery functionality
+    const grid = document.getElementById('grid');
+    const featuredGrid = document.getElementById('featuredGrid');
+    const search = document.getElementById('search');
+    const sort = document.getElementById('sort');
+    const countBadge = document.getElementById('countBadge');
+    const chips = document.getElementById('chips');
+    const loadMoreBtn = document.getElementById('loadMore');
+    const eliBtn = document.getElementById('eli25Toggle');
+
+    let allFigures = [];
+    let visible = 0;
+    const PAGE = 40;
+
+    const FEATURED = [
+      'category_theory_phi_morphisms.png',
+      'complete_lagrangian_formulation.png',
+      'spectral_analysis_phi_operators.png',
+      'riemannian_curvature_comparison.png',
+      'probability_limit_theorems.png',
+      'eilenberg_moore_spectral_sequence.png',
+      'sobolev_spaces.png',
+      'geometric_measure_theory.png',
+      'hodge_decomposition.png',
+      'random_matrix_theory.png'
+    ];
+
+    async function loadManifest() {
+      try {
+        const res = await fetch(RAW_BASE + 'figures/peer_review/figure_manifest.json', { cache: 'no-store' });
+        if (res.ok) return res.json();
+      } catch (e) {}
+      return { figures: [] };
+    }
+
+    function inferTags(f) {
+      const s = (f.filename || '').toLowerCase();
+      const tags = [];
+      if (s.includes('category') || s.includes('topos')) tags.push('category');
+      if (s.includes('geometry') || s.includes('riemann') || s.includes('manifold') || s.includes('curvature')) tags.push('geometry');
+      if (s.includes('pde') || s.includes('elliptic') || s.includes('heat') || s.includes('schauder')) tags.push('pde');
+      if (s.includes('prob') || s.includes('stochastic') || s.includes('random') || s.includes('clt') || s.includes('lln')) tags.push('probability');
+      if (s.includes('topology') || s.includes('homology') || s.includes('cohomology') || s.includes('spectral_sequence')) tags.push('topology');
+      return tags;
+    }
+
+    const activeTags = new Set();
+    let tagCounts = {};
+
+    function computeTagCounts() {
+      tagCounts = {};
+      for (const f of allFigures) {
+        for (const t of inferTags(f)) {
+          tagCounts[t] = (tagCounts[t] || 0) + 1;
+        }
+      }
+    }
+
+    function renderChips() {
+      computeTagCounts();
+      chips.innerHTML = '';
+      const tagsSorted = Object.keys(tagCounts).sort((a,b)=> (tagCounts[b]-tagCounts[a]));
+      for (const t of tagsSorted) {
+        const count = tagCounts[t];
+        if (!count) continue;
+        const el = document.createElement('div');
+        el.className = 'chip' + (activeTags.has(t) ? ' active' : '');
+        el.textContent = `${t} (${count})`;
+        el.onclick = () => { if (activeTags.has(t)) activeTags.delete(t); else activeTags.add(t); resetAndRender(); };
+        chips.appendChild(el);
+      }
+    }
+
+    function filteredSorted() {
+      let q = (search.value || '').toLowerCase().trim();
+      let arr = allFigures.filter(f => f.filename.toLowerCase().includes(q));
+      if (activeTags.size) {
+        arr = arr.filter(f => {
+          const ts = inferTags(f);
+          return ts.some(tag => activeTags.has(tag));
+        });
+      }
+      const mode = sort.value;
+      if (mode === 'width') arr.sort((a,b)=> (b.width||0)-(a.width||0));
+      else if (mode === 'height') arr.sort((a,b)=> (b.height||0)-(a.height||0));
+      else arr.sort((a,b)=> (a.filename||'').localeCompare(b.filename||''));
+      return arr;
+    }
+
+    function resetAndRender() {
+      visible = 0;
+      grid.innerHTML = '';
+      renderChips();
+      const arr = filteredSorted();
+      countBadge.textContent = arr.length;
+      appendMore(arr);
+    }
+
+    function appendMore(arr) {
+      const next = arr.slice(visible, visible + PAGE);
+      visible += next.length;
+      for (const f of next) grid.appendChild(tileFor(f));
+      loadMoreBtn.style.display = (visible < arr.length) ? 'block' : 'none';
+      loadMoreBtn.onclick = () => appendMore(arr);
+    }
+
+    function tileFor(f) {
+      const tile = document.createElement('div');
+      tile.className = 'tile';
+        const img = document.createElement('img'); 
+        img.loading = 'lazy'; 
+        img.decoding = 'async'; 
+        img.src = canonical(f.filename); 
+        img.alt = f.filename;
+        
+        const meta = document.createElement('div'); 
+        meta.className = 'meta';
+        
+        const name = document.createElement('div'); 
+        name.className = 'name'; 
+        name.textContent = f.filename;
+        
+        const actions = document.createElement('div'); 
+        actions.className = 'actions';
+        
+        const openBtn = document.createElement('a'); 
+        openBtn.className = 'btn'; 
+        openBtn.href = canonical(f.filename); 
+        openBtn.target = '_blank'; 
+        openBtn.textContent = 'open';
+        
+        actions.appendChild(openBtn);
+        meta.appendChild(name);
+        meta.appendChild(actions);
+        tile.appendChild(img);
+        tile.appendChild(meta);
+        
+        return tile;
+      }
+
+      // Load the gallery data
+      loadManifest().then(data => {
+      allFigures = data.figures || [];
+      resetAndRender();
+        if (search) search.addEventListener('input', resetAndRender);
+        if (sort) sort.addEventListener('change', resetAndRender);
+      });
     });
   </script>
 
     <!-- Gallery Section -->
-    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+      <h2>Figure Gallery</h2>
+      <div class="controls">
+        <div class="toolbar">
+          <input class="search" id="search" placeholder="Search figure names…" />
+          <select class="select" id="sort">
+            <option value="name">Sort: Name</option>
+            <option value="width">Sort: Width</option>
+            <option value="height">Sort: Height</option>
+          </select>
+          <span class="badge" id="countBadge">Loading...</span>
+        </div>
+      </div>
+      <div class="filterchips" id="chips"></div>
+      <div id="grid" class="grid"></div>
+      <button class="btn loadmore" id="loadMore">Load More</button>
+    </section>
+    
+    <section class="section">
+      <div class="card">
+        <h3>Reproduce it yourself</h3>
+        <p class="subtle">Everything here is generated from code. Clone the repo and run the peer‑review sync to rebuild the canonical set and arXiv copies:</p>
+        <pre class="subtle" style="overflow:auto;">python figures/peer_review/sync_and_verify.py --generate-math
+python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
+        <p class="subtle">Outputs: <code>figures/canonical_outputs/</code> (single source of truth) and <code>arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/</code> (submission‑ready).</p>
+      </div>
+    </section>
+    
+    <section class="footer">
+      <div>© Ex Nihilo Reality — All figures generated from code; see repository for provenance.</div>
+    </section>
+  </main>
+</body>
+</html>
