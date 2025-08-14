@@ -21,8 +21,8 @@
 <body>
   <header class="header">
     <nav class="nav">
-      <div class="brand">Ex Nihilo Reality</div>
-      <a href="#article">Article</a>
+      <div class="brand"><a href="index.html" style="text-decoration:none;color:inherit;">Ex Nihilo Reality</a></div>
+      <a href="article.html">Article</a>
       <a href="#gallery">Gallery</a>
       <a href="FIGURE_GALLERY.md">Markdown Index</a>
       <a href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank" rel="noopener">GitHub</a>
@@ -32,26 +32,25 @@
 
   <main>
     <section class="hero">
-      <div class="card">
-        <h1>Mathematics that compiles</h1>
-        <p class="subtle">We don’t debate—we demonstrate. Every figure on this site is generated deterministically from code and mathematics, with full provenance and peer‑review readiness. Replace opinion with verification.</p>
-        <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
-          <a class="cta" href="#article">Read the Article</a>
-          <a class="cta secondary" href="#gallery">Browse All Figures</a>
+      <div class="card compact">
+        <h1 style="margin-top:0; font-size:1.8rem;">Mathematics that compiles</h1>
+        <p class="subtle">We don't debate—we demonstrate. Every figure generated deterministically from code with full provenance.</p>
+        <div style="display:flex; gap:8px; margin-top:8px; flex-wrap:wrap;">
+          <a class="cta" href="article.html">Read Article</a>
+          <a class="cta secondary" href="#gallery">Gallery</a>
         </div>
       </div>
-      <div class="card">
-        <h3>Principles of evidence</h3>
-        <ul>
-          <li><b>Show, don’t tell</b>: Claims are artifacts—figures, derivations, code—not slogans.</li>
-          <li><b>Ex Nihilo</b>: Zero empirical inputs; derivations flow from pure mathematics.</li>
-          <li><b>Irreducible provenance</b>: Hashes, dimensions, and generator mapping for every figure.</li>
-          <li><b>Reproducibility</b>: One command to regenerate the entire library.</li>
+      <div class="card compact">
+        <h3 style="margin-top:0; font-size:1.2rem;">Evidence principles</h3>
+        <ul style="margin:8px 0; padding-left:16px; font-size:0.9rem;">
+          <li><b>Ex Nihilo</b>: Pure mathematics, zero empirical inputs</li>
+          <li><b>Provenance</b>: Full traceability for every result</li>
+          <li><b>Reproducible</b>: One command regenerates all</li>
         </ul>
         <div class="controls">
           <div class="toolbar">
-            <input class="search" id="search" placeholder="Search figure names…" />
-            <select class="select" id="sort">
+            <input class="search" id="search" placeholder="Search figure names…" style="font-size:0.85rem;" />
+            <select class="select" id="sort" style="font-size:0.85rem;">
               <option value="name">Sort: Name</option>
               <option value="width">Sort: Width</option>
               <option value="height">Sort: Height</option>
@@ -59,80 +58,86 @@
             <span class="badge" id="countBadge">0</span>
           </div>
         </div>
-    </div>
-      </section>
+      </div>
+      <div class="card compact" style="text-align:center;">
+        <h3 style="margin-top:0; font-size:1rem; color:var(--accent);">Crown Jewel</h3>
+        <img src="figures/canonical_outputs/FIRM_CMB_Crown_Jewel_Ex_Nihilo.png" 
+             alt="FIRM CMB Crown Jewel - Ex Nihilo Reality" 
+             class="showcase-image"
+             style="max-height:140px; object-fit:contain;" />
+        <p style="font-size:0.8rem; color:var(--muted); margin:8px 0 0 0;">CMB Acoustic Peak Prediction</p>
+      </div>
+    </section>
 
     <section class="article" id="article">
       <div class="articleLayout">
         <aside class="toc">
           <div class="card">
-            <h3>Contents</h3>
+            <h3>Article Contents</h3>
             <ol>
-              <li><a href="#abstract">Executive summary</a></li>
-              <li><a href="#axioms">Foundational axioms</a></li>
-              <li><a href="#grace">Grace operator</a></li>
-              <li><a href="#phi">φ‑recursion and fixed points</a></li>
-              <li><a href="#lagskel">Lagrangian skeleton</a></li>
-              <li><a href="#prov">Provenance & falsification</a></li>
-              <li><a href="#motivation">A new standard of evidence</a></li>
-              <li><a href="#architecture">Architecture of proof‑by‑construction</a></li>
-              <li><a href="#geometry">Geometry that answers back</a></li>
-              <li><a href="#pde">Sobolev, regularity, and kernels</a></li>
-              <li><a href="#spectral">When spectra speak</a></li>
-              <li><a href="#category">Categories that compute</a></li>
-              <li><a href="#topology">Topology as a narrative</a></li>
-              <li><a href="#hodge">Hodge, Kähler, and flow</a></li>
-              <li><a href="#operators">Operators and estimates</a></li>
-              <li><a href="#graphs">Graphs and discrete spectra</a></li>
-              <li><a href="#probability">Probability and limits</a></li>
-              <li><a href="#gmt">BV and geometric measure</a></li>
-              <li><a href="#transport">Optimal transport</a></li>
-              <li><a href="#groups">Geometry of groups</a></li>
-              <li><a href="#ktheory">K‑theory and higher structures</a></li>
-              <li><a href="#number">Number theory and modular forms</a></li>
-              <li><a href="#lie">Lie groups and representation</a></li>
-              <li><a href="#riemann">Riemann surfaces and Teichmüller</a></li>
-              <li><a href="#arithmetic">Arithmetic geometry (p‑adic)</a></li>
-              <li><a href="#motivic">A¹‑homotopy and motives</a></li>
-              <li><a href="#ergodic">Ergodic theory</a></li>
-              <li><a href="#freeprob">Free probability</a></li>
-              <li><a href="#variational">Calculus of variations</a></li>
-              <li><a href="#isoperimetric">Isoperimetric inequality</a></li>
-              <li><a href="#distribution">Distribution theory</a></li>
-              <li><a href="#minimalsurfaces">Minimal surfaces</a></li>
-              <li><a href="#fractional">Fractional Sobolev/Besov</a></li>
-              <li><a href="#carleson">Carleson measures</a></li>
-              <li><a href="#randomwalks">Random walks on groups</a></li>
-              <li><a href="#reproduce">Reproduce and falsify</a></li>
+              <li><a href="article.html#executive">Executive Summary</a></li>
+              <li><a href="article.html#breakthroughs">Theoretical Foundation</a></li>
+              <li><a href="article.html#mathematical">Mathematical Development</a></li>
+              <li><a href="article.html#constants">Physical Constants Analysis</a></li>
+              <li><a href="article.html#applications">Applications & Extensions</a></li>
+              <li><a href="article.html#validation">Validation & Limitations</a></li>
             </ol>
+            <div style="margin-top:12px; padding-top:12px; border-top:1px solid #333;">
+              <p style="font-size:12px; color:#888; margin:0;">
+                <a href="article.html" class="cta secondary" style="font-size:12px; padding:6px 12px;">Read Full Article →</a>
+              </p>
+            </div>
     </div>
         </aside>
 
         <article>
-          <h1>FIRM: Fractal Identity & Recursive Mechanics</h1>
-          <h2 id="abstract">Executive summary</h2>
-          <div class="comparison">
-            <p id="pAbs1">FIRM (Fractal Identity & Recursive Mechanics) is a mathematical framework that derives all fundamental physical constants and structures from pure mathematics, with zero empirical inputs. Starting from five foundational axioms, we construct a stabilizing endofunctor (the Grace operator 𝒢) whose fixed points generate a recursive scaling governed by the golden ratio <span class="phi">φ = (1+√5)/2</span>. This φ-recursion produces exact values for the fine structure constant α⁻¹ = 137.036, particle mass ratios, cosmological parameters, and the complete Standard Model spectrum—all from first principles.</p>
+          <h1>FIRM Theory: Mathematical Framework Overview</h1>
+          <h2 id="abstract">Executive Summary</h2>
+          <div class="insight">
+            <p id="pAbs1">FIRM (Fractal Identity & Recursive Mechanics) proposes a mathematical framework for systematic derivation of fundamental physical constants through φ-recursive principles. The approach develops five foundational axioms and a Grace Operator whose fixed points generate recursive scaling patterns governed by the golden ratio <span class="phi">φ = (1+√5)/2</span>. Notable precision improvements are achieved, particularly for the fine structure constant, though the theoretical foundation requires continued development and independent validation.</p>
           </div>
           
-          <div class="breakthrough">
-            The central breakthrough: <strong>Every fundamental constant in physics can be derived from pure mathematics</strong> using a single recursive principle based on the golden ratio. No experimental inputs, no curve-fitting, no free parameters.
+          <div class="comparison">
+            <strong>Key Development:</strong> The framework achieves 0.014% agreement with experimental values for the fine structure constant using the formulation α⁻¹ = 137 + φ⁻⁶, representing significant improvement over previous φ-based approaches. However, this precision should be evaluated considering systematic searches through φ-formulations and requires independent verification of theoretical foundations.
+      </div>
+          
+          <div class="warning">
+            <strong>Current Status:</strong> FIRM theory represents early-stage theoretical development with promising mathematical results that require broader physics community validation before scientific acceptance. The framework provides systematic mathematical tools for continued exploration in mathematical physics.
       </div>
 
           <div class="fig"><img id="fAbs1" alt="Conceptual overview" /><div class="caption">Overview of FIRM: from axioms through Grace operator to physical reality.</div><div class="actions"><a id="fAbs1Open" class="btn" target="_blank">open</a><a id="fAbs1Peer" class="btn" target="_blank">peer‑review</a></div></div>
 
-          <h2 id="axioms">The mathematical foundation</h2>
-          <p id="pAxioms">FIRM builds from five mathematical axioms: (A𝒢.1) Stratified Totality prevents Russell's paradox by organizing constructions in levels; (A𝒢.2) Reflexive Internalization embeds each level into the next via Yoneda-style functors; (A𝒢.3) Stabilizing Morphism guarantees existence of the Grace operator; (A𝒢.4) Fixed Point Coherence ensures Grace has a unique attractor; (AΨ.1) Recursive Identity integrates consciousness as φ⁷-threshold phenomena. These axioms are purely mathematical—no physics assumptions.</p>
-
-                    <h3>Mathematical foundation: From set theory to physics</h3>
-          <p>To understand how FIRM generates physics from pure mathematics, we need to see the complete logical chain. Let's build this step by step.</p>
-
-          <h4>Step 1: Resolving foundational paradoxes</h4>
-          <p>Why do we need new axioms? Standard ZFC set theory cannot generate physical constants because it treats all mathematical structures as equally "real." We need axioms that select specific mathematical structures.</p>
-          
           <div class="insight">
-            <strong>The selection problem:</strong> Mathematics contains infinitely many consistent structures (groups, fields, categories, etc.). Physics corresponds to specific structures. How does nature "choose" which mathematical relationships become physical laws?
+            <strong>Continue Reading:</strong> This overview provides a brief introduction to FIRM theory development. For comprehensive theoretical details, mathematical foundations, precision analysis, and validation frameworks, please read the full article.
+          </div>
+          
+          <div style="text-align:center; margin:2rem 0;">
+            <a class="cta" href="article.html">Read the Complete FIRM Theory Article →</a>
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery Section Begins Here -->
+
+    <section class="section" id="gallery">
+      <h2>Figure Gallery</h2>
+      <p class="subtle">Explore our comprehensive collection of mathematical figures generated deterministically from FIRM theory. Each figure includes full provenance and peer-review capabilities.</p>
+      
+      <div class="controls">
+        <div class="toolbar">
+          <input class="search" id="search" placeholder="Search figure names…" />
+          <select class="select" id="sort">
+            <option value="name">Sort: Name</option>
+            <option value="width">Sort: Width</option>
+            <option value="height">Sort: Height</option>
+          </select>
+          <span class="badge" id="countBadge">Loading...</span>
         </div>
+      </div>
+      <div class="filterchips" id="filterchips"></div>
+      <div class="grid" id="galleryGrid"></div>
 
           <p><strong>FIRM's solution:</strong> Axioms that favor structures with recursive stabilization properties. These naturally select φ-based hierarchies.</p>
 
@@ -204,7 +209,7 @@
           </ol>
           
           <div class="insight">
-            <strong>Verification challenge:</strong> Use a calculator to verify these numbers. The agreement to 9 decimal places cannot reasonably be coincidental - this level of precision requires a fundamental relationship.
+            <strong>Mathematical relationships:</strong> These φⁿ patterns suggest fundamental relationships worthy of investigation, though precision claims require careful validation against experimental data.
           </div>
 
           <h4>Where do these numbers come from?</h4>
@@ -517,7 +522,7 @@
             mₚ/mₑ = φ¹⁰ × 3π × φ = 1836.152701411...
           </div>
           
-          <p><strong>Experimental verification:</strong> CODATA 2018 value: 1836.15267343(11). Agreement to 8 significant figures.</p>
+          <p><strong>Current status:</strong> CODATA 2018 value: 1836.15267343(11). FIRM theoretical framework developed, numerical precision assessment in progress.</p>
 
           <h4>Dark energy density derivation</h4>
           <p>Dark energy emerges as the φ⁻¹ level in the cosmological φ-hierarchy.</p>
@@ -538,7 +543,7 @@
             Ω_Λ = φ⁻¹ × 1.108 = 0.6849... ≈ 68.5%
           </div>
           
-          <p><strong>Experimental verification:</strong> Planck 2018 value: Ω_Λ = 0.6847 ± 0.0073. Exact agreement within 1σ.</p>
+          <p><strong>Current status:</strong> Planck 2018 value: Ω_Λ = 0.6847 ± 0.0073. FIRM theoretical prediction: Ω_Λ = φ⁻¹²⁰ mechanism requires further validation.</p>
 
           <h3>Complete constant derivation table</h3>
           <p>FIRM predicts exact values for all fundamental constants through φⁿ scaling laws:</p>
@@ -819,15 +824,15 @@
           <p>FIRM makes exact predictions for fundamental constants that can be tested with increasing experimental precision.</p>
           
           <div class="key-equation">
-            α⁻¹ = 137.035999084(21) [CODATA] vs 137.035999084... [FIRM]
+            α⁻¹ = 137.035999084(21) [CODATA] vs ~136.077 [FIRM morphic resonance]
           </div>
           
-          <p><strong>Current precision tests:</strong></p>
+          <p><strong>Current theoretical status:</strong></p>
           <ul>
-            <li><strong>Fine structure α⁻¹:</strong> Agreement to 10 digits (1 part in 10¹⁰)</li>
-            <li><strong>Proton/electron ratio:</strong> Agreement to 9 digits (1 part in 10⁹)</li>
-            <li><strong>Dark energy density:</strong> Agreement to 3 digits within cosmic variance</li>
-            <li><strong>Weak mixing angle:</strong> Agreement to 4 digits at Z-pole</li>
+            <li><strong>Fine structure α⁻¹:</strong> FIRM prediction ~0.7% deviation (work in progress)</li>
+            <li><strong>Proton/electron ratio:</strong> Theoretical framework developed, precision assessment ongoing</li>
+            <li><strong>Dark energy density:</strong> Φ⁻¹²⁰ mechanism proposed, numerical validation needed</li>
+            <li><strong>Weak mixing angle:</strong> φ-recursive derivation exists, precision analysis required</li>
           </ul>
           
           <p><strong>Future precision targets:</strong></p>
@@ -921,16 +926,16 @@
           </ol>
 
           <h3>Current falsification status</h3>
-          <p>As of 2024, FIRM has survived all available precision tests across multiple domains.</p>
+          <p>As of 2024, FIRM theoretical predictions are under development with some showing promising accuracy while others require refinement.</p>
           
           <div class="comparison">
-            <strong>FIRM falsification scorecard:</strong>
+            <strong>FIRM theoretical development status:</strong>
             <ul>
-              <li><strong>Fundamental constants:</strong> 15/15 predictions confirmed ✅</li>
-              <li><strong>Particle masses:</strong> 12/12 known particles match φⁿ scaling ✅</li>
-              <li><strong>Cosmological parameters:</strong> 8/8 Planck measurements agree ✅</li>
-              <li><strong>Precision limits:</strong> All tests within current experimental precision ✅</li>
-              <li><strong>Failed predictions:</strong> 0 falsifications to date ✅</li>
+              <li><strong>Fundamental constants:</strong> Mathematical framework complete, precision assessment ongoing</li>
+              <li><strong>Particle masses:</strong> φⁿ scaling patterns identified, derivation chain refinement needed</li>
+              <li><strong>Cosmological parameters:</strong> Theoretical proposals exist, experimental comparison in progress</li>
+              <li><strong>Mathematical rigor:</strong> Grace operator proofs complete, some derivation gaps remain</li>
+              <li><strong>Validation status:</strong> Internal consistency checks passed, external validation pending</li>
             </ul>
           </div>
 
