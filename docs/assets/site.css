@@ -222,9 +222,10 @@ p { line-height: 1.6; margin-bottom: 1rem; }
 
 .integrity-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   margin: 2rem 0;
+  align-items: start;
 }
 
 .integrity-item {
@@ -1565,7 +1566,7 @@ article li {
   }
   
   .integrity-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
   
@@ -2170,5 +2171,14 @@ article li {
   
   .toggle-hint {
     font-size: 0.8rem;
+  }
+  
+  .integrity-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .integrity-item {
+    padding: 1rem;
   }
 }
