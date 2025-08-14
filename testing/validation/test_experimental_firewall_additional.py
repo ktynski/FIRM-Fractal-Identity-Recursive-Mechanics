@@ -20,4 +20,3 @@ def test_firewall_validation_phase_gates_access():
     # Regardless, API remains safe
     res = fw.request_experimental_data("codata_2018_constants", requester="test")
     assert res is None or (isinstance(res, dict) and res.get("access_granted") is True)
-

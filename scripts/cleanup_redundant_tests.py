@@ -125,8 +125,8 @@ def cleanup_redundant_tests(test_dir: str = "testing", dry_run: bool = True, exe
     files_to_remove = determine_files_to_remove(redundant_groups)
 
     # Print summary
-    print(f"\nCleanup Summary:")
-    print(f"Found {len(files_to_remove)} files to remove")
+    # Cleanup Summary
+    logging.info(f"Found {len(files_to_remove)} files to remove")
 
     # Execute removal if requested
     if execute and not dry_run:

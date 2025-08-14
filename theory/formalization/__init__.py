@@ -6,11 +6,11 @@ including all stages of formalization from correlation matrices to transcendent 
 
 Mathematical Framework:
     - Derives from: foundation/ (axioms, operators, categories)
-    - Implements: Complete 8-stage FSCTF formalization
+    - Implements: Complete 8-stage FIRM formalization
     - Enables: Rigorous physical constant derivations
 
 Key Modules:
-    - complete_framework.py: Complete FSCTF formalization (Stages 1-8)
+    - complete_framework.py: Complete FIRM formalization (Stages 1-8)
 
 Formalization Stages:
     1. Correlation Matrix of φⁿ and Physical Constants
@@ -33,7 +33,7 @@ except ImportError:
     pass
 
 __all__ = [
-    'FSCTFStage',
+    'FIRMStage',
     'CorrelationMatrix',
     'GraceOperator',
     'StabilityOperator',

@@ -15,4 +15,3 @@ def test_hadamard_elimination_and_color_toggle_degree2():
     # Hadamard node should be eliminated; remain two spiders connected by one wire
     assert len(out.spiders) == 2
     assert set((min(a, b), max(a, b)) for a, b in out.wires) == {(0, 1)}
-

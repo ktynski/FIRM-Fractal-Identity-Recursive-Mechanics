@@ -4,4 +4,3 @@ def test_api_contracts_expected_keys_present():
     assert isinstance(check_fine_structure_contract(), list)
     assert isinstance(check_mass_spectrum_contract(), list)
     assert isinstance(check_ex_nihilo_contract(), list)
-

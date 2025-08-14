@@ -20,4 +20,3 @@ def test_record_derivation_pure_inputs():
         contamination_check=False,
     )
     assert isinstance(seal, str)
-

@@ -23,4 +23,3 @@ def test_fine_structure_alpha_derivations_and_provenance():
         assert hasattr(prov, "root_node") and hasattr(prov, "nodes")
     # Module-level theory constants are positive
     assert ALPHA_THEORETICAL > 0 and ALPHA_INVERSE_THEORETICAL > 0
-

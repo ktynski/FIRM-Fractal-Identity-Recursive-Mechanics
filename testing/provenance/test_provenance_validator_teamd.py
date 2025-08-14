@@ -42,4 +42,3 @@ def test_provenance_validator_full_result_and_default_rss():
     assert res["provenance_complete"]
     assert res["contamination_free"]
     assert res["axiom_foundation_valid"]
-

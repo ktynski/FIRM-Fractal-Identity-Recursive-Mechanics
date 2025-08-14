@@ -13,4 +13,3 @@ def test_em_provenance_bare_and_corrected_nodes_present():
     # Base terms must still exist; corrected terms optional depending on implementation
     assert "TERM_SIN2_THETA_W_BARE" in ids2
     assert "TERM_COS2_THETA_W_BARE" in ids2
-

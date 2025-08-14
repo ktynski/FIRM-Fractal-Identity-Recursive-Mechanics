@@ -12,4 +12,3 @@ def test_is_empirical_value_container_and_string_paths():
     assert ANTI_CONTAMINATION.is_empirical_value({"measured": 0.1}) is True
     # Benign container
     assert ANTI_CONTAMINATION.is_empirical_value([0.1, 0.2]) is False
-

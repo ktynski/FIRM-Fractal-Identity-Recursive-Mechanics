@@ -15,4 +15,3 @@ def test_compose_and_identity_tokens():
 
     id_x = cat.identity(x)
     assert id_x.as_tuple() == (x.name, "→", x.name)
-

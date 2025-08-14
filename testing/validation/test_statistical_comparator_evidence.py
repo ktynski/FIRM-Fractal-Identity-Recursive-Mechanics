@@ -81,4 +81,3 @@ def test_validation_includes_ready_chi_squared(monkeypatch):
     key = "fine_structure_alpha_inv_chi_squared"
     assert key in results
     assert hasattr(results[key], "validation_status")
-

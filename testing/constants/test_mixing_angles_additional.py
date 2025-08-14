@@ -15,4 +15,3 @@ def test_ckm_elements_monotonic_suppression():
     Vcb = ckm["V_cb"].theoretical_value
     Vub = ckm["V_ub"].theoretical_value
     assert Vus > Vcb > Vub
-

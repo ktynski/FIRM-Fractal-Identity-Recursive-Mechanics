@@ -9,4 +9,3 @@ def test_spectral_zeta_convergence_and_prefactor_shape():
     assert hasattr(res, "theoretical_value") and isinstance(res.theoretical_value, float)
     conv = res.convergence_analysis
     assert "zero_point_convergence" in conv and "zeta_function_convergence" in conv
-

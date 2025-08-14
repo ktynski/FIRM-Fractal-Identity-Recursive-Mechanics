@@ -30,4 +30,3 @@ def test_firewall_contamination_alerts_and_shutdown():
     FW.emergency_shutdown("test")
     rep2 = FW.generate_firewall_report()
     assert "DISABLED" in rep2
-

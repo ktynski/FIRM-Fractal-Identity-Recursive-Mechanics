@@ -12,4 +12,3 @@ def test_categories_registry_and_config():
     register_category("dummy", Dummy())
     assert get_category("dummy") is not None
     assert CATEGORY_CONFIG["yoneda_embedding"] is True
-

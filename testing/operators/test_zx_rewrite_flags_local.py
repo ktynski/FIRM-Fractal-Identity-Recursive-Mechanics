@@ -33,4 +33,3 @@ def test_bialgebra_adds_cross_edges_and_dedups():
     assert (0, 1) in observed and (0, 2) in observed and (1, 3) in observed
     # New cross edges added: (2,1) and (0,3)
     assert (1, 2) in observed and (0, 3) in observed
-

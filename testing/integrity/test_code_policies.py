@@ -134,4 +134,3 @@ def test_no_hardcoded_constants_outside_centralized_module(tmp_path: Path) -> No
         raise AssertionError(
             "New hardcoded numeric constants found outside foundation/derived.py (beyond baseline):\n" + sample
         )
-

@@ -1,0 +1,64 @@
+{
+  "planck_tt_binned": {
+    "generation_timestamp": "2025-08-11T23:27:22.054903",
+    "mathematical_basis": "\u03c6-harmonic acoustic peaks at \u2113 = 220 \u00d7 \u03c6\u207f",
+    "derivation_steps": [
+      "Grace Operator fixed point analysis",
+      "\u03c6-recursion acoustic oscillation theory",
+      "Sachs-Wolfe plateau from \u03c6-field inflation",
+      "Silk damping from \u03c6-enhanced diffusion"
+    ],
+    "ex_nihilo_components": [
+      "Zero empirical inputs",
+      "Pure \u03c6-mathematics",
+      "Grace Operator eigenvalues",
+      "\u03c6-harmonic series structure"
+    ],
+    "provenance_hash": "13cf05eb356e0452",
+    "falsification_criteria": [
+      "If \u03c6-harmonic peaks don't match observations",
+      "If theoretical spectrum lacks acoustic structure",
+      "If peak positions deviate from \u03c6-series"
+    ]
+  },
+  "alpha_inverse_comparison": {
+    "generation_timestamp": "2025-08-11T23:27:22.316603",
+    "mathematical_basis": "Fine structure constant from \u03c6-recursion",
+    "derivation_steps": [
+      "Grace Operator eigenvalue analysis",
+      "\u03c6-harmonic electromagnetic coupling",
+      "Quantum field theory \u03c6-scaling"
+    ],
+    "ex_nihilo_components": [
+      "Zero empirical inputs",
+      "Pure \u03c6-mathematics",
+      "Grace Operator fixed points"
+    ],
+    "provenance_hash": "a0b2107b938c6b25",
+    "falsification_criteria": [
+      "If \u03b1\u207b\u00b9 \u2260 137.035999...",
+      "If \u03c6-harmonic structure fails",
+      "If Grace Operator eigenvalues wrong"
+    ]
+  },
+  "bao_comparison": {
+    "generation_timestamp": "2025-08-11T23:27:22.542923",
+    "mathematical_basis": "BAO scale from \u03c6-enhanced sound horizon",
+    "derivation_steps": [
+      "Grace Operator sound horizon calculation",
+      "\u03c6-recursion acoustic scale enhancement",
+      "Baryon-photon fluid dynamics"
+    ],
+    "ex_nihilo_components": [
+      "Zero empirical inputs",
+      "Pure \u03c6-mathematics",
+      "\u03c6-enhanced sound horizon"
+    ],
+    "provenance_hash": "19f0cc7559b4af17",
+    "falsification_criteria": [
+      "If r_BAO \u2260 147 Mpc",
+      "If \u03c6-enhancement fails",
+      "If sound horizon calculation wrong"
+    ]
+  }
+}

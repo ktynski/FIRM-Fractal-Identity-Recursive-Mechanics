@@ -46,4 +46,3 @@ def test_no_duplicate_definitions(tmp_path: Path) -> None:
     if duplicates:
         sample = "\n".join(f"{mod} :: {kind} {name!r} defined {count} times" for mod, kind, name, count in duplicates[:20])
         raise AssertionError("Duplicate symbol definitions detected:\n" + sample)
-

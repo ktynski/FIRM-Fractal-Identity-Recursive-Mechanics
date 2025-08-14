@@ -13,4 +13,3 @@ def test_no_flags_same_color_chain_is_noop():
     out = zx.rewrite(d)  # no flags
     assert len(out.spiders) == 3
     assert set((min(a, b), max(a, b)) for a, b in out.wires) == {(0, 1), (1, 2)}
-

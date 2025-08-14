@@ -7,4 +7,3 @@ def test_phi_hermitian_across_window_and_threshold():
         assert USC_FRAMEWORK.verify_phi_hermitian(n)
     phi = (1 + math.sqrt(5)) / 2
     assert abs(USC_FRAMEWORK.stability_threshold - phi ** (-9)) < 1e-12
-

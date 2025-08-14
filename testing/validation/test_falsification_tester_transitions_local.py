@@ -11,4 +11,3 @@ def test_alert_level_transitions_and_single_checker_alias(monkeypatch):
     assert isinstance(tester._determine_alert_level(0.0, spec), AlertLevel)
     # Alias should invoke underlying checker without raising
     tester._check_single_criterion(spec.criterion, spec)
-

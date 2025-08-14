@@ -571,7 +571,7 @@ class CompleteSpectrum:
         # Lazy import to avoid circular dependencies
         from constants.central_physics_constants import CENTRAL_PHYSICS_CONSTANTS
         electron_mass_mev = CENTRAL_PHYSICS_CONSTANTS.electron_mass_mev
-        
+
         quark_masses = {
             "up": phi**5 * electron_mass_mev,       # ~5.7 MeV (φ⁵ × m_e)
             "down": phi**5.2 * electron_mass_mev,   # ~6.5 MeV (φ^5.2 × m_e)

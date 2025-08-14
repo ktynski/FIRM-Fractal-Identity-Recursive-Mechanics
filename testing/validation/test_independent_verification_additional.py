@@ -11,4 +11,3 @@ def test_independent_verification_basic_report_shape():
     assert "mass_spectrum" in report["results"]
     assert "hash" in report["results"]["alpha_inverse"]
     assert "hash" in report["results"]["mass_spectrum"]
-

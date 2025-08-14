@@ -6,4 +6,3 @@ as a proper Python package during pytest runs.
 """
 
 __all__ = []
-

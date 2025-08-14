@@ -27,4 +27,3 @@ def test_mixing_angles_provenance_builders_valid():
     # Exercise per-element variants
     for elem in ("V_us", "V_cb", "V_ub"):
         _assert_tree_valid(M.build_ckm_provenance(elem))
-

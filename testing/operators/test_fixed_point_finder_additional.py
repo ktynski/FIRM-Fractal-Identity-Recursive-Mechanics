@@ -20,4 +20,3 @@ def test_find_fixed_point_non_convergence_raises():
 
 def test_verify_banach_conditions_true():
     assert FIXED_POINT_SOLVER.verify_banach_conditions() is True
-

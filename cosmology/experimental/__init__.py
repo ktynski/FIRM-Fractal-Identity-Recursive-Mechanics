@@ -14,4 +14,3 @@ def experimental_notice(module_name: str) -> None:
         category=UserWarning,
         stacklevel=2,
     )
-

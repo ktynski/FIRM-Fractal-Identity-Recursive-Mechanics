@@ -8,4 +8,3 @@ def test_mutators_and_summary_paths():
     summary = ANTI_CONTAMINATION.get_forbidden_constants_summary()
     assert isinstance(summary, dict)
     assert sum(summary.values()) >= 1
-

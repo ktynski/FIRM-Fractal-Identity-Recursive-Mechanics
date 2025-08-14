@@ -178,3 +178,85 @@
 2025-08-12 19:12:04,902 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
 2025-08-12 19:12:04,902 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
 2025-08-12 19:12:04,902 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 10:29:12,249 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 10:29:12,250 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 10:29:12,250 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 10:37:33,188 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 10:37:33,189 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 10:37:33,189 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 14:04:39,111 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 14:04:39,111 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 14:04:39,112 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 15:08:41,390 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 15:08:41,390 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 15:08:41,390 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 15:08:54,654 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 15:08:54,655 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 15:08:54,655 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 15:52:20,564 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 15:52:20,565 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 15:52:20,565 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:07:51,195 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:07:51,196 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:07:51,196 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:08:45,523 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:08:45,523 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:08:45,523 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:23:19,041 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:23:19,042 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:23:19,042 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:24:09,996 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:24:09,997 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:24:09,997 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:26:09,156 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:26:09,157 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:26:09,157 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:43:08,298 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:43:08,298 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:43:08,298 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:53:28,491 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:53:28,492 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:53:28,492 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:53:46,304 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:53:46,304 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:53:46,304 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:54:01,105 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:54:01,105 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:54:01,106 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:54:41,929 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:54:41,929 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:54:41,929 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:54:59,389 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:54:59,389 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:54:59,389 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:55:23,680 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:55:23,680 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:55:23,680 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:55:27,468 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:55:27,477 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:55:27,840 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:55:27,852 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:55:28,410 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:55:28,416 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:55:28,761 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:55:28,769 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:55:49,707 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:55:49,708 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:55:49,708 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:56:08,957 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:56:08,957 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:56:08,957 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:56:16,684 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:56:16,684 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:56:16,684 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:56:33,343 - FALSIFICATION - INFO - FIRM Falsification Monitor initialized
+2025-08-13 16:56:33,343 - FALSIFICATION - INFO - Seven criteria under continuous surveillance
+2025-08-13 16:56:33,343 - FALSIFICATION - INFO - Continuous falsification monitoring started
+2025-08-13 16:56:36,906 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:56:36,915 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:56:37,266 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:56:37,274 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:56:37,826 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:56:37,832 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:56:38,177 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral
+2025-08-13 16:56:38,184 - FALSIFICATION - INFO - Substituting symbol Z from STIXGeneral

@@ -10,4 +10,3 @@ def test_public_wrappers_return_results_and_provenance_bare():
     ids = set(tree.nodes.keys())
     assert "FORMULA_EM_coupling" in ids
     assert "TERM_SIN2_THETA_W_BARE" in ids
-

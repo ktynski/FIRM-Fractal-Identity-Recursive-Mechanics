@@ -18,4 +18,3 @@ def test_presheaf_category_yoneda_and_topos():
     text = cat.enable_self_reference()
     assert isinstance(text, str) and "Self-Reference Enabled" in text
     assert cat.prepare_for_grace_operator() in (True, False)
-

@@ -21,4 +21,3 @@ def test_phi_harmonic_peaks_monotonic_and_types():
     for p in peaks:
         assert p.peak_amplitude > 0.0
         assert p.peak_width > 0.0
-

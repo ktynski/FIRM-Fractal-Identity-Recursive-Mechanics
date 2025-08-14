@@ -33,8 +33,8 @@ except ImportError:
     pass
 
 __all__ = [
-    'FSCTFCategory',
-    'FSCTFMorphism',
-    'FSCTFFunctor',
+    'FIRMCategory',
+    'FIRMMorphism',
+    'FIRMFunctor',
     'NaturalTransformation',
 ]

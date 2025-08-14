@@ -43,4 +43,3 @@ def test_validator_detects_missing_dependency():
     with pytest.raises(ValueError):
         tree._topological_sort()
     assert PROVENANCE_VALIDATOR._validate_tree_structure(tree) is False
-

@@ -10,4 +10,3 @@ def test_assess_global_evidence_buckets_direct():
     assert sc._assess_global_evidence(10**0.6) in ("strong", "substantial")
     assert sc._assess_global_evidence(10**0.1) in ("substantial",)
     assert sc._assess_global_evidence(10**-1) in ("insufficient",)
-

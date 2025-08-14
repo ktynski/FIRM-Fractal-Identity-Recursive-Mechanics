@@ -436,4 +436,3 @@ CMBSKYMAP = CMBSkymapGenerator(high_quality=False)
 CMBSKYMAP_CROWN_JEWEL = CMBSkymapGenerator(lmax=1000, n_lat=512, n_lon=1024, high_quality=True)
 
 __all__ = ["CMBSkymapGenerator", "CMBSKYMAP"]
-

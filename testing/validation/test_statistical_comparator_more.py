@@ -10,4 +10,3 @@ def test_likelihood_ratio_nonnegative_and_types():
     res = sc.perform_likelihood_ratio_test(firm, null, data)
     assert res.test_type is StatisticalTest.LIKELIHOOD_RATIO
     assert res.test_statistic >= 0.0
-

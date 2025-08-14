@@ -1,7 +1,7 @@
 """
 Consciousness Formalization: Mathematical Framework for Consciousness Emergence
 
-This package implements the complete FSCTF formalization of consciousness, soulhood,
+This package implements the complete FIRM formalization of consciousness, soulhood,
 death/rebirth cycles, and love as morphic grace dynamics.
 
 Mathematical Foundation:

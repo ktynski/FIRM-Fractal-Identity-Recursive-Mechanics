@@ -1,0 +1,126 @@
+{
+  "figure_to_generator_mapping": {
+    "alpha_inverse_comparison.png": {
+      "generator": "figures/generators/constants_figure_generator.py",
+      "status": "missing_generator",
+      "mathematical_basis": "Fine structure constant α^(-1) = 137.036... derivation",
+      "category": "physical_constants"
+    },
+    "bao_comparison.png": {
+      "generator": "figures/generators/cosmology_figure_generator.py", 
+      "status": "missing_generator",
+      "mathematical_basis": "Baryon acoustic oscillation scale from φ-harmonic CMB",
+      "category": "cosmological_predictions"
+    },
+    "consciousness_pnp_correlation.png": {
+      "generator": "figures/generators/consciousness_correlations.py",
+      "status": "exists",
+      "mathematical_basis": "P=NP consciousness correlation analysis",
+      "category": "consciousness_integration"
+    },
+    "dark_energy_phi_scaling.png": {
+      "generator": "figures/generators/dark_energy_phi_generator.py",
+      "status": "exists",
+      "mathematical_basis": "Dark energy w(z) = -1 + (φ-1)/φ × a² evolution",
+      "category": "cosmological_predictions"
+    },
+    "dimensional_bridge_mapping.png": {
+      "generator": "figures/generators/dimensional_bridge_generator.py",
+      "status": "exists",
+      "mathematical_basis": "Mathematical to physical unit conversion bridge",
+      "category": "mathematical_foundations"
+    },
+    "eeg_phi_harmonics.png": {
+      "generator": "figures/generators/consciousness_correlations.py",
+      "status": "exists",
+      "mathematical_basis": "EEG φ-harmonic neural oscillation patterns",
+      "category": "consciousness_integration"
+    },
+    "einstein_equations_comparison.png": {
+      "generator": "figures/generators/einstein_equations_derivation_figures.py",
+      "status": "exists",
+      "mathematical_basis": "General Relativity vs FIRM field equations",
+      "category": "theory_validation"
+    },
+    "einstein_equations_derivation_chain.png": {
+      "generator": "figures/generators/einstein_equations_derivation_figures.py",
+      "status": "exists", 
+      "mathematical_basis": "Step-by-step Einstein equations derivation from FIRM",
+      "category": "mathematical_foundations"
+    },
+    "FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png": {
+      "generator": "figures/generators/cmb_skymap.py",
+      "status": "exists",
+      "mathematical_basis": "Complete CMB temperature map from pure φ-mathematics",
+      "category": "cosmological_predictions"
+    },
+    "grace_operator_fixed_point_convergence.png": {
+      "generator": "figures/generators/grace_operator_convergence_generator.py",
+      "status": "exists",
+      "mathematical_basis": "Grace Operator φ-fixed point convergence analysis",
+      "category": "mathematical_foundations"
+    },
+    "inflation_evolution.png": {
+      "generator": "figures/generators/inflation_evolution_generator.py",
+      "status": "exists",
+      "mathematical_basis": "Cosmological inflation timeline from FIRM framework",
+      "category": "cosmological_predictions"
+    },
+    "manifold_progression_diagram.png": {
+      "generator": "figures/generators/manifold_progression_generator.py",
+      "status": "exists",
+      "mathematical_basis": "Topological manifold progression in cosmogenesis",
+      "category": "mathematical_foundations"
+    },
+    "phi_recursion_rate_verification.png": {
+      "generator": "figures/generators/phi_recursion_rate_generator.py",
+      "status": "exists",
+      "mathematical_basis": "φ-recursion rate verification and convergence",
+      "category": "mathematical_foundations"
+    },
+    "planck_tt_binned.png": {
+      "generator": "figures/generators/cmb_classic_figures.py",
+      "status": "exists",
+      "mathematical_basis": "CMB TT power spectrum with theoretical predictions",
+      "category": "cosmological_predictions"
+    },
+    "spacetime_metric_emergence.png": {
+      "generator": "figures/generators/spacetime_emergence_generator.py",
+      "status": "missing_generator",
+      "mathematical_basis": "Spacetime metric tensor emergence from Grace Operator",
+      "category": "mathematical_foundations"
+    },
+    "recursive_potential_wells.png": {
+      "generator": "figures/generators/recursive_potential_figure.py",
+      "status": "exists_fixed",
+      "mathematical_basis": "Recursive potential V[φ] wells for various depths",
+      "category": "mathematical_foundations"
+    },
+    "mass_depth_cn.png": {
+      "generator": "figures/generators/mass_depth_figure.py", 
+      "status": "exists",
+      "mathematical_basis": "Particle mass form factors from recursive depth",
+      "category": "physical_constants"
+    },
+    "epsilon_components_scan.png": {
+      "generator": "figures/generators/epsilon_components_figure.py",
+      "status": "exists",
+      "mathematical_basis": "ε-component analysis scan",
+      "category": "mathematical_foundations"
+    },
+    "epsilon_stability_scan.png": {
+      "generator": "figures/generators/epsilon_stability_figure.py",
+      "status": "exists", 
+      "mathematical_basis": "ε-stability analysis scan",
+      "category": "mathematical_foundations"
+    }
+  },
+  "missing_generators": [
+    "constants_figure_generator.py",
+    "cosmology_figure_generator.py", 
+    "spacetime_emergence_generator.py"
+  ],
+  "total_figures": 19,
+  "generators_exist": 16,
+  "generators_missing": 3
+}

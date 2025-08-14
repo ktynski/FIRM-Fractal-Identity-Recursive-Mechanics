@@ -118,4 +118,3 @@ def test_no_import_cycles(tmp_path: Path) -> None:
         if set(cycle).issubset(allowed_nodes):
             return
         raise AssertionError("Import cycle detected: " + " -> ".join(cycle))
-

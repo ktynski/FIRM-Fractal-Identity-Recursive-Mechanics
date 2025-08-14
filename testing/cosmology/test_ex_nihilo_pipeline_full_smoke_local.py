@@ -7,4 +7,3 @@ def test_execute_complete_pipeline_minimal_asserts():
     # Basic fields exist
     assert isinstance(res.stage_results, dict)
     assert isinstance(res.generate_academic_report(), str)
-

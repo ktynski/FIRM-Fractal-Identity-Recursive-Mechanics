@@ -12,4 +12,3 @@ def test_spectral_zeta_internal_analyses(monkeypatch):
     ghost = sz._compute_ghost_mode_contribution_explicit()
     norm = sz._compute_zeta_normalization()
     assert all(isinstance(v, float) for v in (zc, zc2, ph, main, ghost, norm))
-

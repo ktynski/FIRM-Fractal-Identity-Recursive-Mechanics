@@ -21,4 +21,3 @@ __all__ = [
     "GAUGE_GROUP_EMERGENCE",
 ]
 
-

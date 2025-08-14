@@ -12,4 +12,3 @@ def test_zx_same_color_fusion_when_no_h():
     # With no H, fusion path in fusion helper is allowed → spiders should be <= 2 and wire count not increase
     assert len(out.spiders) <= 2
     assert isinstance(out.wires, list)
-

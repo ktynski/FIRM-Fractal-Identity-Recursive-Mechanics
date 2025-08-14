@@ -29,4 +29,3 @@ def test_get_sealed_comparison_for_additional_keys(monkeypatch):
     for key in list(keys):
         sealed = EXPERIMENTAL_FIREWALL.get_sealed_comparison(key)
         assert sealed is None or (sealed.get("sealed") is True)
-

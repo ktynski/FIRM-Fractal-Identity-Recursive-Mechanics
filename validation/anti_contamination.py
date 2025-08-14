@@ -237,6 +237,19 @@ class AntiContamination:
 
         return contamination
 
+    def check_value(self, value: Any, justification: str) -> bool:
+        """
+        Check if a value is mathematically justified (not empirical).
+        
+        Args:
+            value: Value to check for contamination
+            justification: Mathematical justification for the value
+            
+        Returns:
+            True if mathematically justified, False if contaminated
+        """
+        return self.check_mathematical_justification(value, justification)
+    
     def check_mathematical_justification(self, value: Any, justification: str) -> bool:
         """
         Check if a value has proper mathematical justification.
@@ -516,3 +529,6 @@ if __name__ == "__main__":
 
 # Global instance for use throughout FIRM
 ANTI_CONTAMINATION = AntiContamination()
+
+# Export alias for integration tests
+CONTAMINATION_DETECTOR = ANTI_CONTAMINATION

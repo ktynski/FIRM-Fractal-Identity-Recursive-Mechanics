@@ -24,4 +24,3 @@ def test_length_conversion_symmetry_and_consistency():
     q_back = DIMENSIONAL_BRIDGE.convert_physical_to_mathematical(q_phys)
     assert abs(q_back.value - q_math.value) < 1e-12
     assert q_phys.unit in ("m", "m^1")
-

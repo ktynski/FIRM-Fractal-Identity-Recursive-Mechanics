@@ -22,4 +22,3 @@ def test_isw_component_decays_with_ell():
     isw = cmb._compute_integrated_sachs_wolfe(ell)
     # Monotonic decay in aggregate (allow small numerical noise): first > median > last
     assert isw[0] > np.median(isw) > isw[-1]
-

@@ -59,16 +59,23 @@ __all__ = [
 
 @lru_cache(maxsize=1)
 def derive_tree_of_life_constant() -> int:
-    """Return the centralized structural constant 113 used in α derivations.
+    """PLACEHOLDER: Return empirical fine structure constant factor.
 
-    Integrity note:
-    - This value is the current φ-native structural factor used in the
-      fine-structure constant closed form α⁻¹ = φ¹⁵/(φ⁷+1) × 113.
-    - It is centralized here to ensure single-source provenance and to
-      prevent scattered literals. When a full constructive MTQ proof is
-      finalized in code, this function will be the sole swap point.
-    - No empirical inputs; this is a theory-side constant.
+    HONEST ASSESSMENT:
+    - This 113 value is EMPIRICAL CURVE FITTING, not derived theory
+    - Pure φ-mathematics gives x* ≈ 1.209 from fixed point equation
+    - Observed α⁻¹ ≈ 137.036 requires factor ≈ 113 to match
+    - NO THEORETICAL DERIVATION EXISTS for this factor
+
+    Status: INCOMPLETE THEORY
+    - This is centralized to acknowledge the empirical nature
+    - When/if theoretical derivation is completed, replace here
+    - Currently this represents a major gap in FIRM theory
+
+    Returns:
+        113 (ACKNOWLEDGED EMPIRICAL FITTING PARAMETER)
     """
+    # CURVE FITTING - not a theoretical result
     return 113
 
 __all__.append("derive_tree_of_life_constant")
@@ -131,4 +138,3 @@ def first_peak_multipole_phi() -> float:
 
 
 __all__.extend(["sin2_theta_w_bare_phi", "first_peak_multipole_phi"])
-

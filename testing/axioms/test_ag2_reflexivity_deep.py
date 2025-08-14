@@ -19,4 +19,3 @@ def test_reflexivity_yoneda_and_presheaf_ops():
     ax.construct_reflexive_internalization()
     ax.establish_yoneda_embedding()
     assert ax.enable_self_reference() in (True, False)
-

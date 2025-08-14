@@ -14,7 +14,7 @@ Key Components:
 
 Separation of Concerns:
     - foundation/: Pure mathematics (no physics)
-    - theory/: Physical theory (no empirical data)  
+    - theory/: Physical theory (no empirical data)
     - cosmology/: Cosmological physics (no empirical data)
     - validation/: Experimental comparison (empirical data allowed)
 

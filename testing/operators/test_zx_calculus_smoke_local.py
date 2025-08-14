@@ -11,4 +11,3 @@ def test_zx_rewrite_smoke_connectivity():
     diag = ZXDiagram(spiders=spiders, wires=wires, phi_phases=[], morphic_structure={})
     out = zx.rewrite(diag)
     assert isinstance(out.wires, list) and len(out.wires) >= 1
-

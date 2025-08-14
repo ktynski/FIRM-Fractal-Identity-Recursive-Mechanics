@@ -15,4 +15,3 @@ def test_phi_recursion_basic_paths_and_powers():
     assert PHI_RECURSION.compute_phi_power(2) == approx((PHI_RECURSION.theoretical_phi ** 2), rel=1e-12)
     big = PHI_RECURSION.compute_phi_power(100)
     assert math.isfinite(big)
-

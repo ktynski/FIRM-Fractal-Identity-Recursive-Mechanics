@@ -26,4 +26,3 @@ def test_error_bounds_sequence_output_and_determinism():
     bounds_2 = pt.compute_error_bounds({"phi": 1.618, "n": 3}, out)
     assert set(["relative_error", "absolute_error"]).issubset(bounds_1.keys())
     assert bounds_1 == bounds_2
-

@@ -17,4 +17,3 @@ def test_enumerate_fixed_points_handles_nonconvergent_guesses():
     # Small domain with grid ensures some guesses return and some may not; function handles exceptions
     sols = FIXED_POINT_SOLVER.enumerate_all_fixed_points(search_domain_size=3, strategy=SearchStrategy.SYSTEMATIC_GRID)
     assert isinstance(sols, list)
-

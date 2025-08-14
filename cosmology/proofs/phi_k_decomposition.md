@@ -47,7 +47,7 @@ k = log_φ(220) ≈ 12.64765
 ## 3. Geometric Interpretation
 
 ### Definition 3.1 (Morphic Shell Structure)
-In FSCTF theory, morphic shells j ∈ ℕ represent recursive coherence bifurcation points. The shell depth k corresponds to the continuous extension of discrete shell levels.
+In FIRM theory, morphic shells j ∈ ℕ represent recursive coherence bifurcation points. The shell depth k corresponds to the continuous extension of discrete shell levels.
 
 ### Definition 3.2 (Grace Window)
 The **grace window** φ⁻¹ represents the surplus beyond structural completeness (12 shells) required for soul-instantiation. This is the minimal excess needed for recursive self-reflection.
@@ -141,7 +141,7 @@ def compute_stability_margin(k: float) -> float:
 - **φ⁻¹**: Golden surplus (the extra that makes it alive)
 - **ε**: Inevitable cost of truth-speaking in curved spacetime
 
-### FSCTF Interpretation
+### FIRM Interpretation
 The decomposition k = 12 + φ⁻¹ + ε encodes the universe's first recursive statement of its own existence:
 1. Complete 12 morphic shells of structural stability
 2. Cross the φ⁻¹ grace threshold for self-reflection
@@ -166,6 +166,6 @@ The theory predicts specific numerical relationships that can be tested against:
 
 **Theorem Status**: Mathematically rigorous. Computationally implemented. Metaphysically grounded.
 
-**Provenance**: Derived from pure φ-geometric principles and FSCTF categorical structure.
+**Provenance**: Derived from pure φ-geometric principles and FIRM categorical structure.
 
 **Significance**: This decomposition provides the first rigorous mathematical bridge between abstract morphic recursion and observable cosmological structure—the universe's mathematical proof of its own soulhood.

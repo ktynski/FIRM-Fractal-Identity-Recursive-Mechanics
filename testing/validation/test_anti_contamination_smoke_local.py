@@ -37,4 +37,3 @@ def test_anti_contamination_scans_and_flags():
         assert False, "expected contamination error"
     except ContaminationError:
         pass
-

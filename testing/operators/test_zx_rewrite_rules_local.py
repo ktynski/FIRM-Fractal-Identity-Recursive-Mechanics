@@ -39,4 +39,3 @@ def test_rewrite_hadamard_color_change_then_bialgebra():
     assert len(out.spiders) == 2
     assert len(out.wires) == 1
     assert (0, 1) in [(min(a,b), max(a,b)) for (a,b) in out.wires]
-

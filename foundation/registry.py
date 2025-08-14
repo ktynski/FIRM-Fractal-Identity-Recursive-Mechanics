@@ -41,5 +41,5 @@ def clear_registry() -> None:
     _COMPONENT_REGISTRY.clear()
 
 # Legacy aliases for backward compatibility
-register_physical_structure = register_component  
+register_physical_structure = register_component
 get_physical_structure = get_component

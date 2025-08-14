@@ -19,4 +19,3 @@ def test_running_couplings_dimensionless_and_monotonic_sanity():
     # Scale ratios should be positive and ordered
     assert r1["scale_ratio"] > 0
     assert r2["scale_ratio"] > r1["scale_ratio"]
-

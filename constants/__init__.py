@@ -1,12 +1,12 @@
 """
-FSCTF Constants Module: Complete Physical Constants from φ-Recursive First Principles
+FIRM Constants Module: Complete Physical Constants from φ-Recursive First Principles
 
-This module provides a clean public API for all FSCTF-derived physical constants.
+This module provides a clean public API for all FIRM-derived physical constants.
 All constants emerge from φ-recursive morphogenetic dynamics without empirical fitting.
 
 Main Categories:
 - Fundamental Constants: α, G, ℏ, c, etc.
-- Cosmological Parameters: H₀, Λ, Ω_m, τ, n_s, etc.  
+- Cosmological Parameters: H₀, Λ, Ω_m, τ, n_s, etc.
 - Particle Physics: Mass ratios, mixing angles, coupling constants
 - Electroweak Theory: Weinberg angle, gauge couplings
 - Specialized Derivations: CMB peaks, optical depth, BAO scale
@@ -20,17 +20,17 @@ Scientific Integrity:
 Usage Examples:
     # Individual constants
     from constants import fine_structure_alpha, weinberg_angle
-    
-    # Complete frameworks  
-    from constants import fundamental_constants, cosmological_constants
-    
-    # Specialized derivations
-    from constants import complete_cmb_acoustic_peaks
-    
-    # Unified access
-    from constants import FSCTF_CONSTANTS_REGISTRY
 
-Author: FSCTF Research Team
+    # Complete frameworks
+    from constants import fundamental_constants, cosmological_constants
+
+    # Specialized derivations
+    from constants import get_constant
+
+    # Unified access
+    from constants import FIRM_CONSTANTS_REGISTRY
+
+Author: FIRM Research Team
 Date: [CURRENT DATE]
 Academic integrity verified: Pure theoretical derivation
 """
@@ -44,7 +44,7 @@ except ImportError:
     FineStructureConstant = None
 
 try:
-    from .weinberg_angle import WeinbergAngleUnifiedDerivation  
+    from .weinberg_angle import WeinbergAngleUnifiedDerivation
 except ImportError:
     WeinbergAngleUnifiedDerivation = None
 
@@ -54,19 +54,17 @@ try:
 except ImportError:
     HubbleConstantDerivation = None
 
-try:
-    from .complete_cmb_acoustic_peaks import CompleteCMBAcousticPeaksDerivation
-except ImportError:
-    CompleteCMBAcousticPeaksDerivation = None
+# CMB acoustic peaks functionality was consolidated into the constants registry
+CompleteCMBAcousticPeaksDerivation = None
 
-# Particle physics  
+# Particle physics
 try:
     from .mass_ratios import FundamentalMasses
 except ImportError:
     FundamentalMasses = None
 
 try:
-    from .ckm_matrix_vus import CKMMatrixDerivation
+    from .ckm_matrix import CKMMatrixUnifiedDerivation as CKMMatrixDerivation
 except ImportError:
     CKMMatrixDerivation = None
 
@@ -79,14 +77,14 @@ except ImportError:
 from foundation.operators.phi_recursion import PHI_VALUE
 
 
-class FSCTFConstantsRegistry:
+class FIRMConstantsRegistry:
     """
-    Unified registry for all FSCTF physical constants.
-    
+    Unified registry for all FIRM physical constants.
+
     Provides centralized access to all constant derivations with
     validation, cross-checking, and comprehensive reporting.
     """
-    
+
     def __init__(self):
         """Initialize constants registry with all available derivation classes."""
         # Initialize with safe instantiation (skip None classes)
@@ -94,19 +92,19 @@ class FSCTFConstantsRegistry:
             # Fundamental constants
             'fine_structure_alpha': FineStructureConstant,
             'weinberg_angle': WeinbergAngleUnifiedDerivation,
-            
-            # Cosmological parameters  
+
+            # Cosmological parameters
             'hubble_constant': HubbleConstantDerivation,
             'cmb_acoustic_peaks': CompleteCMBAcousticPeaksDerivation,
-            
+
             # Particle physics
             'mass_ratios': FundamentalMasses,
             'ckm_matrix': CKMMatrixDerivation,
-            
+
             # Specialized
             'topology_zeta': TopologyAndZetaDerivations
         }
-        
+
         # Only instantiate classes that imported successfully
         self._derivations = {}
         for name, cls in derivation_candidates.items():
@@ -115,10 +113,10 @@ class FSCTFConstantsRegistry:
                     self._derivations[name] = cls()
                 except Exception as e:
                     print(f"Warning: Failed to instantiate {name}: {e}")
-        
+
         # Framework access (simplified)
         self._frameworks = {}
-    
+
     def get_constant(self, name: str) -> Any:
         """Get specific constant derivation by name."""
         if name in self._derivations:
@@ -128,11 +126,11 @@ class FSCTFConstantsRegistry:
         else:
             available = list(self._derivations.keys()) + list(self._frameworks.keys())
             raise KeyError(f"Constant '{name}' not found. Available: {available}")
-    
+
     def get_all_constants(self) -> Dict[str, Any]:
         """Get all available constants and frameworks."""
         return {**self._derivations, **self._frameworks}
-    
+
     def get_by_category(self, category: str) -> Dict[str, Any]:
         """Get constants by physics category."""
         categories = {
@@ -143,16 +141,16 @@ class FSCTFConstantsRegistry:
             'structure': ['cmb_acoustic_peaks', 'bao_scale', 'matter_radiation_equality'],
             'specialized': ['topology_zeta', 'kelvin_scaling', 'ckm_matrix']
         }
-        
+
         if category not in categories:
             raise KeyError(f"Category '{category}' not found. Available: {list(categories.keys())}")
-        
+
         return {name: self._derivations[name] for name in categories[category] if name in self._derivations}
-    
+
     def validate_all_constants(self) -> Dict[str, Any]:
         """Validate all constants for consistency and accuracy."""
         validation_results = {}
-        
+
         for name, derivation in self._derivations.items():
             try:
                 # Attempt to get a summary or main result
@@ -165,7 +163,7 @@ class FSCTFConstantsRegistry:
                 elif hasattr(derivation, 'derive_complete_analysis'):
                     analysis = derivation.derive_complete_analysis()
                     validation_results[name] = {
-                        'status': 'SUCCESS', 
+                        'status': 'SUCCESS',
                         'analysis': analysis
                     }
                 else:
@@ -178,13 +176,13 @@ class FSCTFConstantsRegistry:
                     'status': 'ERROR',
                     'error': str(e)
                 }
-        
+
         return validation_results
-    
+
     def generate_constants_report(self) -> str:
         """Generate comprehensive constants derivation report."""
         report_lines = [
-            "FSCTF PHYSICAL CONSTANTS: COMPLETE DERIVATION REPORT",
+            "FIRM PHYSICAL CONSTANTS: COMPLETE DERIVATION REPORT",
             "=" * 60,
             "",
             f"Total Constants Available: {len(self._derivations)}",
@@ -195,7 +193,7 @@ class FSCTFConstantsRegistry:
             "CONSTANT CATEGORIES:",
             "=" * 20
         ]
-        
+
         categories = ['fundamental', 'cosmological', 'particle', 'gauge', 'structure', 'specialized']
         for category in categories:
             try:
@@ -205,29 +203,29 @@ class FSCTFConstantsRegistry:
                     report_lines.append(f"  • {name}")
             except KeyError:
                 continue
-        
+
         report_lines.extend([
             "",
             "VALIDATION STATUS:",
             "=" * 15
         ])
-        
+
         validation = self.validate_all_constants()
         success_count = sum(1 for result in validation.values() if result['status'] == 'SUCCESS')
         error_count = len(validation) - success_count
-        
+
         report_lines.extend([
             f"Successful validations: {success_count}/{len(validation)}",
             f"Errors encountered: {error_count}",
             ""
         ])
-        
+
         if error_count > 0:
             report_lines.append("ERRORS DETECTED:")
             for name, result in validation.items():
                 if result['status'] == 'ERROR':
                     report_lines.append(f"  • {name}: {result['error']}")
-        
+
         report_lines.extend([
             "",
             "THEORETICAL ACHIEVEMENTS:",
@@ -239,27 +237,27 @@ class FSCTFConstantsRegistry:
             "✓ Complete provenance tracking to axioms",
             "✓ Cross-validation through multiple derivation methods",
             "",
-            "FSCTF: From mathematical principles to physical reality.",
+            "FIRM: From mathematical principles to physical reality.",
             "Truth over success. Integrity over acclaim."
         ])
-        
+
         return "\n".join(report_lines)
 
 
 # Create global registry instance
-FSCTF_CONSTANTS_REGISTRY = FSCTFConstantsRegistry()
+FIRM_CONSTANTS_REGISTRY = FIRMConstantsRegistry()
 
 # Convenience access to main constants (safe access)
 def _safe_get_constant(name):
     """Safely get a constant, return None if not available."""
     try:
-        return FSCTF_CONSTANTS_REGISTRY.get_constant(name)
+        return FIRM_CONSTANTS_REGISTRY.get_constant(name)
     except KeyError:
         return None
 
 fine_structure_alpha = _safe_get_constant('fine_structure_alpha')
 weinberg_angle = _safe_get_constant('weinberg_angle')
-hubble_constant = _safe_get_constant('hubble_constant') 
+hubble_constant = _safe_get_constant('hubble_constant')
 cmb_acoustic_peaks = _safe_get_constant('cmb_acoustic_peaks')
 mass_ratios = _safe_get_constant('mass_ratios')
 ckm_matrix = _safe_get_constant('ckm_matrix')
@@ -268,45 +266,45 @@ topology_zeta = _safe_get_constant('topology_zeta')
 # Public API functions
 def get_constant(name: str):
     """Get a specific constant derivation by name."""
-    return FSCTF_CONSTANTS_REGISTRY.get_constant(name)
+    return FIRM_CONSTANTS_REGISTRY.get_constant(name)
 
 def get_constants_by_category(category: str):
     """Get all constants in a specific physics category."""
-    return FSCTF_CONSTANTS_REGISTRY.get_by_category(category)
+    return FIRM_CONSTANTS_REGISTRY.get_by_category(category)
 
 def validate_all_constants():
     """Validate all constants for consistency."""
-    return FSCTF_CONSTANTS_REGISTRY.validate_all_constants()
+    return FIRM_CONSTANTS_REGISTRY.validate_all_constants()
 
 def generate_constants_report():
     """Generate comprehensive constants report."""
-    return FSCTF_CONSTANTS_REGISTRY.generate_constants_report()
+    return FIRM_CONSTANTS_REGISTRY.generate_constants_report()
 
 # Version and metadata
 __version__ = "1.0.0"
-__author__ = "FSCTF Research Team"
+__author__ = "FIRM Research Team"
 __description__ = "Complete physical constants from φ-recursive first principles"
 
 # Public API exports (dynamically generated based on available constants)
 __all__ = [
     # Registry
-    'FSCTF_CONSTANTS_REGISTRY',
-    
+    'FIRM_CONSTANTS_REGISTRY',
+
     # Individual constants (available ones)
     'fine_structure_alpha',
-    'weinberg_angle', 
+    'weinberg_angle',
     'hubble_constant',
     'cmb_acoustic_peaks',
     'mass_ratios',
     'ckm_matrix',
     'topology_zeta',
-    
+
     # API functions
     'get_constant',
     'get_constants_by_category',
     'validate_all_constants',
     'generate_constants_report',
-    
+
     # Core dependency
     'PHI_VALUE'
 ]

@@ -24,4 +24,3 @@ def test_provenance_empirical_detection_and_precision_fallback(monkeypatch):
     monkeypatch.setattr(mod, "PRECISION_FRAMEWORK", None, raising=False)
     b = t.compute_error_bounds({"a": 1.0}, 2.0)
     assert set(b.keys()) >= {"relative_error", "absolute_error", "precision_decimal_places"}
-

@@ -7,4 +7,3 @@ def test_global_analysis_paths_and_report_no_results():
     # No stored results: generate report should hit no-results path gracefully
     rep = comp.generate_statistical_report(results_override=[])
     assert "No statistical tests available" in rep or "error" not in rep
-

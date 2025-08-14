@@ -29,4 +29,3 @@ def test_statistical_comparator_multiple_comparisons_summary():
     # Report includes multiple-comparisons summary string
     report = STATISTICAL_COMPARATOR.generate_statistical_report(results)
     assert "Bonferroni" in report
-

@@ -6,4 +6,3 @@ def test_classify_operation_additional_strings():
     assert t.classify_operation("fixed POINT iteration").name == OperationType.FIXED_POINT.name
     assert t.classify_operation("validation compare stats").name == OperationType.VALIDATION.name
     assert t.classify_operation("derive alpha").name == OperationType.DERIVATION.name
-

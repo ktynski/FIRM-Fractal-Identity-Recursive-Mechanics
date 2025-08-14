@@ -11,4 +11,3 @@ def test_api_contracts_individual_and_summary():
     assert isinstance(rep, dict) and "status" in rep and "violations" in rep
     # Summary counts align with violations keys
     assert set(rep["violations"].keys()) >= {"fine_structure", "mass_spectrum", "ex_nihilo", "centralized_constants"}
-

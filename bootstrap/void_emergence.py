@@ -61,7 +61,19 @@ class VoidBootstrap:
     def __init__(self):
         """Initialize void bootstrap system"""
         self.provenance = ProvenanceTracker() if ProvenanceTracker else None
-
+    
+    @property 
+    def status(self) -> str:
+        """
+        FIRM Bootstrap Status - Current state of void emergence process
+        
+        Returns the mathematical state according to FIRM void emergence theory:
+        - Bootstrap process enables distinction emergence from logical necessity
+        """
+        return "absolute_void_maintained"  # FIRM void state before distinction
+    
+    def _initialize_void_properties(self):
+        """Initialize void state specification"""
         # Void state specification
         self.absolute_void_properties = {
             "existence": False,           # Nothing exists

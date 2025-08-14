@@ -17,4 +17,3 @@ def test_execute_selected_stages_smoke():
         )
         assert isinstance(res.key_equations, list) and len(res.key_equations) >= 1
         assert isinstance(res.error_bounds, dict)
-

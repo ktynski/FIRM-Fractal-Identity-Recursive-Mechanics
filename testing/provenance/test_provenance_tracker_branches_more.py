@@ -25,4 +25,3 @@ def test_justification_and_axiom_extraction_branches():
     deps = pt.extract_axiom_dependencies("totality reflexive grace fixed point consciousness")
     for ax in ("A𝒢.1", "A𝒢.2", "A𝒢.3", "A𝒢.4", "AΨ.1"):
         assert ax in deps
-

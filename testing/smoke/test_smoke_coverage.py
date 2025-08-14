@@ -128,4 +128,3 @@ def test_alpha_derivations_execute_and_provide_expressions():
     assert isinstance(alt.alpha_inverse_value, float)
     assert primary.phi_expression != ""
     assert alt.mathematical_expression != ""
-

@@ -1,0 +1,196 @@
+{
+  "figures": [
+    {
+      "filename": "operator_algebras.png",
+      "sha256": "5b12133b163f54e52e7edc1327a7a92423011e8b7fe65a51a86b59a92ea8c6bf",
+      "source_path": "figures/outputs/operator_algebras.png",
+      "canonical_path": "figures/canonical_outputs/operator_algebras.png",
+      "width": 4770,
+      "height": 3540
+    },
+    {
+      "filename": "calderon_zygmund_operators.png",
+      "sha256": "5d087c2e69ed99cb615fa47a8dca305c8ef74cf287c9ea32a97ba8ec2523343c",
+      "source_path": "figures/outputs/calderon_zygmund_operators.png",
+      "canonical_path": "figures/canonical_outputs/calderon_zygmund_operators.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "phi_elliptic_operators_harmonic_analysis.png",
+      "sha256": "54094aca60dd3b7aa104f7c38ea9460523287a88b94154f5e4742ed550d693a9",
+      "source_path": "figures/outputs/phi_elliptic_operators_harmonic_analysis.png",
+      "canonical_path": "figures/canonical_outputs/phi_elliptic_operators_harmonic_analysis.png",
+      "width": 4755,
+      "height": 3539
+    },
+    {
+      "filename": "manifold_progression_diagram.png",
+      "sha256": "147c815eb6916e51042b51d1f70fb76258633f065f53bcb13bec9526e089153b",
+      "source_path": "figures/outputs/manifold_progression_diagram.png",
+      "canonical_path": "figures/canonical_outputs/manifold_progression_diagram.png",
+      "width": 3780,
+      "height": 2447
+    },
+    {
+      "filename": "phi_motivic_geometry_a1_homotopy.png",
+      "sha256": "5116a6efb306c6bfef362c177a9d8164e87b6c94d14c2cea4787f01e9907e40d",
+      "source_path": "figures/outputs/phi_motivic_geometry_a1_homotopy.png",
+      "canonical_path": "figures/canonical_outputs/phi_motivic_geometry_a1_homotopy.png",
+      "width": 4771,
+      "height": 3539
+    },
+    {
+      "filename": "spectral_analysis_phi_operators.png",
+      "sha256": "6d875171df7d9b7628bc9bc36f2c26fe0bb8644f3190dce0b7d8d343e444158e",
+      "source_path": "figures/outputs/spectral_analysis_phi_operators.png",
+      "canonical_path": "figures/canonical_outputs/spectral_analysis_phi_operators.png",
+      "width": 4774,
+      "height": 3539
+    },
+    {
+      "filename": "eilenberg_moore_spectral_sequence.png",
+      "sha256": "c868cf6b49c98ad033f9d05d21980f9052f3543cac72e341d4b26b60bdca0516",
+      "source_path": "figures/outputs/eilenberg_moore_spectral_sequence.png",
+      "canonical_path": "figures/canonical_outputs/eilenberg_moore_spectral_sequence.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "metric_geometry.png",
+      "sha256": "7af36c9eb849beeb8972cffb83da43ce05f0263736839a9647f67b16da7ba199",
+      "source_path": "figures/outputs/metric_geometry.png",
+      "canonical_path": "figures/canonical_outputs/metric_geometry.png",
+      "width": 4770,
+      "height": 3541
+    },
+    {
+      "filename": "category_theory_phi_morphisms.png",
+      "sha256": "9c7196582496dc54cd01ff0b13bffea9b2de77b1900da1064d0d096516d2d0a3",
+      "source_path": "figures/outputs/category_theory_phi_morphisms.png",
+      "canonical_path": "figures/canonical_outputs/category_theory_phi_morphisms.png",
+      "width": 4770,
+      "height": 3539
+    },
+    {
+      "filename": "hodge_theory_kahler_geometry.png",
+      "sha256": "bdf53a3a6a26c11c6e3a61517fcb809b0d263ad5bcca8207702d0b33ec12daab",
+      "source_path": "figures/outputs/hodge_theory_kahler_geometry.png",
+      "canonical_path": "figures/canonical_outputs/hodge_theory_kahler_geometry.png",
+      "width": 4770,
+      "height": 1775
+    },
+    {
+      "filename": "spectral_graph_theory.png",
+      "sha256": "52abb92e3bbb7e233d051df71c9d7a7e5a21b124b9630dfa1cc540594ecfdd6d",
+      "source_path": "figures/outputs/spectral_graph_theory.png",
+      "canonical_path": "figures/canonical_outputs/spectral_graph_theory.png",
+      "width": 4770,
+      "height": 3541
+    },
+    {
+      "filename": "operator_k_theory.png",
+      "sha256": "dccaf9b89916d0726434f44b589594e7a49bba6fa745a5d97dffedd033dedb0a",
+      "source_path": "figures/outputs/operator_k_theory.png",
+      "canonical_path": "figures/canonical_outputs/operator_k_theory.png",
+      "width": 4768,
+      "height": 1775
+    },
+    {
+      "filename": "phi_algebraic_k_theory.png",
+      "sha256": "c03057c040ef6b167148f0d1da8d916522d953b8e1cb004612b24fdaf9964e01",
+      "source_path": "figures/outputs/phi_algebraic_k_theory.png",
+      "canonical_path": "figures/canonical_outputs/phi_algebraic_k_theory.png",
+      "width": 4765,
+      "height": 3539
+    },
+    {
+      "filename": "algebraic_k_theory_examples.png",
+      "sha256": "ad45558062f90f2974400ad886598a83bee2d9c33b9ae8bbe142f649bbf8106e",
+      "source_path": "figures/outputs/algebraic_k_theory_examples.png",
+      "canonical_path": "figures/canonical_outputs/algebraic_k_theory_examples.png",
+      "width": 2968,
+      "height": 1777
+    },
+    {
+      "filename": "algebraic_number_theory_class_field.png",
+      "sha256": "9ee5c9d65e74177a651286aa343bd722ead54b9f1bf9f37f6138ed9afebe6e7b",
+      "source_path": "figures/outputs/algebraic_number_theory_class_field.png",
+      "canonical_path": "figures/canonical_outputs/algebraic_number_theory_class_field.png",
+      "width": 4767,
+      "height": 3539
+    },
+    {
+      "filename": "heat_kernel_manifolds.png",
+      "sha256": "b247cb74e7a415b7f3e2d44e02d67d236623384284b49b6401b976f91e290025",
+      "source_path": "figures/outputs/heat_kernel_manifolds.png",
+      "canonical_path": "figures/canonical_outputs/heat_kernel_manifolds.png",
+      "width": 2967,
+      "height": 1775
+    },
+    {
+      "filename": "symplectic_geometry.png",
+      "sha256": "8169d969e9176a875d3e06c2b79a373af302dac68c080c3fc6330da057ecca6c",
+      "source_path": "figures/outputs/symplectic_geometry.png",
+      "canonical_path": "figures/canonical_outputs/symplectic_geometry.png",
+      "width": 4631,
+      "height": 3539
+    },
+    {
+      "filename": "differential_geometry_phi_manifolds.png",
+      "sha256": "e597b0de92c10ec047206c7b115c150a9385a374165a5f720ffd1bfb6a46c16d",
+      "source_path": "figures/outputs/differential_geometry_phi_manifolds.png",
+      "canonical_path": "figures/canonical_outputs/differential_geometry_phi_manifolds.png",
+      "width": 4764,
+      "height": 3539
+    },
+    {
+      "filename": "spectral_zeta_analysis.png",
+      "sha256": "94c0eed878f0cc5983fc4d54ab1cf1d8ca32c690b44a379c3ba389c005fa23cb",
+      "source_path": "figures/outputs/spectral_zeta_analysis.png",
+      "canonical_path": "figures/canonical_outputs/spectral_zeta_analysis.png",
+      "width": 3552,
+      "height": 2953
+    },
+    {
+      "filename": "sheaf_cohomology_spectral_sequence.png",
+      "sha256": "13da968d603d6071e0da7d315d38753038f9f4bd257ce7b1af0fd3b0b347b24c",
+      "source_path": "figures/outputs/sheaf_cohomology_spectral_sequence.png",
+      "canonical_path": "figures/canonical_outputs/sheaf_cohomology_spectral_sequence.png",
+      "width": 4768,
+      "height": 3539
+    },
+    {
+      "filename": "spectral_zeta_functions.png",
+      "sha256": "fa59dc9b1fa090964bccb1487aa6b59aaabfd109fafdf73a77b4105caf302fe1",
+      "source_path": "figures/outputs/spectral_zeta_functions.png",
+      "canonical_path": "figures/canonical_outputs/spectral_zeta_functions.png",
+      "width": 4767,
+      "height": 3537
+    },
+    {
+      "filename": "cat0_geometry.png",
+      "sha256": "1999f7f3f8b7c4c8a3f28152651fdd0e81ab8198a31c72aa1c99969cf99982cd",
+      "source_path": "figures/outputs/cat0_geometry.png",
+      "canonical_path": "figures/canonical_outputs/cat0_geometry.png",
+      "width": 4673,
+      "height": 1775
+    },
+    {
+      "filename": "low_dimensional_topology.png",
+      "sha256": "e8a350cb87b999a830b978ae3447ae908c561f2d70aeaf669714b7e31c902633",
+      "source_path": "figures/outputs/low_dimensional_topology.png",
+      "canonical_path": "figures/canonical_outputs/low_dimensional_topology.png",
+      "width": 4767,
+      "height": 3539
+    },
+    {
+      "filename": "differential_topology_morse_theory.png",
+      "sha256": "8c122bbda7eed7a86e7ee162f1837242144952b8d085f411c6b472bd07f70dc3",
+      "source_path": "figures/outputs/differential_topology_morse_theory.png",
+      "canonical_path": "figures/canonical_outputs/differential_topology_morse_theory.png",
+      "width": 4768,
+      "height": 3540
+    }
+  ]
+}

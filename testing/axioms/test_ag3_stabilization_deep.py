@@ -24,4 +24,3 @@ def test_stabilization_internal_verifiers_and_entropy_paths():
     # minimize + contraction composition
     out = cand.map_morphism(lambda z: [3.0, 1.0, 2.0])([0.1, 0.2])
     assert isinstance(out, list)
-

@@ -15,4 +15,3 @@ def test_emergency_path_no_abandonment_output(monkeypatch):
     # Abandonment may be triggered; ensure report still generates
     report = tester.generate_falsification_report()
     assert 'FIRM Falsification Monitoring Report' in report
-

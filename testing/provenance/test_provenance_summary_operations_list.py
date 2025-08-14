@@ -5,4 +5,3 @@ def test_provenance_summary_operations_shape():
     s = t.get_derivation_summary()
     ops = s["operations"]
     assert all(set(["id","type","expression","justification","axiom_deps","timestamp","hash"]) <= set(o.keys()) for o in ops)
-

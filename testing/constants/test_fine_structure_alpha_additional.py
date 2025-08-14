@@ -13,4 +13,3 @@ def test_alpha_cross_derivation_consistency_and_provenance():
     # Provenance tree builds for a method
     tree = FINE_STRUCTURE_ALPHA.build_complete_provenance(primary.method)
     assert hasattr(tree, "root") or hasattr(tree, "root_node")
-

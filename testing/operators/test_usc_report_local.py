@@ -10,4 +10,3 @@ def test_generate_usc_report_contains_headings_and_values():
     assert USC_FRAMEWORK.verify_phi_hermitian(113)
     results = USC_FRAMEWORK.compute_stability_analysis(range(112, 115))
     assert any(r.stability_type in {r.stability_type.OPTIMAL, r.stability_type.STABLE} for r in results)
-

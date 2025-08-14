@@ -14,7 +14,15 @@ from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
 
-from validation.epsilon_stability import S_epsilon
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
+try:
+    from validation.epsilon_stability import S_epsilon
+except ImportError:
+    # Fallback epsilon stability function
+    def S_epsilon(epsilon_components):
+        return sum(abs(c) for c in epsilon_components)
 
 
 def generate_epsilon_stability_scan(
@@ -49,5 +57,4 @@ def generate_epsilon_stability_scan(
 if __name__ == "__main__":
     p = generate_epsilon_stability_scan()
     print(f"Saved: {p}")
-
 

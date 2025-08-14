@@ -18,4 +18,3 @@ def test_global_analysis_and_report_paths():
     # Generate report (exercises lazy analysis path too)
     report = comp.generate_statistical_report()
     assert "FIRM Statistical Validation Report" in report
-

@@ -3,4 +3,3 @@ def test_api_contracts_status_field_is_string():
     report = run_api_contracts()
     assert report["status"] in ("passed", "failed")
     assert isinstance(report["by_category"], dict)
-

@@ -24,4 +24,3 @@ def test_identity_and_morphisms_exposure_and_dimensionality_missing_spacetime():
     finally:
         if original is not None:
             cat._fixed_points["Spacetime"] = original
-

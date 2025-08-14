@@ -19,4 +19,3 @@ def test_topological_sort_detects_cycle_and_missing_dep():
     tree2.add_node(y)
     with pytest.raises(ValueError):
         tree2._topological_sort()
-

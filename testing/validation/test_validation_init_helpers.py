@@ -16,4 +16,3 @@ def test_validation_cli_main_runs(monkeypatch):
     monkeypatch.setattr(sys, "exit", fake_exit, raising=False)
     validation.main()
     assert called["code"] in (0, 1)
-

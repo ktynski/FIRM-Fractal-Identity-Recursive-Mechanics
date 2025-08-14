@@ -12,4 +12,3 @@ def test_verify_observational_agreement_blocked_then_granted():
     EXPERIMENTAL_FIREWALL.enable_validation_phase()
     status2 = verify_observational_agreement()
     assert status2["status"] in ("blocked", "granted")
-

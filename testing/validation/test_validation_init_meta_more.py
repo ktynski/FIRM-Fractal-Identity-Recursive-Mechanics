@@ -14,4 +14,3 @@ def test_validate_all_firm_predictions_meta_flags(monkeypatch):
         "grace_operator_contraction",
     ):
         assert key in res and hasattr(res[key], "validation_status")
-

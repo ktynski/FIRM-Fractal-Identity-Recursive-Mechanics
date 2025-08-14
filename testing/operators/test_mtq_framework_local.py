@@ -6,4 +6,3 @@ def test_mtq_curvature_necessity_and_find_optimal():
     assert isinstance(n_opt, int) and 100 <= n_opt <= 129
     proof = MTQ_FRAMEWORK.prove_mathematical_necessity(n_opt)
     assert "is_mathematically_necessary" in proof
-

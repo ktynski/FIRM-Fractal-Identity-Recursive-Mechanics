@@ -14,4 +14,3 @@ def test_codebase_mapper_cli_help(monkeypatch, capsys):
         assert isinstance(out, str)
     finally:
         sys.argv = argv_saved
-

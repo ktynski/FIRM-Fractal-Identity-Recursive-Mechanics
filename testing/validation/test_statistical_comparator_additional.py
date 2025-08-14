@@ -44,4 +44,3 @@ def test_statistical_result_evidence_strength_mapping():
         bayes_factor=10**3,
     )
     assert res.evidence_strength() == "decisive"
-

@@ -10,4 +10,3 @@ def test_validation_init_rich_key_presence():
     ]
     for k in keys:
         assert k in r
-

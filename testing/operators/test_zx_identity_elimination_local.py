@@ -16,4 +16,3 @@ def test_identity_elimination_degree2_zero_phase():
     assert len(out.spiders) <= 3
     # If middle removed, either one fused spider or a direct connection
     assert isinstance(out.wires, list)
-

@@ -12,4 +12,3 @@ def test_validate_all_firm_predictions_keyset():
     ]
     for k in expected:
         assert k in res
-

@@ -16,4 +16,3 @@ def test_h_only_color_change_elimination_connects_neighbors():
     types = {s["type"] for s in out.spiders}
     assert ZXSpiderType.GREEN in types and ZXSpiderType.RED in types
     assert isinstance(out.wires, list) and len(out.wires) == 1
-

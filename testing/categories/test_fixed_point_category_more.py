@@ -40,4 +40,3 @@ def test_derive_fundamental_constants_covers_morphism_and_fixed_points():
     consts = cat.derive_fundamental_constants()
     # Presence not guaranteed for all, but call path must execute
     assert isinstance(consts, dict)
-

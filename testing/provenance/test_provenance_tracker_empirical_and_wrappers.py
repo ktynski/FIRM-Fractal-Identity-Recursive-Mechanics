@@ -30,4 +30,3 @@ def test_compat_wrappers_start_complete_and_summary():
     summary = pt.get_derivation_summary()
     assert summary["total_operations"] >= 2
     assert isinstance(summary.get("cryptographic_seal"), str)
-

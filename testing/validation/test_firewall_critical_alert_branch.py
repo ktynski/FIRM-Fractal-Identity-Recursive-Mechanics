@@ -13,4 +13,3 @@ def test_firewall_report_critical_alert(monkeypatch):
     _ = FW.request_experimental_data("bad", "tester")
     rep = FW.generate_firewall_report()
     assert "CRITICAL" in rep or "BREACHED" in rep
-

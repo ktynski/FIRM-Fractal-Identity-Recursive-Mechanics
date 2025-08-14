@@ -14,4 +14,3 @@ def test_identity_elimination_degree2_zero_phase_red():
     # Identity at index 1 should be eliminated, leaving two red spiders connected
     assert len(out.spiders) == 2
     assert len(out.wires) == 1
-

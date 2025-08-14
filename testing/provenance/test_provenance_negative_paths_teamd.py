@@ -29,4 +29,3 @@ def test_provenance_cycle_detection_raises():
     tree.add_node(c)
     with pytest.raises(ValueError):
         tree._topological_sort()
-

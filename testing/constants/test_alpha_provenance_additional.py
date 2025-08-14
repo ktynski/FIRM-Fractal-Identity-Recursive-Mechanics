@@ -19,4 +19,3 @@ def test_alpha_provenance_tree_builds_minimal_structure():
     assert tree.nodes[tree.root_node.node_id].verify_integrity()
     # Coerced legacy constructor: target_result should be a non-empty string
     assert isinstance(tree.target_result, str) and len(tree.target_result) > 0
-

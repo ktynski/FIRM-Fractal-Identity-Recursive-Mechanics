@@ -23,4 +23,3 @@ def test_grace_equivariant_morphism_commutes_and_compose_error():
     g = cat.example_morphism(Z, Y)
     with pytest.raises(ValueError):
         cat.compose(f, g)
-

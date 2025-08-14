@@ -94,4 +94,3 @@ def test_build_and_trace_derivation_tree():
 
     # No contamination expected
     assert tree.detect_contamination() == []
-

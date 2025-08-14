@@ -31,4 +31,3 @@ def test_verify_all_axioms_status_matrix():
         assert res["C1"].status.name == "COMPLETE"
     finally:
         axioms.AXIOM_REGISTRY.clear(); axioms.AXIOM_REGISTRY.update(saved)
-

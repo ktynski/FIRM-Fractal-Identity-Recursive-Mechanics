@@ -38,7 +38,7 @@
         "cosmology.phi_harmonic_anchor.generate_phi_harmonic_candidates",
         "cosmology.phi_k_exponent.decompose_k_for_l0",
         "cosmology.peaks.geometric_layer.get_cmb_phi_peaks",
-        "FSCTF Axioms: Grace Operator fixed points in Fix(\ud835\udca2)"
+        "FIRM Axioms: Grace Operator fixed points in Fix(\ud835\udca2)"
       ],
       "target_observable": "CMB temperature power spectrum peaks (target \u2113\u2080\u2248220.0)",
       "theory_version": "FIRM-v1.0-phi-geometric",
@@ -189,7 +189,7 @@
         "foundation.operators.phi_recursion.PHI_VALUE",
         "cosmology.phi_harmonic_anchor.generate_phi_harmonic_candidates",
         "Pure \u03c6-geometry on S\u00b2 sphere",
-        "FSCTF morphic shell theory"
+        "FIRM morphic shell theory"
       ],
       "target_observable": "All \u03c6-geometric peak scaffold candidates",
       "theory_version": "FIRM-v1.0-phi-geometric",
@@ -213,7 +213,7 @@
       "provenance_chain": [
         "foundation.operators.phi_recursion.PHI_VALUE",
         "cosmology.phi_k_exponent.decompose_k_for_l0",
-        "FSCTF categorical theory: Fix(\ud835\udca2) and CP-idempotents",
+        "FIRM categorical theory: Fix(\ud835\udca2) and CP-idempotents",
         "Non-orientable geometry on S\u00b2 (projective quotient)",
         "Sacred number theory: 12 + \u03c6\u207b\u00b9 threshold"
       ],

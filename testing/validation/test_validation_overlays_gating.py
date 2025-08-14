@@ -31,4 +31,3 @@ def test_validation_overlays_render_only_when_explicitly_enabled():
     for item in results:
         path = item.get("file")
         assert path and os.path.exists(path)
-

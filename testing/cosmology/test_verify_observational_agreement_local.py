@@ -14,4 +14,3 @@ def test_verify_observational_agreement_gated_paths():
         pass
     out2 = verify_observational_agreement(dataset_id="planck_2018_cmb")
     assert out2["status"] in ("blocked", "granted")
-

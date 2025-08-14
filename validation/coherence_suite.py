@@ -61,4 +61,3 @@ def coherence_pass_fraction(k: float) -> Dict[str, float]:
 
 __all__ = ["coherence_pass_fraction"]
 
-

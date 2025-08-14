@@ -21,4 +21,3 @@ def test_bialgebra_neighbor_dedup_and_no_self_loops():
     # No duplicates after sorting
     s = set((min(a,b), max(a,b)) for a,b in out.wires)
     assert len(s) == len(out.wires)
-

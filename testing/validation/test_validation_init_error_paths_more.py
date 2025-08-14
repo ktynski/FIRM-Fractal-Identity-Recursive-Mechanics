@@ -36,4 +36,3 @@ def test_validate_all_error_branches_monkeypatch(monkeypatch):
     assert isinstance(res, dict)
     assert "precision_framework_operational" in res
     assert "provenance_acyclicity_proxy" in res
-

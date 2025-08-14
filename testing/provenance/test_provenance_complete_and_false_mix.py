@@ -9,4 +9,3 @@ def test_provenance_complete_then_breaks_false():
     # now add an op with no deps; verification should fail afterwards
     t.log_step("misc computation", {"m": 2.0}, 0.0)
     assert t.verify_complete_provenance() is False
-

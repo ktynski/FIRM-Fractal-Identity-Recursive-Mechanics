@@ -20,4 +20,3 @@ def test_verify_phi_properties_all_true():
 def test_compute_phi_iterative_close_to_theoretical():
     approx = PHI_RECURSION.compute_phi_iterative(precision=1e-12, max_iterations=200)
     assert abs(approx - PHI_VALUE) < 1e-10
-

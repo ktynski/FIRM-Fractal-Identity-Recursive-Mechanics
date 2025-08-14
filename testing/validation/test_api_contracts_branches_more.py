@@ -13,4 +13,3 @@ def test_run_api_contracts_structure_and_status():
         assert rep["status"] == "passed"
     else:
         assert rep["status"] == "failed"
-

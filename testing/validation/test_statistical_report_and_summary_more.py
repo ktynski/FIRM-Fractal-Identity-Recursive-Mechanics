@@ -21,4 +21,3 @@ def test_summarize_results_small_list():
     ]
     summary = sc._summarize_results(res)
     assert "num_results" in summary and summary["num_results"] == 1
-

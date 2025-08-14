@@ -20,4 +20,3 @@ def test_grace_operator_fixed_point_iterator_and_contract():
     assert isinstance(first, FixedPointResult)
     assert first.convergence_steps >= 1
     assert first.status in (ConvergenceStatus.CONVERGING, ConvergenceStatus.CONVERGED)
-

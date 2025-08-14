@@ -41,4 +41,3 @@ def test_a4_coherence_verification_and_universal_property():
     assert len(laws) >= 3
     proof = a4.establish_universal_property()
     assert isinstance(proof, str) and len(proof) > 0
-

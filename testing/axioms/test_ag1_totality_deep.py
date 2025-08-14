@@ -6,4 +6,3 @@ def test_totality_construct_and_russell_resolution():
     assert ax.resolve_russell_paradox() in (True, False)
     desc = ax.compute_totality_colimit()
     assert isinstance(desc, str)
-

@@ -11,4 +11,3 @@ def test_iterate_and_prove_convergence_edges():
     assert isinstance(res.final_phi_value, float)
     assert res.convergence_steps >= 1
     assert res.theoretical_phi == pr.theoretical_phi
-

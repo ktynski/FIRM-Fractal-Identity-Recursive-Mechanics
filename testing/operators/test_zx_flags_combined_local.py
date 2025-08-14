@@ -14,4 +14,3 @@ def test_combined_flags_identity_cleanup_and_fusion():
     # Identity removed, fusion allowed → expect a single spider
     assert len(out.spiders) <= 2
     assert isinstance(out.wires, list)
-

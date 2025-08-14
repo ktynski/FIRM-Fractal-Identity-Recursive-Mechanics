@@ -124,4 +124,3 @@ class ValidationOverlayFigures:
 VALIDATION_OVERLAYS = ValidationOverlayFigures()
 
 __all__ = ["ValidationOverlayFigures", "VALIDATION_OVERLAYS"]
-

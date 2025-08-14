@@ -7,4 +7,3 @@ def test_mtq_necessity_and_uniqueness_evidence_shape():
     assert "uniqueness_proof" in proof and isinstance(proof["uniqueness_proof"], dict)
     up = proof["uniqueness_proof"]
     assert "is_unique" in up and "confidence" in up
-

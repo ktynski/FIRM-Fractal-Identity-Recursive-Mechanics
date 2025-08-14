@@ -13,4 +13,3 @@ def test_usc_find_optimal_n_local_window():
     n_opt = USC_FRAMEWORK.find_optimal_stability_n()
     # Must return an int in analyzed window
     assert isinstance(n_opt, int) and 100 <= n_opt <= 129
-

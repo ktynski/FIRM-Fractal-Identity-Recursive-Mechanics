@@ -13,4 +13,3 @@ def test_mtq_report_and_connections_shape():
     opt = MTQ_FRAMEWORK.find_optimal_n()
     proof = MTQ_FRAMEWORK.prove_mathematical_necessity(opt)
     assert isinstance(proof, dict) and "is_mathematically_necessary" in proof
-

@@ -22,4 +22,3 @@ def test_morphism_token_and_composition_laws():
     assert PHYSICAL_REALITY.compose(f, id_X).target_name == f.target_name
     id_Y = PHYSICAL_REALITY.identity(Y)
     assert PHYSICAL_REALITY.compose(id_Y, f).source_name == f.source_name
-

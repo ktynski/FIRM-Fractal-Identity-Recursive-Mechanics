@@ -16,4 +16,3 @@ def test_individual_contract_checks_return_lists():
     v2 = check_mass_spectrum_contract()
     v3 = check_ex_nihilo_contract()
     assert isinstance(v1, list) and isinstance(v2, list) and isinstance(v3, list)
-

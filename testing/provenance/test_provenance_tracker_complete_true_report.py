@@ -12,4 +12,3 @@ def test_complete_provenance_true_and_report_contains_academic_ready():
     report = pt.generate_audit_report()
     assert "FIRM PROVENANCE AUDIT REPORT" in report
     assert "Academic Ready" in report
-

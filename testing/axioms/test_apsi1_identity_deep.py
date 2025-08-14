@@ -10,4 +10,3 @@ def test_identity_framework_generation_and_predictions():
     X = PHYSICAL_REALITY.example_object("X")
     qm = IDENTITY_AXIOM._psi_operator.derive_quantum_measurement("conscious", X)
     assert isinstance(qm.outcome_probabilities, dict) and len(qm.outcome_probabilities) >= 1
-

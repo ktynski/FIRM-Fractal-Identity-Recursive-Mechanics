@@ -67,7 +67,7 @@ class PhiShellsCoolingDerivation:
         # Cosmological temperatures - derived from φ-cosmology
         # T_recombination = T_CMB × (1 + z_recomb) where z_recomb = φ^15
         z_recombination = self._phi ** 15  # ≈ 1364 (φ-derived redshift)
-        T_cmb_present = 2.725  # K (present CMB temperature) 
+        T_cmb_present = 2.725  # K (present CMB temperature)
         self._T_recombination = T_cmb_present * (1 + z_recombination)  # φ-derived recombination temperature
         # Derive CMB temperature from φ-shells cooling instead of hardcoding
         # Will be computed in derive methods
@@ -84,7 +84,7 @@ class PhiShellsCoolingDerivation:
         shells_since_recombination = 5  # Additional φ-shells since recombination
         additional_cooling_factor = self._phi ** (-shells_since_recombination)
         derived_T_cmb = self._T_recombination * additional_cooling_factor
-        
+
         # Temperature ratio
         temp_ratio = self._T_recombination / derived_T_cmb
 

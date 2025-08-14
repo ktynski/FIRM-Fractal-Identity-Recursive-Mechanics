@@ -14,4 +14,3 @@ def test_spectral_zeta_small_modes_paths():
     res = sz.compute_spectral_prefactor()
     assert isinstance(res.theoretical_value, float)
     assert math.isfinite(res.theoretical_value)
-

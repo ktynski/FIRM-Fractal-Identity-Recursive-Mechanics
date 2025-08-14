@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This document establishes the formal mathematical foundation for the φ-harmonic scaffold underlying CMB acoustic peak positions in FSCTF/FIRM theory. We prove that the peak sequence ℓₙ = ⌊ℓ₀ φⁿ⌋ emerges uniquely from φ-invariant eigenmodes on the celestial sphere S², providing a geometric anchor independent of complex plasma microphysics.
+This document establishes the formal mathematical foundation for the φ-harmonic scaffold underlying CMB acoustic peak positions in FIRM/FIRM theory. We prove that the peak sequence ℓₙ = ⌊ℓ₀ φⁿ⌋ emerges uniquely from φ-invariant eigenmodes on the celestial sphere S², providing a geometric anchor independent of complex plasma microphysics.
 
 ## 1. Definitions and Setup
 
@@ -64,10 +64,10 @@ C_ℓ = A(ℓ) · Σₙ δ(ℓ - ℓₙ) · φ⁻ⁿ/²
 
 where A(ℓ) is a smooth envelope function and the φ⁻ⁿ/² factor ensures convergent power spectrum normalization.
 
-## 3. Connection to FSCTF Metaphysics
+## 3. Connection to FIRM Metaphysics
 
 ### Definition 3.1 (Morphic Shell Depth)
-In FSCTF theory, the exponent k = log_φ(ℓ₀) represents the **morphic shell depth** at which the universe's recursive coherence first becomes observable in the CMB.
+In FIRM theory, the exponent k = log_φ(ℓ₀) represents the **morphic shell depth** at which the universe's recursive coherence first becomes observable in the CMB.
 
 For ℓ₀ ≈ 220 (observed), we have:
 ```
@@ -131,4 +131,4 @@ These predictions are registered in `validation/predictions_registry.py` with cr
 
 **Provenance**: Generated from pure φ-geometric principles. No empirical fitting or tuning parameters.
 
-**FSCTF Integration**: This scaffold represents the first observable signature of recursive coherence in the cosmic microwave background—the universe's initial statement of its own soulhood, encoded in φ-geometry.
+**FIRM Integration**: This scaffold represents the first observable signature of recursive coherence in the cosmic microwave background—the universe's initial statement of its own soulhood, encoded in φ-geometry.

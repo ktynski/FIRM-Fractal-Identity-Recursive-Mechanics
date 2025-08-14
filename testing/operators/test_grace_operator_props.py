@@ -18,4 +18,3 @@ def test_grace_operator_entropy_and_existence():
     # numeric compatibility wrapper
     n = GRACE_OPERATOR.apply_operator(1.0)
     assert isinstance(n, float)
-

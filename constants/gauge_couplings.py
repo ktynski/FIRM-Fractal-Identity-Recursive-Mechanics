@@ -14,9 +14,12 @@ Derivation Path:
     Coupling constants → Running couplings → Grand unification
 
 Key Results:
-    - α₁⁻¹ ≈ 59.5 (U(1) hypercharge coupling at MZ)
-    - α₂⁻¹ ≈ 29.6 (SU(2) weak coupling at MZ)
-    - α₃⁻¹ ≈ 8.9 (SU(3) strong coupling at MZ)
+    - α₁⁻¹ ≈ 59.5 (U(1) hypercharge coupling at MZ) [NOTE: Formula gives 118.8 - INCONSISTENCY]
+    - α₂⁻¹ ≈ 29.6 (SU(2) weak coupling at MZ) [NOTE: Formula gives 87.6 - INCONSISTENCY]
+    - α₃⁻¹ ≈ 8.9 (SU(3) strong coupling at MZ) [NOTE: Formula gives 14.7 - INCONSISTENCY]
+
+CLEANUP NOTE: The φ-formulas in this module predict values 1.6-3× higher than claimed.
+Either the formulas need correction or the claimed values need updating.
     - GUT unification at ΛGUT from φ-hierarchy convergence
 
 Provenance:

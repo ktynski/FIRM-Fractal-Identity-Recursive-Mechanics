@@ -40,4 +40,3 @@ class PhysicalUnits:
 PHYSICAL_UNITS = PhysicalUnits()
 
 __all__ = ["PhysicalUnits", "PHYSICAL_UNITS"]
-

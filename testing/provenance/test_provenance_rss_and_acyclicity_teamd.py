@@ -46,4 +46,3 @@ def test_provenance_rss_error_and_acyclicity():
     assert res["structure_valid"] is True
     assert res["provenance_complete"] is True
     assert res["contamination_free"] is True
-

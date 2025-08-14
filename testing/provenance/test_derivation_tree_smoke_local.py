@@ -33,4 +33,3 @@ def test_provenance_tree_basic_paths_and_report():
     # Report shape
     report = tree.generate_audit_report()
     assert isinstance(report, dict) and "audit_metadata" in report and "integrity_verification" in report
-

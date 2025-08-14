@@ -31,4 +31,3 @@ def test_fixed_point_category_identity_and_associativity():
     right_assoc = cat.compose(outer, f)
 
     assert left_assoc.as_tuple() == right_assoc.as_tuple()
-

@@ -24,4 +24,3 @@ def test_presheaf_functoriality_identity_and_composition():
     )
 
     assert P.verify_functoriality() is True
-

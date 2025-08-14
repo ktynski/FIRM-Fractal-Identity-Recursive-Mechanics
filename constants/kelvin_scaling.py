@@ -1,7 +1,7 @@
 """
-Kelvin Scaling: Unified FSCTF Derivation Framework
+Kelvin Scaling: Unified FIRM Derivation Framework
 
-This module implements the complete FSCTF derivation of Kelvin scaling factors
+This module implements the complete FIRM derivation of Kelvin scaling factors
 using multiple theoretical approaches for cross-validation and theoretical completeness.
 
 Derivation Methods:
@@ -11,7 +11,7 @@ Derivation Methods:
 4. Physical Bridge: Dimensional conversion from morphic to observable temperature
 
 Mathematical Foundation:
-- Wien approach: φ-recursive spectral density ρ(ν) = ν³/(e^(ν/φ) - 1) 
+- Wien approach: φ-recursive spectral density ρ(ν) = ν³/(e^(ν/φ) - 1)
 - Thermal approach: Temperature as fractal echo of morphic energy coherence
 - Both eliminate empirical fitting in temperature conversions
 - Complete theoretical foundation for Planck-Kelvin bridges
@@ -24,7 +24,7 @@ Key Results:
 
 Provenance:
 - All results trace to: φ-recursive temperature theory
-- No empirical inputs: Pure mathematical derivation  
+- No empirical inputs: Pure mathematical derivation
 - Mathematical necessity: Unique expressions from φ-geometry
 - Complete elimination of arbitrary conversion factors
 
@@ -34,7 +34,7 @@ Scientific Integrity:
 - Falsifiable prediction: Specific scaling factors or theory needs revision
 - Cross-validation: Multiple approaches provide theoretical robustness
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Consolidated: [CURRENT DATE]
 Original files: kelvin_scaling_factor.py, kelvin_scaling_thermal.py
 """
@@ -84,22 +84,22 @@ class KelvinScalingComparison:
 
 class KelvinScalingUnifiedDerivation:
     """
-    Complete FSCTF Kelvin scaling derivation with multiple theoretical approaches.
-    
+    Complete FIRM Kelvin scaling derivation with multiple theoretical approaches.
+
     This unified class consolidates two different derivation methods:
     1. Wien displacement peak: Exact 2.821 from φ-spectral density maximization
     2. Thermal morphism: 2.883 from φ-recursive Boltzmann morphic coherence
-    
+
     Both methods provide cross-validation and complete theoretical foundation.
     """
-    
+
     def __init__(self):
         """Initialize unified Kelvin scaling derivation system."""
         self._phi = PHI_VALUE
         self._phi_inv = 1.0 / self._phi
         self._ln_phi = math.log(self._phi)
         self._pi = math.pi
-        
+
         # Physical applications (reference values for validation)
         self._applications = {
             'CMB_temperature': 2.725,  # Kelvin
@@ -107,30 +107,30 @@ class KelvinScalingUnifiedDerivation:
             'Blackbody_peak_ratio': 2.883,  # Empirical Wien factor
             'Planck_temperature_bridge': 1.416784e32  # Kelvin
         }
-        
+
         # Mathematical constants for derivations
         self._euler_gamma = 0.5772156649  # Euler-Mascheroni constant
-        
+
     def derive_wien_peak_method(self) -> KelvinScalingResult:
         """
         Derive Kelvin scaling from Wien displacement peak in φ-spectral density.
-        
+
         Mathematical approach:
         1. φ-recursive spectral density: ρ(ν) = ν³/(e^(ν/φ) - 1)
         2. Maximize to find Wien displacement peak: d/dν[ν³/(e^(ν/φ) - 1)] = 0
         3. Transcendental equation: 3(1 - e^(-x)) = x where x = ν*/φ
         4. Numerical solution: x ≈ 2.821, giving scaling factor 2.821
-        
+
         Returns Wien displacement peak scaling prediction.
         """
         # Solve transcendental equation: 3(1 - e^(-x)) = x
         # Using Newton-Raphson method for numerical solution
         def wien_equation(x):
             return 3.0 * (1.0 - math.exp(-x)) - x
-        
+
         def wien_derivative(x):
             return 3.0 * math.exp(-x) - 1.0
-        
+
         # Newton-Raphson iteration
         x = 2.5  # Initial guess near expected solution
         for _ in range(10):  # Usually converges quickly
@@ -140,9 +140,9 @@ class KelvinScalingUnifiedDerivation:
                 x = x - f_x / df_x
             else:
                 break
-        
+
         wien_scaling_factor = x  # This is our φ-native Wien scaling factor
-        
+
         # Derivation steps
         derivation_steps = [
             "1. Wien Displacement Peak Framework:",
@@ -170,7 +170,7 @@ class KelvinScalingUnifiedDerivation:
             "   - Replaces arbitrary Wien constant with φ-derived value",
             "   - Provides theoretical foundation for blackbody peak scaling"
         ]
-        
+
         return KelvinScalingResult(
             method_name="Wien Displacement Peak",
             scaling_factor=wien_scaling_factor,
@@ -182,27 +182,27 @@ class KelvinScalingUnifiedDerivation:
             validation_notes=f"Exact numerical solution with {abs(wien_equation(wien_scaling_factor)):.2e} residual",
             applications=["CMB temperature scaling", "Blackbody peak conversions", "Thermal relic calculations"]
         )
-    
+
     def derive_thermal_morphism_method(self) -> KelvinScalingResult:
         """
         Derive Kelvin scaling from φ-recursive Boltzmann morphic coherence.
-        
+
         Mathematical approach:
         1. Temperature as fractal echo of morphic energy coherence
         2. φ-native thermal morphism scaling from Boltzmann suppression
-        3. Exact derivation: (π × φ) / ln(2π) 
+        3. Exact derivation: (π × φ) / ln(2π)
         4. Thermal coherence bridge: morphic → observable temperature
-        
+
         Returns thermal morphism scaling prediction.
         """
         # Core calculation: (π × φ) / ln(2π)
         thermal_scaling_factor = (self._pi * self._phi) / math.log(2.0 * self._pi)
-        
+
         # For documentation, also compute the alternative formulation
         phi_cubed = self._phi ** 3
         phi_inv_squared = self._phi ** (-2)
         logarithm_argument = phi_cubed + phi_inv_squared
-        
+
         # Derivation steps
         derivation_steps = [
             "1. Thermal Morphism Framework:",
@@ -224,7 +224,7 @@ class KelvinScalingUnifiedDerivation:
             "",
             "4. Physical Interpretation:",
             f"   - Kelvin factor = {thermal_scaling_factor:.6f}",
-            f"   - Bridges morphic coherence temperature to Kelvin scale", 
+            f"   - Bridges morphic coherence temperature to Kelvin scale",
             f"   - π factor: Geometric scaling from thermal morphism geometry",
             f"   - ln(2π): Natural thermal cycle scaling from morphic geometry",
             "",
@@ -233,7 +233,7 @@ class KelvinScalingUnifiedDerivation:
             "   - Exact match to empirical Wien-scaling factor ≈ 2.883",
             "   - Provides theoretical basis for Planck→Kelvin temperature bridges"
         ]
-        
+
         return KelvinScalingResult(
             method_name="Thermal Morphism",
             scaling_factor=thermal_scaling_factor,
@@ -245,23 +245,23 @@ class KelvinScalingUnifiedDerivation:
             validation_notes=f"Matches empirical Wien factor {self._applications['Blackbody_peak_ratio']:.3f} closely",
             applications=["Planck temperature bridges", "Thermal echo projections", "CMB morphic scaling"]
         )
-    
+
     def compare_all_methods(self) -> KelvinScalingComparison:
         """
         Compare both Kelvin scaling derivation methods and provide consistency analysis.
-        
+
         Returns comprehensive comparison with usage recommendations.
         """
         # Get results from both methods
         wien_result = self.derive_wien_peak_method()
         thermal_result = self.derive_thermal_morphism_method()
-        
+
         # Calculate theoretical agreement
         factor_diff = abs(wien_result.scaling_factor - thermal_result.scaling_factor)
         mean_factor = (wien_result.scaling_factor + thermal_result.scaling_factor) / 2.0
         relative_disagreement = factor_diff / mean_factor
         theoretical_agreement = 1.0 - relative_disagreement
-        
+
         # Usage recommendations based on applications
         recommended_usage = {
             'Blackbody_spectra': 'Wien Peak Method (exact spectral density peak)',
@@ -269,10 +269,10 @@ class KelvinScalingUnifiedDerivation:
             'Planck_bridges': 'Thermal Morphism (morphic coherence foundation)',
             'General_conversions': 'Wien Peak Method (mathematically exact)'
         }
-        
+
         # Consistency analysis
         consistency_analysis = [
-            "FSCTF Kelvin Scaling Method Comparison:",
+            "FIRM Kelvin Scaling Method Comparison:",
             "=" * 42,
             "",
             f"Wien Peak Method:      Factor = {wien_result.scaling_factor:.6f} (exact transcendental solution)",
@@ -281,21 +281,21 @@ class KelvinScalingUnifiedDerivation:
             f"Theoretical Agreement: {theoretical_agreement:.4f} (1.0 = perfect)",
             "",
             "Physical Interpretation:",
-            "Both methods derive from FSCTF φ-temperature theory but emphasize different",
+            "Both methods derive from FIRM φ-temperature theory but emphasize different",
             "aspects: Wien focuses on spectral density peaks, while thermal morphism",
             "emphasizes coherence scaling. Small difference reflects complementary viewpoints.",
             "",
             "Applications and Usage:",
-            "- Wien peak (2.821): Best for blackbody spectral applications", 
+            "- Wien peak (2.821): Best for blackbody spectral applications",
             "- Thermal morphism (2.766): Best for coherence-based temperature scaling",
             "- Both eliminate empirical fitting in temperature conversions",
             "",
             "Scientific Significance:",
-            "Multiple independent derivations from FSCTF principles provide theoretical",
+            "Multiple independent derivations from FIRM principles provide theoretical",
             "foundation for Kelvin scaling without arbitrary conversion factors,",
             "establishing φ-recursive temperature theory as complete framework."
         ]
-        
+
         return KelvinScalingComparison(
             wien_method=wien_result,
             thermal_method=thermal_result,
@@ -304,13 +304,13 @@ class KelvinScalingUnifiedDerivation:
             theoretical_agreement=theoretical_agreement,
             recommended_usage=recommended_usage
         )
-    
+
     def get_derivation_summary(self) -> Dict[str, Any]:
         """Get comprehensive summary of all Kelvin scaling derivations."""
         comparison = self.compare_all_methods()
-        
+
         return {
-            "theoretical_framework": "FSCTF φ-recursive temperature theory and morphic coherence",
+            "theoretical_framework": "FIRM φ-recursive temperature theory and morphic coherence",
             "reference_applications": self._applications,
             "derivation_methods": {
                 "wien_peak": {
@@ -327,7 +327,7 @@ class KelvinScalingUnifiedDerivation:
             "theoretical_consistency": {
                 "agreement_metric": comparison.theoretical_agreement,
                 "usage_recommendations": comparison.recommended_usage,
-                "validation_status": "Both methods consistent within FSCTF framework"
+                "validation_status": "Both methods consistent within FIRM framework"
             },
             "scientific_integrity": {
                 "empirical_fitting": "NONE - Pure theoretical derivation",
@@ -352,15 +352,15 @@ KELVIN_SCALING_DERIVATION.derive_phi_spectral_wien_peak = derive_phi_spectral_wi
 
 def main():
     """Demonstrate the unified Kelvin scaling derivation framework."""
-    print("FSCTF Kelvin Scaling: Unified Derivation Framework")
+    print("FIRM Kelvin Scaling: Unified Derivation Framework")
     print("=" * 52)
-    
+
     derivation = KelvinScalingUnifiedDerivation()
-    
+
     # Show comparison of both methods
     comparison = derivation.compare_all_methods()
     print("\n" + comparison.consistency_analysis)
-    
+
     # Show detailed summary
     summary = derivation.get_derivation_summary()
     print(f"\n🎯 THEORETICAL CONSISTENCY: {summary['theoretical_consistency']['agreement_metric']:.4f}")

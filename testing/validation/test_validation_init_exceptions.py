@@ -25,4 +25,3 @@ def test_validation_init_sealed_count_zero(monkeypatch):
     monkeypatch.setattr(FW, "_sealed_datasets", {}, raising=False)
     r = validate_all_firm_predictions()
     assert "firewall_sealed_count_nonzero" in r
-

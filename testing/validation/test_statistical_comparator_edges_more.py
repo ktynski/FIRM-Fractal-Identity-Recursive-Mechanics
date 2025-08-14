@@ -33,4 +33,3 @@ def test_generate_report_with_override_and_exception_fallback(monkeypatch):
     assert "GLOBAL ANALYSIS:" in rep
     # evidence strings should be computable without errors
     assert "strong_against" in rep or "decisive" in rep or "substantial" in rep
-

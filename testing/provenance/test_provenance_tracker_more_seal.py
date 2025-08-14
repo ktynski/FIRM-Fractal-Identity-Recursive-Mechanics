@@ -10,4 +10,3 @@ def test_multiple_operations_update_seal_and_summary_keys():
     assert isinstance(seal, str) and len(seal) == 32
     summary = pt.get_derivation_summary()
     assert summary["total_operations"] == 3
-

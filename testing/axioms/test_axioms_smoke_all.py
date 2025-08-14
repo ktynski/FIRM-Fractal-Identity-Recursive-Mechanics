@@ -35,4 +35,3 @@ def test_axioms_smoke_basic_methods():
             assert isinstance(inst.verify_consistency(), bool)
         if hasattr(inst, "prove_independence"):
             assert isinstance(inst.prove_independence([]), bool)
-

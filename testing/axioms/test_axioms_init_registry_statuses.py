@@ -38,4 +38,3 @@ def test_axioms_registry_status_variants():
     finally:
         axioms.AXIOM_REGISTRY.clear()
         axioms.AXIOM_REGISTRY.update(saved)
-

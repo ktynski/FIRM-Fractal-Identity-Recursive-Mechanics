@@ -98,4 +98,3 @@ def test_report_no_results_path():
     rep = sc.generate_statistical_report()
     assert isinstance(rep, str)
     assert "Statistical analysis" in rep or "No statistical tests" in rep
-

@@ -68,4 +68,3 @@ def test_audit_report_and_verify_complete():
     assert "FIRM PROVENANCE AUDIT REPORT" in report
     # Not all ops will have all axioms; verify_complete_provenance can be False without error
     assert isinstance(pt.verify_complete_provenance(), bool)
-

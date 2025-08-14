@@ -15,4 +15,3 @@ def test_zx_hadamard_color_change_and_identity_elimination():
     # Hadamard should be eliminated and neighbors directly connected
     assert len(out.spiders) <= 3
     assert any((a == 0 and b == 1) or (a == 1 and b == 0) for a, b in out.wires) or len(out.wires) >= 1
-

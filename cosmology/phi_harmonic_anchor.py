@@ -85,4 +85,3 @@ def best_candidate_by_target(target: int = 220, count: int = 6) -> PhiPeakSeries
     best = min(cands, key=lambda s: abs(s.l0 - target))
     return best
 
-

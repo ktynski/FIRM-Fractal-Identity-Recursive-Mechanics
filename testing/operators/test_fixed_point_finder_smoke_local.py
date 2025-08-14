@@ -14,4 +14,3 @@ def test_fixed_point_solver_basic_paths():
         if res:
             sol = res[0]
             assert hasattr(sol, "fixed_point_type") and hasattr(sol, "iteration_count")
-

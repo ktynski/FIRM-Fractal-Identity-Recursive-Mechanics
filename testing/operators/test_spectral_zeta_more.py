@@ -13,4 +13,3 @@ def test_spectral_zeta_more_paths():
     keys = pref.convergence_analysis.keys()
     assert "zeta_function_convergence" in keys
     assert "mode_cutoff_dependence" in keys
-

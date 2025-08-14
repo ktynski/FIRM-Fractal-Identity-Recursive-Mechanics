@@ -14,4 +14,3 @@ def test_a_grace_2_reflexivity_methods():
     emb = REFLEXIVITY_AXIOM.establish_yoneda_embedding()
     assert cat.is_topos() is True
     assert isinstance(emb.verify_full_faithfulness(), tuple)
-

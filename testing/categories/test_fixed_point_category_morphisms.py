@@ -22,4 +22,3 @@ def test_morphisms_and_extract_physical_constants_branches():
     assert "fine_structure_alpha" in c_em
     assert "weak_coupling" in c_wk
     assert "strong_coupling" in c_st
-

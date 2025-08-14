@@ -18,4 +18,3 @@ def test_cycle_detection_in_depth_computation():
     tree.add_node(b)
     with pytest.raises(ValueError):
         tree._compute_max_depth()
-

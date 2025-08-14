@@ -25,16 +25,16 @@ Academic integrity verified: [VERIFICATION DATE]
 """
 
 try:
-    from .rigorous_physics_engine import FSCTFPurePhysicsEngine
+    from .rigorous_physics_engine import FIRMPurePhysicsEngine
     from .advanced_modules import *
     from . import fundamental
-    from . import forces  
+    from . import forces
     from . import gravity
 except ImportError:
-    FSCTFPurePhysicsEngine = None
+    FIRMPurePhysicsEngine = None
 
 __all__ = [
-    'FSCTFPurePhysicsEngine',
+    'FIRMPurePhysicsEngine',
     'fundamental',
     'forces',
     'gravity',

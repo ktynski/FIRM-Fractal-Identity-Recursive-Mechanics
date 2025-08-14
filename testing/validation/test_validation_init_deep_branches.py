@@ -53,4 +53,3 @@ def test_validate_all_with_one_stat_and_gating(monkeypatch):
     res = validation.validate_all_firm_predictions()
     assert "fine_structure_chi_squared" in res
     assert hasattr(res["fine_structure_chi_squared"], "validation_status")
-

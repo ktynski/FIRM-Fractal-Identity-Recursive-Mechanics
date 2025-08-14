@@ -22,4 +22,3 @@ def test_cmb_internal_scales_phi_native():
     # Silk damping scale positive
     lsilk = cmb._compute_silk_damping_scale()
     assert math.isfinite(lsilk) and lsilk > 0
-

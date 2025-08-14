@@ -21,4 +21,3 @@ def test_spectral_prefactor_convergence_and_fields():
     # Basic sanity on derivation steps and units
     assert isinstance(result.derivation_steps, list) and len(result.derivation_steps) > 0
     assert result.units == "dimensionless"
-

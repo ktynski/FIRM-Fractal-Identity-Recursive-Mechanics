@@ -33,5 +33,5 @@ except ImportError:
 __all__ = [
     'PathIntegralParameters',
     'PartitionFunctionResult',
-    'FSCTFPartitionFunction',
+    'FIRMPartitionFunction',
 ]

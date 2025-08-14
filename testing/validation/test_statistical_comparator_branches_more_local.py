@@ -21,4 +21,3 @@ def test_statistical_report_with_override_and_multiple_corrections():
     assert isinstance(report, str) and "FIRM Statistical Validation Report" in report
     # Ensure multiple-comparisons summary present
     assert "Holm adjusted p" in report and "Benjamini–Hochberg" in report
-

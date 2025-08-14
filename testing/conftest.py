@@ -40,4 +40,3 @@ def firewall_clean_state():
     from validation.experimental_firewall import EXPERIMENTAL_FIREWALL
     EXPERIMENTAL_FIREWALL.reset()
     yield
-

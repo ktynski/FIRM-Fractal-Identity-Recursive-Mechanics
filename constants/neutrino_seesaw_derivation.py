@@ -105,7 +105,7 @@ class NeutrinoSeesawDerivation:
 
         # Set morphic mass exponents
         # Mass exponents from φ-shell structure (no more hardcoded 13.0, 56.0!)
-        self._dirac_mass_exponent = 3 * math.log(self._phi ** 4.33)  # m_D from φ-shell depth  
+        self._dirac_mass_exponent = 3 * math.log(self._phi ** 4.33)  # m_D from φ-shell depth
         self._majorana_mass_exponent = self._phi_exponent_gap + self._dirac_mass_exponent  # M_R cascade
 
         # Shell cascade depth (canonical FIRM)

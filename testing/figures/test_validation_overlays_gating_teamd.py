@@ -18,4 +18,3 @@ def test_validation_overlays_gated_by_firewall():
     res2 = VALIDATION_OVERLAYS.generate_all()
     # It may still be empty if theory modules not available; but not erroring is key
     assert isinstance(res2, list)
-

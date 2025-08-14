@@ -37,4 +37,3 @@ def test_identity_axiom_smoke_and_ops():
     # Derive a simple measurement description
     qm = IDENTITY_AXIOM._psi_operator.derive_quantum_measurement("conscious", X)
     assert isinstance(qm.outcome_probabilities, dict)
-

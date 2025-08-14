@@ -19,4 +19,3 @@ def test_neutrino_mixing_angles_ranges():
     # Degrees in (0,90) by construction
     for a in (a12, a23, a13):
         assert 0.0 < a.theoretical_value < 90.0
-

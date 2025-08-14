@@ -36,4 +36,3 @@ def derive_omega_baryon_from_eta(T0_K: float, H0_s_inv: float) -> float:
     omega_b = (m_p * n_b0) / rho_c
     return float(omega_b)
 
-

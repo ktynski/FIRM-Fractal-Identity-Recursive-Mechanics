@@ -13,4 +13,3 @@ def test_audit_report_with_and_without_alerts(capsys):
         pass
     rep2 = t.generate_audit_report()
     assert "CONTAMINATION ALERTS" in rep2 or isinstance(rep2, str)
-

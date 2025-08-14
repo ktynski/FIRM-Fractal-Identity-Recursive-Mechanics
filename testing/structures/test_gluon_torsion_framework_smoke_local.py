@@ -6,4 +6,3 @@ def test_gluon_torsion_smoke():
     assert res.strong_coupling_alpha_s > 0
     assert isinstance(res.color_charges, list) and len(res.color_charges) == 3
     assert isinstance(res.mathematical_derivation, list) and len(res.mathematical_derivation) >= 3
-

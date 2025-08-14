@@ -36,4 +36,3 @@ def compute_contraction_residual(k: float) -> Tuple[float, float]:
 
 __all__ = ["compute_contraction_residual", "phi_value"]
 
-

@@ -6,4 +6,3 @@ def test_api_contracts_status_and_shape():
     assert isinstance(report["by_category"], dict)
     assert report["status"] in ("passed", "failed")
     assert report["total_violations"] >= 0
-

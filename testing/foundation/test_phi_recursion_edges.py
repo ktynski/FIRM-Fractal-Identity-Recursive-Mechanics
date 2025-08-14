@@ -24,4 +24,3 @@ def test_iterate_recursion_invalid_initial_value_raises():
     pr = PhiRecursion()
     with pytest.raises(ValueError):
         list(pr.iterate_recursion(initial_value=0.0))
-

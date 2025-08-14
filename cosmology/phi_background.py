@@ -129,4 +129,3 @@ def build_phi_background(h0_s_inverse: float, omega_matter: float) -> PhiBackgro
         },
     )
 
-

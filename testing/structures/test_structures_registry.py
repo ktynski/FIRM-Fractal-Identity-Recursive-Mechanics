@@ -5,4 +5,3 @@ def test_structures_registry_roundtrip():
     obj = S()
     register_physical_structure("test_struct", obj)
     assert get_physical_structure("test_struct") is obj
-

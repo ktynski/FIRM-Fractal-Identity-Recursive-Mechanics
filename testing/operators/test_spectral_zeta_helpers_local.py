@@ -9,4 +9,3 @@ def test_spectral_helpers_cutoff_and_weighting():
     # exercise phi weighting stability proxy
     pws = sz._analyze_phi_weighting_stability()
     assert isinstance(pws, float) and pws >= 0.0
-

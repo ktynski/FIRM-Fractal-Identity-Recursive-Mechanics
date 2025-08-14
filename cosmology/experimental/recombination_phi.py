@@ -7,4 +7,3 @@ _warnings.warn(
     stacklevel=2,
 )
 _exp("recombination_phi")
-

@@ -16,4 +16,3 @@ def test_provenance_complete_true_and_audit_report():
         t.log_step("empirical test", {"alpha": 137.035999084}, 0.0)
     except ContaminationError:
         pass
-

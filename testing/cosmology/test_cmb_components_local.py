@@ -10,4 +10,3 @@ def test_sachs_wolfe_plateau_supressed_towards_acoustic_scale():
     sw = cmb._compute_sachs_wolfe_plateau(ell)
     # Suppression increases with ell; monotone in the tested coarse sense
     assert sw[0] > np.median(sw) > sw[-1]
-

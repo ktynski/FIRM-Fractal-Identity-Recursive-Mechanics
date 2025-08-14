@@ -16,4 +16,3 @@ def test_grothendieck_universe_helpers():
     # Proof text exists
     proof = UNIVERSE_OMEGA.generate_mathematical_proof()
     assert isinstance(proof, str)
-

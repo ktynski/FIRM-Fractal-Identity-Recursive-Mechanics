@@ -14,4 +14,3 @@ def test_bialgebra_no_opposite_colors_no_new_edges():
     observed = set((min(a,b), max(a,b)) for a,b in out.wires)
     # When no opposite colors, rewrite should preserve original wiring
     assert observed == set((min(a,b), max(a,b)) for a,b in wires)
-

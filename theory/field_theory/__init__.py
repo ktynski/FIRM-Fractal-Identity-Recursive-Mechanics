@@ -31,7 +31,7 @@ Scientific Integrity:
     - Academic verification: Full mathematical field theory audit
 
 Author: FIRM Research Team
-Created: [IMPLEMENTATION DATE]  
+Created: [IMPLEMENTATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """
 
@@ -41,10 +41,10 @@ except ImportError:
     FIRMLagrangianFramework = None
 
 try:
-    from .field_equations import FSCTFFieldSolver
+    from .field_equations import FIRMFieldSolver
 except ImportError:
-    FSCTFFieldSolver = None
-    
+    FIRMFieldSolver = None
+
 try:
     from .morphic_equations import MorphicFieldEquation
 except ImportError:
@@ -57,7 +57,7 @@ except ImportError:
 
 __all__ = [
     'FIRMLagrangianFramework',
-    'FSCTFFieldSolver', 
+    'FIRMFieldSolver',
     'MorphicFieldEquation',
     'PhiRecursiveQFT',
 ]
@@ -66,59 +66,61 @@ __all__ = [
 class UnifiedFieldTheory:
     """
     Unified interface for complete FIRM field theory.
-    
+
     This class provides a single entry point for all field theory calculations,
     coordinating between Lagrangian formulation, field equation solving,
     and quantum field theory applications.
     """
-    
+
     def __init__(self):
         """Initialize unified field theory framework."""
         if FIRMLagrangianFramework:
             self.lagrangian = FIRMLagrangianFramework()
         else:
             self.lagrangian = None
-            
-        if FSCTFFieldSolver:
-            self.field_solver = FSCTFFieldSolver() 
+
+        if FIRMFieldSolver:
+            self.field_solver = FIRMFieldSolver()
         else:
             self.field_solver = None
-            
+
         if MorphicFieldEquation:
-            self.morphic_equations = MorphicFieldEquation()
+            # Import parameter factory function
+            from theory.field_theory.morphic_equations import create_phi_native_parameters
+            self.morphic_equations = MorphicFieldEquation(create_phi_native_parameters())
         else:
             self.morphic_equations = None
-            
+
         if PhiRecursiveQFT:
             self.qft = PhiRecursiveQFT()
         else:
             self.qft = None
-    
+
     def complete_field_analysis(self):
         """
         Run complete field theory analysis.
-        
+
         Returns:
             Dictionary with complete field theory results
         """
         results = {}
-        
+
         # Lagrangian analysis
         if self.lagrangian:
             results['lagrangian'] = self.lagrangian.derive_complete_lagrangian()
-            
+
         # Field equation solving
         if self.field_solver:
             results['field_equations'] = self.field_solver.solve_complete_field_system()
-            
+
         # Morphic field analysis
         if self.morphic_equations:
             results['morphic_fields'] = self.morphic_equations.solve_morphic_field_equation()
-            
-        # QFT integration  
+
+        # QFT integration
         if self.qft:
             results['qft_analysis'] = self.qft.complete_qft_analysis()
-            
+
         return results
 
 

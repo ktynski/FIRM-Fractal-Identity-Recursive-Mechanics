@@ -19,4 +19,3 @@ def test_firewall_gating_and_reports():
     assert fw._firewall_status == FirewallStatus.DISABLED
     rep = fw.generate_firewall_report()
     assert isinstance(rep, str) and "FIRM Experimental Firewall Security Report" in rep
-

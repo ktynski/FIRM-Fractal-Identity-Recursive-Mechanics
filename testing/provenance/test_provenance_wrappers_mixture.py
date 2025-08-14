@@ -10,4 +10,3 @@ def test_provenance_backward_compatibility_mixture():
     # summary should include operations
     s = t.get_derivation_summary()
     assert s["total_operations"] >= 2
-

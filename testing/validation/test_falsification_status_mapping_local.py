@@ -11,4 +11,3 @@ def test_status_mapping_from_alert_levels():
     }
     for al, expected in m.items():
         assert t._determine_falsification_status(al) == expected
-

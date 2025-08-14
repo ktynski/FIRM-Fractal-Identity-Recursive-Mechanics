@@ -29,4 +29,3 @@ def test_falsification_evaluators_and_report(monkeypatch):
     # Alert level mapping sanity via helper
     level = tester._determine_alert_level(0.2, next(iter(tester._criteria_specifications.values())))
     assert isinstance(level, AlertLevel)
-

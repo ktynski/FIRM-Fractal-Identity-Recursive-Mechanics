@@ -9,4 +9,3 @@ def test_thetaA_and_structure_metric_branches():
     assert res.acoustic_peaks[0].multipole_position > 0
     # structure metric computed and finite
     assert np.isfinite(res.total_chi_squared)
-

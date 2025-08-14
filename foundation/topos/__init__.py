@@ -39,6 +39,6 @@ __all__ = [
     'SoulObject',
     'SoulMorphism',
     'ToposStructure',
-    'FSCTFFunctor',
+    'FIRMFunctor',
     'NaturalTransformation',
 ]

@@ -12,4 +12,3 @@ def test_error_bounds_visible_in_summary_and_report():
     assert set(["relative_error", "absolute_error"]).issubset(last.error_bounds.keys())
     report = pt.generate_audit_report()
     assert "FIRM PROVENANCE AUDIT REPORT" in report
-

@@ -8,4 +8,3 @@ def test_mass_ratio_provenance_builder_proton_electron():
     # Value sanity via API
     ratio = FUNDAMENTAL_MASSES.get_mass_ratio("proton", "electron")
     assert ratio > 1.0
-

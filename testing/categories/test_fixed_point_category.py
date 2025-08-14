@@ -16,4 +16,3 @@ def test_gauge_group_enumeration_nonempty():
     assert any("electromagnetic" in k for k in mapping.keys())
     assert any("weak" in k for k in mapping.keys())
     assert any("strong" in k for k in mapping.keys())
-

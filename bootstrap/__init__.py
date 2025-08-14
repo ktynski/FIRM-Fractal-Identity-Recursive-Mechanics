@@ -51,6 +51,9 @@ from .void_emergence import (
     VoidEmergenceResult
 )
 
+# Aliases for integration tests
+VOID_EMERGENCE = VOID_BOOTSTRAP
+
 from .primordial_distinction import (
     PRIMORDIAL_DISTINCTION,
     PrimordialDistinction,
@@ -310,11 +313,14 @@ __all__ = [
     "validate_bootstrap_integrity",
     "trace_void_to_phi",
 
-    # Global instances
+    # Global instances  
     "VOID_BOOTSTRAP",
-    "PRIMORDIAL_DISTINCTION",
+    "PRIMORDIAL_DISTINCTION", 
     "FIRST_CALCULATION",
     "PHI_NECESSITY_PROVER",
+    
+    # Aliases for integration tests
+    "VOID_EMERGENCE",  # Alias for VOID_BOOTSTRAP
 
     # Configuration
     "BOOTSTRAP_CONFIG",

@@ -37,7 +37,7 @@ from typing import Any, Dict
 # Re-export registry functions from foundation
 from foundation.registry import register_physical_structure, get_physical_structure
 
-# Re-export primary classes and singleton instances  
+# Re-export primary classes and singleton instances
 from .dimensional_bridge import DIMENSIONAL_BRIDGE, DimensionalBridge
 from .particle_spectrum import (
     PARTICLE_SPECTRUM,

@@ -36,7 +36,7 @@ from .anti_contamination import ANTI_CONTAMINATION, AntiContamination, Contamina
 from .experimental_firewall import ExperimentalFirewall, EXPERIMENTAL_FIREWALL
 from .falsification_tester import FalsificationTester, FALSIFICATION_TESTER
 from .statistical_comparator import StatisticalComparator, STATISTICAL_COMPARATOR
-from provenance.contamination_detector import CONTAMINATION_DETECTOR
+from .anti_contamination import ANTI_CONTAMINATION as CONTAMINATION_DETECTOR
 from foundation.axioms.a_grace_4_coherence import COHERENCE_AXIOM
 from provenance.integrity_validator import INTEGRITY_VALIDATOR, ValidationStatus
 from foundation.operators.phi_recursion import PHI_RECURSION

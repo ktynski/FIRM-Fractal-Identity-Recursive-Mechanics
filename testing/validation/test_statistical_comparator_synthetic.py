@@ -14,4 +14,3 @@ def test_chi_squared_and_bayes_paths_synthetic():
     post = sc._bayesian.posterior_probability(bf)
     ci = sc._bayesian.credible_interval(np.array([0.1, 0.2, 0.3]))
     assert bf > 0 and 0 <= post <= 1 and isinstance(ci, tuple)
-

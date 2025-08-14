@@ -32,4 +32,3 @@ def test_generate_markdown_and_dot_and_cli_defaults(tmp_path):
     assert "# Codebase Map" in md and "## Modules" in md
     dot = dot_path.read_text()
     assert "digraph imports" in dot
-

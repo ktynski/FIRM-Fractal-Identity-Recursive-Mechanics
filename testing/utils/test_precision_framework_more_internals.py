@@ -8,4 +8,3 @@ def test_precision_framework_internal_estimators_and_validate():
     est_fix = PRECISION_FRAMEWORK._estimate_fixed_point_error(Decimal(1))
     v = PRECISION_FRAMEWORK._validate_precision_result("phi_power", Decimal(2), req)
     assert isinstance(est_phi, float) and isinstance(est_fix, float) and isinstance(v, dict)
-

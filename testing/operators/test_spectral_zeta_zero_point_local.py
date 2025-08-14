@@ -7,4 +7,3 @@ def test_zero_point_energy_path_and_types():
     assert isinstance(zpe["zero_point_energy"], float)
     assert isinstance(zpe["raw_sum"], float)
     assert isinstance(zpe["zeta_regularization"], float)
-

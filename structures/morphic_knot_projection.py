@@ -139,4 +139,3 @@ __all__ = [
     "verify_projection_consistency",
 ]
 
-

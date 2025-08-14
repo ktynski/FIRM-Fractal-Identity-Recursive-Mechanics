@@ -20,4 +20,3 @@ def test_cosmology_phi_native_parameters_and_bridge():
     ol = params.get("omega_lambda")
     assert 0.0 < float(om) < 1.0
     assert abs(float(ol) - (1.0 - float(om))) < 1e-12
-

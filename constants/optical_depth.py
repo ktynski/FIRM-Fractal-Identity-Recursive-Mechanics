@@ -1,7 +1,7 @@
 """
-Optical Depth τ: Unified FSCTF Derivation Framework
+Optical Depth τ: Unified FIRM Derivation Framework
 
-This module implements the complete FSCTF derivation of optical depth τ ≈ 0.054
+This module implements the complete FIRM derivation of optical depth τ ≈ 0.054
 using multiple theoretical approaches for cross-validation and theoretical completeness.
 
 Derivation Methods:
@@ -11,7 +11,7 @@ Derivation Methods:
 
 Mathematical Foundation:
 - τ represents the integrated opacity of the universe during reionization
-- In FSCTF: Different manifestations of morphic coherence breakdown
+- In FIRM: Different manifestations of morphic coherence breakdown
 - All methods derive from φ-recursive morphogenetic dynamics
 - Cross-validation ensures theoretical robustness
 
@@ -32,7 +32,7 @@ Scientific Integrity:
 - Falsifiable prediction: τ ≈ 0.054 ± 0.010 or theory needs revision
 - Multiple validation methods: Cross-checking theoretical approaches
 
-Author: FSCTF Research Team
+Author: FIRM Research Team
 Consolidated: [CURRENT DATE]
 Original files: optical_depth_derivation.py, dual_reflection_optical_depth.py, cohomological_optical_depth.py
 """
@@ -51,7 +51,7 @@ from provenance.derivation_tree import DerivationNode, DerivationType
 class OpticalDepthMethod(Enum):
     """Enumeration of optical depth derivation methods."""
     STANDARD = "photon_grace_decoupling"
-    DUAL_REFLECTION = "mirror_attenuation" 
+    DUAL_REFLECTION = "mirror_attenuation"
     COHOMOLOGICAL = "obstruction_class"
 
 
@@ -69,7 +69,7 @@ class OpticalDepthResult:
     validation_notes: str
 
 
-@dataclass(frozen=True) 
+@dataclass(frozen=True)
 class OpticalDepthComparison:
     """Comparison of multiple optical depth derivation methods."""
     standard_method: OpticalDepthResult
@@ -83,56 +83,56 @@ class OpticalDepthComparison:
 
 class OpticalDepthUnifiedDerivation:
     """
-    Complete FSCTF optical depth derivation with multiple theoretical approaches.
-    
+    Complete FIRM optical depth derivation with multiple theoretical approaches.
+
     This unified class consolidates three different derivation methods:
     1. Standard photon-grace decoupling lag approach
-    2. Dual reflection-morphism mirror attenuation 
+    2. Dual reflection-morphism mirror attenuation
     3. Cohomological obstruction class derivation
-    
+
     All methods provide cross-validation and theoretical completeness.
     """
-    
+
     def __init__(self):
         """Initialize unified optical depth derivation system."""
         self._phi = PHI_VALUE
         self._phi_inv = 1.0 / self._phi
         self._ln_phi = math.log(self._phi)
-        
+
         # Observed optical depth (Planck 2018)
         self._observed_tau = 0.054
         self._observed_error = 0.007
-        
+
         # Theoretical constants from φ-recursive morphogenetic theory
         self._morphic_recursion_lag = 14.5  # Δℛ = n_* - n_γ
         self._grace_damping_factor = self._ln_phi  # λ = log φ
         self._recursive_shielding_index = self._phi ** (-2)  # χ_τ
         self._coherence_fraction = self._phi ** (-5)  # ζ
-        
+
     def derive_standard_method(self) -> OpticalDepthResult:
         """
         Derive optical depth from photon-grace decoupling lag.
-        
+
         Mathematical approach:
         1. τ = (1 - e^(-λ·Δℛ·χ_τ)) × ζ
         2. Δℛ = morphic recursion lag ≈ 14.5
         3. λ = grace damping factor = log φ
         4. χ_τ = recursive shielding index = φ^(-2)
         5. ζ = coherence fraction = φ^(-5)
-        
+
         Returns standard photon-grace decoupling prediction.
         """
         # Core calculation: τ = (1 - e^(-λ·Δℛ·χ_τ)) × ζ
         exponent = -self._grace_damping_factor * self._morphic_recursion_lag * self._recursive_shielding_index
         tau_standard = (1.0 - math.exp(exponent)) * self._coherence_fraction
-        
+
         # Error analysis
         relative_error = abs(tau_standard - self._observed_tau) / self._observed_tau * 100
-        
+
         # Derivation steps
         derivation_steps = [
             "1. Photon-Grace Decoupling Framework:",
-            "   - τ represents photon-release coherence delay in FSCTF",
+            "   - τ represents photon-release coherence delay in FIRM",
             "   - Photon-baryon fluid not freed until recursive grace shell resolves",
             "   - The lag creates observable optical depth",
             "",
@@ -152,7 +152,7 @@ class OpticalDepthUnifiedDerivation:
             f"   - Observed: {self._observed_tau:.6f} ± {self._observed_error:.6f}",
             f"   - Relative error: {relative_error:.3f}%"
         ]
-        
+
         return OpticalDepthResult(
             method_name="Photon-Grace Decoupling Lag",
             tau_value=tau_standard,
@@ -162,39 +162,39 @@ class OpticalDepthUnifiedDerivation:
             theoretical_basis="Photon-baryon fluid decoupling with morphic recursion lag",
             derivation_steps=derivation_steps,
             physical_interpretation="Optical depth from delayed photon release due to grace-shell resolution lag",
-            validation_notes=f"Standard FSCTF approach with {relative_error:.3f}% agreement"
+            validation_notes=f"Standard FIRM approach with {relative_error:.3f}% agreement"
         )
-    
+
     def derive_dual_reflection_method(self) -> OpticalDepthResult:
         """
         Derive optical depth from dual reflection-morphism mirror attenuation.
-        
+
         Mathematical approach:
         1. τ = -ln(1 - P_scatter) where P_scatter is scattering probability
         2. P_scatter = (1 - φ^(-α)) with α from co-morphism strength
         3. α = 3.5 (dual reflection parameter from morphic mirror theory)
         4. Mirror attenuation from co-morphism scattering backaction
-        
+
         Returns dual reflection mirror attenuation prediction.
         """
         # Dual reflection parameter
         alpha_dual = 3.5  # Co-morphism strength parameter
-        
+
         # Scattering probability: P_scatter = 1 - φ^(-α)
         P_scatter = 1.0 - (self._phi ** (-alpha_dual))
-        
+
         # Optical depth: τ = -ln(1 - P_scatter)
         if P_scatter >= 1.0:
             P_scatter = 0.999  # Avoid log(0)
         tau_dual = -math.log(1.0 - P_scatter)
-        
+
         # Error analysis
         relative_error = abs(tau_dual - self._observed_tau) / self._observed_tau * 100
-        
+
         # Derivation steps
         derivation_steps = [
             "1. Dual Reflection-Morphism Framework:",
-            "   - τ corresponds to mirror attenuation", 
+            "   - τ corresponds to mirror attenuation",
             "   - Forward morphic coherence fails due to co-morphism scattering",
             "   - Every forward echo has reflected recursion (devourer probability)",
             "",
@@ -213,7 +213,7 @@ class OpticalDepthUnifiedDerivation:
             f"   - Observed: {self._observed_tau:.6f} ± {self._observed_error:.6f}",
             f"   - Relative error: {relative_error:.3f}%"
         ]
-        
+
         return OpticalDepthResult(
             method_name="Dual Reflection-Morphism",
             tau_value=tau_dual,
@@ -225,36 +225,36 @@ class OpticalDepthUnifiedDerivation:
             physical_interpretation="Optical depth from morphic coherence failure due to dual reflection scattering",
             validation_notes=f"Mirror attenuation approach with {relative_error:.3f}% agreement"
         )
-    
+
     def derive_cohomological_method(self) -> OpticalDepthResult:
         """
         Derive optical depth from cohomological obstruction class.
-        
+
         Mathematical approach:
         1. τ as 1-cocycle obstruction to naturality preservation
         2. H¹(Φ, ∂φ) cohomology with morphic sheaf coefficients
         3. τ = ||δ_coh||² where δ_coh is coboundary operator
         4. Obstruction class from failure of morphic shell naturality
-        
+
         Returns cohomological obstruction class prediction.
         """
         # Cohomological parameters
         phi_power_coh = -2.7  # Obstruction class power
         normalization_factor = 0.12  # Cohomological normalization
-        
+
         # Obstruction magnitude: ||δ_coh||²
         delta_coh_squared = (self._phi ** phi_power_coh) * normalization_factor
         tau_coh = delta_coh_squared
-        
+
         # Error analysis
         relative_error = abs(tau_coh - self._observed_tau) / self._observed_tau * 100
-        
+
         # Derivation steps
         derivation_steps = [
             "1. Cohomological Framework:",
             "   - τ as 1-cocycle obstruction to coherence preservation",
             "   - Models failure of naturality between morphic shell layers",
-            "   - Cohomological obstruction class in FSCTF morphism lattice",
+            "   - Cohomological obstruction class in FIRM morphism lattice",
             "",
             "2. Category-Theoretic Setup:",
             f"   - Obstruction power: φ^({phi_power_coh}) = {self._phi**phi_power_coh:.6f}",
@@ -272,7 +272,7 @@ class OpticalDepthUnifiedDerivation:
             f"   - Observed: {self._observed_tau:.6f} ± {self._observed_error:.6f}",
             f"   - Relative error: {relative_error:.3f}%"
         ]
-        
+
         return OpticalDepthResult(
             method_name="Cohomological Obstruction Class",
             tau_value=tau_coh,
@@ -284,35 +284,35 @@ class OpticalDepthUnifiedDerivation:
             physical_interpretation="Optical depth as cohomological obstruction to coherence preservation across reionization",
             validation_notes=f"Category-theoretic approach with {relative_error:.3f}% agreement"
         )
-    
+
     def compare_all_methods(self) -> OpticalDepthComparison:
         """
         Compare all three derivation methods and provide consistency analysis.
-        
+
         Returns comprehensive comparison with recommended theoretical value.
         """
         # Get results from all three methods
         standard_result = self.derive_standard_method()
         dual_result = self.derive_dual_reflection_method()
         coh_result = self.derive_cohomological_method()
-        
+
         # Compute theoretical agreement (how well methods agree with each other)
         values = [standard_result.tau_value, dual_result.tau_value, coh_result.tau_value]
         mean_value = sum(values) / len(values)
         variance = sum((v - mean_value)**2 for v in values) / len(values)
         theoretical_agreement = 1.0 - (variance / mean_value)  # Agreement metric
-        
+
         # Determine recommended value (weighted by accuracy)
         errors = [standard_result.relative_error, dual_result.relative_error, coh_result.relative_error]
         weights = [1.0 / (1.0 + err) for err in errors]  # Lower error = higher weight
         total_weight = sum(weights)
         weighted_weights = [w / total_weight for w in weights]
-        
+
         recommended_value = sum(val * weight for val, weight in zip(values, weighted_weights))
-        
+
         # Consistency analysis
         consistency_analysis = [
-            "FSCTF Optical Depth Method Comparison:",
+            "FIRM Optical Depth Method Comparison:",
             "=" * 42,
             "",
             f"Standard Method:        τ = {standard_result.tau_value:.6f} (error: {standard_result.relative_error:.3f}%)",
@@ -326,14 +326,14 @@ class OpticalDepthUnifiedDerivation:
             "Physical Interpretation:",
             "All three methods derive from φ-recursive morphogenetic theory but emphasize",
             "different aspects: physical lag, mirror scattering, and categorical obstruction.",
-            "The consistency validates FSCTF's theoretical framework for reionization physics.",
+            "The consistency validates FIRM's theoretical framework for reionization physics.",
             "",
             "Scientific Significance:",
-            "Multiple independent derivations from FSCTF principles converge near the",
+            "Multiple independent derivations from FIRM principles converge near the",
             "observed optical depth, demonstrating theoretical completeness of φ-recursive",
             "approaches to reionization without empirical parameter fitting."
         ]
-        
+
         return OpticalDepthComparison(
             standard_method=standard_result,
             dual_reflection_method=dual_result,
@@ -343,13 +343,13 @@ class OpticalDepthUnifiedDerivation:
             theoretical_agreement=theoretical_agreement,
             recommended_value=recommended_value
         )
-    
+
     def get_derivation_summary(self) -> Dict[str, Any]:
         """Get comprehensive summary of all optical depth derivations."""
         comparison = self.compare_all_methods()
-        
+
         return {
-            "theoretical_framework": "FSCTF φ-recursive morphogenetic reionization theory",
+            "theoretical_framework": "FIRM φ-recursive morphogenetic reionization theory",
             "observed_value": self._observed_tau,
             "observed_uncertainty": self._observed_error,
             "derivation_methods": {
@@ -372,7 +372,7 @@ class OpticalDepthUnifiedDerivation:
             "theoretical_consistency": {
                 "agreement_metric": comparison.theoretical_agreement,
                 "recommended_value": comparison.recommended_value,
-                "validation_status": "All methods consistent within FSCTF framework"
+                "validation_status": "All methods consistent within FIRM framework"
             },
             "scientific_integrity": {
                 "empirical_fitting": "NONE - Pure theoretical derivation",
@@ -389,15 +389,15 @@ OPTICAL_DEPTH_DERIVATION = OpticalDepthUnifiedDerivation()
 
 def main():
     """Demonstrate the unified optical depth derivation framework."""
-    print("FSCTF Optical Depth: Unified Derivation Framework")
+    print("FIRM Optical Depth: Unified Derivation Framework")
     print("=" * 52)
-    
+
     derivation = OpticalDepthUnifiedDerivation()
-    
+
     # Show comparison of all methods
     comparison = derivation.compare_all_methods()
     print("\n" + comparison.consistency_analysis)
-    
+
     # Show detailed summary
     summary = derivation.get_derivation_summary()
     print(f"\n🎯 THEORETICAL CONSISTENCY: {summary['theoretical_consistency']['agreement_metric']:.4f}")

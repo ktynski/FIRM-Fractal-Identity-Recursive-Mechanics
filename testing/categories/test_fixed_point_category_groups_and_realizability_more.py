@@ -16,4 +16,3 @@ def test_verify_realizability_returns_booleans():
     assert isinstance(res, dict)
     for v in res.values():
         assert isinstance(v, bool)
-

@@ -1,12 +1,12 @@
 """
 Tensors: FIRM Tensor Field Theory
 
-This package implements the complete FSCTF tensor field generalization including
+This package implements the complete FIRM tensor field generalization including
 morphic tensor fields, curvature tensors, and electromagnetic field derivations.
 
 Mathematical Foundation:
     - Morphic Tensor Field: M_μν = ∂_μ∂_νφ + T^λ_μν ∂_λφ + Δ_μν(φ)
-    - FSCTF Curvature Tensor: R_μν = φ^(-n) · ∂_λ T^λ_μν (recursive curvature)
+    - FIRM Curvature Tensor: R_μν = φ^(-n) · ∂_λ T^λ_μν (recursive curvature)
     - Charge as Cohomological Defect: Q = δ²(φ) ≠ 0 (2-coboundary obstruction)
 
 Key Modules:
@@ -19,8 +19,8 @@ Tensor Types:
     - Complete 4D spacetime tensor construction
 
 Core Insight:
-    "The morphic tensor encodes not just local field strength but also 
-    recursive memory, torsion, and morphic deviation - complete 
+    "The morphic tensor encodes not just local field strength but also
+    recursive memory, torsion, and morphic deviation - complete
     dynamics of coherence fields within spacetime lattice."
 
 Author: FIRM Research Team
@@ -34,8 +34,8 @@ except ImportError:
     pass
 
 __all__ = [
-    'FSCTFTensor',
+    'FIRMTensor',
     'TensorType',
     'MorphicTensorField',
-    'FSCTFTensorEngine',
+    'FIRMTensorEngine',
 ]

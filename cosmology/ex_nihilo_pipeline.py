@@ -1034,32 +1034,32 @@ verification_passed = True  # Stage completed successfully
         """Stage 8: Cosmic evolution from fundamental constants"""
         phi = self._phi
 
-        # COMPLETE MATHEMATICAL DERIVATIONS FROM FIRM AXIOMS  
+        # COMPLETE MATHEMATICAL DERIVATIONS FROM FIRM AXIOMS
         # Use actual derivation modules with full mathematical provenance
 
         # H₀ derivation from φ-recursive flow dynamics (with complete provenance)
         hubble_derivation = HubbleConstantDerivation()
         hubble_result = hubble_derivation.derive_phi_recursive_hubble_constant()
-        
+
         # Extract values from proven derivation
         hubble_constant_physical = hubble_result.h0_base_km_s_mpc  # Complete φ-flow derivation
         observer_correction = 1.0 + hubble_result.observer_correction_epsilon  # φ^(-ε) correction
         tension_resolution = hubble_result.tension_resolution_factor  # Harmonic resolution
-        
+
         # Apply observer correction and tension resolution (theory-side = identity)
         hubble_constant_observed = hubble_constant_physical  # ε=0, factor=1 (no empirical corrections)
-        
+
         # No quarantine required for H₀ now that φ-native derivation is completed without empirical anchors
 
         # ΩΛ derivation from φ-native vacuum fluctuations (with complete provenance)
         cosmological_derivation = CosmologicalConstantDerivation()
         cosmological_result = cosmological_derivation.derive_phi_native_cosmological_constant()
-        
+
         # Extract cosmological parameters from proven derivation
         omega_lambda_correction = cosmological_result.correction_factor  # ζ-regularized factor
         omega_lambda = cosmological_result.omega_lambda  # Complete vacuum derivation
         omega_matter = 1 - omega_lambda  # Matter = 1 - Λ (conservation)
-        
+
         # Register provenance for vacuum derivation
         require_quarantined_factor("omega_lambda_correction_1.108",
                                    cosmological_result.mathematical_expression)
@@ -1190,7 +1190,7 @@ verification_passed = True  # Stage completed successfully
             cosmic_result = self._stage_results[CosmogenesisStage.COSMIC_EVOLUTION]
             # Parameters are already derived with full provenance in _stage_8_cosmic_evolution()
             # No hardcoded values - all come from mathematical derivations
-            
+
             universe_parameters = {
                 "hubble_constant_phi_native": self._phi**7,
                 "omega_matter": "Derived from vacuum fluctuation analysis",  # From derivation modules

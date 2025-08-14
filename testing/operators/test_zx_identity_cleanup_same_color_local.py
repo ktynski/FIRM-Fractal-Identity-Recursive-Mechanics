@@ -14,4 +14,3 @@ def test_identity_cleanup_same_color_removes_degree2_zero_phase_only():
     out = zx.rewrite(d, rules=["identity_cleanup"])  # no fusion flag
     assert len(out.spiders) == 2
     assert set((min(a, b), max(a, b)) for a, b in out.wires) == {(0, 1)}
-

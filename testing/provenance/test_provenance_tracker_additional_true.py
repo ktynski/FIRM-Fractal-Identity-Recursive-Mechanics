@@ -7,4 +7,3 @@ def test_provenance_tracker_true_path_minimal_axiom_chain():
     # ensure chain recorded and cryptographic seal produced
     assert len(tracker.derivation_chain) >= 2
     assert tracker.cryptographic_seal is not None
-

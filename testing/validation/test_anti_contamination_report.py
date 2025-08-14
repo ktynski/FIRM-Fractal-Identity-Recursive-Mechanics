@@ -8,4 +8,3 @@ def test_generate_contamination_report_contains_sections():
     assert "EMPIRICAL KEYWORDS" in rep
     assert "SUSPICIOUS PATTERNS" in rep
     assert "CONTAMINATION ALERTS" in rep
-

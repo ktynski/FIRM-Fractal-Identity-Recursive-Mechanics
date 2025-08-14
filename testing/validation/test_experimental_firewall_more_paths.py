@@ -14,4 +14,3 @@ def test_firewall_verify_contamination_free_derivation_true_false():
     # Include empirical marker to force False
     bad = ["use codata_2018_constants entry"]
     assert FW.verify_contamination_free_derivation(bad) is False
-

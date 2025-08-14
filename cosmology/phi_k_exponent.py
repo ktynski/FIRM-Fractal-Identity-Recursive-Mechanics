@@ -33,4 +33,3 @@ def decompose_k_for_l0(l0: float = 220.0) -> PhiExponentDecomposition:
         l0=float(l0), k=float(k), base=base, grace_surplus=float(grace), epsilon=float(epsilon)
     )
 
-

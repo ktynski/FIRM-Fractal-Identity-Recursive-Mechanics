@@ -15,7 +15,7 @@ Key Modules:
 
 Gravitational Theory:
     - Einstein equations: G_μν = 8πG T_μν derived from Grace Operator
-    - φ-enhancement: Modified to G_μν = φ² T_μν 
+    - φ-enhancement: Modified to G_μν = φ² T_μν
     - Spacetime curvature: Emergence from mathematical necessity
     - Cosmological applications: Dark energy and expansion dynamics
 
@@ -25,7 +25,7 @@ Core Results:
     - φ-enhanced field equations with golden ratio modifications
     - Complete general relativity derivation from pure mathematics
 
-Author: FIRM Research Team  
+Author: FIRM Research Team
 Created: [REORGANIZATION DATE]
 Academic integrity verified: [VERIFICATION DATE]
 """

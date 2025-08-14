@@ -20,4 +20,3 @@ def test_firewall_gating_and_reports():
     # Emergency shutdown path
     f.emergency_shutdown("unit test")
     assert f._firewall_status == FirewallStatus.DISABLED
-

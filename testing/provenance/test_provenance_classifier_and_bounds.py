@@ -29,4 +29,3 @@ def test_classifier_justification_dependencies_and_bounds():
     # log_verification path
     t.log_verification("unit", theoretical=1.0, observed=1.0, error=0.0, verified=True)
     assert len(t.derivation_chain) >= 1
-

@@ -12,4 +12,3 @@ def test_spectral_zeta_basic_paths(monkeypatch):
     assert "zero_point_energy" in zpe
     res = sz.compute_spectral_prefactor()
     assert hasattr(res, "theoretical_value")
-

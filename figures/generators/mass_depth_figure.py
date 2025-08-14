@@ -13,6 +13,9 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 from structures.morphic_knot_projection import derive_recursive_depth_and_form_factor
 
 
@@ -69,5 +72,4 @@ if __name__ == "__main__":
     p_png, p_csv = generate_mass_depth_cn()
     print(str(p_png))
     print(str(p_csv))
-
 

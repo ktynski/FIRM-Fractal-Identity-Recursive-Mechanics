@@ -20,4 +20,3 @@ def test_check_mass_and_exnihilo_contracts(monkeypatch):
     assert isinstance(v_mass, list)
     v_ex = check_ex_nihilo_contract()
     assert isinstance(v_ex, list)
-

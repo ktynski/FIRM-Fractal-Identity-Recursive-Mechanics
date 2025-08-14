@@ -20,4 +20,3 @@ def test_validation_init_branch_conditions(monkeypatch):
     res = validate_all_firm_predictions()
     assert isinstance(res, dict)
     assert "firewall_seal_integrity" in res and "comparator_global_metrics_finite" in res
-

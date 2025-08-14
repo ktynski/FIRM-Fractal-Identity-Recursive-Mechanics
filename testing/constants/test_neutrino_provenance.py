@@ -14,4 +14,3 @@ def test_neutrino_mixing_angle_provenance_builds():
         t = d.build_mixing_angle_provenance(ang)
         assert t is not None
         assert ang.value in t.target_result
-

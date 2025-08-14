@@ -11,4 +11,3 @@ def test_theory_vs_validation_access_paths():
     EXPERIMENTAL_FIREWALL.enable_validation_phase()
     sealed = EXPERIMENTAL_FIREWALL.get_sealed_comparison("fine_structure_alpha_inv")
     assert isinstance(sealed, dict) and sealed.get("sealed") is True
-

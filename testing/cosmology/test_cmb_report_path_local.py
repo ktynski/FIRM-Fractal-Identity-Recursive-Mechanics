@@ -7,4 +7,3 @@ def test_cmb_generate_report_contains_expected_sections():
     assert "FIRM CMB Power Spectrum Report" in rep
     assert "ACOUSTIC PEAK STRUCTURE" in rep
     assert "COSMOLOGICAL PARAMETERS" in rep
-

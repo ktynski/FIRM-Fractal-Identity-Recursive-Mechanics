@@ -7,4 +7,3 @@ def test_provenance_summary_fields_and_complete():
     s = t.get_derivation_summary()
     assert isinstance(s, dict)
     assert "total_operations" in s and "operations" in s and isinstance(s["operations"], list)
-

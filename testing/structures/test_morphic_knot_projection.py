@@ -38,4 +38,3 @@ def test_charge_from_T3Y_matches_catalog():
             continue
         assert abs((q or 0.0) - spec.quantum_numbers.electric_charge) < 1e-12
 
-

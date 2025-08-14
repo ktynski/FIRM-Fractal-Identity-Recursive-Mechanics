@@ -11,4 +11,3 @@ def test_cmb_structure_public_api_smoke():
     assert hasattr(res, "multipoles") and hasattr(res, "temperature_power")
     assert hasattr(res, "acoustic_peaks") and isinstance(res.acoustic_peaks, list)
     assert hasattr(res, "cosmological_parameters") and isinstance(res.cosmological_parameters, dict)
-

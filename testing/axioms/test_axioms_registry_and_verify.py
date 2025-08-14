@@ -11,4 +11,3 @@ def test_verify_all_axioms_registry_and_statuses():
             assert results[ax_id].status in (
                 AxiomStatus.COMPLETE, AxiomStatus.CONSISTENT, AxiomStatus.INDEPENDENT, AxiomStatus.FAILED
             )
-

@@ -13,4 +13,3 @@ def test_basic_conversion_roundtrip_dimensionless_and_units():
     assert abs(back.value - mq.value) < 1e-12
     # Consistency check API: using identical dimensions should be True
     assert bridge.verify_dimensional_consistency([mq, mq]) is True
-

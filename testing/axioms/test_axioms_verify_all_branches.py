@@ -12,4 +12,3 @@ def test_verify_all_axioms_registry_path_and_empty(monkeypatch):
     finally:
         axioms.AXIOM_REGISTRY.clear()
         axioms.AXIOM_REGISTRY.update(saved)
-

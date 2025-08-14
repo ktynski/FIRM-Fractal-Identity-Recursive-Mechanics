@@ -25,4 +25,3 @@ def test_ckm_elements_and_provenance_builders():
         tree = mad.build_ckm_provenance(key)
         assert tree is not None
         assert key in tree.target_result
-

@@ -1,0 +1,223 @@
+{
+  "generation_timestamp": "2025-08-13T16:56:33.449093",
+  "completion_timestamp": "2025-08-13T16:56:50.408145",
+  "duration_seconds": 16.959052,
+  "statistics": {
+    "total_tasks": 20,
+    "successful": 20,
+    "failed": 0,
+    "start_time": "2025-08-13 16:56:33.449093",
+    "end_time": "2025-08-13 16:56:50.408145"
+  },
+  "output_directory": "figures/outputs",
+  "categories": {
+    "mathematical_foundations": {
+      "total_tasks": 8,
+      "successful": 8,
+      "failed": 0,
+      "tasks": [
+        {
+          "name": "phi_recursion_verification",
+          "description": "\u03c6-recursion convergence verification",
+          "success": true,
+          "output_file": null,
+          "error": null,
+          "generation_time": 1.2061219215393066,
+          "provenance_hash": null
+        },
+        {
+          "name": "grace_operator_convergence",
+          "description": "Grace Operator fixed point convergence",
+          "success": true,
+          "output_file": null,
+          "error": null,
+          "generation_time": 0.40137505531311035,
+          "provenance_hash": null
+        },
+        {
+          "name": "recursive_potential_wells",
+          "description": "Recursive potential V[\u03c6] well structures",
+          "success": true,
+          "output_file": "arxiv_paper/FIRM_FINAL_SUBMISSION/figures/recursive_potential_wells.png",
+          "error": null,
+          "generation_time": 0.10139894485473633,
+          "provenance_hash": null
+        },
+        {
+          "name": "dimensional_bridge",
+          "description": "Mathematical to physical unit bridge",
+          "success": true,
+          "output_file": null,
+          "error": null,
+          "generation_time": 0.8279008865356445,
+          "provenance_hash": null
+        },
+        {
+          "name": "spacetime_emergence",
+          "description": "Spacetime metric emergence from Grace Operator",
+          "success": true,
+          "output_file": "figures/outputs/spacetime_metric_emergence.png",
+          "error": null,
+          "generation_time": 0.5696191787719727,
+          "provenance_hash": "054041da328b774732128d112bb0e772efa1d5f72a17172e546c26cd837d9326"
+        },
+        {
+          "name": "manifold_progression",
+          "description": "Topological manifold progression",
+          "success": true,
+          "output_file": "figures/manifold_progression_diagram.png",
+          "error": null,
+          "generation_time": 1.9356741905212402,
+          "provenance_hash": null
+        },
+        {
+          "name": "epsilon_components",
+          "description": "\u03b5-component analysis scan",
+          "success": true,
+          "output_file": "arxiv_paper/FIRM_FINAL_SUBMISSION/figures/epsilon_components_scan.png",
+          "error": null,
+          "generation_time": 1.5724122524261475,
+          "provenance_hash": null
+        },
+        {
+          "name": "epsilon_stability",
+          "description": "\u03b5-stability analysis scan",
+          "success": true,
+          "output_file": "arxiv_paper/FIRM_FINAL_SUBMISSION/figures/epsilon_stability_scan.png",
+          "error": null,
+          "generation_time": 2.212873935699463,
+          "provenance_hash": null
+        }
+      ]
+    },
+    "physical_constants": {
+      "total_tasks": 5,
+      "successful": 5,
+      "failed": 0,
+      "tasks": [
+        {
+          "name": "alpha_inverse",
+          "description": "Fine structure constant \u03b1^(-1) derivation",
+          "success": true,
+          "output_file": "figures/outputs/alpha_inverse_comparison.png",
+          "error": null,
+          "generation_time": 0.26134490966796875,
+          "provenance_hash": "aa3952acf503e6d494064bec043a4a57ae262ad8cacf4c1ef2aeed8c9a9d2cad"
+        },
+        {
+          "name": "constants_table",
+          "description": "Physical constants derivation table",
+          "success": true,
+          "output_file": "figures/outputs/physical_constants_derivation_table.png",
+          "error": null,
+          "generation_time": 0.24941110610961914,
+          "provenance_hash": "1ac17302ee749f388e95ac991cb33655a3e2b66586f5e923e7455611f0dfdca2"
+        },
+        {
+          "name": "mass_depth",
+          "description": "Particle mass form factors from recursive depth",
+          "success": true,
+          "output_file": "(PosixPath('arxiv_paper/FIRM_FINAL_SUBMISSION/figures/mass_depth_cn.png'), PosixPath('figures/outputs/mass_depth_cn.csv'))",
+          "error": null,
+          "generation_time": 0.07774186134338379,
+          "provenance_hash": null
+        },
+        {
+          "name": "gauge_couplings_theory",
+          "description": "Gauge coupling constants emergence and unification",
+          "success": true,
+          "output_file": "figures/outputs/gauge_couplings_theory.png",
+          "error": null,
+          "generation_time": 0.7455487251281738,
+          "provenance_hash": "877b120b61ab757f3a2d97daf066fbc8c068525030f6b7796c519b18c4ee6a52"
+        },
+        {
+          "name": "particle_mass_spectrum",
+          "description": "Complete Standard Model particle mass spectrum",
+          "success": true,
+          "output_file": "figures/outputs/particle_mass_spectrum_theory.png",
+          "error": null,
+          "generation_time": 1.0231921672821045,
+          "provenance_hash": "54b2891c8e519ef6a59fe17464927f3e4589026ec1aa2ff558ac5a05dbd7101c"
+        }
+      ]
+    },
+    "cosmological_predictions": {
+      "total_tasks": 6,
+      "successful": 6,
+      "failed": 0,
+      "tasks": [
+        {
+          "name": "bao_comparison",
+          "description": "Baryon acoustic oscillations comparison",
+          "success": true,
+          "output_file": "figures/outputs/bao_comparison.png",
+          "error": null,
+          "generation_time": 0.44165706634521484,
+          "provenance_hash": "f41a72fe13c4c66f65bb4198ab7cac22c046a9fdcf8aebe23e5594d48a720386"
+        },
+        {
+          "name": "hubble_evolution",
+          "description": "Hubble parameter H(z) evolution",
+          "success": true,
+          "output_file": "figures/outputs/hz_comparison.png",
+          "error": null,
+          "generation_time": 0.4498410224914551,
+          "provenance_hash": "668ba56f52ce610939f6be096f3575aed53fcf36a2f72d882f97e3e506f852eb"
+        },
+        {
+          "name": "supernova_distances",
+          "description": "Type Ia supernova distance-redshift relation",
+          "success": true,
+          "output_file": "figures/outputs/sn_mu_comparison.png",
+          "error": null,
+          "generation_time": 0.33712315559387207,
+          "provenance_hash": "4868b6d61432fa9dff5929eae81b61b341e925f89adf6787c06cb6ad39da0d3d"
+        },
+        {
+          "name": "dark_energy_evolution",
+          "description": "Dark energy \u03c6-scaling evolution",
+          "success": true,
+          "output_file": null,
+          "error": null,
+          "generation_time": 1.4528498649597168,
+          "provenance_hash": null
+        },
+        {
+          "name": "sparc_rotation_curves",
+          "description": "SPARC galaxy rotation curves vs FIRM predictions",
+          "success": true,
+          "output_file": "figures/outputs/sparc_rotation_curves.png",
+          "error": null,
+          "generation_time": 0.7888960838317871,
+          "provenance_hash": "46988da2e644bc008301774a7767f1b10330ef0034a2f0d4629f957dcf7b92cd"
+        },
+        {
+          "name": "inflation_timeline",
+          "description": "Cosmic inflation timeline",
+          "success": true,
+          "output_file": null,
+          "error": null,
+          "generation_time": 1.2796978950500488,
+          "provenance_hash": null
+        }
+      ]
+    },
+    "consciousness_integration": {
+      "total_tasks": 1,
+      "successful": 1,
+      "failed": 0,
+      "tasks": [
+        {
+          "name": "consciousness_pnp_correlation",
+          "description": "P=NP consciousness correlation with \u03c6-harmonics",
+          "success": true,
+          "output_file": "figures/outputs/consciousness_pnp_correlation.png",
+          "error": null,
+          "generation_time": 1.0048120021820068,
+          "provenance_hash": "44274592a8ad010cd67c56f3d40a1591ef8b35f640f8aa1c570a6ea317fdec18"
+        }
+      ]
+    }
+  }
+}

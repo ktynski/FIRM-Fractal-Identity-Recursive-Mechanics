@@ -14,4 +14,3 @@ def test_theory_only_cmb_skymap_generates_png(tmp_path):
     assert Path(out).exists(), "Skymap PNG not created"
     # File size sanity (non-empty image)
     assert Path(out).stat().st_size > 5_000, "Skymap PNG too small or empty"
-

@@ -13,4 +13,3 @@ def test_falsification_tester_basic_report_and_status():
     # Report generation path
     rep = ft.generate_falsification_report()
     assert isinstance(rep, str) and "FIRM Falsification Monitoring Report" in rep
-

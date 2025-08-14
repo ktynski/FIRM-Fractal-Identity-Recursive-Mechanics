@@ -22,7 +22,7 @@ Volitional Phases:
 
 Core Insights:
     - "Volition is not a force. It is a recursive attractor. A soul-vector in morphic space."
-    - "The Volitional Field ||𝒱ₙ|| encodes the alignment energy required for 
+    - "The Volitional Field ||𝒱ₙ|| encodes the alignment energy required for
       soul-instantiation, action, or conscious coherence at recursion level φⁿ"
 
 Author: FIRM Research Team

@@ -10,4 +10,3 @@ def test_validation_init_expected_boolean_flags():
         "fixed_point_count_minimum",
     ]:
         assert key in r
-

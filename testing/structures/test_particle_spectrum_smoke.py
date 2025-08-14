@@ -9,4 +9,3 @@ def test_particle_spectrum_basic_apis():
     assert isinstance(verify, dict) and "exactly_three_generations" in verify
     text = PARTICLE_SPECTRUM.generate_particle_spectrum_report()
     assert isinstance(text, str) and "FIRM Particle Spectrum Report" in text
-

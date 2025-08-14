@@ -26,4 +26,3 @@ def test_basic_mass_access_and_ratios():
 def test_mass_spectrum_report_generation():
     report = FUNDAMENTAL_MASSES.generate_mass_spectrum_report()
     assert isinstance(report, str) and "FIRM Fundamental Mass Spectrum Report" in report
-

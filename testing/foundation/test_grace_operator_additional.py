@@ -19,4 +19,3 @@ def test_entropy_minimization_dummy_structure():
     s = S(1.0)
     # Using default apply fallback path inside verify_entropy_minimization
     assert GRACE_OPERATOR.verify_entropy_minimization(s)
-

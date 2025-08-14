@@ -21,4 +21,3 @@ def test_cmb_spectrum_damping_and_nonnegative():
     low_damp_mean = float(damping[: max(1, m // 10)].mean())
     high_damp_mean = float(damping[-max(1, m // 10) :].mean())
     assert high_damp_mean < low_damp_mean
-

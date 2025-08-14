@@ -17,4 +17,3 @@ def test_abandonment_guard_and_alert_generation(monkeypatch):
     status = tester.get_current_status()
     # At least one alert must be recorded
     assert status["total_alerts"] >= 1
-

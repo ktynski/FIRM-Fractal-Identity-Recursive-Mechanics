@@ -64,4 +64,3 @@ def test_stageresult_flags_and_result_integrity_minimal():
     )
 
     assert result.verify_complete_integrity() is True
-

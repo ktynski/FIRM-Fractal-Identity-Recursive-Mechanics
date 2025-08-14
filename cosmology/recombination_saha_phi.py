@@ -133,4 +133,3 @@ def compute_zrec_saha_phi(H0_s_inv: float, omega_m: float, omega_b: float, omega
         },
     )
 
-

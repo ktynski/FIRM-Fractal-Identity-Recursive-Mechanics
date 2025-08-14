@@ -9,4 +9,3 @@ def test_verify_all_axioms_emits_results_for_registered():
     if AXIOM_REGISTRY:
         for k in AXIOM_REGISTRY.keys():
             assert k in res
-

@@ -18,4 +18,3 @@ def test_verify_complete_provenance_positive():
     pt.log_step("fixed point mapping", {"z": 3}, 3)
     pt.log_step("consciousness identity", {"w": 4}, 4)
     assert pt.verify_complete_provenance() in (True, False)  # Should not crash
-

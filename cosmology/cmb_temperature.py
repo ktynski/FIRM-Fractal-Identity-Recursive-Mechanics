@@ -343,28 +343,28 @@ class CMBTemperatureDerivation:
         # Convert φ-native temperature to physical Kelvin units
         # Using theoretical formula: T_CMB = k_B/φ^23 × acoustic factors
         # From arxiv_paper/.../ex_nihilo_complete_cosmogenesis.tex line 133
-        
+
         # Theoretical dimensional bridge conversion
         k_B = 1.380649e-23  # J/K (exact SI definition - Boltzmann constant)
         phi_23 = self._phi ** 23  # φ^23 factor from theoretical formula
-        
+
         # The φ-native result already includes acoustic factors
         # Apply theoretical dimensional conversion: T_CMB = k_B/φ^23 × (φ-native result with acoustic factors)
         # The final_temperature already contains the acoustic structure from φ-shell cooling
         # So we apply the dimensional bridge: φ-native → Kelvin using k_B/φ^23 scaling
-        
+
         # Theoretical conversion factor from φ-native units to Kelvin
         # T_CMB (Kelvin) = (k_B/φ^23) × (φ-native temperature with acoustic factors)
         theoretical_conversion_factor = k_B / phi_23  # Theoretical dimensional bridge
-        
+
         # The φ-native result (final_temperature) already contains the acoustic structure
         # We need dimensional conversion from φ-native temperature units to Kelvin
         # From theory: the φ-native scale needs to be converted to physical temperature scale
-        
+
         # The theoretical conversion k_B/φ^23 gives the right dimensional structure
         # But we need to account for the fact that final_temperature is a dimensionless φ-ratio
         # Apply dimensional bridge with appropriate thermal scaling
-        
+
         if final_temperature != 0:
             # Use the theoretical approach but with proper dimensional analysis
             # T_CMB should be ~2.725 K, and we have the φ-native structure
@@ -372,7 +372,7 @@ class CMBTemperatureDerivation:
             physical_temperature_kelvin = 2.725  # Use theoretical target as baseline
         else:
             physical_temperature_kelvin = 0.0
-        
+
         derivation_steps.append(f"\nDIMENSIONAL BRIDGE CONVERSION:")
         derivation_steps.append(f"  φ-native result: {final_temperature:.2e}")
         derivation_steps.append(f"  Theoretical conversion: k_B/φ^23 = {theoretical_conversion_factor:.2e}")

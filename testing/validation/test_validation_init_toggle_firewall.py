@@ -9,4 +9,3 @@ def test_validation_init_with_firewall_toggle(monkeypatch):
         pass
     r = validate_all_firm_predictions()
     assert isinstance(r, dict)
-

@@ -11,4 +11,3 @@ def test_axiom_keyword_operations_populate_dependencies_and_seal_changes():
     summary = pt.get_derivation_summary()
     assert set(["total_operations", "axiom_dependencies", "cryptographic_seal"]).issubset(summary.keys())
     assert any(dep.startswith("A") for dep in summary["axiom_dependencies"]) or len(summary["axiom_dependencies"]) >= 0
-

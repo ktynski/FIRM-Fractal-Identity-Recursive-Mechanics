@@ -25,4 +25,3 @@ def test_axioms_exports_are_present():
     )
     # Just ensure imports resolve
     assert BaseAxiom is not None and AxiomProtocol is not None
-

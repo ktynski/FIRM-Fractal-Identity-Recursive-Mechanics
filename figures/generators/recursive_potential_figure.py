@@ -11,7 +11,7 @@ from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
 
-from theory.fsctf_lagrangian import FSCTFParams, V_recursive
+from theory.field_theory.lagrangian import LagrangianParameters, FIRMLagrangian
 
 
 def generate_recursive_potential_wells(
@@ -25,8 +25,21 @@ def generate_recursive_potential_wells(
     xs = np.linspace(phi_min, phi_max, n)
     fig, ax = plt.subplots(figsize=(7.5, 4.5))
     for d in depths:
-        params = FSCTFParams(depth_d=d, R_max=10)
-        V = np.array([V_recursive(x, G_val, params) for x in xs], dtype=float)
+        # Create parameters for depth d
+        params = LagrangianParameters(
+            field_mass=1.0,
+            coupling_strength=1.0,
+            d=d,
+            lambda_coefficients={1: 1.0, 2: 0.5, 3: 0.25},  # Example coefficients
+            max_terms=10,
+            xi=G_val,
+            grace_amplitude=1.0,
+            devourer_amplitude=1.0,
+            phi_background=0.0,
+            phi_symmetry_breaking=False
+        )
+        lagrangian = FIRMLagrangian(params)
+        V = np.array([lagrangian.compute_recursive_potential(x) for x in xs], dtype=float)
         ax.plot(xs, V, lw=1.2, label=f"d={d}")
     ax.axhline(0.0, color="#999", lw=0.6)
     ax.set_xlabel("φ")
@@ -46,5 +59,4 @@ def generate_recursive_potential_wells(
 if __name__ == "__main__":
     p = generate_recursive_potential_wells()
     print(str(p))
-
 

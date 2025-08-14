@@ -25,4 +25,3 @@ def test_cosmology_public_api_and_structures():
     resp = verify_observational_agreement(dataset_id="planck_2018_cmb")
     assert resp["status"] in ("blocked", "granted")
     assert "derived" in resp and isinstance(resp["derived"], dict)
-
