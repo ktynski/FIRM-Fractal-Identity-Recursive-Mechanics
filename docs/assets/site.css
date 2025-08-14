@@ -1620,3 +1620,277 @@ article li {
     display: block;
   }
 }
+
+/* Seeking Critics Section */
+.seeking-critics {
+  background: var(--bg-secondary);
+  padding: 4rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.critics-intro {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.critics-invitation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.critic-call h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.critic-challenges {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.challenge {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+}
+
+.challenge-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.challenge h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.challenge p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.honest-admission {
+  background: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--accent-2);
+}
+
+.honest-admission h3 {
+  color: var(--accent-2);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.honest-admission p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.honest-admission p:last-child {
+  margin-bottom: 0;
+}
+
+/* Join Discovery Section */
+.join-discovery {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.join-discovery h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.discovery-intro {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.participation-levels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+}
+
+.participation-level {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.level-header {
+  margin-bottom: 1.5rem;
+}
+
+.level-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.level-header h3 {
+  color: white;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.participation-level p {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.level-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.level-actions .cta {
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+}
+
+.discovery-conclusion {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.conclusion-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.conclusion-cta {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Moment of Truth Section */
+.moment-of-truth {
+  background: var(--bg-secondary);
+  padding: 4rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.moment-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.moment-lead {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.moment-points {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.moment-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: var(--bg-primary);
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+}
+
+.moment-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.moment-point h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.moment-point p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.moment-conclusion {
+  text-align: center;
+  padding: 2rem;
+  background: var(--bg-primary);
+  border-radius: 12px;
+  border: 2px solid var(--accent-2);
+}
+
+.moment-conclusion p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.moment-conclusion p:last-child {
+  margin-bottom: 0;
+  color: var(--accent-2);
+  font-weight: 600;
+}
+
+/* Mobile Responsiveness for New Sections */
+@media (max-width: 768px) {
+  .critics-invitation {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .participation-levels {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .moment-point {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .challenge {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
