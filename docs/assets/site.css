@@ -1060,17 +1060,28 @@ article li {
   .fig img {
     max-height: 300px !important;
   }
-  .key-equation {
+  /* TABLET SOLUTION: Simplified approach with generous padding */
+  .key-equation, .math-block {
+    padding: 2rem 1.5rem;
     font-size: 1rem;
-    padding: 3.5rem 1rem 1rem 1rem;
+    margin: 1.5rem 0;
   }
-  .math-block {
-    font-size: 1rem;
-    padding: 3.5rem 1rem 1rem 1rem;
-  }
+  
   .insight, .comparison, .breakthrough, .warning {
-    padding: 3.5rem 1.25rem 1rem 1.25rem;
-    margin: 1rem 0;
+    padding: 2rem 1.5rem;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  /* Keep labels but with better positioning */
+  .key-equation::before, .math-block::before, .warning::before {
+    top: 12px;
+    font-size: 0.7rem;
+  }
+  
+  .insight::before, .comparison::before, .breakthrough::before {
+    top: 12px;
+    font-size: 0.7rem;
   }
 }
 
@@ -1091,20 +1102,39 @@ article li {
   .fig img, .fig-col img {
     max-height: 250px !important;
   }
-  .key-equation, .math-block {
+  
+  /* MOBILE SOLUTION: Hide decorative labels, focus on content */
+  .key-equation, .math-block, .insight, .comparison, .breakthrough, .warning {
+    padding: 1rem;
     font-size: 0.9rem;
-    padding: 3rem 0.75rem 0.75rem 0.75rem;
-  }
-  .insight, .comparison, .breakthrough, .warning {
-    padding: 3rem 1rem 0.75rem 1rem;
+    margin: 1rem 0;
+    border-left-width: 4px; /* Stronger left border for visual distinction */
   }
   
-  /* Adjust ::before positions for small screens */
-  .key-equation::before, .math-block::before, .warning::before {
-    top: 20px;
-  }
+  /* Hide all decorative ::before labels on mobile - they're not essential */
+  .key-equation::before, .math-block::before, .warning::before,
   .insight::before, .comparison::before, .breakthrough::before {
-    top: 18px;
+    display: none;
+  }
+  
+  /* Add subtle top borders instead for visual distinction */
+  .key-equation {
+    border-top: 3px solid var(--warn);
+  }
+  .warning {
+    border-top: 3px solid var(--warn);
+  }
+  .math-block {
+    border-top: 3px solid var(--accent);
+  }
+  .insight {
+    border-top: 3px solid var(--accent);
+  }
+  .comparison {
+    border-top: 3px solid var(--accent);
+  }
+  .breakthrough {
+    border-top: 3px solid var(--accent-2);
   }
 }
 
