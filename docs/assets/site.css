@@ -201,9 +201,9 @@ article p {
   z-index: 1;
 }
 
-.breakthrough {
-  background: linear-gradient(135deg, rgba(126, 231, 135, 0.15) 0%, rgba(110, 168, 254, 0.15) 100%);
-  border: 2px solid var(--accent-2);
+.comparison {
+  background: linear-gradient(135deg, rgba(110, 168, 254, 0.15) 0%, rgba(126, 231, 135, 0.15) 100%);
+  border: 2px solid var(--accent);
   padding: 1.5rem;
   margin: 1.5rem 0;
   border-radius: 12px;
@@ -211,12 +211,12 @@ article p {
   overflow: hidden;
 }
 
-.breakthrough::before {
-  content: "🚀 BREAKTHROUGH";
+.comparison::before {
+  content: "📊 COMPARISON";
   position: absolute;
   top: -10px;
   left: 15px;
-  background: var(--accent-2);
+  background: var(--accent);
   color: var(--bg);
   padding: 3px 8px;
   border-radius: 3px;
@@ -450,7 +450,7 @@ article li {
     font-size: 1rem;
     padding: 1rem;
   }
-  .insight, .breakthrough, .warning {
+  .insight, .comparison, .warning {
     padding: 1rem;
     margin: 1rem 0;
   }
@@ -477,7 +477,7 @@ article li {
     font-size: 0.9rem;
     padding: 0.75rem;
   }
-  .insight, .breakthrough, .warning {
+  .insight, .comparison, .warning {
     padding: 0.75rem;
   }
 }
