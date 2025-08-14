@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ex Nihilo Reality — The Article</title>
+  <link rel="stylesheet" href="assets/site.css" />
+  <style>
+    .article { max-width: 1100px; margin: 40px auto; padding: 0 16px; }
+    .article h1, .article h2, .article h3 { margin: 16px 0; }
+    .article p { line-height: 1.7; margin: 12px 0; }
+    .toc { position: sticky; top: 10px; align-self: flex-start; min-width: 240px; }
+    .toc .card { position: sticky; top: 10px; }
+    .articleLayout { display: grid; grid-template-columns: 1fr 3fr; gap: 16px; }
+    .fig { margin: 18px 0; }
+    .fig img { width: 100%; height: auto; border-radius: 8px; }
+    .fig .caption { font-size: 14px; color: #667; margin-top: 6px; }
+    @media (max-width: 980px){ .articleLayout { grid-template-columns: 1fr; } .toc{ position: initial; } }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="brand"><a href="index.html" style="text-decoration:none;color:inherit;">Ex Nihilo Reality</a></div>
+      <a href="index.html#featured">Featured</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="FIGURE_GALLERY.md">Markdown Index</a>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="article">
+    <div class="articleLayout">
+      <aside class="toc">
+        <div class="card">
+          <h3>Contents</h3>
+          <ol>
+            <li><a href="#motivation">A new standard of evidence</a></li>
+            <li><a href="#architecture">The architecture of proof‑by‑construction</a></li>
+            <li><a href="#geometry">Geometry that answers back</a></li>
+            <li><a href="#spectral">When spectra speak, we listen</a></li>
+            <li><a href="#category">Categories that compute</a></li>
+            <li><a href="#topology">Topology as a narrative</a></li>
+            <li><a href="#reproduce">Reproduce, falsify, improve</a></li>
+          </ol>
+        </div>
+      </aside>
+
+      <article>
+        <h1>Mathematics that compiles: a guided tour</h1>
+        <p>Every generation of mathematics has asked for a different kind of evidence. Ours asks for code. Here we present a library of artifacts—figures generated deterministically from mathematics—that constitute <i>executable arguments</i>. They are not illustrations of claims; they are the claims themselves, rendered in a form that can be audited, reproduced, and, if necessary, falsified.</p>
+
+        <h2 id="motivation">1. A new standard of evidence</h2>
+        <p>We replace “trust the author” with “trust the artifact.” Each figure is the output of a generator tied to formal structure: theorems and constructions in geometry, analysis, topology, and category theory. If an argument survives regeneration from source, it earns the right to be believed; if it does not, it yields. This is not contrarian posturing—it is a practical upgrade to mathematical hygiene.</p>
+        <div class="fig">
+          <img id="fIntro" alt="Overview" />
+          <div class="caption">Overview of the program: categorical backbone, spectral adjudication, and geometric/topological control.</div>
+          <div style="margin-top:6px; display:flex; gap:8px;">
+            <a id="fIntroOpen" class="btn" target="_blank">open</a>
+            <a id="fIntroPeer" class="btn" target="_blank">peer‑review</a>
+          </div>
+        </div>
+
+        <h2 id="architecture">2. The architecture of proof‑by‑construction</h2>
+        <p>The architecture has three primary beams. (i) <b>Composition</b>: categorical structure prevents local cleverness from breaking global coherence. (ii) <b>Spectrum</b>: operators adjudicate by revealing invariants that arguments must respect. (iii) <b>Flow</b>: geometric PDEs, curvature bounds, and spectral sequences propagate constraints through the argument until a claim either survives or collapses.</p>
+
+        <h2 id="geometry">3. Geometry that answers back</h2>
+        <p>Comparison theorems do not merely inspire pictures—they produce certifiable bounds. Heat kernels do not merely suggest intuition—they chart the actual diffusion of structure. The figures here are quantitative witnesses, not persuasive sketches.</p>
+        <div class="fig">
+          <img id="fGeom" alt="Geometry" />
+          <div class="caption">Curvature comparison and heat kernel behavior rendered as reproducible constructions.</div>
+          <div style="margin-top:6px; display:flex; gap:8px;">
+            <a id="fGeomOpen" class="btn" target="_blank">open</a>
+            <a id="fGeomPeer" class="btn" target="_blank">peer‑review</a>
+          </div>
+        </div>
+
+        <h2 id="spectral">4. When spectra speak, we listen</h2>
+        <p>Operators are honest narrators: their spectra cannot be talked into compliance. Our spectral figures compute eigenvalues, resolvents, and zeta‑like invariants that arbitrate competing intuitions. Where rhetoric stalls, the spectrum finishes the argument.</p>
+        <div class="fig">
+          <img id="fSpec" alt="Spectral" />
+          <div class="caption">Eigenstructures and spectral zeta behavior provide basis‑invariant evidence.</div>
+          <div style="margin-top:6px; display:flex; gap:8px;">
+            <a id="fSpecOpen" class="btn" target="_blank">open</a>
+            <a id="fSpecPeer" class="btn" target="_blank">peer‑review</a>
+          </div>
+        </div>
+
+        <h2 id="category">5. Categories that compute</h2>
+        <p>Category theory is sometimes accused of aesthetic distance from computation. We take the opposite route: diagrams compile. Functoriality, naturality, and enrichment are not slogans but invariants that survive code generation. The categorical backbone is the guarantor of compositional honesty.</p>
+        <div class="fig">
+          <img id="fCat" alt="Category" />
+          <div class="caption">φ‑enhanced morphisms and functors under executable naturality constraints.</div>
+          <div style="margin-top:6px; display:flex; gap:8px;">
+            <a id="fCatOpen" class="btn" target="_blank">open</a>
+            <a id="fCatPeer" class="btn" target="_blank">peer‑review</a>
+          </div>
+        </div>
+
+        <h2 id="topology">6. Topology as a narrative</h2>
+        <p>Spectral sequences turn “hand‑wavy” topological stories into page‑by‑page narratives with a destination. When the sequence converges, the claim is earned. When it does not, the obstruction is specific. Either way, the artifact tells the story.</p>
+        <div class="fig">
+          <img id="fTop" alt="Topology" />
+          <div class="caption">From de Rham to Eilenberg–Moore: convergence as computed homology.</div>
+          <div style="margin-top:6px; display:flex; gap:8px;">
+            <a id="fTopOpen" class="btn" target="_blank">open</a>
+            <a id="fTopPeer" class="btn" target="_blank">peer‑review</a>
+          </div>
+        </div>
+
+        <h2 id="reproduce">7. Reproduce, falsify, improve</h2>
+        <p>We encourage independent regeneration. If you can break an artifact by honest recomputation, the claim breaks with it—send a patch. If it survives, strengthen it and take credit. This is mathematics without ceremony: only the argument remains.</p>
+        <pre class="subtle">python figures/peer_review/sync_and_verify.py --rebuild-manifest
+python figures/peer_review/sync_and_verify.py --prepare-submission</pre>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    const RAW_BASE = 'https://raw.githubusercontent.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/main/';
+    async function headOrFallback(peer, canon){
+      try { const r = await fetch(peer, { method: 'HEAD', cache: 'no-store' }); if (r.ok) return peer; } catch(e){}
+      return canon;
+    }
+    function canonical(filename){ return RAW_BASE + 'figures/canonical_outputs/' + filename; }
+    function arxiv(filename){ return RAW_BASE + 'arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/' + filename; }
+
+    function setFig(imgId, openId, peerId, filename){
+      const url = canonical(filename);
+      const img = document.getElementById(imgId);
+      const open = document.getElementById(openId);
+      const peer = document.getElementById(peerId);
+      if (img) img.src = url;
+      if (open) open.href = url;
+      if (peer) headOrFallback(arxiv(filename), url).then(href => peer.href = href);
+    }
+
+    // Map representative figures to sections
+    setFig('fIntro','fIntroOpen','fIntroPeer','conceptual_overview_diagram.png');
+    setFig('fGeom','fGeomOpen','fGeomPeer','riemannian_curvature_comparison.png');
+    setFig('fSpec','fSpecOpen','fSpecPeer','spectral_analysis_phi_operators.png');
+    setFig('fCat','fCatOpen','fCatPeer','category_theory_phi_morphisms.png');
+    setFig('fTop','fTopOpen','fTopPeer','eilenberg_moore_spectral_sequence.png');
+  </script>
+</body>
+</html>
