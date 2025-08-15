@@ -630,8 +630,7 @@ p { line-height: 1.6; margin-bottom: 1rem; }
   color: inherit;
 }
 
-.hero { max-width: 1200px; margin: 20px auto; display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; padding: 0 16px; align-items: center; position: relative; z-index: 1; }
-@media (max-width: 900px) { .hero { grid-template-columns: 1fr; } }
+
 .card { background: var(--panel); border: 1px solid #262c39; border-radius: 8px; padding: 16px; position: relative; z-index: 2; }
 .card.compact { padding: 12px; }
 .showcase-image { width: 100%; border-radius: 8px; border: 2px solid var(--accent); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
@@ -1531,10 +1530,7 @@ article li {
   .toc {
     position: initial;
   }
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 2rem 1rem;
-  }
+
   .toolbar {
     flex-direction: column;
     align-items: stretch;
@@ -2229,5 +2225,902 @@ article li {
   
   .integrity-item {
     padding: 1rem;
+  }
+}
+
+/* Skeptics Section Enhanced Styling */
+
+/* Skeptics Hero Section */
+.skeptics-hero {
+  background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.skeptics-hero h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.skeptics-hero .hero-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skeptics-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.overview-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.overview-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.overview-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Enhanced Skeptics Section */
+.skeptics-section {
+  padding: 4rem 0;
+  background: var(--bg-primary);
+}
+
+.accordion-category {
+  margin-bottom: 3rem;
+}
+
+.accordion-category h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+  color: var(--text);
+}
+
+/* Enhanced Accordion Items */
+.accordion-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: var(--panel);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 15px rgba(110, 168, 254, 0.1);
+}
+
+.accordion-header {
+  background: linear-gradient(135deg, var(--panel), rgba(110, 168, 254, 0.05));
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1.5rem;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: linear-gradient(135deg, rgba(110, 168, 254, 0.1), var(--panel));
+}
+
+.question-icon {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.accordion-header::after {
+  content: '+';
+  color: var(--accent);
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-header::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  padding: 0 1.5rem;
+}
+
+.accordion-item.active .accordion-content {
+  padding: 1.5rem;
+}
+
+/* Enhanced Skeptical View and Response */
+.skeptical-view, .response {
+  margin-bottom: 2rem;
+}
+
+.skeptical-view h4, .response h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.skeptical-view h4 {
+  color: var(--warn);
+}
+
+.response h4 {
+  color: var(--accent);
+}
+
+.skeptical-view {
+  background: rgba(240, 168, 86, 0.1);
+  border-left: 4px solid var(--warn);
+  padding: 1.5rem;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+
+.response {
+  background: rgba(110, 168, 254, 0.05);
+  border-left: 4px solid var(--accent);
+  padding: 1.5rem;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Evidence Grid */
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.evidence-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.evidence-item h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.evidence-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.evidence-item li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.evidence-item li:before {
+  content: '•';
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.evidence-item li:last-child {
+  border-bottom: none;
+}
+
+/* Mathematical Proof */
+.mathematical-proof {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.mathematical-proof h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.math-display {
+  background: var(--bg-primary);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Falsification Examples */
+.falsification-examples {
+  margin: 2rem 0;
+}
+
+.falsification-examples h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.prediction-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.prediction-card h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.prediction-details {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.prediction-value, .experimental-value, .agreement {
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.prediction-value {
+  background: rgba(110, 168, 254, 0.1);
+  border-left: 3px solid var(--accent);
+}
+
+.experimental-value {
+  background: rgba(126, 231, 135, 0.1);
+  border-left: 3px solid var(--accent-2);
+}
+
+.agreement {
+  background: rgba(240, 168, 86, 0.1);
+  border-left: 3px solid var(--warn);
+}
+
+.falsification-principle {
+  background: rgba(110, 168, 254, 0.1);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.falsification-principle h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+/* Parameter Comparison Table */
+.parameter-comparison {
+  margin: 1.5rem 0;
+}
+
+.parameter-comparison h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.comparison-table {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  background: var(--accent);
+  color: var(--bg-primary);
+  font-weight: 600;
+}
+
+.header-cell {
+  padding: 1rem;
+  text-align: center;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  border-bottom: 1px solid var(--border);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.cell {
+  padding: 1rem;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+
+.cell:last-child {
+  border-right: none;
+}
+
+/* Axiom Foundations */
+.axiom-foundations {
+  margin: 1.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  overflow: hidden;
+}
+
+.axiom-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.axiom-item:last-child {
+  border-bottom: none;
+}
+
+.axiom-header {
+  background: rgba(110, 168, 254, 0.1);
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.axiom-header:hover {
+  background: rgba(110, 168, 254, 0.2);
+}
+
+.axiom-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 1rem;
+}
+
+.axiom-item.active .axiom-content {
+  padding: 1rem;
+}
+
+.axiom-statement, .axiom-meaning, .axiom-foundation {
+  margin-bottom: 1rem;
+}
+
+.axiom-statement h6, .axiom-meaning h6, .axiom-foundation h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.axiom-key-points, .axiom-verification {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.axiom-key-points h5, .axiom-verification h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.axiom-key-points ul {
+  list-style: none;
+  padding: 0;
+}
+
+.axiom-key-points li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.axiom-key-points li:before {
+  content: '✓';
+  color: var(--accent-2);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.axiom-key-points li:last-child {
+  border-bottom: none;
+}
+
+/* Theory Hierarchy */
+.theory-hierarchy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.hierarchy-level {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  min-width: 300px;
+}
+
+.level-label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.level-description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.hierarchy-arrow {
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Philosophy vs Physics Comparison */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.comparison-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.comparison-item h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.comparison-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.comparison-item li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.comparison-item li:before {
+  content: '•';
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.comparison-item li:last-child {
+  border-bottom: none;
+}
+
+/* Verification Progress */
+.verification-progress {
+  margin: 1.5rem 0;
+}
+
+.verification-progress h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.progress-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.stat-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Next Steps */
+.next-steps {
+  margin: 1.5rem 0;
+}
+
+.next-steps h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.next-steps ul {
+  list-style: none;
+  padding: 0;
+}
+
+.next-steps li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  padding-left: 2rem;
+}
+
+.next-steps li:before {
+  content: '→';
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.next-steps li:last-child {
+  border-bottom: none;
+}
+
+/* Roadmap Link */
+.roadmap-link {
+  background: rgba(110, 168, 254, 0.1);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.roadmap-link a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.roadmap-link a:hover {
+  text-decoration: underline;
+}
+
+/* Discrepancy Example */
+.discrepancy-example {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.discrepancy-example h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.discrepancy-details {
+  background: rgba(240, 168, 86, 0.1);
+  border: 1px solid var(--warn);
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.discrepancy-details p {
+  margin: 0.5rem 0;
+}
+
+.discrepancy-principle {
+  background: rgba(110, 168, 254, 0.1);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.discrepancy-principle h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+/* Evidence Section */
+.evidence-section {
+  padding: 4rem 0;
+  background: var(--bg-secondary);
+}
+
+.evidence-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: var(--text);
+}
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.evidence-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.evidence-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.evidence-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+}
+
+.evidence-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+.evidence-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Call to Action Section */
+.cta-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.cta-button.primary {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
+.cta-button.primary:hover {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.cta-button.secondary:hover {
+  background: var(--accent);
+  color: var(--bg-primary);
+  transform: translateY(-2px);
+}
+
+.contact-info {
+  background: rgba(110, 168, 254, 0.1);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-info p {
+  margin: 0;
+  color: var(--text);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skeptics-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .skeptics-overview {
+    grid-template-columns: 1fr;
+  }
+  
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .comparison-table {
+    font-size: 0.9rem;
+  }
+  
+  .table-header, .table-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .hierarchy-level {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+/* Enhanced Mobile Accordion */
+@media (max-width: 768px) {
+  .accordion-header {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  .accordion-content {
+    padding: 0 1rem;
+  }
+  
+  .accordion-item.active .accordion-content {
+    padding: 1rem;
+  }
+  
+  .evidence-grid {
+    gap: 1rem;
+  }
+  
+  .evidence-card {
+    padding: 1.5rem;
   }
 }
