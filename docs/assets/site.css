@@ -45,10 +45,6 @@ p { line-height: 1.6; margin-bottom: 1rem; }
   .hero {
     padding: 3rem 0;
   }
-  
-  .hero-content {
-    padding: 0 1rem;
-  }
 }
 
 .header { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(15,17,22,0.75); border-bottom: 1px solid #222835; z-index: 50; }
@@ -118,9 +114,6 @@ p { line-height: 1.6; margin-bottom: 1rem; }
 }
 
 .hero-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
