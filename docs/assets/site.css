@@ -1611,13 +1611,12 @@ article li {
     top: 60px;
     left: 0;
     right: 0;
-    background: var(--bg-primary);
-    border: 1px solid var(--border);
+    background: #0f1116;
+    border: 1px solid #222835;
     border-top: none;
     padding: 1rem;
     z-index: 55;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.8);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.9);
   }
   
   .nav.active {
@@ -1628,15 +1627,16 @@ article li {
     padding: 12px 16px;
     width: 100%;
     text-align: left;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid #222835;
     margin: 0;
     border-radius: 0;
     min-height: 44px;
     display: flex;
     align-items: center;
-    color: var(--text-primary);
+    color: #e6e6e6;
     background: transparent;
     transition: background-color 0.2s ease;
+    text-decoration: none;
   }
   
   .nav a:hover {
@@ -1651,7 +1651,7 @@ article li {
   /* Mobile ELI25 button specific styling */
   .nav .nav-eli25 {
     background: transparent;
-    color: var(--accent);
+    color: #6ea8fe;
     font-weight: 600;
     margin: 0;
     padding: 12px 16px;
@@ -1659,12 +1659,12 @@ article li {
     border: none;
     cursor: pointer;
     text-align: left;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid #222835;
   }
   
   .nav .nav-eli25:hover {
-    background: rgba(110, 168, 254, 0.1);
-    color: var(--accent);
+    background: rgba(110, 168, 254, 0.2);
+    color: #6ea8fe;
   }
   
   .hamburger-menu {
