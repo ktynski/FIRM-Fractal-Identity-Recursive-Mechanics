@@ -1611,11 +1611,13 @@ article li {
     top: 60px;
     left: 0;
     right: 0;
-    background: var(--bg);
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-top: none;
     padding: 1rem;
-    border-bottom: 1px solid #222835;
     z-index: 55;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
   }
   
   .nav.active {
@@ -1623,15 +1625,23 @@ article li {
   }
   
   .nav a, .nav-eli25 {
-    padding: 12px 0;
+    padding: 12px 16px;
     width: 100%;
     text-align: left;
-    border-bottom: 1px solid #222835;
+    border-bottom: 1px solid var(--border);
     margin: 0;
     border-radius: 0;
     min-height: 44px;
     display: flex;
     align-items: center;
+    color: var(--text-primary);
+    background: transparent;
+    transition: background-color 0.2s ease;
+  }
+  
+  .nav a:hover {
+    background: rgba(110, 168, 254, 0.1);
+    color: var(--accent);
   }
   
   .nav a:last-child, .nav .nav-eli25:last-child {
