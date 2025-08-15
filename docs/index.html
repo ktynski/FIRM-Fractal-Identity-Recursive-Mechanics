@@ -664,10 +664,14 @@
 
       // Function to update button states
       function updateButtonStates(isActive) {
+        // When ELI25 is active (layperson mode), button should say "Technical" to switch back
+        // When ELI25 is not active (technical mode), button should say "ELI25" to switch to simple
         if (eliBtn) eliBtn.textContent = isActive ? 'Technical' : 'ELI25';
         if (heroEliBtn) {
           const toggleText = heroEliBtn.querySelector('.toggle-text');
           if (toggleText) {
+            // When in layperson mode, offer to switch to technical
+            // When in technical mode, offer to switch to simple
             toggleText.textContent = isActive ? 'Switch to Technical Language' : 'Switch to Simple Language';
           }
         }
@@ -914,12 +918,12 @@
 
       // Load the gallery data only if gallery exists
       if (grid) {
-        loadManifest().then(data => {
-          allFigures = data.figures || [];
-          resetAndRender();
-          if (search) search.addEventListener('input', resetAndRender);
-          if (sort) sort.addEventListener('change', resetAndRender);
-        });
+      loadManifest().then(data => {
+      allFigures = data.figures || [];
+      resetAndRender();
+        if (search) search.addEventListener('input', resetAndRender);
+        if (sort) sort.addEventListener('change', resetAndRender);
+      });
       }
 
       const hamburgerMenu = document.querySelector('.hamburger-menu');
