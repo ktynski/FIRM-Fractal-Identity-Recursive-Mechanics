@@ -3487,3 +3487,17 @@ article li {
     font-size: 0.9rem;
   }
 }
+
+/* Equation numbering */
+.equation-number {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  background: var(--accent);
+  color: var(--bg-primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 2;
+}
