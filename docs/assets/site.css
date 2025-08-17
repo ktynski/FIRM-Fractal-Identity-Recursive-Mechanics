@@ -3305,6 +3305,148 @@ article li {
   }
 }
 
+/* Experimental Predictions Styling */
+.prediction-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--accent-2);
+}
+
+.prediction-card h4 {
+  color: var(--accent-2);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.prediction-details {
+  margin-top: 1rem;
+}
+
+.prediction-details p {
+  margin: 0.75rem 0;
+  line-height: 1.6;
+}
+
+.prediction-details strong {
+  color: var(--text);
+}
+
+.experimental-timeline {
+  margin: 2rem 0;
+}
+
+.experimental-timeline table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.experimental-timeline th,
+.experimental-timeline td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.experimental-timeline th {
+  background: var(--accent);
+  color: var(--bg-primary);
+  font-weight: 600;
+}
+
+.experimental-timeline tr:last-child td {
+  border-bottom: none;
+}
+
+.experimental-timeline tr:nth-child(even) {
+  background: rgba(110, 168, 254, 0.05);
+}
+
+/* Theory comparison tables */
+.theory-comparison-table,
+.emergence-comparison {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin: 1.5rem 0;
+}
+
+.theory-comparison-table th,
+.theory-comparison-table td,
+.emergence-comparison th,
+.emergence-comparison td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.theory-comparison-table th,
+.emergence-comparison th {
+  background: var(--accent);
+  color: var(--bg-primary);
+  font-weight: 600;
+}
+
+.theory-comparison-table tr:nth-child(even),
+.emergence-comparison tr:nth-child(even) {
+  background: rgba(110, 168, 254, 0.05);
+}
+
+.theory-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.theory-side {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.theory-side h5 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.theory-side ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.theory-side li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.theory-side li:before {
+  content: '•';
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.theory-side li:last-child {
+  border-bottom: none;
+}
+
 /* Enhanced Mobile Accordion */
 @media (max-width: 768px) {
   .accordion-header {
@@ -3326,5 +3468,22 @@ article li {
   
   .evidence-card {
     padding: 1.5rem;
+  }
+  
+  .theory-comparison {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .prediction-card {
+    padding: 1.5rem;
+  }
+  
+  .experimental-timeline th,
+  .experimental-timeline td,
+  .theory-comparison-table th,
+  .theory-comparison-table td {
+    padding: 0.75rem;
+    font-size: 0.9rem;
   }
 }
