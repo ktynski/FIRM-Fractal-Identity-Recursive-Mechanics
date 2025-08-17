@@ -51,6 +51,8 @@ p { line-height: 1.6; margin-bottom: 1rem; }
 .nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 24px; padding: 14px 16px; }
 .nav a { color: var(--muted); text-decoration: none; }
 .nav a:hover { color: var(--accent); }
+/* Active nav link */
+.nav a.active { color: var(--accent-2); font-weight: 600; }
 
 .nav-eli25 {
   background: linear-gradient(135deg, var(--accent), #ff6b35);

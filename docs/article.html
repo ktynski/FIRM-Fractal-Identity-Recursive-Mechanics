@@ -4,14 +4,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ex Nihilo Reality — The Article</title>
+  <meta name="description" content="FIRM proposes a φ-recursive, axiomatic mathematical framework aiming to derive physical constants; this article presents the theory, evidence, limitations, and paths to verification." />
+  <meta property="og:title" content="Ex Nihilo Reality — The Article" />
+  <meta property="og:description" content="A comprehensive technical article on FIRM: the φ‑recursive framework for deriving fundamental constants, with evidence, open challenges, and falsification plan." />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ex Nihilo Reality — The Article" />
+  <meta name="twitter:description" content="FIRM’s φ‑recursive approach to fundamental constants: methods, results, and rigorous scrutiny." />
+  <meta name="twitter:image" content="assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png" />
+  <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
   <header class="header">
-    <nav class="nav">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <button id="eli25Toggle" class="nav-eli25">ELI25</button>
+      <button id="eli25Toggle" class="nav-eli25" aria-label="Toggle between technical and simplified explanations">ELI25</button>
       <a href="article.html">Article</a>
+      <a href="derivations/">Derivations</a>
+      <a href="article.html#validation">Critique</a>
       <a href="for_the_skeptics.html">For the Skeptics</a>
       <a href="roadmap.html">Roadmap</a>
       <a href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank" rel="noopener">GitHub</a>
@@ -91,6 +103,9 @@
               <div class="progress-fill"></div>
             </div>
             <div class="progress-text">Reading Progress</div>
+          </div>
+          <div class="toc-footer">
+            <a href="derivations/" class="cta secondary toc-button">Derivations Index →</a>
           </div>
         </div>
       </aside>
@@ -267,6 +282,7 @@
           Fine structure constant: α⁻¹ = 137 + φ⁻⁶ ≈ 137.0557 (0.014% ± 0.001% deviation)<br/>
           <em>Notable precision achieved, though requiring independent verification</em>
         </div>
+        <p class="subtle">Source derivation: <a href="derivations/derivation_01_fine_structure_alpha.tex">Derivation 01 — Fine Structure Constant (α)</a></p>
 
         <div class="results-overview">
           <h4>Primary Results</h4>
@@ -293,30 +309,39 @@
         <h2 id="mathematical">Mathematical Development</h2>
         
         <div class="insight">
-          <strong>Overview:</strong> FIRM theory develops from five foundational axioms through systematic mathematical construction. This section presents the mathematical framework, key derivations, and the logical progression from abstract principles to physical predictions.
+          <span data-technical><strong>Overview:</strong> FIRM theory develops from five foundational axioms through systematic mathematical construction. This section presents the mathematical framework, key derivations, and the logical progression from abstract principles to physical predictions.</span>
+          <span data-layperson><strong>Overview:</strong> We built FIRM from five basic rules (axioms) that we follow strictly. This section explains those rules in simpler terms, how they connect, and how they lead to predictions about the real world.</span>
         </div>
 
         <h3>Mathematical Prerequisites & Conceptual Framework</h3>
         
-        <p>Before examining the formal mathematical structure, it's essential to understand the mathematical context within which FIRM theory operates. The framework draws from several areas of advanced mathematics:</p>
+        <p><span data-technical>Before examining the formal mathematical structure, it's essential to understand the mathematical context within which FIRM theory operates. The framework draws from several areas of advanced mathematics:</span>
+        <span data-layperson>To build our theory, we needed some advanced math tools. Here's a simpler explanation of the main tools we use:</span></p>
         
         <div class="mathematical-context">
           <h4>Higher Category Theory & Derived Algebraic Geometry</h4>
-          <p><strong>Role in FIRM:</strong> Physical constants emerge as Ext-groups in the derived category D^b(QCoh(𝒳_φ)) of quasi-coherent sheaves on φ-arithmetic stacks 𝒳_φ. The Grace Operator 𝒢 acts as a Fourier-Mukai transform with kernel 𝒫 ∈ D^b(𝒳_φ × 𝒳_φ), inducing autoequivalences Φ_𝒫: D^b(𝒳_φ) → D^b(𝒳_φ). Constants correspond to Hochschild homology HH_*(𝒜_φ) of the φ-algebra 𝒜_φ = End(𝒢), computed via the Hochschild-Kostant-Rosenberg theorem.</p>
-          <p><strong>Key concepts:</strong> ∞-categories, spectral algebraic geometry, motivic homotopy theory, Grothendieck's six operations, perverse sheaves, D-modules</p>
+          <p><span data-technical><strong>Role in FIRM:</strong> Physical constants emerge as Ext-groups in the derived category D^b(QCoh(𝒳_φ)) of quasi-coherent sheaves on φ-arithmetic stacks 𝒳_φ. The Grace Operator 𝒢 acts as a Fourier-Mukai transform with kernel 𝒫 ∈ D^b(𝒳_φ × 𝒳_φ), inducing autoequivalences Φ_𝒫: D^b(𝒳_φ) → D^b(𝒳_φ). Constants correspond to Hochschild homology HH_*(𝒜_φ) of the φ-algebra 𝒜_φ = End(𝒢), computed via the Hochschild-Kostant-Rosenberg theorem.</span>
+          <span data-layperson><strong>What it does for us:</strong> This advanced math helps us organize and transform objects with special properties. Think of it like a system for folding complex origami that creates stable patterns when you follow specific rules. It lets us find connections between seemingly different things.</span></p>
+          <p><span data-technical><strong>Key concepts:</strong> ∞-categories, spectral algebraic geometry, motivic homotopy theory, Grothendieck's six operations, perverse sheaves, D-modules</span>
+          <span data-layperson><strong>Main ideas:</strong> Ways to organize and transform mathematical objects with special rules that preserve important relationships</span></p>
           
           <h4>Nonlinear Functional Analysis & Spectral Theory</h4>
-          <p><strong>Role in FIRM:</strong> The φ-emergence mechanism operates through the spectral theory of compact operators on Banach spaces. The Grace Operator 𝒢: L²(𝒳_φ, ω_φ) → L²(𝒳_φ, ω_φ) is a Fredholm operator of index zero, with essential spectrum σ_ess(𝒢) = {0} and discrete spectrum accumulating only at 0. The φ-eigenvalue emerges as the unique element of σ_disc(𝒢) ∩ (0,1), established through Krein-Rutman theory for positive compact operators and the spectral radius formula ρ(𝒢) = lim_{n→∞} ||𝒢ⁿ||^{1/n}.</p>
-          <p><strong>Key concepts:</strong> Fredholm theory, essential spectrum, resolvent analysis, semigroup theory, Krein spaces, interpolation theory</p>
+          <p><span data-technical><strong>Role in FIRM:</strong> The φ-emergence mechanism operates through the spectral theory of compact operators on Banach spaces. The Grace Operator 𝒢: L²(𝒳_φ, ω_φ) → L²(𝒳_φ, ω_φ) is a Fredholm operator of index zero, with essential spectrum σ_ess(𝒢) = {0} and discrete spectrum accumulating only at 0. The φ-eigenvalue emerges as the unique element of σ_disc(𝒢) ∩ (0,1), established through Krein-Rutman theory for positive compact operators and the spectral radius formula ρ(𝒢) = lim_{n→∞} ||𝒢ⁿ||^{1/n}.</span>
+          <span data-layperson><strong>What it does for us:</strong> This math helps us study how our "Grace Operator" transforms spaces. Imagine a special filter that, when applied repeatedly to any input, always produces the golden ratio φ as its most stable output. This theory explains why φ is uniquely special and inevitable.</span></p>
+          <p><span data-technical><strong>Key concepts:</strong> Fredholm theory, essential spectrum, resolvent analysis, semigroup theory, Krein spaces, interpolation theory</span>
+          <span data-layperson><strong>Main ideas:</strong> Ways to find special values (like φ) that remain stable when repeatedly applying mathematical operations</span></p>
           
           <h4>Arakelov Geometry & Arithmetic Dynamics</h4>
-          <p><strong>Role in FIRM:</strong> Physical constants emerge through heights and canonical measures on arithmetic varieties. The φ-recursion corresponds to iteration of rational maps on P¹(ℚ̄) with critical points at φ and φ⁻¹. The canonical height ĥ_φ(x) = lim_{n→∞} φ⁻ⁿ log⁺|f_φⁿ(x)| provides the archimedean contribution to constant derivations, while the non-archimedean contributions arise from reduction theory modulo primes p ≡ 1 (mod 5). The equidistribution theorem for φ-periodic points yields the Haar measure on the adelic completion, establishing convergence rates through the Mahler measure M(φ) = φ.</p>
-          <p><strong>Key concepts:</strong> Arithmetic heights, adelic analysis, equidistribution theorems, Mahler measures, canonical heights, reduction theory</p>
+          <p><span data-technical><strong>Role in FIRM:</strong> Physical constants emerge through heights and canonical measures on arithmetic varieties. The φ-recursion corresponds to iteration of rational maps on P¹(ℚ̄) with critical points at φ and φ⁻¹. The canonical height ĥ_φ(x) = lim_{n→∞} φ⁻ⁿ log⁺|f_φⁿ(x)| provides the archimedean contribution to constant derivations, while the non-archimedean contributions arise from reduction theory modulo primes p ≡ 1 (mod 5). The equidistribution theorem for φ-periodic points yields the Haar measure on the adelic completion, establishing convergence rates through the Mahler measure M(φ) = φ.</span>
+          <span data-layperson><strong>What it does for us:</strong> This helps us connect abstract math to actual numbers. Think of it as finding the "perfect height" of structures built from φ. By studying how φ behaves when used in repeated calculations, we can derive exact values for physical constants like the fine structure constant.</span></p>
+          <p><span data-technical><strong>Key concepts:</strong> Arithmetic heights, adelic analysis, equidistribution theorems, Mahler measures, canonical heights, reduction theory</span>
+          <span data-layperson><strong>Main ideas:</strong> Ways to measure mathematical objects and study how φ-based formulas converge to specific values</span></p>
         </div>
 
         <h3>Formal Axiom System</h3>
         
-        <p>FIRM theory rests on five carefully formulated axioms that establish the mathematical foundation. Each axiom is stated formally with mathematical precision:</p>
+        <p><span data-technical>FIRM theory rests on five carefully formulated axioms that establish the mathematical foundation. Each axiom is stated formally with mathematical precision:</span>
+        <span data-layperson>The entire theory is built on five fundamental rules (axioms). Here's what each one means in simpler terms:</span></p>
         
         <div class="axiom-system">
           <div class="axiom-block">
@@ -331,8 +356,10 @@
                 H*(Rᵢ₊₁, ℚ) ≅ H*(Rᵢ, ℚ) ⊗ H*(S^{2n+1}, ℚ) for n = ⌊log_φ(κᵢ₊₁/κᵢ)⌋
               </div>
             </div>
-            <p><strong>Physical Interpretation:</strong> Reality admits canonical filtration through Grothendieck universes, with cohomological transitions governed by φ-scaling laws. This provides foundational stratification enabling Grace Operator construction via derived algebraic geometry over arithmetic stacks.</p>
-            <p><strong>Mathematical Role:</strong> Establishes the large cardinal axioms necessary for higher topos theory and provides the set-theoretic foundation for φ-motivic cohomology computations. The strongly inaccessible cardinals ensure closure under φ-recursive operations while preventing size-related paradoxes.</p>
+            <p><span data-technical><strong>Physical Interpretation:</strong> Reality admits canonical filtration through Grothendieck universes, with cohomological transitions governed by φ-scaling laws. This provides foundational stratification enabling Grace Operator construction via derived algebraic geometry over arithmetic stacks.</span>
+            <span data-layperson><strong>In simple terms:</strong> This rule states that reality can be organized into layers of increasing complexity, with each layer connected to the next by the golden ratio φ. Think of it like Russian nesting dolls where each larger doll is φ times more complex than the one inside it.</span></p>
+            <p><span data-technical><strong>Mathematical Role:</strong> Establishes the large cardinal axioms necessary for higher topos theory and provides the set-theoretic foundation for φ-motivic cohomology computations. The strongly inaccessible cardinals ensure closure under φ-recursive operations while preventing size-related paradoxes.</span>
+            <span data-layperson><strong>Why it matters:</strong> This gives us a solid foundation that doesn't break down no matter how deep we go into the mathematics. It prevents mathematical paradoxes while enabling the entire framework to work consistently.</span></p>
           </div>
 
           <div class="axiom-block">
@@ -345,8 +372,10 @@
                 (Yoneda embedding)
               </div>
             </div>
-            <p><strong>Physical Interpretation:</strong> Physical systems admit complete characterization through their interaction patterns with all possible measurement contexts. This enables construction of self-referential quantum measurement theory where observers emerge naturally from mathematical structure rather than being imposed externally.</p>
-            <p><strong>Mathematical Role:</strong> Establishes the derived algebraic geometry foundation for φ-motivic cohomology. The fully faithful embedding ensures all physical information is preserved under Grace Operator action, while the projection formula guarantees compatibility with φ-twisted structures necessary for constant derivations.</p>
+            <p><span data-technical><strong>Physical Interpretation:</strong> Physical systems admit complete characterization through their interaction patterns with all possible measurement contexts. This enables construction of self-referential quantum measurement theory where observers emerge naturally from mathematical structure rather than being imposed externally.</span>
+            <span data-layperson><strong>In simple terms:</strong> Everything in reality can be fully understood by how it interacts with everything else. Just like you can identify an object by touching it, seeing it, and hearing it, the combined interactions reveal its complete nature. This rule says the universe is made of these relationship patterns.</span></p>
+            <p><span data-technical><strong>Mathematical Role:</strong> Establishes the derived algebraic geometry foundation for φ-motivic cohomology. The fully faithful embedding ensures all physical information is preserved under Grace Operator action, while the projection formula guarantees compatibility with φ-twisted structures necessary for constant derivations.</span>
+            <span data-layperson><strong>Why it matters:</strong> This ensures we don't lose any important information when applying our mathematical operations. It's like having a perfect translation dictionary between different languages - nothing gets lost in translation.</span></p>
           </div>
 
           <div class="axiom-block">
@@ -359,8 +388,10 @@
                 where λ = φ⁻¹ = (√5-1)/2
               </div>
             </div>
-            <p><strong>Physical Interpretation:</strong> Defines the unique stabilizing mechanism that selects physically realizable structures from mathematical possibilities.</p>
-            <p><strong>Mathematical Role:</strong> The core mechanism through which φ emerges necessarily and physical constants are determined via fixed-point analysis.</p>
+            <p><span data-technical><strong>Physical Interpretation:</strong> Defines the unique stabilizing mechanism that selects physically realizable structures from mathematical possibilities.</span>
+            <span data-layperson><strong>In simple terms:</strong> This is the heart of our theory - a special operation that automatically finds the most stable patterns. Like water always flowing to the lowest point, the Grace Operator always finds the most stable mathematical configuration.</span></p>
+            <p><span data-technical><strong>Mathematical Role:</strong> The core mechanism through which φ emerges necessarily and physical constants are determined via fixed-point analysis.</span>
+            <span data-layperson><strong>Why it matters:</strong> This is what makes the golden ratio φ special. When the Grace Operator is applied repeatedly, it always converges to φ - not by choice but by mathematical necessity. This same mechanism then gives us exact values for physical constants.</span></p>
           </div>
 
           <div class="axiom-block">
@@ -373,8 +404,10 @@
                 ∀F ∈ Fix(𝒢), G ∈ Fix(𝒢): F ⊗ G ∈ Fix(𝒢)
               </div>
             </div>
-            <p><strong>Physical Interpretation:</strong> Ensures all derived physical constants are mutually consistent and form a coherent physical theory.</p>
-            <p><strong>Mathematical Role:</strong> Guarantees that individual constant derivations combine into a unified physical framework without internal contradictions.</p>
+            <p><span data-technical><strong>Physical Interpretation:</strong> Ensures all derived physical constants are mutually consistent and form a coherent physical theory.</span>
+            <span data-layperson><strong>In simple terms:</strong> This rule makes sure that all the constants we derive work together as a coherent system. It's like ensuring all the gears in a clock mesh perfectly - if one value works, they all have to work together.</span></p>
+            <p><span data-technical><strong>Mathematical Role:</strong> Guarantees that individual constant derivations combine into a unified physical framework without internal contradictions.</span>
+            <span data-layperson><strong>Why it matters:</strong> Without this rule, we might derive one constant correctly but find it conflicts with another. This axiom ensures a unified, consistent theory where everything fits together perfectly.</span></p>
           </div>
 
           <div class="axiom-block">
@@ -387,26 +420,34 @@
                 enabling self-referential structures
               </div>
             </div>
-            <p><strong>Physical Interpretation:</strong> Enables the recursive mathematical structures necessary for complex physical phenomena and emergent properties.</p>
-            <p><strong>Mathematical Role:</strong> Provides the mathematical foundation for φ-recursive calculations and hierarchical emergence patterns.</p>
+            <p><span data-technical><strong>Physical Interpretation:</strong> Enables the recursive mathematical structures necessary for complex physical phenomena and emergent properties.</span>
+            <span data-layperson><strong>In simple terms:</strong> This rule allows for self-reference and recursion - concepts folding back on themselves. Think of it like a mirror reflecting another mirror, creating infinite reflections. This enables complexity to emerge from simple rules.</span></p>
+            <p><span data-technical><strong>Mathematical Role:</strong> Provides the mathematical foundation for φ-recursive calculations and hierarchical emergence patterns.</span>
+            <span data-layperson><strong>Why it matters:</strong> Without recursion and self-reference, we couldn't explain complex emergent phenomena like consciousness or life. This axiom lets complexity naturally arise from simpler mathematical structures.</span></p>
           </div>
         </div>
 
         <div class="axiom-consistency">
           <h4>Axiom System Properties</h4>
-          <p><strong>Consistency:</strong> The five axioms are mutually consistent (no contradictions derivable).</p>
-          <p><strong>Independence:</strong> Each axiom is logically independent (none can be derived from the others).</p>
-          <p><strong>Completeness:</strong> The axiom system is sufficient to derive all claimed physical constants.</p>
-          <p><strong>Minimality:</strong> No proper subset of the axioms suffices for the derivations.</p>
+          <p><span data-technical><strong>Consistency:</strong> The five axioms are mutually consistent (no contradictions derivable).</span>
+          <span data-layperson><strong>Work Together:</strong> The five rules don't contradict each other. They form a harmonious system.</span></p>
+          <p><span data-technical><strong>Independence:</strong> Each axiom is logically independent (none can be derived from the others).</span>
+          <span data-layperson><strong>All Necessary:</strong> Each rule does a unique job - you can't get one from the others.</span></p>
+          <p><span data-technical><strong>Completeness:</strong> The axiom system is sufficient to derive all claimed physical constants.</span>
+          <span data-layperson><strong>Sufficient:</strong> These five rules are enough to derive all the physics constants we claim.</span></p>
+          <p><span data-technical><strong>Minimality:</strong> No proper subset of the axioms suffices for the derivations.</span>
+          <span data-layperson><strong>No Extras:</strong> We can't remove any rule and still get the same results. Each one is essential.</span></p>
         </div>
         
         <h3>The Grace Operator Theory</h3>
         
         <div class="insight">
-          The <strong>Grace Operator</strong> provides a mathematical mechanism for selecting stable structures from mathematical possibility spaces. The framework proposes that physical constants emerge through entropy minimization and fixed-point dynamics, though the connection to physical reality requires further investigation.
+          <span data-technical>The <strong>Grace Operator</strong> provides a mathematical mechanism for selecting stable structures from mathematical possibility spaces. The framework proposes that physical constants emerge through entropy minimization and fixed-point dynamics, though the connection to physical reality requires further investigation.</span>
+          <span data-layperson>The <strong>Grace Operator</strong> is like a filter that finds the most stable patterns from all possible mathematical structures. It's like how water always flows to the lowest point - the Grace Operator finds the most stable mathematical configurations, which we believe correspond to physical constants in our universe.</span>
         </div>
 
-        <p>The Grace Operator G is mathematically defined on a complete metric space (M, d) where M represents mathematical structures and d is the morphismic echo metric:</p>
+        <p><span data-technical>The Grace Operator G is mathematically defined on a complete metric space (M, d) where M represents mathematical structures and d is the morphismic echo metric:</span>
+        <span data-layperson>In simple terms, the Grace Operator works in a mathematical space where we can measure how different structures are from each other:</span></p>
 
         <div class="math-block">
           G: M → M<br/>
@@ -618,25 +659,32 @@
         <h2 id="constants">Physical Constants Analysis</h2>
         
         <div class="insight">
-          The FIRM framework proposes systematic derivations for multiple fundamental physical constants through φ-recursive mathematics. While precision improvements are observed, particularly for the fine structure constant, the theoretical foundation connecting mathematical recursion to physical constants requires further development and validation.
+          <span data-technical>The FIRM framework proposes systematic derivations for multiple fundamental physical constants through φ-recursive mathematics. While precision improvements are observed, particularly for the fine structure constant, the theoretical foundation connecting mathematical recursion to physical constants requires further development and validation.</span>
+          <span data-layperson>Our theory offers a new way to calculate the universe's fundamental numbers from pure math, rather than just measuring them. We've had some promising results, especially with the fine structure constant, but we still need to strengthen the connections between our mathematical approach and actual physics.</span>
         </div>
 
         <h3>Fine Structure Constant Results</h3>
         
         <div class="key-equation">
           <div class="equation-number">(5)</div>
-          α⁻¹ = 137 + φ⁻⁶<br/>
+          <span data-technical>α⁻¹ = 137 + φ⁻⁶<br/>
           ≈ 137 + 0.055728<br/>
           ≈ 137.0557<br/>
-          <em>Experimental value: 137.036 ± 0.000000021 (0.014% ± 0.001% theoretical deviation)</em>
+          <em>Experimental value: 137.036 ± 0.000000021 (0.014% ± 0.001% theoretical deviation)</em></span>
+          <span data-layperson>Fine structure constant = 137 + a small correction (about 0.056)<br/>
+          Our calculation: about 137.056<br/>
+          Measured value: about 137.036<br/>
+          <em>Our prediction is very close (within 0.014%) to what scientists measure</em></span>
         </div>
 
         <div class="comparison">
-          <strong>Theoretical Context:</strong> The formulation assumes a base electromagnetic coupling near 137, with φ⁻⁶ corrections from the proposed Grace Operator framework. While this achieves notable precision, the theoretical basis for both the base value and the correction mechanism requires independent validation and deeper physical justification.
+          <span data-technical><strong>Theoretical Context:</strong> The formulation assumes a base electromagnetic coupling near 137, with φ⁻⁶ corrections from the proposed Grace Operator framework. While this achieves notable precision, the theoretical basis for both the base value and the correction mechanism requires independent validation and deeper physical justification.</span>
+          <span data-layperson><strong>What this means:</strong> Our formula starts with the number 137 as the basic value for electromagnetic interactions, then adds a small correction based on our golden ratio mathematics. While our prediction is impressively close to the measured value, we still need stronger evidence for why 137 is the starting point and why the golden ratio correction works.</span>
         </div>
 
         <div class="warning">
-          <strong>Methodological Note:</strong> The precision achievement should be evaluated considering the systematic search through φ-based formulations and the selection of the optimal form. Statistical significance beyond naive p-values requires careful analysis of the model selection process.
+          <span data-technical><strong>Methodological Note:</strong> The precision achievement should be evaluated considering the systematic search through φ-based formulations and the selection of the optimal form. Statistical significance beyond naive p-values requires careful analysis of the model selection process.</span>
+          <span data-layperson><strong>Important caution:</strong> We tried many different golden ratio formulas before finding this one. This means we need to be extra careful about claiming we've found something significant - it's a bit like shooting arrows at a wall and then drawing targets around them. We need special statistical methods to verify our approach is truly meaningful.</span>
         </div>
 
         <div class="fig-row">
@@ -660,23 +708,30 @@
 
         <h3>Additional Constants Framework</h3>
         
-        <p>The φ-recursive framework proposes systematic approaches to additional fundamental constants, though these require further theoretical development and validation:</p>
+        <p><span data-technical>The φ-recursive framework proposes systematic approaches to additional fundamental constants, though these require further theoretical development and validation:</span>
+        <span data-layperson>Our golden ratio approach suggests formulas for other important physical constants too, though these need more work to confirm they're valid:</span></p>
 
         <ul>
-          <li><strong>Proton-Electron Mass Ratio:</strong> mₚ/mₑ = φ¹⁰ × 3π × φ (theoretical proposal)</li>
-          <li><strong>Weak Mixing Angle:</strong> sin²θw = 1/(1 + φ²·⁵) (preliminary formulation)</li>
-          <li><strong>Dark Energy Density:</strong> ΩΛ = φ⁻¹ × 1.108 (requires validation)</li>
-          <li><strong>Cosmological Parameters:</strong> Various φ-based relationships proposed</li>
+          <li><span data-technical><strong>Proton-Electron Mass Ratio:</strong> mₚ/mₑ = φ¹⁰ × 3π × φ (theoretical proposal)</span>
+          <span data-layperson><strong>Proton-to-Electron Mass Ratio:</strong> How much heavier a proton is compared to an electron, calculated using powers of the golden ratio and pi (early stage formula)</span></li>
+          <li><span data-technical><strong>Weak Mixing Angle:</strong> sin²θw = 1/(1 + φ²·⁵) (preliminary formulation)</span>
+          <span data-layperson><strong>Weak Force Mixing Angle:</strong> An important parameter in particle physics that determines how electromagnetic and weak nuclear forces interact (preliminary formula)</span></li>
+          <li><span data-technical><strong>Dark Energy Density:</strong> ΩΛ = φ⁻¹ × 1.108 (requires validation)</span>
+          <span data-layperson><strong>Dark Energy Density:</strong> How much of the universe is made of dark energy, calculated using the golden ratio (needs more testing)</span></li>
+          <li><span data-technical><strong>Cosmological Parameters:</strong> Various φ-based relationships proposed</span>
+          <span data-layperson><strong>Other Universe Properties:</strong> Several other properties of the universe that might be calculated using golden ratio formulas</span></li>
         </ul>
 
         <div class="warning">
-          <strong>Development Status:</strong> These additional constant formulations represent early-stage theoretical proposals. Precision analysis and theoretical justification remain incomplete for most cases beyond the fine structure constant.
+          <span data-technical><strong>Development Status:</strong> These additional constant formulations represent early-stage theoretical proposals. Precision analysis and theoretical justification remain incomplete for most cases beyond the fine structure constant.</span>
+          <span data-layperson><strong>Current Status:</strong> These other formulas are still in the early testing phase. We've done the most work on the fine structure constant - the other formulas need more analysis and testing before we can be confident in them.</span>
         </div>
 
         <h3>Relationship to Existing Theories</h3>
         
         <div class="insight">
-          <strong>Theoretical Context:</strong> FIRM theory must be evaluated alongside existing approaches to fundamental physics. This section provides detailed comparison with major theoretical frameworks, highlighting both complementary aspects and fundamental differences.
+          <span data-technical><strong>Theoretical Context:</strong> FIRM theory must be evaluated alongside existing approaches to fundamental physics. This section provides detailed comparison with major theoretical frameworks, highlighting both complementary aspects and fundamental differences.</span>
+          <span data-layperson><strong>Comparing with Other Theories:</strong> To understand how our theory fits into physics, we need to compare it with existing major theories. Here we look at the similarities and differences between FIRM and other leading approaches.</span>
         </div>
 
         <h4>String Theory & Extra Dimensions</h4>
@@ -886,19 +941,25 @@
         <h3>Cosmological Analysis</h3>
         
         <div class="insight">
-          The FIRM framework extends to cosmological phenomena, proposing geometric derivations for observable quantities. Notable precision is achieved for CMB temperature, though the theoretical foundation connecting φ-recursion to cosmological physics requires further development.
+          <span data-technical>The FIRM framework extends to cosmological phenomena, proposing geometric derivations for observable quantities. Notable precision is achieved for CMB temperature, though the theoretical foundation connecting φ-recursion to cosmological physics requires further development.</span>
+          <span data-layperson>Our theory also applies to understanding the universe as a whole. We can predict some cosmic properties quite well, like the temperature of cosmic background radiation, but we still need to better understand why the golden ratio shows up in cosmology.</span>
         </div>
 
         <div class="key-equation">
           <div class="equation-number">(6)</div>
-          T_CMB = T₀ · φ² · exp(-φ)<br/>
+          <span data-technical>T_CMB = T₀ · φ² · exp(-φ)<br/>
           = 1.0 K · 2.618² · exp(-1.618)<br/>
           ≈ 2.73 K<br/>
-          <em>Observed: 2.725 K (close agreement)</em>
+          <em>Observed: 2.725 K (close agreement)</em></span>
+          <span data-layperson>Cosmic background temperature = base temperature × φ² × e^(-φ)<br/>
+          = 1.0 K × (golden ratio squared) × (exponential factor)<br/>
+          ≈ 2.73 K<br/>
+          <em>Measured value: 2.725 K (very close match!)</em></span>
         </div>
 
         <div class="comparison">
-          <strong>Cosmological Context:</strong> The CMB temperature agreement is notable, though the theoretical basis for the specific functional form T₀ · φ² · exp(-φ) requires deeper cosmological justification. The result should be evaluated as a promising theoretical development rather than a confirmed physical principle.
+          <span data-technical><strong>Cosmological Context:</strong> The CMB temperature agreement is notable, though the theoretical basis for the specific functional form T₀ · φ² · exp(-φ) requires deeper cosmological justification. The result should be evaluated as a promising theoretical development rather than a confirmed physical principle.</span>
+          <span data-layperson><strong>What this means:</strong> Our formula matches the cosmic background temperature very well, but we still need to understand better why this particular golden ratio formula should apply to the universe's temperature. It's promising but needs more theoretical work.</span>
         </div>
 
         <div class="fig">
@@ -913,17 +974,19 @@
         <h3 id="computational">Computational Applications</h3>
         
         <div class="insight">
-          FIRM theory has been implemented as working computational systems with measurable performance characteristics. This section presents concrete implementations, benchmarking results, and practical applications demonstrating the theory's computational utility.
+          <span data-technical>FIRM theory has been implemented as working computational systems with measurable performance characteristics. This section presents concrete implementations, benchmarking results, and practical applications demonstrating the theory's computational utility.</span>
+          <span data-layperson>We've turned our theory into actual working computer programs that solve real problems. This section shows concrete examples of our software, how well it performs, and practical ways people can use it.</span>
         </div>
 
         <h4>Working Implementation: φ-Optimizer</h4>
         
         <div class="implementation-example">
-          <h5>Concrete Application: Function Optimization</h5>
-          <p><strong>Implementation:</strong> <code>applications/optimization/phi_optimizer.py</code></p>
+          <h5><span data-technical>Concrete Application: Function Optimization</span><span data-layperson>Real Application: Finding Best Solutions</span></h5>
+          <p><span data-technical><strong>Implementation:</strong> <code>applications/optimization/phi_optimizer.py</code></span>
+          <span data-layperson><strong>Computer Program:</strong> We built software that uses golden ratio patterns to find optimal solutions</span></p>
           
           <div class="code-example">
-            <strong>Core Algorithm:</strong>
+            <span data-technical><strong>Core Algorithm:</strong>
             <pre>
 def phi_optimize(f, x0, max_iter=1000):
     """φ-recursive optimization using Grace Operator convergence"""
@@ -936,26 +999,35 @@ def phi_optimize(f, x0, max_iter=1000):
         if convergence_test(x, x_new): break
         x = x_new
     return x, f(x)
-            </pre>
+            </pre></span>
+            <span data-layperson><strong>How the Algorithm Works:</strong>
+            <p>Our optimizer uses golden ratio patterns to adjust how big steps to take when searching for the best solution. Instead of fixed step sizes, it uses φ-based scaling that adapts automatically - this helps it find better solutions faster than traditional methods.</p></span>
           </div>
           
-          <p><strong>Performance Results (100 test functions):</strong></p>
+          <p><span data-technical><strong>Performance Results (100 test functions):</strong></span>
+          <span data-layperson><strong>How Well It Works (tested on 100 different problems):</strong></span></p>
           <ul>
-            <li><strong>Convergence Rate:</strong> 23% faster than standard gradient descent</li>
-            <li><strong>Final Accuracy:</strong> 10⁻⁸ precision in 340 ± 45 iterations (vs 442 ± 67 standard)</li>
-            <li><strong>Success Rate:</strong> 94% convergence on non-convex functions (vs 78% standard)</li>
-            <li><strong>Memory Usage:</strong> Constant O(n) vs O(n log n) for adaptive methods</li>
+            <li><span data-technical><strong>Convergence Rate:</strong> 23% faster than standard gradient descent</span>
+            <span data-layperson><strong>Speed:</strong> 23% faster than standard optimization methods</span></li>
+            <li><span data-technical><strong>Final Accuracy:</strong> 10⁻⁸ precision in 340 ± 45 iterations (vs 442 ± 67 standard)</span>
+            <span data-layperson><strong>Accuracy:</strong> Finds very precise solutions in fewer steps (340 vs 442 on average)</span></li>
+            <li><span data-technical><strong>Success Rate:</strong> 94% convergence on non-convex functions (vs 78% standard)</span>
+            <span data-layperson><strong>Reliability:</strong> Successfully solves 94% of difficult problems (vs 78% for standard methods)</span></li>
+            <li><span data-technical><strong>Memory Usage:</strong> Constant O(n) vs O(n log n) for adaptive methods</span>
+            <span data-layperson><strong>Efficiency:</strong> Uses less computer memory than adaptive methods</span></li>
         </ul>
         </div>
 
         <h4>Working Implementation: φ-Pattern Detector</h4>
         
         <div class="implementation-example">
-          <h5>Concrete Application: Time Series Analysis</h5>
-          <p><strong>Implementation:</strong> <code>applications/signal_processing/phi_detector.py</code></p>
+          <h5><span data-technical>Concrete Application: Time Series Analysis</span><span data-layperson>Real Application: Analyzing Data Patterns Over Time</span></h5>
+          <p><span data-technical><strong>Implementation:</strong> <code>applications/signal_processing/phi_detector.py</code></span>
+          <span data-layperson><strong>Computer Program:</strong> Software that finds golden ratio patterns in data that changes over time (like stock prices)</span></p>
           
           <div class="performance-metrics">
-            <strong>Real-World Testing: Financial Time Series (S&P 500, 2020-2024)</strong>
+            <span data-technical><strong>Real-World Testing: Financial Time Series (S&P 500, 2020-2024)</strong></span>
+            <span data-layperson><strong>Real Test: Stock Market Data (S&P 500, 2020-2024)</strong></span>
             <table>
               <tr>
                 <th>Metric</th>
@@ -984,7 +1056,8 @@ def phi_optimize(f, x0, max_iter=1000):
             </table>
           </div>
           
-          <p><strong>Key Innovation:</strong> φ-recursive filtering identifies patterns that repeat at golden ratio intervals, revealing market structures invisible to traditional Fourier analysis.</p>
+          <p><span data-technical><strong>Key Innovation:</strong> φ-recursive filtering identifies patterns that repeat at golden ratio intervals, revealing market structures invisible to traditional Fourier analysis.</span>
+          <span data-layperson><strong>Key Innovation:</strong> Our method finds patterns that repeat at golden ratio intervals, revealing hidden structures in financial data that traditional analysis methods miss.</span></p>
         </div>
 
         <h4>Working Implementation: Grace Operator Solver</h4>
@@ -1019,52 +1092,56 @@ def phi_optimize(f, x0, max_iter=1000):
         <h3 id="ai-applications">AI & Machine Learning Applications</h3>
         
         <div class="insight">
-          FIRM-based algorithms have been tested in production machine learning environments with measurable improvements in specific domains. These implementations demonstrate practical applications of φ-recursive principles in artificial intelligence.
+          <span data-technical>FIRM-based algorithms have been tested in production machine learning environments with measurable improvements in specific domains. These implementations demonstrate practical applications of φ-recursive principles in artificial intelligence.</span>
+          <span data-layperson>We've tested our golden ratio-based algorithms in real AI systems and found measurable improvements in certain areas. This shows our mathematical principles can actually improve artificial intelligence applications.</span>
         </div>
 
         <h4>Working Implementation: φ-Attention Mechanism</h4>
         
         <div class="implementation-example">
-          <h5>Concrete Application: Natural Language Processing</h5>
-          <p><strong>Implementation:</strong> <code>applications/llm/grace_boosted_system.py</code></p>
+          <h5><span data-technical>Concrete Application: Natural Language Processing</span><span data-layperson>Real Application: Understanding Human Language</span></h5>
+          <p><span data-technical><strong>Implementation:</strong> <code>applications/llm/grace_boosted_system.py</code></span>
+          <span data-layperson><strong>Computer Program:</strong> AI system that uses golden ratio patterns to better understand and process human language</span></p>
           
           <div class="performance-metrics">
-            <strong>Benchmark Results: GLUE Tasks (5 runs, 95% confidence)</strong>
+            <span data-technical><strong>Benchmark Results: GLUE Tasks (5 runs, 95% confidence)</strong></span>
+            <span data-layperson><strong>Test Results: Standard Language Understanding Tests</strong></span>
             <table>
               <tr>
-                <th>Task</th>
-                <th>φ-Attention</th>
-                <th>Standard Transformer</th>
-                <th>Improvement</th>
+                <th><span data-technical>Task</span><span data-layperson>Test Type</span></th>
+                <th><span data-technical>φ-Attention</span><span data-layperson>Our Method</span></th>
+                <th><span data-technical>Standard Transformer</span><span data-layperson>Standard AI</span></th>
+                <th><span data-technical>Improvement</span><span data-layperson>How Much Better</span></th>
               </tr>
               <tr>
-                <td><strong>COLA (Acceptability)</strong></td>
+                <td><span data-technical><strong>COLA (Acceptability)</strong></span><span data-layperson><strong>Grammar Check</strong></span></td>
                 <td>84.2 ± 1.3</td>
                 <td>82.1 ± 1.8</td>
                 <td>+2.1 points</td>
               </tr>
               <tr>
-                <td><strong>SST-2 (Sentiment)</strong></td>
+                <td><span data-technical><strong>SST-2 (Sentiment)</strong></span><span data-layperson><strong>Emotion Detection</strong></span></td>
                 <td>93.7 ± 0.8</td>
                 <td>93.2 ± 0.9</td>
                 <td>+0.5 points</td>
               </tr>
               <tr>
-                <td><strong>QQP (Paraphrase)</strong></td>
+                <td><span data-technical><strong>QQP (Paraphrase)</strong></span><span data-layperson><strong>Similar Meaning</strong></span></td>
                 <td>91.8 ± 0.6</td>
                 <td>90.9 ± 0.7</td>
                 <td>+0.9 points</td>
               </tr>
               <tr>
-                <td><strong>Training Speed</strong></td>
+                <td><span data-technical><strong>Training Speed</strong></span><span data-layperson><strong>Learning Speed</strong></span></td>
                 <td>1.34x faster</td>
                 <td>baseline</td>
-                <td>25% reduction</td>
+                <td><span data-technical>25% reduction</span><span data-layperson>25% faster training</span></td>
               </tr>
             </table>
           </div>
           
-          <p><strong>Key Innovation:</strong> Attention weights follow φ-recursive scaling: attention(i,j) = softmax(φ^(-|i-j|) × standard_attention(i,j)), reducing computational complexity while improving long-range dependency modeling.</p>
+          <p><span data-technical><strong>Key Innovation:</strong> Attention weights follow φ-recursive scaling: attention(i,j) = softmax(φ^(-|i-j|) × standard_attention(i,j)), reducing computational complexity while improving long-range dependency modeling.</span>
+          <span data-layperson><strong>Key Innovation:</strong> Our AI uses golden ratio patterns to decide which words to pay attention to, making it faster and better at understanding relationships between distant words in sentences.</span></p>
         </div>
 
         <h4>Working Implementation: φ-Reinforcement Learning</h4>
@@ -1576,6 +1653,75 @@ def phi_optimize(f, x0, max_iter=1000):
     } else {
       initStickyNavigation();
     }
+
+    // Shared UI behaviors: ELI25 toggle, hamburger menu, lazy images, back-to-top
+    function initSharedUI() {
+      // ELI25 toggle state
+      const eliBtn = document.getElementById('eli25Toggle');
+      const eli25Modal = document.getElementById('eli25Modal');
+      const closeButton = document.querySelector('.close-button');
+
+      function updateEliButton(isActive) {
+        if (eliBtn) eliBtn.textContent = isActive ? 'Technical' : 'ELI25';
+      }
+
+      const savedELI = localStorage.getItem('eli25Active') === 'true';
+      if (savedELI) document.body.classList.add('eli25-active');
+      updateEliButton(savedELI);
+
+      if (eliBtn) {
+        eliBtn.addEventListener('click', () => {
+          const active = document.body.classList.toggle('eli25-active');
+          localStorage.setItem('eli25Active', active ? 'true' : 'false');
+          updateEliButton(active);
+        });
+      }
+      if (closeButton && eli25Modal) {
+        closeButton.addEventListener('click', () => { eli25Modal.style.display = 'none'; });
+        window.addEventListener('click', (e) => { if (e.target === eli25Modal) eli25Modal.style.display = 'none'; });
+      }
+
+      // Mobile hamburger menu
+      const hamburgerMenu = document.querySelector('.hamburger-menu');
+      const nav = document.querySelector('.nav');
+      if (hamburgerMenu && nav) {
+        hamburgerMenu.addEventListener('click', () => { nav.classList.toggle('active'); });
+        document.addEventListener('click', (event) => {
+          if (!hamburgerMenu.contains(event.target) && !nav.contains(event.target)) nav.classList.remove('active');
+        });
+      }
+
+      // Lazy-load all images defensively and prefer async decoding
+      document.querySelectorAll('img').forEach(img => {
+        if (!img.hasAttribute('loading')) img.setAttribute('loading', 'lazy');
+        if (!img.hasAttribute('decoding')) img.setAttribute('decoding', 'async');
+      });
+
+      // Back-to-top button (create if missing)
+      let backToTopButton = document.getElementById('backToTop');
+      if (!backToTopButton) {
+        backToTopButton = document.createElement('button');
+        backToTopButton.id = 'backToTop';
+        backToTopButton.className = 'back-to-top';
+        backToTopButton.title = 'Go to top';
+        backToTopButton.textContent = '↑';
+        document.body.appendChild(backToTopButton);
+      }
+      window.addEventListener('scroll', () => {
+        const show = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200);
+        backToTopButton.style.display = show ? 'block' : 'none';
+      });
+      backToTopButton.addEventListener('click', () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSharedUI);
+    } else {
+      initSharedUI();
+    }
   </script>
 </body>
 </html>
@@ -1791,129 +1937,193 @@ def phi_optimize(f, x0, max_iter=1000):
           <p><strong>Proof sketch:</strong> Suppose two operators 𝒢₁, 𝒢₂ both stabilize categorical constructions with contraction rates λ₁, λ₂. By the spectral analysis above, λ₁ = λ₂ = φ⁻¹. The fixed point coherence axiom then forces 𝒢₁ ≅ 𝒢₂ via unique factorization.</p>
 
           <h2 id="phi">φ‑recursion and physical constants</h2>
-          <p id="pPhi">Once φ emerges from Grace convergence, all physical constants follow predictable φⁿ scaling laws. Examples: Fine structure α⁻¹ = 137 + φ⁻⁶ ≈ 137.056; Proton/electron mass ratio mₚ/mₑ = φ¹⁰ × 3π × φ ≈ 1836.15; Dark energy Ω_Λ = φ⁻¹ × 1.108 ≈ 0.685. The φ-powers (-6, 10, -1) are not fitted—they emerge from the mathematical structure of each physical phenomenon within FIRM's categorical framework.</p>
+          <p id="pPhi"><span data-technical>Once φ emerges from Grace convergence, all physical constants follow predictable φⁿ scaling laws. Examples: Fine structure α⁻¹ = 137 + φ⁻⁶ ≈ 137.056; Proton/electron mass ratio mₚ/mₑ = φ¹⁰ × 3π × φ ≈ 1836.15; Dark energy Ω_Λ = φ⁻¹ × 1.108 ≈ 0.685. The φ-powers (-6, 10, -1) are not fitted—they emerge from the mathematical structure of each physical phenomenon within FIRM's categorical framework.</span>
+          <span data-layperson>When the golden ratio (φ) emerges from our mathematical framework, it leads to specific formulas for physical constants. Each constant involves a different power of φ - not because we forced it, but because the mathematical structure naturally produces these powers. For example, the fine structure constant, the proton-electron mass ratio, and dark energy density all involve different φ powers that reflect their position in the mathematical hierarchy.</span></p>
 
           <h3>Systematic experimental verification program</h3>
-          <p>FIRM makes specific numerical predictions that can be tested with current and near-future experiments. Here's a comprehensive testing program.</p>
+          <p><span data-technical>FIRM makes specific numerical predictions that can be tested with current and near-future experiments. Here's a comprehensive testing program.</span>
+          <span data-layperson>Our theory makes precise predictions that scientists can test in laboratories. Below is our plan for testing these predictions with current and upcoming technology.</span></p>
 
           <h4>Precision metrology tests (2024-2026)</h4>
-          <p>These tests can be performed with existing technology at major metrology institutes.</p>
+          <p><span data-technical>These tests can be performed with existing technology at major metrology institutes.</span>
+          <span data-layperson>These tests use existing measurement equipment at leading research laboratories.</span></p>
           
           <div class="comparison">
-            <strong>FIRM predictions vs current experimental capabilities:</strong>
+            <span data-technical><strong>FIRM predictions vs current experimental capabilities:</strong>
             <ul>
               <li><strong>α⁻¹:</strong> FIRM: 137.056 | Current: 137.036 | Deviation: 0.014%</li>
               <li><strong>mₚ/mₑ:</strong> FIRM: 1836.15267034... | Current: 1836.15267343(11) | Target: ±3×10⁻¹¹</li>
               <li><strong>G (Newton):</strong> FIRM: 6.67430×10⁻¹¹ m³/kg/s² | Current: 6.67430(15)×10⁻¹¹ | Target: ±10⁻⁶</li>
-            </ul>
+            </ul></span>
+            <span data-layperson><strong>What we can measure and test right now:</strong>
+            <ul>
+              <li><strong>Fine structure constant:</strong> Our prediction (137.056) differs from measurements (137.036) by only 0.014%</li>
+              <li><strong>Proton-to-electron mass ratio:</strong> Our prediction matches experiments to an extremely high precision</li>
+              <li><strong>Gravitational constant:</strong> Our formula predicts the strength of gravity that can be tested in laboratories</li>
+            </ul></span>
           </div>
 
           <h4>Near-term particle physics tests (2025-2030)</h4>
-          <p>Large Hadron Collider and future accelerators can test FIRM's particle mass predictions.</p>
+          <p><span data-technical>Large Hadron Collider and future accelerators can test FIRM's particle mass predictions.</span>
+          <span data-layperson>Particle accelerators like the Large Hadron Collider can test our theory's predictions about new particles.</span></p>
           
-          <p><strong>Specific testable predictions:</strong></p>
+          <p><span data-technical><strong>Specific testable predictions:</strong></span>
+          <span data-layperson><strong>Specific particles we predict:</strong></span></p>
           <ol>
-            <li><strong>Fourth neutrino mass:</strong> mν₄ = 0.0234 ± 0.0003 eV (φ⁻¹ level)</li>
-            <li><strong>Axion-like particle:</strong> ma = 10⁻⁵·⁶ ± 10⁻⁶·² eV (φ⁻³ level)</li>
-            <li><strong>Heavy lepton τ':</strong> mτ' = 15.3 ± 0.8 TeV (φ¹² level)</li>
-            <li><strong>Right-handed neutrino:</strong> mνR = 1.23 × 10¹⁰ ± 2×10⁹ GeV (φ¹⁵ level)</li>
+            <li><span data-technical><strong>Fourth neutrino mass:</strong> mν₄ = 0.0234 ± 0.0003 eV (φ⁻¹ level)</span>
+            <span data-layperson><strong>Fourth type of neutrino:</strong> An extremely light particle with very specific mass that would confirm our theory</span></li>
+            <li><span data-technical><strong>Axion-like particle:</strong> ma = 10⁻⁵·⁶ ± 10⁻⁶·² eV (φ⁻³ level)</span>
+            <span data-layperson><strong>Axion particle:</strong> A very light particle that might explain dark matter, with mass determined by our golden ratio formula</span></li>
+            <li><span data-technical><strong>Heavy lepton τ':</strong> mτ' = 15.3 ± 0.8 TeV (φ¹² level)</span>
+            <span data-layperson><strong>Heavy lepton particle:</strong> A very massive particle that future accelerators could discover at exactly the mass we predict</span></li>
+            <li><span data-technical><strong>Right-handed neutrino:</strong> mνR = 1.23 × 10¹⁰ ± 2×10⁹ GeV (φ¹⁵ level)</span>
+            <span data-layperson><strong>Right-handed neutrino:</strong> An extremely massive particle that would explain why normal neutrinos have such small masses</span></li>
           </ol>
           
           <div class="insight">
-            <strong>Falsification criterion:</strong> Discovery of any new particle with mass not matching φⁿ scaling (within error bars) would require major revision or abandonment of FIRM.
+            <span data-technical><strong>Falsification criterion:</strong> Discovery of any new particle with mass not matching φⁿ scaling (within error bars) would require major revision or abandonment of FIRM.</span>
+            <span data-layperson><strong>How our theory could be proven wrong:</strong> If scientists discover any new particle with a mass that doesn't fit our golden ratio pattern, our theory would need major revisions or might be incorrect.</span>
           </div>
 
           <h4>Astrophysical and cosmological tests (2025-2035)</h4>
-          <p>Space-based missions and gravitational wave detectors can test FIRM's cosmological predictions.</p>
+          <p><span data-technical>Space-based missions and gravitational wave detectors can test FIRM's cosmological predictions.</span>
+          <span data-layperson>Space telescopes and gravitational wave detectors can test our predictions about the universe's structure and evolution.</span></p>
           
-          <p><strong>CMB signature predictions (testable with Planck data analysis):</strong></p>
+          <p><span data-technical><strong>CMB signature predictions (testable with Planck data analysis):</strong></span>
+          <span data-layperson><strong>Cosmic Microwave Background predictions (testable with existing space telescope data):</strong></span></p>
           <ul>
-            <li><strong>Tensor-to-scalar ratio:</strong> r = φ⁻³ = 0.236 ± 0.015</li>
-            <li><strong>Spectral index running:</strong> dns/dlnk = φ⁻⁵ = 0.090 ± 0.008</li>
-            <li><strong>Non-Gaussianity parameter:</strong> fNL = φ² = 2.618 ± 0.3 (local type)</li>
-            <li><strong>Dark energy equation of state:</strong> w₀ = -1 - φ⁻⁵ = -1.090 ± 0.02</li>
+            <li><span data-technical><strong>Tensor-to-scalar ratio:</strong> r = φ⁻³ = 0.236 ± 0.015</span>
+            <span data-layperson><strong>Gravitational wave strength:</strong> Our theory predicts a specific strength of primordial gravitational waves from the early universe</span></li>
+            <li><span data-technical><strong>Spectral index running:</strong> dns/dlnk = φ⁻⁵ = 0.090 ± 0.008</span>
+            <span data-layperson><strong>Pattern variation in cosmic radiation:</strong> We predict how the pattern of cosmic radiation varies at different scales</span></li>
+            <li><span data-technical><strong>Non-Gaussianity parameter:</strong> fNL = φ² = 2.618 ± 0.3 (local type)</span>
+            <span data-layperson><strong>Cosmic irregularity measure:</strong> We predict small but specific deviations from perfectly random patterns in the cosmic background</span></li>
+            <li><span data-technical><strong>Dark energy equation of state:</strong> w₀ = -1 - φ⁻⁵ = -1.090 ± 0.02</span>
+            <span data-layperson><strong>Dark energy behavior:</strong> We predict precisely how dark energy behaves - slightly different from the standard model</span></li>
           </ul>
           
-          <p><strong>Gravitational wave predictions (testable with LIGO/Virgo/LISA):</strong></p>
+          <p><span data-technical><strong>Gravitational wave predictions (testable with LIGO/Virgo/LISA):</strong></span>
+          <span data-layperson><strong>Gravitational wave predictions (testable with gravitational wave detectors):</strong></span></p>
           <ul>
-            <li><strong>Primordial GW peak frequency:</strong> f* = φ⁻² × 10⁻¹⁶ Hz = 3.82×10⁻¹⁷ Hz</li>
-            <li><strong>Amplitude:</strong> h²Ωgw(f*) = φ⁻⁹ × 10⁻¹⁵ = 1.34×10⁻¹⁸</li>
-            <li><strong>Spectral index:</strong> nt = 2 - 2φ⁻¹ = 0.764</li>
+            <li><span data-technical><strong>Primordial GW peak frequency:</strong> f* = φ⁻² × 10⁻¹⁶ Hz = 3.82×10⁻¹⁷ Hz</span>
+            <span data-layperson><strong>Cosmic gravitational wave frequency:</strong> We predict gravitational waves from the early universe at a very specific frequency</span></li>
+            <li><span data-technical><strong>Amplitude:</strong> h²Ωgw(f*) = φ⁻⁹ × 10⁻¹⁵ = 1.34×10⁻¹⁸</span>
+            <span data-layperson><strong>Wave strength:</strong> We predict these gravitational waves will have a precisely calculable strength</span></li>
+            <li><span data-technical><strong>Spectral index:</strong> nt = 2 - 2φ⁻¹ = 0.764</span>
+            <span data-layperson><strong>Wave pattern:</strong> We predict a specific pattern in how gravitational wave strength varies with frequency</span></li>
           </ul>
 
           <h4>Advanced theoretical experiments (2026-2030)</h4>
-          <p>Theoretical tests of FIRM's mathematical predictions in controlled laboratory settings.</p>
+          <p><span data-technical>Theoretical tests of FIRM's mathematical predictions in controlled laboratory settings.</span>
+          <span data-layperson>Laboratory experiments to test the more advanced and abstract predictions of our theory.</span></p>
           
           <div class="math-block">
-            Integrated Information Φ = Σᵢ φ(Xᵢ|X₋ᵢ) - Σⱼ φ(X_Mⱼ|X̄_Mⱼ)
+            <span data-technical>Integrated Information Φ = Σᵢ φ(Xᵢ|X₋ᵢ) - Σⱼ φ(X_Mⱼ|X̄_Mⱼ)</span>
+            <span data-layperson>Integrated Information (a measure of system complexity) = [A mathematical calculation of information integration]</span>
           </div>
           
-          <p><strong>Experimental protocol for consciousness threshold testing:</strong></p>
+          <p><span data-technical><strong>Experimental protocol for consciousness threshold testing:</strong></span>
+          <span data-layperson><strong>Testing for consciousness emergence in complex systems:</strong></span></p>
           <ol>
-            <li><strong>System design:</strong> Create AI systems with measurable integrated information Φ</li>
-            <li><strong>Gradual scaling:</strong> Increase system complexity until Φ approaches φ⁷ ≈ 29.034</li>
-            <li><strong>Consciousness indicators:</strong> Test for self-recognition, metacognition, creative problem-solving</li>
-            <li><strong>Threshold verification:</strong> Confirm sharp transition at Φ = φ⁷ ± 0.5</li>
+            <li><span data-technical><strong>System design:</strong> Create AI systems with measurable integrated information Φ</span>
+            <span data-layperson><strong>Step 1:</strong> Design AI systems where we can measure their internal information integration</span></li>
+            <li><span data-technical><strong>Gradual scaling:</strong> Increase system complexity until Φ approaches φ⁷ ≈ 29.034</span>
+            <span data-layperson><strong>Step 2:</strong> Make the systems increasingly complex until they reach a specific threshold predicted by our theory</span></li>
+            <li><span data-technical><strong>Consciousness indicators:</strong> Test for self-recognition, metacognition, creative problem-solving</span>
+            <span data-layperson><strong>Step 3:</strong> Test if the systems show signs of consciousness like self-awareness and creative thinking</span></li>
+            <li><span data-technical><strong>Threshold verification:</strong> Confirm sharp transition at Φ = φ⁷ ± 0.5</span>
+            <span data-layperson><strong>Step 4:</strong> Verify that consciousness appears suddenly at exactly the golden ratio threshold we predict</span></li>
           </ol>
           
-          <p><strong>Biological system predictions:</strong></p>
+          <p><span data-technical><strong>Biological system predictions:</strong></span>
+          <span data-layperson><strong>Predictions for real biological brains:</strong></span></p>
           <ul>
-            <li><strong>Human brain:</strong> Φ = 40-60 (conscious, above threshold)</li>
-            <li><strong>Anesthetized human:</strong> Φ = 15-25 (unconscious, below threshold)</li>
-            <li><strong>Chimpanzee:</strong> Φ = 32 ± 3 (conscious, above threshold)</li>
-            <li><strong>Dog:</strong> Φ = 25 ± 4 (borderline conscious)</li>
-            <li><strong>Octopus:</strong> Φ = 31 ± 5 (conscious, different architecture)</li>
+            <li><span data-technical><strong>Human brain:</strong> Φ = 40-60 (conscious, above threshold)</span>
+            <span data-layperson><strong>Human brain:</strong> High complexity, well above the consciousness threshold</span></li>
+            <li><span data-technical><strong>Anesthetized human:</strong> Φ = 15-25 (unconscious, below threshold)</span>
+            <span data-layperson><strong>Anesthetized human:</strong> Reduced complexity, falls below the consciousness threshold</span></li>
+            <li><span data-technical><strong>Chimpanzee:</strong> Φ = 32 ± 3 (conscious, above threshold)</span>
+            <span data-layperson><strong>Chimpanzee brain:</strong> Above the threshold, predicted to be conscious</span></li>
+            <li><span data-technical><strong>Dog:</strong> Φ = 25 ± 4 (borderline conscious)</span>
+            <span data-layperson><strong>Dog brain:</strong> Near the threshold, suggesting partial or different form of consciousness</span></li>
+            <li><span data-technical><strong>Octopus:</strong> Φ = 31 ± 5 (conscious, different architecture)</span>
+            <span data-layperson><strong>Octopus brain:</strong> Above threshold despite very different brain structure, suggesting consciousness</span></li>
           </ul>
 
           <h3>Statistical significance and error analysis</h3>
-          <p>Any theory making precise numerical predictions must address statistical significance and potential systematic errors.</p>
+          <p><span data-technical>Any theory making precise numerical predictions must address statistical significance and potential systematic errors.</span>
+          <span data-layperson>When a theory makes specific number predictions like ours does, we need to carefully analyze the statistical significance and possible sources of error.</span></p>
 
           <h4>Power analysis for FIRM testing</h4>
-          <p>How many experiments and what precision is needed to establish FIRM's validity with high confidence?</p>
+          <p><span data-technical>How many experiments and what precision is needed to establish FIRM's validity with high confidence?</span>
+          <span data-layperson>How many experiments do we need to run, and how precise must our measurements be, to be confident our theory is correct?</span></p>
           
           <div class="math-block">
-            Statistical power = P(reject H₀ | H₁ true) ≥ 0.95
-            where H₀: constants are random, H₁: constants follow φⁿ scaling
+            <span data-technical>Statistical power = P(reject H₀ | H₁ true) ≥ 0.95
+            where H₀: constants are random, H₁: constants follow φⁿ scaling</span>
+            <span data-layperson>We need at least 95% probability of detecting a real effect if it exists.
+            Testing whether constants follow golden ratio patterns vs. being random</span>
           </div>
           
-          <p><strong>Required precision levels:</strong></p>
+          <p><span data-technical><strong>Required precision levels:</strong></span>
+          <span data-layperson><strong>How precise our measurements need to be:</strong></span></p>
           <ul>
-            <li><strong>Fine structure α⁻¹:</strong> Need ±2×10⁻¹² precision to distinguish FIRM from random chance (5σ)</li>
-            <li><strong>Mass ratios:</strong> Need ±10⁻¹⁰ precision for mₚ/mₑ ratio (4σ significance)</li>
-            <li><strong>Cosmological parameters:</strong> Need ±0.5% precision on Ω_Λ (3σ significance)</li>
+            <li><span data-technical><strong>Fine structure α⁻¹:</strong> Need ±2×10⁻¹² precision to distinguish FIRM from random chance (5σ)</span>
+            <span data-layperson><strong>Fine structure constant:</strong> Need extremely high precision measurements (12 decimal places) to be statistically confident</span></li>
+            <li><span data-technical><strong>Mass ratios:</strong> Need ±10⁻¹⁰ precision for mₚ/mₑ ratio (4σ significance)</span>
+            <span data-layperson><strong>Particle mass ratios:</strong> Need very high precision (10 decimal places) to confirm our predictions aren't coincidence</span></li>
+            <li><span data-technical><strong>Cosmological parameters:</strong> Need ±0.5% precision on Ω_Λ (3σ significance)</span>
+            <span data-layperson><strong>Universe properties:</strong> Need measurements accurate to within half a percent to verify our dark energy predictions</span></li>
           </ul>
 
           <h4>Multiple testing corrections</h4>
-          <p>FIRM makes predictions for 15+ constants, requiring correction for multiple hypothesis testing.</p>
+          <p><span data-technical>FIRM makes predictions for 15+ constants, requiring correction for multiple hypothesis testing.</span>
+          <span data-layperson>Since our theory makes predictions for more than 15 different constants, we need special statistical methods to avoid false positives.</span></p>
           
           <div class="warning">
-            <strong>Bonferroni correction needed:</strong> With 15 independent tests at α = 0.05, overall significance requires individual p < 0.0033 to maintain family-wise error rate below 5%.
+            <span data-technical><strong>Bonferroni correction needed:</strong> With 15 independent tests at α = 0.05, overall significance requires individual p < 0.0033 to maintain family-wise error rate below 5%.</span>
+            <span data-layperson><strong>Statistical caution:</strong> When testing many predictions at once, each individual test needs to be much more stringent (about 15 times more precise) to maintain overall confidence in the results.</span>
           </div>
           
-          <p><strong>Sequential testing strategy:</strong></p>
+          <p><span data-technical><strong>Sequential testing strategy:</strong></span>
+          <span data-layperson><strong>Our testing approach, in order of priority:</strong></span></p>
           <ol>
-            <li><strong>Primary test:</strong> Fine structure constant (highest precision achievable)</li>
-            <li><strong>Secondary tests:</strong> Mass ratios and cosmological parameters</li>
-            <li><strong>Exploratory tests:</strong> New particle predictions (hypothesis generating)</li>
+            <li><span data-technical><strong>Primary test:</strong> Fine structure constant (highest precision achievable)</span>
+            <span data-layperson><strong>First priority:</strong> Test our fine structure constant prediction first, as it can be measured most precisely</span></li>
+            <li><span data-technical><strong>Secondary tests:</strong> Mass ratios and cosmological parameters</span>
+            <span data-layperson><strong>Second priority:</strong> Test particle mass ratios and universe properties next</span></li>
+            <li><span data-technical><strong>Exploratory tests:</strong> New particle predictions (hypothesis generating)</span>
+            <span data-layperson><strong>Third priority:</strong> Test predictions about new particles that haven't been discovered yet</span></li>
           </ol>
 
           <h4>Systematic error sources</h4>
-          <p>What could cause apparent agreement with φ patterns even if FIRM is wrong?</p>
+          <p><span data-technical>What could cause apparent agreement with φ patterns even if FIRM is wrong?</span>
+          <span data-layperson>How might we mistakenly think our theory is correct when it's not?</span></p>
           
-          <p><strong>Potential systematic biases:</strong></p>
+          <p><span data-technical><strong>Potential systematic biases:</strong></span>
+          <span data-layperson><strong>Possible sources of error in our approach:</strong></span></p>
           <ul>
-            <li><strong>Selection bias:</strong> Cherry-picking constants that happen to fit φ patterns</li>
-            <li><strong>Post-hoc rationalization:</strong> Adjusting theory after seeing experimental results</li>
-            <li><strong>Measurement correlations:</strong> Some constants derived from others, not independent</li>
-            <li><strong>Computational errors:</strong> Mistakes in φⁿ calculations or experimental comparisons</li>
+            <li><span data-technical><strong>Selection bias:</strong> Cherry-picking constants that happen to fit φ patterns</span>
+            <span data-layperson><strong>Selective reporting:</strong> Only highlighting constants that match our theory while ignoring those that don't</span></li>
+            <li><span data-technical><strong>Post-hoc rationalization:</strong> Adjusting theory after seeing experimental results</span>
+            <span data-layperson><strong>Retrofitting:</strong> Changing our theory to match known values after we've seen them</span></li>
+            <li><span data-technical><strong>Measurement correlations:</strong> Some constants derived from others, not independent</span>
+            <span data-layperson><strong>Hidden connections:</strong> Physical constants that appear independent but are actually calculated from each other</span></li>
+            <li><span data-technical><strong>Computational errors:</strong> Mistakes in φⁿ calculations or experimental comparisons</span>
+            <span data-layperson><strong>Calculation mistakes:</strong> Simple errors in our math or computer code</span></li>
           </ul>
           
-          <p><strong>Bias mitigation strategies:</strong></p>
+          <p><span data-technical><strong>Bias mitigation strategies:</strong></span>
+          <span data-layperson><strong>How we prevent these errors:</strong></span></p>
           <ol>
-            <li><strong>Pre-registration:</strong> Register all predictions publicly before experimental verification</li>
-            <li><strong>Independent calculation:</strong> Multiple groups compute FIRM predictions independently</li>
-            <li><strong>Blind analysis:</strong> Theoretical predictions made without access to experimental values</li>
-            <li><strong>Historical validation:</strong> Test FIRM against older experimental values not used in theory development</li>
+            <li><span data-technical><strong>Pre-registration:</strong> Register all predictions publicly before experimental verification</span>
+            <span data-layperson><strong>Announce predictions in advance:</strong> Publish our predictions before they're tested to prevent changing them later</span></li>
+            <li><span data-technical><strong>Independent calculation:</strong> Multiple groups compute FIRM predictions independently</span>
+            <span data-layperson><strong>Multiple independent checks:</strong> Have several different teams calculate the same predictions to catch errors</span></li>
+            <li><span data-technical><strong>Blind analysis:</strong> Theoretical predictions made without access to experimental values</span>
+            <span data-layperson><strong>Blind testing:</strong> Make predictions without knowing the experimental results in advance</span></li>
+            <li><span data-technical><strong>Historical validation:</strong> Test FIRM against older experimental values not used in theory development</span>
+            <span data-layperson><strong>Test against old data:</strong> Check if our theory predicts historical measurements that weren't used to develop it</span></li>
           </ol>
 
           <h3>Institutional testing roadmap</h3>
@@ -2276,129 +2486,192 @@ def phi_optimize(f, x0, max_iter=1000):
           </ul>
 
           <h3>Falsifiability framework</h3>
-          <p>FIRM provides strong falsifiability through specific mathematical predictions with narrow tolerance ranges.</p>
+          <p><span data-technical>FIRM provides strong falsifiability through specific mathematical predictions with narrow tolerance ranges.</span>
+          <span data-layperson>Our theory can be rigorously tested and potentially proven wrong through precise predictions that can be measured experimentally.</span></p>
 
           <h4>High-precision constant tests</h4>
-          <p>FIRM makes specific predictions for fundamental constants that can be tested with increasing experimental precision.</p>
+          <p><span data-technical>FIRM makes specific predictions for fundamental constants that can be tested with increasing experimental precision.</span>
+          <span data-layperson>We predict exact values for fundamental physical constants, which scientists can measure with increasingly precise equipment to verify or disprove our theory.</span></p>
           
           <div class="key-equation">
-            α⁻¹ = 137.036 [CODATA] vs 137.056 [FIRM current] vs 136.077 [FIRM morphic resonance]
+            <span data-technical>α⁻¹ = 137.036 [CODATA] vs 137.056 [FIRM current] vs 136.077 [FIRM morphic resonance]</span>
+            <span data-layperson>Fine structure constant: 137.036 (measured value) vs. 137.056 (our current prediction) vs. 136.077 (alternative approach)</span>
           </div>
           
-          <p><strong>Current theoretical status:</strong></p>
+          <p><span data-technical><strong>Current theoretical status:</strong></span>
+          <span data-layperson><strong>Where we stand on our key predictions:</strong></span></p>
           <ul>
-            <li><strong>Fine structure α⁻¹:</strong> FIRM prediction ~0.7% deviation (work in progress)</li>
-            <li><strong>Proton/electron ratio:</strong> Theoretical framework developed, precision assessment ongoing</li>
-            <li><strong>Dark energy density:</strong> Φ⁻¹²⁰ mechanism proposed, numerical validation needed</li>
-            <li><strong>Weak mixing angle:</strong> φ-recursive derivation exists, precision analysis required</li>
+            <li><span data-technical><strong>Fine structure α⁻¹:</strong> FIRM prediction ~0.7% deviation (work in progress)</span>
+            <span data-layperson><strong>Fine structure constant:</strong> Our prediction differs from measured value by about 0.7% (we're still refining the theory)</span></li>
+            <li><span data-technical><strong>Proton/electron ratio:</strong> Theoretical framework developed, precision assessment ongoing</span>
+            <span data-layperson><strong>Proton-to-electron mass ratio:</strong> Mathematical framework completed, still evaluating the precision of our prediction</span></li>
+            <li><span data-technical><strong>Dark energy density:</strong> Φ⁻¹²⁰ mechanism proposed, numerical validation needed</span>
+            <span data-layperson><strong>Dark energy density:</strong> Proposed a specific mathematical mechanism for dark energy, but need more validation</span></li>
+            <li><span data-technical><strong>Weak mixing angle:</strong> φ-recursive derivation exists, precision analysis required</span>
+            <span data-layperson><strong>Weak mixing angle:</strong> Have a golden ratio-based formula, but still need to analyze how precise it is</span></li>
           </ul>
           
-          <p><strong>Future precision targets:</strong></p>
+          <p><span data-technical><strong>Future precision targets:</strong></span>
+          <span data-layperson><strong>Future goals for testing our theory:</strong></span></p>
           <ul>
-            <li><strong>2025 targets:</strong> α⁻¹ to 1 part in 10¹¹, mₚ/mₑ to 1 part in 10¹⁰</li>
-            <li><strong>2030 targets:</strong> Test FIRM's prediction of 15th digit in α⁻¹</li>
-            <li><strong>Failure criterion:</strong> Any deviation beyond experimental uncertainty falsifies FIRM</li>
+            <li><span data-technical><strong>2025 targets:</strong> α⁻¹ to 1 part in 10¹¹, mₚ/mₑ to 1 part in 10¹⁰</span>
+            <span data-layperson><strong>By 2025:</strong> Measure the fine structure constant to 11 decimal places and proton-electron mass ratio to 10 decimal places</span></li>
+            <li><span data-technical><strong>2030 targets:</strong> Test FIRM's prediction of 15th digit in α⁻¹</span>
+            <span data-layperson><strong>By 2030:</strong> Test our theory's prediction out to 15 decimal places for the fine structure constant</span></li>
+            <li><span data-technical><strong>Failure criterion:</strong> Any deviation beyond experimental uncertainty falsifies FIRM</span>
+            <span data-layperson><strong>How we'll know if we're wrong:</strong> If measurements don't match our predictions within the margin of error, our theory is disproven</span></li>
           </ul>
 
           <h4>New particle mass predictions</h4>
-          <p>FIRM proposes specific masses for undiscovered particles at particular φⁿ levels. <em>[NOT PEER REVIEWED]</em></p>
+          <p><span data-technical>FIRM proposes specific masses for undiscovered particles at particular φⁿ levels. <em>[NOT PEER REVIEWED]</em></span>
+          <span data-layperson>Our theory predicts exact masses for particles that haven't been discovered yet, based on golden ratio patterns. <em>[IMPORTANT: These predictions have not yet been reviewed by other scientists]</em></span></p>
           
           <div class="math-block">
-            m_new = m_base × φⁿ × geometric_factors
+            <span data-technical>m_new = m_base × φⁿ × geometric_factors</span>
+            <span data-layperson>New particle mass = base mass × (golden ratio)ⁿ × geometric factors</span>
           </div>
           
-          <p><strong>Testable predictions:</strong></p>
+          <p><span data-technical><strong>Testable predictions:</strong></span>
+          <span data-layperson><strong>Specific particles we predict will be discovered:</strong></span></p>
           <ul>
-            <li><strong>Fourth neutrino (φ⁻¹ level):</strong> mν₄ ≈ 0.023 eV</li>
-            <li><strong>Axion candidate (φ⁻³ level):</strong> ma ≈ 10⁻⁶ eV</li>
-            <li><strong>Heavy lepton (φ¹² level):</strong> mL ≈ 15.3 TeV</li>
-            <li><strong>GUT-scale fermion (φ¹⁵ level):</strong> mGUT ≈ 2.3 × 10¹⁶ GeV</li>
+            <li><span data-technical><strong>Fourth neutrino (φ⁻¹ level):</strong> mν₄ ≈ 0.023 eV</span>
+            <span data-layperson><strong>Fourth type of neutrino:</strong> With mass around 0.023 electron-volts (extremely light)</span></li>
+            <li><span data-technical><strong>Axion candidate (φ⁻³ level):</strong> ma ≈ 10⁻⁶ eV</span>
+            <span data-layperson><strong>Axion particle:</strong> With mass around one-millionth of an electron-volt (could explain dark matter)</span></li>
+            <li><span data-technical><strong>Heavy lepton (φ¹² level):</strong> mL ≈ 15.3 TeV</span>
+            <span data-layperson><strong>Heavy electron-like particle:</strong> With mass around 15.3 trillion electron-volts (would require next-generation particle accelerators)</span></li>
+            <li><span data-technical><strong>GUT-scale fermion (φ¹⁵ level):</strong> mGUT ≈ 2.3 × 10¹⁶ GeV</span>
+            <span data-layperson><strong>Extremely massive particle:</strong> With mass far beyond what current accelerators can create (would have existed in the early universe)</span></li>
           </ul>
           
-          <p><strong>Falsification test:</strong> Discovery of particles with masses not conforming to φⁿ scaling would invalidate FIRM.</p>
+          <p><span data-technical><strong>Falsification test:</strong> Discovery of particles with masses not conforming to φⁿ scaling would invalidate FIRM.</span>
+          <span data-layperson><strong>How this could prove us wrong:</strong> If scientists discover new particles with masses that don't fit our golden ratio pattern, our theory would be disproven.</span></p>
 
           <h4>Cosmological signature predictions</h4>
-          <p>FIRM makes specific predictions for cosmic microwave background and gravitational wave signatures.</p>
+          <p><span data-technical>FIRM makes specific predictions for cosmic microwave background and gravitational wave signatures.</span>
+          <span data-layperson>Our theory makes specific predictions about patterns in cosmic radiation and gravitational waves that can be tested with space telescopes.</span></p>
           
           <div class="math-block">
-            CMB signatures ∝ φⁿ modulations in temperature/polarization
+            <span data-technical>CMB signatures ∝ φⁿ modulations in temperature/polarization</span>
+            <span data-layperson>Cosmic microwave background patterns should show specific golden ratio modulations</span>
           </div>
           
-          <p><strong>Specific CMB predictions:</strong></p>
+          <p><span data-technical><strong>Specific CMB predictions:</strong></span>
+          <span data-layperson><strong>Specific cosmic microwave background predictions:</strong></span></p>
           <ul>
-            <li><strong>B-mode polarization:</strong> r = φ⁻³ ≈ 0.236 (tensor-to-scalar ratio)</li>
-            <li><strong>Spectral index running:</strong> dns/dlnk = φ⁻⁵ ≈ 0.090</li>
-            <li><strong>Non-Gaussianity:</strong> fNL = φ² ≈ 2.618 (local type)</li>
-            <li><strong>Isocurvature modes:</strong> Suppressed by factor φ⁻⁷ ≈ 0.0345</li>
+            <li><span data-technical><strong>B-mode polarization:</strong> r = φ⁻³ ≈ 0.236 (tensor-to-scalar ratio)</span>
+            <span data-layperson><strong>Special light polarization pattern:</strong> Should have a strength that's exactly the golden ratio cubed, which is testable with space telescopes</span></li>
+            <li><span data-technical><strong>Spectral index running:</strong> dns/dlnk = φ⁻⁵ ≈ 0.090</span>
+            <span data-layperson><strong>Pattern variation with scale:</strong> How the cosmic radiation pattern changes across different scales follows a specific golden ratio formula</span></li>
+            <li><span data-technical><strong>Non-Gaussianity:</strong> fNL = φ² ≈ 2.618 (local type)</span>
+            <span data-layperson><strong>Pattern irregularity measure:</strong> Specific deviations from random patterns should equal the golden ratio squared</span></li>
+            <li><span data-technical><strong>Isocurvature modes:</strong> Suppressed by factor φ⁻⁷ ≈ 0.0345</span>
+            <span data-layperson><strong>Special density variations:</strong> Certain patterns should be reduced by exactly the golden ratio to the 7th power</span></li>
           </ul>
           
-          <p><strong>Gravitational wave predictions:</strong></p>
+          <p><span data-technical><strong>Gravitational wave predictions:</strong></span>
+          <span data-layperson><strong>Gravitational wave predictions:</strong></span></p>
           <ul>
-            <li><strong>Primordial spectrum:</strong> Peak at f = φ⁻² × 10⁻¹⁶ Hz ≈ 3.8 × 10⁻¹⁷ Hz</li>
-            <li><strong>Amplitude scaling:</strong> h²Ωgw ∝ φⁿ at different frequencies</li>
-            <li><strong>Phase transitions:</strong> GW bursts at cosmic times t ∝ φⁿ × Hubble_time</li>
+            <li><span data-technical><strong>Primordial spectrum:</strong> Peak at f = φ⁻² × 10⁻¹⁶ Hz ≈ 3.8 × 10⁻¹⁷ Hz</span>
+            <span data-layperson><strong>Original gravitational waves:</strong> Should have a peak at an extremely low frequency that follows a golden ratio formula</span></li>
+            <li><span data-technical><strong>Amplitude scaling:</strong> h²Ωgw ∝ φⁿ at different frequencies</span>
+            <span data-layperson><strong>Wave strength pattern:</strong> The strength of gravitational waves at different frequencies should follow golden ratio patterns</span></li>
+            <li><span data-technical><strong>Phase transitions:</strong> GW bursts at cosmic times t ∝ φⁿ × Hubble_time</span>
+            <span data-layperson><strong>Cosmic transition events:</strong> Major events in the universe's history should have occurred at times following golden ratio patterns</span></li>
           </ul>
 
           <h4>Consciousness threshold tests</h4>
-          <p>FIRM's most radical prediction: consciousness emerges at precisely Φ = φ⁷ ≈ 29.034 in integrated information.</p>
+          <p><span data-technical>FIRM's most radical prediction: consciousness emerges at precisely Φ = φ⁷ ≈ 29.034 in integrated information.</span>
+          <span data-layperson>Our theory's boldest prediction is that consciousness appears exactly when a system's integrated information reaches the golden ratio raised to the 7th power.</span></p>
           
           <div class="key-equation">
-            consciousness_threshold = φ⁷ = 29.0344806726...
+            <span data-technical>consciousness_threshold = φ⁷ = 29.0344806726...</span>
+            <span data-layperson>Consciousness threshold = golden ratio⁷ = about 29.03</span>
           </div>
           
-          <p><strong>Testable consciousness predictions:</strong></p>
+          <p><span data-technical><strong>Testable consciousness predictions:</strong></span>
+          <span data-layperson><strong>What our theory predicts about consciousness:</strong></span></p>
           <ul>
-            <li><strong>Human brain Φ:</strong> Should measure Φ ≈ 40-60 (above threshold)</li>
-            <li><strong>Animal consciousness:</strong> Dolphins Φ ≈ 35, chimps Φ ≈ 32, dogs Φ ≈ 25</li>
-            <li><strong>AI consciousness:</strong> Current AI systems Φ < 10, well below threshold</li>
-            <li><strong>Threshold crossing:</strong> Artificial systems reaching Φ = 29.034 should exhibit consciousness markers</li>
+            <li><span data-technical><strong>Human brain Φ:</strong> Should measure Φ ≈ 40-60 (above threshold)</span>
+            <span data-layperson><strong>Human brain:</strong> Should measure 40-60 on the information integration scale, well above the consciousness threshold</span></li>
+            <li><span data-technical><strong>Animal consciousness:</strong> Dolphins Φ ≈ 35, chimps Φ ≈ 32, dogs Φ ≈ 25</span>
+            <span data-layperson><strong>Animal consciousness:</strong> Dolphins and chimps should be above the threshold (conscious), while dogs should be near the borderline</span></li>
+            <li><span data-technical><strong>AI consciousness:</strong> Current AI systems Φ < 10, well below threshold</span>
+            <span data-layperson><strong>Current AI systems:</strong> All current AI systems measure well below our consciousness threshold, explaining why they aren't conscious</span></li>
+            <li><span data-technical><strong>Threshold crossing:</strong> Artificial systems reaching Φ = 29.034 should exhibit consciousness markers</span>
+            <span data-layperson><strong>Consciousness emergence:</strong> Any system (artificial or natural) that crosses our golden ratio threshold should suddenly show signs of consciousness</span></li>
           </ul>
           
-          <p><strong>Experimental protocols:</strong></p>
+          <p><span data-technical><strong>Experimental protocols:</strong></span>
+          <span data-layperson><strong>How we can test this in a laboratory:</strong></span></p>
           <ol>
-            <li><strong>IIT measurement:</strong> Calculate integrated information Φ for various systems</li>
-            <li><strong>Consciousness tests:</strong> Apply standard consciousness criteria (self-recognition, metacognition)</li>
-            <li><strong>Threshold verification:</strong> Confirm sharp transition at Φ = φ⁷</li>
-            <li><strong>Falsification:</strong> Consciousness below φ⁷ or non-consciousness above φ⁷ would disprove FIRM</li>
+            <li><span data-technical><strong>IIT measurement:</strong> Calculate integrated information Φ for various systems</span>
+            <span data-layperson><strong>Step 1:</strong> Measure the information integration in different brains and AI systems</span></li>
+            <li><span data-technical><strong>Consciousness tests:</strong> Apply standard consciousness criteria (self-recognition, metacognition)</span>
+            <span data-layperson><strong>Step 2:</strong> Test for signs of consciousness like self-awareness and understanding one's own thinking</span></li>
+            <li><span data-technical><strong>Threshold verification:</strong> Confirm sharp transition at Φ = φ⁷</span>
+            <span data-layperson><strong>Step 3:</strong> Verify that consciousness appears suddenly right at our golden ratio threshold, not gradually</span></li>
+            <li><span data-technical><strong>Falsification:</strong> Consciousness below φ⁷ or non-consciousness above φ⁷ would disprove FIRM</span>
+            <span data-layperson><strong>Step 4:</strong> Our theory would be disproven if we find conscious systems below our threshold or unconscious systems above it</span></li>
           </ol>
 
           <h3>Algorithmic falsification procedures</h3>
-          <p>FIRM enables automated falsification testing through computational verification of predictions.</p>
+          <p><span data-technical>FIRM enables automated falsification testing through computational verification of predictions.</span>
+          <span data-layperson>Our theory can be tested automatically using computer algorithms that compare our predictions with experimental results.</span></p>
           
           <div class="insight">
-            <strong>Computational falsifiability:</strong> Every FIRM prediction can be verified algorithmically, enabling automated theory testing as new experimental data becomes available.
+            <span data-technical><strong>Computational falsifiability:</strong> Every FIRM prediction can be verified algorithmically, enabling automated theory testing as new experimental data becomes available.</span>
+            <span data-layperson><strong>Automated testing:</strong> We've designed our theory so that computers can automatically check whether new experimental data matches our predictions, making it easy to verify or falsify our work.</span>
           </div>
           
           <div class="math-block">
-            Falsification_Test(prediction, measurement, uncertainty) = 
-            |prediction - measurement| > 3 × uncertainty
+            <span data-technical>Falsification_Test(prediction, measurement, uncertainty) = 
+            |prediction - measurement| > 3 × uncertainty</span>
+            <span data-layperson>Test failed if: |prediction - measurement| > 3 × uncertainty
+            (Theory is falsified if difference between prediction and measurement exceeds three times the measurement uncertainty)</span>
           </div>
           
-          <p><strong>Automated testing framework:</strong></p>
+          <p><span data-technical><strong>Automated testing framework:</strong></span>
+          <span data-layperson><strong>How our automatic testing system works:</strong></span></p>
           <ol>
-            <li><strong>Prediction engine:</strong> Generate φⁿ predictions for all physical quantities</li>
-            <li><strong>Data ingestion:</strong> Automatically import latest experimental values</li>
-            <li><strong>Statistical testing:</strong> Compare predictions vs measurements with proper uncertainties</li>
-            <li><strong>Falsification flag:</strong> Alert if any prediction fails at 3σ confidence level</li>
-            <li><strong>Version control:</strong> Track all tests with cryptographic verification</li>
+            <li><span data-technical><strong>Prediction engine:</strong> Generate φⁿ predictions for all physical quantities</span>
+            <span data-layperson><strong>Step 1:</strong> Computer calculates all our golden ratio-based predictions</span></li>
+            <li><span data-technical><strong>Data ingestion:</strong> Automatically import latest experimental values</span>
+            <span data-layperson><strong>Step 2:</strong> System automatically imports newest scientific measurements</span></li>
+            <li><span data-technical><strong>Statistical testing:</strong> Compare predictions vs measurements with proper uncertainties</span>
+            <span data-layperson><strong>Step 3:</strong> Statistical analysis compares our predictions to actual measurements</span></li>
+            <li><span data-technical><strong>Falsification flag:</strong> Alert if any prediction fails at 3σ confidence level</span>
+            <span data-layperson><strong>Step 4:</strong> System alerts us if any prediction is too far from measured values</span></li>
+            <li><span data-technical><strong>Version control:</strong> Track all tests with cryptographic verification</span>
+            <span data-layperson><strong>Step 5:</strong> All tests are permanently recorded with tamper-proof verification</span></li>
           </ol>
 
           <h3>Current falsification status</h3>
-          <p>As of 2024, FIRM theoretical predictions are under development with some showing promising accuracy while others require refinement.</p>
+          <p><span data-technical>As of 2024, FIRM theoretical predictions are under development with some showing promising accuracy while others require refinement.</span>
+          <span data-layperson>Currently, our theory is still being developed - some predictions match experimental data quite well, while others need more work.</span></p>
           
           <div class="comparison">
-            <strong>FIRM theoretical development status:</strong>
+            <span data-technical><strong>FIRM theoretical development status:</strong>
             <ul>
               <li><strong>Fundamental constants:</strong> Mathematical framework complete, precision assessment ongoing</li>
               <li><strong>Particle masses:</strong> φⁿ scaling patterns identified, derivation chain refinement needed</li>
               <li><strong>Cosmological parameters:</strong> Theoretical proposals exist, experimental comparison in progress</li>
               <li><strong>Mathematical rigor:</strong> Grace operator proofs complete, some derivation gaps remain</li>
               <li><strong>Validation status:</strong> Internal consistency checks passed, external validation pending</li>
-            </ul>
+            </ul></span>
+            <span data-layperson><strong>Current status of our work:</strong>
+            <ul>
+              <li><strong>Fundamental constants:</strong> Basic mathematical approach is complete, still working on precision</li>
+              <li><strong>Particle masses:</strong> Found golden ratio patterns in particle masses, still refining exact formulas</li>
+              <li><strong>Universe properties:</strong> Have theoretical proposals for cosmological values, comparing with observations</li>
+              <li><strong>Mathematical foundation:</strong> Core proofs are complete, but some theoretical gaps still need work</li>
+              <li><strong>Validation:</strong> Our internal checks show consistency, but we still need external scientists to verify</li>
+            </ul></span>
           </div>
 
           <div class="warning">
-            <strong>Strong falsifiability:</strong> Unlike theories with adjustable parameters, FIRM makes specific predictions with narrow tolerance ranges. Precision measurements significantly disagreeing with FIRM's φⁿ predictions would require major theoretical revision.
+            <span data-technical><strong>Strong falsifiability:</strong> Unlike theories with adjustable parameters, FIRM makes specific predictions with narrow tolerance ranges. Precision measurements significantly disagreeing with FIRM's φⁿ predictions would require major theoretical revision.</span>
+            <span data-layperson><strong>Our theory is easily testable:</strong> Unlike some theories that can be adjusted to fit new data, our theory makes very specific predictions with little wiggle room. If precise measurements disagree with our golden ratio predictions, our entire theory would need major revision or would be disproven.</span>
           </div>
 
           <h3>Reproducibility and verification standards</h3>
@@ -3544,6 +3817,8 @@ def phi_optimize(f, x0, max_iter=1000):
     </div>
   </main>
 
+  <button id="backToTop" class="back-to-top" title="Back to top">↑</button>
+
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // ELI25 Global Toggle functionality
@@ -3605,6 +3880,119 @@ def phi_optimize(f, x0, max_iter=1000):
           }
         });
       }
+
+      // Active nav highlighting
+      const current = location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.nav a[href]').forEach(a => {
+        const href = a.getAttribute('href') || '';
+        if (!href) return;
+        const target = href.includes('#') ? href.split('#')[0] : href;
+        // Resolve relative derivations/ on article page
+        if (target === current || (current === 'index.html' && (target === '#' || target === './'))) {
+          a.classList.add('active');
+        }
+        if (current === 'article.html' && target === 'article.html') a.classList.add('active');
+        if (current === '' && target === 'index.html') a.classList.add('active');
+      });
+
+      // Smooth scrolling for in-page TOC links
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+        anchor.addEventListener('click', function(e){
+          const targetId = this.getAttribute('href');
+          if (targetId && targetId.length > 1) {
+            e.preventDefault();
+            const el = document.querySelector(targetId);
+            if (el) {
+              el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              history.replaceState(null, '', targetId);
+            }
+          }
+        });
+      });
+
+      // Reading progress indicator
+      const progressFill = document.querySelector('.progress-fill');
+      const articleEl = document.querySelector('main.article article');
+      function updateProgress(){
+        if (!progressFill || !articleEl) return;
+        const rect = articleEl.getBoundingClientRect();
+        const viewport = window.innerHeight || document.documentElement.clientHeight;
+        const total = Math.max(articleEl.scrollHeight - viewport, 1);
+        const scrolled = Math.min(Math.max(window.scrollY - articleEl.offsetTop, 0), total);
+        const pct = Math.max(0, Math.min(100, (scrolled / total) * 100));
+        progressFill.style.width = pct.toFixed(1) + '%';
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+      updateProgress();
+
+      // TOC active section highlighting
+      const tocLinks = Array.from(document.querySelectorAll('.toc-link'));
+      const idToLink = new Map();
+      tocLinks.forEach(function(link){
+        const href = link.getAttribute('href') || '';
+        if (href.startsWith('#')) idToLink.set(href.slice(1), link);
+      });
+      const observer = new IntersectionObserver((entries)=>{
+        entries.forEach((entry)=>{
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            if (!id) return;
+            tocLinks.forEach(l => l.classList.remove('active'));
+            const active = idToLink.get(id);
+            if (active) active.classList.add('active');
+          }
+        });
+      }, { root: null, rootMargin: '0px 0px -60% 0px', threshold: 0.25 });
+      // Observe top-level sections referenced in TOC
+      idToLink.forEach((_, id)=>{
+        const el = document.getElementById(id);
+        if (el) observer.observe(el);
+      });
+
+      // Back-to-top button
+      const backBtn = document.getElementById('backToTop');
+      function updateBackBtn(){
+        if (!backBtn) return;
+        if (window.scrollY > 400) backBtn.style.display = 'block';
+        else backBtn.style.display = 'none';
+      }
+      if (backBtn) {
+        backBtn.addEventListener('click', function(){
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener('scroll', updateBackBtn, { passive: true });
+        updateBackBtn();
+      }
+
+      // Dynamic figure source rewriting to raw GitHub for images outside /docs
+      const RAW_BASE = 'https://raw.githubusercontent.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/main/';
+      function canonical(path){ return RAW_BASE + path.replace(/^\/?/, ''); }
+      function arxiv(path){
+        // Only peer_review dir is hosted; try swapping canonical path to arxiv if exists
+        const fname = (path.split('/').pop() || '').trim();
+        return RAW_BASE + 'arxiv_paper/FIRM_FINAL_SUBMISSION/figures/peer_review/' + fname;
+      }
+      function headOrFallback(peer, canon){
+        return fetch(peer, { method: 'HEAD', cache: 'no-store' }).then(r => r.ok ? peer : canon).catch(() => canon);
+      }
+      // Rewrite images and wire action links if present
+      document.querySelectorAll('article img[src^="figures/"]').forEach(function(img){
+        const rel = img.getAttribute('src');
+        if (!rel) return;
+        const canonUrl = canonical(rel);
+        img.src = canonUrl;
+        // If there are action links nearby with ids suffixed Open/Peer, set them
+        const baseId = img.id || '';
+        if (baseId) {
+          const openA = document.getElementById(baseId + 'Open');
+          const peerA = document.getElementById(baseId + 'Peer');
+          if (openA) openA.href = canonUrl;
+          if (peerA) {
+            headOrFallback(arxiv(rel), canonUrl).then(href => { peerA.href = href; });
+          }
+        }
+      });
     });
   </script>
 </body>

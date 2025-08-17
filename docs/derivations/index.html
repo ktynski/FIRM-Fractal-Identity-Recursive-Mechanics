@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mathematical Derivations – Ex Nihilo Reality</title>
+  <meta name="description" content="Browse all FIRM mathematical derivations (.tex) including fine structure constant, mass ratios, gauge couplings, CMB envelope, and more." />
+  <meta property="og:title" content="Mathematical Derivations – Ex Nihilo Reality" />
+  <meta property="og:description" content="All derivation .tex sources for FIRM: fine structure constant, mass ratios, gauge couplings, cosmological constants, and more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mathematical Derivations – Ex Nihilo Reality" />
+  <meta name="twitter:description" content="All derivation .tex sources for FIRM." />
+  <meta name="twitter:image" content="../assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png" />
+  <link rel="stylesheet" href="../assets/site.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand"><a href="../index.html">Ex Nihilo Reality</a></div>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <button id="eli25Toggle" class="nav-eli25" aria-label="Toggle between technical and simplified explanations">ELI25</button>
+      <a href="../article.html">Article</a>
+      <a href="./">Derivations</a>
+      <a href="../article.html#validation">Critique</a>
+      <a href="../for_the_skeptics.html">For the Skeptics</a>
+      <a href="../roadmap.html">Roadmap</a>
+      <a href="../index.html#gallery">Gallery</a>
+      <a href="../FIGURE_GALLERY.md">All Figures</a>
+      <a href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <button class="hamburger-menu" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main class="article">
+    <div class="articleLayout">
+      <article>
+        <h1>
+          <span data-technical>Mathematical Derivations</span>
+          <span data-layperson>The Math Behind Our Claims</span>
+        </h1>
+        <p class="subtle">
+          <span data-technical>Source TeX files for all current FIRM derivations. These are primary references linked throughout the article and skeptics FAQ.</span>
+          <span data-layperson>Here are the original math files (.tex). You can read, download, or view the raw versions.</span>
+        </p>
+
+        <div class="toolbar" style="margin: 1rem 0;">
+          <input id="search" class="search" type="search" placeholder="Search derivations by title or filename…" aria-label="Search derivations" />
+          <span id="countBadge" class="badge">0</span>
+        </div>
+
+        <div class="comparison">
+          <strong>Note:</strong> These are TeX sources meant for expert review and reproducibility. Some derivations remain works in progress; see roadmap and skeptics pages for limitations and open problems.
+        </div>
+
+        <div id="list" class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));"></div>
+      </article>
+    </div>
+  </main>
+
+  <button id="backToTop" class="back-to-top" title="Back to top">↑</button>
+
+  <script>
+    // Data: static list of TeX files in this directory
+    const FILES = [
+      { file: 'derivation_01_fine_structure_alpha.tex', title: 'Derivation 01 – Fine Structure Constant (α)' },
+      { file: 'derivation_02_mass_ratios.tex', title: 'Derivation 02 – Mass Ratios' },
+      { file: 'derivation_03_cosmological_constant.tex', title: 'Derivation 03 – Cosmological Constant' },
+      { file: 'derivation_04_gauge_couplings.tex', title: 'Derivation 04 – Gauge Couplings' },
+      { file: 'derivation_05_mass_ratio_structural_corrections.tex', title: 'Derivation 05 – Mass Ratio Structural Corrections' },
+      { file: 'derivation_06_ckm_matrix_vus.tex', title: 'Derivation 06 – CKM Matrix Vus' },
+      { file: 'derivation_07_hubble_constant.tex', title: 'Derivation 07 – Hubble Constant' },
+      { file: 'derivation_08_strong_coupling_complete.tex', title: 'Derivation 08 – Strong Coupling (Complete)' },
+      { file: 'derivation_09_ckm_suppression_factor.tex', title: 'Derivation 09 – CKM Suppression Factor' },
+      { file: 'derivation_10_cmb_envelope.tex', title: 'Derivation 10 – CMB Envelope' },
+      { file: 'derivation_11_weinberg_angle_exact.tex', title: 'Derivation 11 – Weinberg Angle (Exact)' },
+      { file: 'derivation_12_mixing_angles.tex', title: 'Derivation 12 – Mixing Angles' },
+      { file: 'derivation_13_phi_shells_cooling.tex', title: 'Derivation 13 – φ-Shells Cooling' },
+      { file: 'derivation_14_kelvin_scaling.tex', title: 'Derivation 14 – Kelvin Scaling' },
+      { file: 'derivation_15_neutrino.tex', title: 'Derivation 15 – Neutrino' },
+      { file: 'derivation_16_kelvin_thermal.tex', title: 'Derivation 16 – Kelvin Thermal' },
+      { file: 'derivation_17_neutrino_seesaw_derivation.tex', title: 'Derivation 17 – Neutrino Seesaw' },
+      { file: 'derivation_18_topology_and_zeta_constants.tex', title: 'Derivation 18 – Topology & Zeta Constants' },
+      { file: 'derivation_19_zeta_normalization.tex', title: 'Derivation 19 – Zeta Normalization' },
+      { file: 'derivation_20_complete_firm.tex', title: 'Derivation 20 – Complete FIRM' },
+      { file: 'derivation_21_topology_factor.tex', title: 'Derivation 21 – Topology Factor' },
+      { file: 'derivation_22_strong_coupling_derivations.tex', title: 'Derivation 22 – Strong Coupling (Derivations)' },
+      { file: 'derivation_23_weinberg_angle_correction.tex', title: 'Derivation 23 – Weinberg Angle Correction' },
+      { file: 'derivation_24_fundamental_constants_firm.tex', title: 'Derivation 24 – Fundamental Constants (FIRM)' },
+      { file: 'master_derivations.tex', title: 'Master Derivations (Overview)' }
+    ];
+
+    const RAW_BASE = 'https://raw.githubusercontent.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics/main/docs/derivations/';
+
+    function renderList(items){
+      const list = document.getElementById('list');
+      const count = document.getElementById('countBadge');
+      if (!list) return;
+      list.innerHTML = '';
+      items.forEach(d => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        const name = document.createElement('h3');
+        name.textContent = d.title || d.file;
+        const meta = document.createElement('p');
+        meta.className = 'subtle';
+        meta.textContent = d.file;
+        const actions = document.createElement('div');
+        actions.className = 'article-cta-section';
+
+        const view = document.createElement('a');
+        view.className = 'cta secondary';
+        view.href = d.file;
+        view.textContent = 'View .tex';
+        view.setAttribute('title', 'View TeX source in browser');
+
+        const raw = document.createElement('a');
+        raw.className = 'cta secondary';
+        raw.href = RAW_BASE + d.file;
+        raw.target = '_blank';
+        raw.rel = 'noopener';
+        raw.textContent = 'Raw';
+
+        const dl = document.createElement('a');
+        dl.className = 'cta primary';
+        dl.href = d.file;
+        dl.setAttribute('download', d.file);
+        dl.textContent = 'Download';
+
+        actions.appendChild(view);
+        actions.appendChild(raw);
+        actions.appendChild(dl);
+
+        card.appendChild(name);
+        card.appendChild(meta);
+        card.appendChild(actions);
+        list.appendChild(card);
+      });
+      if (count) count.textContent = String(items.length);
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+      // Initial render
+      renderList(FILES);
+
+      // Search filter
+      const input = document.getElementById('search');
+      if (input) {
+        input.addEventListener('input', function(){
+          const q = (this.value || '').toLowerCase();
+          const filtered = FILES.filter(d => (d.title || '').toLowerCase().includes(q) || d.file.toLowerCase().includes(q));
+          renderList(filtered);
+        });
+      }
+
+      // ELI25 toggle sync
+      const eliBtn = document.getElementById('eli25Toggle');
+      const isELI25Active = localStorage.getItem('eli25Active') === 'true';
+      if (isELI25Active) {
+        document.body.classList.add('eli25-active');
+        if (eliBtn) eliBtn.textContent = 'Technical';
+      }
+      if (eliBtn) {
+        eliBtn.addEventListener('click', ()=>{
+          const active = document.body.classList.toggle('eli25-active');
+          localStorage.setItem('eli25Active', String(active));
+          eliBtn.textContent = active ? 'Technical' : 'ELI25';
+        });
+      }
+
+      // Mobile nav toggle
+      const hamburger = document.querySelector('.hamburger-menu');
+      const nav = document.querySelector('.nav');
+      if (hamburger && nav) {
+        hamburger.addEventListener('click', ()=> nav.classList.toggle('active'));
+        document.addEventListener('click', (e)=>{
+          if (!hamburger.contains(e.target) && !nav.contains(e.target)) nav.classList.remove('active');
+        });
+      }
+
+      // Back-to-top
+      const backBtn = document.getElementById('backToTop');
+      function updateBack(){ if (!backBtn) return; backBtn.style.display = window.scrollY > 400 ? 'block' : 'none'; }
+      if (backBtn) {
+        backBtn.addEventListener('click', ()=> window.scrollTo({ top: 0, behavior: 'smooth' }));
+        window.addEventListener('scroll', updateBack, { passive: true });
+        updateBack();
+      }
+
+      // Active nav highlighting
+      const current = location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.nav a[href]').forEach(a => {
+        const href = a.getAttribute('href') || '';
+        if (!href) return;
+        const target = href.includes('#') ? href.split('#')[0] : href;
+        if (target.endsWith('/derivations/') || target === './') { a.classList.add('active'); return; }
+        if (target === current || (current === 'index.html' && (target === '#' || target === './'))) {
+          a.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+

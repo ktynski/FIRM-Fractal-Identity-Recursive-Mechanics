@@ -4,6 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ex Nihilo Reality — Mathematics that compiles</title>
+  <meta name="description" content="FIRM: a φ‑recursive, axiomatic framework deriving physical constants; explore the article, skeptic FAQ, roadmap, and figures." />
+  <meta property="og:title" content="Ex Nihilo Reality — Mathematics that compiles" />
+  <meta property="og:description" content="FIRM: a φ‑recursive, axiomatic framework deriving physical constants; explore the article, skeptic FAQ, roadmap, and figures." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ex Nihilo Reality — Mathematics that compiles" />
+  <meta name="twitter:description" content="FIRM: a φ‑recursive, axiomatic framework deriving physical constants; explore the article, skeptic FAQ, roadmap, and figures." />
+  <meta name="twitter:image" content="assets/FIRM_CMB_Crown_Jewel_Ex_Nihilo_4K.png" />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
@@ -13,7 +22,8 @@
       <a href="index.html">Home</a>
       <button id="eli25Toggle" class="nav-eli25" aria-label="Toggle between technical and simplified explanations">ELI25</button>
       <a href="article.html">Article</a>
-      <a href="article.html#limitations">Critique</a>
+      <a href="derivations/">Derivations</a>
+      <a href="article.html#validation">Critique</a>
       <a href="for_the_skeptics.html">For the Skeptics</a>
       <a href="roadmap.html">Roadmap</a>
       <a href="#gallery">Gallery</a>
@@ -522,7 +532,7 @@
             <p>Dig into our derivations. Check our math. Test our code.</p>
             <div class="level-actions">
               <a href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" class="cta secondary">View Source Code</a>
-              <a href="docs/derivations/" class="cta secondary">Mathematical Proofs</a>
+              <a href="derivations/" class="cta secondary">Mathematical Proofs</a>
             </div>
           </div>
           
@@ -731,6 +741,32 @@
           eli25Modal.style.display = 'none';
         }
       });
+
+      // Active nav highlighting
+      const current = location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.nav a[href]').forEach(a => {
+        const href = a.getAttribute('href') || '';
+        if (!href) return;
+        // Handle section links and relative paths
+        const target = href.includes('#') ? href.split('#')[0] : href;
+        if (target === '' || target === current || (current === 'index.html' && (target === '#' || target === './'))) {
+          a.classList.add('active');
+        }
+        if (current === 'article.html' && target === 'article.html') a.classList.add('active');
+        if (current === '' && target === 'index.html') a.classList.add('active');
+      });
+
+      // Mobile hamburger nav toggle
+      const hamburger = document.querySelector('.hamburger-menu');
+      const nav = document.querySelector('.nav');
+      if (hamburger && nav) {
+        hamburger.addEventListener('click', () => nav.classList.toggle('active'));
+        document.addEventListener('click', (e) => {
+          if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
+            nav.classList.remove('active');
+          }
+        });
+      }
 
     let allFigures = [];
     let visible = 0;

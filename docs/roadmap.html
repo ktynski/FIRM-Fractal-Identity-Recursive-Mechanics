@@ -15,7 +15,7 @@
                     <h1><a href="index.html">ExNahiloReality</a></h1>
                     <p class="tagline">From Nothing, Everything</p>
                 </div>
-                <nav class="nav">
+                <nav class="nav" role="navigation" aria-label="Main navigation">
                     <div class="hamburger" id="hamburger">
                         <span></span>
                         <span></span>
@@ -23,7 +23,10 @@
                     </div>
                     <ul class="nav-menu" id="nav-menu">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="article.html">The Theory</a></li>
+                        <li><button id="eli25Toggle" class="nav-eli25" aria-label="Toggle between technical and simplified explanations">ELI25</button></li>
+                        <li><a href="article.html">Article</a></li>
+                        <li><a href="derivations/">Derivations</a></li>
+                        <li><a href="article.html#validation">Critique</a></li>
                         <li><a href="for_the_skeptics.html">For Skeptics</a></li>
                         <li><a href="roadmap.html" class="active">Roadmap</a></li>
                     </ul>
@@ -36,8 +39,14 @@
         <div class="container">
             <article class="article">
                 <header class="article-header">
-                    <h1 class="article-title">Development & Verification Roadmap</h1>
-                    <p class="article-subtitle">Transparent methodology for building and verifying the FIRM framework</p>
+                    <h1 class="article-title">
+                        <span data-technical>Development & Verification Roadmap</span>
+                        <span data-layperson>What We’re Building Next</span>
+                    </h1>
+                    <p class="article-subtitle">
+                        <span data-technical>Transparent methodology for building and verifying the FIRM framework</span>
+                        <span data-layperson>Our plan, milestones, and how we’ll test the ideas honestly.</span>
+                    </p>
                 </header>
 
                 <div class="article-content">
@@ -433,6 +442,17 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Active nav highlighting
+        const current = location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.nav a[href]').forEach(a => {
+            const href = a.getAttribute('href') || '';
+            const target = href.includes('#') ? href.split('#')[0] : href;
+            if (target === current || (current === '' && target === 'index.html')) {
+                a.classList.add('active');
+            }
+            if (current === 'roadmap.html' && target === 'roadmap.html') a.classList.add('active');
         });
     </script>
 </body>
