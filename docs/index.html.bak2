@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ex Nihilo Reality — Mathematics that compiles</title>
+  <link rel="stylesheet" href="assets/site.css" />
+  <style>
+    .article { max-width: 1100px; margin: 40px auto; padding: 0 16px; }
+    .article h1, .article h2, .article h3 { margin: 16px 0; }
+    .article p { line-height: 1.7; margin: 12px 0; }
+    .toc { position: sticky; top: 10px; align-self: flex-start; min-width: 240px; }
+    .toc .card { position: sticky; top: 10px; }
+    .articleLayout { display: grid; grid-template-columns: 1fr 3fr; gap: 16px; }
+    .fig { margin: 18px 0; }
+    .fig img { width: 100%; height: auto; border-radius: 8px; }
+    .fig .caption { font-size: 14px; color: #667; margin-top: 6px; }
+    @media (max-width: 980px){ .articleLayout { grid-template-columns: 1fr; } .toc{ position: initial; } }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="brand"><a href="index.html" style="text-decoration:none;color:inherit;">Ex Nihilo Reality</a></div>
+      <a href="article.html">Article</a>
+      <a href="#gallery">Gallery</a>
+      <a href="FIGURE_GALLERY.md">Markdown Index</a>
+      <a href="https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics" target="_blank" rel="noopener">GitHub</a>
+      <button id="eli25Toggle" class="cta secondary" style="margin-left:auto;">ELI25</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="card">
+        <h1>Mathematics that compiles</h1>
+        <p class="subtle">We don't debate—we demonstrate. Every figure generated deterministically from code with full provenance.</p>
+        <div style="display:flex; gap:10px; margin-top:12px; flex-wrap:wrap;">
+          <a class="cta" href="article.html">Read Article</a>
+          <a class="cta secondary" href="#gallery">Gallery</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Search & Browse</h3>
+        <div class="controls">
+          <div class="toolbar">
+            <input class="search" id="search" placeholder="Search figure names…" />
+            <select class="select" id="sort">
+              <option value="name">Sort: Name</option>
+              <option value="width">Sort: Width</option>
+              <option value="height">Sort: Height</option>
+            </select>
+            <span class="badge" id="countBadge">0</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;">
+          <p class="subtle" style="font-size:0.9rem;">
+            <b>Ex Nihilo</b>: Pure mathematics • <b>Provenance</b>: Full traceability • <b>Reproducible</b>: One command regenerates all
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="article" id="article">
+      <div class="articleLayout">
+        <aside class="toc">
+          <div class="card">
+            <h3>Article Contents</h3>
+            <ol style="line-height: 1.6;">
+              <li><a href="article.html#executive">Executive Summary</a>
+                <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
+                  <li><a href="article.html#executive" style="color: var(--muted);">FIRM Framework Overview</a></li>
+                  <li><a href="article.html#executive" style="color: var(--muted);">Key Achievements</a></li>
+                </ul>
+              </li>
+              <li><a href="article.html#breakthroughs">Theoretical Foundation</a>
+                <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
+                  <li><a href="article.html#breakthroughs" style="color: var(--muted);">Five Foundational Axioms</a></li>
+                  <li><a href="article.html#breakthroughs" style="color: var(--muted);">Grace Operator Theory</a></li>
+                  <li><a href="article.html#breakthroughs" style="color: var(--muted);">φ-Recursive Patterns</a></li>
+                </ul>
+              </li>
+              <li><a href="article.html#mathematical">Mathematical Development</a>
+                <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
+                  <li><a href="article.html#mathematical" style="color: var(--muted);">Differential Operators</a></li>
+                  <li><a href="article.html#mathematical" style="color: var(--muted);">Topological Framework</a></li>
+                  <li><a href="article.html#mathematical" style="color: var(--muted);">Category Theory</a></li>
+                </ul>
+              </li>
+              <li><a href="article.html#constants">Physical Constants Analysis</a>
+                <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
+                  <li><a href="article.html#constants" style="color: var(--muted);">Fine Structure Constant</a></li>
+                  <li><a href="article.html#constants" style="color: var(--muted);">Mass Ratios</a></li>
+                  <li><a href="article.html#constants" style="color: var(--muted);">Coupling Constants</a></li>
+                </ul>
+              </li>
+              <li><a href="article.html#applications">Applications & Extensions</a>
+                <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
+                  <li><a href="article.html#applications" style="color: var(--muted);">CMB Predictions</a></li>
+                  <li><a href="article.html#applications" style="color: var(--muted);">Neural Networks</a></li>
+                  <li><a href="article.html#applications" style="color: var(--muted);">Consciousness Models</a></li>
+                </ul>
+              </li>
+              <li><a href="article.html#validation">Validation & Limitations</a>
+                <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.85rem;">
+                  <li><a href="article.html#validation" style="color: var(--muted);">Statistical Analysis</a></li>
+                  <li><a href="article.html#validation" style="color: var(--muted);">Error Assessment</a></li>
+                  <li><a href="article.html#validation" style="color: var(--muted);">Future Work</a></li>
+                </ul>
+              </li>
+            </ol>
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #333;">
+              <a href="article.html" class="cta secondary" style="font-size:12px; padding:6px 12px; width: 100%; text-align: center; display: block;">Read Full Article →</a>
+            </div>
+    </div>
+        </aside>
+
+        <article>
+          <h1>FIRM Theory: Mathematical Framework Overview</h1>
+          <h2 id="abstract">Executive Summary</h2>
+          <div class="insight">
+            <p id="pAbs1">FIRM (Fractal Identity & Recursive Mechanics) proposes a mathematical framework for systematic derivation of fundamental physical constants through φ-recursive principles. The approach develops five foundational axioms and a Grace Operator whose fixed points generate recursive scaling patterns governed by the golden ratio <span class="phi">φ = (1+√5)/2</span>. Notable precision improvements are achieved, particularly for the fine structure constant, though the theoretical foundation requires continued development and independent validation.</p>
+          </div>
+          
+          <div class="comparison">
+            <strong>Key Development:</strong> The framework achieves 0.014% agreement with experimental values for the fine structure constant using the formulation α⁻¹ = 137 + φ⁻⁶, representing significant improvement over previous φ-based approaches. However, this precision should be evaluated considering systematic searches through φ-formulations and requires independent verification of theoretical foundations.
+      </div>
+          
+          <div class="warning">
+            <strong>Current Status:</strong> FIRM theory represents early-stage theoretical development with promising mathematical results that require broader physics community validation before scientific acceptance. The framework provides systematic mathematical tools for continued exploration in mathematical physics.
+      </div>
+
+          <div class="fig"><img id="fAbs1" alt="Conceptual overview" /><div class="caption">Overview of FIRM: from axioms through Grace operator to physical reality.</div><div class="actions"><a id="fAbs1Open" class="btn" target="_blank">open</a><a id="fAbs1Peer" class="btn" target="_blank">peer‑review</a></div></div>
+
+          <div class="insight">
+            <strong>Continue Reading:</strong> This overview provides a brief introduction to FIRM theory development. For comprehensive theoretical details, mathematical foundations, precision analysis, and validation frameworks, please read the full article.
+          </div>
+          
+          <div style="text-align:center; margin:2rem 0;">
+            <a class="cta" href="article.html">Read the Complete FIRM Theory Article →</a>
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">

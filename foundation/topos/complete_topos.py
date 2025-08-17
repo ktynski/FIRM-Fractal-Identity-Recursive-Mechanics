@@ -25,7 +25,7 @@ import math
 from itertools import combinations, permutations
 
 from foundation.operators.phi_recursion import PHI_VALUE
-from foundation.field_theory.complete_field_equations import FIRMFieldParameters
+from theory.field_theory.field_equations import FIRMFieldParameters
 from provenance.derivation_tree import DerivationNode
 
 

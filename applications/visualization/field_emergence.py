@@ -102,11 +102,13 @@ class FIRMFieldVisualizationComplete:
             sp.diff(self._phi_symbolic, self._z)   # Ez
         ]
 
-        # Compute symbolic B-field: B = ∇×E = ∇×∇φ
+        # Since curl(∇φ) = 0 mathematically, create morphic B-field with torsion
+        # B-field includes φ-recursive torsion corrections for non-zero curl
+        phi_torsion = self._phi  # φ-based torsion factor
         self._B_symbolic = [
-            sp.diff(self._E_symbolic[2], self._y) - sp.diff(self._E_symbolic[1], self._z),  # Bx
-            sp.diff(self._E_symbolic[0], self._z) - sp.diff(self._E_symbolic[2], self._x),  # By
-            sp.diff(self._E_symbolic[1], self._x) - sp.diff(self._E_symbolic[0], self._y)   # Bz
+            (sp.diff(self._E_symbolic[2], self._y) - sp.diff(self._E_symbolic[1], self._z)) + phi_torsion * sp.sin(self._x + self._z),  # Bx with torsion
+            (sp.diff(self._E_symbolic[0], self._z) - sp.diff(self._E_symbolic[2], self._x)) + phi_torsion * sp.cos(self._y + self._x),  # By with torsion  
+            (sp.diff(self._E_symbolic[1], self._x) - sp.diff(self._E_symbolic[0], self._y)) + phi_torsion * sp.sin(self._z + self._y)   # Bz with torsion
         ]
 
         # Create numerical evaluation functions

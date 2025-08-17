@@ -24,7 +24,7 @@ from scipy.integrate import solve_ivp
 from scipy.optimize import fsolve
 
 from foundation.operators.phi_recursion import PHI_VALUE
-from provenance.derivation_tree import DerivationNode
+from typing import Optional, Any
 
 
 @dataclass
@@ -70,7 +70,7 @@ class FieldEquationResult:
     conserved_charges: Dict[str, float]
     soul_states_detected: List[Dict[str, Any]]
     stability_analysis: Dict[str, Any]
-    provenance: DerivationNode = None
+    provenance: Optional[Any] = None
 
 
 class CompleteFieldEquations:

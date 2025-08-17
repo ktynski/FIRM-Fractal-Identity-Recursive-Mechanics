@@ -1,4 +1,92 @@
 {
+  "04d97ff1fa4b40dc": {
+    "integrity_hash": "bff77055cd56e91138a50e0eff00d71bc447fb52cf93ac4e0cd905ec685d1a43",
+    "mathematical_derivation": "\n    \u03c6-Geometric Peak Scaffold Derivation:\n    1. Base anchor: \u2113\u2080 = round(\u03c6^11); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b\n    2. Peak series: \u2113\u2099 = \u230a\u2113\u2080 \u03c6\u207f\u230b for n = 0, 1, 2, ...\n    3. k-decomposition: k = log_\u03c6(220.0) = 10.999948\n    4. Sacred structure: k = 12 + \u03c6\u207b\u00b9 + \u03b5\n       - 12: Full recursive cycle (divine completeness)\n       - \u03c6\u207b\u00b9 = 0.618034: Grace-reflective surplus\n       - \u03b5 = -1.618086: Devourer torsion ripple\n    5. Amplitude modulation: A\u2099 = A\u2080 \u00d7 \u03c6^(-n/2)\n    ",
+    "predicted_values": {
+      "amplitude_modulation": [
+        1.0,
+        0.7861513777574233,
+        0.6180339887498948,
+        0.48586827175664565,
+        0.38196601125010515,
+        0.30028310600077757
+      ],
+      "best_series": "phi_power_n11",
+      "geometric_l0": 199,
+      "k_decomposition": {
+        "base_12": 12,
+        "epsilon": -1.618086462379658,
+        "k": 10.999947526370237,
+        "phi_inv": 0.6180339887498948
+      },
+      "peak_positions": [
+        199,
+        322,
+        521,
+        843,
+        1364,
+        2207
+      ],
+      "phi_value": 1.618033988749895,
+      "target_l0": 220.0
+    },
+    "prediction_id": "04d97ff1fa4b40dc",
+    "prediction_type": "cmb_phi_geometric_peaks",
+    "provenance_chain": [
+      "foundation.operators.phi_recursion.PHI_VALUE",
+      "cosmology.phi_harmonic_anchor.generate_phi_harmonic_candidates",
+      "cosmology.phi_k_exponent.decompose_k_for_l0",
+      "cosmology.peaks.geometric_layer.get_cmb_phi_peaks",
+      "FIRM Axioms: Grace Operator fixed points in Fix(\ud835\udca2)"
+    ],
+    "target_observable": "CMB temperature power spectrum peaks (target \u2113\u2080\u2248220.0)",
+    "theory_version": "FIRM-v1.0-phi-geometric",
+    "timestamp": "2025-08-14T16:54:44.617645+00:00"
+  },
+  "1c57decbcf88ada7": {
+    "integrity_hash": "4caec1d4524cb91d51dbeeeccbc4663ca5796b29626dbf28f4d163dded4e5719",
+    "mathematical_derivation": "\n    \u03c6-Geometric Peak Scaffold Derivation:\n    1. Base anchor: \u2113\u2080 = round(\u03c6^11); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b\n    2. Peak series: \u2113\u2099 = \u230a\u2113\u2080 \u03c6\u207f\u230b for n = 0, 1, 2, ...\n    3. k-decomposition: k = log_\u03c6(220.0) = 10.999948\n    4. Sacred structure: k = 12 + \u03c6\u207b\u00b9 + \u03b5\n       - 12: Full recursive cycle (divine completeness)\n       - \u03c6\u207b\u00b9 = 0.618034: Grace-reflective surplus\n       - \u03b5 = -1.618086: Devourer torsion ripple\n    5. Amplitude modulation: A\u2099 = A\u2080 \u00d7 \u03c6^(-n/2)\n    ",
+    "predicted_values": {
+      "amplitude_modulation": [
+        1.0,
+        0.7861513777574233,
+        0.6180339887498948,
+        0.48586827175664565,
+        0.38196601125010515,
+        0.30028310600077757
+      ],
+      "best_series": "phi_power_n11",
+      "geometric_l0": 199,
+      "k_decomposition": {
+        "base_12": 12,
+        "epsilon": -1.618086462379658,
+        "k": 10.999947526370237,
+        "phi_inv": 0.6180339887498948
+      },
+      "peak_positions": [
+        199,
+        322,
+        521,
+        843,
+        1364,
+        2207
+      ],
+      "phi_value": 1.618033988749895,
+      "target_l0": 220.0
+    },
+    "prediction_id": "1c57decbcf88ada7",
+    "prediction_type": "cmb_phi_geometric_peaks",
+    "provenance_chain": [
+      "foundation.operators.phi_recursion.PHI_VALUE",
+      "cosmology.phi_harmonic_anchor.generate_phi_harmonic_candidates",
+      "cosmology.phi_k_exponent.decompose_k_for_l0",
+      "cosmology.peaks.geometric_layer.get_cmb_phi_peaks",
+      "FIRM Axioms: Grace Operator fixed points in Fix(\ud835\udca2)"
+    ],
+    "target_observable": "CMB temperature power spectrum peaks (target \u2113\u2080\u2248220.0)",
+    "theory_version": "FIRM-v1.0-phi-geometric",
+    "timestamp": "2025-08-14T15:57:33.217902+00:00"
+  },
   "60ecfaffc76163f9": {
     "integrity_hash": "e544e08794c16f07ddeafbe29c7dc216308c61affe2168b532848fba69f26b20",
     "mathematical_derivation": "\n        Unified CMB Prediction Derivation:\n        1. FIRM Lagrangian: \u2112 = (1/2)(\u2202\u03c6)\u00b2 - V[\u03c6] - \u03be G D \u03c6\n        2. Morphic Field Equation: Euler-Lagrange \u2192 field oscillation spectrum\n        3. Soul Stability Condition: Second variation \u2192 quantized coherence states\n        4. \u03c6-Geometric Scaffold: Pure geometry \u2192 acoustic peak positions\n        5. Field-Geometry Integration: Unified predictions combining both approaches\n        6. Complete theoretical bridge: Microscopic dynamics \u2194 Macroscopic structure\n        ",
@@ -105,6 +193,50 @@
     "target_observable": "CMB temperature power spectrum peaks (target \u2113\u2080\u2248220.0)",
     "theory_version": "FIRM-v1.0-phi-geometric",
     "timestamp": "2025-08-12T14:47:53.026586+00:00"
+  },
+  "866ebbfa93653938": {
+    "integrity_hash": "cbf724c48b229f01920e0ecac70f5f88f8d330a0a57215ee17bd645fb2d4b544",
+    "mathematical_derivation": "\n    \u03c6-Geometric Peak Scaffold Derivation:\n    1. Base anchor: \u2113\u2080 = round(\u03c6^11); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b\n    2. Peak series: \u2113\u2099 = \u230a\u2113\u2080 \u03c6\u207f\u230b for n = 0, 1, 2, ...\n    3. k-decomposition: k = log_\u03c6(220.0) = 10.999948\n    4. Sacred structure: k = 12 + \u03c6\u207b\u00b9 + \u03b5\n       - 12: Full recursive cycle (divine completeness)\n       - \u03c6\u207b\u00b9 = 0.618034: Grace-reflective surplus\n       - \u03b5 = -1.618086: Devourer torsion ripple\n    5. Amplitude modulation: A\u2099 = A\u2080 \u00d7 \u03c6^(-n/2)\n    ",
+    "predicted_values": {
+      "amplitude_modulation": [
+        1.0,
+        0.7861513777574233,
+        0.6180339887498948,
+        0.48586827175664565,
+        0.38196601125010515,
+        0.30028310600077757
+      ],
+      "best_series": "phi_power_n11",
+      "geometric_l0": 199,
+      "k_decomposition": {
+        "base_12": 12,
+        "epsilon": -1.618086462379658,
+        "k": 10.999947526370237,
+        "phi_inv": 0.6180339887498948
+      },
+      "peak_positions": [
+        199,
+        322,
+        521,
+        843,
+        1364,
+        2207
+      ],
+      "phi_value": 1.618033988749895,
+      "target_l0": 220.0
+    },
+    "prediction_id": "866ebbfa93653938",
+    "prediction_type": "cmb_phi_geometric_peaks",
+    "provenance_chain": [
+      "foundation.operators.phi_recursion.PHI_VALUE",
+      "cosmology.phi_harmonic_anchor.generate_phi_harmonic_candidates",
+      "cosmology.phi_k_exponent.decompose_k_for_l0",
+      "cosmology.peaks.geometric_layer.get_cmb_phi_peaks",
+      "FIRM Axioms: Grace Operator fixed points in Fix(\ud835\udca2)"
+    ],
+    "target_observable": "CMB temperature power spectrum peaks (target \u2113\u2080\u2248220.0)",
+    "theory_version": "FIRM-v1.0-phi-geometric",
+    "timestamp": "2025-08-14T15:57:34.999151+00:00"
   },
   "8d37d65175994d0b": {
     "integrity_hash": "90d51cd6d2303a29f90d0f38b4af161c888e4e0703c4de0624747c6d93808769",
@@ -326,6 +458,50 @@
     "target_observable": "CMB temperature power spectrum peaks (target \u2113\u2080\u2248220.0)",
     "theory_version": "FIRM-v1.0-phi-geometric",
     "timestamp": "2025-08-12T18:20:39.707770+00:00"
+  },
+  "ca1bab8e2638d3f8": {
+    "integrity_hash": "01b6a5d6d6dcba79b856b5cca3a3145ab3ea671ac7b2513407b72e1164c6b20a",
+    "mathematical_derivation": "\n    \u03c6-Geometric Peak Scaffold Derivation:\n    1. Base anchor: \u2113\u2080 = round(\u03c6^11); \u2113_n = \u230a\u2113\u2080 \u03c6\u207f\u230b\n    2. Peak series: \u2113\u2099 = \u230a\u2113\u2080 \u03c6\u207f\u230b for n = 0, 1, 2, ...\n    3. k-decomposition: k = log_\u03c6(220.0) = 10.999948\n    4. Sacred structure: k = 12 + \u03c6\u207b\u00b9 + \u03b5\n       - 12: Full recursive cycle (divine completeness)\n       - \u03c6\u207b\u00b9 = 0.618034: Grace-reflective surplus\n       - \u03b5 = -1.618086: Devourer torsion ripple\n    5. Amplitude modulation: A\u2099 = A\u2080 \u00d7 \u03c6^(-n/2)\n    ",
+    "predicted_values": {
+      "amplitude_modulation": [
+        1.0,
+        0.7861513777574233,
+        0.6180339887498948,
+        0.48586827175664565,
+        0.38196601125010515,
+        0.30028310600077757
+      ],
+      "best_series": "phi_power_n11",
+      "geometric_l0": 199,
+      "k_decomposition": {
+        "base_12": 12,
+        "epsilon": -1.618086462379658,
+        "k": 10.999947526370237,
+        "phi_inv": 0.6180339887498948
+      },
+      "peak_positions": [
+        199,
+        322,
+        521,
+        843,
+        1364,
+        2207
+      ],
+      "phi_value": 1.618033988749895,
+      "target_l0": 220.0
+    },
+    "prediction_id": "ca1bab8e2638d3f8",
+    "prediction_type": "cmb_phi_geometric_peaks",
+    "provenance_chain": [
+      "foundation.operators.phi_recursion.PHI_VALUE",
+      "cosmology.phi_harmonic_anchor.generate_phi_harmonic_candidates",
+      "cosmology.phi_k_exponent.decompose_k_for_l0",
+      "cosmology.peaks.geometric_layer.get_cmb_phi_peaks",
+      "FIRM Axioms: Grace Operator fixed points in Fix(\ud835\udca2)"
+    ],
+    "target_observable": "CMB temperature power spectrum peaks (target \u2113\u2080\u2248220.0)",
+    "theory_version": "FIRM-v1.0-phi-geometric",
+    "timestamp": "2025-08-14T16:54:45.358334+00:00"
   },
   "ce4ba938610715fa": {
     "integrity_hash": "276b376042e4c4629898afaf49856ee0607d1df437b8f8350c8661f901f0f67c",

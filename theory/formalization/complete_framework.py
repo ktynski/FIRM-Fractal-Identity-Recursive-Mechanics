@@ -27,8 +27,8 @@ import scipy.optimize as opt
 from scipy import constants
 
 from foundation.operators.phi_recursion import PHI_VALUE
-from foundation.field_theory.complete_soul_hierarchy import SoulMorphism
-from provenance.derivation_tree import DerivationNode
+# from foundation.field_theory.complete_soul_hierarchy import SoulMorphism  # Module doesn't exist
+# from provenance.derivation_tree import DerivationNode  # Import issues
 
 
 class FIRMStage(Enum):
@@ -162,7 +162,7 @@ class FIRMFormalizationResult:
     formalization_completeness: float
     peer_review_readiness: float
     mathematical_rigor: float
-    provenance: DerivationNode = None
+    provenance: Any = None # Changed from DerivationNode to Any as DerivationNode is removed
 
 
 class FIRMFormalizationSystem:
@@ -863,11 +863,7 @@ class FIRMFormalizationSystem:
         peer_review_readiness = 0.75       # 75% ready for peer review
         mathematical_rigor = 0.80          # 80% mathematically rigorous
 
-        provenance = DerivationNode(
-            node_id="FIRMCompleteFormalization",
-            mathematical_expression="φ-recursive morphisms → consciousness + physics",
-            justification="Complete 8-stage formalization of FIRM theory"
-        )
+        provenance = None # Changed from DerivationNode to None as DerivationNode is removed
 
         result = FIRMFormalizationResult(
             correlation_matrix=correlation_matrix,

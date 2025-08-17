@@ -102,20 +102,6 @@ class SmartMathematicalExtractor:
                         'line': content[:match.start()].count('\n') + 1
                     })
 
-        # Pattern 2: Multi-line calculations
-        multiline_pattern = r'([A-Z_][A-Z0-9_]*)\s*=\s*([^#\n]*(?:\\\s*\n[^#\n]*)*)'
-        for match in re.finditer(multiline_pattern, content, re.MULTILINE):
-            var_name = match.group(1)
-            expression = match.group(2).strip()
-
-            if len(expression) > 10 and any(op in expression for op in ['*', '/', '+', '-']):
-                expressions.append({
-                    'variable': var_name,
-                    'expression': expression,
-                    'line': content[:match.start()].count('\n') + 1,
-                    'type': 'multiline'
-                })
-
         return expressions
 
     def python_to_latex(self, expression):

@@ -1,7 +1,6 @@
 % FIRM Complete Derivations Appendix
 % Comprehensive extraction from all computational modules
 
-\appendix
 \section{Complete Mathematical Derivations}
 
 This appendix provides comprehensive derivations for all fundamental constants
@@ -14,21 +13,19 @@ All computational modules are available at: \texttt{github.com/FIRM\_Research/Ex
 
 Core constants defining electromagnetic, weak, and strong forces
 
-\subsubsection{Fine Structure Alpha}
-\textit{Computational implementation: \texttt{constants/fine_structure_alpha.py}}\\
+\subsubsection{Fine Structure Constant}
+\textit{Computational implementations: \texttt{constants/fine\_structure\_alpha.py}, \texttt{constants/bulletproof\_fine\_structure\_derivation.py}}\\
 
-\textbf{Key Results:}
+\textbf{Key Results (theoretical formulations present in codebase):}
 \begin{itemize}
-    \item $\alpha^{-1} = \phi^{15}/(\phi^7 + 1) \times 113 \approx 137.036$ (0.3\% precision)
-    \item Alternative: $\alpha = (\phi^7 + 1)/\phi^{15} \times \text{structural factor}$
-    \item No free parameters: All terms derived from $\phi$-mathematics
-    \item Error bounds: $O(\phi^{-n})$ convergence from Grace Operator iteration
+    \item Morphic structure formulation yielding $\alpha^{-1} \approx 137.036$ via $\phi$-recursive constructs (paper main text)
+    \item Production implementation exploring $\alpha^{-1} = 137 + \phi^{-n}$ families (n=5,6) as alternative formulations (see bulletproof implementation)
+    \item Error analysis and convergence bounds provided per formulation
 \end{itemize}
 
-\textbf{Derivation Pathway:}
+\textbf{Derivation Pathways (documented in code and main text):}
 
-$\phi$-recursion $\rightarrow$ Grace Operator fixed points $\rightarrow$ Morphism hierarchy $\rightarrow$ 
-QED coupling strength
+$\phi$-recursion $\rightarrow$ Grace Operator fixed points $\rightarrow$ morphism hierarchy $\rightarrow$ electromagnetic coupling quantization
 
 \subsubsection{Gravitational Constant}
 \textit{Computational implementation: \texttt{constants/gravitational_constant.py}}\\
@@ -204,7 +201,7 @@ Grace Operator eigenstates $\to$ morphic field harmonics $\to$ energy quantizati
 \begin{itemize}
     \item Mass splittings: $\Delta m^2_{21}$ = 7.42 $\times$ 10⁻⁵ eV²
     \item Mixing angles: sin²θ₁₃ = 0.0218 ± 0.0007
-    \item CP phase: $\delta_{CP}$ = 1.28π ± 0.15π
+    \item CP phase: $\delta_{CP}$ = 1.28$\pi$ ± 0.15$\pi$
     \item Theoretical explanation of non-zero mixing, unlike SM
 \end{itemize}
 

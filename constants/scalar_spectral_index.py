@@ -382,49 +382,50 @@ class ScalarSpectralIndex:
             derivation_type=DerivationType.AXIOM,
             mathematical_expression="A𝒢.2: Reflexivity - φ-recursive structure",
             dependencies=[],
-            contamination_sources=[]
+            empirical_inputs=[]
         )
 
         # φ-shell structure
         phi_shell_structure = DerivationNode(
             node_id="phi_shell_structure",
-            derivation_type=DerivationType.MATHEMATICAL_DERIVATION,
+            derivation_type=DerivationType.THEOREM,
             mathematical_expression="φ-shell hierarchy with survival weights γ_j",
             dependencies=["axiom_ag2"],
-            contamination_sources=[]
+            empirical_inputs=[]
         )
 
         # Echo degradation rate
         echo_degradation = DerivationNode(
             node_id="echo_degradation_rate",
-            derivation_type=DerivationType.MATHEMATICAL_DERIVATION,
+            derivation_type=DerivationType.THEOREM,
             mathematical_expression="β = 1/(φ+1) (echo degradation per shell)",
             dependencies=["phi_shell_structure"],
-            contamination_sources=[]
+            empirical_inputs=[]
         )
 
         # Power spectrum scaling
         power_spectrum_scaling = DerivationNode(
             node_id="power_spectrum_scaling",
-            derivation_type=DerivationType.MATHEMATICAL_DERIVATION,
+            derivation_type=DerivationType.THEOREM,
             mathematical_expression="P(k) ∝ k^(-2β/log(φ)) from shell survival",
             dependencies=["echo_degradation_rate"],
-            contamination_sources=[]
+            empirical_inputs=[]
         )
 
         # Final spectral index
         spectral_index = DerivationNode(
             node_id=f"spectral_index_{method_name}",
-            derivation_type=DerivationType.PHYSICAL_DERIVATION,
+            derivation_type=DerivationType.TARGET,
             mathematical_expression="n_s = 1 - 2β = 1 - 2/(φ+1)",
             dependencies=["power_spectrum_scaling"],
-            contamination_sources=[]
+            empirical_inputs=[]
         )
 
         # Build provenance tree
         from provenance.derivation_tree import ProvenanceTree
 
         tree = ProvenanceTree(
+            root_node=axiom_ag2,
             target_result="scalar_spectral_index",
             nodes={
                 "axiom_ag2": axiom_ag2,
@@ -436,7 +437,7 @@ class ScalarSpectralIndex:
             axiom_roots=["axiom_ag2"]
         )
 
-        return tree.get_node(f"spectral_index_{method_name}")
+        return tree.nodes[f"spectral_index_{method_name}"]
 
     def derive_multi_shell_cascade_interference(self) -> Dict[str, Any]:
         """

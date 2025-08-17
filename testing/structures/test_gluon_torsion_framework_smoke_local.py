@@ -1,4 +1,4 @@
-from structures.gluon_torsion_framework import GLUON_TORSION_FRAMEWORK, derive_qcd_integration
+from theory.physics.forces.gluon_torsion_framework import GLUON_TORSION_FRAMEWORK, derive_qcd_integration
 
 
 def test_gluon_torsion_smoke():

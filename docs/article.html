@@ -36,38 +36,56 @@
 
   <main class="article">
     <div class="articleLayout">
-      <aside class="toc">
+      <aside class="toc sticky-sidebar">
         <div class="card">
           <h3>Contents</h3>
-          <ol>
-            <li><a href="#literature">Literature Review & Academic Context</a></li>
-            <li><a href="#executive">Executive Summary</a></li>
-            <li><a href="#breakthroughs">Theoretical Foundation</a>
-              <ul>
-                <li><a href="#breakthroughs">Key Results Summary</a></li>
-              </ul>
-            </li>
-            <li><a href="#mathematical">Mathematical Development</a>
-              <ul>
-                <li><a href="#mathematical">Mathematical Prerequisites</a></li>
-                <li><a href="#mathematical">Grace Operator Theory</a></li>
-                <li><a href="#mathematical">φ-Recursive Framework</a></li>
-              </ul>
-            </li>
-            <li><a href="#constants">Physical Constants Analysis</a>
-              <ul>
-                <li><a href="#constants">Fine Structure Constant</a></li>
-                <li><a href="#constants">Additional Constants</a></li>
-              </ul>
-            </li>
-            <li><a href="#applications">Applications & Extensions</a></li>
-            <li><a href="#validation">Validation & Limitations</a>
-              <ul>
-                <li><a href="#validation">Statistical Analysis</a></li>
-                <li><a href="#validation">Current Limitations</a></li>
-              </ul>
-            </li>
+          <div class="toc-scroll">
+            <ol>
+              <li><a href="#literature" class="toc-link">Literature Review & Academic Context</a></li>
+              <li><a href="#executive" class="toc-link">Executive Summary</a></li>
+              <li><a href="#breakthroughs" class="toc-link">Theoretical Foundation</a>
+                <ul>
+                  <li><a href="#breakthroughs" class="toc-link">Key Results Summary</a></li>
+                  <li><a href="#mathematical" class="toc-link">Mathematical Development</a></li>
+                </ul>
+              </li>
+              <li><a href="#mathematical" class="toc-link">Mathematical Framework</a>
+                <ul>
+                  <li><a href="#mathematical" class="toc-link">Prerequisites</a></li>
+                  <li><a href="#axioms" class="toc-link">Formal Axiom System</a></li>
+                  <li><a href="#proofs" class="toc-link">Mathematical Proofs</a></li>
+                  <li><a href="#grace-operator" class="toc-link">Grace Operator Theory</a></li>
+                </ul>
+              </li>
+              <li><a href="#constants" class="toc-link">Physical Constants Analysis</a>
+                <ul>
+                  <li><a href="#fine-structure" class="toc-link">Fine Structure Constant</a></li>
+                  <li><a href="#additional-constants" class="toc-link">Additional Constants</a></li>
+                  <li><a href="#cmb-analysis" class="toc-link">CMB Temperature</a></li>
+                </ul>
+              </li>
+              <li><a href="#applications" class="toc-link">Applications & Extensions</a>
+                <ul>
+                  <li><a href="#computational" class="toc-link">Computational Applications</a></li>
+                  <li><a href="#ai-applications" class="toc-link">AI Applications</a></li>
+                </ul>
+              </li>
+              <li><a href="#validation" class="toc-link">Validation & Limitations</a>
+                <ul>
+                  <li><a href="#statistical" class="toc-link">Statistical Analysis</a></li>
+                  <li><a href="#uncertainty" class="toc-link">Current Limitations</a></li>
+                </ul>
+              </li>
           </ol>
+          </div>
+          
+          <!-- Progress indicator -->
+          <div class="reading-progress">
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+            <div class="progress-text">Reading Progress</div>
+          </div>
         </div>
       </aside>
 
@@ -1070,6 +1088,121 @@
     setFig('fValidation','fValidationOpen','fValidationPeer','riemannian_curvature_comparison.png');
     setFig('fArchitecture','fArchitectureOpen','fArchitecturePeer','eilenberg_moore_spectral_sequence.png');
     setFig('fFlow','fFlowOpen','fFlowPeer','conceptual_overview_diagram.png');
+    
+    // Sticky sidebar functionality
+    function initStickyNavigation() {
+      const tocLinks = document.querySelectorAll('.toc-link');
+      const progressFill = document.querySelector('.progress-fill');
+      const sections = [];
+      
+      // Collect all sections with IDs
+      tocLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          const sectionId = href.substring(1);
+          const section = document.getElementById(sectionId);
+          if (section) {
+            sections.push({
+              id: sectionId,
+              element: section,
+              link: link
+            });
+          }
+        }
+      });
+      
+      // Update active link and reading progress
+      function updateNavigation() {
+        const scrollTop = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight - windowHeight;
+        
+        // Update reading progress
+        const progress = Math.min(scrollTop / documentHeight, 1);
+        if (progressFill) {
+          progressFill.style.width = `${progress * 100}%`;
+        }
+        
+        // Find current section
+        let currentSection = null;
+        const offset = 150; // Account for sticky header and some padding
+        
+        for (let i = sections.length - 1; i >= 0; i--) {
+          const section = sections[i];
+          const rect = section.element.getBoundingClientRect();
+          if (rect.top <= offset) {
+            currentSection = section;
+            break;
+          }
+        }
+        
+        // Update active states
+        tocLinks.forEach(link => link.classList.remove('active'));
+        if (currentSection) {
+          currentSection.link.classList.add('active');
+        }
+      }
+      
+      // Smooth scroll for navigation links
+      tocLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const href = link.getAttribute('href');
+          if (href && href.startsWith('#')) {
+            const targetElement = document.querySelector(href);
+            if (targetElement) {
+              const headerHeight = 80; // Account for sticky header
+              const targetPosition = targetElement.offsetTop - headerHeight;
+              
+              window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+      
+      // Throttled scroll handler
+      let ticking = false;
+      function onScroll() {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            updateNavigation();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }
+      
+      // Initialize
+      window.addEventListener('scroll', onScroll);
+      updateNavigation(); // Initial call
+      
+      // Handle resize for responsive behavior
+      function handleResize() {
+        const sidebar = document.querySelector('.sticky-sidebar');
+        if (sidebar) {
+          if (window.innerWidth <= 900) {
+            // Mobile: static positioning handled by CSS
+            sidebar.style.position = 'static';
+          } else {
+            // Desktop: sticky positioning
+            sidebar.style.position = 'fixed';
+          }
+        }
+      }
+      
+      window.addEventListener('resize', handleResize);
+      handleResize(); // Initial call
+    }
+    
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initStickyNavigation);
+    } else {
+      initStickyNavigation();
+    }
   </script>
 </body>
 </html>

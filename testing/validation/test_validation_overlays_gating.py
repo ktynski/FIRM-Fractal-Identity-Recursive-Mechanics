@@ -1,5 +1,5 @@
 import os
-from figures.validation_overlays import ValidationOverlayFigures
+from figures.templates.validation_overlays import ValidationOverlayFigures
 from validation.experimental_firewall import EXPERIMENTAL_FIREWALL
 
 

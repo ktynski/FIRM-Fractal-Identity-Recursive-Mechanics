@@ -222,9 +222,9 @@ class PresheafCategory(CategoryProtocol):
         )
         self._presheaves["Initial"] = initial
 
-    def objects(self) -> Set[PresheafStructure]:
-        """Return set of presheaves (objects in ℛ(Ω))"""
-        return set(self._presheaves.values())
+    def objects(self) -> List[PresheafStructure]:
+        """Return list of presheaves (objects in ℛ(Ω))"""
+        return list(self._presheaves.values())
 
     def morphisms(self) -> Set[Any]:
         """Return set of natural transformations (morphisms in ℛ(Ω))"""

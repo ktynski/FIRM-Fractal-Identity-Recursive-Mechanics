@@ -1,0 +1,362 @@
+name: FIRM Production Deployment Pipeline
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  release:
+    types: [ published ]
+
+env:
+  MINIMUM_COVERAGE: 95
+  MAXIMUM_FAILURE_RATE: 0
+  PYTHON_VERSION: "3.11"
+
+jobs:
+  quality-gates:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ env.PYTHON_VERSION }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -e .
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    
+    - name: Run Quality Gates Assessment
+      id: quality_gates
+      run: |
+        echo "=== FIRM PRODUCTION QUALITY GATES ===" > quality_report.txt
+        echo "Date: $(date)" >> quality_report.txt
+        echo "" >> quality_report.txt
+        
+        # Gate 1: Coverage Threshold
+        echo "🔍 GATE 1: Coverage Analysis" >> quality_report.txt
+        python -m pytest --cov=foundation --cov=constants --cov=structures --cov=cosmology --cov=validation --cov=provenance --cov-report=term --cov-fail-under=${{ env.MINIMUM_COVERAGE }} >> quality_report.txt 2>&1
+        COVERAGE_EXIT_CODE=$?
+        
+        if [ $COVERAGE_EXIT_CODE -eq 0 ]; then
+          echo "✅ PASSED: Coverage >= ${{ env.MINIMUM_COVERAGE }}%" >> quality_report.txt
+          echo "coverage_gate=passed" >> $GITHUB_OUTPUT
+        else
+          echo "❌ FAILED: Coverage < ${{ env.MINIMUM_COVERAGE }}%" >> quality_report.txt
+          echo "coverage_gate=failed" >> $GITHUB_OUTPUT
+        fi
+        
+        echo "" >> quality_report.txt
+        
+        # Gate 2: All Tests Pass
+        echo "🧪 GATE 2: Test Success Rate" >> quality_report.txt
+        python -m pytest --tb=short -v >> quality_report.txt 2>&1
+        TEST_EXIT_CODE=$?
+        
+        if [ $TEST_EXIT_CODE -eq 0 ]; then
+          echo "✅ PASSED: All tests pass" >> quality_report.txt
+          echo "test_gate=passed" >> $GITHUB_OUTPUT
+        else
+          echo "❌ FAILED: Some tests failing" >> quality_report.txt
+          echo "test_gate=failed" >> $GITHUB_OUTPUT
+        fi
+        
+        echo "" >> quality_report.txt
+        
+        # Gate 3: Integration Tests Pass
+        echo "🔗 GATE 3: Integration Tests" >> quality_report.txt
+        python -m pytest testing/integration/ -v >> quality_report.txt 2>&1
+        INTEGRATION_EXIT_CODE=$?
+        
+        if [ $INTEGRATION_EXIT_CODE -eq 0 ]; then
+          echo "✅ PASSED: All integration tests pass" >> quality_report.txt
+          echo "integration_gate=passed" >> $GITHUB_OUTPUT
+        else
+          echo "❌ FAILED: Integration tests failing" >> quality_report.txt
+          echo "integration_gate=failed" >> $GITHUB_OUTPUT
+        fi
+        
+        echo "" >> quality_report.txt
+        
+        # Gate 4: Mathematical Consistency
+        echo "📐 GATE 4: Mathematical Consistency" >> quality_report.txt
+        python -m pytest testing/integration/test_mathematical_consistency.py -v >> quality_report.txt 2>&1
+        MATH_EXIT_CODE=$?
+        
+        if [ $MATH_EXIT_CODE -eq 0 ]; then
+          echo "✅ PASSED: Mathematical consistency verified" >> quality_report.txt
+          echo "math_gate=passed" >> $GITHUB_OUTPUT
+        else
+          echo "❌ FAILED: Mathematical consistency issues" >> quality_report.txt
+          echo "math_gate=failed" >> $GITHUB_OUTPUT
+        fi
+        
+        echo "" >> quality_report.txt
+        
+        # Gate 5: Contamination Scan
+        echo "🛡️ GATE 5: Contamination Detection" >> quality_report.txt
+        python -m validation.anti_contamination >> quality_report.txt 2>&1
+        CONTAMINATION_EXIT_CODE=$?
+        
+        if [ $CONTAMINATION_EXIT_CODE -eq 0 ]; then
+          echo "✅ PASSED: No contamination detected" >> quality_report.txt
+          echo "contamination_gate=passed" >> $GITHUB_OUTPUT
+        else
+          echo "❌ FAILED: Contamination detected" >> quality_report.txt
+          echo "contamination_gate=failed" >> $GITHUB_OUTPUT
+        fi
+        
+        echo "" >> quality_report.txt
+        echo "=== QUALITY GATES SUMMARY ===" >> quality_report.txt
+        
+        # Overall assessment
+        OVERALL_PASS=true
+        if [ "$COVERAGE_EXIT_CODE" -ne 0 ] || [ "$TEST_EXIT_CODE" -ne 0 ] || [ "$INTEGRATION_EXIT_CODE" -ne 0 ] || [ "$MATH_EXIT_CODE" -ne 0 ] || [ "$CONTAMINATION_EXIT_CODE" -ne 0 ]; then
+          OVERALL_PASS=false
+        fi
+        
+        if [ "$OVERALL_PASS" = true ]; then
+          echo "🎉 ALL QUALITY GATES PASSED - READY FOR PRODUCTION" >> quality_report.txt
+          echo "overall_gate=passed" >> $GITHUB_OUTPUT
+        else
+          echo "🚨 QUALITY GATE FAILURES - NOT READY FOR PRODUCTION" >> quality_report.txt
+          echo "overall_gate=failed" >> $GITHUB_OUTPUT
+        fi
+        
+        cat quality_report.txt
+    
+    - name: Upload Quality Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: production-quality-report
+        path: quality_report.txt
+    
+    - name: Fail if Quality Gates Failed
+      if: steps.quality_gates.outputs.overall_gate == 'failed'
+      run: |
+        echo "❌ Production deployment blocked by quality gate failures"
+        exit 1
+
+  security-scan:
+    runs-on: ubuntu-latest
+    needs: quality-gates
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ env.PYTHON_VERSION }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install security tools
+      run: |
+        pip install bandit safety
+    
+    - name: Run Bandit Security Scan
+      run: |
+        bandit -r . -f json -o bandit-report.json || true
+        bandit -r . || true
+    
+    - name: Check Dependencies for Known Vulnerabilities
+      run: |
+        safety check || true
+    
+    - name: Upload Security Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: security-scan-results
+        path: bandit-report.json
+
+  performance-validation:
+    runs-on: ubuntu-latest
+    needs: quality-gates
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ env.PYTHON_VERSION }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -e .
+        pip install pytest-benchmark
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    
+    - name: Run Performance Benchmarks
+      run: |
+        python -m pytest testing/performance/ --benchmark-only --benchmark-json=benchmark.json || true
+    
+    - name: Upload Performance Results
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-benchmarks
+        path: benchmark.json
+
+  build-artifacts:
+    runs-on: ubuntu-latest
+    needs: [quality-gates, security-scan, performance-validation]
+    if: needs.quality-gates.outputs.overall_gate == 'passed'
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ env.PYTHON_VERSION }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install build tools
+      run: |
+        python -m pip install --upgrade pip build twine
+    
+    - name: Build Package
+      run: |
+        python -m build
+    
+    - name: Generate Version Info
+      run: |
+        echo "FIRM_VERSION=$(python setup.py --version 2>/dev/null || echo 'dev')" >> version_info.txt
+        echo "BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> version_info.txt
+        echo "COMMIT_SHA=${GITHUB_SHA}" >> version_info.txt
+        echo "BRANCH=${GITHUB_REF#refs/heads/}" >> version_info.txt
+    
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: firm-package
+        path: |
+          dist/
+          version_info.txt
+
+  documentation-build:
+    runs-on: ubuntu-latest
+    needs: quality-gates
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ env.PYTHON_VERSION }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install documentation tools
+      run: |
+        pip install sphinx sphinx-rtd-theme sphinx-autodoc-typehints
+    
+    - name: Build Documentation
+      run: |
+        # Create basic sphinx documentation if it doesn't exist
+        if [ ! -f "docs/conf.py" ]; then
+          mkdir -p docs_build
+          echo "FIRM Theory Documentation" > docs_build/index.md
+          echo "=========================" >> docs_build/index.md
+          echo "" >> docs_build/index.md
+          echo "Complete Theory of Everything from Pure Mathematics" >> docs_build/index.md
+          echo "" >> docs_build/index.md
+          echo "## Modules" >> docs_build/index.md
+          echo "- Foundation: Core mathematical framework" >> docs_build/index.md
+          echo "- Constants: Fundamental physics constants derivation" >> docs_build/index.md
+          echo "- Theory: Advanced theoretical physics" >> docs_build/index.md
+          echo "- Applications: Real-world applications" >> docs_build/index.md
+        fi
+    
+    - name: Upload Documentation
+      uses: actions/upload-artifact@v3
+      with:
+        name: documentation
+        path: docs_build/
+
+  production-release:
+    runs-on: ubuntu-latest
+    needs: [quality-gates, security-scan, performance-validation, build-artifacts, documentation-build]
+    if: github.event_name == 'release' && needs.quality-gates.outputs.overall_gate == 'passed'
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Download Build Artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: firm-package
+        path: artifacts/
+    
+    - name: Download Quality Report
+      uses: actions/download-artifact@v3
+      with:
+        name: production-quality-report
+        path: reports/
+    
+    - name: Create Release Notes
+      run: |
+        echo "# FIRM Theory Release Notes" > release_notes.md
+        echo "" >> release_notes.md
+        echo "## Quality Assurance" >> release_notes.md
+        echo "✅ All quality gates passed" >> release_notes.md
+        echo "✅ 95%+ test coverage achieved" >> release_notes.md
+        echo "✅ Mathematical consistency verified" >> release_notes.md
+        echo "✅ No contamination detected" >> release_notes.md
+        echo "" >> release_notes.md
+        echo "## Build Information" >> release_notes.md
+        cat artifacts/version_info.txt >> release_notes.md
+        echo "" >> release_notes.md
+        echo "## Full Quality Report" >> release_notes.md
+        echo "\`\`\`" >> release_notes.md
+        cat reports/quality_report.txt >> release_notes.md
+        echo "\`\`\`" >> release_notes.md
+    
+    - name: Create GitHub Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: FIRM Theory ${{ github.ref }}
+        body_path: release_notes.md
+        draft: false
+        prerelease: false
+    
+    - name: Upload Release Assets
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: artifacts/dist/
+        asset_name: firm-theory-package.tar.gz
+        asset_content_type: application/gzip
+
+  deployment-notification:
+    runs-on: ubuntu-latest
+    needs: [quality-gates, security-scan, performance-validation, build-artifacts]
+    if: always()
+    
+    steps:
+    - name: Deployment Success Notification
+      if: needs.quality-gates.outputs.overall_gate == 'passed'
+      run: |
+        echo "🎉 FIRM Theory Production Deployment: SUCCESS"
+        echo "✅ All quality gates passed"
+        echo "✅ Ready for production deployment"
+        echo "📊 Coverage target achieved: ${{ env.MINIMUM_COVERAGE }}%"
+        echo "🧪 Test success rate: 100%"
+        echo "🔒 Security scan completed"
+        echo "⚡ Performance validation completed"
+    
+    - name: Deployment Failure Notification
+      if: needs.quality-gates.outputs.overall_gate == 'failed'
+      run: |
+        echo "❌ FIRM Theory Production Deployment: BLOCKED"
+        echo "🚨 Quality gate failures detected"
+        echo "📋 Review quality report for details"
+        echo "🔧 Fix issues and retry deployment"
+        exit 1

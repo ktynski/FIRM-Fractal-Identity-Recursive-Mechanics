@@ -1,0 +1,272 @@
+{
+  "timestamp": "2025-08-14T12:03:22.202019",
+  "overall_coverage": {
+    "lines_covered": 354,
+    "lines_total": 500,
+    "coverage_percentage": 70.8,
+    "missing_lines": [],
+    "branch_coverage": null
+  },
+  "overall_test_metrics": {
+    "total_tests": 237,
+    "passed_tests": 79,
+    "failed_tests": 79,
+    "skipped_tests": 79,
+    "execution_time": 186.9624261856079,
+    "success_rate": 33.33333333333333
+  },
+  "module_reports": {
+    "foundation": {
+      "module_name": "foundation",
+      "coverage_metrics": {
+        "lines_covered": 100,
+        "lines_total": 100,
+        "coverage_percentage": 100.0,
+        "missing_lines": [],
+        "branch_coverage": null
+      },
+      "test_metrics": {
+        "total_tests": 39,
+        "passed_tests": 39,
+        "failed_tests": 0,
+        "skipped_tests": 0,
+        "execution_time": 10.337610006332397,
+        "success_rate": 100.0
+      },
+      "test_files": [
+        "test_phi_recursion_additional_local.py",
+        "test_axioms_simple.py",
+        "test_axioms_init_creation.py",
+        "test_phi_recursion_more.py",
+        "test_phi_recursion_smoke.py",
+        "test_axioms_init.py",
+        "test_phi_recursion_additional.py",
+        "test_grace_operator_additional.py",
+        "test_grace_operator_convergence.py",
+        "test_grace_operator_smoke.py",
+        "test_phi_recursion_edges.py",
+        "test_axioms_registry_extra.py",
+        "test_fixed_point_category_smoke.py"
+      ],
+      "priority_score": 35.0
+    },
+    "constants": {
+      "module_name": "constants",
+      "coverage_metrics": {
+        "lines_covered": 79,
+        "lines_total": 100,
+        "coverage_percentage": 79.0,
+        "missing_lines": [],
+        "branch_coverage": null
+      },
+      "test_metrics": {
+        "total_tests": 22,
+        "passed_tests": 11,
+        "failed_tests": 11,
+        "skipped_tests": 0,
+        "execution_time": 61.51161289215088,
+        "success_rate": 50.0
+      },
+      "test_files": [
+        "test_neutrino_provenance.py",
+        "test_mixing_angles_additional.py",
+        "test_bao_scale_derivation_direct.py",
+        "test_alpha_more.py",
+        "test_alpha_provenance_additional.py",
+        "test_alpha_derivations.py",
+        "test_mixing_angles_more.py",
+        "test_constants_init_final_push.py",
+        "test_alpha_and_couplings_smoke.py",
+        "test_gauge_couplings_direct.py",
+        "test_mixing_angles_smoke.py",
+        "test_constants_init_missing.py",
+        "test_gauge_couplings_provenance_nodes.py",
+        "test_expanded_firm_components.py",
+        "test_fundamental_constants_firm_direct.py",
+        "test_gauge_couplings_bridge_and_provenance.py",
+        "test_mixing_angles_deep.py",
+        "test_comprehensive_precision_analysis_direct.py",
+        "test_computational_phi_constants_direct.py",
+        "test_gauge_couplings_provenance_more.py",
+        "test_baryon_drag_peak_skew_direct.py",
+        "test_neutrino_more.py",
+        "test_mixing_angles_provenance.py",
+        "test_neutrino_additional.py",
+        "test_constants_aggregation_additional.py",
+        "test_fine_structure_comprehensive.py",
+        "test_gauge_couplings_more_api.py",
+        "test_gauge_couplings_running.py",
+        "test_fine_structure_alpha_additional.py",
+        "test_fine_structure_alpha_more_local.py",
+        "test_mass_ratios_provenance.py",
+        "test_gauge_couplings_comprehensive.py",
+        "test_new_cosmological_parameters.py",
+        "test_constants_report_additional.py",
+        "test_effective_neutrino_species_direct.py"
+      ],
+      "priority_score": 43.50000000000001
+    },
+    "structures": {
+      "module_name": "structures",
+      "coverage_metrics": {
+        "lines_covered": 100,
+        "lines_total": 100,
+        "coverage_percentage": 100.0,
+        "missing_lines": [],
+        "branch_coverage": null
+      },
+      "test_metrics": {
+        "total_tests": 16,
+        "passed_tests": 16,
+        "failed_tests": 0,
+        "skipped_tests": 0,
+        "execution_time": 108.3152539730072,
+        "success_rate": 100.0
+      },
+      "test_files": [
+        "test_morphic_knot_projection.py",
+        "test_dimensional_bridge_report.py",
+        "test_dimensional_bridge_smoke.py",
+        "test_structures_registry.py",
+        "test_dimensional_bridge_internals.py",
+        "test_dimensional_bridge_additional.py",
+        "test_gluon_torsion_framework_smoke_local.py",
+        "test_particle_spectrum_smoke.py",
+        "test_gauge_group_emergence_smoke.py",
+        "test_dimensional_bridge_core.py",
+        "test_spacetime_dims.py",
+        "test_physical_units_smoke_local.py"
+      ],
+      "priority_score": 31.000000000000007
+    },
+    "cosmology": {
+      "module_name": "cosmology",
+      "coverage_metrics": {
+        "lines_covered": 0,
+        "lines_total": 100,
+        "coverage_percentage": 0.0,
+        "missing_lines": [],
+        "branch_coverage": null
+      },
+      "test_metrics": {
+        "total_tests": 8,
+        "passed_tests": 4,
+        "failed_tests": 4,
+        "skipped_tests": 0,
+        "execution_time": 14.797093868255615,
+        "success_rate": 50.0
+      },
+      "test_files": [
+        "test_stage_registry_teamd.py",
+        "test_phi_harmonic_anchor.py",
+        "test_ex_nihilo_pipeline_smoke_local.py",
+        "test_cmb_report_path_local.py",
+        "test_cmb_spectrum_behavior_teamd.py",
+        "test_cmb_internals_teamd.py",
+        "test_cmb_thetaA_metric_local.py",
+        "test_cmb_power_spectrum_smoke_local.py",
+        "test_verify_observational_agreement_local.py",
+        "test_verify_observational_agreement_teamd.py",
+        "test_cmb_scales_theory_only_local.py",
+        "test_phi_k_decomposition.py",
+        "test_cmb_components_local.py",
+        "test_cosmology_init_smoke.py",
+        "test_ex_nihilo_stage_flags_teamd.py",
+        "test_cmb_te_ee_nonneg_local.py",
+        "test_cosmology_phi_native_teamd.py",
+        "test_ex_nihilo_pipeline_full_smoke_local.py",
+        "test_cmb_peaks_teamd.py",
+        "test_cmb_structure_metric.py"
+      ],
+      "priority_score": 79.0
+    },
+    "provenance": {
+      "module_name": "provenance",
+      "coverage_metrics": {
+        "lines_covered": 75,
+        "lines_total": 100,
+        "coverage_percentage": 75.0,
+        "missing_lines": [],
+        "branch_coverage": null
+      },
+      "test_metrics": {
+        "total_tests": 92,
+        "passed_tests": 92,
+        "failed_tests": 0,
+        "skipped_tests": 0,
+        "execution_time": 18.05170702934265,
+        "success_rate": 100.0
+      },
+      "test_files": [
+        "test_provenance_tracker_complete_true_report.py",
+        "test_provenance_tracker_audit_visibility.py",
+        "test_contamination_detector_simple.py",
+        "test_derivation_tree_errors.py",
+        "test_provenance_tracker_backward_compatibility.py",
+        "test_provenance_tracker_complete_and_verify.py",
+        "test_provenance_error_bounds_tuple.py",
+        "test_provenance_validator_branches.py",
+        "test_derivation_tree_additional.py",
+        "test_provenance_false_path_checks.py",
+        "test_provenance_tracker_min.py",
+        "test_builders_validity.py",
+        "test_provenance_tracker_wrappers_legacy.py",
+        "test_provenance_complete_true_additional.py",
+        "test_provenance_complete_paths.py",
+        "test_provenance_tracker_empirical_and_wrappers.py",
+        "test_provenance_tracker_maps.py",
+        "test_provenance_tracker_axioms_and_summary.py",
+        "test_provenance_compat_wrappers.py",
+        "test_contamination_detector_smoke_local.py",
+        "test_provenance_wrappers_mixture.py",
+        "test_provenance_classify_more.py",
+        "test_provenance_validator_additional.py",
+        "test_provenance_audit_report_branches.py",
+        "test_provenance_summary_and_complete_mix.py",
+        "test_provenance_complete_and_false_mix.py",
+        "test_provenance_tracker_branches.py",
+        "test_provenance_classifier_and_bounds.py",
+        "test_provenance_error_bounds_mixed.py",
+        "test_provenance_negative_paths_teamd.py",
+        "test_provenance_tracker_missing_paths.py",
+        "test_provenance_tracker_init.py",
+        "test_provenance_tracker_additional.py",
+        "test_provenance_tracker_additional_true.py",
+        "test_provenance_tracker_extra.py",
+        "test_derivation_tree_smoke_local.py",
+        "test_provenance_tracker_contamination_raises.py",
+        "test_derivation_tree_smoke.py",
+        "test_provenance_tracker_more_seal.py",
+        "test_provenance_tracker_error_bounds_more.py",
+        "test_provenance_tracker_wrappers.py",
+        "test_provenance_validator_teamd.py",
+        "test_provenance_tracker_more.py",
+        "test_provenance_rss_and_acyclicity_teamd.py",
+        "test_provenance_tracker_classification.py",
+        "test_provenance_summary_operations_list.py",
+        "test_provenance_tracker_complete_true.py",
+        "test_provenance_tracker_branches_more.py",
+        "test_derivation_tree_negative_paths_local.py"
+      ],
+      "priority_score": 39.5
+    }
+  },
+  "coverage_trend": [],
+  "quality_gates": {
+    "minimum_coverage": true,
+    "maximum_failure_rate": false,
+    "maximum_execution_time": true,
+    "integration_tests_required": true,
+    "mathematical_consistency_required": true
+  },
+  "recommendations": [
+    "\ud83d\udcc8 PRIORITY: Increase coverage by 24.2% to reach 95% target",
+    "\ud83c\udfaf Focus on cosmology: 0.0% coverage, 100 lines uncovered",
+    "\ud83c\udfaf Focus on constants: 79.0% coverage, 21 lines uncovered",
+    "\ud83c\udfaf Focus on provenance: 75.0% coverage, 25 lines uncovered",
+    "\ud83d\udd27 Fix failing tests: 66.7% failure rate (79 failed tests)",
+    "\u26a1 Optimize test performance: 187.0s execution time",
+    "\ud83d\udea8 Quality gate failure: maximum_failure_rate",
+    "\ud83d\udccb See Team 1 & 2 strategy documents for specific implementation guidance"
+  ]
+}

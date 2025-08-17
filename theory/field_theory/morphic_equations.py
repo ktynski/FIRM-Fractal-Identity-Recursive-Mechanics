@@ -1,31 +1,29 @@
 """
-Morphic Field Equation: The Fundamental Dynamics of FIRM/FIRM
+Morphic Field Equations for FIRM Field Theory
 
-This module implements the Euler-Lagrange equation derived from the FIRM Lagrangian:
+This module implements the fundamental morphic field equation that emerges
+from the recursive Lagrangian, providing the mathematical foundation for
+φ-recursive morphism theory in field space.
 
-    0 = ∑_{r=1}^∞ [(-1)^r / r^d] * [2r φ^(2r-1) - r λ_r G φ^(r-1)] - ξ G D
-
-This equation governs the dynamics of the morphic field φ(x) under Grace-Devourer
-interaction, providing the mathematical foundation for all FIRM phenomena.
-
-Key Features:
-- Recursive potential with infinite series expansion
-- Grace operator G coupling to morphic field
-- Devourer D as entropy resistance term
-- φ-native parameterization consistent with golden ratio structure
-- Exact symbolic computation with numerical evaluation
+Key Components:
+    - MorphicFieldParameters: Physical parameters for field equation
+    - MorphicFieldEquation: Core equation solver
+    - MorphicFieldSolution: Solution representation
+    - SoulStabilityCondition: Soul stability constraint
 """
 
-import numpy as np
 import math
-from typing import Dict, List, Tuple, Optional, Callable
+import numpy as np
+from typing import Dict, List, Tuple, Optional, Any
 from dataclasses import dataclass
-from scipy.optimize import fsolve, minimize_scalar
-from scipy.special import zeta
+
+# Add parent directories to path for imports
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
 
 from foundation.operators.phi_recursion import PHI_VALUE
 # from foundation.operators.grace_operator import GraceOperator  # Not needed for field equation
-from provenance.derivation_tree import DerivationNode
 
 
 @dataclass

@@ -177,6 +177,20 @@ class ProvenanceTree:
         if node.derivation_type == DerivationType.AXIOM:
             self.axiom_roots.append(node.node_id)
 
+    def get_dependencies(self, node_id: str) -> List[str]:
+        """
+        Get direct dependencies for a given node.
+
+        Args:
+            node_id: Node ID to get dependencies for
+
+        Returns:
+            List of dependency node IDs
+        """
+        if node_id not in self.nodes:
+            return []
+        return self.edges.get(node_id, [])
+
     def trace_to_axioms(self, node_id: str) -> List[List[str]]:
         """
         Trace derivation paths from node back to foundational axioms.

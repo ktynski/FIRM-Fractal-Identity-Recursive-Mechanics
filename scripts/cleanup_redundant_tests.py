@@ -10,6 +10,7 @@ import os
 import argparse
 from pathlib import Path
 from collections import defaultdict
+import logging
 
 # Patterns that indicate redundant tests (from most to least likely to be removed)
 REDUNDANT_PATTERNS = ['_smoke', '_extra', '_additional', '_more', '_deep', '_comprehensive']

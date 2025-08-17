@@ -78,7 +78,7 @@ class CentralPhysicsConstants:
             from constants.hubble_constant_derivation import HubbleConstantDerivation
             derivation = HubbleConstantDerivation()
             self._hubble_result = derivation.derive_phi_recursive_hubble_constant()
-        return self._hubble_result.h0_base_derived
+        return self._hubble_result.h0_base_km_s_mpc
 
     @property
     def electron_mass_mev(self) -> float:

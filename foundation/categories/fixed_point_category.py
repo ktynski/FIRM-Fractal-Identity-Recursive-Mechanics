@@ -192,6 +192,13 @@ class GraceEquivariantMorphism:
     physical_process: Optional[str] = None
     conservation_laws: List[str] = field(default_factory=list)
 
+    def __hash__(self) -> int:
+        """Hash by stable identifier to allow set/dict usage.
+        
+        Avoids hashing non-hashable fields (lists inside nested structures).
+        """
+        return hash((self.source.name, self.target.name, self.morphism_data))
+
     def verify_grace_equivariance(self) -> bool:
         """
         Verify morphism commutes with Grace Operator: 𝒢∘f = f∘𝒢.

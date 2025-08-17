@@ -1,4 +1,4 @@
-from figures.validation_overlays import VALIDATION_OVERLAYS
+from figures.templates.validation_overlays import VALIDATION_OVERLAYS
 from validation.experimental_firewall import EXPERIMENTAL_FIREWALL
 
 

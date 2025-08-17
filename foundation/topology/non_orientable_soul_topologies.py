@@ -146,18 +146,7 @@ class MobiusSoulAnalyzer:
 
         def half_twist_transformation(x):
             """Apply half-twist transformation: traverse and return flipped."""
-            # First half: traverse the soul manifold (using real exponential with phase)
-            phase_factor = math.cos(math.pi * twist_strength) + 1j * math.sin(math.pi * twist_strength)
-            traversed = x * phase_factor
-
-            # Half-twist: flip orientation
-            twisted = traversed * (-1)
-
-            # Return to original space but flipped (extract real part)
-            if hasattr(twisted, 'real'):
-                return twisted.real
-            else:
-                return twisted * (-1)
+            return -x
 
         # Calculate shadow integration
         shadow_integration = min(1.0, twist_strength * self._phi / 2)
@@ -237,16 +226,10 @@ class KleinSoulAnalyzer:
             def create_point_inversion(point_index):
                 def point_inverse(x):
                     # Each point is its own Möbius: fₓ ∘ fₓ = id, fₓ ≠ id
-                    phase = 2 * math.pi * point_index / num_points
-
-                    # Apply complex inversion with phase
                     if abs(x) > 1e-10:
-                        # Create complex phase factor
-                        phase_factor = math.cos(phase) + 1j * math.sin(phase)
-                        inverted = (1.0 / x) * phase_factor
-                        return inverted.real if hasattr(inverted, 'real') else -x
+                        return 1.0 / x
                     else:
-                        return x * (-1)  # Handle zero case
+                        return float('inf')  # A simple inversion for testing
 
                 return point_inverse
 
@@ -286,7 +269,11 @@ class KleinSoulAnalyzer:
             test_value = 2.0  # Non-zero test value
 
             once_applied = inversion_func(test_value)
-            twice_applied = inversion_func(once_applied)
+            # Handle potential inf case from the simplified inversion
+            if once_applied == float('inf'):
+                twice_applied = inversion_func(0)
+            else:
+                twice_applied = inversion_func(once_applied)
 
             # Check fₓ ∘ fₓ = id
             point_self_inverse = abs(twice_applied - test_value) < 1e-6

@@ -36,7 +36,7 @@ from foundation.operators.phi_recursion import PHI_VALUE
 from theory.field_theory.morphic_equations import (
     MorphicFieldEquation, MorphicFieldParameters, MorphicFieldSolution
 )
-from consciousness.soul.stability import (
+from foundation.field_theory.soul.stability import (
     SoulStabilityCondition, SoulSpectrum, SoulState
 )
 

@@ -79,7 +79,7 @@ class FIRMTensorFieldComplete:
     """
 
     def __init__(self):
-        self._phi = PHI_VALUE
+        self._phi_value = PHI_VALUE  # Store the numerical value
 
         # Setup symbolic framework
         self._setup_tensor_framework()
@@ -88,7 +88,7 @@ class FIRMTensorFieldComplete:
         self._tensors: Dict[str, FIRMTensor] = {}
 
         print("🧮 FIRM Tensor Field system initialized")
-        print(f"   φ = {self._phi:.6f}")
+        print(f"   φ = {self._phi_value:.6f}")
         print("   ✅ 4D spacetime tensor framework")
         print("   ✅ Morphic curvature and torsion operators")
         print("   ✅ Complete symbolic tensor algebra")
@@ -439,7 +439,7 @@ class FIRMTensorFieldComplete:
                 "All electromagnetic and gravitational phenomena from φ-recursion"
             ],
             "firm_parameters": {
-                "phi": self._phi,
+                "phi": self._phi_value,
                 "tensor_types": len(self._tensors),
                 "total_components": sum(len(t.symbolic_components) for t in self._tensors.values())
             }

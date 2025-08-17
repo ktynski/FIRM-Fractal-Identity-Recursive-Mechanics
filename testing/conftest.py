@@ -30,13 +30,13 @@ def validation_phase():
     EXPERIMENTAL_FIREWALL.enable_theory_phase()
 
 
-@pytest.fixture(autouse=True)
-def firewall_clean_state():
-    """Ensure firewall is reset to a deterministic state before each test.
-
-    Prevents cross-test contamination where a prior critical alert could leave
-    the singleton in BREACHED/DISABLED, causing unrelated tests to fail.
-    """
-    from validation.experimental_firewall import EXPERIMENTAL_FIREWALL
-    EXPERIMENTAL_FIREWALL.reset()
-    yield
+# @pytest.fixture(autouse=True)
+# def firewall_clean_state():
+#     """Ensure firewall is reset to a deterministic state before each test.
+#
+#     Prevents cross-test contamination where a prior critical alert could leave
+#     the singleton in BREACHED/DISABLED, causing unrelated tests to fail.
+#     """
+#     from validation.experimental_firewall import EXPERIMENTAL_FIREWALL
+#     EXPERIMENTAL_FIREWALL.reset()
+#     yield
