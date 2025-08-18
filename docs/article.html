@@ -314,6 +314,32 @@
           <span data-layperson><strong>Overview:</strong> We built FIRM from five basic rules (axioms) that we follow strictly. This section explains those rules in simpler terms, how they connect, and how they lead to predictions about the real world.</span>
         </div>
 
+        <h3 id="single-emanation">The Single Emanation: Mathematical Foundation</h3>
+        
+        <div class="insight">
+          <span data-technical>The entire FIRM framework emerges from a single, fundamental mathematical process: similarity recursion on the complex plane ℂ ≅ ℝ². We work with the similarity group Sim(2) = {z ↦ e^(s+iθ)z : s ∈ ℝ, θ ∈ ℝ}, where iterating a seed z₀ ≠ 0 under a fixed element generates the logarithmic spiral sequence z_n = e^(ns + inθ)z₀. This single emanation—interpreted as (s,θ) providing log-scale and rotation per step—contains within its structure all four fundamental constants as necessary mathematical invariants.</span>
+          <span data-layperson>Everything in FIRM theory comes from one simple mathematical process: taking a point in the complex plane and repeatedly applying the same scaling and rotation. This creates a spiral pattern, and amazingly, the four fundamental constants (e, 2π, φ, √2) emerge naturally as necessary features of this single spiraling process.</span>
+        </div>
+
+        <div class="math-derivation">
+          <h4>The Similarity Recursion</h4>
+          <div class="math-block">
+            <strong>Setup:</strong> Complex plane ℂ with similarity group<br/>
+            Sim(2) = {z ↦ e^(s+iθ)z : s ∈ ℝ, θ ∈ ℝ}<br/><br/>
+            
+            <strong>Spiral Sequence:</strong><br/>
+            z_n = e^(ns + inθ)z₀ <span class="equation-number">(E)</span><br/><br/>
+            
+            <strong>Interpretation:</strong><br/>
+            • s = log-scale per step<br/>
+            • θ = rotation per step<br/>
+            • Generates logarithmic spiral geometry
+          </div>
+          
+          <p><span data-technical>This formulation captures the essence of recursive growth with both scaling and rotational components. The parameter space (s,θ) ∈ ℝ² maps to the similarity group Sim(2), and the iteration generates the fundamental spiral geometry from which all constants emerge as mathematical necessities.</span>
+          <span data-layperson>Think of this as a mathematical recipe: start with any point, then repeatedly apply the same "grow and turn" operation. The beautiful spiral patterns that emerge contain hidden within them the fundamental constants that govern our universe.</span></p>
+        </div>
+
         <h3>Mathematical Prerequisites & Conceptual Framework</h3>
         
         <p><span data-technical>Before examining the formal mathematical structure, it's essential to understand the mathematical context within which FIRM theory operates. The framework draws from several areas of advanced mathematics:</span>
@@ -657,11 +683,151 @@
           <p><strong>With the mathematical framework established, we now apply these theoretical developments to derive specific physical constants.</strong> The following analysis demonstrates how the φ-recursive mathematics translates into concrete predictions for fundamental physical parameters, beginning with our most successful case: the fine structure constant.</p>
         </div>
 
-        <h2 id="constants">Physical Constants Analysis</h2>
+        <h2 id="constants">The Four Fundamental Constants from Single Emanation</h2>
         
         <div class="insight">
-          <span data-technical>The FIRM framework proposes systematic derivations for multiple fundamental physical constants through φ-recursive mathematics. While precision improvements are observed, particularly for the fine structure constant, the theoretical foundation connecting mathematical recursion to physical constants requires further development and validation.</span>
-          <span data-layperson>Our theory offers a new way to calculate the universe's fundamental numbers from pure math, rather than just measuring them. We've had some promising results, especially with the fine structure constant, but we still need to strengthen the connections between our mathematical approach and actual physics.</span>
+          <span data-technical>From the single similarity recursion z ↦ e^(s+iθ)z, four fundamental constants emerge as necessary mathematical invariants: e from compounding scale (Cauchy functional equation), 2π from rotation periodicity (group theory), φ from arithmetic non-resonance (Diophantine extremality), and √2 from orthogonality (metric geometry). Each constant represents a distinct mathematical discipline crystallizing within the unified emanation structure.</span>
+          <span data-layperson>Amazingly, the single spiraling process we described earlier naturally produces the four most important mathematical constants in our universe. Each one emerges for a different mathematical reason, but they all come from the same fundamental spiral pattern. It's like finding that one simple rule generates all the basic building blocks of mathematics.</span>
+        </div>
+
+        <h3 id="constant-e">1. e: The Invariant of Continuous Growth</h3>
+        
+        <div class="math-derivation">
+          <h4>Proposition: Uniqueness of the Exponential</h4>
+          <div class="math-block">
+            <strong>Statement:</strong> Let f: ℝ → ℝ₊ be continuous, nonconstant, and satisfy<br/>
+            f(s + t) = f(s)f(t) for all s,t ∈ ℝ<br/><br/>
+            
+            Then f(s) = a^s for some a > 0. If additionally f is differentiable<br/>
+            at 0 with f'(0) = 1, then f(s) = e^s. <span class="equation-number">(9)</span>
+          </div>
+          
+          <div class="proof-sketch">
+            <h5>Proof Sketch</h5>
+            <p><span data-technical><strong>Step 1:</strong> The functional equation f(s+t) = f(s)f(t) is the Cauchy functional equation in multiplicative form on ℝ₊. Continuity forces f(s) = e^(ks) for some constant k ∈ ℝ.</span>
+            <span data-layperson><strong>Step 1:</strong> The rule "adding steps multiplies the result" combined with smoothness forces the function to have exponential form.</span></p>
+            
+            <p><span data-technical"><strong>Step 2:</strong> The normalization condition f'(0) = k = 1 fixes the "unit of log-scale." This connects the abstract algebraic structure to the differential structure, uniquely selecting f(s) = e^s.</span>
+            <span data-layperson><strong>Step 2:</strong> Choosing the natural unit of growth (where the growth rate equals 1 at the starting point) gives us exactly e as the base.</span></p>
+          </div>
+          
+          <p><span data-technical><strong>FIRM Interpretation:</strong> In the similarity recursion, the scaling parameter s represents log-scale per iteration. The requirement that "log-scale adds" while "compound scale multiplies" forces e as the unique base once units are fixed. The constant e emerges as the fundamental invariant of continuous compounding.</span>
+          <span data-layperson><strong>Why this matters:</strong> When we repeatedly scale something by the same factor, e is the natural base that makes the mathematics work smoothly. It's not arbitrary—it's the only number that makes continuous growth behave properly.</span></p>
+        </div>
+
+        <h3 id="constant-2pi">2. 2π: The Invariant of Geometric Periodicity</h3>
+        
+        <div class="math-derivation">
+          <h4>Rotation Group Structure</h4>
+          <div class="math-block">
+            <strong>Group Homomorphism:</strong> The map θ ↦ e^(iθ) is a homomorphism<br/>
+            from (ℝ, +) onto the unit circle S¹ with kernel 2πℤ<br/><br/>
+            
+            <strong>Geometric Interpretation:</strong> On the unit circle with Euclidean metric,<br/>
+            the arc-length measure (Haar measure on S¹) has total measure 2π <span class="equation-number">(10)</span>
+          </div>
+          
+          <div class="mathematical-context">
+            <h5>Two Equivalent Definitions</h5>
+            <p><span data-technical><strong>Algebraic:</strong> 2π is the fundamental period of the complex exponential e^(iθ), defining the kernel of the canonical homomorphism from the additive reals to the circle group. This is the minimal positive period of all trigonometric functions.</span>
+            <span data-layperson><strong>Algebraic:</strong> 2π is how far you need to rotate to come back to where you started. It's the basic "unit" of rotation.</span></p>
+            
+            <p><span data-technical><strong>Geometric:</strong> 2π is the circumference of the unit circle in Euclidean geometry, equivalently the total measure of S¹ under the natural rotation-invariant measure (Haar measure).</span>
+            <span data-layperson><strong>Geometric:</strong> 2π is the distance around a circle with radius 1. This connects rotation to distance in a fundamental way.</span></p>
+          </div>
+          
+          <p><span data-technical><strong>FIRM Interpretation:</strong> The emanation requires rotational periodicity for the angular parameter θ. Once we adopt Euclidean geometry for the complex plane ℂ ≅ ℝ², the period 2π is fixed by the metric structure. We are not "deriving π from nothing"—π is inherited from the geometric nature of the space in which the recursion operates.</span>
+          <span data-layperson><strong>Why this matters:</strong> Our spiral process needs to know when a full rotation is complete. The Euclidean geometry of the plane fixes this at exactly 2π. This constant comes from the shape of space itself.</span></p>
+        </div>
+
+        <h3 id="constant-phi">3. φ: The Invariant of Arithmetic Non-Resonance</h3>
+        
+        <div class="math-derivation">
+          <h4>Theorem: Hurwitz Extremality of the Golden Ratio</h4>
+          <div class="math-block">
+            <strong>Statement:</strong> Among all irrationals α ∈ ℝ, the golden ratio conjugate<br/>
+            α_φ = (√5 - 1)/2 = φ⁻¹ maximizes the constant c(α) for which<br/><br/>
+            
+            |α - p/q| ≥ c(α)/q² for all p/q ∈ ℚ<br/><br/>
+            
+            The maximum value is c(α_φ) = 1/√5, achieved by the continued<br/>
+            fraction [0; 1, 1, 1, 1, ...] <span class="equation-number">(11)</span>
+          </div>
+          
+          <div class="proof-sketch">
+            <h5>Connection to Continued Fractions</h5>
+            <p><span data-technical><strong>Key Insight:</strong> The quality of rational approximation to α is controlled by the partial quotients in its continued fraction α = [a₀; a₁, a₂, a₃, ...]. Smaller partial quotients yield worse rational approximations. The golden ratio conjugate has the continued fraction [0; 1, 1, 1, ...] with the smallest possible bounded digits.</span>
+            <span data-layperson><strong>Key Insight:</strong> Numbers can be written as infinite fractions in a special way. The golden ratio has the "most uniform" such representation, which makes it the hardest to approximate with simple fractions.</span></p>
+            
+            <p><span data-technical><strong>Extremal Property:</strong> This gives φ⁻¹ the strongest possible lower bound 1/√5 for rational approximation quality, making it "maximally irrational" in the precise Diophantine sense. This is the rigorous content behind the folklore that "golden angle spreads things out."</span>
+            <span data-layperson><strong>Extremal Property:</strong> This makes the golden ratio the "most irrational" number—the hardest to approximate with simple fractions. This is why it's so good at avoiding patterns and creating even distributions.</span></p>
+          </div>
+          
+          <div class="warning">
+            <p><span data-technical><strong>Important Limitation:</strong> This extremality is asymptotic and does not guarantee optimality for every finite-N energy functional or uniformity metric on the circle. As our empirical testing confirmed, φ provides maximal anti-resonance in the limit, but finite-N counterexamples exist for specific crowding metrics.</span>
+            <span data-layperson><strong>Important Limitation:</strong> This "best" property works for infinite sequences, but for any specific finite number of points, other angles might actually work better. Our testing found examples where the golden angle isn't optimal for particular arrangements.</span></p>
+          </div>
+          
+          <p><span data-technical><strong>FIRM Interpretation:</strong> For the angular step α = θ/(2π) in equi-stepped rotations, choosing α = φ⁻¹ provides maximal arithmetic non-resonance with all finite-denominator rational lattices. This connects the spiral geometry to deep number theory via Diophantine approximation.</span>
+          <span data-layperson><strong>Why this matters:</strong> When our spiral takes equal angular steps, using the golden angle ensures the points spread out as evenly as possible in the long run, avoiding clustering patterns that would occur with other angles.</span></p>
+        </div>
+
+        <h3 id="constant-sqrt2">4. √2: The Invariant of Orthogonality</h3>
+        
+        <div class="math-derivation">
+          <h4>Orthogonality in Rotation-Invariant Metrics</h4>
+          <div class="math-block">
+            <strong>Setup:</strong> Let the plane carry a rotation-invariant inner product ⟨·,·⟩<br/>
+            (the Euclidean metric up to scale) with orthonormal basis {e₁, e₂}<br/><br/>
+            
+            <strong>Computation:</strong><br/>
+            ‖e₁ + e₂‖² = ⟨e₁ + e₂, e₁ + e₂⟩<br/>
+            = ⟨e₁, e₁⟩ + ⟨e₂, e₂⟩ + 2⟨e₁, e₂⟩<br/>
+            = 1 + 1 + 2(0) = 2<br/><br/>
+            
+            Therefore: ‖e₁ + e₂‖ = √2 <span class="equation-number">(12)</span>
+          </div>
+          
+          <p><span data-technical><strong>Geometric Significance:</strong> √2 is the diagonal length of the unit square in any rotation-invariant metric. It represents the fundamental ratio between orthogonal and diagonal directions in Euclidean geometry. This constant is built into the metric structure of the plane itself.</span>
+          <span data-layperson><strong>Geometric Significance:</strong> √2 is the length of the diagonal of a unit square. It's the fundamental relationship between horizontal/vertical distances and diagonal distances in flat geometry.</span></p>
+          
+          <p><span data-technical><strong>FIRM Interpretation:</strong> Unlike e, 2π, and φ which emerge from the mapping structure, √2 is a property of the background state space. It represents the Pythagorean metric invariant embedded in the Euclidean plane ℂ ≅ ℝ², revealed when comparing orthogonal coordinate directions.</span>
+          <span data-layperson><strong>Why this matters:</strong> While the other constants come from the spiral process itself, √2 comes from the basic geometry of the flat plane where the spiral lives. It's the price of having perpendicular directions in flat space.</span></p>
+        </div>
+
+        <h3 id="constants-synthesis">Synthesis: One Emanation → Four Invariants</h3>
+        
+        <div class="math-derivation">
+          <h4>The Complete Mathematical Picture</h4>
+          <div class="mathematical-context">
+            <p><span data-technical><strong>From the single recursion z ↦ e^(s+iθ)z:</strong></span>
+            <span data-layperson><strong>From our one spiraling process:</strong></span></p>
+            
+            <ul>
+              <li><span data-technical><strong>Compounding scale (additivity in s, continuity) ⇒ e</strong> (Proposition 1: Uniqueness of exponential)</span>
+              <span data-layperson><strong>Smooth growth ⇒ e</strong> (the natural base for continuous change)</span></li>
+              
+              <li><span data-technical><strong>Rotation closure on S¹ with Euclidean length ⇒ period 2π</strong> (Group theory + Haar measure)</span>
+              <span data-layperson><strong>Complete rotation ⇒ 2π</strong> (the natural measure of a full turn)</span></li>
+              
+              <li><span data-technical><strong>Arithmetic non-resonance for equi-stepped angles ⇒ φ</strong> (Hurwitz theorem: maximal Diophantine extremality)</span>
+              <span data-layperson><strong>Even spreading ⇒ φ</strong> (the most irrational number for optimal distribution)</span></li>
+              
+              <li><span data-technical><strong>Orthogonality under rotation-invariant inner product ⇒ √2</strong> (Pythagorean theorem in Euclidean metric)</span>
+              <span data-layperson><strong>Diagonal relationships ⇒ √2</strong> (the fundamental ratio in flat geometry)</span></li>
+            </ul>
+          </div>
+          
+          <div class="insight">
+            <span data-technical><strong>Mathematical Unity:</strong> None of these constants are ad-hoc insertions. Each represents a necessary mathematical invariant that emerges once we commit to (i) similarity recursion and (ii) Euclidean metric structure. The constants crystallize from four distinct mathematical disciplines—calculus, topology, number theory, and linear algebra—unified within the single emanation framework.</span>
+            <span data-layperson><strong>Beautiful Unity:</strong> These four constants aren't random—they're all necessary pieces that emerge when you combine spiraling growth with the geometry of flat space. It's like discovering that one simple rule contains all the fundamental building blocks of mathematics.</span>
+          </div>
+          
+          <div class="warning">
+            <h5>What We Have NOT Proved</h5>
+            <p><span data-technical><strong>Scope Limitations:</strong> We have not proved that the golden angle minimizes all crowding/energy functionals for all N—in fact, we produced counterexamples for circle-prefix metrics. We have given the rigorous reason φ is special: maximal Diophantine extremality via continued fraction theory. The connection between mathematical constants and physical constants remains an open theoretical challenge.</span>
+            <span data-layperson><strong>Honest Limitations:</strong> We haven't proved the golden angle is always best for every arrangement problem—we found examples where it isn't. But we have shown why it's mathematically special. The big remaining question is how these mathematical constants connect to the physics of our universe.</span></p>
+          </div>
         </div>
 
         <h3>Fine Structure Constant Results</h3>
@@ -978,7 +1144,7 @@
           <span data-technical><strong>Important Disclaimer:</strong> The computational applications described below are theoretical proposals based on FIRM's mathematical framework. No actual implementations have been built or tested. All performance claims are speculative and require empirical validation.</span>
           <span data-layperson><strong>Important Note:</strong> The computer programs described below are theoretical ideas we're exploring based on our mathematical theory. We haven't actually built or tested these programs yet - they're just ideas for how our theory might be useful.</span>
         </div>
-
+        
         <div class="insight">
           <span data-technical>FIRM's mathematical framework suggests potential computational applications through φ-recursive algorithms, though these remain theoretical proposals requiring implementation and empirical validation.</span>
           <span data-layperson>Our mathematical framework suggests it might lead to better computer algorithms, but these are just theoretical ideas that haven't been tested yet.</span>
