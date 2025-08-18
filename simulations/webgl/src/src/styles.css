@@ -1,0 +1,957 @@
+/* FIRM: Recursive Identity Emergence from Void | Ex Nihilo Cosmogenesis */
+/* Main Layout */
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  background: #000; 
+}
+
+canvas { 
+  display: block; 
+  width: 100%; 
+  height: 100%; 
+}
+
+/* UI Container */
+#ui {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  bottom: 8px;
+  max-width: 340px;
+  background: rgba(0,0,0,0.5);
+  color: #ddd;
+  font: 12px/1.2 sans-serif;
+  padding: 8px;
+  border-radius: 6px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  z-index: 1000;
+}
+
+/* UI Components */
+#ui label { 
+  display: block; 
+  margin: 6px 0 2px; 
+}
+
+#ui input[type=range] { 
+  width: 200px; 
+}
+
+#ui input[type=checkbox] { 
+  transform: scale(1.1); 
+}
+
+#ui .row { 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+}
+
+#ui .val { 
+  width: 42px; 
+  text-align: right; 
+  color: #9cf; 
+}
+
+#stats { 
+  margin-top: 8px; 
+  color: #9cf; 
+  font-weight: 600; 
+}
+
+/* Brain Control Animations */
+.brain-controlled { 
+  background: rgba(0,255,100,0.15) !important; 
+  border-radius: 3px; 
+}
+
+.brain-active { 
+  animation: pulse 1.5s ease-in-out infinite; 
+}
+
+@keyframes pulse { 
+  0%, 100% { opacity: 0.7; } 
+  50% { opacity: 1.0; } 
+}
+
+#brain-status { 
+  margin-top: 8px; 
+  padding: 6px; 
+  background: rgba(50,255,150,0.1); 
+  border-radius: 4px; 
+  font-size: 11px; 
+}
+
+.param-change { 
+  color: #ff6 !important; 
+  transition: color 0.8s; 
+}
+
+/* Panel Base Styles */
+.panel {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid;
+  line-height: 1.4;
+}
+
+.panel-title {
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+
+.panel-content {
+  font-size: 10px;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.panel-footer {
+  font-size: 8px;
+  color: #678;
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* Cosmogenesis Panel */
+#cosmogenesis-status {
+  padding: 12px;
+  background: rgba(20,20,40,0.85);
+  border-radius: 8px;
+  border: 2px solid #444;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.cosmogenesis-title {
+  font-weight: bold;
+  color: #ff6;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+#universe-state {
+  text-align: center;
+  color: #aaa;
+  font-size: 11px;
+  margin: 8px 0;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.cosmogenesis-quote {
+  font-size: 10px;
+  color: #888;
+  text-align: center;
+  margin: 8px 0;
+  font-style: italic;
+  line-height: 1.3;
+  padding: 4px;
+}
+
+#cosmogenesis-progress {
+  margin: 8px 0;
+}
+
+.progress-label {
+  font-size: 10px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+#phase-indicators {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 6px;
+}
+
+#current-phase {
+  font-size: 11px;
+  color: #9cf;
+}
+
+#executeCosmogenesis {
+  width: 100%;
+  margin: 4px 0;
+  padding: 6px;
+  background: #ff6;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Topology Panel */
+#topology-panel {
+  background: rgba(40,20,0,0.9);
+  border-color: #f84;
+  box-shadow: 0 0 10px rgba(255,136,68,0.3);
+}
+
+.topology-title {
+  font-weight: bold;
+  color: #fc8;
+  font-size: 12px;
+  text-align: center;
+}
+
+#topology-display {
+  font-size: 10px;
+  color: #fca;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+#topology-description {
+  color: #fc8;
+}
+
+.topology-status {
+  font-size: 9px;
+  color: #876;
+  margin: 4px 0;
+}
+
+/* Cascade Panel */
+#cascade-panel {
+  background: rgba(0,20,40,0.9);
+  border-color: #46f;
+  box-shadow: 0 0 10px rgba(70,100,255,0.3);
+}
+
+.cascade-title {
+  font-weight: bold;
+  color: #8cf;
+  font-size: 12px;
+  text-align: center;
+}
+
+#cascade-display {
+  font-size: 10px;
+  color: #acf;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+#cascade-display em {
+  color: #8cf;
+}
+
+.cascade-status {
+  font-size: 9px;
+  color: #678;
+  margin: 4px 0;
+}
+
+/* Beyond Standard Model Panel */
+#beyond-sm-panel {
+  background: rgba(20,0,60,0.9);
+  border-color: #90f;
+  box-shadow: 0 0 8px rgba(144,0,255,0.3);
+}
+
+.beyond-sm-title {
+  font-weight: bold;
+  color: #c9f;
+  font-size: 12px;
+  text-align: center;
+}
+
+.beyond-sm-content {
+  font-size: 9px;
+  color: #a6d;
+  margin: 6px 0;
+  line-height: 1.3;
+}
+
+.beyond-sm-footer {
+  font-size: 8px;
+  color: #678;
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* Morphic Activity Panel */
+#morphic-activity-panel {
+  background: rgba(0,20,40,0.9);
+  border-color: #4af;
+  box-shadow: 0 0 10px rgba(68,170,255,0.3);
+}
+
+.morphic-title {
+  font-weight: bold;
+  color: #6df;
+  font-size: 12px;
+  text-align: center;
+}
+
+.morphic-content {
+  font-size: 10px;
+  color: #8bf;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.stability-mix {
+  margin-left: 8px;
+  font-size: 9px;
+}
+
+.stable-color { color: #4f4; }
+.meta-color { color: #ff4; }
+.unstable-color { color: #f44; }
+
+/* Feedback Loops Panel */
+#feedback-loops-panel {
+  background: rgba(40,20,0,0.9);
+  border-color: #fa4;
+  box-shadow: 0 0 10px rgba(255,164,68,0.3);
+}
+
+.feedback-title {
+  font-weight: bold;
+  color: #fc8;
+  font-size: 12px;
+  text-align: center;
+}
+
+.feedback-content {
+  font-size: 10px;
+  color: #fca;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+/* FRST Panel */
+#frst-panel {
+  background: rgba(40,0,40,0.8);
+  border-color: #a0a;
+}
+
+.frst-title {
+  font-weight: bold;
+  color: #f6f;
+  font-size: 12px;
+  text-align: center;
+}
+
+#frst-metrics {
+  font-size: 10px;
+  color: #d9d;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+#frst-history {
+  font-size: 9px;
+  color: #999;
+  margin-top: 6px;
+  max-height: 60px;
+  overflow-y: auto;
+}
+
+/* Legacy Panels */
+#fsctf-metrics {
+  margin-top: 8px;
+  padding: 6px;
+  background: rgba(0,40,20,0.6);
+  border-radius: 4px;
+  display: none;
+}
+
+.fsctf-title {
+  font-size: 11px;
+  font-weight: bold;
+  color: #6f6;
+}
+
+#fsctf-stats {
+  font-size: 10px;
+  color: #9f9;
+  margin: 4px 0;
+}
+
+#constants-display {
+  margin-top: 8px;
+  padding: 6px;
+  background: rgba(40,20,0,0.6);
+  border-radius: 4px;
+  display: none;
+}
+
+.constants-title {
+  font-size: 11px;
+  font-weight: bold;
+  color: #fc6;
+}
+
+#constants-values {
+  font-size: 10px;
+  color: #fa6;
+  margin: 4px 0;
+}
+
+/* System Diagnostics */
+details {
+  margin-top: 8px;
+}
+
+summary {
+  color: #9cf;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+/* Color Indicators */
+.yellow-highlight { color: #ff6; }
+.green-highlight { color: #6f6; }
+.blue-highlight { color: #9cf; }
+.gray-highlight { color: #aaa; }
+.void-color { color: #666; }
+
+/* Keyboard shortcuts styling */
+.shortcuts-panel {
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #ccc;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.shortcuts-panel kbd {
+  background: #333;
+  border: 1px solid #555;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2), 0 0 0 2px #000 inset;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  font-family: monospace;
+  line-height: 1.4;
+  margin: 0 4px 0 0;
+  padding: 2px 6px;
+  text-shadow: 0 1px 0 #000;
+  min-width: 20px;
+  text-align: center;
+}
+
+.shortcuts-panel div {
+  margin: 3px 0;
+}
+
+/* System info styling */
+.system-info {
+  font-size: 11px;
+  margin: 6px 0;
+  padding: 4px 6px;
+  background: rgba(0, 60, 120, 0.2);
+  border-radius: 4px;
+  border-left: 3px solid #39f;
+}
+
+.system-info div {
+  margin: 2px 0;
+  color: #bdf;
+}
+
+.system-info strong {
+  color: #9cf;
+}
+
+#particle-count {
+  font-family: monospace;
+  color: #6cf;
+}
+
+#phase-countdown {
+  font-family: monospace;
+  color: #fc6;
+}
+
+/* Loading Screen */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.loading-content {
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.loading-logo h1 {
+  font-size: 4rem;
+  margin: 0;
+  background: linear-gradient(45deg, #fff, #9cf, #fc6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #bdf;
+  margin: 10px 0 30px 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.loading-progress {
+  margin: 40px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #39f, #9cf, #fc6);
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.3s ease;
+  animation: progressShimmer 1.5s infinite;
+}
+
+.loading-text {
+  color: #9cf;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.loading-details {
+  margin-top: 30px;
+  font-size: 0.8rem;
+  color: #678;
+  line-height: 1.6;
+}
+
+.loading-details div {
+  margin: 3px 0;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
+  to { text-shadow: 0 0 40px rgba(153, 204, 255, 0.5); }
+}
+
+@keyframes progressShimmer {
+  0% { background-position: -100px 0; }
+  100% { background-position: 100px 0; }
+}
+
+/* Tooltip System */
+.tooltip-trigger {
+  display: inline-block;
+  position: relative;
+  cursor: help;
+  font-size: 0.8em;
+  color: #9cf;
+  margin-left: 4px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.tooltip-trigger:hover {
+  opacity: 1;
+}
+
+.tooltip-trigger:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 20, 40, 0.95);
+  color: #ddf;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  max-width: 280px;
+  width: max-content;
+  text-align: left;
+  border: 1px solid #39f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  animation: tooltipFade 0.2s ease;
+  pointer-events: none;
+}
+
+.tooltip-trigger:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 94%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #39f;
+  z-index: 1001;
+}
+
+@keyframes tooltipFade {
+  from { opacity: 0; transform: translateX(-50%) translateY(5px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* Mobile and Tablet Responsiveness */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  #ui {
+    max-width: 320px;
+    font-size: 11px;
+  }
+  
+  .loading-logo h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Large phones and small tablets */
+@media (max-width: 768px) {
+  #ui {
+    max-width: 280px;
+    font-size: 10px;
+    padding: 6px;
+    bottom: 40px; /* Leave room for mobile browser UI */
+  }
+  
+  .cosmogenesis-title, .topology-title, .morphic-title, .frst-title {
+    font-size: 10px;
+  }
+  
+  button {
+    padding: 6px 10px;
+    font-size: 9px;
+    margin: 1px;
+  }
+  
+  .loading-logo h1 {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .loading-content {
+    padding: 15px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  #ui {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: none;
+    height: 40vh;
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 12px 12px 0 0;
+    font-size: 9px;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Mobile-first layout adjustments */
+  .system-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .system-info div {
+    flex: 1;
+    text-align: center;
+    font-size: 9px;
+  }
+  
+  .morphic-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    font-size: 9px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    font-size: 10px;
+    width: 100%;
+    margin: 2px 0;
+  }
+  
+  .loading-logo h1 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 0.8rem;
+  }
+  
+  /* Tooltip adjustments for mobile */
+  .tooltip-trigger:hover::after {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    bottom: auto;
+  }
+  
+  .tooltip-trigger:hover::before {
+    display: none; /* Hide arrow on mobile */
+  }
+}
+
+/* Cinematic overlay responsiveness */
+@media (max-width: 768px) {
+  #cinematic-status {
+    left: 10px !important;
+    right: 10px !important;
+    top: 60px !important;
+    max-width: none !important;
+    width: auto !important;
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #cinematic-status {
+    position: fixed !important;
+    bottom: 50vh !important;
+    top: auto !important;
+    left: 10px !important;
+    right: 10px !important;
+    font-size: 11px !important;
+    padding: 10px !important;
+  }
+}
+
+/* Removed floating control panel; styles no longer needed */
+
+/* Learning Panel Styles */
+.learning-section {
+  font-size: 1.1em;
+  color: #9cf;
+  padding: 8px 12px;
+  background: rgba(0, 40, 80, 0.2);
+  border-radius: 6px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.learning-section:hover {
+  background: rgba(0, 40, 80, 0.3);
+}
+
+.learning-content {
+  padding: 15px;
+  background: rgba(0, 20, 40, 0.1);
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.explanation {
+  color: #8cf;
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+/* State displays */
+.current-state {
+  display: grid;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.state-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Control buttons */
+.control-btn {
+  background: rgba(0, 80, 160, 0.3);
+  color: #9cf;
+  border: 1px solid rgba(153, 204, 255, 0.3);
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+  background: rgba(0, 80, 160, 0.5);
+  border-color: rgba(153, 204, 255, 0.5);
+}
+
+.visualization-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+/* Progress bars - consolidated (duplicate removed) */
+
+/* Metric displays */
+.metric-group {
+  background: rgba(0, 20, 40, 0.2);
+  padding: 12px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.metric-group h4 {
+  color: #9cf;
+  margin: 0 0 10px 0;
+  font-size: 0.9em;
+}
+
+.metric-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 0.9em;
+}
+
+/* Help section */
+.help-content {
+  color: #9cf;
+  padding: 15px;
+}
+
+.help-section {
+  margin: 15px 0;
+}
+
+.help-section h3 {
+  color: #fc6;
+  margin: 0 0 10px 0;
+}
+
+.help-section ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.help-section li {
+  margin: 5px 0;
+  color: #8cf;
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+  button {
+    min-height: 36px;
+    touch-action: manipulation;
+  }
+  
+  summary {
+    min-height: 32px;
+    touch-action: manipulation;
+  }
+  
+  #ui {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+}
+
+/* FIRM Logo Styles */
+.firm-logo {
+  margin-bottom: 20px;
+  animation: logoRotate 8s linear infinite;
+}
+
+.firm-logo svg {
+  filter: drop-shadow(0 0 10px rgba(51, 153, 255, 0.3));
+}
+
+@keyframes logoRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.subtitle-small {
+  font-size: 0.75rem;
+  color: #9cf;
+  margin-top: 5px;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* FIRM Logo Styles */
+.firm-logo {
+  margin-bottom: 20px;
+  animation: logoRotate 8s linear infinite;
+}
+
+.firm-logo svg {
+  filter: drop-shadow(0 0 10px rgba(51, 153, 255, 0.3));
+}
+
+@keyframes logoRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.subtitle-small {
+  font-size: 0.75rem;
+  color: #9cf;
+  margin-top: 5px;
+  opacity: 0.8;
+  font-style: italic;
+}

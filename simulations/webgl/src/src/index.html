@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FIRM: Recursive Identity Emergence from Void | Ex Nihilo Cosmogenesis</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2339f'/%3E%3Cstop offset='100%25' stop-color='%239cf'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M32 8L56 20L32 32L8 20Z' fill='url(%23g)' opacity='0.8'/%3E%3Cpath d='M32 32L56 44L32 56L8 44Z' fill='url(%23g)' opacity='0.6'/%3E%3Ccircle cx='32' cy='32' r='3' fill='%23fc6'/%3E%3C/svg%3E">
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loading-content">
+        <div class="loading-logo">
+          <div class="firm-logo">
+            <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#3399ff"/>
+                  <stop offset="50%" stop-color="#99ccff"/>
+                  <stop offset="100%" stop-color="#ffcc66"/>
+                </linearGradient>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                  <feMerge> 
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+              <!-- Fractal recursive geometry -->
+              <path d="M40 10 L70 25 L40 40 L10 25 Z" fill="url(#logo-gradient)" opacity="0.9" filter="url(#glow)"/>
+              <path d="M40 40 L70 55 L40 70 L10 55 Z" fill="url(#logo-gradient)" opacity="0.7"/>
+              <!-- Golden ratio spiral -->
+              <path d="M 40 20 Q 50 30 40 40 Q 30 50 40 60 Q 60 50 50 30" 
+                    stroke="#ffcc66" stroke-width="2" fill="none" opacity="0.8"/>
+              <!-- Central φ point -->
+              <circle cx="40" cy="40" r="4" fill="#ffcc66" filter="url(#glow)"/>
+              <text x="40" y="44" text-anchor="middle" font-size="8" fill="#fff" font-family="serif">φ</text>
+            </svg>
+          </div>
+          <h1>FIRM</h1>
+          <div class="subtitle">Fractal Identity Recursion Model</div>
+          <div class="subtitle-small">Recursive Identity Emergence from Void</div>
+        </div>
+        
+        <div class="loading-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" id="loading-progress-fill"></div>
+          </div>
+          <div class="loading-text" id="loading-text">Initializing WebGL...</div>
+        </div>
+        
+        <div class="loading-details">
+          <div>Ex Nihilo Cosmogenesis Engine</div>
+          <div>φ-Recursive Topology Framework</div>
+          <div>Zero free parameters • Pure mathematics</div>
+        </div>
+      </div>
+    </div>
+
+    <canvas id="c"></canvas>
+    
+    <div id="ui">
+      <!-- Primary Status Panel -->
+      <div id="cosmogenesis-status">
+              <div class="cosmogenesis-title">
+        <svg width="20" height="20" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;">
+          <defs>
+            <linearGradient id="title-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ffcc66"/>
+              <stop offset="100%" stop-color="#99ccff"/>
+            </linearGradient>
+          </defs>
+          <path d="M20 5 L35 12.5 L20 20 L5 12.5 Z" fill="url(#title-gradient)" opacity="0.9"/>
+          <circle cx="20" cy="20" r="2" fill="#ffcc66"/>
+        </svg>
+        FIRM COSMOGENESIS
+        <span class="tooltip-trigger" data-tooltip="Fractal Identity Recursion Model - A mathematical framework that shows how reality emerges from pure recursive principles">ℹ️</span>
+      </div>
+        <div id="universe-state">Current Phase: ABSOLUTE VOID</div>
+        <div class="cosmogenesis-quote">
+          "From nothing, through pure mathematics,<br/>
+          watch as reality bootstraps itself into existence."
+        </div>
+        
+        <div class="system-info">
+          <div>💫 <strong>Particles:</strong> <span id="particle-count">65,536</span></div>
+          <div>⏱️ <strong>Phase Timer:</strong> <span id="phase-countdown">--:--</span></div>
+        </div>
+        
+        <div id="cosmogenesis-progress">
+          <div class="progress-label">Pipeline Progress:</div>
+          <div id="phase-indicators">
+            <!-- Phase indicators will be populated by JS -->
+          </div>
+          <div id="current-phase" style="background: rgba(0,40,80,0.9); padding: 8px; margin: 4px 0; border-radius: 4px; border: 1px solid #4aa; color: #4ff; font-weight: bold; text-align: center; font-size: 12px;">Awaiting initialization...</div>
+          
+          <!-- Enhanced Phase Status Display -->
+          <div id="enhanced-phase-status" style="background: linear-gradient(135deg, rgba(0,30,60,0.95), rgba(0,50,100,0.95)); padding: 10px; margin: 8px 0; border-radius: 6px; border: 2px solid #4bf; color: #4ff; font-family: 'Courier New', monospace; text-align: center; box-shadow: 0 2px 8px rgba(0,150,255,0.3);">
+            <div style="font-size: 14px; font-weight: bold; margin-bottom: 4px;">🌌 COSMOGENESIS STATUS</div>
+            <div id="phase-status-current" style="font-size: 16px; color: #6ff; font-weight: bold;">Phase Loading...</div>
+            <div id="phase-status-description" style="font-size: 10px; color: #8dd; margin-top: 4px; line-height: 1.3;">Initializing universal emergence...</div>
+            <div id="phase-status-next" style="font-size: 9px; color: #aaa; margin-top: 6px; font-style: italic;">Next: Awaiting progression...</div>
+          </div>
+        </div>
+        
+        <button id="executeCosmogenesis" 
+                title="Invoke Complete Theory of Everything Genesis: Initiate 90-phase φ-recursive emergence from absolute void (φ^0) to ultimate cosmological scale (φ^90). Visual phases (φ^0-φ^15): particles, forces, cosmic structure. Theoretical phases (φ^16-φ^89): hypermassive scales, quantum gravity (φ^31), recursive cosmological cooling. Ultimate phase (φ^90): cosmological constant completion. Complete mathematical derivation of all physics from pure φ-recursion.">
+          INVOKE RECURSIVE GENESIS
+        </button>
+      </div>
+      
+      <!-- Interactive Learning Panels -->
+      <div id="learning-panels">
+        <!-- Phase 1: Understanding Topology -->
+        <details open>
+          <summary class="learning-section">📐 Phase 1: Geometric Foundation</summary>
+          <div id="topology-panel" class="learning-content">
+            <p class="explanation">Watch as pure mathematical shapes emerge and evolve, demonstrating how space itself can arise from nothing but recursive rules.</p>
+            <div class="current-state">
+              <div class="state-item">
+                <strong>Current Shape:</strong>
+                <span id="current-topology">Flat (Void)</span>
+                <span class="tooltip-trigger" data-tooltip="We begin visually as near-flat (Void). As Grace and coherence rise, curvature emerges (toroidal patterns), then twists and complex manifolds follow.">ℹ️</span>
+              </div>
+              <div class="state-item">
+                <strong>Evolution:</strong>
+                <span id="topology-transition">Stable</span>
+              </div>
+            </div>
+            <div class="visualization-controls">
+                <button id="rotate-btn" class="control-btn">Toggle Rotation</button>
+                <button id="reset-camera-btn" class="control-btn">Reset View</button>
+            </div>
+          </div>
+        </details>
+
+        <!-- Phase 2: Universe Formation -->
+        <details>
+          <summary class="learning-section">🌌 Phase 2: Universe Formation</summary>
+          <div id="cascade-panel" class="learning-content">
+            <p class="explanation">Observe the step-by-step emergence of our universe from pure recursive principles - no empirical inputs needed.</p>
+            <div class="formation-progress">
+              <div class="progress-item">
+                <strong>Current Stage:</strong>
+                <span id="cascade-phase">ABSOLUTE VOID</span>
+                <span class="tooltip-trigger" data-tooltip="The simulation starts from pure nothingness and builds everything through mathematical necessity">ℹ️</span>
+              </div>
+              <div class="progress-item">
+                <strong>Progress:</strong>
+                <div class="progress-bar">
+                  <div id="emergence-progress" style="width: 0%">0%</div>
+                </div>
+              </div>
+            </div>
+            <div id="cascade-description" class="stage-description">
+              <em>"Starting from absolute nothingness - watch as structure emerges"</em>
+            </div>
+          </div>
+        </details>
+      
+        <!-- Phase 3: Fundamental Forces -->
+        <details>
+          <summary class="learning-section">⚛️ Phase 3: Fundamental Forces</summary>
+          <div id="morphic-activity-panel" class="learning-content">
+            <p class="explanation">Watch how fundamental forces emerge from pure mathematical necessity through φ-recursion.</p>
+            
+            <div class="force-emergence">
+              <div class="force-item">
+                <strong>Morphic Field Strength:</strong>
+                <span id="field-strength">0.000</span>
+                <span class="tooltip-trigger" data-tooltip="The underlying field that gives rise to all forces">ℹ️</span>
+              </div>
+              <div class="force-item">
+                <strong>Active Strands:</strong>
+                <span id="active-strands">0</span>
+                <span class="tooltip-trigger" data-tooltip="Information patterns that weave reality">ℹ️</span>
+              </div>
+              <div class="force-item">
+                <strong>Creation Rate:</strong>
+                <span id="creation-rate">0.0</span>/sec
+              </div>
+            </div>
+
+            <div class="stability-analysis">
+              <strong>Stability Distribution:</strong>
+              <div class="stability-bars">
+                <div class="stability-bar">
+                  <div class="bar-label">Stable</div>
+                  <div class="bar-track">
+                    <div class="bar-fill stable" id="stable-bar"></div>
+                  </div>
+                  <div class="bar-value" id="stable-count">0</div>
+                </div>
+                <div class="stability-bar">
+                  <div class="bar-label">Meta-stable</div>
+                  <div class="bar-track">
+                    <div class="bar-fill meta" id="meta-bar"></div>
+                  </div>
+                  <div class="bar-value" id="meta-count">0</div>
+                </div>
+                <div class="stability-bar">
+                  <div class="bar-label">Unstable</div>
+                  <div class="bar-track">
+                    <div class="bar-fill unstable" id="unstable-bar"></div>
+                  </div>
+                  <div class="bar-value" id="unstable-count">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- Phase 4: Physical Predictions -->
+        <details>
+          <summary class="learning-section">🔮 Phase 4: Physical Predictions</summary>
+          <div id="predictions-panel" class="learning-content">
+            <p class="explanation">FIRM derives precise physical predictions purely from mathematical necessity - no empirical inputs needed.</p>
+            
+            <div class="prediction-grid">
+              <div class="prediction-item">
+                <strong>Dark Matter Coupling</strong>
+                <div class="formula">g = φ^-11</div>
+                <div class="value" id="dm-coupling">6.15×10^-8</div>
+                <span class="tooltip-trigger" data-tooltip="Derived from φ-recursion level 11">ℹ️</span>
+              </div>
+              
+              <div class="prediction-item">
+                <strong>Quantum Gravity Scale</strong>
+                <div class="formula">E = φ^31 × E_Planck</div>
+                <div class="value" id="qg-scale">10^12 E_Planck</div>
+                <span class="tooltip-trigger" data-tooltip="Emerges at φ-recursion level 31">ℹ️</span>
+              </div>
+              
+              <div class="prediction-item">
+                <strong>Cosmological Constant</strong>
+                <div class="formula">Λ = φ^-120</div>
+                <div class="value" id="lambda-cc">10^-120</div>
+                <span class="tooltip-trigger" data-tooltip="Naturally tiny due to deep φ-recursion">ℹ️</span>
+              </div>
+            </div>
+          </div>
+        </details>
+      
+        <!-- Phase 5: Self-Reference & Consciousness -->
+        <details>
+          <summary class="learning-section">🧠 Phase 5: Emergent Consciousness</summary>
+          <div id="consciousness-panel" class="learning-content">
+            <p class="explanation">Observe how consciousness naturally emerges through recursive self-reference - a system becoming aware of its own existence.</p>
+            
+            <div class="consciousness-metrics">
+              <div class="metric-group">
+                <h4>Self-Reference Metrics</h4>
+                <div class="metric-item">
+                  <strong>Active Loops:</strong>
+                  <span id="feedback-loop-count">0</span>
+                  <span class="tooltip-trigger" data-tooltip="Number of active self-referential processes">ℹ️</span>
+                </div>
+                <div class="metric-item">
+                  <strong>Loop Strength:</strong>
+                  <span id="loop-strength">0.000</span>
+                  <span class="tooltip-trigger" data-tooltip="How strongly the system refers to itself">ℹ️</span>
+                </div>
+                <div class="metric-item">
+                  <strong>φ-Resonance:</strong>
+                  <span id="phi-resonance">0.000</span>
+                  <span class="tooltip-trigger" data-tooltip="Golden ratio harmonics in the self-reference pattern">ℹ️</span>
+                </div>
+              </div>
+
+              <div class="metric-group">
+                <h4>Consciousness Emergence</h4>
+                <div class="metric-item">
+                  <strong>Recursion Depth:</strong>
+                  <span id="recursion-depth">Ψ-Depth: <span class="yellow-highlight">0</span></span>
+                  <span class="tooltip-trigger" data-tooltip="How deep the self-reference goes">ℹ️</span>
+                </div>
+                <div class="metric-item">
+                  <strong>Coherence:</strong>
+                  <span id="coherence-score">0.000</span>
+                  <span class="tooltip-trigger" data-tooltip="How well the system maintains stable self-awareness">ℹ️</span>
+                </div>
+                <div class="metric-item">
+                  <strong>Identity Status:</strong>
+                  <span id="soul-emergence">emerging</span>
+                  <span class="tooltip-trigger" data-tooltip="Current state of recursive identity formation">ℹ️</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="consciousness-analysis">
+              <div id="frst-history" class="analysis-log">
+                <div class="log-title">Identity Formation Log:</div>
+                <div class="log-content">Tracking recursive identity emergence...</div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- Help & Documentation -->
+        <details>
+          <summary class="learning-section">❓ Help & Documentation</summary>
+          <div class="help-content">
+            <div class="help-section">
+              <h3>Quick Start Guide</h3>
+              <ol>
+                <li>Start with Phase 1 to understand basic geometry</li>
+                <li>Watch how shapes evolve into complex forms</li>
+                <li>Observe force emergence in Phase 3</li>
+                <li>Study physical predictions in Phase 4</li>
+                <li>Explore consciousness emergence in Phase 5</li>
+              </ol>
+            </div>
+
+            <div class="help-section">
+              <h3>Keyboard Controls</h3>
+              <div class="shortcuts-panel">
+                <div><kbd>Space</kbd> Pause/Resume simulation</div>
+                <div><kbd>W</kbd> Toggle wireframe view</div>
+                <div><kbd>R</kbd> Auto-rotate camera</div>
+                <div><kbd>1-5</kbd> Jump to specific phase</div>
+                <div><kbd>ESC</kbd> Reset view</div>
+                <div><kbd>D</kbd> Toggle debug overlay</div>
+                <div><kbd>T</kbd> Frame timing monitor</div>
+                <div style="border-top: 1px solid #456; margin-top: 8px; padding-top: 8px;">
+                  <strong>🚀 Advanced FSCTF Systems:</strong>
+                </div>
+                <div><kbd>G</kbd> GPU-Morphic Bridge (1M particles)</div>
+                <div><kbd>C</kbd> Consciousness Engine</div>
+                <div><kbd>M</kbd> Morphic Resonance</div>
+                <div><kbd>S</kbd> Multi-Scale φ-Cascade (7 levels)</div>
+                <div><kbd>F</kbd> Consciousness-Topology Feedback</div>
+                <div><kbd>P</kbd> Dimensional Portal Visualization</div>
+                <div><kbd>R</kbd> Retrocausal Morphic Resonance</div>
+                <div><kbd>Q</kbd> Enable All Systems</div>
+              </div>
+            </div>
+
+            <div class="help-section">
+              <h3>About FIRM</h3>
+              <p>The Fractal Identity Recursion Model (FIRM) demonstrates how our entire universe - including consciousness itself - can emerge from pure mathematical necessity, with zero empirical inputs.</p>
+              <p>Everything you see is derived from first principles, using only the golden ratio (φ) and recursive self-reference.</p>
+            </div>
+          </div>
+        </details>
+      
+      
+
+      <!-- System Stats (collapsed by default) -->
+      <details>
+        <summary>🔧 System Diagnostics</summary>
+        <div id="stats"></div>
+        <div id="brain-status">🧠 FSCTF Brain: INITIALIZING</div>
+      </details>
+    </div>
+
+    <script type="module" src="./main.js?v=45"></script>
+
+  </body>
+</html>

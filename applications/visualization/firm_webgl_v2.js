@@ -30,7 +30,7 @@ class FIRMConstants {
         this.PERFORMANCE = {
             overloadThreshold: 1000 / (this.PHI ** 2),    // φ²-harmonic ≈ 146.4ms
             recoverThreshold: 1000 / (this.PHI ** 3),     // φ³-harmonic ≈ 55.9ms
-            minDrawFraction: this.PHI_INV ** 2,           // φ⁻² ≈ 0.382
+            minDrawFraction: this.PHI_INV ** 3,           // φ⁻³ ≈ 0.236 (safer floor under overload)
             maxDrawFraction: 1.0,                         // Unity (mathematical purity)
             updateFrequency: 60 / this.PHI                // φ-harmonic updates ≈ 37Hz
         };
@@ -674,6 +674,15 @@ class FIRMVisualizationEngine {
         this.lastFpsTime = performance.now();
         this.fps = 60;
         
+        // Adaptive controls (favor stability on high particle counts)
+        this.debug = false; // reduce console logging in hot paths by default
+        this.enableCPUSimulation = false; // GPU shaders drive evolution; avoid O(N) CPU loop
+        this.targetFPS = 30; // visual target; governor lifts when stable
+        this.minFPS = 30;
+        this.maxFPS = 60;
+        this.lastSimUpdate = performance.now();
+        this.simUpdateIntervalMs = 1000 / this.constants.PERFORMANCE.updateFrequency; // ~37Hz (φ‑harmonic)
+        
         this.initialize();
     }
     
@@ -859,8 +868,14 @@ class FIRMVisualizationEngine {
         this.tau += deltaTime * this.constants.PHI_INV * 0.001;
         this.lut.updateTau(this.tau);
         
-        // Apply Grace Operator evolution to particles (CPU simulation)
-        this.updateParticleSimulation(deltaTime);
+        // Apply Grace Operator evolution to particles (CPU simulation) with adaptive cadence
+        if (this.enableCPUSimulation) {
+            const interval = this.governor.isOverloaded ? (1000 / 15) : (1000 / this.targetFPS);
+            if ((currentTime - this.lastSimUpdate) >= interval) {
+                this.updateParticleSimulation(deltaTime, this.governor);
+                this.lastSimUpdate = currentTime;
+            }
+        }
         
         // Render frame
         this.renderFrame(governorState);
@@ -872,11 +887,13 @@ class FIRMVisualizationEngine {
         requestAnimationFrame(() => this.render());
     }
     
-    updateParticleSimulation(deltaTime) {
+    updateParticleSimulation(deltaTime, governorState) {
         // Apply Grace Operator evolution to particle positions
         const phiDelta = deltaTime * this.constants.PHI_INV * 0.0001;
         
-        for (let i = 0; i < this.particleCount; i++) {
+        // Only update the subset we plan to draw to reduce CPU cost
+        const drawCount = Math.max(0, Math.min(this.particleCount, Math.floor(this.particleCount * (governorState?.smartDrawFraction || 1))));
+        for (let i = 0; i < drawCount; i++) {
             const idx = i * 5;
             
             // Current position
@@ -898,10 +915,12 @@ class FIRMVisualizationEngine {
             this.particles[idx + 2] = pos[2];
         }
         
-        // Upload updated positions to GPU
+        // Upload only updated portion to GPU
         const gl = this.gl;
         gl.bindBuffer(gl.ARRAY_BUFFER, this.particleBuffer);
-        gl.bufferSubData(gl.ARRAY_BUFFER, 0, this.particles);
+        if (drawCount > 0) {
+            gl.bufferSubData(gl.ARRAY_BUFFER, 0, this.particles.subarray(0, drawCount * 5));
+        }
     }
     
     renderFrame(governorState) {

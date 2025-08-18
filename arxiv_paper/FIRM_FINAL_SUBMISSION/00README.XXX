@@ -1,0 +1,28 @@
+FIRM FINAL SUBMISSION - Compile Instructions (arXiv)
+
+1) Requirements
+- TeX Live (2024+) or MacTeX/BasicTeX with pdflatex, bibtex, natbib
+- Shell: non-interactive build supported
+
+2) Build Steps
+- From this directory:
+  pdflatex -interaction=nonstopmode main.tex
+  bibtex main
+  pdflatex -interaction=nonstopmode main.tex
+  pdflatex -interaction=nonstopmode main.tex
+
+3) Included Files
+- main.tex
+- sections/*.tex
+- references/references.bib
+- figures/* and figures_for_paper/* (PNG)
+- main.bbl (generated locally; included to stabilize references)
+
+4) Notes
+- Do not edit generated .bbl during build
+- Figures are PNG for arXiv compatibility
+- No external dependencies beyond TeX packages
+
+5) Contact
+- FIRM Research Collaboration
+- Repo: https://github.com/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics

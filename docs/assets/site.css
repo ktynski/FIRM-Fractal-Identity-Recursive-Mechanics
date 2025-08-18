@@ -3620,3 +3620,139 @@ article li {
     font-size: 0.8rem;
   }
 }
+
+/* FSCTF Simulation Showcase */
+.simulation-showcase {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-left: 4px solid var(--accent);
+}
+
+.simulation-showcase h4 {
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.video-container {
+  position: relative;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-caption {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+}
+
+.simulation-features {
+  margin: 2rem 0;
+}
+
+.simulation-features h5 {
+  color: var(--accent-2);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.simulation-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.simulation-features li {
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  border-left: 3px solid var(--accent-2);
+}
+
+.interactive-access {
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border: 1px solid var(--border);
+}
+
+.interactive-access h5 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.controls-guide {
+  background: var(--panel);
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid var(--border);
+}
+
+.controls-guide strong {
+  color: var(--accent-2);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.controls-guide ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.controls-guide li {
+  padding: 0.25rem 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.controls-guide code {
+  background: var(--accent);
+  color: var(--bg-primary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  min-width: 1.5rem;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Mobile responsiveness for simulation showcase */
+@media (max-width: 768px) {
+  .simulation-showcase {
+    padding: 1.5rem;
+  }
+  
+  .video-container iframe {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .interactive-access {
+    padding: 1rem;
+  }
+  
+  .controls-guide {
+    padding: 0.75rem;
+  }
+  
+  .controls-guide li {
+    font-size: 0.8rem;
+  }
+}

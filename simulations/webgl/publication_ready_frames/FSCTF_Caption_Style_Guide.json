@@ -1,0 +1,32 @@
+{
+  "title": "FSCTF Cosmogenesis Caption Style Guide",
+  "purpose": "Standardized captions for academic papers and lay articles",
+  "academic_style": {
+    "tone": "Precise, technical, mathematically rigorous",
+    "terminology": "\u03c6-recursion, morphic fields, bootstrap paradox, manifold topology",
+    "target_audience": "Researchers, physicists, mathematicians",
+    "title_format": "FSCTF [Specific Process] ([Mathematical Designation])",
+    "description_focus": "Mathematical mechanisms and theoretical foundations"
+  },
+  "lay_style": {
+    "tone": "Accessible, wonder-inspiring, metaphorically rich",
+    "terminology": "Reality bootstrapping, consciousness emergence, mathematical awakening",
+    "target_audience": "General public, science enthusiasts, students",
+    "title_format": "[Descriptive Name] - [Wonder Element]",
+    "description_focus": "Visual phenomena and conceptual understanding"
+  },
+  "visual_standards": {
+    "dimensions": "2410\u00d71834 (cropped visualization area)",
+    "caption_height": "180 pixels",
+    "font_hierarchy": "Title(32px) > Subtitle(24px) > Body(18px) > Technical(16px) > Metadata(14px)",
+    "color_scheme": "Academic blue accents on dark background",
+    "layout": "Left-aligned content, right-aligned metadata"
+  },
+  "content_requirements": {
+    "timestamp": "Always include T+##m##s format",
+    "frame_counter": "Frame N/42 total",
+    "observables": "What viewers should look for",
+    "firm_connection": "Which FIRM principle is demonstrated",
+    "context_type": "Phase category (Bootstrap/Emergence/etc.)"
+  }
+}

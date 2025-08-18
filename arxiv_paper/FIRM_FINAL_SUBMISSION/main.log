@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  16 AUG 2025 13:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  17 AUG 2025 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -544,7 +544,7 @@ al-ity from the "in-side"^^Vmathematics
 [4]
 
 [5]
-<figures_for_paper/grace_operator_fixed_point_convergence.png, id=2638, 1004.07
+<figures_for_paper/grace_operator_fixed_point_convergence.png, id=2642, 1004.07
 12pt x 427.5975pt>
 File: figures_for_paper/grace_operator_fixed_point_convergence.png Graphic file
  (type png)
@@ -741,12 +741,12 @@ If that doesn't work, type  X <return>  to quit.
 [18]
 
 [19]
-<figures/planck_tt_binned.png, id=2787, 425.6703pt x 281.3712pt>
+<figures/planck_tt_binned.png, id=2791, 425.6703pt x 281.3712pt>
 File: figures/planck_tt_binned.png Graphic file (type png)
 <use figures/planck_tt_binned.png>
 Package pdftex.def Info: figures/planck_tt_binned.png  used on input line 587.
 (pdftex.def)             Requested size: 375.80544pt x 248.41457pt.
-<figures/bao_comparison.png, id=2788, 497.9403pt x 353.6412pt>
+<figures/bao_comparison.png, id=2792, 497.9403pt x 353.6412pt>
 File: figures/bao_comparison.png Graphic file (type png)
 <use figures/bao_comparison.png>
 Package pdftex.def Info: figures/bao_comparison.png  used on input line 598.
@@ -756,7 +756,7 @@ Package pdftex.def Info: figures/bao_comparison.png  used on input line 598.
 [20 <./figures/planck_tt_binned.png>]
 
 [21 <./figures/bao_comparison.png>]
-<figures/particle_mass_spectrum_theory.png, id=2808, 569.4876pt x 353.6412pt>
+<figures/particle_mass_spectrum_theory.png, id=2812, 569.4876pt x 353.6412pt>
 File: figures/particle_mass_spectrum_theory.png Graphic file (type png)
 <use figures/particle_mass_spectrum_theory.png>
 Package pdftex.def Info: figures/particle_mass_spectrum_theory.png  used on inp
@@ -765,13 +765,13 @@ ut line 629.
 
 
 [22 <./figures/particle_mass_spectrum_theory.png>]
-<figures/sparc_rotation_curves.png, id=2816, 859.2903pt x 719.8092pt>
+<figures/sparc_rotation_curves.png, id=2820, 859.2903pt x 719.8092pt>
 File: figures/sparc_rotation_curves.png Graphic file (type png)
 <use figures/sparc_rotation_curves.png>
 Package pdftex.def Info: figures/sparc_rotation_curves.png  used on input line 
 662.
 (pdftex.def)             Requested size: 375.80544pt x 314.80591pt.
-<figures/sn_mu_comparison.png, id=2817, 497.9403pt x 353.6412pt>
+<figures/sn_mu_comparison.png, id=2821, 497.9403pt x 353.6412pt>
 File: figures/sn_mu_comparison.png Graphic file (type png)
 <use figures/sn_mu_comparison.png>
 Package pdftex.def Info: figures/sn_mu_comparison.png  used on input line 673.
@@ -791,7 +791,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 680.
 
-<figures/eeg_phi_harmonics.png, id=2826, 855.6768pt x 715.7139pt>
+<figures/eeg_phi_harmonics.png, id=2830, 855.6768pt x 715.7139pt>
 File: figures/eeg_phi_harmonics.png Graphic file (type png)
 <use figures/eeg_phi_harmonics.png>
 Package pdftex.def Info: figures/eeg_phi_harmonics.png  used on input line 686.
@@ -800,7 +800,7 @@ Package pdftex.def Info: figures/eeg_phi_harmonics.png  used on input line 686.
 
 
 [24 <./figures/sn_mu_comparison.png>]
-<figures/consciousness_pnp_correlation.png, id=2834, 859.0494pt x 714.2685pt>
+<figures/consciousness_pnp_correlation.png, id=2838, 859.0494pt x 714.2685pt>
 File: figures/consciousness_pnp_correlation.png Graphic file (type png)
 <use figures/consciousness_pnp_correlation.png>
 Package pdftex.def Info: figures/consciousness_pnp_correlation.png  used on inp
@@ -815,12 +815,12 @@ m FIRM in-te-gra-tion frame-
 
 
 [25 <./figures/eeg_phi_harmonics.png>]
-Overfull \hbox (102.88293pt too wide) in paragraph at lines 714--729
+Overfull \hbox (102.88293pt too wide) in paragraph at lines 714--730
  [][] 
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 729--729
+Underfull \hbox (badness 1946) in paragraph at lines 730--730
 \T1/cmr/m/n/12 pure $\OML/cmm/m/it/12 ^^^$\T1/cmr/m/n/12 -recursive math-e-mat-
 ics with no em-pir-i-cal tun-ing; any di-ver-gences are pre-
  []
@@ -828,78 +828,78 @@ ics with no em-pir-i-cal tun-ing; any di-ver-gences are pre-
 
 
 [26 <./figures/consciousness_pnp_correlation.png>]
-Overfull \hbox (102.08792pt too wide) in paragraph at lines 735--748
+Overfull \hbox (102.08792pt too wide) in paragraph at lines 736--750
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 []\T1/cmr/m/n/12 Table 2: |Cos-mo-log-i-cal Pa-ram-e-ters: FIRM parameter-free 
 pre-dic-tions shown
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 \T1/cmr/m/n/12 along-side cos-mo-log-i-cal ob-ser-va-tions (for con-text). No e
 m-pir-i-cal tun-ing is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 \T1/cmr/m/n/12 ap-plied; di-ver-gences are pre-served as pre-dic-tions and con-
 sti-tute fal-si-fi-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 \T1/cmr/m/n/12 tion tests. Gen-er-ated by \T1/cmtt/m/n/12 cosmological_paramete
 rs_generator.py \T1/cmr/m/n/12 us-ing
  []
 
 
-Overfull \hbox (62.57388pt too wide) in paragraph at lines 754--768
+Overfull \hbox (62.57388pt too wide) in paragraph at lines 756--771
  [][] 
  []
 
 
 
 [27]
-<figures/falsification_test_results.png, id=2856, 859.2903pt x 714.2685pt>
+<figures/falsification_test_results.png, id=2860, 859.2903pt x 714.2685pt>
 File: figures/falsification_test_results.png Graphic file (type png)
 <use figures/falsification_test_results.png>
 Package pdftex.def Info: figures/falsification_test_results.png  used on input 
-line 798.
+line 801.
 (pdftex.def)             Requested size: 375.80544pt x 312.3827pt.
 
 
 [28]
-<figures/theory_comparison.png, id=2868, 859.5312pt x 714.2685pt>
+<figures/theory_comparison.png, id=2872, 859.5312pt x 714.2685pt>
 File: figures/theory_comparison.png Graphic file (type png)
 <use figures/theory_comparison.png>
-Package pdftex.def Info: figures/theory_comparison.png  used on input line 811.
+Package pdftex.def Info: figures/theory_comparison.png  used on input line 814.
 
 (pdftex.def)             Requested size: 375.80544pt x 312.29552pt.
 
 
 [29 <./figures/falsification_test_results.png>]
-<figures/einstein_equations_comparison.png, id=2875, 1004.3121pt x 711.6186pt>
+<figures/einstein_equations_comparison.png, id=2879, 1004.3121pt x 711.6186pt>
 File: figures/einstein_equations_comparison.png Graphic file (type png)
 <use figures/einstein_equations_comparison.png>
 Package pdftex.def Info: figures/einstein_equations_comparison.png  used on inp
-ut line 827.
+ut line 830.
 (pdftex.def)             Requested size: 399.29463pt x 282.92677pt.
-<figures/spacetime_metric_emergence.png, id=2878, 860.013pt x 711.3777pt>
+<figures/spacetime_metric_emergence.png, id=2882, 860.013pt x 711.3777pt>
 File: figures/spacetime_metric_emergence.png Graphic file (type png)
 <use figures/spacetime_metric_emergence.png>
 Package pdftex.def Info: figures/spacetime_metric_emergence.png  used on input 
-line 838.
+line 841.
 (pdftex.def)             Requested size: 399.29463pt x 330.28789pt.
-<figures/einstein_equations_derivation_chain.png, id=2881, 725.3499pt x 714.991
+<figures/einstein_equations_derivation_chain.png, id=2885, 725.3499pt x 714.991
 2pt>
 File: figures/einstein_equations_derivation_chain.png Graphic file (type png)
 <use figures/einstein_equations_derivation_chain.png>
 Package pdftex.def Info: figures/einstein_equations_derivation_chain.png  used 
-on input line 849.
+on input line 852.
 (pdftex.def)             Requested size: 399.29463pt x 393.58458pt.
 
 
@@ -1251,18 +1251,6 @@ If that doesn't work, type  X <return>  to quit.
 
 ) (./sections/fundamental_constants_complete_framework.tex
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\phi' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-
 ! LaTeX Error: \mathcal allowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1291,31 +1279,7 @@ If that doesn't work, type  X <return>  to quit.
 
 [54]
 
-! LaTeX Error: Unicode character φ (U+03C6)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58 ...e: $100.0000\%$ (perfect agreement with φ
-                                                  ⁶ correction)
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ⁶ (U+2076)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58 ...$100.0000\%$ (perfect agreement with φ⁶
-                                                   correction)
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
+[55]
 
 ! LaTeX Error: \mathcal allowed only in math mode.
 
@@ -1328,9 +1292,6 @@ l.75 ...metric contractions in \text{Fix}(\mathcal
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-
-[55]
 
 ! LaTeX Error: \mathcal allowed only in math mode.
 
@@ -8392,18 +8353,6 @@ Such booboos are generally harmless, so keep going.
 
 [77]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\phi' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-
 ! LaTeX Error: \mathcal allowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -8855,7 +8804,7 @@ l.13
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-<figures/mass_depth_cn.png, id=3521, 650.43pt x 289.08pt>
+<figures/mass_depth_cn.png, id=3525, 650.43pt x 289.08pt>
 File: figures/mass_depth_cn.png Graphic file (type png)
 <use figures/mass_depth_cn.png>
 Package pdftex.def Info: figures/mass_depth_cn.png  used on input line 32.
@@ -8898,7 +8847,7 @@ l.14
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-<figures/morphic_survival_curve.png, id=3532, 433.62pt x 289.08pt>
+<figures/morphic_survival_curve.png, id=3536, 433.62pt x 289.08pt>
 File: figures/morphic_survival_curve.png Graphic file (type png)
 <use figures/morphic_survival_curve.png>
 Package pdftex.def Info: figures/morphic_survival_curve.png  used on input line
@@ -8907,7 +8856,7 @@ Package pdftex.def Info: figures/morphic_survival_curve.png  used on input line
 
 
 [88]
-<figures/recursive_potential_wells.png, id=3542, 542.025pt x 325.215pt>
+<figures/recursive_potential_wells.png, id=3546, 542.025pt x 325.215pt>
 File: figures/recursive_potential_wells.png Graphic file (type png)
 <use figures/recursive_potential_wells.png>
 Package pdftex.def Info: figures/recursive_potential_wells.png  used on input l
@@ -9099,19 +9048,6 @@ Such booboos are generally harmless, so keep going.
 
 ) (./sections/phi_field_cosmic_inflation.tex
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\phi' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-
 [90]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -9199,13 +9135,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [100]) (./sections/epsilon_stability_compromise.tex
 
 [101]
-<figures/epsilon_stability_scan.png, id=3704, 578.16pt x 252.945pt>
+<figures/epsilon_stability_scan.png, id=3708, 578.16pt x 252.945pt>
 File: figures/epsilon_stability_scan.png Graphic file (type png)
 <use figures/epsilon_stability_scan.png>
 Package pdftex.def Info: figures/epsilon_stability_scan.png  used on input line
  30.
 (pdftex.def)             Requested size: 399.29463pt x 174.69048pt.
-<figures/epsilon_components_scan.png, id=3705, 722.7pt x 433.62pt>
+<figures/epsilon_components_scan.png, id=3709, 722.7pt x 433.62pt>
 File: figures/epsilon_components_scan.png Graphic file (type png)
 <use figures/epsilon_components_scan.png>
 Package pdftex.def Info: figures/epsilon_components_scan.png  used on input lin
@@ -9860,35 +9796,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [107]) (./sections/cosmological_constant_complete.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Omega' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Lambda' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\phi' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
 
 
 
@@ -10132,18 +10040,6 @@ $\T1/cmr/bx/n/17.28 -Mathematical Deriva-
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\phi' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-
 Overfull \hbox (0.29713pt too wide) in paragraph at lines 4--5
 \T1/cmr/m/n/12 This sec-tion presents the com-plete deriva-tion of all neu-trin
 o pa-ram-e-ters from pure $\OML/cmm/m/it/12 ^^^$\T1/cmr/m/n/12 -recursion
@@ -10362,19 +10258,6 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ) (./sections/spectral_zeta_complete.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\phi' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-
 
 [130]
 
@@ -10608,15 +10491,7 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
 
 
 
@@ -10892,19 +10767,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [156])
 
 [157]
-Overfull \hbox (32.45258pt too wide) in paragraph at lines 961--962
+Overfull \hbox (32.45258pt too wide) in paragraph at lines 964--965
 []\T1/cmr/bx/n/12 Theoretical Frame-works: \T1/cmr/m/n/12 All math-e-mat-i-cal 
 deriva-tions im-ple-mented in \T1/cmtt/m/n/12 constants/\T1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (186.65254pt too wide) in paragraph at lines 972--973
+Overfull \hbox (186.65254pt too wide) in paragraph at lines 975--976
 []\T1/cmr/m/n/12 Clone repos-i-tory: \T1/cmtt/m/n/12 git clone https://github.c
 om/ktynski/FIRM-Fractal-Identity-Recursive-Mechanics.git 
  []
 
 
-Overfull \hbox (126.3147pt too wide) in paragraph at lines 981--982
+Overfull \hbox (126.3147pt too wide) in paragraph at lines 984--985
 \T1/cmr/m/n/12 Each fig-ure in-cludes com-plete com-pu-ta-tional prove-nance do
 c-u-mented in \T1/cmtt/m/n/12 data/provenance/figures_manifest.json\T1/cmr/m/n/
 12 : 
@@ -10913,13 +10788,13 @@ c-u-mented in \T1/cmtt/m/n/12 data/provenance/figures_manifest.json\T1/cmr/m/n/
 
 
 [158]
-Overfull \hbox (75.39229pt too wide) in paragraph at lines 997--998
+Overfull \hbox (75.39229pt too wide) in paragraph at lines 1000--1001
 []\T1/cmr/bx/n/12 Figure Data: \T1/cmr/m/n/12 Com-plete gen-er-a-tion prove-nan
 ce in \T1/cmtt/m/n/12 data/provenance/figures_manifest.json 
  []
 
 
-Overfull \hbox (75.04726pt too wide) in paragraph at lines 1001--1002
+Overfull \hbox (75.04726pt too wide) in paragraph at lines 1004--1005
 []\T1/cmr/m/n/12 Data ac-cess: Repos-i-tory \T1/cmtt/m/n/12 https://github.com/
 ktynski/FIRM-Fractal-Identity-Recursive-Mechanics
  []
@@ -10947,7 +10822,7 @@ Underfull \hbox (badness 2846) in paragraph at lines 27--33
 )
 
 [160]
-Overfull \hbox (13.4407pt too wide) in paragraph at lines 1051--1052
+Overfull \hbox (13.4407pt too wide) in paragraph at lines 1058--1059
 []\T1/cmr/bx/n/12 Reproducible Work-flow: \T1/cmr/m/n/12 All fig-ures re-gen-er
 -at-able via \T1/cmtt/m/n/12 PYTHONPATH=$PWD python
  []
@@ -10955,6 +10830,8 @@ Overfull \hbox (13.4407pt too wide) in paragraph at lines 1051--1052
 
 
 [161] (./derivations_appendix.tex
+
+[162]
 Overfull \hbox (222.22433pt too wide) in paragraph at lines 17--18
 \T1/cmr/m/it/12 Computational im-ple-men-ta-tions: \T1/cmtt/m/it/12 constants/f
 ine_structure_alpha.py\T1/cmr/m/it/12 , \T1/cmtt/m/it/12 constants/bulletproof_
@@ -10966,9 +10843,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-
-
-[162]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -11343,6 +11217,9 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+
+
+[167]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -11392,9 +11269,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-
-
-[167])
+)
 
 [168]
 
@@ -11411,7 +11286,7 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 33CE3371DE7556387FFAC41CB9B9635D;128450.
+(rerunfilecheck)             Checksum: C30250F331FF6EE98159222F86B7E677;128734.
 
  )
 (\end occurred inside a group at level 8)
@@ -11426,13 +11301,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 ### simple group (level 1) entered at line 31 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16621 strings out of 474662
- 269839 string characters out of 5751110
- 653730 words of memory out of 5000000
- 37593 multiletter control sequences out of 15000+600000
+ 16628 strings out of 474662
+ 269990 string characters out of 5751110
+ 653978 words of memory out of 5000000
+ 37596 multiletter control sequences out of 15000+600000
  590986 words of font info for 121 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 79i,28n,93p,1517b,951s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,28n,93p,1517b,916s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/fractlphoneroom1/Library/texlive/2025basic/texmf-var/f
 onts/pk/ljfour/jknappen/ec/tcti1200.600pk> </Users/fractlphoneroom1/Library/tex
 live/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecit1200.600pk> </Users/fr
@@ -11475,10 +11350,10 @@ e1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/
 type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2025basic/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025basic/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (169 pages, 5674343 bytes).
+Output written on main.pdf (169 pages, 5677283 bytes).
 PDF statistics:
- 5647 PDF objects out of 6186 (max. 8388607)
- 4638 compressed objects within 47 object streams
- 1802 named destinations out of 2073 (max. 500000)
- 5139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5660 PDF objects out of 6186 (max. 8388607)
+ 4645 compressed objects within 47 object streams
+ 1806 named destinations out of 2073 (max. 500000)
+ 5147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
