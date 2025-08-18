@@ -78,8 +78,8 @@
               </li>
               <li><a href="#applications" class="toc-link">Applications & Extensions</a>
                 <ul>
-                  <li><a href="#computational" class="toc-link">Computational Applications</a></li>
-                  <li><a href="#theoretical-applications" class="toc-link">Theoretical Applications</a></li>
+                  <li><a href="#computational" class="toc-link">Theoretical Computational Framework</a></li>
+                  <li><a href="#theoretical-applications" class="toc-link">Additional Theoretical Applications</a></li>
                 </ul>
               </li>
               <li><a href="#experimental" class="toc-link">Experimental Predictions</a>
@@ -971,121 +971,43 @@
           </div>
         </div>
 
-        <h3 id="computational">Computational Applications</h3>
+                <h3 id="computational">Computational Applications - Theoretical Framework</h3>
         
-        <div class="insight">
-          <span data-technical>FIRM theory has been implemented as working computational systems with measurable performance characteristics. This section presents concrete implementations, benchmarking results, and practical applications demonstrating the theory's computational utility.</span>
-          <span data-layperson>We've turned our theory into actual working computer programs that solve real problems. This section shows concrete examples of our software, how well it performs, and practical ways people can use it.</span>
+        <div class="warning">
+          <span data-technical><strong>Important Disclaimer:</strong> The computational applications described below are theoretical proposals based on FIRM's mathematical framework. No actual implementations have been built or tested. All performance claims are speculative and require empirical validation.</span>
+          <span data-layperson><strong>Important Note:</strong> The computer programs described below are theoretical ideas we're exploring based on our mathematical theory. We haven't actually built or tested these programs yet - they're just ideas for how our theory might be useful.</span>
         </div>
 
-        <h4>Working Implementation: φ-Optimizer</h4>
+        <div class="insight">
+          <span data-technical>FIRM's mathematical framework suggests potential computational applications through φ-recursive algorithms, though these remain theoretical proposals requiring implementation and empirical validation.</span>
+          <span data-layperson>Our mathematical framework suggests it might lead to better computer algorithms, but these are just theoretical ideas that haven't been tested yet.</span>
+        </div>
+
+        <h4>Theoretical Proposal: φ-Recursive Optimization</h4>
         
         <div class="implementation-example">
-          <h5><span data-technical>Concrete Application: Function Optimization</span><span data-layperson>Real Application: Finding Best Solutions</span></h5>
-          <p><span data-technical><strong>Implementation:</strong> <code>applications/optimization/phi_optimizer.py</code></span>
-          <span data-layperson><strong>Computer Program:</strong> We built software that uses golden ratio patterns to find optimal solutions</span></p>
+          <h5><span data-technical>Proposed Application: Mathematical Optimization</span><span data-layperson>Theoretical Idea: Finding Best Solutions</span></h5>
+          <p><span data-technical><strong>Concept:</strong> Optimization algorithms using φ-recursive step scaling</span>
+          <span data-layperson><strong>Basic Idea:</strong> Using golden ratio patterns to help computers find optimal solutions</span></p>
           
           <div class="code-example">
-            <span data-technical><strong>Core Algorithm:</strong>
+            <span data-technical><strong>Theoretical Algorithm Structure:</strong>
             <pre>
-def phi_optimize(f, x0, max_iter=1000):
-    """φ-recursive optimization using Grace Operator convergence"""
+def phi_optimize_concept(f, x0, max_iter=1000):
+    """Theoretical φ-recursive optimization framework"""
     phi_inv = (math.sqrt(5) - 1) / 2  # φ⁻¹ ≈ 0.618
-    x = x0
-    for i in range(max_iter):
-        gradient = numerical_gradient(f, x)
-        step_size = phi_inv ** (i % 7)  # φ-recursive step scaling
-        x_new = x - step_size * gradient
-        if convergence_test(x, x_new): break
-        x = x_new
-    return x, f(x)
+    # THEORETICAL CONCEPT - NOT IMPLEMENTED
+    # Step sizes would follow φ-recursive scaling
+    # Convergence properties require empirical validation
+    # Performance claims are speculative
             </pre></span>
-            <span data-layperson><strong>How the Algorithm Works:</strong>
-            <p>Our optimizer uses golden ratio patterns to adjust how big steps to take when searching for the best solution. Instead of fixed step sizes, it uses φ-based scaling that adapts automatically - this helps it find better solutions faster than traditional methods.</p></span>
+            <span data-layperson><strong>Basic Concept:</strong>
+            <p>The idea would be to use golden ratio patterns to adjust how algorithms search for solutions. Instead of fixed approaches, the method would adapt using φ-based scaling - but this is just a theoretical idea that needs testing.</p></span>
           </div>
           
-          <p><span data-technical><strong>Performance Results (100 test functions):</strong></span>
-          <span data-layperson><strong>How Well It Works (tested on 100 different problems):</strong></span></p>
-          <ul>
-            <li><span data-technical><strong>Convergence Rate:</strong> 23% faster than standard gradient descent</span>
-            <span data-layperson><strong>Speed:</strong> 23% faster than standard optimization methods</span></li>
-            <li><span data-technical><strong>Final Accuracy:</strong> 10⁻⁸ precision in 340 ± 45 iterations (vs 442 ± 67 standard)</span>
-            <span data-layperson><strong>Accuracy:</strong> Finds very precise solutions in fewer steps (340 vs 442 on average)</span></li>
-            <li><span data-technical><strong>Success Rate:</strong> 94% convergence on non-convex functions (vs 78% standard)</span>
-            <span data-layperson><strong>Reliability:</strong> Successfully solves 94% of difficult problems (vs 78% for standard methods)</span></li>
-            <li><span data-technical><strong>Memory Usage:</strong> Constant O(n) vs O(n log n) for adaptive methods</span>
-            <span data-layperson><strong>Efficiency:</strong> Uses less computer memory than adaptive methods</span></li>
-        </ul>
-        </div>
-
-        <h4>Working Implementation: φ-Pattern Detector</h4>
-        
-        <div class="implementation-example">
-          <h5><span data-technical>Concrete Application: Time Series Analysis</span><span data-layperson>Real Application: Analyzing Data Patterns Over Time</span></h5>
-          <p><span data-technical><strong>Implementation:</strong> <code>applications/signal_processing/phi_detector.py</code></span>
-          <span data-layperson><strong>Computer Program:</strong> Software that finds golden ratio patterns in data that changes over time (like stock prices)</span></p>
-          
-          <div class="performance-metrics">
-            <span data-technical><strong>Real-World Testing: Financial Time Series (S&P 500, 2020-2024)</strong></span>
-            <span data-layperson><strong>Real Test: Stock Market Data (S&P 500, 2020-2024)</strong></span>
-            <table>
-              <tr>
-                <th>Metric</th>
-                <th>φ-Detector</th>
-                <th>FFT Standard</th>
-                <th>Wavelet Analysis</th>
-              </tr>
-              <tr>
-                <td><strong>Pattern Detection</strong></td>
-                <td>89.3% accuracy</td>
-                <td>82.1% accuracy</td>
-                <td>85.7% accuracy</td>
-              </tr>
-              <tr>
-                <td><strong>False Positive Rate</strong></td>
-                <td>3.2%</td>
-                <td>8.7%</td>
-                <td>5.4%</td>
-              </tr>
-              <tr>
-                <td><strong>Computation Time</strong></td>
-                <td>0.23s per 1000 points</td>
-                <td>0.18s per 1000 points</td>
-                <td>0.31s per 1000 points</td>
-              </tr>
-            </table>
-          </div>
-          
-          <p><span data-technical><strong>Key Innovation:</strong> φ-recursive filtering identifies patterns that repeat at golden ratio intervals, revealing market structures invisible to traditional Fourier analysis.</span>
-          <span data-layperson><strong>Key Innovation:</strong> Our method finds patterns that repeat at golden ratio intervals, revealing hidden structures in financial data that traditional analysis methods miss.</span></p>
-        </div>
-
-        <h4>Working Implementation: Grace Operator Solver</h4>
-        
-        <div class="implementation-example">
-          <h5>Concrete Application: Differential Equation Solving</h5>
-          <p><strong>Implementation:</strong> <code>foundation/operators/grace_solver.py</code></p>
-          
-          <div class="solver-results">
-            <p><strong>Test Case: Nonlinear Schrödinger Equation</strong></p>
-            <div class="math-block">
-              iℏ ∂ψ/∂t = -ℏ²/(2m) ∇²ψ + V(x)ψ + g|ψ|²ψ
-            </div>
-            
-            <p><strong>Grace Operator Solution Method:</strong></p>
-            <ol>
-              <li>Decompose ψ into φ-recursive basis functions</li>
-              <li>Apply Grace Operator eigenvalue constraints</li>
-              <li>Solve reduced system with φ⁻¹ convergence rate</li>
-            </ol>
-            
-            <p><strong>Performance vs. Standard Methods:</strong></p>
-            <ul>
-              <li><strong>Accuracy:</strong> 10⁻¹² precision (vs 10⁻⁹ finite difference)</li>
-              <li><strong>Stability:</strong> No numerical instabilities observed in 10⁶ time steps</li>
-              <li><strong>Speed:</strong> 4.2x faster convergence than Runge-Kutta methods</li>
-              <li><strong>Memory:</strong> 60% reduction in required basis functions</li>
-            </ul>
+          <div class="warning">
+            <span data-technical><strong>Validation Required:</strong> No implementation exists. All performance advantages are speculative and require empirical testing against established optimization methods.</span>
+            <span data-layperson><strong>Needs Testing:</strong> This is just a theoretical idea - we haven't built or tested it yet to see if it actually works better than existing methods.</span>
           </div>
         </div>
 
